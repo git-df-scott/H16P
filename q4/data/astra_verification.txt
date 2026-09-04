@@ -1,0 +1,38 @@
+Astra bounded verification, 2026-09-04
+No search, scan, optimization or interval-zero certificate.
+Single numerical thread; lowered scheduling priority.
+
+Command: /Users/scottg/Documents/Codex/2026-09-04/he/work/q4-venv/bin/python -c import sys,sympy,mpmath,numpy,scipy; print('Python',sys.version.split()[0]); print('sympy',sympy.__version__,'mpmath',mpmath.__version__,'numpy',numpy.__version__,'scipy',scipy.__version__)
+Python 3.14.6
+sympy 1.14.0 mpmath 1.3.0 numpy 2.5.2 scipy 1.18.1
+
+Exit: 0
+CPU seconds: 0.191473
+Wall seconds: 0.336063
+
+Command: /Users/scottg/Documents/Codex/2026-09-04/he/work/q4-venv/bin/python q4/q4_structure_checks.py
+exact determinant mu -> (alpha1,alpha2,beta0,beta1): 17843617792000*(k - 1)**2/(6561*k**4)
+exact auxiliary W4 at center: 3705625/1451188224
+w center Taylor polynomial: -305675*t**4/13436928 - 775*t**3/23328 - 25*t**2/432 - t/6 + 1
+companion center coefficient of t^4: -1616615/967458816
+universal g identity and corrected threshold: exact pass
+period companion residual at t=0.25: 1.148e-41
+period companion residual at t=0.5: 0.0
+period companion residual at t=0.75: 0.0
+All bounded structure checks passed.
+
+Exit: 0
+CPU seconds: 0.338120
+Wall seconds: 0.347997
+
+Command: /Users/scottg/Documents/Codex/2026-09-04/he/work/q4-venv/bin/python q4/test_q4.py
+
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.018s
+
+OK
+Exit: 0
+CPU seconds: 0.285694
+Wall seconds: 0.424409
+

@@ -1,81 +1,49 @@
-# Astra handoff: Q4
+# Astra handoff: reasoning strike, 2026-09-04
 
-## Decision
-
-# YELLOW — Q4 is valid but remains computationally broad
-
-Q4 can logically yield five quadratic limit cycles: five distinct simple zeros
-of a realizable first nonzero Q4 generating function persist as five cycles for
-all sufficiently small nonzero perturbations. No theorem bounds the relevant
-integral below five. However, no accepted four- or five-zero Q4 example exists,
-Żołądek's conjectural bound is three, and an exhaustive endpoint-aware cover is
-still a continuous four-dimensional problem.
+The latest user instruction authorizes reasoning and small local checks.
+It supersedes the previous 24-CPU-hour tranche. Do not launch a sweep from
+this handoff. The old command remains in git history.
 
 ## Exact target
 
-Search \(1<\kappa<85/23\) and \([\mu]\in\mathbb{RP}^3\), subject to Zhao's
-beta-zero strip and \(P_2(\beta_0)\) inequality, for five distinct simple
-zeros of
+Find five distinct simple zeros of the exact four-term integral in
+Q4_THEORY.md on 1<s<kappa, then ultimately realize and certify five cycles
+of one original quadratic field. This strike has found no such parameter.
 
-\[
-I_\mu=\mu_1hI_{00}+\mu_2I_{10}+\mu_3I_{01}
-+\mu_4(2I_{-1,0}+3\kappa hI_{-1,1})
-\]
+## Corrections to inherit
 
-on \(h\in(-2/3,-2/(3\sqrt\kappa))\). Use the normalized root coordinate
-\(r=(s-1)/(\kappa-1)\), with \(h=-2\sqrt{s/\kappa}/3\).
+- The necessary strip is (54-23kappa)/31 < beta0 < 1, after beta1=1.
+- The earlier kappa < 85/23 cutoff is unsupported and withdrawn.
+- Use the safe cubic curvature threshold in Q4_PARAMETERIZATION.md.
+- Old controls and smoke data remain. Their old filter exclusions have
+  no mathematical force; in particular kappa=4 is not a closed family.
+- Three prescribed zeros generically determine mu. Four require a
+  determinant condition.
+- Four simple plus one double, and three simple plus one triple, each
+  have multiplicity six and violate the Q4 upper bound. The feasible
+  maximal interior fold configuration is three simple plus one double.
 
-## First Astra command
+## Structural route
 
-Run exactly this first 24-CPU-hour-fused tranche:
+Read ASTRA_FIRST_STRIKE.md, Q4_STRUCTURE.md, Q4_ZERO_GEOMETRY.md and
+Q4_CERTIFICATE_PLAN.md. The variable t=(kappa-s)/(kappa-1) makes the
+elliptic ratio and auxiliary g space universal. A positive Stieltjes
+representation yields global extended-Chebyshev structure for that
+auxiliary space and an explicit one-parameter cusp. Open neighborhoods of each fixed interior
+cusp are now excluded: the corresponding original I has at most three zeros
+for every kappa>1. This does not exclude Q4 globally.
 
-    OPENBLAS_NUM_THREADS=1 python q4/q4_search.py \
-      --mode astra --cpu-hours 24 --max-cpu-hours 24 \
-      --candidate-mode triple --seed 160926 \
-      --kappa-min 1.01 --kappa-max 3.69 --kappa-count 193 \
-      --samples-per-kappa 50000 --grid-points 257 --quad-order 96 \
-      --output q4/data/astra_tranche_001.json
+## Single next task
 
-The process stops earlier if it refines five sign-change roots. It must not be
-expanded beyond this command without reviewing the retained branches.
+Determine whether the kappa-dependent lift from the universal auxiliary
+space to the original I can attain all five zeros. Start with its exact
+center data and Green operator; prove or refute preservation of the
+Chebyshev property. Use the weighted-lobe criterion to reject directions
+already failing to give three zeros of script-F. No coefficient sweep.
 
-## Promotion gates
+## Promotion
 
-1. NUM-LEAD: five roots persist under grid/order/precision doubling and endpoint
-   changes.
-2. Q4-ZERO: q4/zero_certificate.schema.json replays five interval-Newton
-   inclusions with \(0\notin I'(S_i)\).
-3. Q4-REALIZED: exact original-coordinate quadratic coefficients, all lower
-   Melnikov functions zero, target \(M_k\) verified.
-4. CAP-CANDIDATE: five validated return-map fixed points and disjoint flow
-   tubes for one rational nonzero \(\varepsilon\).
-5. COUNTEREXAMPLE: independent replay and human-readable proof.
-
-Do not call a five-zero floating-point hit a counterexample.
-
-## Stop conditions
-
-Stop on the command's CPU fuse, a five-root lead, or a certified at-most-three
-bound on the retained component. Freeze data and label every branch as
-promoted, rejected, or unresolved. Do not search \(\kappa\ge85/23\), arbitrary
-quadratic coefficients, or an endpoint without its analytic expansion.
-
-## Expected cost
-
-The old broad estimate was about 500 CPU-hours. Precomputed basis tables,
-Zhao's exact pruning, and triple-zero coordinates reduce a serious numerical
-campaign to approximately 20--60 CPU-hours. A well-conditioned Abelian-zero
-certificate is estimated at another 2--20 CPU-hours. Original-field
-realization and CAPD validation are deferred until a five-zero lead and may
-cost 20--200 CPU-hours.
-
-## Current evidence
-
-- published Q4 lower construction: three zeros/cycles, asymptotic coefficients;
-- finite numerical control reproduced here: three zeros at \(\kappa=4\);
-- tiny structured strike: 2,060 directions, three analytic-filter survivors,
-  maximum three sampled crossings, no four/five lead;
-- audit verdict: YELLOW, unchanged.
-
-The tiny strike is only an implementation validation and has no negative
-mathematical force.
+Six rigorous alternating signs plus the multiplicity upper bound certify
+five distinct simple Abelian zeros. Explicit perturbation realization,
+one rational nonzero epsilon and independent original-field validation
+remain necessary for an explicit five-cycle counterexample.

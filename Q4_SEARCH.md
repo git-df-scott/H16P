@@ -6,11 +6,11 @@ The screen in q4/q4_search.py never integrates a perturbed quadratic field. It
 evaluates the exact four-function target (Q4-I) numerically and ranks coefficient
 directions. Its stages are:
 
-1. choose \(1<\kappa<85/23\) and build a sine-clustered \(s\)-grid;
+1. choose a specified finite window in \(\kappa>1\) and build a sine-clustered \(s\)-grid;
 2. precompute the four basis functions by fixed Gauss quadrature;
 3. choose three separated grid locations and obtain the projective
    \(\mu\)-direction in the nullspace of their \(3\times4\) basis matrix;
-4. apply Zhao's exact \(\beta_0\)-strip and \(P_2(\beta_0)\) filters;
+4. numerically evaluate the corrected necessary \(\beta_0\)-strip and \(P_2(\beta_0)\) filters;
 5. count robust sign changes, refine brackets at higher quadrature order, and
    record root slopes and conditioning.
 
@@ -26,7 +26,7 @@ A retained leader must pass, in order:
 - evaluate the same points at 80, 160, and 320 decimal digits;
 - recursively subdivide wherever an interval contains a sign change or where
   \(|I|/\|\mu\cdot B\|\) is below the conditioning threshold;
-- isolate roots with Brent only for ranking, then interval Newton for proof;
+- isolate roots with Brent for ranking, then use rigorous sign enclosures and the multiplicity bound (or interval Newton) for proof;
 - estimate \(I'\), reject a slope that trends to zero under precision
   doubling, and report distance from both endpoints;
 - perturb each of \(\kappa\) and three local projective coordinates, tracking
@@ -37,7 +37,10 @@ Surrogates may interpolate the four basis functions and rank boxes. They may
 not reject a box unless an outward error enclosure makes the rejection
 rigorous.
 
-## Tiny strike performed
+## Historical tiny strike performed
+
+The saved data used filters since corrected in Q4_PARAMETERIZATION.md.
+Its retained/rejected labels are historical, not sound analytic exclusions.
 
 The only exploratory run in this audit was:
 
@@ -53,7 +56,7 @@ endpoint. The third lost its brackets when quadrature order changed, exposing
 the expected ill-conditioning failure mode.
 
 This sample is far too small and too deliberately structured to estimate a
-frequency of five-zero functions. It validates throughput, pruning,
+frequency of five-zero functions. It validates throughput,
 deduplication, and promotion failure handling. It is a lead generator, not an
 exclusion and not a search result about the conjecture.
 
@@ -62,7 +65,7 @@ exclusion and not a search result about the conjecture.
 The first real campaign should continue the manifold of triple-zero
 directions in coordinates \((\kappa,r_1,r_2,r_3)\), watching for either:
 
-- two additional sign-change pairs;
+- one additional pair of simple zeros;
 - a new double root \(I=I_s=0\), across which root count may change by two;
 - a root entering from a controlled endpoint expansion.
 
@@ -74,5 +77,6 @@ root count from binary64 values.
 
 Stop a tranche on its CPU fuse, any five-root lead, or proof that the retained
 component has at most three roots. Freeze all leaders and failure labels.
-Never roll unused time into \(\kappa\ge85/23\), generic quadratic coefficients,
-or an endpoint with no asymptotic chart.
+The current session does not authorize a production tranche. Do not expand
+computation beyond its explicitly chosen small experiment, or use an endpoint
+without an asymptotic chart. There is no analytic exclusion at kappa=85/23.

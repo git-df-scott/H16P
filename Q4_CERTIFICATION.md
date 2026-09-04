@@ -6,6 +6,11 @@ replaced by plotting.
 
 ## Layer 1: interval Abelian zeros
 
+**Astra correction:** Six rigorous alternating signs, together with Zhao's
+multiplicity upper bound, already prove exactly five simple zeros. Derivative
+and interval-Newton checks below are optional strengthening. See
+[Q4_CERTIFICATE_PLAN.md](Q4_CERTIFICATE_PLAN.md).
+
 Input exact rational \(\kappa,\mu_1,\ldots,\mu_4\), or narrow rational
 outward enclosures. Give five disjoint rational intervals
 \(S_i=[a_i,b_i]\Subset(1,\kappa)\).
@@ -30,8 +35,9 @@ signs, and the interval-Newton inclusion
 
 This proves one and only one simple root in each box. Pairwise disjoint boxes
 prove five distinct roots. For “at least five,” nothing needs to be proved
-about the remaining interval. A claim of exactly five additionally needs
-monotonicity subdivision of the complement and endpoint treatment.
+about the remaining interval. With Zhao's global multiplicity bound, this also proves exactly five without
+subdividing the complement. Without invoking that bound, an independent exact
+count would require complement and endpoint analysis.
 
 The homoclinic endpoint has logarithmic terms; the center endpoint has a
 regular Taylor series. Use Zhao's explicit expansions with interval remainder

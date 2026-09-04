@@ -20,22 +20,32 @@ from scipy.optimize import brentq
 from q4_integrals import alpha_beta_from_mu, basis_float, canonical_mu
 
 
-KAPPA_MAX = 85.0 / 23.0
+def zhao_reduced_filter(kappa, alpha_beta):
+    """Necessary five-zero tests in Zhao's reduced coefficients.
 
-
-def zhao_five_filter(kappa, mu, tolerance=1.0e-12):
-    a0, a1, a2, b0, b1 = alpha_beta_from_mu(kappa, mu)
-    if abs(b1) <= tolerance:
+    Rational inputs stay exact.  The lower strip endpoint in Theorem 14's
+    printed statement has its sign reversed; Proposition 17 and the endpoint
+    derivative give (54 - 23*kappa)/31.  The convexity test also needs a cube
+    on (1-beta0), obtained by differentiating P2(s)/(s-beta0) twice.
+    Passing these tests does not establish that five zeros exist.
+    """
+    a0, a1, a2, b0, b1 = alpha_beta
+    if b1 == 0:
         return False, "beta1_zero"
     a0, a1, a2, beta0 = a0 / b1, a1 / b1, a2 / b1, b0 / b1
-    lower = (23.0 * kappa - 54.0) / 31.0
-    if not lower < beta0 < 1.0:
+    lower = (54 - 23 * kappa) / 31
+    if not lower < beta0 < 1:
         return False, "beta0_strip"
     p_beta = a2 * beta0**2 + a1 * beta0 + a0
-    threshold = 25.0 * (1.0 - beta0) / (432.0 * (kappa - 1.0) ** 2)
-    if p_beta < threshold:
+    threshold = 25 * (1 - beta0) ** 3 / (432 * (kappa - 1) ** 2)
+    if p_beta <= threshold:
         return False, "zhao_comment_bound"
     return True, "survives"
+
+
+def zhao_five_filter(kappa, mu):
+    """Nonrigorous float screen; small nonzero beta1 is not exact zero."""
+    return zhao_reduced_filter(kappa, alpha_beta_from_mu(kappa, mu))
 
 
 def normalized_grid(kappa, points):
@@ -122,8 +132,8 @@ def run_search(args):
         raise SystemExit("smoke mode fuse: --cpu-hours must be <= 0.1")
     if not (0.0 < args.cpu_hours <= args.max_cpu_hours):
         raise SystemExit("invalid CPU budget")
-    if args.kappa_min <= 1 or args.kappa_max >= KAPPA_MAX:
-        raise SystemExit(f"require 1 < kappa_min < kappa_max < 85/23={KAPPA_MAX}")
+    if not 1 < args.kappa_min < args.kappa_max:
+        raise SystemExit("require 1 < kappa_min < kappa_max")
 
     rng = np.random.default_rng(args.seed)
     started_wall = time.monotonic()
@@ -192,6 +202,7 @@ def run_search(args):
     wall = time.monotonic() - started_wall
     return {
         "status": "NONRIGOROUS_SCREEN_ONLY",
+        "pruning_version": "zhao-corrected-2026-09-04",
         "mode": args.mode,
         "seed": args.seed,
         "requested_cpu_hours": args.cpu_hours,

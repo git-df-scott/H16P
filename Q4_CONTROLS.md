@@ -35,8 +35,9 @@ The 70-digit construction residuals at the three forced values are all below
 \(1.8\times10^{-69}\).
 
 The maximum reproduced Q4 zero count is therefore **three**, matching the
-published lower bound. This control is outside the \(\kappa<85/23\)
-five-candidate strip; it validates integral evaluation, not the filter.
+published lower bound. The earlier claim that kappa=4 lies outside every five-candidate strip was
+incorrect. The corrected strip in Q4_PARAMETERIZATION.md is nonempty at
+kappa=4. This control validates integral evaluation; it is not a five-zero lead.
 
 ## Exact negative control
 

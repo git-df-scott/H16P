@@ -1,5 +1,18 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Astra reasoning strike, 2026-09-04
+
+Read [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md) for the current result.
+The new structural reduction makes the auxiliary geometry independent
+of kappa and excludes open neighborhoods of its interior cusp from
+producing five original zeros. Q4 remains live; no five-zero candidate
+has been found. The previous finite kappa cutoff and linear P2 filter
+are corrected. Production-search commands are superseded.
+
+- [Q4_STRUCTURE.md](Q4_STRUCTURE.md)
+- [Q4_ZERO_GEOMETRY.md](Q4_ZERO_GEOMETRY.md)
+- [Q4_CERTIFICATE_PLAN.md](Q4_CERTIFICATE_PLAN.md)
+
 Audit date: **2026-09-04**. Scope: real planar polynomial vector fields
 
 \[

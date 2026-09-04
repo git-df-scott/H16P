@@ -18,3 +18,13 @@ triple-zero coefficient directions, and records conditioning diagnostics.
 
 All generated output is explicitly nonrigorous. The interval and Poincaré
 JSON schemas define promotion interfaces; they do not contain certificates.
+
+## Astra reasoning replay
+
+The current handoff replaces production sweeps with bounded reasoning.
+Run python q4/q4_structure_checks.py for the exact symbolic checks and
+three diagnostic period evaluations. It fixes numerical libraries to one
+thread and has a ten-second CPU ceiling. Run python q4/test_q4.py for the
+corrected-filter regressions. Neither command launches a candidate search.
+Historical smoke records predate the corrected filters; see the root
+Q4_STRUCTURE.md and Q4_PARAMETERIZATION.md.

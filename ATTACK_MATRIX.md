@@ -1,5 +1,7 @@
 # Astra feasibility and attack matrix
 
+> **2026-09-04 correction:** This is retained preparation history. The sign-reversed beta strip, finite kappa cutoff and linear P2 threshold below are superseded by [Q4_PARAMETERIZATION.md](Q4_PARAMETERIZATION.md). Historical timings and data are preserved; the user has replaced production-search instructions with bounded reasoning. See [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md).
+
 ## Scores
 
 For `literature saturation` and `near-miss risk`, a high score is adverse; for
