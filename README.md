@@ -1,8 +1,20 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Astra second strike, 2026-09-04
+
+Read [ASTRA_SECOND_STRIKE.md](ASTRA_SECOND_STRIKE.md) for the latest result.
+The weighted-lobe region is a bounded analytic cell with an explicit rational
+interior box. Exact Green reconstruction excludes that box for every kappa.
+Every five-zero target must have its first primitive root after `5/11` and
+`kappa>21636/19043`. No five-zero candidate was found; Q4 remains live.
+
+- [Q4_LOBE_REGION.md](Q4_LOBE_REGION.md)
+- [Q4_RECONSTRUCTION_GEOMETRY.md](Q4_RECONSTRUCTION_GEOMETRY.md)
+- [Second-strike verification](q4/data/second_verification.txt)
+
 ## Astra reasoning strike, 2026-09-04
 
-Read [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md) for the current result.
+Read [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md) for the inherited result.
 The new structural reduction makes the auxiliary geometry independent
 of kappa and excludes open neighborhoods of its interior cusp from
 producing five original zeros. Q4 remains live; no five-zero candidate

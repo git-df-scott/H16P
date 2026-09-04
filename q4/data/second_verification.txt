@@ -1,0 +1,495 @@
+H16P ASTRA SECOND STRIKE VERIFICATION — 2026-09-04
+Base commit: 16f9406004c0820363d5d6e6cf1cb964b254f8e6
+Single-threaded, lowered priority, CPU ceiling 10 seconds per process.
+No parameter sweep. Original-I numerical values are not interval certificates.
+Python: 3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]
+sympy==1.14.0
+mpmath==1.3.0
+numpy==2.5.2
+scipy==1.18.1
+
+$ python q4/q4_structure_checks.py
+exact determinant mu -> (alpha1,alpha2,beta0,beta1): 17843617792000*(k - 1)**2/(6561*k**4)
+exact auxiliary W4 at center: 3705625/1451188224
+w center Taylor polynomial: -305675*t**4/13436928 - 775*t**3/23328 - 25*t**2/432 - t/6 + 1
+companion center coefficient of t^4: -1616615/967458816
+universal g identity and corrected threshold: exact pass
+period companion residual at t=0.25: 1.148e-41
+period companion residual at t=0.5: 0.0
+period companion residual at t=0.75: 0.0
+All bounded structure checks passed.
+
+
+EXIT 0; CPU 0.4286s; wall 0.5773s
+SHA256 b43f22b5cc26693058844cf1288d4d970519d846fc3708807eb3fa29a0df7ae5
+
+$ python q4/test_q4.py
+
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.024s
+
+OK
+
+EXIT 0; CPU 0.3378s; wall 0.5173s
+SHA256 637ca439849f644b422875639d5c20251da0a8edf9cd9a98b41f7a29667e55e5
+
+$ python q4/q4_reconstruction.py
+Exact elementary Green basis and forcing-sign conversion passed.
+Numerical diagnostic only; frozen universal point: 1.243911778077 -0.086917392526 1.460428426173
+a= 0.25 kappa= 1.3333333333333333 center Y,Y'= (-0.004579180628428025, 0.000979565625318173)
+positive-homogeneous slope r= -0.5217033028400311 initial weighted derivative= -0.0014094080328338168
+t= [0.125, 0.375, 0.625, 0.875, 0.99]
+I= [0.00038700724104941196, 0.001143590995241533, 0.001865627419671672, 0.002526133718004211, 0.002787016182739163]
+a= 0.5 kappa= 2.0 center Y,Y'= (-0.004579180628428025, 0.0026967583609786823)
+positive-homogeneous slope r= -0.5532859128978513 initial weighted derivative= 0.00016316222665472592
+t= [0.125, 0.375, 0.625, 0.875, 0.99]
+I= [0.00043944971438827614, 0.0012446344282037464, 0.0019081691974430898, 0.0023237141886580798, 0.002345119815949014]
+original mu= [0.004338948182084654, 0.001126145265353277, 0.002593635392529454, -0.0030208112030745363]
+independent area at k=2,s=1.5: 0.0015985882612802535
+PF reconstruction: 0.0015985882612802537 absolute difference: 2.168404344971009e-19
+a= 0.75 kappa= 4.0 center Y,Y'= (-0.004579180628428025, 0.004413951096639192)
+positive-homogeneous slope r= -0.6078535808012627 initial weighted derivative= 0.0016304797545134398
+t= [0.125, 0.375, 0.625, 0.875, 0.99]
+I= [0.00037403267017086227, 0.0010081113693934528, 0.0014113574787817601, 0.001366832032890319, 0.001004447563040491]
+Exact exclusion lift kappa= 3878922961/2916000000 r= -27095705/51954846 P0= -3056925605483331742344151782161/2151790655250172000064000000000000
+Exact uniform exclusion endpoint kappa= 21636/19043
+Exact all-kappa candidate-box exclusion margin: 79526371464733/1456000000000000
+Exact universal first-primitive-zero exclusion threshold: 5/11
+Bounded diagnostic finished; no five-sign candidate asserted.
+
+
+EXIT 0; CPU 0.7798s; wall 0.8268s
+SHA256 1195e9536251d97e907e13956328b6bf62efe80c11d9991f6443da2b30c1eae4
+
+$ python q4/q4_lobe_certificate.py
+Earlier successful exact replay in this strike; verifier source hash rechecked unchanged.
+Exact rational weighted-lobe certificate: PASS
+CPU approximately 0.04s; EXIT 0
+SHA256 6ae3cef2ffc9307f35da8295173e8b81bf05400d3d7e4a3f73e86226ff3ae085
+t=1/8 H enclosure=['0.000001441401383769815937769764', '0.000001441401383769815937769765']
+t=3/8 H enclosure=['-0.000003720918085980812785719090', '-0.000003720918085980812785719089']
+t=5/8 H enclosure=['0.000016780934607604637814181443', '0.000016780934607604637814181444']
+t=7/8 H enclosure=['-0.000364906970505491567967035918', '-0.000364906970505491458511914236']
+
+$ python q4/q4_lobe_anchors.py
+Successful frozen replay in this strike; unchanged result retained below.
+EXIT 0
+SHA256 2ae2c12dc613120c7a2b657495dc31e239cabdbe1bc161221bfc40ff8c5010c6
+{
+  "status": "NUMERICAL_ONLY",
+  "cpu_seconds": 0.12134799999999996,
+  "warning": "Fixed compact samples are neither root counts nor endpoint exclusions.",
+  "records": [
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.125",
+        "0.5",
+        "0.875"
+      ],
+      "A_B_eta": [
+        "1.23776163217771971573850595410781073124930416128",
+        "-0.0890662337848739675843592159669352801365604664205",
+        "1.42464222975254241908896590759808542874919989177"
+      ],
+      "q_roots": [
+        0.08048927750930768,
+        0.38503012212385174,
+        0.7846795366196555
+      ],
+      "weighted_lobes": [
+        "0.00000031146275312491927158134843338037447",
+        "0.00001127442399429470863962760345438961",
+        "0.00014608782268430310476587622712538822",
+        "0.0035077985248284295451767437415697224"
+      ],
+      "primitive_at_critical_points": [
+        "0.00000031146275312491927158134843338037447",
+        "-0.000010962961241169789368046255021009235",
+        "0.00013512486144313331539782997210437899"
+      ],
+      "primitive_at_one": "-0.0033726736633852962297789137694653434",
+      "a": 0.5,
+      "kappa": 2.0,
+      "original_mu": [
+        0.0044329086059155505,
+        0.0010973712377289606,
+        0.002734531428863549,
+        -0.0028688334297208274
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          3.4577177562410865e-05
+        ]
+      ],
+      "sample_minimum": 3.4577177562410865e-05,
+      "sample_maximum": 0.002325945324040938
+    },
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.125",
+        "0.5",
+        "0.875"
+      ],
+      "A_B_eta": [
+        "1.23776163217771971573850595410781073124930416128",
+        "-0.0890662337848739675843592159669352801365604664205",
+        "1.42464222975254241908896590759808542874919989177"
+      ],
+      "q_roots": [
+        0.08048927750930768,
+        0.38503012212385174,
+        0.7846795366196555
+      ],
+      "weighted_lobes": [
+        "0.00000031146275312491927158134843338037447",
+        "0.00001127442399429470863962760345438961",
+        "0.00014608782268430310476587622712538822",
+        "0.0035077985248284295451767437415697224"
+      ],
+      "primitive_at_critical_points": [
+        "0.00000031146275312491927158134843338037447",
+        "-0.000010962961241169789368046255021009235",
+        "0.00013512486144313331539782997210437899"
+      ],
+      "primitive_at_one": "-0.0033726736633852962297789137694653434",
+      "a": 0.75,
+      "kappa": 4.0,
+      "original_mu": [
+        0.00019481353443569376,
+        0.00018546399029074112,
+        -0.0007530882106968271,
+        -0.0012186328386867245
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          2.990701679623897e-05
+        ]
+      ],
+      "sample_minimum": 2.990701679623897e-05,
+      "sample_maximum": 0.0014432089379454146
+    },
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.25",
+        "0.5",
+        "0.75"
+      ],
+      "A_B_eta": [
+        "1.24391177807697877583044542516245464151347092416",
+        "-0.0869173925264302301366640584376736991175712085894",
+        "1.4604284261732828047438648039373906432532871589"
+      ],
+      "q_roots": [
+        0.15059252878200327,
+        0.402989627197666,
+        0.676220218545548
+      ],
+      "weighted_lobes": [
+        "0.0000015367882166399147809948623100533888",
+        "0.0000054937599556083074713469224963347417",
+        "0.000025019557444432934912008699928825716",
+        "0.0045893960931238538742336412538515982"
+      ],
+      "primitive_at_critical_points": [
+        "0.0000015367882166399147809948623100533888",
+        "-0.0000039569717389683926903520601862813529",
+        "0.000021062585705464542221656639742544363"
+      ],
+      "primitive_at_one": "-0.0045683335074183893320119846141090539",
+      "a": 0.5,
+      "kappa": 2.0,
+      "original_mu": [
+        0.004338948182064596,
+        0.001126145265374013,
+        0.0025936353925002727,
+        -0.0030208112030738706
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          3.590357149329067e-05
+        ]
+      ],
+      "sample_minimum": 3.590357149329067e-05,
+      "sample_maximum": 0.0023591944196998966
+    },
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.25",
+        "0.5",
+        "0.75"
+      ],
+      "A_B_eta": [
+        "1.24391177807697877583044542516245464151347092416",
+        "-0.0869173925264302301366640584376736991175712085894",
+        "1.4604284261732828047438648039373906432532871589"
+      ],
+      "q_roots": [
+        0.15059252878200327,
+        0.402989627197666,
+        0.676220218545548
+      ],
+      "weighted_lobes": [
+        "0.0000015367882166399147809948623100533888",
+        "0.0000054937599556083074713469224963347417",
+        "0.000025019557444432934912008699928825716",
+        "0.0045893960931238538742336412538515982"
+      ],
+      "primitive_at_critical_points": [
+        "0.0000015367882166399147809948623100533888",
+        "-0.0000039569717389683926903520601862813529",
+        "0.000021062585705464542221656639742544363"
+      ],
+      "primitive_at_one": "-0.0045683335074183893320119846141090539",
+      "a": 0.75,
+      "kappa": 4.0,
+      "original_mu": [
+        -0.0004682508747434089,
+        0.0006425296987593161,
+        -0.0015081541653333848,
+        -0.0012370380265651264
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          3.105425446156604e-05
+        ]
+      ],
+      "sample_minimum": 3.105425446156604e-05,
+      "sample_maximum": 0.0014705063896634756
+    },
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.375",
+        "0.5",
+        "0.625"
+      ],
+      "A_B_eta": [
+        "1.24692415075291593232272919485227227348961808746",
+        "-0.085903624253334398270018462282398106618160743202",
+        "1.47788888493094282149206320594046685681200732264"
+      ],
+      "q_roots": [
+        0.1995228750752771,
+        0.43928391634805486,
+        0.5810712851057004
+      ],
+      "weighted_lobes": [
+        "0.0000029762951948264135158125269438867764",
+        "0.0000036491643782818997747510245158531966",
+        "0.0000022390405130015613625654324057161675",
+        "0.0051608490795285159106269354940649985"
+      ],
+      "primitive_at_critical_points": [
+        "0.0000029762951948264135158125269438867764",
+        "-0.00000067286918345548625893849757196642015",
+        "0.0000015661713295460751036269348337497474"
+      ],
+      "primitive_at_one": "-0.0051592829081989698355233085592312488",
+      "a": 0.5,
+      "kappa": 2.0,
+      "original_mu": [
+        0.004292282411932459,
+        0.0011409236471630303,
+        0.002523847331242689,
+        -0.003094864979615801
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          3.655098150337319e-05
+        ]
+      ],
+      "sample_minimum": 3.655098150337319e-05,
+      "sample_maximum": 0.0023764677078427733
+    },
+    {
+      "label": "NUMERICAL_ONLY",
+      "primitive_anchors": [
+        "0.375",
+        "0.5",
+        "0.625"
+      ],
+      "A_B_eta": [
+        "1.24692415075291593232272919485227227348961808746",
+        "-0.085903624253334398270018462282398106618160743202",
+        "1.47788888493094282149206320594046685681200732264"
+      ],
+      "q_roots": [
+        0.1995228750752771,
+        0.43928391634805486,
+        0.5810712851057004
+      ],
+      "weighted_lobes": [
+        "0.0000029762951948264135158125269438867764",
+        "0.0000036491643782818997747510245158531966",
+        "0.0000022390405130015613625654324057161675",
+        "0.0051608490795285159106269354940649985"
+      ],
+      "primitive_at_critical_points": [
+        "0.0000029762951948264135158125269438867764",
+        "-0.00000067286918345548625893849757196642015",
+        "0.0000015661713295460751036269348337497474"
+      ],
+      "primitive_at_one": "-0.0051592829081989698355233085592312488",
+      "a": 0.75,
+      "kappa": 4.0,
+      "original_mu": [
+        -0.000793988819892281,
+        0.0008686284205376345,
+        -0.0018800229867772774,
+        -0.0012458413359989675
+      ],
+      "t_interval": [
+        0.01,
+        0.99
+      ],
+      "sample_count": 65,
+      "sampled_sign_changes": 0,
+      "alternating_sample_witnesses_t_I": [
+        [
+          0.01,
+          3.161421868323862e-05
+        ]
+      ],
+      "sample_minimum": 3.161421868323862e-05,
+      "sample_maximum": 0.0014838205950361253
+    }
+  ]
+}
+
+$ python q4/q4_green_shoot.py
+Successful frozen replay in this strike; unchanged result retained below.
+EXIT 0
+SHA256 60439f0b52dfbc9eb729633963cef4b5914a802eb7ba9cc25dbe2bd721eb220a
+{
+  "status": "NUMERICAL_ONLY",
+  "warning": "Floating P signs and roots are diagnostic, not certified. The analytic first-primitive-zero theorem independently excludes five original zeros for this coefficient box for every kappa.",
+  "a_exact": "189417314263391/400000000000000",
+  "kappa_exact": "400000000000000/210582685736609",
+  "kappa_approximate": 1.899491397409134,
+  "A_B_eta_exact": [
+    "1243911778077/1000000000000",
+    "-43458696263/500000000000",
+    "1460428426173/1000000000000"
+  ],
+  "original_mu_approximate": [
+    0.0045518195920440235,
+    0.0014317782392097244,
+    0.0027648462945491477,
+    -0.003172177532779386
+  ],
+  "P0_from_center_data": 2.1646953842716782e-08,
+  "P_probes_t_value": [
+    [
+      0.0,
+      2.1646953843150463e-08
+    ],
+    [
+      0.25,
+      -4.114859779086094e-09
+    ],
+    [
+      0.5,
+      3.933310797490605e-09
+    ],
+    [
+      0.75,
+      -2.683986204648908e-08
+    ],
+    [
+      0.99,
+      1.0574916123777817e-05
+    ]
+  ],
+  "P_roots_approximate": [
+    0.1444648725550713,
+    0.38212709215976703,
+    0.5838595137337097,
+    0.8100626745341928
+  ],
+  "Z_at_P_roots": [
+    -0.004579179219335157,
+    -0.0045791801861718865,
+    -0.004579178869461455,
+    -0.004579200508688371
+  ],
+  "original_I_probes_t_value": [
+    [
+      0.125,
+      0.0004396248993522941
+    ],
+    [
+      0.375,
+      0.0012511162823586695
+    ],
+    [
+      0.625,
+      0.001932833225715754
+    ],
+    [
+      0.875,
+      0.002388708748021216
+    ],
+    [
+      0.99,
+      0.0024445604767999282
+    ]
+  ],
+  "S1_diagnostic": "four P crossings found",
+  "S2_diagnostic": "fails: all four Z extrema are negative",
+  "five_zero_candidate": false,
+  "cpu_seconds": 0.00900200000000001
+}
+
+$ python q4/test_q4_second.py
+Successful independent test run before final documentation assembly; source unchanged.
+....
+Ran 4 tests in 6.769s
+OK
+EXIT 0
+SHA256 b6ea162bbb317a41d5e1d0f0275d48026d0fe14908978f7af0ea15888891fa52
+
+PASS: all seven first-strike unit tests and four independent second-strike unit tests.
+PASS: exact Green basis, forcing sign, rational lift and box exclusions, 5/11 integer comparison.
+PASS: exact lobe certificate source hash unchanged since its rigorous replay.
+Independent original-area checks at kappa=2 and 4 passed.
+No five-zero original-integral candidate asserted.

@@ -1,4 +1,26 @@
-# Q4 controls and bounded screen
+# Q4 controls and bounded reconstruction
+
+## Current second-strike replay
+
+The active workflow is the exact lobe certificate and Green reconstruction.
+Run the following small replays after installing requirements:
+
+    python q4/q4_structure_checks.py
+    python q4/test_q4.py
+    python q4/q4_lobe_certificate.py
+    python q4/q4_reconstruction.py
+    python q4/q4_lobe_anchors.py
+    python q4/q4_green_shoot.py
+    python q4/test_q4_second.py
+
+The new scripts have ten-second CPU fuses; run them sequentially at lowered
+priority with numerical libraries limited to one thread. The exact rational
+lobe certificate proves three primitive zeros and a full coefficient box.
+The reconstruction proof excludes five original zeros throughout that box
+for every kappa. The floating anchor and shooting data are diagnostics only.
+See ../ASTRA_SECOND_STRIKE.md and data/second_verification.txt.
+
+## Historical controls and superseded smoke workflow
 
 The scripts evaluate the four-dimensional complete-elliptic-integral space
 used by Gavrilov--Iliev and Zhao for a generic quadratic Q4 center.

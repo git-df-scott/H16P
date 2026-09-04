@@ -1,0 +1,100 @@
+{
+  "format": "H16P-Q4-LOBE-CERTIFICATE-v1",
+  "status": "RIGOROUS_UNIVERSAL_PRIMITIVE_ONLY",
+  "parameters": {
+    "A": "1243911778077/1000000000000",
+    "B": "-86917392526/1000000000000",
+    "eta": "1460428426173/1000000000000"
+  },
+  "evaluator": {
+    "arithmetic": "Python fractions.Fraction and integer rounding",
+    "last_included_index_N": 256,
+    "decimal_places": 30,
+    "error_bound": "positive hypergeometric coefficient geometric majorant",
+    "script_sha256": "6ae3cef2ffc9307f35da8295173e8b81bf05400d3d7e4a3f73e86226ff3ae085"
+  },
+  "witnesses": [
+    {
+      "t": "1/8",
+      "H_enclosure": [
+        "0.000001441401383769815937769764",
+        "0.000001441401383769815937769765"
+      ],
+      "certified_sign": 1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "3/8",
+      "H_enclosure": [
+        "-0.000003720918085980812785719090",
+        "-0.000003720918085980812785719089"
+      ],
+      "certified_sign": -1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "5/8",
+      "H_enclosure": [
+        "0.000016780934607604637814181443",
+        "0.000016780934607604637814181444"
+      ],
+      "certified_sign": 1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "7/8",
+      "H_enclosure": [
+        "-0.000364906970505491567967035918",
+        "-0.000364906970505491458511914236"
+      ],
+      "certified_sign": -1,
+      "absolute_tail_upper_bound": "0.000000000000000000054727560841"
+    }
+  ],
+  "primitive_root_intervals": [
+    {
+      "endpoints": [
+        "1/8",
+        "3/8"
+      ],
+      "open": true
+    },
+    {
+      "endpoints": [
+        "3/8",
+        "5/8"
+      ],
+      "open": true
+    },
+    {
+      "endpoints": [
+        "5/8",
+        "7/8"
+      ],
+      "open": true
+    }
+  ],
+  "exact_checks": {
+    "eta_in_corrected_strip": true,
+    "q_at_zero": "1014080763/2000000000000",
+    "pi_times_H_at_one": "-1908010250631/132945312500000"
+  },
+  "certified_parameter_box": {
+    "center": {
+      "A": "1243911778077/1000000000000",
+      "B": "-86917392526/1000000000000",
+      "eta": "1460428426173/1000000000000"
+    },
+    "closed_linf_radius": "1/10000000",
+    "uniform_witness_perturbation_bound": "1519/1920000000",
+    "base_point_absolute_sign_margin_greater_than": "1/1000000",
+    "entire_box_satisfies_all_three_strict_lobe_inequalities": true
+  },
+  "proved_using_Q4_STRUCTURE_and_anchored_Rolle": {
+    "primitive_distinct_simple_interior_zeros": 3,
+    "auxiliary_q_distinct_simple_interior_zeros": 3,
+    "all_three_strict_weighted_lobe_inequalities": true,
+    "lobe_region_has_an_explicit_rational_interior_point": true
+  },
+  "original_Abelian_integral_five_zero_claim": false
+}

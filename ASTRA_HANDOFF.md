@@ -1,4 +1,4 @@
-# Astra handoff: reasoning strike, 2026-09-04
+# Astra handoff: second strike, 2026-09-04
 
 The latest user instruction authorizes reasoning and small local checks.
 It supersedes the previous 24-CPU-hour tranche. Do not launch a sweep from
@@ -35,11 +35,20 @@ for every kappa>1. This does not exclude Q4 globally.
 
 ## Single next task
 
-Determine whether the kappa-dependent lift from the universal auxiliary
-space to the original I can attain all five zeros. Start with its exact
-center data and Green operator; prove or refute preservation of the
-Chebyshev property. Use the weighted-lobe criterion to reject directions
-already failing to give three zeros of script-F. No coefficient sweep.
+Read ASTRA_SECOND_STRIKE.md, Q4_LOBE_REGION.md and
+Q4_RECONSTRUCTION_GEOMETRY.md. The lobe region is now a bounded analytic
+cell with an explicit rational interior box; that entire box is rigorously
+excluded from five original zeros for every kappa. The corrected Green
+forcing has a minus sign. All previous strip and cubic-filter corrections
+remain binding.
+
+Use the exact primitive-root chart with 5/11<y1<y2<y3<1 and
+kappa>21636/19043 to force the first positive Green maximum in (S2),
+subject to all of (S1). Then target one guarded ordinary-double extremum
+height in (S3), or six alternating original signs. Derive delayed-root/loop
+asymptotics before bounded continuation. No coefficient sweep. The exact
+shooting inequalities are still unresolved; no five-zero candidate or
+three-simple-plus-double point has been found.
 
 ## Promotion
 

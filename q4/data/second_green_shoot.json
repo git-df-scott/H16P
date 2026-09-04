@@ -1,0 +1,79 @@
+{
+  "status": "NUMERICAL_ONLY",
+  "warning": "Floating P signs and roots are diagnostic, not certified. The analytic first-primitive-zero theorem independently excludes five original zeros for this coefficient box for every kappa.",
+  "a_exact": "189417314263391/400000000000000",
+  "kappa_exact": "400000000000000/210582685736609",
+  "kappa_approximate": 1.899491397409134,
+  "A_B_eta_exact": [
+    "1243911778077/1000000000000",
+    "-43458696263/500000000000",
+    "1460428426173/1000000000000"
+  ],
+  "original_mu_approximate": [
+    0.0045518195920440235,
+    0.0014317782392097244,
+    0.0027648462945491477,
+    -0.003172177532779386
+  ],
+  "P0_from_center_data": 2.1646953842716782e-08,
+  "P_probes_t_value": [
+    [
+      0.0,
+      2.1646953843150463e-08
+    ],
+    [
+      0.25,
+      -4.114859779086094e-09
+    ],
+    [
+      0.5,
+      3.933310797490605e-09
+    ],
+    [
+      0.75,
+      -2.683986204648908e-08
+    ],
+    [
+      0.99,
+      1.0574916123777817e-05
+    ]
+  ],
+  "P_roots_approximate": [
+    0.1444648725550713,
+    0.38212709215976703,
+    0.5838595137337097,
+    0.8100626745341928
+  ],
+  "Z_at_P_roots": [
+    -0.004579179219335157,
+    -0.0045791801861718865,
+    -0.004579178869461455,
+    -0.004579200508688371
+  ],
+  "original_I_probes_t_value": [
+    [
+      0.125,
+      0.0004396248993522941
+    ],
+    [
+      0.375,
+      0.0012511162823586695
+    ],
+    [
+      0.625,
+      0.001932833225715754
+    ],
+    [
+      0.875,
+      0.002388708748021216
+    ],
+    [
+      0.99,
+      0.0024445604767999282
+    ]
+  ],
+  "S1_diagnostic": "four P crossings found",
+  "S2_diagnostic": "fails: all four Z extrema are negative",
+  "five_zero_candidate": false,
+  "cpu_seconds": 0.00900200000000001
+}
