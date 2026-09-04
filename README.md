@@ -1,5 +1,16 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Claude adversarial audit of Astra Strikes 1–3, 2026-09-04
+
+Read [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md) and
+[FASTRA_H16_HANDOFF.md](FASTRA_H16_HANDOFF.md). All three strikes survive
+independent hostile verification with no correction to the canon. A new
+tuning-independent necessary condition for five zeros, `Phi(tau_1)>0`, fails
+by 60–99.99% at every point examined and tends to equality only in the
+double limit where (S1) fails. The proposed `Y=Y'=0` search is not
+justified; Strike #4 is re-targeted at an exclusion theorem (`Z_distinct<=4`
+for Q4). Independent checkers: [`audit/`](audit/).
+
 ## Astra second strike, 2026-09-04
 
 Read [ASTRA_SECOND_STRIKE.md](ASTRA_SECOND_STRIKE.md) for the latest result.

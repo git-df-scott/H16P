@@ -1,5 +1,11 @@
 # Astra handoff: second strike, 2026-09-04
 
+> **2026-09-04, Claude audit:** this handoff's "single next task" and the
+> third strike's proposed `Y=Y'=0` search are superseded by
+> [FASTRA_H16_HANDOFF.md](FASTRA_H16_HANDOFF.md). Every mathematical
+> statement below was verified and remains binding; the strategic
+> recommendation changed. See [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md).
+
 The latest user instruction authorizes reasoning and small local checks.
 It supersedes the previous 24-CPU-hour tranche. Do not launch a sweep from
 this handoff. The old command remains in git history.

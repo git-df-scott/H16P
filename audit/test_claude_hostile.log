@@ -1,0 +1,11 @@
+test_boundary_controls (__main__.ClaudeHostileTests.test_boundary_controls) ... ok
+test_endpoint_identities (__main__.ClaudeHostileTests.test_endpoint_identities) ... ok
+test_reconstruction_random (__main__.ClaudeHostileTests.test_reconstruction_random) ... ok
+test_strike1_identities (__main__.ClaudeHostileTests.test_strike1_identities) ... ok
+test_strike2_ingredients (__main__.ClaudeHostileTests.test_strike2_ingredients) ... ok
+test_threshold_certificate (__main__.ClaudeHostileTests.test_threshold_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 70.907s
+
+OK
