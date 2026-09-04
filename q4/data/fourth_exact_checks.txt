@@ -1,0 +1,18 @@
+Strike 4 exact identity replay — 2026-09-04
+Base canon: 084fae3
+Each process: reduced priority, 10 CPU second ceiling, one numerical thread.
+These exact checks supplement the analytic proof in Q4_THEOREM_N.md.
+
+$ python q4/check_N_kernel.py
+EXACT PASS: homogeneous conjugation, center normalization, limiting solution, positive residual.
+Residual: (1-a)*(22-7*u^(2/3))/(6*u^(7/3)); positive for 0<a<1,0<u<1.
+CPU seconds: 0.121534
+Exit code: 0
+
+$ python q4/q4_N_loop_checks.py
+Exact moment-curve endpoint and maximal slope: PASS
+Exact center-functional ratios and positive 25/231 margin: PASS
+Exact corner center datum and endpoint gain cancellation: PASS
+Exact compact margin for delta=1/64: PASS (395/3784704)
+Global monotonicity and Theorem N: analytic proof in notes_N_loop.md
+Exit code: 0
