@@ -242,6 +242,18 @@ choice and becomes the backup.
   coefficient is dependent (route dead) or independent (route live), Astra
   re-verifies the derivation before Fable proceeds.
 
+## 6.1 Addendum: Astra's Strike 5 landed during the council
+
+Commit `6c96d70` (Q4_TWO_ROOT_REDUCTION.md) proves a two-anchor reduction
+for the outside-lobe four-zero case: the fibre is `H=(1-theta)B+theta C`,
+the center sign is mixed, several sectors are excluded, and the remaining
+test is one explicit determinant. No four-zero certificate. This is
+inherited by Fable's lane as the "four interior plus one endpoint"
+alternative: if the determinant criterion ever yields a four-zero Q4
+integral, its parameters go straight into the endpoint analysis. Astra's
+primary remains KKL; the two-anchor determinant is a bounded side task Astra
+may finish first if it is within an hour.
+
 ## 7. Evidence standard restated
 
 A numerical five-cycle candidate is not a counterexample. The final artifact
