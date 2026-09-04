@@ -57,6 +57,14 @@ with the compatibility conditions between the hierarchy of focus quantities
 and the loop-breaking direction. Do not run numerical searches; Claude owns
 the numerics.
 
+## Note added after the thought session
+
+Route inventory and reasoning are in
+[CLAUDE_THOUGHT_SESSION.md](CLAUDE_THOUGHT_SESSION.md). Claude owns the
+two surviving counterexample routes there (reversible centers with a loop
+and second focus; boundary graphics of cyclicity two on the order-3
+stratum). Astra's primary task is unchanged.
+
 ## Do not
 
 - Re-open the `Y=Y'=0` search, the lobe-region shots, or the corner
