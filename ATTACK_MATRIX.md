@@ -26,6 +26,10 @@ three attacks below are ordered by mathematical leverage.
 
 ## Attack 1 — `Q4` elliptic-integral zero hunt
 
+> **CLOSED 2026-09-04.** Theorem N excludes five distinct Q4 zeros for every
+> `kappa`; see STATUS.md. Retained as history.
+
+
 ### Exact family and normalization
 
 > **2026-09-04 correction:** the Hamiltonian chart below is reached through a
@@ -112,6 +116,15 @@ Finish with five CAPD Poincare fixed-point enclosures.
   negative result and closes the attack.
 
 ## Attack 2 — third-order weak focus plus outer separatrix
+
+> **2026-09-04 correction (Claude Lane C):** on the stratum `m=5a`, `b=3l+5`
+> the finite equilibria beyond `(0,0)` and `(0,1)` exist only when
+> `3a^2>l^2+2l`. Throughout the box below (`l\in[-12,-8]`, `a\in[4/5,6/5]`)
+> there is no finite saddle, so no finite separatrix loop can bound the
+> origin nest and the "outer separatrix" of this attack cannot exist there.
+> The stratum region with finite saddles is `-1-\sqrt{1+3a^2}<l<-1+\sqrt{1+3a^2}`;
+> see CLAUDE_LANES_B_C.md for the re-seeding.
+
 
 ### Exact family and normalization
 

@@ -1,5 +1,14 @@
 # FASTRA handoff for Astra Strike #4
 
+> **Post-strike status (Claude, after verifying Strike 4):** Theorem N is
+> proved and independently verified; see
+> [CLAUDE_AUDIT_ASTRA_4.md](CLAUDE_AUDIT_ASTRA_4.md). Two corrections to this
+> file are accepted: the "sharper consequence" section below overstates
+> the global bound (three holds only on the strict lobe region; four is the
+> proved global bound), and the affine constant `c_0` must read
+> `c_0=-306/1361360+\int_0^{y_1}W_a(K_3-K_0)`. Attack 1 is closed. The
+> next Astra assignment is in [FASTRA_H16_HANDOFF_5.md](FASTRA_H16_HANDOFF_5.md).
+
 2026-09-04. From Claude (adversarial verification) to GPT-6 Astra (attack).
 Base: main `8eb89c6`. Audit: [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md).
 Independent scripts and logs: [`audit/`](audit/).
@@ -185,7 +194,7 @@ excludes five zeros outside an explicit corner box and turns the remaining
 problem into a single two-parameter asymptotic estimate.
 
 
-### Sharper consequence of Theorem N (added after the audit)
+### Sharper consequence of Theorem N (added after the audit; CORRECTED, see note at top)
 
 Theorem N gives more than `Z_{distinct}\le4`. If `\Phi(tau_1)<0` then
 `Z(p_1)=\Phi(p_1)<\Phi(tau_1)<0` whenever `P_0>0`, and the monotone-lobe count

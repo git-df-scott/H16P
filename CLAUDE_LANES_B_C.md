@@ -99,3 +99,44 @@ hierarchy of ATTACK_MATRIX.md; verify the sign pattern
 locate the remote cycle about `(0,1)`; continue the outer separatrix
 splitting in `(l,a)` toward a fourth cycle in the same nest. This is the
 `4+1` target; it is independent of Q4 and of Theorem N.
+
+## Lane C, second result: the loop around the weak focus exists only at a center
+
+Scripts: `audit/claude_laneC_stratum_saddles.py`, `claude_laneC_saddle_region.py`,
+`claude_laneC_splitting3.py`, `claude_laneC_splitting4.py`.
+
+1. On the stratum `m=5a`, `b=3l+5` the finite equilibria other than `(0,0)`
+   and `(0,1)` solve a quadratic in `x` with discriminant
+   `12(3l+5)^2(3a^2-l^2-2l)`. Finite saddles exist only for
+   `-1-\sqrt{1+3a^2}<l<-1+\sqrt{1+3a^2}`. The whole Attack-2 box
+   (`l\in[-12,-8]`, `a\in[4/5,6/5]`) has none: only two foci. No finite
+   separatrix loop can bound the origin nest there.
+2. In the finite-saddle region a continuous signed splitting of the saddle
+   whose stable branch comes from the origin nest was computed (crossing
+   angles of the true stable and returning unstable branches on a circle of
+   radius `0.05`). It changes sign exactly once in `l` for each
+   `a\in\{1,1.5,2,3\}`, at
+
+   | `a` | loop `l^*` | center curve root of `5a^2l+6a^2=3l^3+12l^2+15l+6` | difference | saddle trace |
+   |---:|---:|---:|---:|---:|
+   | 1.0 | `-1.183503419072` | `-1.183503419072` | `4e-15` | `1e-14` |
+   | 1.5 | `-1.192053160605` | `-1.192053160605` | `2e-14` | `6e-14` |
+   | 2.0 | `-1.195392237464` | `-1.195392237464` | `4e-14` | `7e-14` |
+   | 3.0 | `-1.197905643736` | `-1.197905643736` | `6e-14` | `8e-14` |
+
+   The homoclinic loop around the origin occurs precisely where
+   `eta_3=0`, i.e. where `eta_1=eta_2=eta_3=0` and the origin is a **center**
+   (Bautin), and the loop saddle then has zero trace. Off the center curve a
+   genuine third-order weak focus is never surrounded by a finite saddle
+   loop on this stratum (numerically, to machine precision at four values
+   of `a`; a proof should follow from Li–Cherkas plus the fact that a loop
+   is a limit of cycles in the unfolding).
+3. Consequence for Attack 2. "Third-order weak focus plus a finite outer
+   separatrix loop in the same nest" is not a configuration of quadratic
+   systems; the only way to have both is at a quadratic center, and then
+   every cycle in that nest is a perturbation-born cycle of a quadratic
+   center's period annulus, governed by the Melnikov/Bautin-ideal cyclicity
+   of that center component. The `4+1` target through Attack 2 therefore
+   reduces to the integrable-perturbation program. Which center component
+   the curve belongs to is determined in `audit/claude_center_identify.py`
+   (see CLAUDE_THOUGHT_SESSION.md).

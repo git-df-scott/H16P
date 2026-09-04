@@ -49,6 +49,18 @@ A valid result must provide:
 An exact count of all cycles is unnecessary for refuting `H(2)=4`; proving at
 least five distinct cycles is sufficient.
 
+## Q4 route closed (2026-09-04)
+
+Theorem N ([Q4_THEOREM_N.md](Q4_THEOREM_N.md), verified in
+[CLAUDE_AUDIT_ASTRA_4.md](CLAUDE_AUDIT_ASTRA_4.md)) with the necessary
+condition (N1) proves that no Q4 Abelian integral has five distinct zeros in
+the open annulus, for every `kappa>1`. The proved bounds are three distinct
+zeros on the strict lobe region and four globally. Lane B
+([CLAUDE_LANES_B_C.md](CLAUDE_LANES_B_C.md)) shows the saddle loop cannot
+supply the difference. Attack 1 of ATTACK_MATRIX.md is therefore closed as a
+counterexample route; its remaining content is the outside-lobe four-zero
+question, a pure-mathematics item.
+
 ## Campaign decision
 
 **YELLOW — no generic coefficient sweep.** Only the three attacks in
