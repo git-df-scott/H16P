@@ -26,7 +26,17 @@ three attacks below are ordered by mathematical leverage.
 
 ### Exact family and normalization
 
-Use Zhao's affine/time-normalized codimension-four Hamiltonian center
+> **2026-09-04 correction:** the Hamiltonian chart below is reached through a
+> double ramified cover and inversion, not only affine/time changes. Its
+> displayed arbitrary quadratic perturbation is therefore not a valid
+> original-coordinate Q4 search family. Search the four-dimensional Abelian
+> space, then recover a realizable perturbation of the original complex Q4
+> normal form. Zhao's necessary conditions restrict a five-zero candidate to
+> \(1<\kappa<85/23\). The eight old kappa charts and 500-hour budget below are
+> superseded by [Q4_PARAMETERIZATION.md](Q4_PARAMETERIZATION.md) and
+> [Q4_COST_MODEL.md](Q4_COST_MODEL.md).
+
+For integral evaluation only, use Zhao's cubic Hamiltonian chart
 
 \[
 \dot x=-1-(\kappa-1)x^2+\kappa y^2,\qquad
@@ -92,7 +102,8 @@ Finish with five CAPD Poincare fixed-point enclosures.
 
 ### Budget and stop
 
-- Budget: 500 CPU-hours, at most 5,000,000 basis/sign evaluations, 7 wall days.
+- Superseded budget: the Q4 follow-on audit sets a first 24 CPU-hour tranche
+  and estimates 20--60 CPU-hours for a pruned discovery campaign.
 - Stop on a five-root pattern, or after the eight compact `kappa` charts
   have either interval exclusion or an explicit unresolved boundary list.
 - A proof that this Melnikov space has at most three zeros is a successful

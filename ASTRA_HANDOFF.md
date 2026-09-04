@@ -1,92 +1,81 @@
-# Astra handoff
+# Astra handoff: Q4
 
-## Mission
+## Decision
 
-Determine whether one of three mathematically reduced quadratic families
-contains an explicit field with at least five distinct limit cycles. The
-campaign is **YELLOW**: it is not authorized to search generic coefficients.
+# YELLOW — Q4 is valid but remains computationally broad
 
-## Binding facts
+Q4 can logically yield five quadratic limit cycles: five distinct simple zeros
+of a realizable first nonzero Q4 generating function persist as five cycles for
+all sufficiently small nonzero perturbations. No theorem bounds the relevant
+integral below five. However, no accepted four- or five-zero Q4 example exists,
+Żołądek's conjectural bound is three, and an exhaustive endpoint-aware cover is
+still a continuous four-dimensional problem.
 
-- `H(2) >= 4`; no finite uniform upper bound is known.
-- `H(2)=4` is open as of 2026-09-04.
-- Bautin gives at most three small cycles from one quadratic focus/center.
-- With two foci, one nest has at most one cycle; a five-cycle target is `4+1`,
-  not `3+2`.
-- Galias--Tucker prove one Songling field has exactly four by interval methods.
-- Candidate verification is tractable; global exhaustive discovery is not.
+## Exact target
 
-## Execute in this order
+Search \(1<\kappa<85/23\) and \([\mu]\in\mathbb{RP}^3\), subject to Zhao's
+beta-zero strip and \(P_2(\beta_0)\) inequality, for five distinct simple
+zeros of
 
-1. `Q4` elliptic-integral zero hunt.
-2. Shi third-order weak focus plus outer separatrix continuation.
-3. Kuznetsov four-cycle boundary continuation.
+\[
+I_\mu=\mu_1hI_{00}+\mu_2I_{10}+\mu_3I_{01}
++\mu_4(2I_{-1,0}+3\kappa hI_{-1,1})
+\]
 
-Exact families, budgets, and stop rules are in
-[`ATTACK_MATRIX.md`](ATTACK_MATRIX.md). Do not silently expand them.
+on \(h\in(-2/3,-2/(3\sqrt\kappa))\). Use the normalized root coordinate
+\(r=(s-1)/(\kappa-1)\), with \(h=-2\sqrt{s/\kappa}/3\).
 
-## Required pipeline
+## First Astra command
 
-```text
-exact family
-  -> symbolic bifurcation constraints
-  -> multiprecision scalar candidate screen
-  -> five persistent first-return roots
-  -> rationalize coefficients
-  -> interval Poincare maps
-  -> five distinctness certificates
-  -> independent replay
-```
+Run exactly this first 24-CPU-hour-fused tranche:
 
-## Candidate record
+    OPENBLAS_NUM_THREADS=1 python q4/q4_search.py \
+      --mode astra --cpu-hours 24 --max-cpu-hours 24 \
+      --candidate-mode triple --seed 160926 \
+      --kappa-min 1.01 --kappa-max 3.69 --kappa-count 193 \
+      --samples-per-kappa 50000 --grid-points 257 --quad-order 96 \
+      --output q4/data/astra_tranche_001.json
 
-For every promoted candidate, save:
-
-- exact coefficient vector and normalization chart;
-- parameter provenance (branch, box, continuation step);
-- all equilibria and their interval classifications;
-- Poincare sections and first-return conventions;
-- root brackets at 128/256/512 bits;
-- return times, displacement values, derivative/Floquet estimates;
-- reason each pair of cycles is distinct;
-- exact failure or proof status.
+The process stops earlier if it refines five sign-change roots. It must not be
+expanded beyond this command without reviewing the retained branches.
 
 ## Promotion gates
 
-`NUM-CANDIDATE` requires five roots that persist under precision doubling,
-integrator change, and section perturbation. `CAP-CANDIDATE` requires five
-interval fixed-point proofs. `COUNTEREXAMPLE` requires a clean independent
-replay of all five and a human-readable mathematical argument connecting the
-machine inequalities to five isolated periodic orbits.
+1. NUM-LEAD: five roots persist under grid/order/precision doubling and endpoint
+   changes.
+2. Q4-ZERO: q4/zero_certificate.schema.json replays five interval-Newton
+   inclusions with \(0\notin I'(S_i)\).
+3. Q4-REALIZED: exact original-coordinate quadratic coefficients, all lower
+   Melnikov functions zero, target \(M_k\) verified.
+4. CAP-CANDIDATE: five validated return-map fixed points and disjoint flow
+   tubes for one rational nonzero \(\varepsilon\).
+5. COUNTEREXAMPLE: independent replay and human-readable proof.
 
-## Automatic rejection rules
+Do not call a five-zero floating-point hit a counterexample.
 
-Reject and label, do not rescue by longer integration, when:
+## Stop conditions
 
-- the system is piecewise, discontinuous, degree greater than two, or
-  three-dimensional;
-- a reported return is an iterate or starts at the event surface;
-- two apparent cycles are the same orbit on different sections;
-- a root disappears under precision doubling;
-- a multiplier interval contains one and no multiple-root proof is supplied;
-- a `3+2` two-focus picture is reported;
-- coefficients are only rounded decimals without outward enclosures;
-- evidence consists only of a plot or truncated series.
+Stop on the command's CPU fuse, a five-root lead, or a certified at-most-three
+bound on the retained component. Freeze data and label every branch as
+promoted, rejected, or unresolved. Do not search \(\kappa\ge85/23\), arbitrary
+quadratic coefficients, or an endpoint without its analytic expansion.
 
-## Stop discipline
+## Expected cost
 
-At each attack's budget:
+The old broad estimate was about 500 CPU-hours. Precomputed basis tables,
+Zhao's exact pruning, and triple-zero coordinates reduce a serious numerical
+campaign to approximately 20--60 CPU-hours. A well-conditioned Abelian-zero
+certificate is estimated at another 2--20 CPU-hours. Original-field
+realization and CAPD validation are deferred until a five-zero lead and may
+cost 20--200 CPU-hours.
 
-1. freeze raw logs and exact boxes;
-2. state `CE FOUND`, `FAMILY EXCLUDED`, or `UNRESOLVED`;
-3. record the sharpest obstruction or unresolved boundary;
-4. do not roll spare compute into a wider search.
+## Current evidence
 
-Failure in a narrow family says nothing about global `H(2)`. The next campaign
-is justified only by a new analytic reduction, a new bifurcation intersection,
-or an independently reproduced five-root candidate.
+- published Q4 lower construction: three zeros/cycles, asymptotic coefficients;
+- finite numerical control reproduced here: three zeros at \(\kappa=4\);
+- tiny structured strike: 2,060 directions, three analytic-filter survivors,
+  maximum three sampled crossings, no four/five lead;
+- audit verdict: YELLOW, unchanged.
 
-## Audit checkpoint
-
-This repository contains only the feasibility audit and a four-cycle
-floating-point regression. **No five-cycle hunt has been run.**
+The tiny strike is only an implementation validation and has no negative
+mathematical force.

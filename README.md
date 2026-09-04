@@ -59,4 +59,21 @@ arbitrarily fine resolution.
 - [`SOURCES.md`](SOURCES.md) — source ledger.
 - [`controls/`](controls/) — one non-rigorous four-cycle numerical regression.
 
-No five-cycle search was launched in this audit.
+## Q4 preparation phase
+
+The follow-on Q4 audit identifies the exact four-dimensional elliptic-integral
+target, corrects the non-affine Hamiltonian-chart issue, reproduces three-zero,
+zero-zero, and double-root controls, and supplies a bounded candidate screen
+plus certificate schemas:
+
+- [Q4_THEORY.md](Q4_THEORY.md)
+- [Q4_PARAMETERIZATION.md](Q4_PARAMETERIZATION.md)
+- [Q4_CONTROLS.md](Q4_CONTROLS.md)
+- [ZERO_TO_CYCLE.md](ZERO_TO_CYCLE.md)
+- [Q4_SEARCH.md](Q4_SEARCH.md)
+- [Q4_CERTIFICATION.md](Q4_CERTIFICATION.md)
+- [Q4_COST_MODEL.md](Q4_COST_MODEL.md)
+- [q4/](q4/)
+
+The Q4 verdict remains **YELLOW**. The only exploration was a 0.50-CPU-second
+smoke test; no production sweep or five-cycle hunt was launched.

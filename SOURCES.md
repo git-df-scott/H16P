@@ -44,6 +44,28 @@ date for links: 2026-09-04.
 25. C. Buzzi and D. Novaes, [A note on a recent attempt to solve the second part of Hilbert's 16th Problem](https://arxiv.org/abs/2411.09594), arXiv:2411.09594 (2024).
 26. V. da Silva et al., [Exploring Limit Cycles of Differential Equations through Information Geometry](https://doi.org/10.3390/e26090745), Entropy 26 (2024), 745. The claimed global solution is not accepted; read with source 25.
 
+## Q4 preparation sources and checked claims
+
+27. L. Gavrilov and I. D. Iliev,
+    [Quadratic perturbations of quadratic codimension-four centers](https://arxiv.org/abs/0811.4602),
+    J. Math. Anal. Appl. 357 (2009), 69--76,
+    doi:10.1016/j.jmaa.2009.04.004. Primary source for the complex Q4 normal
+    form, rational first integral, double-cover/inversion reduction, four
+    independent elliptic-integral coefficients, and upper bound eight.
+28. Y. Zhao,
+    [On the number of limit cycles in quadratic perturbations of quadratic codimension four centers](https://arxiv.org/abs/1011.2253),
+    Nonlinearity 24 (2011), 2505--2522. Primary source for upper bound five,
+    attainable lower bound three, endpoint expansions, the transformed
+    \(g=P_2+Q_1w\) problem, and the beta-zero pruning strip. Corollary 9(ii)
+    contains “at most” in its statement, contradicted by its own proof,
+    abstract, and Theorem 1; this audit treats it as a typo for “at least.”
+29. I. D. Iliev, Perturbations of quadratic centers, Bull. Sci. Math. 122
+    (1998), 107--161, doi:10.1016/S0007-4497(98)80080-8. Primary classification
+    of higher-order first nonzero Melnikov functions invoked by both Q4 papers.
+
+No later primary paper resolving Żołądek's conjectural exact Q4 bound of three
+was located through 2026-09-04.
+
 ## Scope exclusions
 
 Results for piecewise-smooth quadratic systems, three-dimensional quadratic

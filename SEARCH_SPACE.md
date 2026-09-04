@@ -75,6 +75,14 @@ with first integral
 H=\frac23(\kappa-1)x^3-(\kappa-1)x^2y+\frac\kappa3y^3-y.
 \]
 
+**Correction from the Q4 audit:** this cubic Hamiltonian chart is reached
+through a double ramified cover and inversion, not solely affine changes and
+time rescaling. An arbitrary quadratic perturbation in this chart need not be
+a quadratic perturbation of the original Q4 field. The four-function
+generating space is valid, but candidate coefficients must pass the
+original-coordinate realization gate in
+[ZERO_TO_CYCLE.md](ZERO_TO_CYCLE.md).
+
 The period annulus is
 `-2/3 < h < -2/(3 sqrt(kappa))`. Under a general small quadratic
 perturbation, Zhao reduces the first nonzero generating function to a

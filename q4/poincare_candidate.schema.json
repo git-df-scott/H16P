@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/git-df-scott/H16P/q4/poincare_candidate.schema.json",
+  "title": "Q4 candidate-to-Poincare handoff",
+  "type": "object",
+  "required": ["format", "original_q4", "perturbation", "epsilon", "sections", "predicted_roots"],
+  "properties": {
+    "format": {"const": "H16P-Q4-POINCARE-v1"},
+    "original_q4": {"type": "object", "required": ["rho", "b", "c"]},
+    "perturbation": {
+      "type": "object", "required": ["x_coefficients", "y_coefficients", "melnikov_realization_proof"]
+    },
+    "epsilon": {"type": "object", "required": ["rational"]},
+    "sections": {"type": "array", "minItems": 1},
+    "predicted_roots": {"type": "array", "minItems": 5},
+    "interval_fixed_points": {"type": "array"},
+    "disjoint_tubes": {"type": "array"},
+    "software": {"type": "object"},
+    "artifact_hashes": {"type": "object"}
+  }
+}

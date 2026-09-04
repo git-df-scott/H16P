@@ -1,0 +1,123 @@
+{
+  "status": "NONRIGOROUS_SCREEN_ONLY",
+  "mode": "smoke",
+  "seed": 160926,
+  "requested_cpu_hours": 0.02,
+  "actual_cpu_seconds": 0.5005252520000001,
+  "wall_seconds": 0.3835358550022647,
+  "host_cpu_count": 9,
+  "parameters": {
+    "kappa_interval": [
+      1.05,
+      3.68
+    ],
+    "kappa_count": 9,
+    "samples_per_kappa": 256,
+    "grid_points": 121,
+    "quadrature_order": 64,
+    "candidate_mode": "triple"
+  },
+  "kappas_completed": [
+    1.05,
+    1.3787500000000001,
+    1.7075,
+    2.03625,
+    2.365,
+    2.6937499999999996,
+    3.0225,
+    3.3512500000000003,
+    3.68
+  ],
+  "projective_points_evaluated": 2060,
+  "zhao_filter_survivors": 3,
+  "rejections": {
+    "beta1_zero": 0,
+    "beta0_strip": 2057,
+    "zhao_comment_bound": 0
+  },
+  "root_count_distribution_among_survivors": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 3,
+    "4": 0,
+    "5": 0
+  },
+  "leaders": [
+    {
+      "crossings": 3,
+      "minimum_relative_sample_value": 8.231012061871576e-05,
+      "kappa": 2.365,
+      "mu": [
+        1.0,
+        -0.712136889291186,
+        0.990167243598287,
+        -0.14187044795959655
+      ],
+      "forced_grid_indices": [
+        3,
+        6,
+        92
+      ],
+      "constraint_matrix_relative_singular_value": 0.0004917399674908095,
+      "refined_roots": [
+        1.003617334893043,
+        1.0110578980510752,
+        2.183376762590077
+      ],
+      "root_slopes": [
+        -0.00700624950656012,
+        0.004134152995156714,
+        -0.0004926957319070348
+      ]
+    },
+    {
+      "crossings": 3,
+      "minimum_relative_sample_value": 0.0005827322005911516,
+      "kappa": 1.3787500000000001,
+      "mu": [
+        1.0,
+        -0.29760670223542846,
+        0.7845154375070826,
+        -0.23268543061246055
+      ],
+      "forced_grid_indices": [
+        3,
+        6,
+        67
+      ],
+      "constraint_matrix_relative_singular_value": 0.0004173662698845064,
+      "refined_roots": [
+        1.0010037110554872,
+        1.0030682629207655,
+        1.223326293699783
+      ],
+      "root_slopes": [
+        -0.008527209264635953,
+        0.005067642623904679,
+        -0.0034088403863350484
+      ]
+    },
+    {
+      "crossings": 3,
+      "minimum_relative_sample_value": 0.0011151370363368187,
+      "kappa": 2.365,
+      "mu": [
+        1.0,
+        -0.7182928945664405,
+        0.998465287007094,
+        -0.13902406873453393
+      ],
+      "forced_grid_indices": [
+        4,
+        10,
+        54
+      ],
+      "constraint_matrix_relative_singular_value": 0.0008140834507874363,
+      "refined_roots": [],
+      "root_slopes": []
+    }
+  ],
+  "stopped_on_five_zero_lead": false,
+  "warning": "sign changes are leads, not certified Abelian zeros or limit cycles"
+}
