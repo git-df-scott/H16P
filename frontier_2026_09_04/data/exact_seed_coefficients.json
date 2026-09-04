@@ -1,0 +1,147 @@
+[
+  {
+    "id": "gt_remote",
+    "coefficient_order": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "y^2"
+    ],
+    "P": [
+      "0",
+      "-1/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "-1",
+      "-10",
+      "49999999999999/10000000000000",
+      "1"
+    ],
+    "Q": [
+      "0",
+      "1",
+      "0",
+      "1",
+      "-31249999999998875000000000000000000000000000000000001/1250000000000000000000000000000000000000000000000000",
+      "0"
+    ],
+    "degree": 2,
+    "evidence": "Numerical replay; GT additionally has published independent rigorous theorem"
+  },
+  {
+    "id": "shi_visual",
+    "coefficient_order": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "y^2"
+    ],
+    "P": [
+      "0",
+      "-1/50000000",
+      "-1",
+      "-10",
+      "49/10",
+      "1"
+    ],
+    "Q": [
+      "0",
+      "1",
+      "0",
+      "1",
+      "-6027/250",
+      "0"
+    ],
+    "degree": 2,
+    "evidence": "Numerical replay; GT additionally has published independent rigorous theorem"
+  },
+  {
+    "id": "chen_visual",
+    "coefficient_order": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "y^2"
+    ],
+    "P": [
+      "0",
+      "-1/50000",
+      "-1",
+      "-3",
+      "99/100",
+      "1"
+    ],
+    "Q": [
+      "0",
+      "1",
+      "0",
+      "2/9",
+      "-3",
+      "0"
+    ],
+    "degree": 2,
+    "evidence": "Numerical replay; GT additionally has published independent rigorous theorem"
+  },
+  {
+    "id": "yu_zeng",
+    "coefficient_order": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "y^2"
+    ],
+    "P": [
+      "0",
+      "1/20000",
+      "1",
+      "0",
+      "-30/7",
+      "0"
+    ],
+    "Q": [
+      "0",
+      "-1",
+      "-500001/10000000000",
+      "1",
+      "49182857/96810000000",
+      "-671/210"
+    ],
+    "degree": 2,
+    "evidence": "Numerical replay; GT additionally has published independent rigorous theorem"
+  },
+  {
+    "id": "kkl",
+    "coefficient_order": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "y^2"
+    ],
+    "P": [
+      "0",
+      "0",
+      "1",
+      "1",
+      "1",
+      "0"
+    ],
+    "Q": [
+      "0",
+      "-363889/5000",
+      "3/2000",
+      "-10",
+      "11/5",
+      "7/10"
+    ],
+    "degree": 2,
+    "evidence": "Numerical replay; GT additionally has published independent rigorous theorem"
+  }
+]

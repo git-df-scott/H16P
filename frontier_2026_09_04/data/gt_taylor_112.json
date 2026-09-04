@@ -1,0 +1,65 @@
+{
+  "status": "NONRIGOROUS MPFR Taylor shooting; no remainder enclosure",
+  "samples": [
+    {
+      "radius": "7.0e-75",
+      "order": 112,
+      "bits": 900,
+      "displacement": "-4.398229715025710533847700736591304e-276",
+      "relative_displacement": "-6.2831853071795864769252867665590058e-202",
+      "period": "6.2831853071795864769252867665590058",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.24625301361083984
+    },
+    {
+      "radius": "7.2e-75",
+      "order": 112,
+      "bits": 900,
+      "displacement": "8.3239638949515161646306199083373708e-276",
+      "relative_displacement": "1.1561060965210439117542527650468571e-201",
+      "period": "6.2831853071795864769252867665590058",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.24361300468444824
+    },
+    {
+      "radius": "2.2e-21",
+      "order": 112,
+      "bits": 900,
+      "displacement": "2.815516280101906976902180225182891e-115",
+      "relative_displacement": "1.2797801273190486258646273750831323e-94",
+      "period": "6.2831853071795864769252867665590058",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.25157976150512695
+    },
+    {
+      "radius": "2.3e-21",
+      "order": 112,
+      "bits": 900,
+      "displacement": "-3.5914405781450293928602491403989491e-115",
+      "relative_displacement": "-1.5614959035413171273305431045212822e-94",
+      "period": "6.2831853071795864769252867665590058",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.25322699546813965
+    },
+    {
+      "radius": "6.5e-8",
+      "order": 112,
+      "bits": 900,
+      "displacement": "-7.1239592603662203110426240588026127e-48",
+      "relative_displacement": "-1.0959937323640338940065575475080943e-40",
+      "period": "6.2831853071792988897494566676148507",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.2570769786834717
+    },
+    {
+      "radius": "6.8e-8",
+      "order": 112,
+      "bits": 900,
+      "displacement": "7.3048579059174483036614528214849665e-48",
+      "relative_displacement": "1.0742438096937423975972724737477892e-40",
+      "period": "6.2831853071792717306014852948292396",
+      "section_residual_scaled": "0.0",
+      "seconds": 0.25528907775878906
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "artifact and numerical consistency checks, not mathematical interval proof",
+  "base_commit": "5bcfe11",
+  "four_seed_reproductions": "passed",
+  "GT_order_agreement_35digits": "passed",
+  "original_Shi_order_agreement_35digits": "passed",
+  "preexisting_files_changed": [
+    "ATTACK_MATRIX.md"
+  ],
+  "Q4_files_byte_preserved": 68,
+  "local_link_issues": [],
+  "verification_context": "Original audit commit 70b8a253b687a131d1be523dd00f0ccc4d6f74a6, before standalone branch packaging",
+  "standalone_packaging": {
+    "inherited_campaign_files_included": false,
+    "earlier_Q4_record": "Preserved in source commit 5bcfe1172c124cb9a162a2e88c26aa5be26b40c1",
+    "numerical_evidence_changed": false
+  }
+}
