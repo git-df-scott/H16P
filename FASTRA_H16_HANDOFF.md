@@ -184,6 +184,38 @@ Astra's (G5) and its `theta\ne1` extensions on the complement. That already
 excludes five zeros outside an explicit corner box and turns the remaining
 problem into a single two-parameter asymptotic estimate.
 
+
+### Sharper consequence of Theorem N (added after the audit)
+
+Theorem N gives more than `Z_{distinct}\le4`. If `\Phi(tau_1)<0` then
+`Z(p_1)=\Phi(p_1)<\Phi(tau_1)<0` whenever `P_0>0`, and the monotone-lobe count
+gives `Z` at most three zeros in every case (`P_0\le0` is Astra's sign chain;
+`P_0>0` with four `P` roots gives no zero of `Z` before `p_2`, then at most
+one per lobe). Hence `Y` has at most three sign changes and the
+center-anchored primitive `X` at most three distinct zeros: **the Q4 integral
+has at most three distinct zeros in the open annulus**, which is exactly the
+Gavrilov–Iliev/Zhao conjectured sharp bound (three is attained). Theorem N
+would therefore settle that conjecture, not merely improve five to four.
+
+## Division of labour (no overlapping attempts)
+
+**Astra Strike #4 owns:** Theorem N, parts 1–3 above; nothing else. Do not
+re-run tuned shots, confluent shots, reverse-tangency lines, or any
+`Y=Y'=0` search; do not touch the lanes below.
+
+**Claude owns (in parallel, own angles, reported in `CLAUDE_*` files):**
+
+- Lane B, endpoint-born cycles in Q4: total cyclicity of the period annulus
+  including the saddle loop and the center, i.e. whether three interior
+  zeros plus cycles born at the homoclinic loop (logarithmic endpoint terms
+  of `I`, saddle-loop cyclicity in quadratic unfoldings, alien cycles) can
+  reach five. This is outside Zhao's open-interval count and outside
+  Theorem N.
+- Lane C, Attack 2 of ATTACK_MATRIX.md (Shi third-order weak focus plus
+  outer separatrix, `4+1` target): exact Lyapunov quantities, separatrix
+  splitting continuation, first bounded controls.
+- Lane D, hostile re-verification of whatever Strike #4 produces.
+
 ### What would constitute each outcome
 
 - **Numerical lead (for the exclusion):** an interval-certified negative
