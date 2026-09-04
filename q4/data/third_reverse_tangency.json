@@ -1,0 +1,120 @@
+{
+  "status": "NUMERICAL; no rigorous line or global exclusion",
+  "scope": "four preselected reverse-tangency lines; two ratio diagnostics",
+  "interpretation": "No three-root H profile was detected. Finite meshes can miss roots or thin windows.",
+  "source_sha256": "797a4eed85bde6603a6af35318a488589c23468639e929802dcc3c61be5e6d2b",
+  "cpu_limit_seconds": 10,
+  "cpu_seconds": 0.111068,
+  "rows": [
+    {
+      "a": 0.75,
+      "kappa": 4.0,
+      "t_star": 0.8,
+      "A_intercept": 4.336842006572503,
+      "A_slope": 11.534486318555713,
+      "B_intercept": -6.840412506556653,
+      "B_slope": -18.020301707942313,
+      "AB_matrix_condition": 271.0551671003295,
+      "necessary_eta_interval_numerical": null
+    },
+    {
+      "a": 0.75,
+      "kappa": 4.0,
+      "t_star": 0.95,
+      "A_intercept": -26.879658622829417,
+      "A_slope": 11.71748772507646,
+      "B_intercept": 45.402382951596046,
+      "B_slope": -18.44358419204168,
+      "AB_matrix_condition": 1279.3730933535,
+      "necessary_eta_interval_numerical": null
+    },
+    {
+      "a": 0.9,
+      "kappa": 10.000000000000002,
+      "t_star": 0.999,
+      "A_intercept": -1.3243986569860595,
+      "A_slope": 2.477795659628576,
+      "B_intercept": 3.105562460144675,
+      "B_slope": -3.2235770490021562,
+      "AB_matrix_condition": 10873.254574411552,
+      "necessary_eta_interval_numerical": [
+        1.0202673794098192,
+        1.273604569624149
+      ],
+      "ratio_diagnostic": {
+        "stationary_heights_detected": [
+          {
+            "t": 0.7748605959983978,
+            "eta": 1.0126713258635331
+          }
+        ],
+        "ratio_poles_detected": [
+          0.992764768308241
+        ],
+        "endpoint_H_numerator": [
+          288.5060808991766,
+          -252.76958928003296
+        ],
+        "endpoint_zero_eta": 1.1413797115425648,
+        "determinant_mesh_range": [
+          -0.0031026457848788713,
+          0.0005287016339349526
+        ],
+        "mesh_t_range": [
+          0.01,
+          0.9999999999
+        ],
+        "mesh_size": 1601,
+        "sampled_H_crossing_counts": {
+          "0": 123,
+          "1": 134
+        },
+        "eta_samples": 257
+      }
+    },
+    {
+      "a": 0.99,
+      "kappa": 99.99999999999991,
+      "t_star": 0.999,
+      "A_intercept": -0.16733912940265888,
+      "A_slope": 1.3876684067773737,
+      "B_intercept": 1.4074960387861326,
+      "B_slope": -1.627326782808885,
+      "AB_matrix_condition": 53426.40778407563,
+      "necessary_eta_interval_numerical": [
+        1.0004021538204406,
+        1.4794176954616443
+      ],
+      "ratio_diagnostic": {
+        "stationary_heights_detected": [
+          {
+            "t": 0.964705812730124,
+            "eta": 0.9910953745662678
+          }
+        ],
+        "ratio_poles_detected": [
+          0.9959388454762136
+        ],
+        "endpoint_H_numerator": [
+          93.48273640849584,
+          -91.59470327529561
+        ],
+        "endpoint_zero_eta": 1.0206129073591252,
+        "determinant_mesh_range": [
+          -0.00012831475607982291,
+          0.0006615304148281147
+        ],
+        "mesh_t_range": [
+          0.01,
+          0.9999999999
+        ],
+        "mesh_size": 1601,
+        "sampled_H_crossing_counts": {
+          "0": 11,
+          "1": 246
+        },
+        "eta_samples": 257
+      }
+    }
+  ]
+}

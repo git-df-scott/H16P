@@ -1,0 +1,103 @@
+{
+  "format": "H16P-Q4-THRESHOLD-CERTIFICATE-v1",
+  "status": "RIGOROUS_LATE_PRIMITIVE_ROOT_ONLY",
+  "parameters": {
+    "A": "1210581187245108808/1000000000000000000",
+    "B": "-125731163118386543/1000000000000000000",
+    "eta": "1212211767298108636/1000000000000000000"
+  },
+  "discovery_anchor_r": "3/4",
+  "discovery_primitive_anchors": [
+    "3/4",
+    "7/8",
+    "15/16"
+  ],
+  "arithmetic": "fractions.Fraction and directed integer rounding",
+  "last_included_index_N": 1024,
+  "script_sha256": "6c8d1e0deda164d2db12622e6b8b5ffdd08cbafb4d8ea45a9996eefa27b13d07",
+  "series_helper_sha256": "6ae3cef2ffc9307f35da8295173e8b81bf05400d3d7e4a3f73e86226ff3ae085",
+  "witnesses": [
+    {
+      "t": "23/32",
+      "H_enclosure": [
+        "0.000017278951342272812294524053",
+        "0.000017278951342272812294524054"
+      ],
+      "certified_sign": 1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "13/16",
+      "H_enclosure": [
+        "-0.000014889259450679365959381558",
+        "-0.000014889259450679365959381557"
+      ],
+      "certified_sign": -1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "29/32",
+      "H_enclosure": [
+        "0.000010156415192365481634868459",
+        "0.000010156415192365481634868460"
+      ],
+      "certified_sign": 1,
+      "absolute_tail_upper_bound": "0.000000000000000000000000000001"
+    },
+    {
+      "t": "31/32",
+      "H_enclosure": [
+        "-0.000093181306082441272143107063",
+        "-0.000093181306082441099333759810"
+      ],
+      "certified_sign": -1,
+      "absolute_tail_upper_bound": "0.000000000000000000086404673627"
+    }
+  ],
+  "primitive_root_intervals": [
+    {
+      "endpoints": [
+        "23/32",
+        "13/16"
+      ],
+      "open": true
+    },
+    {
+      "endpoints": [
+        "13/16",
+        "29/32"
+      ],
+      "open": true
+    },
+    {
+      "endpoints": [
+        "29/32",
+        "31/32"
+      ],
+      "open": true
+    }
+  ],
+  "threshold_evaluation": {
+    "t": "5/11",
+    "H_enclosure": [
+      "0.000186667288546689070279643167",
+      "0.000186667288546689070279643168"
+    ],
+    "certified_sign": 1
+  },
+  "exact_checks": {
+    "eta_in_corrected_strip": true,
+    "q_at_zero": "12818839043136053/1500000000000000000",
+    "pi_times_H_at_one": "-18961116345547476759/8508500000000000000000",
+    "first_primitive_root_strictly_greater_than": "23/32",
+    "first_root_exceeds_5_over_11": true,
+    "H_positive_through_5_over_11_by_global_zero_count": true
+  },
+  "certified_parameter_box": {
+    "closed_linf_radius": "1/100000000",
+    "uniform_witness_perturbation_bound": "122047/307200000000",
+    "base_sign_margins_strictly_greater_than": "1/100000",
+    "entire_box_in_lobe_region_and_after_threshold": true
+  },
+  "original_Abelian_integral_five_zero_claim": false
+}

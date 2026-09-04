@@ -1,0 +1,98 @@
+H16P ASTRA THIRD STRIKE VERIFICATION — 2026-09-04
+Base: 616519009cdec6617c2969254a44ea05f86bdb42
+All runs single-threaded, nice +10, with a 10-second CPU ceiling per process.
+Python: 3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]
+sympy==1.14.0
+mpmath==1.3.0
+numpy==2.5.2
+scipy==1.18.1
+
+Final sequential regression run observed through terminal session 44706.
+Each process completed successfully before the metadata assembly step.
+The first metadata assembly expected script_sha256 in all JSON records;
+the reverse-tangency record instead uses source_sha256. That assembly error
+was corrected below without repeating the already-passing mathematical checks.
+
+$ python q4/q4_structure_checks.py
+PASS: exact determinant/period/coordinate checks
+Observed EXIT 0; process CPU 0.3650s
+SHA256 b43f22b5cc26693058844cf1288d4d970519d846fc3708807eb3fa29a0df7ae5
+
+$ python q4/test_q4.py
+PASS: 7 unit tests
+Observed EXIT 0; process CPU 0.2947s
+SHA256 637ca439849f644b422875639d5c20251da0a8edf9cd9a98b41f7a29667e55e5
+
+$ python q4/test_q4_second.py
+PASS: 4 unit tests
+Observed EXIT 0; process CPU 7.0908s
+SHA256 b6ea162bbb317a41d5e1d0f0275d48026d0fe14908978f7af0ea15888891fa52
+
+$ python q4/test_q4_third.py
+PASS: 4 unit tests
+Observed EXIT 0; process CPU 2.3189s
+SHA256 a3580523d068be4c2e700fa0024784e6ef7986045f4f7f06d31f67c38e83dfc6
+
+$ python q4/q4_green_endpoint_third.py
+PASS: exact endpoint/finite-part checks
+Observed EXIT 0; process CPU 0.5649s
+SHA256 e859b137afd7bc3147170433e053baf9689e1aa0dfb57e47e75b39831bad2688
+
+$ python q4/q4_green_max_3.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_initial_shoot.json
+SCRIPT SHA256 3f89f53f16293afd865caa67afc40aa1e1b22bb783719778ec5eeeaaaf8afd79
+DATA SHA256 5e6c456bb3e139d78396c9818dba24bd4b29566cc20e1d3e02f2a0502e0325b4
+Recorded CPU seconds: 0.7089540000000001
+Record count: 16
+
+$ python q4/q4_green_max_3.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_tuned_shoot.json
+SCRIPT SHA256 3f89f53f16293afd865caa67afc40aa1e1b22bb783719778ec5eeeaaaf8afd79
+DATA SHA256 c4291d0bec9fa16aabc892be9ae1390c5920a91daaac244f4a198152ed280734
+Recorded CPU seconds: 2.925884
+Record count: 5
+
+$ python q4/q4_green_max_3.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_shape_shoot.json
+SCRIPT SHA256 3f89f53f16293afd865caa67afc40aa1e1b22bb783719778ec5eeeaaaf8afd79
+DATA SHA256 edd48527b3bb9e7a33e879a571a4b4527e9620826410c1594901beebb5b20d8b
+Recorded CPU seconds: 4.038874
+Record count: 3
+
+$ python q4/q4_green_boundary_3.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_confluent_shoot.json
+SCRIPT SHA256 fc403791ec6d35e48ef1bb730a534c57edd39b7e07a34164a4089ec9ec4b255c
+DATA SHA256 807c7d69951b9f64a5e75912f6894227084a0201f4352be01f2e5e97525a6a58
+Recorded CPU seconds: 0.461906
+Record count: 4
+
+$ python q4/q4_reverse_tangency_third.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_reverse_tangency.json
+SCRIPT SHA256 797a4eed85bde6603a6af35318a488589c23468639e929802dcc3c61be5e6d2b
+DATA SHA256 8540c330a3b6ed4caca28f391fa9a364a2b3ecddbf51a33200fc2c1b9ec144ec
+Recorded CPU seconds: 0.111068
+Record count: 4
+
+$ python q4/q4_third_independent.py
+Successful unchanged replay earlier in this strike; numerical diagnostics only.
+EXIT 0; frozen data: q4/data/third_independent_checks.json
+SCRIPT SHA256 8b953d496f9ac5fccaffff07e2091a8be392d89bd4b42c2310311dbd240e96ac
+DATA SHA256 1ab9e4183737bed429852cee28b630d49a04a11578d995ecb875d75bc7c437cc
+Recorded CPU seconds: 0.7253040000000001
+Record count: 2
+
+Exact late-root certificate was fully recomputed in test_q4_third.py,
+including positive coefficient series, rational tails, integer rounding,
+primitive root count, threshold side, and full coefficient box.
+
+PASS: all 59 inherited files preserved byte-for-byte.
+PASS: all 15 unit tests and the inherited exact structure checks.
+PASS: exact endpoint beta cancellations, finite-part primitive and center correction.
+PASS: every frozen replay source hash matches its script.
+Uniform matching remainders have analytical proofs and independent review.
+No positive first Green maximum or five-original-zero candidate asserted.

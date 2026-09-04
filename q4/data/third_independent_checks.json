@@ -1,0 +1,47 @@
+{
+  "status": "NUMERICAL_ONLY",
+  "checks": [
+    {
+      "record_file": "third_tuned_shoot.json",
+      "record_index": 1,
+      "kappa": 2.5851372245245265,
+      "t": 0.7,
+      "s": 1.475541167357358,
+      "original_mu": [
+        0.0040427027204309445,
+        0.00019833918375282623,
+        0.0026175681685841777,
+        -0.0015804131192026967
+      ],
+      "scalar_PF_I": 0.0015492881998878836,
+      "independent_original_area_I": 0.0015492881998878847,
+      "absolute_difference": 1.0842021724855044e-18,
+      "corrected_Zhao_filter": [
+        true,
+        "survives"
+      ]
+    },
+    {
+      "record_file": "third_shape_shoot.json",
+      "record_index": 2,
+      "kappa": 4.231007906583895,
+      "t": 0.95,
+      "s": 1.1615503953291948,
+      "original_mu": [
+        0.004031201261160209,
+        -0.0008464195552032136,
+        0.0026845353230805454,
+        -0.0007643839232422096
+      ],
+      "scalar_PF_I": 0.0012121057635914785,
+      "independent_original_area_I": 0.0012121057635913627,
+      "absolute_difference": 1.1579279202145187e-16,
+      "corrected_Zhao_filter": [
+        true,
+        "survives"
+      ]
+    }
+  ],
+  "cpu_seconds": 0.7253040000000001,
+  "script_sha256": "8b953d496f9ac5fccaffff07e2091a8be392d89bd4b42c2310311dbd240e96ac"
+}
