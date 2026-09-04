@@ -4,6 +4,10 @@ Saved 2026-09-04 at the user's request before an app refresh.
 **Work is paused. This is a progress checkpoint, not a completed proof or
 a counterexample certificate.**
 
+Historical checkpoint: work subsequently resumed. The resulting proved
+reductions and remaining open case are recorded in
+[ASTRA_FIFTH_STRIKE.md](ASTRA_FIFTH_STRIKE.md).
+
 ## Repository and accepted state
 
 - Repository: `/Users/scottg/Documents/Codex/2026-09-04/he/work/H16P`.

@@ -1,0 +1,31 @@
+Strike 5 exact identity replay — 2026-09-04
+Canonical base: 7def4d5
+Each process: reduced priority, 10 CPU second ceiling, one numerical thread.
+No parameter evaluations, coefficient sweeps, or original-zero certificate is claimed.
+The analytic proofs are in Q4_TWO_ROOT_REDUCTION.md and q4/notes_fifth_*.md.
+
+$ python q4/check_fifth_two_anchor.py
+{
+  "status": "PASS: exact rational identities only",
+  "ell_V_strict_lower": "231/50312",
+  "ell_V_strict_upper": "3/616",
+  "eta_zero_center_strict_lower": "27/12578",
+  "moment_endpoint_slope": "1105/462",
+  "cpu_seconds": 4.60000000000009e-05
+}
+Exit code: 0
+
+$ python q4/q4_fifth_green_checks.py
+EXACT PASS: determinant derivative, critical mixture height, mixture-coordinate derivative.
+EXACT PASS: original-height derivative, positive-kernel identity, kernel derivative.
+Residual endpoint determinant sign remains OPEN; no parameter signs evaluated.
+CPU seconds: 0.037931
+Exit code: 0
+
+$ python q4/check_fifth_loop_gate.py
+Exact saddle-ray factorization and positive-area Jacobian: PASS
+Exact denominator derivative and tangent-endpoint identity: PASS
+Exact affine quartic numerator: PASS
+Exact reconstruction from all four ORIGINAL area basis terms: PASS
+No sign on the residual fibre or endpoint-cycle claim is asserted.
+Exit code: 0
