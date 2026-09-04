@@ -1,0 +1,51 @@
+{
+  "status": "NON-RIGOROUS NUMERICAL CONTROL; NOT A CERTIFICATE",
+  "system": {
+    "dx": "y + x^2 + x*y",
+    "dy": "-10*x^2 + 2.2*x*y + 0.7*y^2 - 72.7778*x + 0.0015*y"
+  },
+  "method": "DOP853 plus Brent roots of a downward y=0 return map",
+  "scipy_version": "1.17.0",
+  "cycles": [
+    {
+      "index": 1,
+      "section": "y=0, downward crossing",
+      "section_x": 0.6832102187597299,
+      "return_residual": 1.4210854715202004e-14,
+      "period": 0.728551432450237,
+      "floquet_multiplier_nonrigorous": 0.999226902940759,
+      "stability": "stable",
+      "closure_error": 7.399367469811263e-12
+    },
+    {
+      "index": 2,
+      "section": "y=0, downward crossing",
+      "section_x": 2.183699825305492,
+      "return_residual": 1.7763568394002505e-15,
+      "period": 0.7049868099304257,
+      "floquet_multiplier_nonrigorous": 1.0024200551375815,
+      "stability": "unstable",
+      "closure_error": 5.587483865168792e-11
+    },
+    {
+      "index": 3,
+      "section": "y=0, downward crossing",
+      "section_x": 15.962783983169892,
+      "return_residual": -1.0302869668521453e-13,
+      "period": 0.6224365413255474,
+      "floquet_multiplier_nonrigorous": 0.9620208098988815,
+      "stability": "stable",
+      "closure_error": 1.36879889558646e-09
+    },
+    {
+      "index": 4,
+      "section": "y=0, downward crossing",
+      "section_x": -3711.560806385011,
+      "return_residual": -5.374204192776233e-09,
+      "period": 0.4346228449055424,
+      "floquet_multiplier_nonrigorous": 11.46226771347891,
+      "stability": "unstable",
+      "closure_error": 1.0741850846510278e-05
+    }
+  ]
+}
