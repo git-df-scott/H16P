@@ -1,0 +1,11 @@
+bracket: (1.0, -1.1814564503247094, -0.21050594125254862, 0.5200620150177218) (1.5, -1.0901643831030412, 0.16413442222337637, -0.4195000678800824)
+  it 0: b=1.25000000 l=-1.1356480 sigma=-2.111e-02 eta2=+5.315e-02
+  it 1: b=1.37500000 l=-1.1128683 sigma=+7.198e-02 eta2=-1.826e-01
+  it 2: b=1.31250000 l=-1.1242484 sigma=+2.556e-02 eta2=-6.459e-02
+  it 3: b=1.28125000 l=-1.1299457 sigma=+2.252e-03 eta2=-5.681e-03
+lost branch at b= 1.265625
+Traceback (most recent call last):
+  File "/home/user/H16P/audit/fable_d2_crossing_refine.py", line 20, in <module>
+    b = 0.5*(lo+hi); r = branch_at(b, 0.5*(llo+lhi)); l = r['l']
+                                                          ~^^^^^
+TypeError: 'NoneType' object is not subscriptable

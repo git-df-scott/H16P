@@ -138,3 +138,13 @@ quintic factor of eta_3 on the Shi line is C3 restricted to it, checked by hand:
 
 Status: Proposition A is proved. Conjecture D2 is reduced to (C), an order-three loop statement one rung
 above Li-Cherkas, plus a finite component check (D). No counterexample content; this is the rigidity result.
+
+## 10. Lemma (B) at the crossings (NUMERICAL)
+
+Bisection for the neutral loop loses the focus branch at b = 1.2656 for both a = -2 and a = -1.5: at the C3
+crossing the focus and center sheets of the loop locus meet, the splitting function has a double zero in l,
+and sign-based detection fails there. Interpolating the brackets instead: at a = -2, sigma vanishes at
+b = 1.276 and eta_2 at b = 1.273 (slopes +0.58 and -4.3 per unit b); at a = -1.5, at b = 1.281 and 1.277
+(slopes +0.75 and -1.9). Both vanish at the same point with opposite-signed slopes, as Proposition A
+predicts (both are simple zeros of C3 along the sheet). Combined with a = -2.5 (neutral loop on C3 to eight
+digits) and a = -3 (F11), lemma (B) is confirmed at every crossing found.
