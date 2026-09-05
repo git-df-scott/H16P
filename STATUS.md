@@ -1,5 +1,45 @@
 # Status
 
+## Current fold-component checkpoint, 2026-09-05
+
+[KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) records partial fold
+continuation, numerical two-cycle reproduction, and new center/infinity
+asymptotic organizers. No K1, 3+1, or >=5-cycle candidate was found. Exhaustive
+component/root coverage and endpoint certification remain open. Work stopped
+at the user's request, with 4053/4096 calls in the inherited KKL/Shi ledger
+and 43 unspent there; the parallel re-seed ledger below is separate. The staged
+section below is historical and its older remaining-budget count is superseded.
+
+## Reversible re-seed update: 2026-09-05
+
+[The re-seed report](REVERSIBLE_RESEED_2026_09_05.md) excludes the
+finite-saddle-loop mechanism for the entire two-center sector of the
+stated reversible normal form. It distinguishes hemicycle, bicycle and
+nonhyperbolic boundaries and repairs the perturbation chart at `a=-2`.
+No five-cycle first-order candidate appeared in 64 finite shape samples.
+A rational four-cycle control has independent numerical moment and
+original-field support. **The full route remains open.**
+
+This strike adds 24 return-difference evaluations (48 half-flow integrations
+plus startup steps) for the new control; its moment search performs no
+ODE returns. The staged budget below is a historical checkpoint and does
+not consolidate parallel branch work.
+
+
+## Latest staged work: 2026-09-05
+
+See [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md). There is a numerical
+finite KKL fold/two-cycle-pair signal and no certified M1 or five-cycle field.
+The pair field's remote equilibrium is exactly an unstable focus. The earlier
+KKL pair persists numerically to c=0.9683 beyond the old cutoff, at different
+parameters. The two classical-seed trace paths lose their innermost cycle into
+the focus. These findings do not prove a family-wide exclusion or K1 false.
+
+Budget: 206 historical + 400 new KKL + 150 new Shi/Chen–Wang = 756 returns;
+3340 remain against the conservative common 4096 ceiling. Stage 2's 400-call
+allocation is fully spent. Global graphic connection/coefficient work, general
+Shi-chart fold continuation and an interval return-map verifier remain open.
+
 Audit cutoff: **2026-09-04**
 
 ## Binding mathematical status

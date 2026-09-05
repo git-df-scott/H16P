@@ -1,5 +1,41 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Current fold-component checkpoint, 2026-09-05
+
+Read [KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) first. The finite
+KKL fold was continued to horizontal radius approximately 2.96e17 on the
+positive-K sheet, and through the center organizer onto a separate negative-K
+sheet. Selected two-cycle pairs have complete-return numerical reproduction.
+No three-origin-cycle field, 3+1 precursor, or five-cycle field was found.
+The component and endpoint proofs remain incomplete. Work was stopped at the
+user's instruction; all numerical failures and replay data are archived.
+Inherited KKL/Shi ledger: 4053/4096 calls used, 43 unspent; the parallel
+re-seed ledger below is separate. Older entries below
+are chronological records.
+
+## Reversible re-seed, 2026-09-05
+
+Read [REVERSIBLE_RESEED_2026_09_05.md](REVERSIBLE_RESEED_2026_09_05.md).
+The two-center geometry excludes the old finite saddle-loop mechanism.
+An exact unfolding calculation finds and repairs a missing direction at
+`a=-2`. A same-parameter moment search over 64 finite shape samples finds
+no five-cycle candidate and supplies a four-cycle numerical control,
+independently checked by high-precision quadrature and original-field
+integration. **The full reversible route remains open; this is not a
+proof of H(2)=4.** Replay code and logs are in `reversible_reseed/`.
+
+
+## Current staged strike, 2026-09-05
+
+Read [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md) first. A new augmented
+KKL solver located a numerical finite fold and independently reproduced a
+nearby two-cycle sign pattern. Both earlier tracked cycles also persist
+numerically well past the old radius cutoff. Neither result supplies M1 or
+five cycles. The run used 400 KKL and 150 Shi/Chen–Wang returns, with all failures
+recorded. Exact theory restrictions, rational coefficients and replay sources
+are included. Older sections below are chronological records, not current
+verdicts.
+
 ## Claude adversarial audit of Astra Strikes 1–3, 2026-09-04
 
 Read [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md) and

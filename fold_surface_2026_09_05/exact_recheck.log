@@ -1,0 +1,31 @@
+{
+  "status": "EXACT_IDENTITIES_PASS",
+  "orbit_evaluations": 0,
+  "checks": [
+    "reversible coordinates modulo J",
+    "A+2C=21/5",
+    "Darboux first integral",
+    "Melnikov even divergence",
+    "moment integration-by-parts identity",
+    "c=1 no-cycle factorization",
+    "1<c<8/5 sufficient no-cycle thresholds",
+    "global Lienard residual becomes (u-1)u^(-c)(a*u+b)",
+    "c=8/5 infinity separatrix jet through v^2",
+    "infinity product derivative 10/sqrt(159)",
+    "half-passage exponents 6/5 and difference slope 12/sqrt(159)",
+    "no invariant conic carrying both c=8/5 saddles"
+  ],
+  "c1_no_cycle_K_threshold": "6292/1125",
+  "algebraic_center_isolation": [
+    "96862063355349/100000000000000",
+    "1937241267107/2000000000000"
+  ],
+  "proved_normalized_bounds": {
+    "b": "(-3/10,-29/100)",
+    "d": "(101/100,51/50)",
+    "A": "positive"
+  },
+  "K2": "(-8800*c**5 + 58120*c**4 - 92089*c**3 - 39218*c**2 + 53831*c + 31720)/((2*c + 1)**2*(500*c - 500))",
+  "K3": "(-2200*c**4 + 19095*c**3 - 40912*c**2 + 20175*c + 3050)/(50*c*(5*c - 8))",
+  "scope": "No global at-most-two theorem or complete fold-component exclusion."
+}

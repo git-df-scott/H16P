@@ -1,0 +1,63 @@
+{
+  "status": "EXACT_CHECKS_PASS",
+  "orbit_evaluations": 0,
+  "domain": {
+    "c": "[9/10,1]",
+    "K": "[0,6/5]"
+  },
+  "positive_denominator": "5*(11*c-5)",
+  "coefficients": {
+    "1": {
+      "degrees": [
+        2,
+        1
+      ],
+      "count": 6,
+      "min": "-2772",
+      "max": "-8253/10"
+    },
+    "2": {
+      "degrees": [
+        3,
+        1
+      ],
+      "count": 8,
+      "min": "-2664",
+      "max": "-11627/50"
+    },
+    "3": {
+      "degrees": [
+        3,
+        1
+      ],
+      "count": 8,
+      "min": "-792",
+      "max": "-8113/200"
+    }
+  },
+  "left_interval_N": {
+    "degrees": [
+      4,
+      1,
+      4
+    ],
+    "count": 50,
+    "min": "0",
+    "max": "945"
+  },
+  "nonquadratic_logic_control": {
+    "degree": 9,
+    "radii": [
+      1,
+      2,
+      3
+    ],
+    "radial_derivatives": [
+      "-48",
+      "480",
+      "-6480"
+    ],
+    "focus_cubic_coefficient": "36",
+    "claim": "Trace zero alone does not require a double cycle."
+  }
+}

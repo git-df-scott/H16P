@@ -1,0 +1,264 @@
+{
+  "status": "SAVED_DATA_AUDIT_ONLY",
+  "orbit_evaluations": 0,
+  "files": {
+    "events_increasing.json": {
+      "sha256": "30e1f0ce07b3577ee50dbdc01782600d9200c2d07f0e7bb7e3f24ebec8495a72",
+      "events": 18,
+      "accepted": 18,
+      "failures": {},
+      "saved_root_bracket_count_histogram": {
+        "2": 17,
+        "1": 1
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 17,
+        "1": 1
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 4.4205393131768744e-05,
+      "max_abs_residual_components": [
+        4.9106853790043446e-08,
+        1.1282902146625416e-07
+      ],
+      "maximum_recorded_flux_discrepancy": 6.230904681103766e-12,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 0.07257150954823606,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "stable": 18,
+        "unstable": 17
+      },
+      "last_accepted": {
+        "r": 823.5861819676869,
+        "c": 1.5377596872835322,
+        "K": 6.0
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-10357017948746556989/4611686018427387904",
+          "-20714035897493113977/9223372036854775808"
+        ],
+        "trace_interval": [
+          "468132892549655011309647052664160449439345272045642981/66239167335693369295389343140649369600000000000000000",
+          "1872531570198620045154635284988467763377471866848658669/264956669342773477158498942470460538880000000000000000"
+        ],
+        "trace_approximation": 7.067312458461398,
+        "trace_positive_exact": true
+      }
+    },
+    "events_decreasing.json": {
+      "sha256": "b23505b8c5abdf3e8aaeb42851d8a1768e54cb024292abd5b5b739c4b26d67a6",
+      "events": 4,
+      "accepted": 4,
+      "failures": {},
+      "saved_root_bracket_count_histogram": {
+        "2": 4
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 4
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 1.3803017386849063e-06,
+      "max_abs_residual_components": [
+        6.439293542825701e-14,
+        3.375685148077143e-14
+      ],
+      "maximum_recorded_flux_discrepancy": 9.140799228646301e-12,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 0.0022650175918103024,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "stable": 4,
+        "unstable": 4
+      },
+      "last_accepted": {
+        "r": 6.947634627431674,
+        "c": 0.9686373707756747,
+        "K": 0.0001220703125
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-7669153856173585441/2305843009213693952",
+          "-15338307712347170881/4611686018427387904"
+        ],
+        "trace_interval": [
+          "19416517486444282146412109950852452616340806503307/61834764113512208920002883993877872640000000000000000",
+          "77666069945777225420927755213384776878968738888267/247339056454048835656953105883374551040000000000000000"
+        ],
+        "trace_approximation": 0.00031400649399746596,
+        "trace_positive_exact": true
+      }
+    },
+    "events_arclength.json": {
+      "sha256": "d0e3929d591ddac63242b4ca7b0f2523a095868986b7a2de332257ba24bb3083",
+      "events": 27,
+      "accepted": 17,
+      "failures": {
+        "UNRESOLVED_RETURN": 2,
+        "CORRECTOR_ITERATION_LIMIT": 8
+      },
+      "saved_root_bracket_count_histogram": {
+        "2": 17
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 17
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 0.024178378394631266,
+      "max_abs_residual_components": [
+        1.0094187314777909e-08,
+        1.493160340279888e-08
+      ],
+      "maximum_recorded_flux_discrepancy": 8.835876080470761e-06,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 891.0394216926605,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "stable": 17,
+        "unstable": 17
+      },
+      "last_accepted": {
+        "r": 214759.01581060505,
+        "c": 1.573977181093815,
+        "K": 6.700420526114401
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-2580718377026226149/1152921504606846976",
+          "-20645747016209809191/9223372036854775808"
+        ],
+        "trace_interval": [
+          "1214990646518368865328255771427041782327229455281363/164613771842270096925139424693243084800000000000000",
+          "77759401377175607377349457330165963099298372173687003/10535281397905286202286585976682079846400000000000000"
+        ],
+        "trace_approximation": 7.380856613154765,
+        "trace_positive_exact": true
+      }
+    },
+    "events_angular_ld.json": {
+      "sha256": "be0606559eb942f38a7b8dc81bde88a6dbe314ae3bdb9be0a39116989e0fdf9a",
+      "events": 2,
+      "accepted": 1,
+      "failures": {
+        "CORRECTOR_UNRESOLVED": 1
+      },
+      "saved_root_bracket_count_histogram": {
+        "2": 1
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 1
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 0.024169259673899993,
+      "max_abs_residual_components": [
+        3.979027177192229e-11,
+        4.616576871801913e-11
+      ],
+      "maximum_recorded_flux_discrepancy": 6.294498342690469e-15,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 2060.7020550944203,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "unassigned": 2
+      },
+      "last_accepted": {
+        "r": "204584.17714108149999674",
+        "c": "1.5739771810940594701017",
+        "K": "6.7004205261159836214645"
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-20645747016208558795/9223372036854775808",
+          "-10322873508104279397/4611686018427387904"
+        ],
+        "trace_interval": [
+          "155518802754383746422986993077272003364867078006578305640377/21070562795808265831072892940513915699200000000000000000000",
+          "971992517214898415097932306218365734876228241412499813530353/131691017473801661432676365832143503360000000000000000000000"
+        ],
+        "trace_approximation": 7.380856613157117,
+        "trace_positive_exact": true
+      }
+    },
+    "events_half.json": {
+      "sha256": "64413c74fed4792ece33cae90cf40851834d0a8a98af5d7dc142c82036987cc5",
+      "events": 8,
+      "accepted": 8,
+      "failures": {},
+      "saved_root_bracket_count_histogram": {
+        "2": 8
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 8
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 0.013268726459541504,
+      "max_abs_residual_components": [
+        4.2500725161431774e-17,
+        4.289884419916845e-13
+      ],
+      "maximum_recorded_flux_discrepancy": 7.186091999e-13,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 2288.2136436061714,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "stable": 8,
+        "unstable": 8
+      },
+      "last_accepted": {
+        "r": "609856836.87106666801265",
+        "c": "1.5858811351472328702574",
+        "K": "6.924332020286051205156"
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-20625226979592994895/9223372036854775808",
+          "-10312613489796497447/4611686018427387904"
+        ],
+        "trace_interval": [
+          "26232368852939020155606450820003347931081953609247371857189/3505451668237536698895170202819048243200000000000000000000",
+          "491856915992606627894137613259025286916649863292738674570183/65727218779453813098519833779822919680000000000000000000000"
+        ],
+        "trace_approximation": 7.483306385487286,
+        "trace_positive_exact": true
+      }
+    },
+    "events_quad.json": {
+      "sha256": "8eff8436436e7f972022bb5bee4157f0a9b6ff64eb3e44ca1b2458b6330e3d99",
+      "events": 10,
+      "accepted": 10,
+      "failures": {},
+      "saved_root_bracket_count_histogram": {
+        "2": 10
+      },
+      "adjacent_profile_sign_change_histogram": {
+        "2": 10
+      },
+      "bracket_or_label_problems": [],
+      "minimum_positive_fold_curvature": 0.006238945295932732,
+      "max_abs_residual_components": [
+        1.1292959859106772e-28,
+        3.775363701668544e-24
+      ],
+      "maximum_recorded_flux_discrepancy": 6.8706139691e-24,
+      "minimum_exact_remote_Hopf_gap_KH_minus_K": 4331.599683280402,
+      "all_checked_remote_traces_positive": true,
+      "root_stability_labels": {
+        "stable": 10,
+        "unstable": 10
+      },
+      "last_accepted": {
+        "r": "295881311432547652.547112249151329666",
+        "c": "1.5934058052781371099083577066172161",
+        "K": "7.06390700436779910773804298664181037"
+      },
+      "last_remote_exact_enclosure": {
+        "x_interval": [
+          "-20612626894692837161/9223372036854775808",
+          "-2576578361836604645/1152921504606846976"
+        ],
+        "trace_interval": [
+          "3964459016552499362910383460870121552576541518398778092450758154321339281/525236673881979950116694893670820741120000000000000000000000000000000000",
+          "2477786885345312101699631951003515944895718844414876641344964378161601/328272921176237468794111270929091788800000000000000000000000000000000"
+        ],
+        "trace_approximation": 7.547947837022722,
+        "trace_positive_exact": true
+      }
+    }
+  }
+}

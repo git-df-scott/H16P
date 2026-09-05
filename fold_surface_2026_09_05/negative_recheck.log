@@ -1,0 +1,38 @@
+{
+  "status": "EXACT_IDENTITIES_AND_SAVED_DATA_ONLY",
+  "orbit_evaluations": 0,
+  "right_Melnikov_constant_c_one_third": "152/675",
+  "left_Melnikov_constant_c_one_third": "8/27",
+  "conditional_delta_log_radius_limit": "(2/9)*log(25/19)",
+  "conditional_delta_log_radius_limit_decimal": "0.060985965711502286487",
+  "m_H": "(21000*c**2 + 21441*c + 10101)/(50*(8 - 5*c)*(2*c + 1)**2)",
+  "full_return_reproduction": {
+    "sha256": "9eaded55577a52ca25ff213a137f373fbea2afbe6ac78a13dd45bfbd00cd98e9",
+    "field": {
+      "c": "168343696162308681404693782077301251/500000000000000000000000000000000000",
+      "m": "8645145685991851026666419025163957/3125000000000000000000"
+    },
+    "two_brackets_verified": true,
+    "rows": [
+      {
+        "left_radius": "10316597428.823826792489975159991449",
+        "right_radius": "10536434437.7175644518232860548041899",
+        "left_L": "-2.29867080575891196819789187216140617e-05",
+        "right_L": "1.20738567234630713842799157371722757e-06",
+        "endpoint_derivative_sign": "positive"
+      },
+      {
+        "left_radius": "13550003248.5874964614567880789195467",
+        "right_radius": "14113621314.7445041902780326625196984",
+        "left_L": "5.01111327291526340428189164832706537e-07",
+        "right_L": "-6.41797751693528722053276577288341005e-05",
+        "endpoint_derivative_sign": "negative"
+      }
+    ],
+    "interval_certified": false,
+    "third_cycle_trigger": false
+  }
+}
+events_negative.json accepted 20 failed 1
+events_m.json accepted 6 failed 1
+events_logm.json accepted 11 failed 1
