@@ -134,3 +134,66 @@ Starting watch for five limit cycles (total >= 5). Max total seen so far: 0. Dat
 
 **Max total: 0**
 
+
+### Iteration 7 - 2026-09-05T06:23:10.525574
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 13 records
+
+
+### Iteration 6 - 2026-09-05T06:24:02.567694 (+100m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 14 records
+
+
+### Iteration 8 - 2026-09-05T06:43:10.550788
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+
+
+### Iteration 7 - 2026-09-05T06:44:02.582506 (+120m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+
+
+### Iteration 9 - 2026-09-05T07:03:10.612580
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+
+
+### Iteration 8 - 2026-09-05T07:04:02.570547 (+140m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+

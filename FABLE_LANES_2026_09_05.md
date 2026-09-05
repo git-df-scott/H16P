@@ -149,3 +149,8 @@ Two-center neutral unfolding (a = -1 + da, da log-uniform, eps log-uniform), 200
 counting to radius e^40: totals 0/1/2/3 = 11574/6453/1988/17, never four. CLOSED numerically.
 KKL near c* (c, K, beta, p, q free): in progress; total four appears at about 0.25 percent (the (3,1)
 configurations), no five so far.
+
+### F15 KKL c* sweep and F20 descent (compactified counting)
+KKL near c* with (c, K, beta, p, q) free, 10048 fields: totals 0/1/2/3/4 = 3016/4391/1976/641/24, never
+five; every four is (3,1) with the remote cycle at radius 1e6 to 1e9 next to the infinity graphic.
+Descent from the 24 four-cycle seeds (40 generations, 64 per generation): maximum total four. CLOSED.
