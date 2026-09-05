@@ -271,3 +271,21 @@ Completed at: 2026-09-05T08:03:10.709870
 
 **Max total: 0**
 
+
+### Iteration 12 - 2026-09-05T08:24:02.580571 (+220m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 0**
+
+
+## WATCH COMPLETE
+
+**Completed at 2026-09-05T08:24:02.581207**
+Total elapsed: 220.0 minutes
+Max total seen: 4
+Final total-4 count: 25
+FIVE CANDIDATE: NOT found during watch
