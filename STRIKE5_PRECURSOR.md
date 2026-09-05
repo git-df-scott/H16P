@@ -4,7 +4,8 @@
 first directed continuation reached the prescribed remote-section limit
 before a detected origin fold. This is a result about the explored path,
 not an exclusion of the KKL box. The full 4096-call allowance is not
-exhausted; unvisited sheets and additional roots remain open.
+exhausted; unvisited sheets and additional roots remain open. A subsequent
+four-call test of one exact c>1 field supplied no remote U-root bracket.
 
 The pilot and its directed extension use the council's exact family
 
@@ -131,13 +132,15 @@ projection is retained as a cancellation diagnostic. The continuation was
 replayed successfully; this numerical issue was not used to reject the
 field. [Derivative derivation and independent review](kkl/notes_return_review.md).
 
-All 202 calls, including controls and retries, are charged. They used about
+The initial 202 calls, including controls and retries, are charged. They used about
 6.68 CPU seconds inside the evaluators and 65.52 wall seconds including
 subprocess startup; these timings exclude mathematical analysis and report
 writing. Each evaluator ran serially, on one computational thread, with
 a ten-CPU-second fuse. Exact totals, continuation-step counts, software
 versions and remaining allowance are in
-[strike_summary.json](kkl/data/strike_summary.json).
+[strike_summary.json](kkl/data/strike_summary.json). The later fixed-field
+test brings the total to 206 calls, about 6.86 evaluator CPU seconds and
+67.07 subprocess wall seconds.
 
 The original intermediate source hashes were not captured. Historical rows
 remain unaltered, with the method change documented: calls 1–131 used the
@@ -194,6 +197,47 @@ restrictions. A positive stationary maximum alone is insufficient; one
 needs the S/U/S sign pattern at one shape, including the remote U root.
 Disconnected sheets, additional infinity strata and unseen roots remain
 unresolved. The remaining call allowance is preserved for that task.
+
+## Analytic addition after the branch checkpoint
+
+An explicit reversing symmetry proves that the simultaneous zero
+`K=J(c)=0` is a **double center**, not an order-three weak focus. Analytic
+division of its local return gives at most one small nonzero origin cycle
+on the beta-zero slice. In the cone where the remote focus is attracting,
+even that origin cycle cannot shrink into the center. This rules out the
+local missing-pair shortcut; it does not bound cycles on a finite annulus.
+[Proof and exact symmetry](kkl/notes_local_unfolding.md).
+
+The remote trace condition has the exact form
+
+\[
+ K>K_H(c),\qquad
+ K_H(c)=-\frac{441J(c)}{125(16-10c)(1+2c)^2}.
+\]
+
+At positive-K remote Hopf points the small cycle is stable on the
+unstable-focus side, so that Hopf cannot seed the required remote U cycle.
+A finite remote U cycle remains open. [Derivation and infinity gates](kkl/notes_other_strata.md).
+
+The subsequent bounded test used `c=1001/1000`,
+`alpha=-196/5`, `beta=0`, beyond c=1. It passes exact finite-equilibrium
+gates and has a different necessary amplitude condition for stable cycles.
+Its infinity directions were classified explicitly, with no presumption
+that the old cycles persist there. Four remote controls at
+`r=-8,-512,-32768,-1048576` all returned inward. They supplied no U-root
+bracket, so the conditional origin block did not run. This is a negative
+result for the attempted numerical seeding, not an absence proof at that
+field or in the c>1 stratum.
+[Fixed-field protocol, data and stopping rules](kkl/NEXT_BOUNDED_TEST.md).
+
+The next mathematical pruning question is whether a remote U cycle can
+exist in the attracting-remote-focus region with `J<=0`. The known Hopf
+sign only blocks its local birth; a Dulac or return-map comparison would
+be needed for a finite-amplitude exclusion. In parallel with that question,
+the direct target remains an additional stationary-return branch on an
+admissible cycle sheet. Neither coefficient grids nor extrapolation past
+the previous radius cutoff supplies such a branch. No further return
+calls are justified by the failed fixed-field controls alone.
 
 ```text
 FIVE-CYCLE FIELD CERTIFIED: NO

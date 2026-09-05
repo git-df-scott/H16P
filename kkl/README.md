@@ -14,6 +14,7 @@ Exact replay, without orbit integrations:
 
 ```sh
 python kkl/check_exact.py
+python kkl/check_new_gate_review.py
 ```
 
 A charged replay of the initial origin control:
@@ -62,3 +63,11 @@ python kkl/summarize.py
 No whole-box exclusion follows from these files. No beta<0 completion is
 authorized by merely finding the two currently tracked cycles; it needs
 the complete four-cycle precursor at one common beta-zero field first.
+
+The subsequent exact work identifies the K=J=0 double center and excludes
+the proposed local fold pair there. See [the local proof](notes_local_unfolding.md),
+[remote stability and infinity gates](notes_other_strata.md), and
+[independent review](notes_new_gate_review.md). These results do not exclude
+a pair at finite amplitude. [The subsequent bounded test](NEXT_BOUNDED_TEST.md)
+records four remote controls at one rational field in c>1. No U-root
+bracket was found, so its conditional origin block did not run.

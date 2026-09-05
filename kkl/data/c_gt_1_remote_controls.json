@@ -1,0 +1,181 @@
+{
+  "status": "NUMERICAL_CONTROLS_NOT_CYCLE_CERTIFICATES",
+  "controls": [
+    {
+      "request": {
+        "r": "-8",
+        "c": "1001/1000",
+        "alpha": "-196/5",
+        "beta": "0"
+      },
+      "result": {
+        "status": "NUMERICAL_ONLY",
+        "r": -8.0,
+        "c": 1.001,
+        "alpha": -39.2,
+        "beta": 0.0,
+        "return_coordinate": -7.806524250814901,
+        "D": 0.19347574918509913,
+        "period": 0.5990018116034768,
+        "R_r": 0.9382092881675719,
+        "R_c": -27.832713864466932,
+        "R_alpha": -0.483308187842459,
+        "speed_derivative": 0.9382092881666533,
+        "derivative_discrepancy": 9.185985305748545e-13,
+        "projected_R_r": 0.9382092881671505,
+        "projected_R_c": -27.8327138644174,
+        "projected_R_alpha": -0.4833081878418174,
+        "projection_cancellation_discrepancy": 4.972688927296076e-13,
+        "divergence_exponential": 0.8721047925623933,
+        "opposite_coordinate": -2.6379881396573714,
+        "opposite_time": 0.1716839832182984,
+        "winding_about_focus": 1.0034928791519706,
+        "min_xy": [
+          -8.630785734974088,
+          -4.949230875487507
+        ],
+        "max_xy": [
+          -2.2564360400393553,
+          21.268672658363887
+        ],
+        "min_distance_focus": 1.2611983401645228,
+        "nfev": 1294,
+        "tol": 1e-11,
+        "wall_seconds": 0.01840283299679868,
+        "cpu_seconds": 0.015814999999999968
+      }
+    },
+    {
+      "request": {
+        "r": "-512",
+        "c": "1001/1000",
+        "alpha": "-196/5",
+        "beta": "0"
+      },
+      "result": {
+        "status": "NUMERICAL_ONLY",
+        "r": -512.0,
+        "c": 1.001,
+        "alpha": -39.2,
+        "beta": 0.0,
+        "return_coordinate": -252.1678364025547,
+        "D": 259.8321635974453,
+        "period": 0.5354107024984169,
+        "R_r": 0.34796118585396224,
+        "R_c": -2640.528064700351,
+        "R_alpha": -104.28714723011726,
+        "speed_derivative": 0.34796118585550584,
+        "derivative_discrepancy": -1.5435985822875864e-12,
+        "projected_R_r": 0.3479611858556893,
+        "projected_R_c": -2640.5280646725714,
+        "projected_R_alpha": -104.28714723112046,
+        "projection_cancellation_discrepancy": 1.8346435481930712e-13,
+        "divergence_exponential": 0.08373439867732364,
+        "opposite_coordinate": -1.7827735910018498,
+        "opposite_time": 0.20134456775318577,
+        "winding_about_focus": 1.0016092742309355,
+        "min_xy": [
+          -512.0,
+          -645.065218933199
+        ],
+        "max_xy": [
+          -1.6128242439328142,
+          763.8639776181282
+        ],
+        "min_distance_focus": 1.9179765204893549,
+        "nfev": 3166,
+        "tol": 1e-11,
+        "wall_seconds": 0.037004375000833534,
+        "cpu_seconds": 0.03641300000000003
+      }
+    },
+    {
+      "request": {
+        "r": "-32768",
+        "c": "1001/1000",
+        "alpha": "-196/5",
+        "beta": "0"
+      },
+      "result": {
+        "status": "NUMERICAL_ONLY",
+        "r": -32768.0,
+        "c": 1.001,
+        "alpha": -39.2,
+        "beta": 0.0,
+        "return_coordinate": -2881.3549680782417,
+        "D": 29886.64503192176,
+        "period": 0.5283796957196923,
+        "R_r": 0.041631971955993975,
+        "R_c": 7586.644998405606,
+        "R_alpha": -2155.763354106648,
+        "speed_derivative": 0.04163197195653866,
+        "derivative_discrepancy": -5.446823547750057e-13,
+        "projected_R_r": 0.04163197195661103,
+        "projected_R_c": 7586.644998115953,
+        "projected_R_alpha": -2155.763354101262,
+        "projection_cancellation_discrepancy": 7.237266341775239e-14,
+        "divergence_exponential": 0.00032150027681399274,
+        "opposite_coordinate": -1.6492509705735197,
+        "opposite_time": 0.20207926014181035,
+        "winding_about_focus": 1.0002482498100729,
+        "min_xy": [
+          -32768.0,
+          -41547.91846596383
+        ],
+        "max_xy": [
+          -1.493184279043412,
+          8759.638640777363
+        ],
+        "min_distance_focus": 2.0375144231446662,
+        "nfev": 4606,
+        "tol": 1e-11,
+        "wall_seconds": 0.05971629200212192,
+        "cpu_seconds": 0.05752200000000002
+      }
+    },
+    {
+      "request": {
+        "r": "-1048576",
+        "c": "1001/1000",
+        "alpha": "-196/5",
+        "beta": "0"
+      },
+      "result": {
+        "status": "NUMERICAL_ONLY",
+        "r": -1048576.0,
+        "c": 1.001,
+        "alpha": -39.2,
+        "beta": 0.0,
+        "return_coordinate": -11335.554859196896,
+        "D": 1037240.4451408031,
+        "period": 0.5275460581141298,
+        "R_r": 0.0035049035962896225,
+        "R_c": 256261.89526408407,
+        "R_alpha": -10901.535280192198,
+        "speed_derivative": 0.003504903596322324,
+        "derivative_discrepancy": -3.2701705926507785e-14,
+        "projected_R_r": 0.0035049035961310995,
+        "projected_R_c": 256261.89595793188,
+        "projected_R_alpha": -10901.535309722181,
+        "projection_cancellation_discrepancy": -1.9122464028908936e-13,
+        "divergence_exponential": 4.0946164688772494e-07,
+        "opposite_coordinate": -1.6032616751561612,
+        "opposite_time": 0.20297064230230832,
+        "winding_about_focus": 1.0000683681501152,
+        "min_xy": [
+          -1048576.0,
+          -1330350.7528668514
+        ],
+        "max_xy": [
+          -1.45097387456622,
+          34465.2205237947
+        ],
+        "min_distance_focus": 2.0791661148290794,
+        "nfev": 5770,
+        "tol": 1e-11,
+        "wall_seconds": 0.06917475000227569,
+        "cpu_seconds": 0.06884100000000001
+      }
+    }
+  ]
+}

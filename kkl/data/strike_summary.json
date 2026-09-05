@@ -3,15 +3,15 @@
   "precursor_found": false,
   "five_cycle_candidate_found": false,
   "five_cycle_certificate": false,
-  "charged_evaluations": 202,
+  "charged_evaluations": 206,
   "evaluation_allowance": 4096,
-  "remaining_allowance": 3894,
+  "remaining_allowance": 3890,
   "continuation_events": 24,
   "accepted_numerical_points": 22,
-  "cpu_seconds_inside_evaluators": 6.683028999999999,
-  "wall_seconds_including_subprocess_startup": 65.51552066998556,
+  "cpu_seconds_inside_evaluators": 6.86162,
+  "wall_seconds_including_subprocess_startup": 67.07162562798476,
   "largest_evaluator_cpu_seconds": 0.09126400000000001,
-  "last_admissible_field": {
+  "last_accepted_common_cycle_field": {
     "c": "9301/10000",
     "alpha": "-8403125/209244",
     "beta": "0",
@@ -22,6 +22,19 @@
   "remote_root": -1048286.5115219664,
   "remote_multiplier": 1.9028084917467103,
   "phase_end_reason": "Selected path reached K=1/64 and remote section-radius allowance before a detected origin fold.",
+  "additional_fixed_field_test": {
+    "c": "1001/1000",
+    "alpha": "-196/5",
+    "beta": "0",
+    "evaluations": [
+      203,
+      204,
+      205,
+      206
+    ],
+    "result": "Four numerical inward returns; no remote U-root bracket; conditional origin controls not run.",
+    "scope": "No fixed-field or stratum-wide absence proof."
+  },
   "not_excluded": [
     "unvisited cycle sheets",
     "additional zeros between section samples",
