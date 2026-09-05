@@ -148,3 +148,17 @@ b = 1.276 and eta_2 at b = 1.273 (slopes +0.58 and -4.3 per unit b); at a = -1.5
 (slopes +0.75 and -1.9). Both vanish at the same point with opposite-signed slopes, as Proposition A
 predicts (both are simple zeros of C3 along the sheet). Combined with a = -2.5 (neutral loop on C3 to eight
 digits) and a = -3 (F11), lemma (B) is confirmed at every crossing found.
+
+## 11. Attempt at (C): loops around an order-three weak focus (NUMERICAL + one exact identity)
+
+Parity plus Li-Cherkas: a homoclinic loop around a genuine order-three focus encloses no limit cycle, so the
+loop's stability must oppose the focus's, sigma * eta_3 < 0. Sign map over 48,254 saddles on the Shi line
+(b = 3l+5, m = 5a, a in [-4,4], l in [-4,3]): 22 percent are loop-compatible (7,544 at the saddle (0,1),
+3,170 on the line 1+ax+by = 0). So parity alone does not exclude loops. Exact identity at (0,1):
+sigma = 5a and eta_3 = -25 a (2a^2+l+2) q / 64 with q the quintic factor (q = C3 restricted to the Shi line),
+so sigma * eta_3 = -125 a^2 (2a^2+l+2) q / 64 and (0,1) is loop-compatible exactly where q < 0 (the factor
+2a^2+l+2 is positive on the whole sampled region). For saddles on the line no such factor law holds (43
+percent agreement with the q-sign rule): the sign depends on which root of P on the line is the saddle.
+Conclusion: (C) does not follow from sign algebra. It stands as Lane C's numerical statement (loops on the
+order-three stratum occur only on the center curve q = 0) unless the Llibre-Schlomiuk classification of
+third-order weak-focus portraits already contains it (being checked).
