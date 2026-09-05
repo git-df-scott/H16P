@@ -1,0 +1,12 @@
+{
+  "historical_KKL_Shi": 756,
+  "previous_fold_strike": 3297,
+  "parallel_reseed": 24,
+  "this_followup": 19,
+  "total": 4096,
+  "remaining": 0,
+  "cusp_calls": 16,
+  "complete_return_calls": 3,
+  "three_origin_candidate": false,
+  "component_kill": false
+}

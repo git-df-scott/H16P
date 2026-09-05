@@ -1,5 +1,14 @@
 # Status
 
+## Fold closure follow-up, 2026-09-05
+
+[KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md): exact multiplier-band restriction
+and complete obstruction to the specified quartic scalar-certificate strategy
+at a true fold. The component itself remains open. No three-origin-cycle or
+five-cycle candidate; the largest saved two-cycle pair now has numerical
+complete-return sign reproduction. Shared known ledger:4096/4096, exhausted.
+Older budget figures below describe their own historical snapshots.
+
 ## Current fold-component checkpoint, 2026-09-05
 
 [KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) records partial fold

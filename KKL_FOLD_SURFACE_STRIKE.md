@@ -1,5 +1,10 @@
 # KKL fold-surface strike
 
+**Subsequent continuation:** [KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md) adds
+an exact obstruction to the scalar quartic certificate strategy and completes
+the previously unrun outermost full-return sign check. The historical
+completed/unfinished list below records the earlier stop.
+
 This work continues `main` commit `79001f70eb180331f5ac0b740f5d5aadfe833329`.
 The previous 400 KKL and 150 Shi/Chen–Wang evaluations were not repeated.
 

@@ -1,5 +1,15 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Fold closure follow-up, 2026-09-05
+
+[KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md) proves a global single-negative-band
+restriction for the multiplier polynomial on 1<=c<=8/5,K>0 and an impossibility
+theorem for the proposed analytic monic-quartic scalar Dulac certificate at
+a true fold. It also completes numerical return-sign reproduction at the
+largest saved pair. No K1 candidate or component-wide exclusion was obtained.
+The failed triple-root Newton attempt is archived as unresolved. Known shared
+accounting is now 4096/4096 calls.
+
 ## Current fold-component checkpoint, 2026-09-05
 
 Read [KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) first. The finite

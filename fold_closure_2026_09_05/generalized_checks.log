@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_IDENTITIES_ONLY",
+  "focus_coefficient": "(B*c*m - 10*B - m - 20)/(8*m**(3/2))",
+  "center_parity_polynomial": "B**2*c**2 + B**2*c - 2*B*c**2 - B*c - B + 40*c**3 - 28*c - 10",
+  "center_projection_at_c1": "2*(B - 1)**2",
+  "K_at_B1_c1": "-30",
+  "angular_velocity_third_derivative": "6*g1*g2*(g1*h2 - g2*h1)/(g1 + g2*r)**4",
+  "cycle_count_bound": false
+}
