@@ -1,0 +1,30 @@
+{
+  "status": "EXACT_IDENTITIES",
+  "scope": "Three-dimensional subspace only; not the complete finite-a family",
+  "functions": [
+    "F",
+    "F*t",
+    "G*t*(1 - t)"
+  ],
+  "coefficients": [
+    [
+      "-528*a - 704/3",
+      "1088*a",
+      "288*a + 944/3",
+      "-768*a"
+    ],
+    [
+      "480 - 1152*a",
+      "1904*a - 2720/3",
+      "192",
+      "-96*a - 784/3"
+    ],
+    [
+      "1000/9 - 160*a",
+      "680*a/3 - 1360/9",
+      "80/3",
+      "40*a/3 - 200/3"
+    ]
+  ],
+  "basis_determinant": "2263040*(486*a**3 - 441*a**2 - 486*a + 236)/81"
+}

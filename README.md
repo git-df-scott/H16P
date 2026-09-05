@@ -2,6 +2,13 @@
 
 ## Latest Q4 route-4 reduction, 2026-09-05
 
+[Strike 7](Q4_SEVENTH_LIMITING_FACE.md) proves that the limiting original
+family at `a=1` has at most three interior zeros. Both limiting boundary
+determinants have exact negative-sign certificates. An explicit
+three-dimensional subspace has at most two zeros at every finite lift.
+The remaining finite-lift direction is unresolved: **route 4 is still open,
+and no four-zero counterexample has been found.**
+
 [Strike 6](Q4_SIXTH_BOUNDARY_REDUCTION.md) narrows the outside-lobe
 four-interior-zero problem. Every survivor needs first primitive anchor
 `r>1-(7/22)^(3/2)` and `kappa>2.89924108097...` (an exactly defined
