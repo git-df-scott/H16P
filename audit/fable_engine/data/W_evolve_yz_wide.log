@@ -1,0 +1,12 @@
+seed: 4 [([241.53424863175965], ['S']), ([0.029382253660055483, 0.06434438223986316, 0.09521895295863479], ['U', 'S', 'U'])] score 4.846
+gen 0: sigma 0.15 best score 4.8464 totals {np.int64(0): np.int64(114), np.int64(1): np.int64(12), np.int64(2): np.int64(2)} 2s
+gen 1: sigma 0.15 best score 4.8464 totals {np.int64(0): np.int64(110), np.int64(1): np.int64(16), np.int64(2): np.int64(2)} 3s
+gen 2: sigma 0.145 best score 4.8464 totals {np.int64(0): np.int64(102), np.int64(1): np.int64(21), np.int64(2): np.int64(5)} 3s
+gen 3: sigma 0.145 best score 4.8464 totals {np.int64(0): np.int64(92), np.int64(1): np.int64(23), np.int64(2): np.int64(13)} 5s
+gen 4: sigma 0.141 best score 4.8464 totals {np.int64(0): np.int64(75), np.int64(1): np.int64(30), np.int64(2): np.int64(23)} 6s
+gen 5: sigma 0.141 best score 4.8464 totals {np.int64(0): np.int64(80), np.int64(1): np.int64(34), np.int64(2): np.int64(14)} 8s
+gen 6: sigma 0.137 best score 4.8464 totals {np.int64(0): np.int64(80), np.int64(1): np.int64(27), np.int64(2): np.int64(21)} 7s
+gen 7: sigma 0.137 best score 4.8464 totals {np.int64(0): np.int64(84), np.int64(1): np.int64(33), np.int64(2): np.int64(11)} 5s
+gen 8: sigma 0.133 best score 4.8464 totals {np.int64(0): np.int64(90), np.int64(1): np.int64(24), np.int64(2): np.int64(14)} 6s
+gen 9: sigma 0.133 best score 4.8464 totals {np.int64(0): np.int64(78), np.int64(1): np.int64(36), np.int64(2): np.int64(14)} 6s
+gen 10: sigma 0.129 best score 4.8464 totals {np.int64(0): np.int64(66), np.int64(1): np.int64(38), np.int64(2): np.int64(24)} 8s
