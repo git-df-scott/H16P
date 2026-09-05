@@ -1,0 +1,23 @@
+{
+  "CE": false,
+  "D1": "OPEN",
+  "D2": "OPEN",
+  "literal_Proposition_A": "GAP: false converse",
+  "corrected_A_implication": "VERIFIED including chart degeneracies",
+  "statement_C": "VERIFIED via Llibre-Schlomiuk 2004 Theorem 16(III), Figures 2-3",
+  "second_order_catalogue_component_audit": "INCOMPLETE: full article unavailable; no theorem/portrait number invented",
+  "K_values": 24,
+  "rational_vectors_checked": 24,
+  "tight_root_brackets_checked": 48,
+  "outside_grid_edge_agreements": 24,
+  "outside_resolved_edge_agreements": 24,
+  "sign_disagreements": 0,
+  "unresolved_sign_comparisons_after_budget_rechecks": 0,
+  "minimum_local_profile_abs_log_displacement": "8.4392306152030778405561218159127299e-17",
+  "maximum_outside_or_exp40_tolerance_difference": "2.0929076656581e-23",
+  "true_return_domain_boundary_certified": false,
+  "interval_certified": false,
+  "additional_pair_excluded": false,
+  "boundary_search_failures_remain_unresolved": true,
+  "analytic_controls_passed": 6
+}

@@ -1,6 +1,17 @@
 # D2: the order-two loop law (toward a theorem)
 
-2026-09-05. Status: CONJECTURE with numerical evidence; proof program below. Nothing here is proved.
+2026-09-05. Status: D2 OPEN; see sections 12-13 and the afternoon audit correction below.
+
+**Astra hostile audit, 2026-09-05 afternoon:** section 9's literal “if and only if”
+is false. The needed implication, zero divergence at a non-origin equilibrium
+implies center, is independently verified including `b=0` and `l=-1`.
+The additional omitted case is `a^2-b(l+1)=0`. The exact reversible field
+`x'=-y+xy+y^2, y'=x+x^2+xy` has a center but no neutral non-origin equilibrium.
+Statement (C) in its intended genuine-order-three form follows from the 2004
+Theorem 16; the section 9 formulation restricting center intersections to
+`(b,l)=(2,-1)` is too narrow. D2's component enumeration remains incomplete.
+See [the complete audit](FASTRA_AFTERNOON_REPORT_2026_09_05.md).
+The sections below retain the historical derivation and must be read with these corrections.
 
 ## 1. Statement
 

@@ -1,0 +1,98 @@
+{
+  "FABLE_D2_ORDER_TWO_LOOP.md": {
+    "sha256": "3dda11c36914be05fb30cfc07616344ef89e739185b7668a4ef4a2ec264f6edd",
+    "bytes": 13808
+  },
+  "FASTRA_AFTERNOON_REPORT_2026_09_05.md": {
+    "sha256": "373b8f60822301ce785e85f7597a9c899a126f06578c90be3ffac216708bc98a",
+    "bytes": 13332
+  },
+  "astra_afternoon_2026_09_05/README.md": {
+    "sha256": "490300fa40e8792926b8b4ad75b3c288c9e9caa834326c60b0c8b31df5dcc2ba",
+    "bytes": 4081
+  },
+  "astra_afternoon_2026_09_05/audit_proposition_a.py": {
+    "sha256": "a34a4ba9e265b0c7ceb7e7a1c563c2eef4433907a9d97aed137331c1ba40625f",
+    "bytes": 3102
+  },
+  "astra_afternoon_2026_09_05/center_sign_map.csv": {
+    "sha256": "f00f6b182ab0ec7f757cee634bd1615d9794a86e4fe3a97dbc49206173213b43",
+    "bytes": 14537
+  },
+  "astra_afternoon_2026_09_05/center_sign_map.jsonl": {
+    "sha256": "d5ad742b34f3264756e69d67a50c56c44ba232bd3a063623260e10547e719c02",
+    "bytes": 397697
+  },
+  "astra_afternoon_2026_09_05/center_sign_map.log": {
+    "sha256": "bf3778315a041fa571c41ce027b4b5d76d9980bbc380f13df8c8833a47852a97",
+    "bytes": 2578
+  },
+  "astra_afternoon_2026_09_05/domain_edge_map.csv": {
+    "sha256": "68c43579e4c3c96f2ec3e519fb93377295a6b00e5e801c49b38e11b4d97ca22d",
+    "bytes": 3042
+  },
+  "astra_afternoon_2026_09_05/domain_edge_map.jsonl": {
+    "sha256": "0ee49c312ee5a337adcdff689d6f36976ee24d96eb7af629f453dd492ea8efbc",
+    "bytes": 100066
+  },
+  "astra_afternoon_2026_09_05/domain_edge_map.log": {
+    "sha256": "20453d276a33be18953f05aaae9c0cd74e10abe456bfb42fdfa6bbb497c2b904",
+    "bytes": 2210
+  },
+  "astra_afternoon_2026_09_05/domain_endpoint_checks.jsonl": {
+    "sha256": "90964d4811b7323cb478947ec0a51b89d9b03160174ea54bcf268e6cfe188844",
+    "bytes": 3050
+  },
+  "astra_afternoon_2026_09_05/example_request.json": {
+    "sha256": "ce621488be94eac0d95f051ee8a33d3a79543e7605692603923c0612f19b8d8c",
+    "bytes": 182
+  },
+  "astra_afternoon_2026_09_05/example_result.json": {
+    "sha256": "ec5c06df2aff1da65c1eb9bfe811d44c0b818fda7458f3514efd937841b928ef",
+    "bytes": 2054
+  },
+  "astra_afternoon_2026_09_05/extend_domain_edge.py": {
+    "sha256": "f8c151ea8af3235d3c8163c927db4cb1704c45d827a0739cf474c01c951581e1",
+    "bytes": 1939
+  },
+  "astra_afternoon_2026_09_05/full_return128.cpp": {
+    "sha256": "c20ff9cf31daeddf2209f376a8674fab1ae767df34fb27809ccdd78d6a802a2d",
+    "bytes": 3665
+  },
+  "astra_afternoon_2026_09_05/full_return128.py": {
+    "sha256": "298695fb13b198588ea69a07c07c149fcef4fe5647761c7ed3aaeb69a96ec55e",
+    "bytes": 2470
+  },
+  "astra_afternoon_2026_09_05/full_return128_validation.json": {
+    "sha256": "5483f3c08e0c335fe55faa1eccdbd1cb858358d094bd6ff2746f025fe32aabe8",
+    "bytes": 8881
+  },
+  "astra_afternoon_2026_09_05/inherited_center_events.jsonl": {
+    "sha256": "d271056cdd431e08637d2a2e016f2125e90331cb821b2b21a569f32c933b798c",
+    "bytes": 44995
+  },
+  "astra_afternoon_2026_09_05/inherited_half_quad.cpp": {
+    "sha256": "2a9fa7f709f945914ece20847988aae2e936c5e63dec6c3f965792a9047ee3fd",
+    "bytes": 3933
+  },
+  "astra_afternoon_2026_09_05/proposition_a_exact.json": {
+    "sha256": "9819d4765e47b17e44681c33dad341e57509d113cf9cce589d4820998869705a",
+    "bytes": 1556
+  },
+  "astra_afternoon_2026_09_05/run_center_sign_map.py": {
+    "sha256": "ecb2d3b6ecff5603d7047f9b209d5aa13c1d91b7d712f6555c162ec85d1a9dd3",
+    "bytes": 5607
+  },
+  "astra_afternoon_2026_09_05/summarize_and_check.py": {
+    "sha256": "a215b2dd8db43240c53869eea1169ba8c42fba5c29386e888f28ccb98233bb6a",
+    "bytes": 3188
+  },
+  "astra_afternoon_2026_09_05/summary.json": {
+    "sha256": "e387c7499fab2347a01f1beaf172ac388892e79714f80bdcf4844a6246c5fb64",
+    "bytes": 1000
+  },
+  "astra_afternoon_2026_09_05/validate_full_return128.py": {
+    "sha256": "2f289b7d07028e09235bc096380c74c6f457bd1a5794a63a5088b1627926b144",
+    "bytes": 2037
+  }
+}

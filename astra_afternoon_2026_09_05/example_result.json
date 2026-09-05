@@ -1,0 +1,78 @@
+{
+  "method": "binary128 full angular return",
+  "certified": false,
+  "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+  "coefficients": [
+    "0",
+    "0",
+    "1",
+    "1",
+    "1",
+    "0",
+    "0",
+    "-37",
+    "0",
+    "-10",
+    "11/5",
+    "969/1000"
+  ],
+  "center": [
+    "0",
+    "0"
+  ],
+  "ray_angle": "0",
+  "tolerance": "2e-27",
+  "y_scale": "6.082762530298219688999684245202067062084970094786411186419153046486333",
+  "points": [
+    {
+      "status": "OK_NUMERICAL",
+      "log_radius": "-20",
+      "log_displacement": "-1.82946109193157261940076552609455095e-21",
+      "radial_displacement": "-3.77080035674516036345617413069123011e-30",
+      "direction": -1,
+      "evaluations": 2854,
+      "steps": 85,
+      "rejections": 0
+    },
+    {
+      "status": "OK_NUMERICAL",
+      "log_radius": "1.89999999999999999999999999999999992",
+      "log_displacement": "-0.00276831399299995125486405089870370727",
+      "radial_displacement": "-0.0184830598797942968681038163635146832",
+      "direction": -1,
+      "evaluations": 8861,
+      "steps": 128,
+      "rejections": 7
+    },
+    {
+      "status": "OK_NUMERICAL",
+      "log_radius": "2.29999999999999999999999999999999985",
+      "log_displacement": "-0.00398794397686854935176612026474735729",
+      "radial_displacement": "-0.0396972729834168015982676283643562227",
+      "direction": -1,
+      "evaluations": 9832,
+      "steps": 144,
+      "rejections": 7
+    },
+    {
+      "status": "OK_NUMERICAL",
+      "log_radius": "37",
+      "log_displacement": "0.0826485718760479924830867126075167446",
+      "radial_displacement": "1009721708642017.33250576269334603842",
+      "direction": -1,
+      "evaluations": 44492,
+      "steps": 978,
+      "rejections": 5
+    },
+    {
+      "status": "OK_NUMERICAL",
+      "log_radius": "44",
+      "log_displacement": "0.348631426282614423942702158924824083",
+      "radial_displacement": "5360746552853146762.94398956034190018",
+      "direction": -1,
+      "evaluations": 45633,
+      "steps": 988,
+      "rejections": 5
+    }
+  ]
+}

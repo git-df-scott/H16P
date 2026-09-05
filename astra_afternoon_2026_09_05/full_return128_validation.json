@@ -1,0 +1,360 @@
+[
+  {
+    "control": "near_integrable_1e_minus17",
+    "target": "0.000000000000000062831853071795864769252867665590057683943387987502116419498891846",
+    "absolute_errors": [
+      "4.4687998e-32",
+      "1.5418709e-35",
+      "2.9267712e-32"
+    ],
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "1/100000000000000000",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1/100000000000000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "0",
+      "tolerance": "2e-28",
+      "y_scale": "1",
+      "points": [
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "-20",
+          "log_displacement": "6.28318530717958200812552348163417354e-17",
+          "radial_displacement": "1.29506101563459185683735608100913896e-25",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "0",
+          "log_displacement": "6.2831853071795864784671576524434694e-17",
+          "radial_displacement": "6.28318530717958667585924567423064636e-17",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "3",
+          "log_displacement": "6.28318530717958940369650992861984928e-17",
+          "radial_displacement": "1.26201150482585895117085598364718343e-15",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        }
+      ]
+    }
+  },
+  {
+    "control": "beyond_exp36",
+    "target": "0.0062831853071795864769252867665590057683943387987502116419498891846",
+    "absolute_errors": [
+      "4.5749601e-31",
+      "4.5749601e-31",
+      "4.5749601e-31"
+    ],
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "1/1000",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "1/1000",
+        "0",
+        "0",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "1.234567890123456789",
+      "tolerance": "2e-28",
+      "y_scale": "1",
+      "points": [
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "37",
+          "log_displacement": "0.00628318530717958647692528676701650178",
+          "radial_displacement": "73865355019104.1334886691309721164635",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "44",
+          "log_displacement": "0.00628318530717958647692528676701650178",
+          "radial_displacement": "81003197573039562.7841355506116066826",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "60",
+          "log_displacement": "0.00628318530717958647692528676701650178",
+          "radial_displacement": "719803366148564634769963.173506696476",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        }
+      ]
+    }
+  },
+  {
+    "control": "large_coefficient_1e14",
+    "target": "0.00000000062831853071795864769252867665590057683943387987502116419498891846",
+    "absolute_errors": [
+      "7.228463e-31",
+      "8.0922666e-33",
+      "3.0062288e-30"
+    ],
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "1/1000",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-100000000000000",
+        "1/1000",
+        "0",
+        "0",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "0.7",
+      "tolerance": "2e-28",
+      "y_scale": "10000000",
+      "points": [
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "-20",
+          "log_displacement": "6.28318530717958647691805830360337733e-10",
+          "radial_displacement": "1.2950610160414481545906353517770309e-18",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "0",
+          "log_displacement": "6.28318530717958647692536768922481299e-10",
+          "radial_displacement": "6.28318530915350735755665643546069893e-10",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "44",
+          "log_displacement": "6.28318530717958647689522447818272226e-10",
+          "radial_displacement": "8074898503.7657940879509844110934814",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        }
+      ]
+    }
+  },
+  {
+    "control": "exact_center_scaled_nonzero_ray",
+    "target": "0.0",
+    "absolute_errors": [
+      "0.0",
+      "0.0",
+      "0.0"
+    ],
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-100",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "1.7",
+      "tolerance": "2e-28",
+      "y_scale": "10",
+      "points": [
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "-20",
+          "log_displacement": "0",
+          "radial_displacement": "0",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "0",
+          "log_displacement": "0",
+          "radial_displacement": "0",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "44",
+          "log_displacement": "0",
+          "radial_displacement": "0",
+          "direction": -1,
+          "evaluations": 1968,
+          "steps": 82,
+          "rejections": 0
+        }
+      ]
+    }
+  },
+  {
+    "control": "nonlinear_exact_reversible_center",
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "0",
+        "-1",
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "0",
+      "tolerance": "2e-28",
+      "y_scale": "1",
+      "points": [
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "-3",
+          "log_displacement": "-2.52581860346497207656585395214128048e-29",
+          "radial_displacement": "-1.25753103495533191115286156808430639e-30",
+          "direction": 1,
+          "evaluations": 9343,
+          "steps": 212,
+          "rejections": 0
+        },
+        {
+          "status": "OK_NUMERICAL",
+          "log_radius": "-2",
+          "log_displacement": "-3.05989823634299645097680719539950667e-28",
+          "radial_displacement": "-4.14112194490691068383759695389377903e-29",
+          "direction": 1,
+          "evaluations": 7543,
+          "steps": 112,
+          "rejections": 2
+        }
+      ]
+    }
+  },
+  {
+    "control": "chart_failure_has_null_displacement",
+    "result": {
+      "method": "binary128 full angular return",
+      "certified": false,
+      "coefficient_order": "P:1,x,y,x^2,xy,y^2; Q:same",
+      "coefficients": [
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0"
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "ray_angle": "0",
+      "tolerance": "2e-25",
+      "y_scale": "1",
+      "points": [
+        {
+          "status": "ANGULAR_CHART_UNRESOLVED",
+          "log_radius": "0",
+          "log_displacement": null,
+          "evaluations": 0,
+          "steps": 0,
+          "rejections": 0
+        }
+      ]
+    }
+  }
+]

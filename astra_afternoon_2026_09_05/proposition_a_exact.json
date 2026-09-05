@@ -1,0 +1,55 @@
+{
+  "verdict_literal_proposition": "GAP: converse false; missing H=0 case",
+  "corrected_implication": "VERIFIED for real Shi chart, including b=0 and l=-1",
+  "line_trace": "-(b + 2*l)*(a**2*x + a - b*l*x - b*x)/(b*(l + 1))",
+  "candidate": {
+    "x": "-a/(a**2 - b*l - b)",
+    "y": "(l + 1)/(a**2 - b*l - b)"
+  },
+  "P_at_candidate": "(-a**2*(b + 2*l + 1) + (b + 1)*(l + 1)**2)/(a**2 - b*(l + 1))**2",
+  "uncancelled_numerator": "-b**2*(l + 1)*(a**2*(b + 2*l + 1) - (b + 1)*(l + 1)**2)",
+  "generic_reflection_residual": [
+    "-2*a*(a*x**2 - a*y**2 - 2*l*x*y - 2*x*y)*(a**2*b + 2*a**2*l + a**2 - b*l**2 - 2*b*l - b - l**2 - 2*l - 1)/(a**2 + l**2 + 2*l + 1)**2",
+    "-2*a*(2*a*x*y + l*x**2 - l*y**2 + x**2 - y**2)*(a**2*b + 2*a**2*l + a**2 - b*l**2 - 2*b*l - b - l**2 - 2*l - 1)/(a**2 + l**2 + 2*l + 1)**2"
+  ],
+  "degenerate_l_minus_one_polynomial": "b**3 - 3*b**2 - b*m**2 + m**2 + 4",
+  "degenerate_reflection_residual": [
+    "2*m*(-2*b*x*y + m*x**2 - m*y**2 + 4*x*y)*(b**3 - 3*b**2 - b*m**2 + m**2 + 4)/(b**2 - 4*b + m**2 + 4)**2",
+    "2*m*(b**3 - 3*b**2 - b*m**2 + m**2 + 4)*(b*x**2 - b*y**2 + 2*m*x*y - 2*x**2 + 2*y**2)/(b**2 - 4*b + m**2 + 4)**2"
+  ],
+  "counterexample": {
+    "vector": [
+      "0",
+      "0",
+      "-1",
+      "0",
+      "1",
+      "1",
+      "0",
+      "1",
+      "0",
+      "1",
+      "1",
+      "0"
+    ],
+    "equilibria": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "traces": [
+      "-1",
+      "0",
+      "1"
+    ]
+  }
+}
