@@ -49,3 +49,46 @@ reproduction before being called anything.
 
 Results are appended below as they arrive, each marked NUMERICAL. Scripts live
 in `audit/fable_*`.
+
+## Results (NUMERICAL unless stated), appended 2026-09-05
+
+### Engine (F2)
+`audit/fable_engine/`: compiled Dormand-Prince return-map counter. Reproduces the KKL incumbent
+(origin roots 0.68321, 2.18370, 15.96278; remote unstable cycle beyond radius 3665 on the ray away
+from the origin), the Yu-Zeng field (origin 0.0244 U, 0.0603 S, 0.1043 U; large cycle around (1,0))
+and the relaxed Shi field (0.0041 U, 0.0061 S, 0.0643 U; large cycle around (0,1)).
+Hostile review (`REVIEW_engine.md`) found that the first production settings missed two of the three
+Yu-Zeng cycles and that tolerances scaled with the focus offset. Fixed: the field is re-expanded about
+each focus, tolerance is relative to the orbit radius, a noise floor of 5e-12 relative rejects
+integration-noise sign changes, the return-domain edge is bisected, rays point away from the nearest
+other equilibrium. After the fix all three seeds report their published counts at production settings.
+Every sweep result recorded before the fix (local F3, cloud workers) is a lower bound only.
+
+### F6: reversible center at the Shi loop point
+First-order Melnikov span on the annulus is three-dimensional (singular values 18.1, 1.83, 0.43, then
+1e-13). Maximum zero count over 200k random directions: two.
+
+### F11: order-two weak focus with a homoclinic saddle loop (lam = 0, eta_1 = 0)
+Scan over (a, b) with loops located by separatrix splitting. Two populations only:
+loops with saddle trace exactly zero, all with eta_2 = O(1e-9) (centers), and focus-type loops with
+nonzero trace. In every focus-type loop the trace and eta_2 have opposite signs, giving parity one
+(exactly one existing cycle, as Zhang's theorem requires). Along the focus branch at a = -3 the ratio
+trace/eta_2 is constant to four digits (-0.02758, -0.02757, -0.02756, -0.02755 at b = 1.22, 1.24,
+1.26, 1.29) through the common zero at b = 1.275, where the branch crosses the center stratum
+a^2(b+2l+1) = (b+1)(l+1)^2. Same sign structure at a = -2 and a = -1.5.
+Conclusion: a neutral saddle loop around a second-order weak focus does not exist as a focus
+configuration; it is a center. The codimension-four organizing center "order-two focus + neutral
+loop" collapses onto the integrable stratum, exactly as the order-three loop did (Lane C) and as the
+neutral infinity graphic did in KKL (Astra, K = J = 0).
+
+### F12: KKL double center (beta = 0, K = 0, J(c) = 0)
+Confirmed a center numerically (displacement 1e-13 across the origin annulus); the second antisaddle
+also has trace zero. Melnikov analysis pending with the corrected normalisation.
+
+### F13: Yu-Han reversible two-center family on the curve a4 = (a1-5)/3
+At the published point (a1, a4) = (-30/7, -65/21): span dimension three, Taylor matrix at the center
+singular (ratio 5e-13), so the element with v0 = v1 = v2 = 0 exists, as the Yu-Han construction
+requires. Its interior zero count is zero: the reported crossing at r = 0.034 is the least-squares
+residual floor, and a direct dense scan of the actual Yu-Zeng field shows D/r positive and increasing
+from r = 0.11 to the annulus edge at 0.2333. No fourth origin cycle there. Grid over a1 running for
+both annuli.
