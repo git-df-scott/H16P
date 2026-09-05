@@ -1,5 +1,18 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Current fold-component checkpoint, 2026-09-05
+
+Read [KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) first. The finite
+KKL fold was continued to horizontal radius approximately 2.96e17 on the
+positive-K sheet, and through the center organizer onto a separate negative-K
+sheet. Selected two-cycle pairs have complete-return numerical reproduction.
+No three-origin-cycle field, 3+1 precursor, or five-cycle field was found.
+The component and endpoint proofs remain incomplete. Work was stopped at the
+user's instruction; all numerical failures and replay data are archived.
+Inherited KKL/Shi ledger: 4053/4096 calls used, 43 unspent; the parallel
+re-seed ledger below is separate. Older entries below
+are chronological records.
+
 ## Reversible re-seed, 2026-09-05
 
 Read [REVERSIBLE_RESEED_2026_09_05.md](REVERSIBLE_RESEED_2026_09_05.md).
@@ -10,6 +23,7 @@ no five-cycle candidate and supplies a four-cycle numerical control,
 independently checked by high-precision quadrature and original-field
 integration. **The full reversible route remains open; this is not a
 proof of H(2)=4.** Replay code and logs are in `reversible_reseed/`.
+
 
 ## Current staged strike, 2026-09-05
 

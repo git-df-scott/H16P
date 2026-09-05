@@ -1,0 +1,18 @@
+{"eval": 1304, "purpose": "long-double fixed-amplitude fold continuation", "status": "NUMERICAL_ONLY", "r": "204584.17714108149999674", "c": "1.5739771810941330000425", "K": "6.7004205261144012002045", "L": "-2.1254672485579439999981e-08"}
+{"eval": 1305, "purpose": "long-double fixed-amplitude fold continuation", "status": "NUMERICAL_ONLY", "r": "204584.17714108149999674", "c": "1.5739771810940594701017", "K": "6.7004205261159836214645", "L": "-3.9790271771922292032286e-11"}
+{"eval": 1306, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "1.2570086284857196994155", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.029170127412699366976543"}
+{"eval": 1307, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "186.55662157276272257456", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.12016128986374671533052"}
+{"eval": 1308, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "3747.0899108648746549388", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.064942439245687536529539"}
+{"eval": 1309, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "27687.457559117608600019", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.02531911686909826299241"}
+{"eval": 1310, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "75262.312759180426645855", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.0084065885029658126564867"}
+{"eval": 1311, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "151559.6860892893760564", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.000833063877226875547366"}
+{"eval": 1312, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "204584.17714108149999674", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "-0.0001933324277342066133123"}
+{"eval": 1313, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "276159.75340457806225913", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.0009552527691515282429191"}
+{"eval": 1314, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "556117.45111284822547759", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.018213628046229472443041"}
+{"eval": 1315, "purpose": "angular pair-side full-turn profile", "status": "NUMERICAL_ONLY", "r": "1511683.9618490167748632", "c": "1.5739771825217666338572", "K": "6.7004205261159836214645", "L": "0.13249227696177584990417"}
+{"eval": 1316, "purpose": "angular pair-side full-turn profile", "status": "UNRESOLVED", "r": null, "c": null, "K": null, "L": null}
+{"eval": 1317, "purpose": "angular pair-side full-turn profile", "status": "UNRESOLVED", "r": null, "c": null, "K": null, "L": null}
+{"eval": 1318, "purpose": "angular pair-side full-turn profile", "status": "UNRESOLVED", "r": null, "c": null, "K": null, "L": null}
+POINT 204584.17714108149999674 1.5739771810940594701017 6.7004205261159836214645 BRACKETS 2
+{"eval": 1319, "purpose": "long-double fixed-amplitude fold continuation", "status": "NUMERICAL_ONLY", "r": "411981.94062347244357625", "c": "1.5759006607196628163212", "K": "6.7369109259294837834149", "L": "2.9097138884338929164242"}
+{"eval": 1320, "purpose": "long-double fixed-amplitude fold continuation", "status": "UNRESOLVED", "r": null, "c": null, "K": null, "L": null}

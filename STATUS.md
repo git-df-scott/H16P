@@ -1,5 +1,15 @@
 # Status
 
+## Current fold-component checkpoint, 2026-09-05
+
+[KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) records partial fold
+continuation, numerical two-cycle reproduction, and new center/infinity
+asymptotic organizers. No K1, 3+1, or >=5-cycle candidate was found. Exhaustive
+component/root coverage and endpoint certification remain open. Work stopped
+at the user's request, with 4053/4096 calls in the inherited KKL/Shi ledger
+and 43 unspent there; the parallel re-seed ledger below is separate. The staged
+section below is historical and its older remaining-budget count is superseded.
+
 ## Reversible re-seed update: 2026-09-05
 
 [The re-seed report](REVERSIBLE_RESEED_2026_09_05.md) excludes the
@@ -14,6 +24,7 @@ This strike adds 24 return-difference evaluations (48 half-flow integrations
 plus startup steps) for the new control; its moment search performs no
 ODE returns. The staged budget below is a historical checkpoint and does
 not consolidate parallel branch work.
+
 
 ## Latest staged work: 2026-09-05
 

@@ -1,0 +1,30 @@
+{
+  "status": "NUMERICAL_QUADRATURE_ONLY",
+  "orbit_evaluations": 0,
+  "precision_digits": 45,
+  "moment_calls": 46,
+  "center_c": "0.96862063355349428616412539953799",
+  "center_m": "37.136414809497199558703352409835",
+  "normalized_b": "-0.29419893410314380009146734168187",
+  "normalized_d": "1.0161979651060018001746194704836",
+  "annulus_outer_energy": "18.265531340814575443398851356002",
+  "rows": [
+    {
+      "finite_difference_step": ".0001",
+      "energy": "1.2051408313901188605777508421749",
+      "section_r": "6.9475390789984109293563460270732",
+      "moment_ratio": "3.5869815850815258956342084449073",
+      "limiting_dc_dK": "0.13710961096153199067221771124175",
+      "ratio_second_derivative": "0.016994264390913348678365407410952"
+    },
+    {
+      "finite_difference_step": ".00005",
+      "energy": "1.2051408316991828198942990444687",
+      "section_r": "6.9475390829123685069679403650906",
+      "moment_ratio": "3.5869815850815258956328556939417",
+      "limiting_dc_dK": "0.13710961096153199065390492679433",
+      "ratio_second_derivative": "0.016994264402165733425062420308388"
+    }
+  ],
+  "limitations": "Local stationary ratio only; no uniqueness, interval enclosure, or complete-component theorem."
+}
