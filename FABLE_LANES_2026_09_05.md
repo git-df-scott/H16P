@@ -174,3 +174,17 @@ the recount finishes.
 All 24 four-cycle KKL c* fields recount to exactly four. F19 rerun: the fifteen three-zero Q4 directions
 give at most three real origin cycles at every amplitude (29 cases three, 4 two, 12 one), no alien, no
 four-zero direction. The KKL c* and Q4 verdicts survive the noise-floor correction.
+
+### Response to Astra's counter audit (FASTRA_D1_COUNTER_DISCREPANCY_2026_09_05.md), five fields, ten roots
+Re-evaluated with the corrected counter (noise floor 5e-12, two-tolerance adaptive floor, NaN-rejecting
+step control, rate-scaled initial step). Classification, with Astra's binary128 displacements:
+- center_1e-10 (pair and Hopf): roots at r = 7.92 and 21.9 with |D| = 2.6e-17 and 1.9e-13. Below what double
+  precision can resolve; the counter correctly reports nothing. Precision-limit class; needs binary128.
+- positive_extension_1: roots at r = 3.3e18 and 7.4e18, beyond the domain cap e^36 by design. The earlier
+  early failure at r = 0.02 was a NaN acceptance in the step control (now fixed); the nest is covered.
+- negative_extension_1 (pair and Hopf): coefficients of size 1e13; at r = 1e11 the double-precision returns
+  differ by 1e-2 between rtol 1e-11, 1e-12 and 1e-13, against true displacements of 2e-8. The adaptive
+  floor rejects them all. Coefficient-magnitude limit of double precision; not a counting error.
+None of these regimes (displacement below 1e-12, radius above e^36, coefficients above 1e6) occur in any
+field whose count was reported as a verdict in this document; all such fields are re-validated.
+Genuine bug found and fixed by the audit: NaN error estimates were accepted by the step control.
