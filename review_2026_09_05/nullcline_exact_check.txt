@@ -1,0 +1,2 @@
+PASS: rational section, cubic identity, transversality, sensitivities, determinant ratio
+No ODE evaluations or periodic-orbit certificates were produced.

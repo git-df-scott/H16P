@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "6048ed8b09e12094b0875fdc68c5a1fb6341775d",
+  "remote_main_at_review": "6048ed8b09e12094b0875fdc68c5a1fb6341775d",
+  "review_additional_ode_evaluations": 0,
+  "saved_return_records": 206,
+  "allowance": 4096,
+  "remaining": 3890,
+  "unchanged_ledger_sha256": "6512aee92e51455a0d17291535a4f6019885340463e31b1f53e9643dcb44c3fe",
+  "new_exact_replay": "check_nullcline_section.py",
+  "new_exact_replay_scope": "Rational identities and initial section derivatives, not a validated return map",
+  "full_conversation_delivery": "local outputs only; not in public Git commit",
+  "raw_transcript_messages": 78,
+  "recorded_objectives": 4,
+  "five_cycle_candidate": false,
+  "five_cycle_certificate": false
+}
