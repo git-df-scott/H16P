@@ -77,6 +77,19 @@ question, a pure-mathematics item.
 
 ## Campaign decision
 
+### Q4 route 4 update, 2026-09-05
+
+**NARROWED, STILL OPEN.** [Strike 6](Q4_SIXTH_BOUNDARY_REDUCTION.md)
+proves that any four-interior-zero candidate outside the lobe must have
+`r>1-(7/22)^(3/2)` and `kappa>kappa_*`, where
+`kappa_*=2.89924108097...` is defined exactly in the proof. Equality is
+excluded. The second-anchor determinant has at most one interior zero
+unless it vanishes identically, and two nonpositive boundary signs exclude
+the entire second-anchor interval. Those two boundary signs are still
+unproved. The global Q4 distinct-interior-zero bound remains **four**;
+the strict-lobe bound remains **three**. No new limit-cycle example or
+global quadratic upper bound is claimed.
+
 **YELLOW — no generic coefficient sweep.** Only the three attacks in
 [`ATTACK_MATRIX.md`](ATTACK_MATRIX.md) are authorized by this audit. Any
 expansion requires a new mathematical reduction, a new bifurcation identity,

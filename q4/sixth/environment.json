@@ -1,0 +1,11 @@
+{
+  "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "mpmath": "1.3.0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "base_commit": "3b94f34",
+  "arithmetic_proof": "Fraction interval arithmetic and symbolic identities",
+  "numeric_status": "diagnostic only"
+}
