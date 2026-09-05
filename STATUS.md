@@ -1,5 +1,19 @@
 # Status
 
+## Latest staged work: 2026-09-05
+
+See [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md). There is a numerical
+finite KKL fold/two-cycle-pair signal and no certified M1 or five-cycle field.
+The pair field's remote equilibrium is exactly an unstable focus. The earlier
+KKL pair persists numerically to c=0.9683 beyond the old cutoff, at different
+parameters. The two classical-seed trace paths lose their innermost cycle into
+the focus. These findings do not prove a family-wide exclusion or K1 false.
+
+Budget: 206 historical + 400 new KKL + 150 new Shi/Chen–Wang = 756 returns;
+3340 remain against the conservative common 4096 ceiling. Stage 2's 400-call
+allocation is fully spent. Global graphic connection/coefficient work, general
+Shi-chart fold continuation and an interval return-map verifier remain open.
+
 Audit cutoff: **2026-09-04**
 
 ## Binding mathematical status

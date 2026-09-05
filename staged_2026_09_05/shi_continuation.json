@@ -1,0 +1,1109 @@
+{
+  "validated": false,
+  "paths": {
+    "shi": {
+      "coefficients_exact": [
+        "-10",
+        "499/100",
+        "1",
+        "-3113751/125000"
+      ],
+      "focus_quantities_exact": [
+        "1/1000000",
+        "-738648442471027523/375000000000000000",
+        "393801202719981275366738799578213/37500000000000000000000000000"
+      ],
+      "initial_lambda": -1e-14,
+      "roots_initial": [
+        {
+          "root": 7.105453741451317e-05,
+          "initial_bracket": [
+            4e-05,
+            0.00015
+          ],
+          "root_samples": [
+            [
+              4e-05,
+              -2.1391173084190067e-14,
+              37
+            ],
+            [
+              0.00015,
+              1.0374372228103776e-13,
+              38
+            ],
+            [
+              5.8803939799471486e-05,
+              -9.830908444234193e-15,
+              39
+            ],
+            [
+              7.341074442274569e-05,
+              2.0953988239426928e-15,
+              40
+            ],
+            [
+              7.084439420713128e-05,
+              -1.8369856272113242e-16,
+              41
+            ],
+            [
+              7.105124576547453e-05,
+              -2.881319021863281e-18,
+              42
+            ],
+            [
+              7.105453741451317e-05,
+              1.327677229219452e-22,
+              43
+            ],
+            [
+              7.105403705924048e-05,
+              -4.378777108864076e-19,
+              44
+            ]
+          ],
+          "detail": {
+            "index": 45,
+            "family": "Shi conditioned",
+            "l_m_a_b_exact": [
+              "-10",
+              "499/100",
+              "1",
+              "-3113751/125000"
+            ],
+            "r": 7.105453741451317e-05,
+            "lambda": -1e-14,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-shi-initial-0",
+            "validated": false,
+            "status": "ok",
+            "H": 2.6557222954565604e-22,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 2.5250804012176184e-09,
+            "Vx_section": 7.108424344564866e-05,
+            "raw_log_return": -4.187730891225261e-18,
+            "period": 6.2831849631976375,
+            "divergence_integral": 6.218597414352905e-14,
+            "multiplier_at_cycle": 1.0000000000000622,
+            "return_derivative": 1.0000000000000622,
+            "nfev": 1934,
+            "cpu_seconds": 0.015991437000000275
+          }
+        },
+        {
+          "root": 0.0007087663979210806,
+          "initial_bracket": [
+            0.0006,
+            0.0015
+          ],
+          "root_samples": [
+            [
+              0.0006,
+              6.266435612324807e-13,
+              46
+            ],
+            [
+              0.0015,
+              -4.8680939449516084e-11,
+              47
+            ],
+            [
+              0.0006114379811516271,
+              5.877409387789649e-13,
+              48
+            ],
+            [
+              0.0007821815917277296,
+              -8.239538621978037e-13,
+              49
+            ],
+            [
+              0.0006825248831513178,
+              2.0867790096724116e-13,
+              50
+            ],
+            [
+              0.0007137505716539175,
+              -4.436162781213524e-14,
+              51
+            ],
+            [
+              0.0007082762397255738,
+              4.278744779932938e-15,
+              52
+            ],
+            [
+              0.0007087577999586432,
+              7.517927261225587e-17,
+              53
+            ],
+            [
+              0.0007087663979210806,
+              -3.845517323566105e-21,
+              54
+            ],
+            [
+              0.0007087658943772487,
+              4.399416988125296e-18,
+              55
+            ]
+          ],
+          "detail": {
+            "index": 56,
+            "family": "Shi conditioned",
+            "l_m_a_b_exact": [
+              "-10",
+              "499/100",
+              "1",
+              "-3113751/125000"
+            ],
+            "r": 0.0007087663979210806,
+            "lambda": -1e-14,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-shi-initial-1",
+            "validated": false,
+            "status": "ok",
+            "H": -7.698785036068228e-21,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 2.517911773836711e-07,
+            "Vx_section": 0.0007112408722283307,
+            "raw_log_return": -4.9087253359281213e-17,
+            "period": 6.283150994101521,
+            "divergence_integral": -6.197985917902327e-12,
+            "multiplier_at_cycle": 0.9999999999938021,
+            "return_derivative": 0.9999999999938021,
+            "nfev": 1934,
+            "cpu_seconds": 0.012000720999999714
+          }
+        },
+        {
+          "root": 0.020166175831359916,
+          "initial_bracket": [
+            0.02,
+            0.025
+          ],
+          "root_samples": [
+            [
+              0.02,
+              -3.84055011616091e-08,
+              57
+            ],
+            [
+              0.025,
+              3.2337871577282406e-06,
+              58
+            ],
+            [
+              0.02005868465760607,
+              -2.5187513467494594e-08,
+              59
+            ],
+            [
+              0.020169646836062698,
+              8.347103400301002e-10,
+              60
+            ],
+            [
+              0.02016608752159384,
+              -2.123681215686573e-11,
+              61
+            ],
+            [
+              0.020166175831359916,
+              -1.7202258496580246e-14,
+              62
+            ],
+            [
+              0.020166176432190795,
+              1.271720513554929e-13,
+              63
+            ]
+          ],
+          "detail": {
+            "index": 64,
+            "family": "Shi conditioned",
+            "l_m_a_b_exact": [
+              "-10",
+              "499/100",
+              "1",
+              "-3113751/125000"
+            ],
+            "r": 0.020166175831359916,
+            "lambda": -1e-14,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-shi-initial-2",
+            "validated": false,
+            "status": "ok",
+            "H": 7.461479351045242e-15,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 0.00013931210264332976,
+            "Vx_section": -0.00043749321788132166,
+            "raw_log_return": -1.8059772427525544e-14,
+            "period": 6.253409776482408,
+            "divergence_integral": 4.8457400150213326e-06,
+            "multiplier_at_cycle": 1.0000048457517556,
+            "return_derivative": 1.000004845751774,
+            "nfev": 1946,
+            "cpu_seconds": 0.016000199999999687
+          }
+        }
+      ],
+      "roots_trace_zero": [
+        {
+          "root": 0.0007123090765406943,
+          "initial_bracket": [
+            0.0006,
+            0.0015
+          ],
+          "root_samples": [
+            [
+              0.0006,
+              6.580218113382876e-13,
+              69
+            ],
+            [
+              0.0015,
+              -4.864961787761077e-11,
+              70
+            ],
+            [
+              0.0006120107073455635,
+              6.170246093280871e-13,
+              71
+            ],
+            [
+              0.0007905128033756177,
+              -9.11151406507971e-13,
+              72
+            ],
+            [
+              0.000684083678604003,
+              2.287839206349178e-13,
+              73
+            ],
+            [
+              0.0007180311329579701,
+              -5.234367301030173e-14,
+              74
+            ],
+            [
+              0.0007117103928726739,
+              5.35674036125228e-15,
+              75
+            ],
+            [
+              0.000712297192196101,
+              1.0654768039421794e-16,
+              76
+            ],
+            [
+              0.0007123090765406943,
+              -7.421789289966545e-21,
+              77
+            ],
+            [
+              0.0007123085729791489,
+              4.5076943693945344e-18,
+              78
+            ]
+          ],
+          "detail": {
+            "index": 79,
+            "family": "Shi conditioned",
+            "l_m_a_b_exact": [
+              "-10",
+              "499/100",
+              "1",
+              "-3113751/125000"
+            ],
+            "r": 0.0007123090765406943,
+            "lambda": 0.0,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-shi-zero-0",
+            "validated": false,
+            "status": "ok",
+            "H": -1.48589516990003e-20,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 2.5431718960556766e-07,
+            "Vx_section": 0.0007148056387309182,
+            "raw_log_return": -3.97089045672816e-17,
+            "period": 6.283150649738523,
+            "divergence_integral": -6.386986642695214e-12,
+            "multiplier_at_cycle": 0.999999999993613,
+            "return_derivative": 0.999999999993613,
+            "nfev": 1934,
+            "cpu_seconds": 0.016000900999999956
+          }
+        },
+        {
+          "root": 0.020166175706286565,
+          "initial_bracket": [
+            0.02,
+            0.025
+          ],
+          "root_samples": [
+            [
+              0.02,
+              -3.840547109509681e-08,
+              80
+            ],
+            [
+              0.025,
+              3.233787187407908e-06,
+              81
+            ],
+            [
+              0.020058684611670555,
+              -2.518749389762634e-08,
+              82
+            ],
+            [
+              0.02016964670584866,
+              8.347090538343126e-10,
+              83
+            ],
+            [
+              0.020166087396715007,
+              -2.1236764107794493e-11,
+              84
+            ],
+            [
+              0.020166175706286565,
+              -1.7202194362331647e-14,
+              85
+            ],
+            [
+              0.020166176307117444,
+              1.2717210701273003e-13,
+              86
+            ]
+          ],
+          "detail": {
+            "index": 87,
+            "family": "Shi conditioned",
+            "l_m_a_b_exact": [
+              "-10",
+              "499/100",
+              "1",
+              "-3113751/125000"
+            ],
+            "r": 0.020166175706286565,
+            "lambda": 0.0,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-shi-zero-1",
+            "validated": false,
+            "status": "ok",
+            "H": 4.260480856999038e-15,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 0.0001393121026980484,
+            "Vx_section": -0.0004374925382392616,
+            "raw_log_return": -1.8111380450935854e-14,
+            "period": 6.253409776863629,
+            "divergence_integral": 4.845739700547191e-06,
+            "multiplier_at_cycle": 1.0000048457514412,
+            "return_derivative": 1.0000048457514599,
+            "nfev": 1934,
+            "cpu_seconds": 0.016000319999999846
+          }
+        }
+      ],
+      "intermediate_signs": [
+        {
+          "index": 65,
+          "family": "Shi conditioned",
+          "l_m_a_b_exact": [
+            "-10",
+            "499/100",
+            "1",
+            "-3113751/125000"
+          ],
+          "r": 4e-06,
+          "lambda": -1e-16,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "shi-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": -4.272597137627752e-16,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 8.000127691111099e-12,
+          "Vx_section": 4.000095744443679e-06,
+          "raw_log_return": -2.1369158951568303e-16,
+          "period": 6.2831853060897656,
+          "divergence_integral": -2.264949160299054e-16,
+          "multiplier_at_cycle": 0.9999999999999998,
+          "return_derivative": 1.0,
+          "nfev": 806,
+          "cpu_seconds": 0.00798001199999998
+        },
+        {
+          "index": 66,
+          "family": "Shi conditioned",
+          "l_m_a_b_exact": [
+            "-10",
+            "499/100",
+            "1",
+            "-3113751/125000"
+          ],
+          "r": 1.5e-05,
+          "lambda": -1e-16,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "shi-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": 2.1980320092337277e-15,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 1.1250671985187884e-10,
+          "Vx_section": 1.5001342710352804e-05,
+          "raw_log_return": 1.098689824015342e-15,
+          "period": 6.283185291853287,
+          "divergence_integral": 5.02261569195004e-15,
+          "multiplier_at_cycle": 1.000000000000005,
+          "return_derivative": 1.000000000000004,
+          "nfev": 806,
+          "cpu_seconds": 0.004002462999999956
+        },
+        {
+          "index": 67,
+          "family": "Shi conditioned",
+          "l_m_a_b_exact": [
+            "-10",
+            "499/100",
+            "1",
+            "-3113751/125000"
+          ],
+          "r": 0.0015,
+          "lambda": -1e-16,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "shi-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": -9.742569450079877e-11,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 1.1298342439007983e-06,
+          "Vx_section": 0.0015083938581199967,
+          "raw_log_return": -4.864991645214117e-11,
+          "period": 6.283031139901673,
+          "divergence_integral": -3.2020966607426704e-10,
+          "multiplier_at_cycle": 0.9999999996797904,
+          "return_derivative": 0.9999999997285132,
+          "nfev": 818,
+          "cpu_seconds": 0.0071683349999993595
+        },
+        {
+          "index": 68,
+          "family": "Shi conditioned",
+          "l_m_a_b_exact": [
+            "-10",
+            "499/100",
+            "1",
+            "-3113751/125000"
+          ],
+          "r": 0.025,
+          "lambda": -1e-16,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "shi-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": -0.00021291187750138718,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 2.3371793989800885e-05,
+          "Vx_section": -0.06155088618359797,
+          "raw_log_return": 3.233787189443893e-06,
+          "period": 6.236733348791021,
+          "divergence_integral": 3.8875078863215284e-05,
+          "multiplier_at_cycle": 1.000038875834509,
+          "return_derivative": 1.0000355630510416,
+          "nfev": 1034,
+          "cpu_seconds": 0.008000501000000604
+        }
+      ],
+      "origin_endpoint": {
+        "index": 88,
+        "family": "Shi conditioned",
+        "l_m_a_b_exact": [
+          "-10",
+          "499/100",
+          "1",
+          "-3113751/125000"
+        ],
+        "r": 1e-06,
+        "lambda": 0.0,
+        "rtol": 2e-11,
+        "atol": 2e-14,
+        "max_step": 0.1,
+        "tag": "shi-origin-endpoint",
+        "validated": false,
+        "status": "ok",
+        "H": 1.2566396061644519e-17,
+        "measure": "deltaV_over_Vinitial",
+        "Vinitial": 5.000019962934116e-13,
+        "Vx_section": 1.0000059885069764e-06,
+        "raw_log_return": 6.302666281400842e-18,
+        "period": 6.283185307111474,
+        "divergence_integral": 2.522442941099625e-17,
+        "multiplier_at_cycle": 1.0,
+        "return_derivative": 1.0,
+        "nfev": 806,
+        "cpu_seconds": 0.007982634999999405
+      }
+    },
+    "chen": {
+      "coefficients_exact": [
+        "-3",
+        "99/100",
+        "2/9",
+        "-3"
+      ],
+      "focus_quantities_exact": [
+        "1/400",
+        "-2097205519/7776000000",
+        "19274211731911232971/604661760000000000"
+      ],
+      "initial_lambda": -2e-05,
+      "roots_initial": [
+        {
+          "root": 0.0662982152603612,
+          "initial_bracket": [
+            0.04,
+            0.08
+          ],
+          "root_samples": [
+            [
+              0.04,
+              -3.751971319612495e-05,
+              89
+            ],
+            [
+              0.08,
+              2.202541879653061e-05,
+              90
+            ],
+            [
+              0.06520421867618177,
+              -1.7388350939222252e-06,
+              91
+            ],
+            [
+              0.06628682888252156,
+              -1.8137680855498384e-08,
+              92
+            ],
+            [
+              0.06629823116715104,
+              2.5338372025562883e-11,
+              93
+            ],
+            [
+              0.0662982152603612,
+              -4.388850394221322e-16,
+              94
+            ],
+            [
+              0.06629821609185227,
+              1.3232349244107766e-12,
+              95
+            ]
+          ],
+          "detail": {
+            "index": 96,
+            "family": "Chen-Wang visualization",
+            "l_m_a_b_exact": [
+              "-3",
+              "99/100",
+              "2/9",
+              "-3"
+            ],
+            "r": 0.0662982152603612,
+            "lambda": -2e-05,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-chen-initial-0",
+            "validated": false,
+            "status": "ok",
+            "H": -1.983059983584612e-15,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": 0.0021157540702330135,
+            "Vx_section": 0.059532801473397415,
+            "raw_log_return": -1.9611048895917804e-15,
+            "period": 6.263901340125908,
+            "divergence_integral": 0.00010560502753664998,
+            "multiplier_at_cycle": 1.0001056106039439,
+            "return_derivative": 1.0001056106039459,
+            "nfev": 1946,
+            "cpu_seconds": 0.012000740999999593
+          }
+        },
+        {
+          "root": 0.16576344873307564,
+          "initial_bracket": [
+            0.15,
+            0.2
+          ],
+          "root_samples": [
+            [
+              0.15,
+              4.632749223958815e-05,
+              97
+            ],
+            [
+              0.2,
+              -0.00021469729398093315,
+              98
+            ],
+            [
+              0.1588741557670407,
+              2.380828295988832e-05,
+              99
+            ],
+            [
+              0.16731974623066861,
+              -6.197916514866057e-06,
+              100
+            ],
+            [
+              0.1655752712378807,
+              7.284414700811648e-07,
+              101
+            ],
+            [
+              0.1657587367663775,
+              1.82926655767357e-08,
+              102
+            ],
+            [
+              0.16576344873307564,
+              -2.4992716229910172e-12,
+              103
+            ],
+            [
+              0.16576344740425838,
+              2.6611282621935572e-12,
+              104
+            ]
+          ],
+          "detail": {
+            "index": 105,
+            "family": "Chen-Wang visualization",
+            "l_m_a_b_exact": [
+              "-3",
+              "99/100",
+              "2/9",
+              "-3"
+            ],
+            "r": 0.16576344873307564,
+            "lambda": -2e-05,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-chen-initial-1",
+            "validated": false,
+            "status": "ok",
+            "H": -2.949564203991173e-11,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": -0.020558671801352308,
+            "Vx_section": -1.4996746599185313,
+            "raw_log_return": -2.505572138655765e-12,
+            "period": 6.14587839361514,
+            "divergence_integral": -0.0006438670736441925,
+            "multiplier_at_cycle": 0.9993563401642798,
+            "return_derivative": 0.9993563401668726,
+            "nfev": 2018,
+            "cpu_seconds": 0.020003384999998985
+          }
+        },
+        {
+          "root": 0.33283851437480927,
+          "initial_bracket": [
+            0.33,
+            0.333
+          ],
+          "root_samples": [
+            [
+              0.33,
+              -0.000197033043704168,
+              106
+            ],
+            [
+              0.333,
+              1.1965542710948296e-05,
+              107
+            ],
+            [
+              0.33282824463672905,
+              -7.58120559850306e-07,
+              108
+            ],
+            [
+              0.3328384784247026,
+              -2.654453289119285e-09,
+              109
+            ],
+            [
+              0.33283851437480927,
+              8.635453463412546e-15,
+              110
+            ],
+            [
+              0.3328385122106167,
+              -1.5979155151835123e-10,
+              111
+            ]
+          ],
+          "detail": {
+            "index": 112,
+            "family": "Chen-Wang visualization",
+            "l_m_a_b_exact": [
+              "-3",
+              "99/100",
+              "2/9",
+              "-3"
+            ],
+            "r": 0.33283851437480927,
+            "lambda": -2e-05,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-chen-initial-2",
+            "validated": false,
+            "status": "ok",
+            "H": 5.593586251129157e-08,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": -10.295992300889392,
+            "Vx_section": -253.85170579785924,
+            "raw_log_return": -2.0886070650760757e-15,
+            "period": 5.539690642965821,
+            "divergence_integral": 0.024278765716660596,
+            "multiplier_at_cycle": 1.0245758947178218,
+            "return_derivative": 1.0245758947178243,
+            "nfev": 3410,
+            "cpu_seconds": 0.023813363000000365
+          }
+        }
+      ],
+      "roots_trace_zero": [
+        {
+          "root": 0.17802591969203013,
+          "initial_bracket": [
+            0.15,
+            0.25
+          ],
+          "root_samples": [
+            [
+              0.15,
+              0.00010485808405653538,
+              117
+            ],
+            [
+              0.25,
+              -0.0007562668651696536,
+              118
+            ],
+            [
+              0.1621768721427432,
+              7.123743553414524e-05,
+              119
+            ],
+            [
+              0.1857568150742825,
+              -4.7370388125887036e-05,
+              120
+            ],
+            [
+              0.17633929931364486,
+              9.194932233166225e-06,
+              121
+            ],
+            [
+              0.17787015635951994,
+              8.659888007037098e-07,
+              122
+            ],
+            [
+              0.17802646725944762,
+              -3.0520362070962648e-09,
+              123
+            ],
+            [
+              0.17802591830190054,
+              6.0359599263204444e-12,
+              124
+            ],
+            [
+              0.17802591969203013,
+              -1.6884479925316498e-12,
+              125
+            ]
+          ],
+          "detail": {
+            "index": 126,
+            "family": "Chen-Wang visualization",
+            "l_m_a_b_exact": [
+              "-3",
+              "99/100",
+              "2/9",
+              "-3"
+            ],
+            "r": 0.17802591969203013,
+            "lambda": 0.0,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-chen-zero-0",
+            "validated": false,
+            "status": "ok",
+            "H": -1.638333912978851e-11,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": -0.04525914396448323,
+            "Vx_section": -2.6125285474280937,
+            "raw_log_return": -1.7113810368840632e-12,
+            "period": 6.121723816381067,
+            "divergence_integral": -0.0009922184034262746,
+            "multiplier_at_cycle": 0.9990082736824881,
+            "return_derivative": 0.9990082736842629,
+            "nfev": 2066,
+            "cpu_seconds": 0.01199836799999865
+          }
+        },
+        {
+          "root": 0.3321212831537436,
+          "initial_bracket": [
+            0.32,
+            0.333
+          ],
+          "root_samples": [
+            [
+              0.32,
+              -0.0006628316638181489,
+              127
+            ],
+            [
+              0.333,
+              6.409800399779543e-05,
+              128
+            ],
+            [
+              0.33185370746460946,
+              -1.903384314621637e-05,
+              129
+            ],
+            [
+              0.3321161622646394,
+              -3.663132168499339e-07,
+              130
+            ],
+            [
+              0.3321212831537436,
+              6.302125835078165e-11,
+              131
+            ],
+            [
+              0.3321212809931372,
+              -9.157721282682107e-11,
+              132
+            ]
+          ],
+          "detail": {
+            "index": 133,
+            "family": "Chen-Wang visualization",
+            "l_m_a_b_exact": [
+              "-3",
+              "99/100",
+              "2/9",
+              "-3"
+            ],
+            "r": 0.3321212831537436,
+            "lambda": 0.0,
+            "rtol": 2e-13,
+            "atol": 2e-16,
+            "max_step": 0.04,
+            "tag": "root-detail-chen-zero-1",
+            "validated": false,
+            "status": "ok",
+            "H": 7.670971740453281e-08,
+            "measure": "deltaV_over_Vinitial",
+            "Vinitial": -10.115319619507863,
+            "Vx_section": -249.96281107450702,
+            "raw_log_return": 6.301289047841441e-11,
+            "period": 5.543719203118661,
+            "divergence_integral": 0.023486452478102715,
+            "multiplier_at_cycle": 1.0237644311816312,
+            "return_derivative": 1.023764431112687,
+            "nfev": 3374,
+            "cpu_seconds": 0.023980620999999758
+          }
+        }
+      ],
+      "intermediate_signs": [
+        {
+          "index": 113,
+          "family": "Chen-Wang visualization",
+          "l_m_a_b_exact": [
+            "-3",
+            "99/100",
+            "2/9",
+            "-3"
+          ],
+          "r": 0.004,
+          "lambda": -2e-07,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "chen-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": -7.523235914615793e-07,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 8.023041994840469e-06,
+          "Vx_section": 0.004016573591858846,
+          "raw_log_return": -3.756887494820848e-07,
+          "period": 6.283119135668893,
+          "divergence_integral": -2.4730512365820495e-07,
+          "multiplier_at_cycle": 0.9999997526949069,
+          "return_derivative": 1.000000128717283,
+          "nfev": 806,
+          "cpu_seconds": 0.00798693000000128
+        },
+        {
+          "index": 114,
+          "family": "Chen-Wang visualization",
+          "l_m_a_b_exact": [
+            "-3",
+            "99/100",
+            "2/9",
+            "-3"
+          ],
+          "r": 0.015,
+          "lambda": -2e-07,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "chen-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": 5.819966948277645e-06,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": 0.00011330332260703686,
+          "Vx_section": 0.015123383404757797,
+          "raw_log_return": 2.9068437037518303e-06,
+          "period": 6.28224604226826,
+          "divergence_integral": 1.2862047336314325e-05,
+          "multiplier_at_cycle": 1.0000128621300528,
+          "return_derivative": 1.0000099455957876,
+          "nfev": 806,
+          "cpu_seconds": 0.004001912999999746
+        },
+        {
+          "index": 115,
+          "family": "Chen-Wang visualization",
+          "l_m_a_b_exact": [
+            "-3",
+            "99/100",
+            "2/9",
+            "-3"
+          ],
+          "r": 0.2,
+          "lambda": -2e-07,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "chen-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": -0.0014414209729965988,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": -0.1381629911879239,
+          "Vx_section": -6.2861293016025135,
+          "raw_log_return": -0.00015851118305181336,
+          "period": 6.071934300999808,
+          "divergence_integral": -0.002093803094049343,
+          "multiplier_at_cycle": 0.9979083873825734,
+          "return_derivative": 0.9980733111862924,
+          "nfev": 1202,
+          "cpu_seconds": 0.011996413999998623
+        },
+        {
+          "index": 116,
+          "family": "Chen-Wang visualization",
+          "l_m_a_b_exact": [
+            "-3",
+            "99/100",
+            "2/9",
+            "-3"
+          ],
+          "r": 0.333,
+          "lambda": -2e-07,
+          "rtol": 2e-11,
+          "atol": 2e-14,
+          "max_step": 0.1,
+          "tag": "chen-intermediate",
+          "validated": false,
+          "status": "ok",
+          "H": 0.000525112462410493,
+          "measure": "deltaV_over_Vinitial",
+          "Vinitial": -10.337056938022288,
+          "Vx_section": -254.73439715876512,
+          "raw_log_return": 6.357668236023004e-05,
+          "period": 5.538689292254419,
+          "divergence_integral": 0.02458820066582665,
+          "multiplier_at_cycle": 1.0248929833643452,
+          "return_derivative": 1.0248233367419215,
+          "nfev": 1910,
+          "cpu_seconds": 0.016001963000000785
+        }
+      ],
+      "origin_endpoint": {
+        "index": 134,
+        "family": "Chen-Wang visualization",
+        "l_m_a_b_exact": [
+          "-3",
+          "99/100",
+          "2/9",
+          "-3"
+        ],
+        "r": 1e-06,
+        "lambda": 0.0,
+        "rtol": 2e-11,
+        "atol": 2e-14,
+        "max_step": 0.1,
+        "tag": "chen-origin-endpoint",
+        "validated": false,
+        "status": "ok",
+        "H": 3.141595192298149e-14,
+        "measure": "deltaV_over_Vinitial",
+        "Vinitial": 5.000004040631241e-13,
+        "Vx_section": 1.0000012121784223e-06,
+        "raw_log_return": 1.5707972638100652e-14,
+        "period": 6.283185307175464,
+        "divergence_integral": 6.283188218795226e-14,
+        "multiplier_at_cycle": 1.0000000000000628,
+        "return_derivative": 1.0000000000000473,
+        "nfev": 806,
+        "cpu_seconds": 0.007995693999999887
+      }
+    }
+  },
+  "notes": [
+    "Rational conditioned Shi point differs from Shi/Galias certified hierarchy.",
+    "No interval integration or exhaustive cycle count."
+  ]
+}

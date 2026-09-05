@@ -1,5 +1,16 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Current staged strike, 2026-09-05
+
+Read [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md) first. A new augmented
+KKL solver located a numerical finite fold and independently reproduced a
+nearby two-cycle sign pattern. Both earlier tracked cycles also persist
+numerically well past the old radius cutoff. Neither result supplies M1 or
+five cycles. The run used 400 KKL and 150 Shi/Chen–Wang returns, with all failures
+recorded. Exact theory restrictions, rational coefficients and replay sources
+are included. Older sections below are chronological records, not current
+verdicts.
+
 ## Claude adversarial audit of Astra Strikes 1–3, 2026-09-04
 
 Read [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md) and
