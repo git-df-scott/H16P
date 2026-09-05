@@ -96,3 +96,11 @@ families). If zeros of sigma on L are also centers, i.e. "a homoclinic loop thro
 order-two weak focus forces a center", then sign(sigma eta_2) is constant on each component of L minus the
 center strata, and D2 reduces to one evaluation per component plus a description of the components.
 F11 observed exactly this at a = -3: the neutral loop is the crossing with the C3 center stratum.
+
+## 8. Crossing search results (NUMERICAL, `audit/fable_d2_center_crossings.py`)
+
+a = -2 and a = -2.5, 58 focus-type loops on b in [-4, 4]: sigma * eta_2 < 0 at every point (lemma evidence
+now 104 loops in total). At a = -2.5 the focus branch has a neutral loop at b = 1.28125, l = -1.13719 with
+sigma = -1.3e-9 and eta_2 = +2.0e-8; the three center factors there are a(b+2l) = 2.48, (b-3l-5) = -0.31 and
+C3 = -2.3e-8. The neutral loop lies on the C3 center stratum to eight digits: lemma (A) holds at a = -2.5 as
+it did at a = -3. At a = -2 sigma and eta_2 both change sign between b = 1.0 and 1.5 (bisection running).
