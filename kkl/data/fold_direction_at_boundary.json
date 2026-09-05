@@ -1,0 +1,11 @@
+{
+  "status": "NUMERICAL_LOCAL_DIRECTIONS_NOT_GLOBAL_OBSTRUCTION",
+  "c": "9301/10000",
+  "alpha": "-8403125/209244",
+  "K": "1/64",
+  "origin_mu": 0.9763427926273295,
+  "mu_c_at_fixed_K": 0.5495934298247498,
+  "mu_K_at_fixed_c": -0.07145118699091733,
+  "remote_logradius_c_at_fixed_K": 59.72853108139898,
+  "remote_logradius_K_at_fixed_c": 1.8749301581993576
+}

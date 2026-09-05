@@ -1,0 +1,6 @@
+{
+  "field": {"P":"y+x^2+xy","Q":"-10x^2+(11/5)xy+c*y^2+alpha*x+beta*y"},
+  "incumbent": {"c":"7/10","alpha":"-363889/5000","beta":"3/2000"},
+  "positive_K_start": {"c":"7/10","alpha":"-80","beta":"0","K":"6/5"},
+  "evidence":"Exact field coefficients only; cycle locations remain numerical until validated."
+}

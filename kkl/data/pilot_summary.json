@@ -1,0 +1,22 @@
+{
+  "status": "PILOT_COMPLETE_NUMERICAL_ONLY",
+  "evaluation_count": 64,
+  "accepted_continuation_steps": 7,
+  "K": "6/5",
+  "c_interval": [
+    "7/10",
+    "33/40"
+  ],
+  "precursor_found": false,
+  "fold_found": false,
+  "cpu_seconds_inside_evaluators": 1.523849,
+  "wall_seconds_including_subprocesses": 20.88138583602995,
+  "last_common_point": {
+    "c": "33/40",
+    "alpha": "-8640/163",
+    "beta": "0",
+    "origin_r": 88.46029409886707,
+    "remote_r": -36339.12364703598
+  },
+  "scope": "Two known cycles followed at seven rational shapes, not a cover of other roots or intervening parameters."
+}

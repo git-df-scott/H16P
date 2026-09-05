@@ -1,0 +1,122 @@
+{
+  "status": "NUMERICAL_POSITIVE_MAXIMUM_NOT_A_FOLD",
+  "points": [
+    {
+      "status": "NUMERICAL_ONLY",
+      "r": 28.21817026391133,
+      "c": 0.9301,
+      "alpha": -40.1594549903462,
+      "beta": 0.0,
+      "R_rr": -0.0011225647263331182,
+      "R_rc": 8.724459440791842,
+      "R_ralpha": -0.10207666473446618,
+      "return_coordinate": 28.460862426555877,
+      "D": 0.2426921626445484,
+      "period": 0.8051729306804003,
+      "R_r": 0.9999505585250471,
+      "R_c": 149.17343016460782,
+      "R_alpha": -1.8221322910408098,
+      "speed_derivative": 0.9999505585299534,
+      "derivative_discrepancy": -4.906297590423492e-12,
+      "projected_R_r": 0.999950558530514,
+      "projected_R_c": 149.17343016568023,
+      "projected_R_alpha": -1.8221322910579936,
+      "projection_cancellation_discrepancy": 5.605516051332415e-13,
+      "divergence_exponential": 1.016144122001091,
+      "opposite_coordinate": -0.6299058329990502,
+      "opposite_time": 0.3628056397133007,
+      "winding_about_focus": -0.9999999999999984,
+      "min_xy": [
+        -0.640025649685279,
+        -90.45689423981626
+      ],
+      "max_xy": [
+        29.393941522226918,
+        41.01850146609648
+      ],
+      "min_distance_focus": 0.6299058329990502,
+      "nfev": 2206,
+      "tol": 1e-11,
+      "wall_seconds": 0.044649500006926246,
+      "cpu_seconds": 0.042372999999999994
+    },
+    {
+      "status": "NUMERICAL_ONLY",
+      "r": 28.17412694614702,
+      "c": 0.9301,
+      "alpha": -40.1594549903462,
+      "beta": 0.0,
+      "R_rr": -0.0011220651764397155,
+      "R_rc": 8.717240264222905,
+      "R_ralpha": -0.10200759011656851,
+      "return_coordinate": 28.41682019773617,
+      "D": 0.24269325158914867,
+      "period": 0.805241058883699,
+      "R_r": 0.9999999890142809,
+      "R_c": 148.78933496961452,
+      "R_alpha": -1.8176380167830175,
+      "speed_derivative": 0.999999989018697,
+      "derivative_discrepancy": -4.416134125051485e-12,
+      "projected_R_r": 0.9999999890190159,
+      "projected_R_c": 148.78933497070847,
+      "projected_R_alpha": -1.8176380167977957,
+      "projection_cancellation_discrepancy": 3.1885605267234496e-13,
+      "divergence_exponential": 1.0162183623190202,
+      "opposite_coordinate": -0.6298472078066026,
+      "opposite_time": 0.36284616055811636,
+      "winding_about_focus": -1.0000000000000016,
+      "min_xy": [
+        -0.6399261621166613,
+        -90.31413943646479
+      ],
+      "max_xy": [
+        29.346972144691982,
+        40.96065317753717
+      ],
+      "min_distance_focus": 0.6298472078066026,
+      "nfev": 2206,
+      "tol": 1e-11,
+      "wall_seconds": 0.039260457997443154,
+      "cpu_seconds": 0.03901699999999997
+    },
+    {
+      "status": "NUMERICAL_ONLY",
+      "r": 28.174117155522246,
+      "c": 0.9301,
+      "alpha": -40.1594549903462,
+      "beta": 0.0,
+      "R_rr": -0.0011220650649499814,
+      "R_rc": 8.717238658410933,
+      "R_ralpha": -0.10200757474901978,
+      "return_coordinate": 28.416810407111324,
+      "D": 0.24269325158907762,
+      "period": 0.805241074043925,
+      "R_r": 0.9999999999999931,
+      "R_c": 148.7892496223928,
+      "R_alpha": -1.8176370180650427,
+      "speed_derivative": 1.0000000000044107,
+      "derivative_discrepancy": -4.417577414983498e-12,
+      "projected_R_r": 1.0000000000047622,
+      "projected_R_c": 148.78924962348705,
+      "projected_R_alpha": -1.8176370180800205,
+      "projection_cancellation_discrepancy": 3.5149660959632456e-13,
+      "divergence_exponential": 1.0162183788117456,
+      "opposite_coordinate": -0.6298471947610391,
+      "opposite_time": 0.36284616957544835,
+      "winding_about_focus": -0.9999999999999989,
+      "min_xy": [
+        -0.6399261424373986,
+        -90.3141088292029
+      ],
+      "max_xy": [
+        29.34696186683334,
+        40.96064032831861
+      ],
+      "min_distance_focus": 0.6298471947610391,
+      "nfev": 2206,
+      "tol": 1e-11,
+      "wall_seconds": 0.039361666997137945,
+      "cpu_seconds": 0.039318999999999965
+    }
+  ]
+}
