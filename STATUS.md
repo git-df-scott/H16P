@@ -1,5 +1,20 @@
 # Status
 
+## Reversible re-seed update: 2026-09-05
+
+[The re-seed report](REVERSIBLE_RESEED_2026_09_05.md) excludes the
+finite-saddle-loop mechanism for the entire two-center sector of the
+stated reversible normal form. It distinguishes hemicycle, bicycle and
+nonhyperbolic boundaries and repairs the perturbation chart at `a=-2`.
+No five-cycle first-order candidate appeared in 64 finite shape samples.
+A rational four-cycle control has independent numerical moment and
+original-field support. **The full route remains open.**
+
+This strike adds 24 return-difference evaluations (48 half-flow integrations
+plus startup steps) for the new control; its moment search performs no
+ODE returns. The staged budget below is a historical checkpoint and does
+not consolidate parallel branch work.
+
 ## Latest staged work: 2026-09-05
 
 See [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md). There is a numerical

@@ -1,0 +1,25 @@
+{
+  "base_commit": "79001f70eb180331f5ac0b740f5d5aadfe833329",
+  "scope": "Reversible re-seed strike only; NUM data are not interval certificates",
+  "sha256": {
+    "REVERSIBLE_RESEED_2026_09_05.md": "4a0bb084f4fa21f15cd809c66202a88db4875bd5daac122da5c24354d5f0065e",
+    "reversible_reseed/.gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "reversible_reseed/README.md": "89dc7d28f34b06ed4fb0e19113b32a0a4e13dff4f03240a717feb628f4b51203",
+    "reversible_reseed/boundary_search.py": "13c2edc3950209726b58c01b80ca7c6bf209e9bc9b87e06740fee4da6db549e0",
+    "reversible_reseed/check_arrangement.py": "ffce858bc240fa506ecaf4fdd775d15c9e0bd462dfbe856bda1bc7db5a337e77",
+    "reversible_reseed/check_geometry.py": "769e236000cefa19d55f50b62a41c996f9f6fdb66075c72489bf035cf665a0c4",
+    "reversible_reseed/data/arrangement_controls.json": "db9f6c93d9586d4412215bf8e4ddcebc02bc6633ec1bd49e5303d3d7a7d4f395",
+    "reversible_reseed/data/boundary_search.json": "ed545bdde19eb1eea85e0fb31bb98bd16f2adc39690c93632100521a2b1d5eaa",
+    "reversible_reseed/data/boundary_search.log": "45b9aa35878166fa1852199b63d41f8a1cfa48608fe1dfaf1e98d7bbc29551da",
+    "reversible_reseed/data/control_search.json": "9f9e5c79a73acd6565fbe1b737b8b683ef0662ae124771ed2ca5f96f2c91b3a3",
+    "reversible_reseed/data/geometry.json": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8",
+    "reversible_reseed/data/geometry.log": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8",
+    "reversible_reseed/data/moment_search.json": "206fb349e76ca738c27f21eddae4c4775e488a48a73766f54d90014e685a7039",
+    "reversible_reseed/data/moment_search.log": "57ab700662732a41893a1733a34b6bacc14ec03e8bce5bd17e7498c6b41fe6e4",
+    "reversible_reseed/data/verified_control.json": "12a00100b339693ad7e228f2bacd93d1029a416dee2c2386a9881613db60f58d",
+    "reversible_reseed/data/verify_control.log": "5225b19ad29f2b1ee9b920d8fcc821106485b811654e179faf2e697225876a90",
+    "reversible_reseed/moment_search.py": "2a3207445575f86954d30a0f81fd154986887a7c2fce37cfd0ea6aedeedf0eda",
+    "reversible_reseed/requirements.txt": "e665dc7ab0ba53cedc9c54091926e59eab2ac4df2f788ec0ecf813b715fc24e0",
+    "reversible_reseed/verify_control.py": "5587cc45560968aca9741acec3cad88d76eb2f68e69ca8473ce6af497d2b8f0b"
+  }
+}

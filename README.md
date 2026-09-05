@@ -1,5 +1,16 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Reversible re-seed, 2026-09-05
+
+Read [REVERSIBLE_RESEED_2026_09_05.md](REVERSIBLE_RESEED_2026_09_05.md).
+The two-center geometry excludes the old finite saddle-loop mechanism.
+An exact unfolding calculation finds and repairs a missing direction at
+`a=-2`. A same-parameter moment search over 64 finite shape samples finds
+no five-cycle candidate and supplies a four-cycle numerical control,
+independently checked by high-precision quadrature and original-field
+integration. **The full reversible route remains open; this is not a
+proof of H(2)=4.** Replay code and logs are in `reversible_reseed/`.
+
 ## Current staged strike, 2026-09-05
 
 Read [STAGED_RUN_2026_09_05.md](STAGED_RUN_2026_09_05.md) first. A new augmented
