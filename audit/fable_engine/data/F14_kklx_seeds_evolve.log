@@ -1,2 +1,7 @@
 seed: 3 [([], []), ([0.9076795263140006, 314.4959660605581, 2435.0280487040613], ['S', 'U', 'S'])] score 3.804
 file seeds loaded: 11 best 3.9990640830133604
+gen 0: sigma 0.05 best score 3.9991 totals {np.int64(0): np.int64(34), np.int64(1): np.int64(51), np.int64(2): np.int64(9), np.int64(3): np.int64(2)} 52s
+gen 1: sigma 0.05 best score 3.9991 totals {np.int64(0): np.int64(40), np.int64(1): np.int64(48), np.int64(2): np.int64(8)} 51s
+gen 2: sigma 0.0485 best score 3.9991 totals {np.int64(0): np.int64(39), np.int64(1): np.int64(52), np.int64(2): np.int64(5)} 48s
+gen 3: sigma 0.0485 best score 3.9991 totals {np.int64(0): np.int64(50), np.int64(1): np.int64(41), np.int64(2): np.int64(4), np.int64(3): np.int64(1)} 29s
+gen 4: sigma 0.047 best score 3.9991 totals {np.int64(0): np.int64(41), np.int64(1): np.int64(47), np.int64(2): np.int64(5), np.int64(3): np.int64(3)} 49s

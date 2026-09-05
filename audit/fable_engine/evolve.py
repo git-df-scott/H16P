@@ -46,24 +46,38 @@ def evaluate(cs):
     coef = np.array([s[2] for s in sets]); foc = np.array([s[3] for s in sets])
     dr = np.array([rm.away_dir(s[3], rm.equilibria(s[2])) for s in sets]); rad = np.array([s[4] for s in sets])
     R, T, st = rm.returns(coef, foc, dr, rad, 1e-12, 1e7, 5e3, 500000)
+    ks = [NR if (st[i] == 0).all() else int(np.argmin(st[i] == 0)) for i in range(len(sets))]
+    edge = [i for i, k in enumerate(ks) if 1 <= k < NR]; Dedge = {}
+    if edge:
+        re_, De_ = rm.edge_refine(coef[edge], foc[edge], dr[edge], [rad[i, ks[i]-1] for i in edge], [rad[i, ks[i]] for i in edge], 1e-12, 1e7, 5e3, 500000)
+        for i, r_, d_ in zip(edge, re_, De_):
+            if np.isfinite(d_): Dedge[i] = (r_, d_)
     for i, s in enumerate(sets):
-        ok = st[i] == 0; k = NR if ok.all() else int(np.argmin(ok))
+        k = ks[i]
         if k < 3:
             continue
-        D = R[i, :k]-rad[i, :k]; q = D/rad[i, :k]; sc = np.sign(D)
-        idx = np.array(rm.count_signs(rad[i, :k], D), dtype=int)
-        roots = [float(np.sqrt(rad[i, j]*rad[i, j+1])) for j in idx]
+        rr = rad[i, :k]; D = R[i, :k]-rr
+        if i in Dedge:
+            rr = np.append(rr, Dedge[i][0]); D = np.append(D, Dedge[i][1])
+        q = D/rr; sc = np.sign(D); k = len(rr)
+        idx = np.array(rm.count_signs(rr, D), dtype=int)
+        roots = [float(np.sqrt(rr[j]*rr[j+1])) for j in idx]
         stab = ['S' if D[j] > 0 else 'U' for j in idx]
         qmax = np.max(np.abs(q)) + 1e-300
         gaps = []
         for j in range(1, k-1):
-            if (q[j]-q[j-1])*(q[j+1]-q[j]) < 0 and sc[j-1] == sc[j] == sc[j+1] and rad[i, j] > 3e-4*rad[i, -1]/1e8*1e8:
-                gaps.append((float(rad[i, j]), float(q[j]/qmax)))
+            if (q[j]-q[j-1])*(q[j+1]-q[j]) < 0 and sc[j-1] == sc[j] == sc[j+1] and rr[j] > 3e-4*rad[i, -1]/1e8*1e8:
+                gaps.append((float(rr[j]), float(q[j]/qmax)))
         r = res[s[0]]
         r['total'] += len(roots)
         r['nests'].append(dict(pt=[float(s[3][0]), float(s[3][1])], tr=float(s[5]), roots=roots, stab=stab, kvalid=k, gaps=gaps))
     for r in res:
-        gmin = min([abs(g[1]) for n in r['nests'] for g in n['gaps']] + [1.0])
+        # near-miss credit only in the nest that already holds the most cycles (Zhang: the other nest holds <= 1)
+        if r['nests']:
+            big = max(r['nests'], key=lambda n: len(n['roots']))
+            gmin = min([abs(g[1]) for g in big['gaps']] + [1.0])
+        else:
+            gmin = 1.0
         r['score'] = r['total'] + (1.0-gmin)
     return res
 
