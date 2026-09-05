@@ -104,3 +104,37 @@ now 104 loops in total). At a = -2.5 the focus branch has a neutral loop at b = 
 sigma = -1.3e-9 and eta_2 = +2.0e-8; the three center factors there are a(b+2l) = 2.48, (b-3l-5) = -0.31 and
 C3 = -2.3e-8. The neutral loop lies on the C3 center stratum to eight digits: lemma (A) holds at a = -2.5 as
 it did at a = -3. At a = -2 sigma and eta_2 both change sign between b = 1.0 and 1.5 (bisection running).
+
+## 9. Proposition A (EXACT, verified by polynomial algebra in `audit/fable_d2_theoremA.py`)
+
+**Proposition A.** In the Shi chart at zero trace with eta_1 = 0, let E be any equilibrium other than the
+origin. Then div X(E) = 0 if and only if the origin is a center; precisely, iff a(b+2l) = 0 (E = (0,1), where
+div = m) or C3 = 0 (E on the line 1+ax+by = 0), the chart degeneracies b = 0 and l = -1 aside.
+
+Proof. The non-origin equilibria are (0,1) and the points of the line 1+ax+by = 0 where P = 0. At (0,1)
+the divergence equals m = a(b+2l)/(l+1). On the line, the divergence is the affine function
+-(b+2l)(a^2 x + a - b(l+1) x)/(b(l+1)) of x, which vanishes at the single point x0 = -a/(a^2 - b(l+1)) when
+b+2l != 0 (and identically when b+2l = 0). An equilibrium sits at x0 iff P(x0, -(1+a x0)/b) = 0, and the
+numerator of that expression factors exactly as -b^2 (l+1) C3 (sympy: remainder modulo C3 is zero). Both
+a(b+2l) and C3 are factors of eta_2, so each condition places the origin on a center stratum. QED.
+
+**Corollary A1 (no neutral loops).** On the order-two stratum, a homoclinic loop around the origin through a
+saddle of zero divergence exists only when the origin is a center. This is the exact form of what F11 saw.
+
+**Corollary A2 (structure of the sign law).** Along the focus sheet L of the loop locus, sigma vanishes only
+where C3 = 0 or b+2l = 0, and there eta_2 vanishes too, each to first order generically (sigma is
+proportional to x_S - x0, which is a simple zero of C3 when the saddle is a simple root of P on the line).
+Hence sigma * eta_2 is proportional to C3^2 or (b+2l)^2 near those crossings and does not change sign. The
+only other zero of eta_2 is the Shi line b = 3l+5, where sigma has no factor; so Conjecture D2 reduces to:
+
+  (C) the focus sheet L meets the Shi line b = 3l+5 only at points where (b+2l) also vanishes (the chart
+      point (b,l) = (2,-1)), i.e. there is no homoclinic loop around an order-three weak focus;
+  (D) one sign evaluation per connected component of L minus these curves.
+
+(C) is exactly Lane C's numerical finding on the order-three stratum (loops only at centers, where the
+center subset of the Shi line is C3 intersected with the Shi line plus 2a^2 + l + 2 = 0 and a = 0; the
+quintic factor of eta_3 on the Shi line is C3 restricted to it, checked by hand: a^2(5l+6) = 3(l+1)^2(l+2)).
+(D) has been evaluated at 104 loops on the components sampled: negative in every case.
+
+Status: Proposition A is proved. Conjecture D2 is reduced to (C), an order-three loop statement one rung
+above Li-Cherkas, plus a finite component check (D). No counterexample content; this is the rigidity result.
