@@ -3,3 +3,4 @@ __pycache__/
 audit/fable_engine/libretmap.so
 audit/fable_engine/data/queue.log
 audit/fable_engine/data/QUEUE_DONE
+audit/fable_engine/data/_chain.out
