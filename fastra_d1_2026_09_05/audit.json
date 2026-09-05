@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "accepted": 44,
+  "field_records": 176,
+  "dense_profiles": 88,
+  "pair_side_and_beta_fields_with_independent_two_half_sign_brackets": 132,
+  "rational_example_cross_engine_brackets": 4,
+  "fable_sources_unchanged": true,
+  "interval_certification": false,
+  "exhaustive_root_isolation": false
+}

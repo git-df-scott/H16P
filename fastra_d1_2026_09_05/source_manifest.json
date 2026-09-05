@@ -1,0 +1,16 @@
+{
+  "audit/fable_engine/retmap.c": "59dd29c99a373b1533d485c984c8b759c5a10691c66de771f58cd6dd587e869f",
+  "audit/fable_engine/retmap.py": "82f2dea80524696107e96af56cbb966886fdb906f5974cf5f64352619ce0eca8",
+  "audit/fable_engine/retmap_log.c": "c4ee6c4257501129fcfcf2b43e3708fe8b7c575a7de2945ed0a1b17ce7d02656",
+  "audit/fable_engine/sweep_log.py": "02b138c025da4f4a75c130b129499dc0ca7b0e1883743ed5ecac6824e04c291d",
+  "fastra_d1_2026_09_05/audit_records.py": "34012401b30b386324c74644b8401147e4872a18bfc9c1ebc1aaa28656163555",
+  "fastra_d1_2026_09_05/build_engines.sh": "ed3110c9b631e500f8ddf50852dfbc633bbd83659a0dcdae244503a7f4dadf96",
+  "fastra_d1_2026_09_05/build_report.py": "4118454fe852139cf8fe9aaa5979c46c497d83d615829fc4f869ececc2d797e8",
+  "fastra_d1_2026_09_05/dense_profiles.py": "28dcb0552cfec4e3a237f3c4873c2cd8c13153a716da3a5e7e9c9a4e34f8c747",
+  "fastra_d1_2026_09_05/endpoint_replay.py": "39e3c62b6c87739c6f5048b234227433433dc2d2a85ace6a25ae29e728d021e7",
+  "fastra_d1_2026_09_05/full_beta_quad.cpp": "afaced1d0d08c8292c2bf2d60b461bfe2b2d9eb3c1f1517948f3af7d2ae91afa",
+  "fastra_d1_2026_09_05/half_beta_quad.cpp": "c0faeb8fa7efa2c2e2222e733e09a33a0773782dab5ae824ec7e1d006832c0ca",
+  "fastra_d1_2026_09_05/replay_example.py": "9dcc005d6e89a8a949e0d926e5415537be3ab89c585d6fb0eb10fb8927811adc",
+  "fastra_d1_2026_09_05/run_d1.py": "6989298fa2f3db0d2d68c829ad7099bdfafe2041234303fe16dc3c234ffdbf7d",
+  "fastra_d1_2026_09_05/run_d1_initial.py": "b14ab2326ac29f210fa18b5ca1b0f9e98f5b2d34b844f257cf2af2d2a1a69ca4"
+}

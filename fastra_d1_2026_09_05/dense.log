@@ -1,0 +1,88 @@
+positive_K_0.00390625 pair SU scan_cap
+positive_K_0.00390625 hopf USU scan_cap
+positive_K_0.015625 pair SU integration_failure
+positive_K_0.015625 hopf USU integration_failure
+positive_K_0.0625 pair SU integration_failure
+positive_K_0.0625 hopf USU integration_failure
+positive_K_0.15 pair SU integration_failure
+positive_K_0.15 hopf USU integration_failure
+positive_K_0.3 pair SU integration_failure
+positive_K_0.3 hopf USU integration_failure
+positive_K_0.65 pair SU integration_failure
+positive_K_0.65 hopf USU integration_failure
+positive_K_1.2 pair SU integration_failure
+positive_K_1.2 hopf USU integration_failure
+positive_K_2.0 pair SU integration_failure
+positive_K_2.0 hopf USU integration_failure
+positive_K_3.0 pair SU integration_failure
+positive_K_3.0 hopf USU integration_failure
+positive_K_4.0 pair SU integration_failure
+positive_K_4.0 hopf USU integration_failure
+positive_K_6.0 pair SU integration_failure
+positive_K_6.0 hopf USU integration_failure
+center_0.001953125 pair SU scan_cap
+center_0.001953125 hopf USU scan_cap
+center_0.0001 pair SU scan_cap
+center_0.0001 hopf USU scan_cap
+center_0.00001 pair SU scan_cap
+center_0.00001 hopf USU scan_cap
+center_0.000001 pair SU scan_cap
+center_0.000001 hopf SU scan_cap
+center_0.00000001 pair  scan_cap
+center_0.00000001 hopf  scan_cap
+center_0.0000000001 pair  scan_cap
+center_0.0000000001 hopf  scan_cap
+events_half_0 pair SU integration_failure
+events_half_0 hopf SU integration_failure
+events_half_3 pair SU integration_failure
+events_half_3 hopf SU integration_failure
+events_half_7 pair  integration_failure
+events_half_7 hopf  integration_failure
+events_quad_0 pair  integration_failure
+events_quad_0 hopf  integration_failure
+events_quad_3 pair S scan_cap
+events_quad_3 hopf S scan_cap
+events_quad_6 pair S scan_cap
+events_quad_6 hopf S scan_cap
+events_quad_9 pair S scan_cap
+events_quad_9 hopf S scan_cap
+events_negative_0 pair US scan_cap
+events_negative_0 hopf SUS scan_cap
+events_negative_3 pair US scan_cap
+events_negative_3 hopf SUS scan_cap
+events_negative_6 pair US scan_cap
+events_negative_6 hopf SUS scan_cap
+events_negative_9 pair US scan_cap
+events_negative_9 hopf SUS scan_cap
+events_negative_12 pair US scan_cap
+events_negative_12 hopf SUS scan_cap
+events_negative_15 pair US scan_cap
+events_negative_15 hopf SUS scan_cap
+events_negative_17 pair US scan_cap
+events_negative_17 hopf SUS scan_cap
+events_negative_19 pair US scan_cap
+events_negative_19 hopf SUS scan_cap
+events_m_0 pair US scan_cap
+events_m_0 hopf SUS scan_cap
+events_m_2 pair US scan_cap
+events_m_2 hopf SUS scan_cap
+events_m_4 pair US scan_cap
+events_m_4 hopf SUS scan_cap
+events_m_5 pair US scan_cap
+events_m_5 hopf SUS scan_cap
+events_logm_0 pair US scan_cap
+events_logm_0 hopf SUS scan_cap
+events_logm_3 pair US scan_cap
+events_logm_3 hopf SUS scan_cap
+events_logm_6 pair US scan_cap
+events_logm_6 hopf US scan_cap
+events_logm_10 pair  integration_failure
+events_logm_10 hopf  integration_failure
+positive_extension_0 pair S scan_cap
+positive_extension_0 hopf S scan_cap
+positive_extension_1 pair S scan_cap
+positive_extension_1 hopf S scan_cap
+negative_extension_0 pair  integration_failure
+negative_extension_0 hopf  integration_failure
+negative_extension_1 pair  integration_failure
+negative_extension_1 hopf  integration_failure
