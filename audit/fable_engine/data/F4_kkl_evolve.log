@@ -1,2 +1,23 @@
 seed: 4 [([6050.41095100255], ['U']), ([0.938125765400158, 3.0213258875463715, 23.393029082714794], ['S', 'U', 'S'])] score 4.952
 gen 0: sigma 0.05 best score 4.9945 totals {np.int64(0): np.int64(1), np.int64(1): np.int64(25), np.int64(2): np.int64(57), np.int64(3): np.int64(5), np.int64(4): np.int64(8)} 47s
+gen 1: sigma 0.05 best score 4.9951 totals {np.int64(0): np.int64(1), np.int64(1): np.int64(34), np.int64(2): np.int64(52), np.int64(3): np.int64(3), np.int64(4): np.int64(6)} 50s
+gen 2: sigma 0.0485 best score 4.9951 totals {np.int64(0): np.int64(1), np.int64(1): np.int64(28), np.int64(2): np.int64(58), np.int64(3): np.int64(2), np.int64(4): np.int64(7)} 39s
+gen 3: sigma 0.0485 best score 4.9951 totals {np.int64(0): np.int64(4), np.int64(1): np.int64(28), np.int64(2): np.int64(61), np.int64(4): np.int64(3)} 28s
+gen 4: sigma 0.047 best score 4.9951 totals {np.int64(0): np.int64(3), np.int64(1): np.int64(20), np.int64(2): np.int64(63), np.int64(3): np.int64(2), np.int64(4): np.int64(8)} 35s
+gen 5: sigma 0.047 best score 4.9951 totals {np.int64(0): np.int64(3), np.int64(1): np.int64(25), np.int64(2): np.int64(63), np.int64(3): np.int64(1), np.int64(4): np.int64(4)} 20s
+gen 6: sigma 0.0456 best score 4.9951 totals {np.int64(0): np.int64(3), np.int64(1): np.int64(19), np.int64(2): np.int64(65), np.int64(3): np.int64(1), np.int64(4): np.int64(8)} 25s
+gen 7: sigma 0.0456 best score 4.9951 totals {np.int64(0): np.int64(4), np.int64(1): np.int64(23), np.int64(2): np.int64(64), np.int64(4): np.int64(5)} 21s
+gen 8: sigma 0.0443 best score 4.9951 totals {np.int64(0): np.int64(5), np.int64(1): np.int64(16), np.int64(2): np.int64(67), np.int64(3): np.int64(2), np.int64(4): np.int64(6)} 21s
+gen 9: sigma 0.0443 best score 4.9966 totals {np.int64(0): np.int64(6), np.int64(1): np.int64(23), np.int64(2): np.int64(58), np.int64(4): np.int64(9)} 20s
+gen 10: sigma 0.0429 best score 4.9966 totals {np.int64(0): np.int64(3), np.int64(1): np.int64(12), np.int64(2): np.int64(73), np.int64(3): np.int64(1), np.int64(4): np.int64(7)} 28s
+gen 11: sigma 0.0429 best score 4.9966 totals {np.int64(0): np.int64(2), np.int64(1): np.int64(20), np.int64(2): np.int64(60), np.int64(4): np.int64(14)} 23s
+gen 12: sigma 0.0416 best score 4.9966 totals {np.int64(0): np.int64(3), np.int64(1): np.int64(26), np.int64(2): np.int64(50), np.int64(4): np.int64(17)} 21s
+gen 13: sigma 0.0416 best score 4.9966 totals {np.int64(0): np.int64(2), np.int64(1): np.int64(18), np.int64(2): np.int64(60), np.int64(4): np.int64(16)} 21s
+gen 14: sigma 0.0404 best score 4.9966 totals {np.int64(0): np.int64(2), np.int64(1): np.int64(13), np.int64(2): np.int64(67), np.int64(4): np.int64(14)} 26s
+gen 15: sigma 0.0404 best score 4.9966 totals {np.int64(1): np.int64(8), np.int64(2): np.int64(69), np.int64(3): np.int64(1), np.int64(4): np.int64(18)} 21s
+gen 16: sigma 0.0392 best score 4.9966 totals {np.int64(1): np.int64(12), np.int64(2): np.int64(78), np.int64(4): np.int64(6)} 21s
+gen 17: sigma 0.0392 best score 4.9966 totals {np.int64(0): np.int64(1), np.int64(1): np.int64(16), np.int64(2): np.int64(65), np.int64(4): np.int64(14)} 17s
+gen 18: sigma 0.038 best score 4.9966 totals {np.int64(1): np.int64(20), np.int64(2): np.int64(66), np.int64(4): np.int64(10)} 23s
+gen 19: sigma 0.038 best score 4.9966 totals {np.int64(0): np.int64(1), np.int64(1): np.int64(17), np.int64(2): np.int64(67), np.int64(4): np.int64(11)} 23s
+gen 20: sigma 0.0369 best score 4.9966 totals {np.int64(1): np.int64(12), np.int64(2): np.int64(59), np.int64(3): np.int64(1), np.int64(4): np.int64(24)} 22s
+gen 21: sigma 0.0369 best score 4.9966 totals {np.int64(1): np.int64(20), np.int64(2): np.int64(69), np.int64(3): np.int64(1), np.int64(4): np.int64(6)} 19s
