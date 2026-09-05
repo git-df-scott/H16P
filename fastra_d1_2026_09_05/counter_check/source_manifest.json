@@ -1,0 +1,11 @@
+{
+  "fastra_d1_2026_09_05/counter_check/build_report.py": "aaf5372bce55ac23312be25b24a63b7888d933f0fd335aa8ef183b7eb2100235",
+  "fastra_d1_2026_09_05/counter_check/audit.py": "13672eafda6315ade6b63d6fe4ee95efb9713fe5695fa588297d5b35101e065a",
+  "fastra_d1_2026_09_05/counter_check/precision_check.py": "e1647ac76f2fe2935c786fa59d7d8927b7d62909bae684c3e76fa33039850964",
+  "fastra_d1_2026_09_05/counter_check/full_ray_quad.cpp": "c10598ac4d0ee1722cd3876bedd1dd46159154e6498e934faf62f579c3340495",
+  "fastra_d1_2026_09_05/counter_check/half_float_coeff_quad.cpp": "75bb2b43b0fe43ec6655ba692853e4b1f2916855aca9c08844b6cd839247830c",
+  "fastra_d1_2026_09_05/counter_check/check_misses.py": "2a10aa71d0d00d05bde2db08766ec54ce7148d30fe9ffe3c6488d69e21bff3d5",
+  "fastra_d1_2026_09_05/counter_check/refine_coordinates.py": "d37d46094988a63cb4a254130dc2aadc08c80d2a2fe667bd2d3bb604e0273fdc",
+  "fastra_d1_2026_09_05/counter_check/full_ray_float_coeff_quad.cpp": "d5a55085f436bd390d75cdf15fdfaf020530d146fce7ddd4db73d25a7ae26c07",
+  "fastra_d1_2026_09_05/counter_check/first_step.c": "58db85bf3e88c919e2c1ed9a921428b9c8de1d3ee963d71b0ea2ccad745c3ac4"
+}

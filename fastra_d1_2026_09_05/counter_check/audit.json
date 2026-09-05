@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "fields": 5,
+  "full_return_pair_roots": 10,
+  "same_ray_grid_endpoints": 20,
+  "fable_production_sources_unchanged": true,
+  "no_new_sheets_or_sweeps": true,
+  "D1": "OPEN"
+}

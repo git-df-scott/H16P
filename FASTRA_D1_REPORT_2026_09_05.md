@@ -1,6 +1,9 @@
 # FASTRA D1 — Joint fold work, 2026-09-05
 
 **D1 STATUS: OPEN. No four-origin field and no five-cycle candidate.**
+
+Counter discrepancy clarification: see [FASTRA_D1_COUNTER_DISCREPANCY_2026_09_05.md](FASTRA_D1_COUNTER_DISCREPANCY_2026_09_05.md). "Near the center" means a parameter limit, not small-radius roots. Five fields have successful full-return evidence; half-return-only cases are separate. The positive endpoint also has a coefficient-representation and grid-cap limitation.
+
 The deterministic continuation and beta tests are completed for the grid below.
 The requested global sign-map dichotomy is not justified by these computations.
 
