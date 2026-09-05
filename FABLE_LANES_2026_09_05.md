@@ -143,3 +143,9 @@ The grids are coarse in the scaling that matters (e0 against (2e1+e2)^2), so a s
 ### F18c: scaled unfolding (e0 ~ delta^2, da ~ delta, delta = 2e1 + e2) at a0 = -1 and -1/2, b = 0.5, 1, 1.5
 4536 fields: totals 0/1/2/3 = 630/2016/1638/252, no nest with three cycles, no total above three.
 The hemicycle emits its two known cycles and nothing more in any scaling tested. CLOSED numerically.
+
+### F15 overnight sweeps
+Two-center neutral unfolding (a = -1 + da, da log-uniform, eps log-uniform), 20032 fields, compactified
+counting to radius e^40: totals 0/1/2/3 = 11574/6453/1988/17, never four. CLOSED numerically.
+KKL near c* (c, K, beta, p, q free): in progress; total four appears at about 0.25 percent (the (3,1)
+configurations), no five so far.
