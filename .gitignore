@@ -1,2 +1,5 @@
 __pycache__/
 *.py[cod]
+audit/fable_engine/libretmap.so
+audit/fable_engine/data/queue.log
+audit/fable_engine/data/QUEUE_DONE
