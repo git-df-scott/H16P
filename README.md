@@ -1,5 +1,22 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Latest Q4 route-4 reduction, 2026-09-05
+
+[Strike 7](Q4_SEVENTH_LIMITING_FACE.md) proves that the limiting original
+family at `a=1` has at most three interior zeros. Both limiting boundary
+determinants have exact negative-sign certificates. An explicit
+three-dimensional subspace has at most two zeros at every finite lift.
+The remaining finite-lift direction is unresolved: **route 4 is still open,
+and no four-zero counterexample has been found.**
+
+[Strike 6](Q4_SIXTH_BOUNDARY_REDUCTION.md) narrows the outside-lobe
+four-interior-zero problem. Every survivor needs first primitive anchor
+`r>1-(7/22)^(3/2)` and `kappa>2.89924108097...` (an exactly defined
+algebraic cutoff). A sufficient global determinant exclusion now reduces
+to two second-anchor boundary functions. Their universal signs remain
+open. Exact proofs, rational interval certificates, and bounded numerical
+controls are included. This does not solve `H(2)=4`.
+
 ## Reversible re-seed, 2026-09-05
 
 Read [REVERSIBLE_RESEED_2026_09_05.md](REVERSIBLE_RESEED_2026_09_05.md).
@@ -21,6 +38,7 @@ five cycles. The run used 400 KKL and 150 Shi/Chen–Wang returns, with all fail
 recorded. Exact theory restrictions, rational coefficients and replay sources
 are included. Older sections below are chronological records, not current
 verdicts.
+
 
 ## Claude adversarial audit of Astra Strikes 1–3, 2026-09-04
 

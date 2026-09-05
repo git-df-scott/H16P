@@ -1,5 +1,11 @@
 # Q4 Strike 5: two-root geometry and the exact remaining obstruction
 
+> Follow-on, 2026-09-05: [Strike 6](Q4_SIXTH_BOUNDARY_REDUCTION.md) proves
+> new necessary bounds on the first anchor and lift, and reduces a
+> sufficient determinant sign proof to two second-anchor boundary
+> functions. Their universal signs remain open; the four-zero question
+> is not settled. The Strike-5 derivation below is preserved.
+
 2026-09-04. Canonical inputs: main `7def4d5`, the accepted Theorem N,
 and the audited reconstruction. **The four-zero question remains open.
 No four-zero counterexample or global three-zero theorem is asserted.**
