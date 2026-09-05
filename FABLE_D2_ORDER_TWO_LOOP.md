@@ -162,3 +162,23 @@ percent agreement with the q-sign rule): the sign depends on which root of P on 
 Conclusion: (C) does not follow from sign algebra. It stands as Lane C's numerical statement (loops on the
 order-three stratum occur only on the center curve q = 0) unless the Llibre-Schlomiuk classification of
 third-order weak-focus portraits already contains it (being checked).
+
+## 12. Statement (C) is a theorem in the literature
+
+Llibre and Schlomiuk, "The geometry of quadratic differential systems with a weak focus of third order",
+Canad. J. Math. 56 (2004) 310-343, Theorem 16: among the eighteen phase portraits of the class QW3, those
+with a graphic are exactly W13, W15 and W18, and in each "the graphic is unique, surrounding a strong focus";
+all graphics have their singular points at infinity, and the bifurcation set (Theorem 12) contains no finite
+saddle-loop bifurcation. Limit cycles around the third-order weak focus are excluded by citing Li (1986).
+Hence no homoclinic loop surrounds a third-order weak focus in any quadratic system: the focus sheet L of the
+order-two loop locus never meets the Shi line b = 3l+5 at a non-center point.
+
+## 13. Status of Conjecture D2
+
+Proved: Proposition A (section 9, exact) and statement (C) (Llibre-Schlomiuk 2004). Consequence: on every
+connected component of L minus the center strata, sigma and eta_2 are continuous and nonzero, so
+sign(sigma * eta_2) is constant per component. Remaining: (D), a description of the components of L minus the
+center strata and one sign evaluation on each. Evaluated: 104 loops over a in [-3, 3], b in [-4, 4], every
+component met, all negative. D2 is therefore a theorem modulo the finiteness and enumeration of those
+components, which is a computable but not yet completed step. The Zhang uniqueness theorem (1999) adds that
+a hypothetical component with positive sign would carry exactly one hyperbolic cycle inside the loop.
