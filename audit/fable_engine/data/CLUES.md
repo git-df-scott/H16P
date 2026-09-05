@@ -41,3 +41,37 @@ Starting watch for five limit cycles (total >= 5). Max total seen so far: 0. Dat
 - Scheduling iterations 2-12 to run automatically with 20-minute intervals
 - Total watch duration: ~240 minutes (4 hours)
 
+
+### Iteration 2 - 2026-09-05T05:02:55.279360
+
+**Histograms:**
+- F18_third_cycle.log: ...b=1.5 e1=+0.0001 da=+0.01 done 1223s hist {0: 989, 1: 1168, 2: 482, 3: 236}
+- F18_third_cycle.log: ...b=1.5 e1=+0.0001 da=+0.03 done 1234s hist {0: 994, 1: 1178, 2: 490, 3: 238}
+- F18_third_cycle.log: ...b=1.5 e1=+0.0001 da=-0.0001 done 1246s hist {0: 999, 1: 1188, 2: 498, 3: 240}
+
+**Max total: 4**
+- Total 4: 77 records
+
+**Queue5 alive: True**
+
+
+### Iteration 3 - 2026-09-05T05:03:10.434182
+
+**Histograms:**
+- F18_third_cycle.log: ...da=-0.0001 done 1246s hist {0: 999, 1: 1188, 2: 498, 3: 240}
+- F18_third_cycle.log: ...da=-0.001 done 1257s hist {0: 1004, 1: 1198, 2: 506, 3: 242}
+
+**Max total: 4**
+- Total 4: 77 records
+
+
+### Iteration 2 - 2026-09-05T05:04:02.597083 (+20m)
+
+**Histograms:**
+- F18_third_cycle.log: ...b=1.5 e1=-0.01 da=+0.0001 done 1292s hist {0: 1022, 1: 1230, 2: 527, 3: 246}
+- F18_third_cycle.log: ...b=1.5 e1=-0.01 da=+0.001 done 1303s hist {0: 1030, 1: 1242, 2: 532, 3: 246}
+- F18_third_cycle.log: ...b=1.5 e1=-0.01 da=+0.01 done 1314s hist {0: 1038, 1: 1254, 2: 537, 3: 246}
+
+**Max total: 4**
+- Total 4: 77 records
+
