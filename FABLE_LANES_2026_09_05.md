@@ -169,3 +169,8 @@ KKL incumbent 3+1, Astra's table field 1+1. Consequence: the overnight compactif
 F21) undercounted cycles with displacement below 1e-10; every record with three or more cycles is being
 recounted with the fixed counter, and the Q4 alien test is being rerun. Their verdicts are provisional until
 the recount finishes.
+
+### Recount with the fixed counter (2026-09-05 morning)
+All 24 four-cycle KKL c* fields recount to exactly four. F19 rerun: the fifteen three-zero Q4 directions
+give at most three real origin cycles at every amplitude (29 cases three, 4 two, 12 one), no alien, no
+four-zero direction. The KKL c* and Q4 verdicts survive the noise-floor correction.
