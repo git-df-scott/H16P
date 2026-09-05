@@ -75,3 +75,24 @@ Starting watch for five limit cycles (total >= 5). Max total seen so far: 0. Dat
 **Max total: 4**
 - Total 4: 77 records
 
+
+### Iteration 4 - 2026-09-05T05:23:10.481734
+
+**Histograms:**
+- F18c_scaled.log: ...lta=-1.0e-05 done 497s hist {0: 399, 1: 903, 2: 567, 3: 210}
+- F18c_scaled.log: ...lta=+1.0e-03 done 511s hist {0: 399, 1: 910, 2: 623, 3: 210}
+
+**Max total: 4**
+- Total 4: 77 records
+
+
+### Iteration 3 - 2026-09-05T05:24:02.575355 (+40m)
+
+**Histograms:**
+- F18c_scaled.log: ....0 b=1.5 e1=-0.01 delta=+1.0e-04 done 527s hist {0: 399, 1: 917, 2: 679, 3: 210}
+- F18c_scaled.log: ....0 b=1.5 e1=-0.01 delta=+1.0e-05 done 542s hist {0: 399, 1: 924, 2: 735, 3: 210}
+- F18c_scaled.log: ....5 b=0.5 e1=+0.01 delta=+1.0e-03 done 558s hist {0: 399, 1: 987, 2: 735, 3: 210}
+
+**Max total: 4**
+- Total 4: 77 records
+

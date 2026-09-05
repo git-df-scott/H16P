@@ -139,3 +139,7 @@ cycles near radius 50. No count ever exceeds the first-order count: no alien. CL
 Neutral case a0 = -1 (b = 0.5, 1, 1.5; 3600 fields) and the proven alien points a0 = -1/2, b0 = 1/2 and 3/2
 (2400 fields): maximum total three, always the (2,1) pattern; no nest with three cycles on these grids.
 The grids are coarse in the scaling that matters (e0 against (2e1+e2)^2), so a scaled follow-up runs next.
+
+### F18c: scaled unfolding (e0 ~ delta^2, da ~ delta, delta = 2e1 + e2) at a0 = -1 and -1/2, b = 0.5, 1, 1.5
+4536 fields: totals 0/1/2/3 = 630/2016/1638/252, no nest with three cycles, no total above three.
+The hemicycle emits its two known cycles and nothing more in any scaling tested. CLOSED numerically.
