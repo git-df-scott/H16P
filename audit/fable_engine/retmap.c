@@ -65,7 +65,7 @@ static int full_return(const double *c, double fx0, double fy0, double dx, doubl
   while (steps < maxsteps){
     double xn, yn;
     double err = dp_step(c,x,y,h,&xn,&yn,rtol,atol);
-    if (err > 1.0){ h *= fmax(0.2, 0.9*pow(err,-0.2)); steps++; continue; }
+    if (!(err <= 1.0)){ h *= isfinite(err) ? fmax(0.2, 0.9*pow(err,-0.2)) : 0.1; steps++; if (h < 1e-300) return 3; continue; }
     /* accepted */
     double nrelx = xn-fx0, nrely = yn-fy0;
     double dang = atan2(relx*nrely - rely*nrelx, relx*nrelx + rely*nrely);

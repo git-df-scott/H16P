@@ -35,22 +35,26 @@ sob = qmc.Sobol(d=DIM, scramble=True, seed=seed)
 def count_nest_log(c, pt, other, umax=UMAX):
     d = rm.away_dir(pt, other); th = float(np.arctan2(d[1], d[0]))
     scale = min([np.hypot(pt[0]-q[0], pt[1]-q[1]) for q in other if np.hypot(pt[0]-q[0], pt[1]-q[1]) > 1e-9] + [1.0])
-    RT = dict(th0=th, rtol=1e-12, umax=umax+4, Smax=2e4, maxsteps=600_000)
+    RT = dict(th0=th, umax=umax+4, Smax=2e4, maxsteps=600_000)
     NOISE = 5e-12
     def ret(us):
-        u1, S, st = rm.returns_log(c[None], np.array([pt]), np.asarray(us, float)[None], **RT)
-        return u1[0], st[0]
+        """two-tolerance return: value at rtol 1e-12 and a per-point noise estimate from the 1e-11 run"""
+        us = np.asarray(us, float)[None]
+        u1, S, st = rm.returns_log(c[None], np.array([pt]), us, rtol=1e-12, **RT)
+        u2, S2, st2 = rm.returns_log(c[None], np.array([pt]), us, rtol=1e-11, **RT)
+        noise = np.where((st[0] == 0) & (st2[0] == 0), 10*np.abs(u1[0]-u2[0]) + NOISE, np.inf)
+        return u1[0], st[0], noise
     u0 = np.arange(np.log(1e-3*scale), umax, 0.25)
-    u1, st = ret(u0)
+    u1, st, nz = ret(u0)
     ok = st == 0; k = len(u0) if ok.all() else int(np.argmin(ok))
-    uu = u0[:k]; D = (u1[:k]-uu)
+    uu = u0[:k]; D = (u1[:k]-uu); NZ = nz[:k]
     if 1 <= k < len(u0):   # edge bisection in u
-        lo, hi = u0[k-1], u0[k]; De = None
+        lo, hi = u0[k-1], u0[k]; De = None; Ne = np.inf
         for _ in range(8):
-            mid = 0.5*(lo+hi); v1, s1 = ret([mid])
-            if s1[0] == 0: lo = mid; De = v1[0]-mid
+            mid = 0.5*(lo+hi); v1, s1, n1 = ret([mid])
+            if s1[0] == 0: lo = mid; De = v1[0]-mid; Ne = n1[0]
             else: hi = mid
-        if De is not None and lo > u0[k-1]: uu = np.append(uu, lo); D = np.append(D, De)
+        if De is not None and lo > u0[k-1]: uu = np.append(uu, lo); D = np.append(D, De); NZ = np.append(NZ, Ne)
     # adaptive refinement: interior local minima of |D| without a sign change (near-fold pairs) and
     # any interval whose endpoints are both below 20x the noise floor (small displacements)
     for _ in range(2):
@@ -61,10 +65,10 @@ def count_nest_log(c, pt, other, umax=UMAX):
                 add.extend(np.linspace(uu[i-1], uu[i+1], 9)[1:-1])
         add = [a for a in add if not np.any(np.abs(uu-a) < 1e-9)]
         if not add: break
-        v1, s1 = ret(add); good = s1 == 0
-        uu = np.concatenate([uu, np.asarray(add)[good]]); D = np.concatenate([D, (v1-np.asarray(add))[good]])
-        o = np.argsort(uu); uu, D = uu[o], D[o]
-    idx = [i for i in range(len(D)-1) if D[i]*D[i+1] < 0 and min(abs(D[i]), abs(D[i+1])) > NOISE]
+        v1, s1, n1 = ret(add); good = s1 == 0
+        uu = np.concatenate([uu, np.asarray(add)[good]]); D = np.concatenate([D, (v1-np.asarray(add))[good]]); NZ = np.concatenate([NZ, n1[good]])
+        o = np.argsort(uu); uu, D, NZ = uu[o], D[o], NZ[o]
+    idx = [i for i in range(len(D)-1) if D[i]*D[i+1] < 0 and min(abs(D[i]), abs(D[i+1])) > max(NZ[i], NZ[i+1])]
     roots = [float(np.exp(0.5*(uu[i]+uu[i+1]))) for i in idx]; stab = ['S' if D[i] > 0 else 'U' for i in idx]
     return roots, stab, int(k), float(np.exp(uu[-1])) if len(uu) else None
 def evaluate(c):

@@ -44,14 +44,15 @@ static double dp_step(const double *c, double u, double th, double h, double *un
   return sqrt(0.5*((eu_/su)*(eu_/su)+(et_/st)*(et_/st)));
 }
 static int full_return_log(const double *c, double u0, double th0, double rtol, double umax, double Smax, long maxsteps, double *u1, double *S1){
-  double u = u0, th = th0, s = 0.0, h = 1e-3;
+  double u = u0, th = th0, s = 0.0;
   double du, dth; rates(c,u,th,&du,&dth);
+  double h = 1e-3/(1.0 + fabs(du) + fabs(dth));   /* initial step scaled to the local rates */
   if (fabs(dth) < 1e-300) return 4;
   double sense = dth > 0 ? 1.0 : -1.0, target = th0 + sense*2*M_PI;
   double atol = 1e-15; long steps = 0;
   while (steps < maxsteps){
     double un, thn; double err = dp_step(c,u,th,h,&un,&thn,rtol,atol);
-    if (err > 1.0){ h *= fmax(0.2, 0.9*pow(err,-0.2)); steps++; continue; }
+    if (!(err <= 1.0)){ h *= isfinite(err) ? fmax(0.2, 0.9*pow(err,-0.2)) : 0.1; steps++; if (h < 1e-300) return 3; continue; }
     if ((sense>0 && thn >= target) || (sense<0 && thn <= target)){
       double lo=0, hi=h, um=un, tm=thn;
       for (int it=0; it<60; ++it){ double mid=0.5*(lo+hi); dp_step(c,u,th,mid,&um,&tm,rtol,atol);
