@@ -12,3 +12,4 @@ a=-3.00 b=1.250 l=-0.625000 which=1 saddle=[0.3097, -0.0567] trace=-0.00000 eta2
 a=-3.00 b=1.500 l=-0.750000 which=1 saddle=[0.3013, -0.064] trace=+0.00000 eta2=+2.7309e-09 CENTER
 a=-3.00 b=1.500 l=-1.241875 which=2 saddle=[0.3204, -0.0258] trace=+0.00000 eta2=+1.0533e-09 CENTER
 a=-3.00 b=1.750 l=-1.355673 which=2 saddle=[0.3118, -0.037] trace=+0.00000 eta2=+8.9705e-10 CENTER
+a=-3.00 b=2.000 l=-1.464102 which=2 saddle=[0.3022, -0.0467] trace=+0.00000 eta2=+1.9724e-09 CENTER
