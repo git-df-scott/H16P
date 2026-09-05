@@ -11,6 +11,18 @@ recorded. Exact theory restrictions, rational coefficients and replay sources
 are included. Older sections below are chronological records, not current
 verdicts.
 
+## Resonant joint strike, 2026-09-05
+
+Read [RESONANT_JOINT_2026_09_05.md](RESONANT_JOINT_2026_09_05.md).
+The new analytic compatibility argument at `(a,b)=(-1,1)` excludes the
+proposed two-compact-plus-three-hemicycle construction: two compact cycles
+leave at most one endpoint cycle in the same limiting sequence. The proof
+uses an explicit logarithmic compact generator and parameter-uniform
+division of the leading Dulac remainder. It is a campaign derivation,
+not an independently reviewed theorem or a global bound for `H(2)`.
+Exact algebra and original-field numerical controls are in
+[`resonant/`](resonant/). Pure endpoint cyclicity remains unresolved.
+
 ## Claude adversarial audit of Astra Strikes 1–3, 2026-09-04
 
 Read [CLAUDE_AUDIT_ASTRA_1_3.md](CLAUDE_AUDIT_ASTRA_1_3.md) and

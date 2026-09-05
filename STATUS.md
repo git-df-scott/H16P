@@ -9,12 +9,25 @@ KKL pair persists numerically to c=0.9683 beyond the old cutoff, at different
 parameters. The two classical-seed trace paths lose their innermost cycle into
 the focus. These findings do not prove a family-wide exclusion or K1 false.
 
-Budget: 206 historical + 400 new KKL + 150 new Shi/Chen–Wang = 756 returns;
-3340 remain against the conservative common 4096 ceiling. Stage 2's 400-call
+Budget: 206 historical + 400 new KKL + 150 new Shi/Chen–Wang + 36 resonant
+return-difference evaluations = 792; 3304 remain against the conservative
+common 4096 ceiling. The resonant controls used 72 half-flow integrations
+to evaluate those 36 differences at two tolerances. Stage 2's 400-call
 allocation is fully spent. Global graphic connection/coefficient work, general
 Shi-chart fold continuation and an interval return-map verifier remain open.
 
 Audit cutoff: **2026-09-04**
+
+## Resonant compatibility update, 2026-09-05
+
+[The resonant joint strike](RESONANT_JOINT_2026_09_05.md) derives a local
+exclusion of two compact plus three endpoint cycles at the double-center
+base `(-1,1)`. Two compact cycles permit at most one simultaneous
+hemicycle cycle under the stated limiting-set hypotheses. Symbolic checks
+and original-field NUM controls are supplied; the analytic argument has
+not received independent mathematical review. No global `H(2)` bound or
+five-cycle certificate is claimed. The sharp pure-endpoint resonance
+problem remains open in this work.
 
 ## Binding mathematical status
 
