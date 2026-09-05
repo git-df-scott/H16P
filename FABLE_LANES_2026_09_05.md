@@ -92,3 +92,38 @@ requires. Its interior zero count is zero: the reported crossing at r = 0.034 is
 residual floor, and a direct dense scan of the actual Yu-Zeng field shows D/r positive and increasing
 from r = 0.11 to the annulus edge at 0.2333. No fourth origin cycle there. Grid over a1 running for
 both annuli.
+
+### F13 (grid, both annuli, a1 from -1.1 to -15 on the curve and off-curve controls)
+Every point: span dimension 3, at most two zeros over random directions, Taylor matrix singular on the
+curve (so the v0=v1=v2=0 element exists exactly there), and that element has no interior zero in either
+annulus. The Yu-Han mechanism gives (3,1) and nothing more at first order plus Bautin. CLOSED.
+
+### F14 / F4: descents from four-cycle seeds (fixed engine)
+Random sampling of the widened KKL family (free quadratic coefficients) finds genuine (3,1) fields at a
+rate of about four per 22,000 samples; eleven such seeds plus the KKL incumbent were descended for 60
+generations. Maximum total four; the origin-nest displacement between the U and S roots is a single hump
+with no forming fold. A reported near-miss was a noise wiggle next to a root (detector fixed).
+
+### F15: neutral hemicycle (a = -1 in the two-center chart, J(c) = 0 in KKL) with the compactified engine
+New engine `retmap_log.c`: log-polar returns, validated against Astra's KKL table (origin cycle near 7000,
+remote near 6.5e9 at c = 0.9683, K = 1/64) and the incumbent at radius up to 1e17. Targeted unfolding
+(270 fields): maximum total three, pattern (2,1). Broad Sobol sweeps (20k two-center, 10k KKL near c*)
+running overnight.
+
+### F16: Dulac coefficients at the neutral hemicycle (transverse section: height y above the invariant line)
+Unperturbed neutral system returns as a center to 2e-14. Reversible directions da, db give zero first-order
+displacement. Effective first order: D = pi e0 - pi (2 e1 + e2) y + O(y^2): connection term e0, linear
+term the single combination 2e1 + e2; no w log w term at first order (it arises at second order as
+da x (2e1+e2)). So at first order the neutral hemicycle emits at most one cycle; two with the ratio
+parameter, matching Marin-Villadelprat's lower bound. Nothing at first order suggests three.
+At b = 1 the field is holomorphic (z' = -(z^2 + 1/4)) and the upper-annulus span drops to two.
+
+### F17: second order along the null direction at the holomorphic point
+The null direction x(1-2y) leaves the upper center a center to all orders (displacement 2e-14 for
+eps = 1e-3, 5e-4, 2.5e-4): it is center-preserving, not a second-order route. Lower annulus first order
+is nonzero (D/eps = 1.078). CLOSED.
+
+### Status at 05:00 UTC 2026-09-05
+Closed tonight: F3/F5 (sweeps, lower bounds only, max one at trace zero), F6, F11, F12, F13, F17.
+Open: F15 (overnight sweeps), F16 (second-order coefficient structure: does da x (2e1+e2) plus the
+quadratic terms allow a third graphic-born cycle; the honest expectation is no).
