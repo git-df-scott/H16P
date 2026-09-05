@@ -1,0 +1,5 @@
+seed: 3 [([], []), ([0.6261014622750635, 2.029004526795348, 14.399481219986765], ['S', 'U', 'S'])] score 3.0
+gen 0: sigma 0.03 best score 3.0000 totals {np.int64(0): np.int64(61), np.int64(1): np.int64(64), np.int64(2): np.int64(3)} 12s
+gen 1: sigma 0.03 best score 3.0000 totals {np.int64(0): np.int64(37), np.int64(1): np.int64(86), np.int64(2): np.int64(5)} 7s
+gen 2: sigma 0.0291 best score 3.0000 totals {np.int64(0): np.int64(53), np.int64(1): np.int64(70), np.int64(2): np.int64(5)} 8s
+gen 3: sigma 0.0291 best score 3.0000 totals {np.int64(0): np.int64(52), np.int64(1): np.int64(71), np.int64(2): np.int64(5)} 10s
