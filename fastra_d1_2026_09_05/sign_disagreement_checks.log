@@ -1,0 +1,5 @@
+positive_center_001_hopf_0.1 USU {'u': 2.2010228900548716, 'status': 0, 'F': 2.8802447683544195e-08, 'sign': 1} 1
+positive_center_002_hopf_0.1 USU {'u': 2.2010228900548716, 'status': 0, 'F': 7.209778579917662e-09, 'sign': 1} 1
+positive_center_003_hopf_0.1 USU {'u': 2.2010228900548716, 'status': 0, 'F': 1.8030186145636508e-09, 'sign': 1} 1
+negative_000_hopf_0.1 SUS {'u': 2.2010228900548716, 'status': 0, 'F': -2.9548857521918105e-09, 'sign': -1} -1
+negative_001_hopf_0.1 SUS {'u': 2.2010228900548716, 'status': 0, 'F': -2.9594952562879942e-08, 'sign': -1} -1

@@ -1,6 +1,21 @@
 # H16P: quadratic limit-cycle feasibility audit
 
-## Current fold-component checkpoint, 2026-09-05
+## FASTRA D1: full fold counts and Hopf completion, 2026-09-05
+
+Read [FASTRA_D1_REPORT_2026_09_05.md](FASTRA_D1_REPORT_2026_09_05.md) for the
+new checkpoint. The fold unfolding now has an exact rational **3+1 field**,
+numerically reproduced by compactified full returns and binary128 shooting.
+The tested beta=0 pair fields reach two origin cycles; Hopf completion reaches
+three. **No four-origin-cycle field is verified; D1 remains OPEN.** The supplied
+counter has reproduced false positives at large radius and false negatives
+near the center and at large m. Repaired counts, edge diagnostics, exact vectors,
+and the invalidity of using endpoint-sign agreement as a pair-exclusion test
+are documented in the report and `fastra_d1_2026_09_05/`.
+
+The fold checkpoint immediately below is historical and is superseded by D1
+where it says no 3+1 precursor was found.
+
+## Previous fold-component checkpoint, 2026-09-05
 
 Read [KKL_FOLD_SURFACE_STRIKE.md](KKL_FOLD_SURFACE_STRIKE.md) first. The finite
 KKL fold was continued to horizontal radius approximately 2.96e17 on the

@@ -1,0 +1,6 @@
+positive_infinity_024_polished_fold baseline [(0, ''), (1, 'S')] horizontal None seconds 0.09
+positive_infinity_024_polished_pair baseline [(0, ''), (1, 'S')] horizontal None seconds 0.09
+positive_infinity_024_polished_pair SU {'kind': 'scan_cap', 'u_valid': 43.0, 'F': 4.446497252376838e-24, 'sign': 1, 'r_valid': 4.727839468229346e+18}
+positive_infinity_024_polished_hopf_preserved baseline [(0, ''), (1, 'S')] horizontal None seconds 0.09
+positive_infinity_024_polished_hopf_preserved USU {'kind': 'scan_cap', 'u_valid': 43.0, 'F': 4.4316255524136375e-24, 'sign': 1, 'r_valid': 4.727839468229346e+18}
+ACCEPTED FINAL positive_infinity_024_polished 1.593365382075458796914748704771865783475 7.06316120411702094069391837663709585494 235385266837019985.407899910749034811

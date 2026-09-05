@@ -1,0 +1,50 @@
+positive_center_000_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_000_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.48
+positive_center_000_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.49
+positive_center_000_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal SU seconds 0.48
+ACCEPTED positive_center_000 r 6.75939506161147455280401897630495415 c 0.968888479267089700339486248465845633 K 0.001953125
+positive_center_001_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.48
+positive_center_001_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.52
+positive_center_001_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.5
+positive_center_001_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal S seconds 0.46
+ACCEPTED positive_center_001 r 6.7586687703984751694107378535274976 c 0.968754543039385420165534403444487322 K 0.0009765625
+positive_center_002_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.46
+positive_center_002_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.48
+positive_center_002_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.49
+positive_center_002_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal S seconds 0.47
+ACCEPTED positive_center_002 r 6.75812473195349096617415415804429507 c 0.968654108416194369962696398073161869 K 0.000244140625
+positive_center_003_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.45
+positive_center_003_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.48
+positive_center_003_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal U seconds 0.46
+positive_center_003_hopf_0.1 baseline [(1, 'S'), (2, 'SU')] horizontal S seconds 0.47
+ACCEPTED positive_center_003 r 6.75798881336661842690820125433810777 c 0.968629002112313204368353477410052005 K 6.103515625e-05
+positive_center_004_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.45
+positive_center_004_pair baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.46
+positive_center_004_hopf_1 baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.46
+positive_center_004_hopf_0.1 baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.46
+ACCEPTED positive_center_004 r 6.75795093662487814128240602763541037 c 0.968622004651007592848477897747710984 K 9.99999999999999999999999999999999966e-06
+positive_center_005_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.49
+positive_center_005_pair baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.46
+positive_center_005_hopf_1 baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.46
+positive_center_005_hopf_0.1 baseline [(1, 'S'), (2, 'SU')] horizontal  seconds 0.47
+ACCEPTED positive_center_005 r 6.75794425739169676228342113781682612 c 0.968620770663119284660556679039995377 K 9.9999999999999999999999999999999993e-07
+positive_center_006_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_006_pair baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_006_hopf_1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_006_hopf_0.1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.45
+ACCEPTED positive_center_006 r 6.75794358947321765111402093649039726 c 0.968620647264455522687019629096239845 K 9.99999999999999999999999999999999976e-08
+positive_center_007_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.47
+positive_center_007_pair baseline [(1, 'S'), (0, '')] horizontal  seconds 0.46
+positive_center_007_hopf_1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.45
+positive_center_007_hopf_0.1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.45
+ACCEPTED positive_center_007 r 6.75794352268141810356411933091633931 c 0.968620634924590397183142272306707586 K 1e-08
+positive_center_008_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_008_pair baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_center_008_hopf_1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.47
+positive_center_008_hopf_0.1 baseline [(1, 'S'), (0, '')] horizontal  seconds 0.46
+ACCEPTED positive_center_008 r 6.75794351600223834864704995769009414 c 0.968620633690603897139694323678057062 K 9.99999999999999999999999999999999932e-10
+positive_center_009_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.49
+positive_center_009_pair baseline [(0, ''), (0, '')] horizontal  seconds 0.47
+positive_center_009_hopf_1 baseline [(0, ''), (0, '')] horizontal  seconds 0.5
+positive_center_009_hopf_0.1 baseline [(0, ''), (0, '')] horizontal  seconds 0.49
+ACCEPTED positive_center_009 r 6.75794351533432011956549714685304621 c 0.968620633567205247249048985953262886 K 1.00000000000000000000000000000000004e-10

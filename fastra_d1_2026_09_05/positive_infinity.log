@@ -1,0 +1,104 @@
+positive_infinity_001_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.48
+positive_infinity_001_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.5
+positive_infinity_001_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.49
+positive_infinity_001_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.48
+ACCEPTED positive_infinity_001 r 6.76085075524545043495683256324992576 c 0.969156431821404178705690373969329173 K 0.00390625
+positive_infinity_002_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.44
+positive_infinity_002_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.48
+positive_infinity_002_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.5
+positive_infinity_002_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.52
+ACCEPTED positive_infinity_002 r 6.76967234452314701107222139306573591 c 0.970766376557679538855216258161752412 K 0.015625
+positive_infinity_003_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.4
+positive_infinity_003_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.41
+positive_infinity_003_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.42
+positive_infinity_003_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.43
+ACCEPTED positive_infinity_003 r 6.80647977035725218958401882035425422 c 0.977243407295639134175645650701443765 K 0.0625
+positive_infinity_004_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.41
+positive_infinity_004_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.36
+positive_infinity_004_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.36
+positive_infinity_004_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.36
+ACCEPTED positive_infinity_004 r 6.8594540065236151207181240625588449 c 0.985967157653697258421252697075005205 K 0.125
+positive_infinity_005_fold baseline [(1, 'S'), (0, '')] horizontal  seconds 0.28
+positive_infinity_005_pair baseline [(1, 'S'), (2, 'SU')] horizontal SU seconds 0.31
+positive_infinity_005_hopf_1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.33
+positive_infinity_005_hopf_0.1 baseline [(1, 'S'), (3, 'USU')] horizontal USU seconds 0.32
+ACCEPTED positive_infinity_005 r 6.95315434526924661051549566154747894 c 0.999999999999995898825621912851578395 K 0.224215783967300000000000000000000009
+positive_infinity_006_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.24
+positive_infinity_006_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.25
+positive_infinity_006_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.27
+positive_infinity_006_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.27
+ACCEPTED positive_infinity_006 r 7.28185968964277010997344027372438511 c 1.03987061613849914903659998345749965 K 0.5
+positive_infinity_007_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.16
+positive_infinity_007_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.19
+positive_infinity_007_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.22
+positive_infinity_007_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.21
+ACCEPTED positive_infinity_007 r 8.18345461144518501273244127522532129 c 1.11276797596105796689031690889301769 K 1
+positive_infinity_008_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.16
+positive_infinity_008_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.17
+positive_infinity_008_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.25
+positive_infinity_008_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.2
+ACCEPTED positive_infinity_008 r 9.5842662630143434567754044595532942 c 1.18200416499433238569975083737472992 K 1.5
+positive_infinity_009_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.15
+positive_infinity_009_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.18
+positive_infinity_009_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.19
+positive_infinity_009_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.18
+ACCEPTED positive_infinity_009 r 11.652480810000613518527019170606131 c 1.24435141619901523373014888182767003 K 2
+positive_infinity_010_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.15
+positive_infinity_010_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.18
+positive_infinity_010_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.21
+positive_infinity_010_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.18
+ACCEPTED positive_infinity_010 r 19.1245773235831342945697817435013523 c 1.34623636668242143080852750922100906 K 3
+positive_infinity_011_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.16
+positive_infinity_011_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.2
+positive_infinity_011_hopf_1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.22
+positive_infinity_011_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.18
+ACCEPTED positive_infinity_011 r 37.2559102791806234581734896907039626 c 1.42346874652111337440988520318146711 K 4
+positive_infinity_012_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.16
+positive_infinity_012_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.19
+positive_infinity_012_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.45
+positive_infinity_012_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.2
+ACCEPTED positive_infinity_012 r 100.973608744107926383745521882798197 c 1.48478441125669843170818414991338347 K 5
+positive_infinity_013_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.18
+positive_infinity_013_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.21
+positive_infinity_013_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.5
+positive_infinity_013_hopf_0.1 baseline [(0, ''), (3, 'USU')] horizontal USU seconds 0.25
+ACCEPTED positive_infinity_013 r 220.509521034690905127983793057973639 c 1.51186079691549714590921433748238297 K 5.5
+positive_infinity_014_fold baseline [(0, ''), (0, '')] horizontal  seconds 0.19
+positive_infinity_014_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.21
+positive_infinity_014_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.48
+positive_infinity_014_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.45
+ACCEPTED positive_infinity_014 r 784.72586500916617995853199180480581 c 1.53775968727269748331869752588085607 K 6
+positive_infinity_015_fold baseline [(0, ''), (0, '')] horizontal SU seconds 0.24
+positive_infinity_015_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.24
+positive_infinity_015_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.45
+positive_infinity_015_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.48
+ACCEPTED positive_infinity_015 r 2980.95798704172827474359209945288863 c 1.55309065505604593152205019292652022 K 6.29884819337164748445702915673345266
+positive_infinity_016_fold baseline [(0, ''), (0, '')] horizontal SU seconds 0.26
+positive_infinity_016_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.27
+positive_infinity_016_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.48
+positive_infinity_016_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.49
+ACCEPTED positive_infinity_016 r 22026.465794806716516957900645284245 c 1.56596798516717528180816783551926064 K 6.54762865391756968801948412383781278
+positive_infinity_017_fold baseline [(0, ''), (0, '')] horizontal SU seconds 0.3
+positive_infinity_017_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.27
+positive_infinity_017_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.44
+positive_infinity_017_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.45
+ACCEPTED positive_infinity_017 r 162754.791419003920808005204898486789 c 1.57333306704403367351068894732539842 K 6.68819542205835637681700722328137524
+positive_infinity_018_fold baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.33
+positive_infinity_018_pair baseline [(0, ''), (2, 'SU')] horizontal SU seconds 0.35
+positive_infinity_018_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.47
+positive_infinity_018_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 0.48
+ACCEPTED positive_infinity_018 r 8886110.52050787263676302374078145052 c 1.58138306456896380444438721091703771 K 6.84017458036725239939692594740409958
+Traceback (most recent call last):
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/run_sheets.py", line 61, in <module>
+    a=advance(a,z,'K','z',j)
+      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/run_sheets.py", line 47, in advance
+    return accept(b,h,index,chart)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/run_sheets.py", line 14, in accept
+    fold_count=field_record(label+'_fold',fv,z,umax)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/engine.py", line 116, in field_record
+    (HERE/'FOUR_ORIGIN_TRIGGER.json').write_text(json.dumps(row,indent=2));raise RuntimeError('STOP: four origin roots require hostile reproduction')
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: STOP: four origin roots require hostile reproduction

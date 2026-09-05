@@ -1,0 +1,10 @@
+{
+  "status": "REJECTED_NUMERICAL_FALSE_POSITIVE",
+  "label": "positive_infinity_019_fold",
+  "raw_apparent_count": 6,
+  "suspect_brackets": 6,
+  "all_rechecked_matching_endpoints_positive": true,
+  "evidence": "trigger_binary128_recheck.json",
+  "interpretation": "The six reported sign brackets do not survive well-conditioned binary128 shooting; this is not a four-origin-cycle field.",
+  "interval_certification": false
+}

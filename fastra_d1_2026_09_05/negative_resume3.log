@@ -1,0 +1,63 @@
+negative_022_fold binary128 full-grid recheck
+negative_022_fold baseline [(0, ''), (0, '')] horizontal  seconds 12.15
+negative_022_pair binary128 full-grid recheck
+negative_022_pair baseline [(0, ''), (0, '')] horizontal US seconds 15.76
+negative_022_hopf_1 binary128 full-grid recheck
+negative_022_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 17.05
+negative_022_hopf_0.1 binary128 full-grid recheck
+negative_022_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 16.97
+ACCEPTED negative_022 r 114575.900631175053471662322715894537 c 0.342376495434093978064619976265069936 K -2467759.10044993248257836052216846114
+negative_023_fold binary128 full-grid recheck
+negative_023_fold baseline [(0, ''), (0, '')] horizontal US seconds 15.56
+negative_023_pair binary128 full-grid recheck
+negative_023_pair baseline [(0, ''), (0, '')] horizontal US seconds 16.53
+negative_023_hopf_1 binary128 full-grid recheck
+negative_023_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 18.07
+negative_023_hopf_0.1 binary128 full-grid recheck
+negative_023_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 17.21
+ACCEPTED negative_023 r 902907.94953077319496418024882010437 c 0.340318999216065699056128982203515099 K -25129862.1724655462076516239152266795
+negative_024_fold binary128 full-grid recheck
+negative_024_fold baseline [(0, ''), (0, '')] horizontal  seconds 12.09
+negative_024_pair binary128 full-grid recheck
+negative_024_pair baseline [(0, ''), (0, '')] horizontal US seconds 16.24
+negative_024_hopf_1 binary128 full-grid recheck
+negative_024_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 18.07
+negative_024_hopf_0.1 binary128 full-grid recheck
+negative_024_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 17.39
+ACCEPTED negative_024 r 7341794.14343506944494649186274407086 c 0.338982270340132492798062742954852738 K -254239047.251708515844261965499323939
+negative_025_fold binary128 full-grid recheck
+negative_025_fold baseline [(0, ''), (0, '')] horizontal  seconds 11.6
+negative_025_pair binary128 full-grid recheck
+negative_025_pair baseline [(0, ''), (0, '')] horizontal US seconds 16.4
+negative_025_hopf_1 binary128 full-grid recheck
+negative_025_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 19.04
+negative_025_hopf_0.1 binary128 full-grid recheck
+negative_025_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 17.54
+ACCEPTED negative_025 r 61363434.9503350325283266976595511421 c 0.338056853895980976269739127275564166 K -2562749256.28841852206573919993758873
+negative_026_fold binary128 full-grid recheck
+negative_026_fold baseline [(0, ''), (0, '')] horizontal US seconds 16.89
+negative_026_pair binary128 full-grid recheck
+negative_026_pair baseline [(0, ''), (0, '')] horizontal US seconds 17.55
+negative_026_hopf_1 binary128 full-grid recheck
+negative_026_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 19.57
+negative_026_hopf_0.1 binary128 full-grid recheck
+negative_026_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 18.72
+ACCEPTED negative_026 r 524845664.805381614389094055569928492 c 0.337383411429004468805086509350978846 K -25775649527.619016862880967942784652
+negative_027_fold binary128 full-grid recheck
+negative_027_fold baseline [(0, ''), (0, '')] horizontal US seconds 17.59
+negative_027_pair binary128 full-grid recheck
+negative_027_pair baseline [(0, ''), (0, '')] horizontal US seconds 17.23
+negative_027_hopf_1 binary128 full-grid recheck
+negative_027_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 19.93
+negative_027_hopf_0.1 binary128 full-grid recheck
+negative_027_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 19.55
+ACCEPTED negative_027 r 4574597574.80130468040746770184872775 c 0.336873560420951563788250512587534438 K -258878167115.906559665848872307424256
+negative_028_fold binary128 full-grid recheck
+negative_028_fold baseline [(0, ''), (0, '')] horizontal  seconds 11.9
+negative_028_pair binary128 full-grid recheck
+negative_028_pair baseline [(0, ''), (0, '')] horizontal US seconds 18.07
+negative_028_hopf_1 binary128 full-grid recheck
+negative_028_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 21.67
+negative_028_hopf_0.1 binary128 full-grid recheck
+negative_028_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 20.51
+ACCEPTED negative_028 r 40489446294.0370863711623015930596513 c 0.336475146978923634325568675630591991 K -2597546766505.68004483748913612697603

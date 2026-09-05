@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "record_counts": {
+    "preserved_hopf.jsonl": 6,
+    "events_positive_infinity.jsonl": 26,
+    "precision_repairs.jsonl": 28,
+    "fields.jsonl": 266,
+    "events_positive_center.jsonl": 10,
+    "events_negative.jsonl": 30,
+    "shooting.jsonl": 274,
+    "precision_controls.jsonl": 3
+  },
+  "exact_vectors_validated": 303,
+  "checks": [
+    "JSON parse",
+    "exact rational vector convention",
+    "accepted-event field references",
+    "nominal fold residual bounds",
+    "3+1 bracket and tolerance consistency",
+    "raw trigger rejection",
+    "credential scan"
+  ],
+  "interval_certification": false
+}

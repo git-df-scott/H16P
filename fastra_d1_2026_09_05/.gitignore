@@ -1,0 +1,5 @@
+.half_*
+__pycache__/
+.matching_quad.so
+.matching_quad_v2.so
+.matching_quad_v3.so

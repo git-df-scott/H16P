@@ -1,0 +1,99 @@
+{
+  "rational_vector": [
+    "0",
+    "0",
+    "1",
+    "1",
+    "1",
+    "0",
+    "0",
+    "-2100097656250000000/56578038088396567",
+    "-1/10000000",
+    "-10",
+    "11/5",
+    "9688912553490597/10000000000000000"
+  ],
+  "method": "binary128 two-sided angular matching; rational coefficients and remote equilibrium polished in binary128",
+  "roots": [
+    {
+      "where": "origin",
+      "r": 0.0949678324656587,
+      "u": -2.35421705034607,
+      "initial_bracket": [
+        0.08,
+        0.12
+      ],
+      "F_bracket": [
+        -1.3089523109959238e-08,
+        2.4697961130638942e-08
+      ],
+      "F": 6.814789295307133e-23,
+      "log_multiplier": 1.0212024417054935e-07,
+      "multiplier": 1.0000001021202494,
+      "tight_F": 6.814789303781225e-23,
+      "tight_log_multiplier": 1.0212024417054935e-07,
+      "stability": "U",
+      "section": "positive horizontal"
+    },
+    {
+      "where": "origin",
+      "r": 5.26090310171538,
+      "u": 1.6603027043535024,
+      "initial_bracket": [
+        5.0,
+        5.6
+      ],
+      "F_bracket": [
+        2.9266705936501115e-08,
+        -3.0198730251269403e-08
+      ],
+      "F": -3.159630530211904e-23,
+      "log_multiplier": -4.14176171710707e-06,
+      "multiplier": 0.99999585824686,
+      "tight_F": -3.159630108163616e-23,
+      "tight_log_multiplier": -4.14176171710707e-06,
+      "stability": "S",
+      "section": "positive horizontal"
+    },
+    {
+      "where": "origin",
+      "r": 8.5609080467216,
+      "u": 2.1472062647520276,
+      "initial_bracket": [
+        8.0,
+        9.0
+      ],
+      "F_bracket": [
+        -3.8280520524674055e-08,
+        3.793799109622999e-08
+      ],
+      "F": -6.755884639483428e-20,
+      "log_multiplier": 6.8839486158527065e-06,
+      "multiplier": 1.0000068839723102,
+      "tight_F": -6.755884639488137e-20,
+      "tight_log_multiplier": 6.8839486158527065e-06,
+      "stability": "U",
+      "section": "positive horizontal"
+    },
+    {
+      "where": "remote",
+      "r": 10395387.497083265,
+      "u": 16.156872755836158,
+      "initial_bracket": [
+        1000000.0,
+        100000000.0
+      ],
+      "F_bracket": [
+        6.705890549417352e-05,
+        -5.995034282072609e-05
+      ],
+      "F": 3.0762828712695146e-20,
+      "log_multiplier": -0.005580762555382706,
+      "multiplier": 0.9944347809716136,
+      "tight_F": 3.076282871907999e-20,
+      "tight_log_multiplier": -0.005580762555382706,
+      "stability": "S",
+      "section": "negative horizontal from remote equilibrium"
+    }
+  ]
+}

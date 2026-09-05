@@ -1,0 +1,238 @@
+{
+  "task": "FASTRA D1, 2026-09-05",
+  "fable_input_commit": "4cece20",
+  "astra_fold_input_commit": "7db8597cb7d9bb34e119e85bec3f229270eaf1aa",
+  "integration_parent": "ad1ccaaedc65ef56ece0ada400573686cd2c6a8c",
+  "numerical_only": true,
+  "exact_rational_vectors": true,
+  "files": {
+    "fastra_d1_2026_09_05/FOUR_ORIGIN_TRIGGER.json": {
+      "bytes": 37206,
+      "sha256": "e2a24b9b8745f27ae75df85019e8c650b86fda74d63988eca9111422a714c46c"
+    },
+    "fastra_d1_2026_09_05/README.md": {
+      "bytes": 4926,
+      "sha256": "761baff999589c74864ac43b4a58b173faa7cdd53d6bdf3cc39642037d0a8e80"
+    },
+    "fastra_d1_2026_09_05/artifact_audit.json": {
+      "bytes": 649,
+      "sha256": "54c4bd148d0c9c247804f7ea74416258b30a206a8b14317ea65bd0d0b5e2dc87"
+    },
+    "fastra_d1_2026_09_05/audit_artifacts.py": {
+      "bytes": 2538,
+      "sha256": "761a310d75b7035d6e0028ebcc53eb07d0bd2254120bfb17ab0f782979f54804"
+    },
+    "fastra_d1_2026_09_05/center_precision.log": {
+      "bytes": 460,
+      "sha256": "1e619765ced7445c144a324d413a1719fa4323d2ff0ba04753d8ba84ae5d2a10"
+    },
+    "fastra_d1_2026_09_05/center_precision_final.log": {
+      "bytes": 92,
+      "sha256": "9fe20c1deb3b33b440532bacd1fd47167743c26270ecc0a36fc41654a9a7d1b1"
+    },
+    "fastra_d1_2026_09_05/check_sign_disagreements.py": {
+      "bytes": 634,
+      "sha256": "ff8fd308c15f81dea2faadfa86f2dfe9a163a3e7529c3050aaa12bee07927441"
+    },
+    "fastra_d1_2026_09_05/engine.py": {
+      "bytes": 6794,
+      "sha256": "b6032ab634166ef97ba47d517868670f0cdb89bffb175a809d70f42ca7852540"
+    },
+    "fastra_d1_2026_09_05/events_negative.jsonl": {
+      "bytes": 202674,
+      "sha256": "b362801baa3824e0486176b977e5e8e7d4619177aada4cf2267a8b8afd2fee7b"
+    },
+    "fastra_d1_2026_09_05/events_positive_center.jsonl": {
+      "bytes": 44995,
+      "sha256": "d271056cdd431e08637d2a2e016f2125e90331cb821b2b21a569f32c933b798c"
+    },
+    "fastra_d1_2026_09_05/events_positive_infinity.jsonl": {
+      "bytes": 181381,
+      "sha256": "4cad570daa38e98b2af151fe6d22a0c4dcb01c86f140aa91eb4aa76795e40cbb"
+    },
+    "fastra_d1_2026_09_05/fields.jsonl": {
+      "bytes": 6796891,
+      "sha256": "bf3f5814d60f5805832da68d6e7e982894fd3393ebe61f39a18e9bdb06ecb73c"
+    },
+    "fastra_d1_2026_09_05/finish_positive.log": {
+      "bytes": 771,
+      "sha256": "e566d54f02541722680f8ea7edc6f8619670076186787373818bd92c00f6037e"
+    },
+    "fastra_d1_2026_09_05/finish_positive.py": {
+      "bytes": 3544,
+      "sha256": "bc484f8b583bc0983d3ba65481ce80fcd85435f2063953785b3318304f9a982a"
+    },
+    "fastra_d1_2026_09_05/finish_positive_extension.log": {
+      "bytes": 776,
+      "sha256": "682e4d070320a2ceacb61bb28f5885e69b8d1b22857c581407a1127254a3fe10"
+    },
+    "fastra_d1_2026_09_05/finish_positive_extension.py": {
+      "bytes": 3751,
+      "sha256": "d7bf6c538f113ca88f32e53a7c34a9c9c143d0eb17e6c27ccd51803405cc4095"
+    },
+    "fastra_d1_2026_09_05/float64_field_collapses.json": {
+      "bytes": 3907,
+      "sha256": "0f6b34592bca3a45bc7dd3984f3ed7d4712da88f6bfff034b26103b5f9c70fdc"
+    },
+    "fastra_d1_2026_09_05/make_manifest.py": {
+      "bytes": 1144,
+      "sha256": "3711313cc484cd6dba36db887767121aa9d8c4039acfdf7f56361610aeb37b70"
+    },
+    "fastra_d1_2026_09_05/matching.py": {
+      "bytes": 2787,
+      "sha256": "795ae9e903f82a0524c86360c52ba51ee1ed7eb7d1eec038b171535d31b88cee"
+    },
+    "fastra_d1_2026_09_05/matching_quad.cpp": {
+      "bytes": 3468,
+      "sha256": "7b57528db0e9b9df4315602e6b98529258d4cbed587f522f8d6cc89430e8d9c8"
+    },
+    "fastra_d1_2026_09_05/matching_quad_initial.cpp": {
+      "bytes": 2586,
+      "sha256": "5b723132956b42551a3afdd7bd29ca13a7ff378bf5a716e55ebeed43851b0c31"
+    },
+    "fastra_d1_2026_09_05/matching_quad_remote.cpp": {
+      "bytes": 3440,
+      "sha256": "0e29d5480d343c03d43c95ea9fac45910406ca9ad22b781a5e77603ec850d1fa"
+    },
+    "fastra_d1_2026_09_05/negative.log": {
+      "bytes": 2503,
+      "sha256": "e2f0a63986e005abd44300611259f15c12a821b59697084e0f427020d529265f"
+    },
+    "fastra_d1_2026_09_05/negative_resume.log": {
+      "bytes": 20,
+      "sha256": "ee3ffbb2b41f4b0973e34f112636fa664cdff03e83c56cadf78c6493fa0621b7"
+    },
+    "fastra_d1_2026_09_05/negative_resume2.log": {
+      "bytes": 6452,
+      "sha256": "577886cc1e22db2bf0ef5bd49b2a9cb0a64c924e236ab6dc9037a4cd4ee325fb"
+    },
+    "fastra_d1_2026_09_05/negative_resume3.log": {
+      "bytes": 4453,
+      "sha256": "bcf96300c17d8a0fe32857f9e5c703df7fcd12efea3806e49f34bb780f363f01"
+    },
+    "fastra_d1_2026_09_05/positive_center.log": {
+      "bytes": 4670,
+      "sha256": "ae2a2177574171e74169727a9bdef257c78737697b2547c7744053652c1ce098"
+    },
+    "fastra_d1_2026_09_05/positive_infinity.log": {
+      "bytes": 9482,
+      "sha256": "6fd91d49d99f0602e374342ec9eede52ded21ed093bcdd9298a70f740d318ea4"
+    },
+    "fastra_d1_2026_09_05/positive_infinity_resume.log": {
+      "bytes": 4074,
+      "sha256": "9ad11e7408a0899f44a94dd2b8ec4fe51591d6d59a30b5483dcb35863ece24fe"
+    },
+    "fastra_d1_2026_09_05/precision_controls.jsonl": {
+      "bytes": 1605,
+      "sha256": "cfefd560a77e1b8d33dfa4695bbe811fac3893db3cd2df9c50b8597fe2b3d8e8"
+    },
+    "fastra_d1_2026_09_05/precision_repairs.jsonl": {
+      "bytes": 308491,
+      "sha256": "246ba573c1d1730706604744b08617d65c2ce80e75c492afbcc885ab12e18eb4"
+    },
+    "fastra_d1_2026_09_05/preserved_hopf.jsonl": {
+      "bytes": 70008,
+      "sha256": "4cbf35b14f6fe05f09239b9ccf77099fbadfc2717a41b318e88df781a7f57255"
+    },
+    "fastra_d1_2026_09_05/preserved_hopf.log": {
+      "bytes": 259,
+      "sha256": "8e693d94ae92982e730ecaf1dda9925d9ebe4565fe7b14e5957b3db6392d9399"
+    },
+    "fastra_d1_2026_09_05/preserved_hopf_final.log": {
+      "bytes": 128,
+      "sha256": "1a488fc183a83e270610d40012211f4fb848c46e56b35166c5258b36d7ad3dc3"
+    },
+    "fastra_d1_2026_09_05/repair_counts.py": {
+      "bytes": 3498,
+      "sha256": "dcbe61a32f467df5c1620950c2a27c086aadfe8457ea1c7dd0dd666447f72571"
+    },
+    "fastra_d1_2026_09_05/resume.py": {
+      "bytes": 2121,
+      "sha256": "758ee29508c34a837825b53d0305d7783d391f087f77bd78e0400702bd3902bc"
+    },
+    "fastra_d1_2026_09_05/root_ledger.csv": {
+      "bytes": 150011,
+      "sha256": "daa549b009e3c8bd750212ef9fcaa8cb7a9f34d0de81de01717f0ad441baa8a1"
+    },
+    "fastra_d1_2026_09_05/run_sheets.py": {
+      "bytes": 4799,
+      "sha256": "b32ce46c81c1c4b8df5db0a360319d3e1f3646f6a708ef9bbe87ed28a3c1e242"
+    },
+    "fastra_d1_2026_09_05/shooting.jsonl": {
+      "bytes": 383451,
+      "sha256": "6041681b7b93999255e5717cff2d6af34b8ceabd592adfb99d494a270ab08432"
+    },
+    "fastra_d1_2026_09_05/sign_disagreement_checks.log": {
+      "bytes": 561,
+      "sha256": "1b0498be13392c9dfcb956efba2b8ded2939efe09df9f19f2504e6fdb7393b51"
+    },
+    "fastra_d1_2026_09_05/sign_map.csv": {
+      "bytes": 150260,
+      "sha256": "722262386479bdfe08cc2f5333104c330c0ba3288616fc82da7cc4e2f1cbde74"
+    },
+    "fastra_d1_2026_09_05/start_fold.json": {
+      "bytes": 1228,
+      "sha256": "8cb7f6c735623615b5a84debc531775c64ab0ce17356b0dc8034e6f512c8bb2a"
+    },
+    "fastra_d1_2026_09_05/summarize.py": {
+      "bytes": 4750,
+      "sha256": "e12eab891f6ae51257b5a06a6f55d47580558440772aa3685783f86d0acb4a0d"
+    },
+    "fastra_d1_2026_09_05/summary.json": {
+      "bytes": 13775,
+      "sha256": "81df517420e23d545e2281b342321df998d88c07fda2614af3e48bcfd1d02b2f"
+    },
+    "fastra_d1_2026_09_05/trigger_binary128_recheck.json": {
+      "bytes": 17755,
+      "sha256": "23bef268a4eaf76fd66653395ebd5832d62efc9ca9918f34df465c1994340c00"
+    },
+    "fastra_d1_2026_09_05/trigger_resolution.json": {
+      "bytes": 426,
+      "sha256": "0877ad0e1729e151c7d636c56222cdf6105785a993ab0337fc5c24d950d4d0a7"
+    },
+    "fastra_d1_2026_09_05/verified_precursor.json": {
+      "bytes": 2525,
+      "sha256": "8db979abab4351be92bafa98a970dc8bc54fbd11d59472328e7ef9b9f060ccd5"
+    },
+    "fastra_d1_2026_09_05/verify_precursor.log": {
+      "bytes": 2432,
+      "sha256": "c5ba41245377879f42e241d34a119ac7f5fb7f2d0cc9a0b12cd149ec6d890480"
+    },
+    "fastra_d1_2026_09_05/verify_precursor.py": {
+      "bytes": 2127,
+      "sha256": "cb81bfa3f04b252809edd2eb3a22b2212af735510e5e50745e5e68a123f88228"
+    },
+    "fastra_d1_2026_09_05/write_report.py": {
+      "bytes": 12861,
+      "sha256": "a507d63825f99ad17453a6c9731ebd4e6f88afd6399493d34763f488a1bfa8e0"
+    },
+    "FASTRA_D1_REPORT_2026_09_05.md": {
+      "bytes": 12291,
+      "sha256": "041b37dbe5f317198c16590263230bcdde3387d98c80c961fdcaa06638c84fe1"
+    },
+    "audit/fable_engine/sweep_log.py": {
+      "bytes": 4684,
+      "sha256": "02b138c025da4f4a75c130b129499dc0ca7b0e1883743ed5ecac6824e04c291d"
+    },
+    "audit/fable_engine/retmap.py": {
+      "bytes": 10904,
+      "sha256": "82f2dea80524696107e96af56cbb966886fdb906f5974cf5f64352619ce0eca8"
+    },
+    "audit/fable_engine/retmap.c": {
+      "bytes": 5616,
+      "sha256": "59dd29c99a373b1533d485c984c8b759c5a10691c66de771f58cd6dd587e869f"
+    },
+    "audit/fable_engine/retmap_log.c": {
+      "bytes": 4688,
+      "sha256": "c4ee6c4257501129fcfcf2b43e3708fe8b7c575a7de2945ed0a1b17ce7d02656"
+    },
+    "fold_surface_2026_09_05/half_quad.cpp": {
+      "bytes": 3933,
+      "sha256": "2a9fa7f709f945914ece20847988aae2e936c5e63dec6c3f965792a9047ee3fd"
+    },
+    "fold_surface_2026_09_05/half_m_quad.cpp": {
+      "bytes": 3906,
+      "sha256": "0f77b5ef564748ebd8bf998b4636e966eea34b75fafc99659ea72606a932a62f"
+    }
+  }
+}

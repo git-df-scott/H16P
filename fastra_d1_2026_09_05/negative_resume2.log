@@ -1,0 +1,85 @@
+negative_012_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.91
+negative_012_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.98
+negative_012_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 1.03
+negative_012_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.99
+ACCEPTED negative_012 r 13.231502007151747794393141731603169 c 0.499513425701367276385944184634375264 K -20
+negative_013_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.87
+negative_013_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.83
+negative_013_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.84
+negative_013_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.86
+ACCEPTED negative_013 r 16.2719108380430150158006284181198709 c 0.472876934808845721569595523863826575 K -30
+negative_014_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.79
+negative_014_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.87
+negative_014_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.87
+negative_014_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.87
+ACCEPTED negative_014 r 18.3375980438269666332838797558659297 c 0.460541831302260678629685955487040505 K -37.3827898972592774551418142749787922
+negative_015_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.83
+negative_015_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.8
+negative_015_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.82
+negative_015_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.86
+ACCEPTED negative_015 r 22.1692441275416195224539591133491007 c 0.444283118872820057644460911965050845 K -52.1597123159081429319836971545996463
+negative_016_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.69
+negative_016_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.82
+negative_016_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.83
+negative_016_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.87
+ACCEPTED negative_016 r 31.2857758259244066347432826000493951 c 0.422149706891317828755254270896347043 K -91.8894513873705437169084228196255002
+negative_017_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.98
+negative_017_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.97
+negative_017_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.96
+negative_017_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.99
+ACCEPTED negative_017 r 51.5119743304636863816904463657970439 c 0.400614084085058441163712674516887254 K -196.243719516732858271781750881702354
+negative_018_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 0.81
+negative_018_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 0.87
+negative_018_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.86
+negative_018_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 0.87
+ACCEPTED negative_018 r 102.848265660615502001696486190649367 c 0.382042824779140196894323986225808264 K -520.517356457674700497461690909665226
+negative_019_fold binary128 full-grid recheck
+negative_019_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 15.23
+negative_019_pair binary128 full-grid recheck
+negative_019_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 16.67
+negative_019_hopf_1 binary128 full-grid recheck
+negative_019_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 18.8
+negative_019_hopf_0.1 binary128 full-grid recheck
+negative_019_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 18.24
+ACCEPTED negative_019 r 283.62870285059898422366939656731723 c 0.366477126981994978770354980526011097 K -1979.50320639611046705219042842775649
+negative_020_fold binary128 full-grid recheck
+negative_020_fold baseline [(1, 'U'), (0, '')] horizontal  seconds 14.2
+negative_020_pair binary128 full-grid recheck
+negative_020_pair baseline [(1, 'U'), (2, 'US')] horizontal US seconds 16.96
+negative_020_hopf_1 binary128 full-grid recheck
+negative_020_hopf_1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 18.17
+negative_020_hopf_0.1 binary128 full-grid recheck
+negative_020_hopf_0.1 baseline [(1, 'U'), (3, 'SUS')] horizontal SUS seconds 17.48
+ACCEPTED negative_020 r 2034.46299719555499780950040523310536 c 0.352244976296378315281630687419397571 K -22548.1052147967706380412487677325353
+negative_021_fold binary128 full-grid recheck
+negative_021_fold baseline [(0, ''), (0, '')] horizontal  seconds 12.13
+negative_021_pair binary128 full-grid recheck
+negative_021_pair baseline [(0, ''), (0, '')] horizontal US seconds 15.88
+negative_021_hopf_1 binary128 full-grid recheck
+negative_021_hopf_1 baseline [(0, ''), (0, '')] horizontal SUS seconds 17.04
+negative_021_hopf_0.1 binary128 full-grid recheck
+negative_021_hopf_0.1 baseline [(0, ''), (0, '')] horizontal SUS seconds 16.33
+ACCEPTED negative_021 r 15028.4467095294353382970856540633099 c 0.345815387851329735534301641625554171 K -239248.146727074581824536388423780844
+negative_022_fold binary128 full-grid recheck
+negative_022_fold baseline [(0, ''), (0, '')] horizontal  seconds 12.03
+negative_022_pair binary128 full-grid recheck
+Traceback (most recent call last):
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/resume.py", line 33, in <module>
+    a=accept(b,h,j,'m')
+      ^^^^^^^^^^^^^^^^^
+  File "<string>", line 18, in accept
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/engine.py", line 120, in field_record
+    append('fields.jsonl',row)
+  File "/workspace/scratch/16d9227a7ce0/H16P/fastra_d1_2026_09_05/engine.py", line 27, in append
+    with open(HERE/name,'a') as f:f.write(json.dumps(obj,allow_nan=False)+'\n');f.flush()
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant: nan

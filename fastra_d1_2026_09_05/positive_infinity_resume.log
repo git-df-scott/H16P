@@ -1,0 +1,52 @@
+positive_infinity_019_fold binary128 full-grid recheck
+positive_infinity_019_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 26.8
+positive_infinity_019_pair binary128 full-grid recheck
+positive_infinity_019_pair baseline [(0, ''), (1, 'S')] horizontal SU seconds 38.13
+positive_infinity_019_hopf_1 binary128 full-grid recheck
+positive_infinity_019_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 29.8
+positive_infinity_019_hopf_0.1 binary128 full-grid recheck
+positive_infinity_019_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 30.74
+ACCEPTED positive_infinity_019 r 485165195.409790277969106830541540582 c 1.58569426954948713626550544504407659 K 6.92084665234253890966095294353103866
+positive_infinity_020_fold binary128 full-grid recheck
+positive_infinity_020_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 27.16
+positive_infinity_020_pair binary128 full-grid recheck
+positive_infinity_020_pair baseline [(0, ''), (1, 'S')] horizontal SU seconds 40.28
+positive_infinity_020_hopf_1 binary128 full-grid recheck
+positive_infinity_020_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 30.12
+positive_infinity_020_hopf_0.1 binary128 full-grid recheck
+positive_infinity_020_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 31.53
+ACCEPTED positive_infinity_020 r 26489122129.8434722941391621528118838 c 1.58838236868706038053547580341755653 K 6.97089445861581201718013427261296408
+positive_infinity_021_fold binary128 full-grid recheck
+positive_infinity_021_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 27.98
+positive_infinity_021_pair binary128 full-grid recheck
+positive_infinity_021_pair baseline [(0, ''), (1, 'S')] horizontal SU seconds 42.11
+positive_infinity_021_hopf_1 binary128 full-grid recheck
+positive_infinity_021_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 30.93
+positive_infinity_021_hopf_0.1 binary128 full-grid recheck
+positive_infinity_021_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 32.92
+ACCEPTED positive_infinity_021 r 1446257064291.47517367704742299692876 c 1.59021938203404160967560739288034222 K 7.00498568677626254825185687227794081
+positive_infinity_022_fold binary128 full-grid recheck
+positive_infinity_022_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 31.34
+positive_infinity_022_pair binary128 full-grid recheck
+positive_infinity_022_pair baseline [(0, ''), (1, 'S')] horizontal SU seconds 47.87
+positive_infinity_022_hopf_1 binary128 full-grid recheck
+positive_infinity_022_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 33.11
+positive_infinity_022_hopf_0.1 binary128 full-grid recheck
+positive_infinity_022_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 35.78
+ACCEPTED positive_infinity_022 r 78962960182680.6951609780226351082208 c 1.59155447310274960683993809292922513 K 7.02970603827956060209418181580021332
+positive_infinity_023_fold binary128 full-grid recheck
+positive_infinity_023_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 98.84
+positive_infinity_023_pair binary128 full-grid recheck
+positive_infinity_023_pair baseline [(0, ''), (1, 'S')] horizontal SU seconds 190.02
+positive_infinity_023_hopf_1 binary128 full-grid recheck
+positive_infinity_023_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 102.51
+positive_infinity_023_hopf_0.1 binary128 full-grid recheck
+positive_infinity_023_hopf_0.1 baseline [(0, ''), (2, 'US')] horizontal US seconds 101.2
+ACCEPTED positive_infinity_023 r 4311231547115195.22711342229285692547 c 1.59256870833729872032223868380642115 K 7.04845393308722842741214667088561148
+positive_infinity_024_fold binary128 full-grid recheck
+positive_infinity_024_fold baseline [(0, ''), (1, 'S')] horizontal  seconds 188.89
+positive_infinity_024_pair binary128 full-grid recheck
+positive_infinity_024_pair baseline [(0, ''), (1, 'S')] horizontal  seconds 187.9
+positive_infinity_024_hopf_1 binary128 full-grid recheck
+positive_infinity_024_hopf_1 baseline [(0, ''), (2, 'US')] horizontal US seconds 190.75
+positive_infinity_024_hopf_0.1 binary128 full-grid recheck
