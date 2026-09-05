@@ -12,8 +12,21 @@ _lib.returns.argtypes = [ctypes.c_int, ctypes.POINTER(ctypes.c_double), ctypes.P
 def _p(a, t=ctypes.c_double):
     return a.ctypes.data_as(ctypes.POINTER(t))
 
+def shift(coef, foc):
+    """Translate the quadratic field so that the point foc becomes the origin (exactly an equilibrium)."""
+    c = np.array(coef, float, copy=True); x0, y0 = foc
+    for o in (0, 6):
+        c0, c1, c2, c3, c4, c5 = c[o:o+6]
+        c[o+1] = c1 + 2*c3*x0 + c4*y0
+        c[o+2] = c2 + c4*x0 + 2*c5*y0
+        c[o] = 0.0
+    return c
+
 def returns(coef, foc, dir_, radii, rtol=1e-10, Rmax=1e8, Tmax=1e5, maxsteps=5_000_000):
-    """coef (n,12), foc (n,2), dir (n,2), radii (n,nr). Returns R, T, status arrays (n,nr)."""
+    """coef (n,12), foc (n,2), dir (n,2), radii (n,nr). Returns R, T, status arrays (n,nr).
+    The field is re-expanded about each focus before integration (tolerances then scale with r)."""
+    coef = np.array([shift(c, f) for c, f in zip(coef, foc)], float)
+    foc = np.zeros_like(np.asarray(foc, float))
     coef = np.ascontiguousarray(coef, float); foc = np.ascontiguousarray(foc, float)
     dir_ = np.ascontiguousarray(dir_, float); radii = np.ascontiguousarray(radii, float)
     n, nr = radii.shape
@@ -29,6 +42,12 @@ def shi_coef(lam, l, m, a, b, n=1.0):
 def equilibria(c):
     """All real finite equilibria of the quadratic field via resultant in y."""
     c = np.asarray(c, float)
+    if abs(c[5]) < 1e-14 and abs(c[11]) < 1e-14:
+        # resultant in y degenerates: swap x<->y (P: c0 + c2 y + c1 x + c5 y^2 + c4 xy + c3 x^2)
+        sw = c[[0, 2, 1, 5, 4, 3, 6, 8, 7, 11, 10, 9]]
+        if abs(sw[5]) < 1e-14 and abs(sw[11]) < 1e-14:
+            return np.zeros((0, 2))
+        return equilibria(sw)[:, ::-1]
     # P as polynomial in y: A1 y^2 + B1(x) y + C1(x)
     A1 = np.poly1d([c[5]]); B1 = np.poly1d([c[4], c[2]]); C1 = np.poly1d([c[3], c[1], c[0]])
     A2 = np.poly1d([c[11]]); B2 = np.poly1d([c[10], c[8]]); C2 = np.poly1d([c[9], c[7], c[6]])
@@ -145,3 +164,39 @@ if __name__ == "__main__":
               "grid", len(nest['rad']), "status last", nest['status'][-1] if len(nest['status']) else None)
         print("  near-misses:", nest['near'][:5])
     print("time", time.time()-t0)
+
+
+NOISE = 5e-12   # relative displacement below which a sign change is treated as integration noise
+
+def count_signs(rad, D, noise=NOISE):
+    """Indices i where D changes sign between rad[i] and rad[i+1], both values above the noise floor."""
+    idx = []
+    for i in range(len(D)-1):
+        if D[i]*D[i+1] < 0 and min(abs(D[i]), abs(D[i+1])) > noise*rad[i]:
+            idx.append(i)
+    return idx
+
+def edge_refine(coef, foc, dir_, lo, hi, rtol, Rmax, Tmax, maxsteps, rounds=8):
+    """Batched bisection between the last valid radius lo and the first failing radius hi (arrays over sets).
+    Returns (r_edge, D_edge) at the innermost valid point found."""
+    coef = np.asarray(coef, float); foc = np.asarray(foc, float); dir_ = np.asarray(dir_, float)
+    lo = np.array(lo, float); hi = np.array(hi, float)
+    r_ok = lo.copy(); D_ok = np.full(len(lo), np.nan)
+    for _ in range(rounds):
+        mid = np.sqrt(lo*hi)
+        R, T, st = returns(coef, foc, dir_, mid[:, None], rtol, Rmax, Tmax, maxsteps)
+        ok = st[:, 0] == 0
+        lo = np.where(ok, mid, lo); hi = np.where(ok, hi, mid)
+        r_ok = np.where(ok, mid, r_ok); D_ok = np.where(ok, R[:, 0]-mid, D_ok)
+    return r_ok, D_ok
+
+
+def away_dir(pt, eq):
+    """Unit ray direction from pt pointing away from the nearest other equilibrium (default +x)."""
+    x, y = pt; best = None
+    for q in eq:
+        d = np.hypot(x-q[0], y-q[1])
+        if d > 1e-9 and (best is None or d < best[0]): best = (d, q)
+    if best is None: return (1.0, 0.0)
+    v = np.array([x-best[1][0], y-best[1][1]]); v /= np.linalg.norm(v)
+    return (float(v[0]), float(v[1]))

@@ -56,7 +56,7 @@ static int full_return(const double *c, double fx0, double fy0, double dx, doubl
   if (fabs(sp) < 1e-300) return 5;
   double sense = sp > 0 ? 1.0 : -1.0;
   double cum = 0.0;                   /* cumulative angle (signed) */
-  double atol = 1e-14*(1.0+r);
+  double atol = 1e-16*r + 1e-300;
   double speed = sqrt(vx*vx+vy*vy);
   double h = 1e-3*r/(speed+1e-300); if (h<=0||!isfinite(h)) h=1e-6;
   long steps = 0;

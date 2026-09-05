@@ -23,7 +23,7 @@ if name.startswith('file:'):
 else:
     FILE_SEEDS = None
     c0 = SEEDS[name]
-NR = 48
+NR = 64
 rng = np.random.default_rng(int(time.time()) % 100000)
 
 def evaluate(cs):
@@ -44,14 +44,14 @@ def evaluate(cs):
     if not sets:
         return res
     coef = np.array([s[2] for s in sets]); foc = np.array([s[3] for s in sets])
-    dr = np.tile([[1.0, 0.0]], (len(sets), 1)); rad = np.array([s[4] for s in sets])
-    R, T, st = rm.returns(coef, foc, dr, rad, 1e-10, 1e7, 2e3, 300000)
+    dr = np.array([rm.away_dir(s[3], rm.equilibria(s[2])) for s in sets]); rad = np.array([s[4] for s in sets])
+    R, T, st = rm.returns(coef, foc, dr, rad, 1e-12, 1e7, 5e3, 500000)
     for i, s in enumerate(sets):
         ok = st[i] == 0; k = NR if ok.all() else int(np.argmin(ok))
         if k < 3:
             continue
         D = R[i, :k]-rad[i, :k]; q = D/rad[i, :k]; sc = np.sign(D)
-        idx = np.nonzero(sc[:-1]*sc[1:] < 0)[0]
+        idx = np.array(rm.count_signs(rad[i, :k], D), dtype=int)
         roots = [float(np.sqrt(rad[i, j]*rad[i, j+1])) for j in idx]
         stab = ['S' if D[j] > 0 else 'U' for j in idx]
         qmax = np.max(np.abs(q)) + 1e-300

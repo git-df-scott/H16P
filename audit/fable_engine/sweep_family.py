@@ -47,7 +47,7 @@ def make(u):
 dim = {'q4pert': 1, 'mv': 4, 'kklx': 7, 'q3rpert': 1, 'mvpert': 1}[fam]
 rng = np.random.default_rng(seed)
 sob = qmc.Sobol(d=dim, scramble=True, seed=seed)
-NR = 40; RMIN, RMAX = 1e-3, 3e3
+NR = 64; RMIN, RMAX = 1e-4, 1e4
 B = 256; t0 = time.time(); done = 0; hist = {}
 with open(out, 'a') as f:
     while done < N:
@@ -64,19 +64,27 @@ with open(out, 'a') as f:
                 scale = min(others) if others else 1.0
                 rad = np.geomspace(RMIN*scale, RMAX*max(scale, 1.0), NR)
                 m = dict(meta); m.update(nest=k, tr=float(an['tr']), pt=[float(x), float(y)])
-                sets.append((c, (x, y), (1.0, 0.0), rad, m))
+                sets.append((c, (x, y), rm.away_dir((x, y), eq), rad, m))
         if not sets:
             done += B; continue
         coef = np.array([s[0] for s in sets]); foc = np.array([s[1] for s in sets]); dr = np.array([s[2] for s in sets]); rad = np.array([s[3] for s in sets])
-        R, T, st = rm.returns(coef, foc, dr, rad, 1e-10, 1e6, 2e3, 300000)
+        R, T, st = rm.returns(coef, foc, dr, rad, 1e-12, 1e7, 5e3, 500000)
+        ks = [NR if (st[i] == 0).all() else int(np.argmin(st[i] == 0)) for i in range(len(sets))]
+        edge = [i for i, k in enumerate(ks) if 1 <= k < NR]
+        Dedge = {}
+        if edge:
+            re_, De_ = rm.edge_refine(coef[edge], foc[edge], dr[edge], [rad[i, ks[i]-1] for i in edge], [rad[i, ks[i]] for i in edge], 1e-12, 1e7, 5e3, 500000)
+            for i, r_, d_ in zip(edge, re_, De_):
+                if np.isfinite(d_): Dedge[i] = (r_, d_)
         for i, s in enumerate(sets):
-            ok = st[i] == 0
-            k = NR if ok.all() else int(np.argmin(ok))
+            k = ks[i]
             if k < 2:
                 cnt = 0; roots = []
             else:
-                D = R[i, :k]-rad[i, :k]; sc = np.sign(D)
-                idx = np.nonzero(sc[:-1]*sc[1:] < 0)[0]; cnt = len(idx); roots = [float(rad[i, j]) for j in idx]
+                rr = rad[i, :k]; D = R[i, :k]-rr
+                if i in Dedge:
+                    rr = np.append(rr, Dedge[i][0]); D = np.append(D, Dedge[i][1])
+                idx = rm.count_signs(rr, D); cnt = len(idx); roots = [float(rr[j]) for j in idx]
             hist[cnt] = hist.get(cnt, 0)+1
             if cnt >= 2:
                 rec = dict(s[4]); rec.update(coef=[float(v) for v in s[0]], count=cnt, roots=roots, kvalid=k,
