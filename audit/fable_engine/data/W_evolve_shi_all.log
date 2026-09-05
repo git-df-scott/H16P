@@ -62,3 +62,4 @@ gen 59: sigma 0.0124 best score 4.0000 totals {np.int64(0): np.int64(9), np.int6
 gen 60: sigma 0.012 best score 4.0000 totals {np.int64(0): np.int64(15), np.int64(1): np.int64(87), np.int64(2): np.int64(26)} 41s
 gen 61: sigma 0.012 best score 4.0000 totals {np.int64(0): np.int64(13), np.int64(1): np.int64(78), np.int64(2): np.int64(37)} 43s
 gen 62: sigma 0.0117 best score 4.0000 totals {np.int64(0): np.int64(14), np.int64(1): np.int64(85), np.int64(2): np.int64(29)} 42s
+gen 63: sigma 0.0117 best score 4.0000 totals {np.int64(0): np.int64(19), np.int64(1): np.int64(85), np.int64(2): np.int64(24)} 41s
