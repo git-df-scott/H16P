@@ -49,3 +49,11 @@ per-lane verdicts with figures are in `FABLE_LANES_2026_09_05.md`.
 Everything else is closed at the numerical level. A counterexample, if it exists, is not near any
 integrable stratum, any degenerate graphic, or any published four-cycle field, and it is not reachable by
 descent from them. The honest prior after tonight is well under one in twenty.
+
+## Addendum, 08:45 UTC
+
+Astra's overnight strike (main `7db8597`, `KKL_FOLD_SURFACE_STRIKE.md`) continued the KKL finite fold on both
+positive-K directions and a negative-K sheet, out to origin radius 3e17, and reports: no field with three
+origin cycles, no 3+1 precursor, no five-cycle candidate. This agrees with the compactified sweeps and
+descents here (F15, F20). Lane D1 stands as written: the fold exists, and both teams now have it under
+independent instruments; the question is whether any sheet of it ever coexists with two more origin cycles.
