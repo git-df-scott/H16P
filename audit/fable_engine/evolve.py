@@ -65,9 +65,12 @@ def evaluate(cs):
         stab = ['S' if D[j] > 0 else 'U' for j in idx]
         qmax = np.max(np.abs(q)) + 1e-300
         gaps = []
-        for j in range(1, k-1):
+        rootpos = set(int(t) for t in idx)
+        for j in range(3, k-3):
+            if any(abs(j-t) <= 2 for t in rootpos): continue           # not adjacent to a root
             if (q[j]-q[j-1])*(q[j+1]-q[j]) < 0 and sc[j-1] == sc[j] == sc[j+1] and rr[j] > 3e-4*rad[i, -1]/1e8*1e8:
-                gaps.append((float(rr[j]), float(q[j]/qmax)))
+                if abs(q[j]-q[j-1]) > 1e-9 and abs(q[j+1]-q[j]) > 1e-9 and abs(q[j]) < min(abs(q[j-1]), abs(q[j+1])):
+                    gaps.append((float(rr[j]), float(q[j]/qmax)))
         r = res[s[0]]
         r['total'] += len(roots)
         r['nests'].append(dict(pt=[float(s[3][0]), float(s[3][1])], tr=float(s[5]), roots=roots, stab=stab, kvalid=k, gaps=gaps))

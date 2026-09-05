@@ -1,2 +1,6 @@
 seed: 4 [([32657.58958628228], ['U']), ([0.9076795263140006, 314.4959660605581, 2435.0280487040613], ['S', 'U', 'S'])] score 4.804
 file seeds loaded: 11 best 4.804178453434302
+gen 0: sigma 0.03 best score 4.8042 totals {np.int64(0): np.int64(37), np.int64(1): np.int64(37), np.int64(2): np.int64(20), np.int64(3): np.int64(2)} 32s
+gen 1: sigma 0.03 best score 4.8042 totals {np.int64(0): np.int64(29), np.int64(1): np.int64(41), np.int64(2): np.int64(25), np.int64(3): np.int64(1)} 29s
+gen 2: sigma 0.0291 best score 4.8042 totals {np.int64(0): np.int64(37), np.int64(1): np.int64(41), np.int64(2): np.int64(17), np.int64(3): np.int64(1)} 26s
+gen 3: sigma 0.0291 best score 4.8042 totals {np.int64(0): np.int64(31), np.int64(1): np.int64(45), np.int64(2): np.int64(20)} 25s
