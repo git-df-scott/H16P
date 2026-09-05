@@ -8,7 +8,7 @@ import sys, json, time, numpy as np
 import retmap as rm
 from scipy.stats import qmc
 fam, out, N, seed = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
-UMAX = 40.0; STORE = 3
+UMAX = 36.0; STORE = 3
 for a in sys.argv:
     if a.startswith('--umax='): UMAX = float(a[7:])
     if a.startswith('--store='): STORE = int(a[8:])
@@ -35,26 +35,36 @@ sob = qmc.Sobol(d=DIM, scramble=True, seed=seed)
 def count_nest_log(c, pt, other, umax=UMAX):
     d = rm.away_dir(pt, other); th = float(np.arctan2(d[1], d[0]))
     scale = min([np.hypot(pt[0]-q[0], pt[1]-q[1]) for q in other if np.hypot(pt[0]-q[0], pt[1]-q[1]) > 1e-9] + [1.0])
+    RT = dict(th0=th, rtol=1e-12, umax=umax+4, Smax=2e4, maxsteps=600_000)
+    NOISE = 5e-12
+    def ret(us):
+        u1, S, st = rm.returns_log(c[None], np.array([pt]), np.asarray(us, float)[None], **RT)
+        return u1[0], st[0]
     u0 = np.arange(np.log(1e-3*scale), umax, 0.25)
-    RT = dict(th0=th, rtol=1e-12, umax=umax+5, Smax=2000.0, maxsteps=300_000)
-    uu = []; D = []; edge_lo = None; edge_hi = None
-    for j0 in range(0, len(u0), 8):                 # progressive chunks: stop at the first failure
-        ch = u0[j0:j0+8]
-        u1, S, st = rm.returns_log(c[None], np.array([pt]), ch[None], **RT)
-        ok = st[0] == 0
-        kk = len(ch) if ok.all() else int(np.argmin(ok))
-        uu += list(ch[:kk]); D += list(u1[0, :kk]-ch[:kk])
-        if kk < len(ch):
-            edge_lo = ch[kk-1] if kk >= 1 else (uu[-1] if uu else None); edge_hi = ch[kk]; break
-    uu = np.array(uu); D = np.array(D); k = len(uu)
-    if edge_lo is not None and edge_hi is not None:
-        lo, hi = edge_lo, edge_hi; De = None
+    u1, st = ret(u0)
+    ok = st == 0; k = len(u0) if ok.all() else int(np.argmin(ok))
+    uu = u0[:k]; D = (u1[:k]-uu)
+    if 1 <= k < len(u0):   # edge bisection in u
+        lo, hi = u0[k-1], u0[k]; De = None
         for _ in range(8):
-            mid = 0.5*(lo+hi); v1, _, s1 = rm.returns_log(c[None], np.array([pt]), np.array([[mid]]), **RT)
-            if s1[0, 0] == 0: lo = mid; De = v1[0, 0]-mid
+            mid = 0.5*(lo+hi); v1, s1 = ret([mid])
+            if s1[0] == 0: lo = mid; De = v1[0]-mid
             else: hi = mid
-        if De is not None: uu = np.append(uu, lo); D = np.append(D, De)
-    idx = [i for i in range(len(D)-1) if D[i]*D[i+1] < 0 and min(abs(D[i]), abs(D[i+1])) > 1e-10]
+        if De is not None and lo > u0[k-1]: uu = np.append(uu, lo); D = np.append(D, De)
+    # adaptive refinement: interior local minima of |D| without a sign change (near-fold pairs) and
+    # any interval whose endpoints are both below 20x the noise floor (small displacements)
+    for _ in range(2):
+        add = []
+        for i in range(1, len(D)-1):
+            same = D[i-1]*D[i] > 0 and D[i]*D[i+1] > 0
+            if same and abs(D[i]) < abs(D[i-1]) and abs(D[i]) < abs(D[i+1]) and abs(D[i]) < 0.2*max(abs(D[i-1]), abs(D[i+1])):
+                add.extend(np.linspace(uu[i-1], uu[i+1], 9)[1:-1])
+        add = [a for a in add if not np.any(np.abs(uu-a) < 1e-9)]
+        if not add: break
+        v1, s1 = ret(add); good = s1 == 0
+        uu = np.concatenate([uu, np.asarray(add)[good]]); D = np.concatenate([D, (v1-np.asarray(add))[good]])
+        o = np.argsort(uu); uu, D = uu[o], D[o]
+    idx = [i for i in range(len(D)-1) if D[i]*D[i+1] < 0 and min(abs(D[i]), abs(D[i+1])) > NOISE]
     roots = [float(np.exp(0.5*(uu[i]+uu[i+1]))) for i in idx]; stab = ['S' if D[i] > 0 else 'U' for i in idx]
     return roots, stab, int(k), float(np.exp(uu[-1])) if len(uu) else None
 def evaluate(c):

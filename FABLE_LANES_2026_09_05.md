@@ -158,3 +158,14 @@ Descent from the 24 four-cycle seeds (40 generations, 64 per generation): maximu
 ### F21: full Shi chart, compactified counting (radius to e^40), 30016 fields
 Totals 0/1/2/3 = 21331/8418/266/1, never four. Large cycles near infinity graphics do not hide extra
 nests in the generic chart either. CLOSED.
+
+### Correction, 2026-09-05 morning: compactified counter noise floor
+Astra's D1 report noted that the compactified counter missed known pairs near the center. Confirmed: on the
+Yu-Zeng field the counter reported two origin cycles instead of three. The integrator was correct (profiles
+identical at rtol 1e-12 and 1e-13); the rejection floor of 1e-10 in log-displacement was above the genuine
+displacements (1e-11 to 5e-10) of near-integrable cycles. Fixed: floor 5e-12, adaptive refinement around
+interior minima of the displacement (near-fold pairs), umax 36. Revalidated: Yu-Zeng 3+1, relaxed Shi 3+1,
+KKL incumbent 3+1, Astra's table field 1+1. Consequence: the overnight compactified sweeps (F15, F18, F19,
+F21) undercounted cycles with displacement below 1e-10; every record with three or more cycles is being
+recounted with the fixed counter, and the Q4 alien test is being rerun. Their verdicts are provisional until
+the recount finishes.
