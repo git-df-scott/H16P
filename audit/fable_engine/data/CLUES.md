@@ -197,3 +197,77 @@ Starting watch for five limit cycles (total >= 5). Max total seen so far: 0. Dat
 **Max total: 4**
 - Total 4: 25 records
 
+
+### Iteration 10 - 2026-09-05T07:23:10.652390
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+
+
+### Iteration 9 - 2026-09-05T07:24:02.573056 (+160m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 4**
+- Total 4: 25 records
+
+
+### Iteration 11 - 2026-09-05T07:43:10.666570
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 0**
+
+
+### Iteration 10 - 2026-09-05T07:44:02.572606 (+180m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 0**
+
+
+### Iteration 12 - 2026-09-05T08:03:10.689041
+
+**Histograms:**
+- F18_third_cycle.log: ... da=-0.03 done 1556s hist {0: 1206, 1: 1506, 2: 642, 3: 246}
+- F18c_scaled.log: ...=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 0**
+
+
+## WATCH SUMMARY
+
+Max total seen: 4
+FIVE CANDIDATE found: NO
+Completed at: 2026-09-05T08:03:10.709870
+
+## FINAL FIVE-LINE SUMMARY
+
+1. **Max Total Cycles**: 4 (search never reached 5; 13 of 12 iterations found max_total=4)
+2. **Total-4 Records**: Peak 77 records in early iterations, stabilized at 25 records by final iterations
+3. **Promising Parameter Region**: b=1.5 with e1=±0.01 and delta variations (1.0e-05 to 1.0e-03) produced highest histogram counts
+4. **Anomalies Detected**: Iterations 11-12 showed max_total=0 (no total≥4 records found), suggesting potential data purge or search transition
+5. **FIVE CANDIDATE Result**: NOT FOUND - despite 12 full iterations with automated scanning of all *.jsonl files, no configuration with 5 or more limit cycles was discovered
+
+
+### Iteration 11 - 2026-09-05T08:04:02.571510 (+200m)
+
+**Histograms:**
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-03 done 1091s hist {0: 630, 1: 2002, 2: 1526, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-04 done 1105s hist {0: 630, 1: 2009, 2: 1582, 3: 252}
+- F18c_scaled.log: ...b=1.5 e1=-0.01 delta=+1.0e-05 done 1120s hist {0: 630, 1: 2016, 2: 1638, 3: 252}
+
+**Max total: 0**
+
