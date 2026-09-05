@@ -1,0 +1,36 @@
+base (center) max |D| = 2.1344037648418634e-14 valid down to y = 1e-07
+da: valid y range 1.0e-07..3.0e-01, G at y=1e-2: -3.3307e-10, y=1e-4: +3.0531e-10, y=1e-6: -7.2164e-10
+db: valid y range 1.0e-07..3.0e-01, G at y=1e-2: +1.9429e-10, y=1e-4: +0.0000e+00, y=1e-6: +5.5511e-11
+e0: valid y range 1.6e-06..3.0e-01, G at y=1e-2: +3.1404e+00, y=1e-4: +3.1416e+00, y=1e-6: +nan
+e1: valid y range 1.0e-07..3.0e-01, G at y=1e-2: -5.9412e-02, y=1e-4: -5.8438e-04, y=1e-6: -6.4601e-06
+e2: valid y range 1.0e-07..3.0e-01, G at y=1e-2: -2.9706e-02, y=1e-4: -2.9219e-04, y=1e-6: -3.2301e-06
+
+fit window y <= 0.01 (57 points): relative residuals per direction [0.92426 0.94437 0.      0.      0.     ]
+  1     : da=+1.325e-10 db=+8.676e-11 e0=+3.142e+00 e1=+2.388e-10 e2=+2.673e-11
+  w ln  : da=-4.803e-06 db=+1.699e-06 e0=+1.845e-06 e1=-6.807e-06 e2=-5.351e-06
+  w     : da=+4.248e-05 db=-1.726e-05 e0=-1.768e-05 e1=-6.283e+00 e2=-3.142e+00
+  w2 ln : da=-5.173e-03 db=+4.216e-03 e0=+4.447e-03 e1=-1.542e-02 e2=-1.189e-02
+  w^2   : da=+2.772e-02 db=-2.544e-02 e0=-1.259e+01 e1=+2.523e+01 e2=+1.264e+01
+  leading 2 coefficients x 5 directions: singular values [1.e+00 3.e-06] -> rank 2
+  leading 3 coefficients x 5 directions: singular values [1.00000e+00 4.47219e-01 1.00000e-06] -> rank 2
+  leading 4 coefficients x 5 directions: singular values [1.       0.447217 0.001089 0.      ] -> rank 3
+
+fit window y <= 0.001 (42 points): relative residuals per direction [0.95136 0.91905 0.      0.      0.     ]
+  1     : da=+3.248e-11 db=+3.217e-10 e0=+3.142e+00 e1=-7.783e-10 e2=+4.178e-10
+  w ln  : da=+1.678e-05 db=-4.080e-05 e0=-1.398e-05 e1=+1.162e-04 e2=-7.288e-05
+  w     : da=-2.114e-04 db=+4.617e-04 e0=+1.644e-04 e1=-6.284e+00 e2=-3.141e+00
+  w2 ln : da=+4.827e-01 db=-5.800e-01 e0=-2.536e-01 e1=+1.307e+00 e2=-9.565e-01
+  w^2   : da=-4.089e+00 db=+4.641e+00 e0=-1.049e+01 e1=+1.486e+01 e2=+2.023e+01
+  leading 2 coefficients x 5 directions: singular values [1.0e+00 4.6e-05] -> rank 2
+  leading 3 coefficients x 5 directions: singular values [1.00000e+00 4.47164e-01 1.80000e-05] -> rank 3
+  leading 4 coefficients x 5 directions: singular values [1.00000e+00 4.46482e-01 2.27696e-01 3.00000e-06] -> rank 4
+
+fit window y <= 0.0001 (27 points): relative residuals per direction [9.3920e-01 9.0724e-01 0.0000e+00 0.0000e+00 1.0000e-05]
+  1     : da=-1.193e-10 db=+1.403e-09 e0=+3.142e+00 e1=-3.245e-09 e2=+1.657e-10
+  w ln  : da=+9.365e-05 db=-4.870e-04 e0=+7.342e-04 e1=+9.513e-04 e2=-1.099e-04
+  w     : da=-1.196e-03 db=+5.975e-03 e0=-9.182e-03 e1=-6.295e+00 e2=-3.140e+00
+  w2 ln : da=+6.343e+00 db=-1.981e+01 e0=+3.778e+01 e1=+3.272e+01 e2=-1.027e+01
+  w^2   : da=-6.061e+01 db=+1.787e+02 e0=-3.614e+02 e1=-2.667e+02 e2=+1.123e+02
+  leading 2 coefficients x 5 directions: singular values [1.00e+00 3.43e-04] -> rank 2
+  leading 3 coefficients x 5 directions: singular values [1.00000e+00 4.46602e-01 1.02000e-04] -> rank 3
+  leading 4 coefficients x 5 directions: singular values [1.00000e+00 1.15486e-01 3.58810e-02 1.00000e-06] -> rank 4
