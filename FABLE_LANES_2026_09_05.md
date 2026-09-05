@@ -127,3 +127,10 @@ is nonzero (D/eps = 1.078). CLOSED.
 Closed tonight: F3/F5 (sweeps, lower bounds only, max one at trace zero), F6, F11, F12, F13, F17.
 Open: F15 (overnight sweeps), F16 (second-order coefficient structure: does da x (2e1+e2) plus the
 quadratic terms allow a third graphic-born cycle; the honest expectation is no).
+
+### F19: Q4 alien test at the neutral resonant infinity graphic (compactified counting)
+Melnikov span dimension four (singular values 20.3, 6.59, 1.51, 0.087). Random directions: at most two
+zeros (47 of 300k); targeted construction gives fifteen three-zero directions and zero four-zero
+directions in 20k trials. Along every three-zero direction the true field at eps = 1e-4 and 1e-5 has
+exactly three cycles around the origin (S/U/S), including zeros within 2e-4 of the boundary realised as
+cycles near radius 50. No count ever exceeds the first-order count: no alien. CLOSED numerically at (3,0).
