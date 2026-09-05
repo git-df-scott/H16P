@@ -1,2 +1,40 @@
 ovals 70 closest to boundary 0.22718841098679
 span singular values [20.276069  6.585868  1.508192  0.087302  0.        0.      ] dim 4
+first-order zero histogram: {0: 294422, 1: 5531, 2: 47}
+M1 zeros=2 at x0=['0.1500', '0.2201'] eps=0.001: actual origin cycles 2 SU radii ['0.587', '4.34'] edge 73.9 
+M1 zeros=2 at x0=['0.1500', '0.2201'] eps=0.0001: actual origin cycles 2 SU radii ['0.587', '3.38'] edge 227 
+M1 zeros=2 at x0=['0.1500', '0.2201'] eps=1e-05: actual origin cycles 2 SU radii ['0.587', '3.38'] edge 717 
+M1 zeros=2 at x0=['0.1590', '0.2258'] eps=0.001: actual origin cycles 2 US radii ['0.754', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1590', '0.2258'] eps=0.0001: actual origin cycles 2 US radii ['0.754', '9.18'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1590', '0.2258'] eps=1e-05: actual origin cycles 2 US radii ['0.754', '9.18'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.0764', '0.1717'] eps=0.001: actual origin cycles 2 US radii ['0.277', '0.587'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.0764', '0.1717'] eps=0.0001: actual origin cycles 2 US radii ['0.168', '0.754'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.0764', '0.1717'] eps=1e-05: actual origin cycles 2 US radii ['0.131', '0.754'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2140', '0.2251'] eps=0.001: actual origin cycles 0  radii [] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2140', '0.2251'] eps=0.0001: actual origin cycles 2 US radii ['2.63', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2140', '0.2251'] eps=1e-05: actual origin cycles 2 US radii ['2.63', '9.18'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2073', '0.2247'] eps=0.001: actual origin cycles 2 US radii ['2.05', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2073', '0.2247'] eps=0.0001: actual origin cycles 2 US radii ['2.05', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2073', '0.2247'] eps=1e-05: actual origin cycles 2 US radii ['2.05', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1590', '0.2241'] eps=0.001: actual origin cycles 2 US radii ['0.754', '5.57'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1590', '0.2241'] eps=0.0001: actual origin cycles 2 US radii ['0.754', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1590', '0.2241'] eps=1e-05: actual origin cycles 2 US radii ['0.754', '7.15'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1145', '0.1500'] eps=0.001: actual origin cycles 0  radii [] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1145', '0.1500'] eps=0.0001: actual origin cycles 2 US radii ['0.356', '0.457'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.1145', '0.1500'] eps=1e-05: actual origin cycles 2 US radii ['0.356', '0.457'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.2110', '0.2214'] eps=0.001: actual origin cycles 2 SU radii ['1.24', '52.8'] edge 427 
+M1 zeros=2 at x0=['0.2110', '0.2214'] eps=0.0001: actual origin cycles 2 SU radii ['2.05', '5.57'] edge 303 
+M1 zeros=2 at x0=['0.2110', '0.2214'] eps=1e-05: actual origin cycles 2 SU radii ['2.05', '4.34'] edge 918 
+M1 zeros=2 at x0=['0.1311', '0.2185'] eps=0.001: actual origin cycles 2 SU radii ['0.356', '3.38'] edge 82.7 
+M1 zeros=2 at x0=['0.1311', '0.2185'] eps=0.0001: actual origin cycles 2 SU radii ['0.356', '3.38'] edge 265 
+M1 zeros=2 at x0=['0.1311', '0.2185'] eps=1e-05: actual origin cycles 2 SU radii ['0.356', '3.38'] edge 841 
+M1 zeros=2 at x0=['0.1500', '0.2258'] eps=0.001: actual origin cycles 2 SU radii ['0.457', '15.1'] edge 212 
+M1 zeros=2 at x0=['0.1500', '0.2258'] eps=0.0001: actual origin cycles 2 SU radii ['0.587', '9.18'] edge 512 
+M1 zeros=2 at x0=['0.1500', '0.2258'] eps=1e-05: actual origin cycles 2 SU radii ['0.587', '9.18'] edge 1.59e+03 
+M1 zeros=2 at x0=['0.0874', '0.2263'] eps=0.001: actual origin cycles 2 SU radii ['0.168', '15.1'] edge 173 
+M1 zeros=2 at x0=['0.0874', '0.2263'] eps=0.0001: actual origin cycles 2 SU radii ['0.168', '11.8'] edge 476 
+M1 zeros=2 at x0=['0.0874', '0.2263'] eps=1e-05: actual origin cycles 2 SU radii ['0.168', '11.8'] edge 1.49e+03 
+M1 zeros=2 at x0=['0.0874', '0.1904'] eps=0.001: actual origin cycles 2 US radii ['0.168', '1.24'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.0874', '0.1904'] eps=0.0001: actual origin cycles 2 US radii ['0.168', '1.24'] edge 2.01e+17 
+M1 zeros=2 at x0=['0.0874', '0.1904'] eps=1e-05: actual origin cycles 2 US radii ['0.168', '1.24'] edge 2.01e+17 
+DONE

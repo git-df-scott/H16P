@@ -36,9 +36,25 @@ B = np.array(rows); xv = np.array(xv); print("ovals", len(xv), "closest to bound
 Bs = B/(xv**2)[:, None]; colmax = np.max(np.abs(Bs), axis=0); keep = colmax > 1e-7*colmax.max()
 U, s, Vt = np.linalg.svd(Bs[:, keep]/colmax[keep], full_matrices=False); dim = int(np.sum(s > 1e-6*s[0]))
 print("span singular values", np.round(s[:6], 6), "dim", dim, flush=True)
+np.save('data/f19_q4_basis.npy', np.column_stack([xv, B]))
+# targeted: prescribe zeros at chosen x0 triples -> null vector in the 4-dim span -> check zero count and a 4th zero
+basis4 = (U[:, :dim]*s[:dim]); Vt4 = Vt[:dim]      # Bs[:,keep]/colmax[keep] ~ basis4 @ Vt4
+def to_v(coefs):                                    # span coordinates -> 12-dim direction
+    v = np.zeros(12); v[np.nonzero(keep)[0]] = (Vt4.T @ coefs)/colmax[keep]; return v/np.linalg.norm(v)
+rng2 = np.random.default_rng(9); targeted = {3: [], 4: []}; four_best = 0
+idx_all = np.arange(len(xv))
+for _ in range(20000):
+    pts = np.sort(rng2.choice(idx_all[3:-1], size=3, replace=False))
+    A = basis4[pts]; _, _, vt = np.linalg.svd(A); cvec = vt[-1]
+    M = basis4 @ cvec; Mn = M/np.max(np.abs(M)); sig = np.abs(Mn) > 1e-7; pr = Mn[sig]; xr = xv[sig]
+    zi = [i for i in range(len(pr)-1) if pr[i]*pr[i+1] < 0]; z = len(zi)
+    if z >= 4: four_best = max(four_best, z); print("FOUR ZEROS at first order:", [f"{xr[i]:.4f}" for i in zi], flush=True)
+    if z in targeted and len(targeted[z]) < 15: targeted[z].append((to_v(cvec).tolist(), [float(xr[i]) for i in zi]))
+print("targeted: 3-zero directions", len(targeted[3]), " 4-zero directions", len(targeted[4]), flush=True)
+picks_targeted = targeted
 # map: a direction v in the 12-dim coefficient space has M(x0) = Bs @ v (rows scaled by x0^2)
 rng = np.random.default_rng(5); hist = {}; picks = {2: [], 3: [], 4: []}
-for _ in range(300000):
+for _ in range(20000):
     v = rng.standard_normal(12); v /= np.linalg.norm(v); M = Bs @ v; Mn = M/np.max(np.abs(M))
     sig = np.abs(Mn) > 1e-7; pr = Mn[sig]; xr = xv[sig]
     zi = [i for i in range(len(pr)-1) if pr[i]*pr[i+1] < 0]; z = len(zi); hist[z] = hist.get(z, 0)+1
@@ -48,8 +64,8 @@ print("first-order zero histogram:", dict(sorted(hist.items())), flush=True)
 json.dump(dict(hist=hist, picks=picks), open('data/f19_directions.json', 'w'))
 # actual cycle counts along picked directions
 out = open('data/F19_q4_alien.jsonl', 'a')
-for z in (3, 2, 4):
-    for v, zeros in picks[z]:
+for z in (3, 4):
+    for v, zeros in picks_targeted[z]:
         v = np.array(v)
         for eps in (1e-3, 1e-4, 1e-5):
             c = Q4 + eps*v
