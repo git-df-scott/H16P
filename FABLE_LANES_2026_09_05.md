@@ -154,3 +154,7 @@ configurations), no five so far.
 KKL near c* with (c, K, beta, p, q) free, 10048 fields: totals 0/1/2/3/4 = 3016/4391/1976/641/24, never
 five; every four is (3,1) with the remote cycle at radius 1e6 to 1e9 next to the infinity graphic.
 Descent from the 24 four-cycle seeds (40 generations, 64 per generation): maximum total four. CLOSED.
+
+### F21: full Shi chart, compactified counting (radius to e^40), 30016 fields
+Totals 0/1/2/3 = 21331/8418/266/1, never four. Large cycles near infinity graphics do not hide extra
+nests in the generic chart either. CLOSED.
