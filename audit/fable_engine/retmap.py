@@ -200,3 +200,19 @@ def away_dir(pt, eq):
     if best is None: return (1.0, 0.0)
     v = np.array([x-best[1][0], y-best[1][1]]); v /= np.linalg.norm(v)
     return (float(v[0]), float(v[1]))
+
+# ---------------- compactified (log-polar) return map ----------------
+_libl = ctypes.CDLL(os.path.join(os.path.dirname(os.path.abspath(__file__)), "libretmap_log.so"))
+_libl.returns_log.argtypes = [ctypes.c_int, ctypes.POINTER(ctypes.c_double), ctypes.c_int, ctypes.POINTER(ctypes.c_double), ctypes.c_double,
+                              ctypes.POINTER(ctypes.c_double), ctypes.POINTER(ctypes.c_double), ctypes.POINTER(ctypes.c_int),
+                              ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_long]
+
+def returns_log(coef, foc, u0, th0=0.0, rtol=1e-12, umax=40.0, Smax=1e6, maxsteps=5_000_000):
+    """Compactified return: coef (n,12), foc (n,2), u0 (n,nr) = log radii along the ray at angle th0 from the
+    focus. Returns (u1, S1, status); displacement in log radius is u1 - u0 (D/r ~ exp(u1-u0)-1)."""
+    coef = np.array([shift(c, f) for c, f in zip(coef, foc)], float)
+    coef = np.ascontiguousarray(coef); u0 = np.ascontiguousarray(u0, float)
+    n, nr = u0.shape
+    u1 = np.empty((n, nr)); S1 = np.empty((n, nr)); st = np.empty((n, nr), dtype=np.int32)
+    _libl.returns_log(n, _p(coef), nr, _p(u0), th0, _p(u1), _p(S1), _p(st, ctypes.c_int), rtol, umax, Smax, maxsteps)
+    return u1, S1, st
