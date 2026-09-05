@@ -1,0 +1,14 @@
+a=-3.00 b=0.000 l=-1.367397 which=1 saddle=[0.3333, -0.018] trace=-0.51063 eta2=+1.7904e+01 FOCUS
+a=-3.00 b=0.000 l=-0.000000 which=1 saddle=[0.3333, -0.0] trace=-0.00000 eta2=-8.4275e-10 CENTER
+a=-3.00 b=0.250 l=-0.125000 which=1 saddle=[0.3322, -0.0136] trace=-0.00000 eta2=-4.5213e-10 CENTER
+a=-3.00 b=0.250 l=-1.321095 which=2 saddle=[0.3319, -0.0173] trace=-0.40837 eta2=+1.4441e+01 FOCUS
+a=-3.00 b=0.500 l=-0.250000 which=1 saddle=[0.3289, -0.0264] trace=-0.00000 eta2=-2.5339e-10 CENTER
+a=-3.00 b=0.500 l=-1.274924 which=2 saddle=[0.3306, -0.0166] trace=-0.30711 eta2=+1.0944e+01 FOCUS
+a=-3.00 b=0.750 l=-0.375000 which=1 saddle=[0.3239, -0.0379] trace=-0.00000 eta2=-1.2236e-09 CENTER
+a=-3.00 b=0.750 l=-1.228870 which=2 saddle=[0.3294, -0.0159] trace=-0.20674 eta2=+7.4174e+00 FOCUS
+a=-3.00 b=1.000 l=-0.500000 which=1 saddle=[0.3173, -0.048] trace=+0.00000 eta2=+1.2706e-09 CENTER
+a=-3.00 b=1.000 l=-1.182925 which=2 saddle=[0.3283, -0.0152] trace=-0.10715 eta2=+3.8674e+00 FOCUS
+a=-3.00 b=1.250 l=-0.625000 which=1 saddle=[0.3097, -0.0567] trace=-0.00000 eta2=-1.6043e-10 CENTER
+a=-3.00 b=1.500 l=-0.750000 which=1 saddle=[0.3013, -0.064] trace=+0.00000 eta2=+2.7309e-09 CENTER
+a=-3.00 b=1.500 l=-1.241875 which=2 saddle=[0.3204, -0.0258] trace=+0.00000 eta2=+1.0533e-09 CENTER
+a=-3.00 b=1.750 l=-1.355673 which=2 saddle=[0.3118, -0.037] trace=+0.00000 eta2=+8.9705e-10 CENTER
