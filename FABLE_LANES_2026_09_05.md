@@ -134,3 +134,8 @@ zeros (47 of 300k); targeted construction gives fifteen three-zero directions an
 directions in 20k trials. Along every three-zero direction the true field at eps = 1e-4 and 1e-5 has
 exactly three cycles around the origin (S/U/S), including zeros within 2e-4 of the boundary realised as
 cycles near radius 50. No count ever exceeds the first-order count: no alien. CLOSED numerically at (3,0).
+
+### F18 / F18b: unfolding the hemicycle near the codimension-two point (e0 = 0, 2e1 + e2 = 0)
+Neutral case a0 = -1 (b = 0.5, 1, 1.5; 3600 fields) and the proven alien points a0 = -1/2, b0 = 1/2 and 3/2
+(2400 fields): maximum total three, always the (2,1) pattern; no nest with three cycles on these grids.
+The grids are coarse in the scaling that matters (e0 against (2e1+e2)^2), so a scaled follow-up runs next.
