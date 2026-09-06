@@ -1,5 +1,16 @@
 # `Q_3^R`: the first-order generating space, and where it goes blind
 
+> **RETRACTED IN PART, 2026-09-06.** The central claim below — a
+> four-dimensional generating space, an eight-dimensional kernel, and tiny
+> determinants explained as ill-conditioning — is **false**. The four
+> generators satisfy an exact linear relation, already present as equation (11)
+> of `REVERSIBLE_RESEED_2026_09_05.md`; the rank is three, the kernel is nine
+> and equals the span of the geometrically trivial directions, and the
+> determinants are identically zero. Error found by Astra. See
+> [Q3R_RANK_CORRECTION.md](Q3R_RANK_CORRECTION.md), which supersedes
+> Findings 1 and 2 below. The exact first integral, integrating factor and
+> flow-verified reduction in section "Exact structure" remain correct.
+
 **Date: 2026-09-06.  Evidence class: exact algebra plus NUM.
 No five-cycle candidate was found and none is claimed.**
 

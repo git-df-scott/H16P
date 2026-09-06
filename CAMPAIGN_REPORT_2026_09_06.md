@@ -67,6 +67,12 @@ repository:
 > focus collapsed onto an integrable stratum. A fifth cycle cannot come from
 > stacking degeneracies in the field.
 
+**Scope caution.** This is a statement about the configurations actually
+examined — order-three loop, order-two finite loop, order-two infinity graphic
+in two charts. It is *not* a proved universal theorem about all quadratic
+graphics; non-elementary graphics and other configurations remain open, and the
+campaign's own lists say so. The language below should be read at that scope.
+
 Three independent instances, found separately:
 
 1. **Order-three focus + neutral loop** — the loop exists only on the centre
@@ -110,9 +116,11 @@ Lane 2's target, and it is the right lane.
 2. **D1 — the KKL fold component.** A reproducible `3+1` field on the finite-fold
    unfolding; no four-origin-cycle field; the component is not enclosed.
 3. **`Q_4` route 4 outside-lobe four-interior-zero question.** Narrowed, open.
-4. **`Q_3^R` at higher order.** `M_1` vanishes identically on an
-   eight-dimensional subspace of the twelve perturbation coefficients; no
-   second-order machinery exists (§7).
+4. **`Q_3^R` at higher order.** The first-order kernel is nine-dimensional and
+   is exactly the trivial span (coordinate changes, time rescaling, motion in
+   the centre family), so there is no first-order-invisible reservoir. Higher
+   order is still open — a kernel direction is conjugate to a centre only to
+   first order — but it must be argued, not inferred from a kernel dimension.
 5. **The DRR 121 graphics**, and every non-elementary graphic — nilpotent
    points, saddle-nodes. Untouched, and the hard end of the finiteness problem.
 6. **Conjecture D2** (`sigma * eta_2 < 0`) is unproved; 46 numerical loops.
@@ -136,8 +144,11 @@ What survives as new:
 - the order-two instance **for the infinity graphic in the Shi chart** — the
   splitting vanishes only at `eta_2=0`, matching `a_deg = sqrt(-(l+2)/2)` to 14
   digits at six values of `l`, shown to be a transversal crossing;
-- the `Q_3^R` first integral, the four-dimensional first-order generating
-  space, and the **eight-dimensional** `M_1 = 0` blind spot.
+- the `Q_3^R` first integral and the flow-verified reduction of `M_1` to a
+  moment basis. **The rank claim attached to it was wrong** and is retracted:
+  the generators satisfy an exact relation already in the repository, the rank
+  is three, and the nine-dimensional kernel is exactly the geometrically
+  trivial span, so there is no blind spot. See `Q3R_RANK_CORRECTION.md`.
 
 An unintended but useful by-product: my Lyapunov chain, computed from scratch,
 reproduces Astra/Fable's exact `eta_2` and `eta_3` with ratio exactly `-1` — a
