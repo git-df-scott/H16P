@@ -70,6 +70,9 @@ The informative case is two **non-antipodal** infinite saddles, where
 \]
 
 i.e. neutrality says the two saddles have **equal hyperbolicity ratios**.
+(`r=1` allows `lam_eq(u1)lam_tr(u2) = +/- lam_tr(u1)lam_eq(u2)`; only `+` is
+reachable, because at a saddle `lam_eq` and `lam_tr` have opposite signs, so the
+signed ratio is negative at both and the `-` branch would need them to differ.)
 Eliminating the roots gives the exact neutrality polynomial
 
 ```
@@ -190,7 +193,15 @@ is untouched and is where a counterexample would still have to live:
    first-order blind spot of `Q3R_FIRST_ORDER.md` is a different hole and this
    note does not touch it.
 
-## 8. Replay
+## 8. Verification
+
+Every claim above was re-derived by hand or re-checked independently; the audit,
+including two errors found in checking scripts and one omission in this
+write-up, is [VERIFICATION_2026_09_06.md](VERIFICATION_2026_09_06.md). The one
+load-bearing claim still without an exact proof is `a* = a_deg` (section 4): it
+is transcendental, not algebraic, so resultants cannot settle it.
+
+## 9. Replay
 
 ```bash
 python3 structure_2026_09_06/general_neutrality.py   # N(l,m,a,b), exact
