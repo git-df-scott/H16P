@@ -165,6 +165,11 @@ artefact of the four particular curves:
 `nu` is **flat at `0.105`–`0.108` across the entire second-focus window** and
 almost independent of `a_{20}` (a factor of ten in `a_{20}` moves `nu` by `0.1%`).
 
+The `a = 2.0` column is degenerate and carries no information: the third-order
+stratum has `a_{11} = 4-2a`, which vanishes at `a = 2`, so `I_1 = a_{11}^2/a_{20}`
+is `~1e-55` there. Its `nu ~ 0.39` and its lack of a second focus are artefacts
+of that degeneracy, not evidence about large `a`.
+
 The admissible window is set by `(a-3-a_{20})/(1-3a) < 0` and **flips side with
 `a_{20}`**: at `a_{20}=-12,-120` it is `a > 1/3`, at `a_{20}=-1` it is `a < 1/3`.
 (My first attempt to complete the `a_{20}=-1` row swept `a > 1/3` and every entry
