@@ -29,9 +29,9 @@ class Ledger:
         self.n += 1
 
 
-def record(c, z, r, tang=None, extra=None):
+def record(c, z, r, tang=None, extra=None, J=None):
     mu, x0 = z[:3], z[3]
-    M = c.jac_mu(mu, x0)
+    M = [row[:3] for row in J] if J is not None else c.jac_mu(mu, x0)
     pk = perko_data(M) if M else None
     rec = {
         "a": js(c.a), "a20": js(c.a20), "side": c.side,
@@ -57,8 +57,9 @@ def record(c, z, r, tang=None, extra=None):
     return rec
 
 
-def tangent_at(c, z, prev=None):
-    J = c.jac_full(z[:3], z[3])
+def tangent_at(c, z, prev=None, J=None):
+    if J is None:
+        J = c.jac_full(z[:3], z[3])
     if J is None:
         return None
     t = nullvec(J)
@@ -70,6 +71,13 @@ def tangent_at(c, z, prev=None):
     elif t[3] < 0:          # start by going OUTWARD in amplitude
         t = [-v for v in t]
     return t
+
+
+def tangent_and_jac(c, z, prev=None):
+    J = c.jac_full(z[:3], z[3])
+    if J is None:
+        return None, None
+    return tangent_at(c, z, prev=prev, J=J), J
 
 
 def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7",
@@ -125,7 +133,7 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
 
     while npts < maxpts:
         zpred = [z[k] + ds * tang[k] for k in range(4)]
-        zn, rn = c.newton_arc(zpred, tang, zpred)
+        zn, rn, Jn = c.newton_arc(zpred, tang, zpred)
         if zn is None:
             fails += 1
             ds /= 3
@@ -137,14 +145,18 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
         if not (abs(zn[3]) < x0max and all(abs(v) < mp.mpf("1e7") for v in zn[:3])):
             summary["end_reason"] = "PARAM_BLOWUP x0=%s" % js(zn[3], 8)
             break
-        tn = tangent_at(c, zn, prev=tang)
+        tn = tangent_at(c, zn, prev=tang, J=Jn)
         if tn is None:
             summary["end_reason"] = "TANGENT_LOST"
             break
         npts += 1
-        rec = record(c, zn, rn, tang=tn)
+        # Jn comes from the chord Newton, so it is evaluated at a point ~ds^2
+        # away; good to ~1e-3 relative, which is plenty for the tangent and for
+        # a nondegeneracy check, but a sign-change point gets an exact Jacobian.
+        rec = record(c, zn, rn, tang=tn, J=Jn)
         # ---- D_xxx watch -------------------------------------------------
         if (rn["Dxxx"] > 0) != (prevDxxx > 0):
+            rec = record(c, zn, rn, tang=tn)          # exact Jacobian here
             rec["EVENT"] = "DXXX_SIGN_CHANGE"
             summary["Dxxx_sign_changes"].append(
                 {"between_x0": [js(z[3], 20), js(zn[3], 20)],

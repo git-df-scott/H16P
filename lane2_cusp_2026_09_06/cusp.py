@@ -164,33 +164,48 @@ class Cusp:
         return best, r
 
     # ------------------------------------------------- pseudo-arclength step
-    def newton_arc(self, z, tang, zpred, tol="1e-26", itmax=40):
-        """Solve F(z)=0 with tang.(z - zpred) = 0.  z = (a11,a01,a10,x0)."""
+    def newton_arc(self, z, tang, zpred, tol="1e-26", itmax=16, refresh=4):
+        """Solve F(z)=0 with tang.(z - zpred) = 0.  z = (a11,a01,a10,x0).
+
+        CHORD Newton: the 3x4 parameter Jacobian costs 6 engine calls, the
+        residual 1, so freezing the Jacobian and refreshing it only every
+        `refresh` iterations cuts the cost per continuation point by ~2.5x.
+        From a pseudo-arclength predictor two chord steps are normally enough.
+        Returns (z, r, J) so the caller can reuse the Jacobian.
+        """
         z = list(z)
+        J = None
         for it in range(itmax):
             mu, x0 = z[:3], z[3]
             F, r = self.F(mu, x0)
             if F is None:
-                return None, r["status"]
-            J = self.jac_full(mu, x0, r)
-            if J is None:
-                return None, "jac-fail"
+                return None, r["status"], None
+            if J is None or it % refresh == refresh - 1:
+                J = self.jac_full(mu, x0, r)
+                if J is None:
+                    return None, "jac-fail", None
+            else:
+                # the d/dx0 column is free (it is just (D_x, D_xx, D_xxx))
+                col = [r["Dx"], r["Dxx"], r["Dxxx"]]
+                J = [J[i][:3] + [col[i]] for i in range(3)]
             A = J + [tang[:]]
             b = F + [sum(tang[k] * (z[k] - zpred[k]) for k in range(4))]
             s = solve4(A, b)
             if s is None:
-                return None, "singular"
+                return None, "singular", None
             z = [z[k] - s[k] for k in range(4)]
             sc = max(abs(s[k]) / max(mp.mpf(1), abs(z[k])) for k in range(4))
             if sc < mp.mpf(tol):
                 F, r = self.F(z[:3], z[3])
                 if F is None:
-                    return None, r["status"]
-                return z, r
+                    return None, r["status"], None
+                if wres(F, z[3]) > mp.mpf(tol) * 1000:
+                    return None, "residual-too-large", None
+                return z, r, J
         F, r = self.F(z[:3], z[3])
         if F is not None and wres(F, z[3]) < mp.mpf(tol) * 100:
-            return z, r
-        return None, "no-converge"
+            return z, r, J
+        return None, "no-converge", None
 
 
 def solve4(A, b):

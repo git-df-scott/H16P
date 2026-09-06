@@ -1,0 +1,2 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+noise engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4 (looser tolerance, rule-1 two-tolerance test)
