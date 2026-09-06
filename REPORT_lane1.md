@@ -1,8 +1,39 @@
 # REPORT_lane1.md -- Andronov-Hopf curve sweep for a fourth cycle in one nest
 
 Branch `fable/lane1-ahcurve`, branched from `fable/coordination-2026-09-06`.
-Engine hash is printed at the top of `VALIDATION.md` and stamped into every
-ledger row.  No emojis anywhere.  No pull request.
+No emojis anywhere.  No pull request.
+
+## TWO SESSIONS ARE ON THIS BRANCH
+
+A second Lane 1 session (`session_01UqdMSqDz9KHbgPtDkycpJq`) pushed
+`9de8f4e` to this same branch with its own engine in `lane1/`, and its
+validation in the top-level `VALIDATION.md`.  This session
+(`session_01A6xiV4vzHJud4DWhSdYPGH`) works in `lane1_ahcurve/` with its
+validation in `lane1_ahcurve/VALIDATION.md`.  The two trees do not overlap and
+the merge was clean.  Auditor: read both validation files.
+
+That collision is worth more than it costs.  The two engines were written
+independently and locate the section crossing by different means -- `lane1/`
+carries the winding angle as a third integrated state and Newton-solves the
+step length, `lane1_ahcurve/` accumulates the signed angle across accepted
+steps and bisects the last one.  They agree:
+
+| quantity | lane1/ | lane1_ahcurve/ |
+|---|---|---|
+| Cherkas row 1 cycle x | 1.2809, 2.0070, 4.0193 | 1.28091, 1.00700+1, 3.01932+1 |
+| Cherkas row 4 cycle x | 0.5569, 0.7466, 0.8523 | 0.55695, 0.74658, 0.85232 |
+| Cherkas row 8 cycle x | 1.3573, 2.3071, 4.1455 | 1.35730, 2.30708, 3.14553+1 |
+| KKL origin nest r | 0.6832, 2.1837, 15.9628 | 0.68321, 2.18370, 15.96278 |
+| KKL remote cycle from B | 3706 | 3706.05 |
+| interior extrema of beta*, all 8 Cherkas rows | 2 | 2 |
+
+Every Cherkas abscissa matches to four decimals across two independent
+implementations.  That is a stronger PROTOCOL rule 2 check than either engine
+plus scipy on its own.
+
+The rest of this report is this session's (`lane1_ahcurve/`) work.  Engine hash
+is printed at the top of `lane1_ahcurve/VALIDATION.md` and stamped into every
+ledger row.
 
 ## Checkpoint 1 -- engine built and validated
 
@@ -17,7 +48,7 @@ ledger row.  No emojis anywhere.  No pull request.
    `X_b = (P cos b - Q sin b, P sin b + Q cos b)` and a linear coefficient
    direction (used for the Cherkas rotating parameter `a11`).
    `REVIEW_engine.md` bugs A1, A2, A3, B1, B2 are addressed structurally, not
-   patched; the table is in `VALIDATION.md`.
+   patched; the table is in `lane1_ahcurve/VALIDATION.md`.
    Cost: about 5000 returns per `beta*` curve, ~0.3 s wall for a 300-point
    curve at two tolerances on four cores.
 
@@ -26,7 +57,7 @@ ledger row.  No emojis anywhere.  No pull request.
    coordinates, different section logic (PROTOCOL rule 2).
 
 3. **Validation** (`validate.py`, `extraprobe.py`, rendered by
-   `mkvalidation.py` into `VALIDATION.md`).  Result: **passed, the lane may
+   `mkvalidation.py` into `lane1_ahcurve/VALIDATION.md`).  Result: **passed, the lane may
    sweep.**
    - all nine fat seeds and the KKL control give exactly **three** displacement
      sign changes in the primary nest, every bracket clearing the two-tolerance
