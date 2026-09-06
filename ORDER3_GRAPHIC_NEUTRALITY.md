@@ -39,6 +39,30 @@ with eigenvalues along and transverse to the equator
 The coefficient of `y^3` in `xQ_2-yP_2` is `-1`, so the direction `x=0` is never
 singular and every infinite singularity is captured by `G`.
 
+## PRIOR WORK — read this before the results below
+
+[CLAUDE_ROUTES_4AB.md](CLAUDE_ROUTES_4AB.md) (2026-09-04) already contains two
+of the three results below, and the correction is recorded here rather than
+buried:
+
+* Its section 1 already states the antipodal reciprocity — "hyperbolicity
+  ratios `r` and `1/r` (for a degree-two field the antipode reverses time);
+  any graphic through both is therefore neutral at first order automatically".
+  **Result 1 below is not new**; what is added is the symbolic proof in twelve
+  free coefficients, for every quadratic field rather than this stratum.
+* Its section 2 already ran the splitting and found no connection
+  (`D = +4.9e-4` at `l=-30, a=1`, `+2.1e-2` at `l=-6`).  **Result 2 below is an
+  independent reproduction**, not a discovery: it uses a different section and
+  the reciprocal coordinate `1/y`, which is why the sign is reversed and the
+  magnitudes differ, and it agrees.
+* It already states the conclusion this note sharpens: "on the third-order
+  weak-focus stratum no closed graphic surrounds the origin except when the
+  origin is a centre", offered there as a numerical conjecture strengthening
+  Li--Cherkas.
+
+**What is new here is Result 3**: the exact identity making that conjecture an
+algebraic statement on this stratum — the neutrality resultant is `640*eta_3`.
+
 ## Result 1 (general, exact): antipodal infinite saddles are reciprocal
 
 For **every** quadratic field the sphere field above satisfies `F(-s)=F(s)`,

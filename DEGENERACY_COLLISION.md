@@ -169,8 +169,42 @@ closes on itself.
 > needs collapse to four — which is what the known four-cycle systems already
 > spend.
 
-This is the first mechanism this campaign has produced that *explains* the
-repeated near-misses instead of recording another one.
+### Relation to what was already in the repository
+
+This is a **sharpening and extension of an existing conjecture, not a new
+one**.  [CLAUDE_ROUTES_4AB.md](CLAUDE_ROUTES_4AB.md) (2026-09-04) already
+concluded, numerically and on the order-3 stratum, that "no closed graphic
+surrounds the origin except when the origin is a centre", and offered it as a
+conjecture strengthening Li--Cherkas.  The antipodal reciprocity and the
+order-3 splitting scan are both already there; this note reproduces them
+independently.
+
+What is added:
+
+1. the **exact** neutrality polynomial `N(l,m,a,b)` for the general Shi chart;
+2. the **exact** identity `N = 640*eta_3` on the order-3 stratum, turning the
+   numerical conjecture into algebra on that stratum;
+3. the whole **order-2** analysis — the splitting of `N` on `{eta_1=0}`, the
+   explicit order-2 + neutral family, and the finding that the connection there
+   occurs exactly at `eta_2 = 0`.  This is a new and independent data point for
+   the same conjecture at a *different focus order*, which is what makes the
+   pattern look structural rather than particular to the order-3 stratum;
+4. the identification of the collision locus as an exact rational centre curve
+   whose second finite singularity is always a node.
+
+### Relation to the current frontier
+
+`main` is **not** the frontier: `coordination_2026_09_06/H16P_SUMMARY.md` on the
+`fable/` branches records that the live work is the four-in-one-nest program.
+Lane 2 (`fable/lane2-cusp`) pursues four cycles in one nest through Perko's
+cusp/swallow-tail route — a multiplicity-four cycle, a *different* mechanism
+from the graphic route analysed here.  Lane 3 (`fable/lane3-certify`) has built
+an exact Poincaré--Bendixson polygon certifier, which closes the
+"no certifier exists" gap noted in earlier audits.
+
+This note is complementary to that program: it argues the *graphic* route to a
+fourth cycle in the nest is obstructed, which leaves the cusp route as the one
+still open.
 
 ## 7. What it does not cover — the live surface
 
