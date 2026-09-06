@@ -1,5 +1,23 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Structural obstruction, 2026-09-06
+
+[DEGENERACY_COLLISION.md](DEGENERACY_COLLISION.md) proposes a *mechanism* rather
+than another negative result. For a nest bounded by an elementary graphic
+through two non-antipodal infinite saddles in the Shi chart, the degeneracy
+conditions of the focus and of the graphic are not independent: neutrality on
+the order-3 stratum is exactly `eta_3 = 0` (the resultant is `640*eta_3`), and
+on the order-2 stratum neutrality plus the graphic connection forces `eta_2 = 0`.
+The common solution is a centre whose second finite singularity is a node, so
+the remote cycle is lost too. The five independent conditions a fifth cycle
+needs collapse to the four the known four-cycle systems already spend.
+
+Everything is audited in [VERIFICATION_2026_09_06.md](VERIFICATION_2026_09_06.md),
+including two errors found in checking scripts. The one load-bearing claim
+still lacking an exact proof is the numerical identity `a* = a_deg`.
+Non-elementary graphics, graphics through finite saddles and charts outside Shi
+are explicitly not covered. **No counterexample; this is not a proof of H(2)=4.**
+
 ## Two coverage gaps closed and sized, 2026-09-06
 
 [ORDER3_GRAPHIC_NEUTRALITY.md](ORDER3_GRAPHIC_NEUTRALITY.md) settles section 4b

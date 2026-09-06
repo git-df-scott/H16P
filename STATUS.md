@@ -1,5 +1,15 @@
 # Status
 
+## Structural obstruction, 2026-09-06
+
+[DEGENERACY_COLLISION.md](DEGENERACY_COLLISION.md), audited in
+[VERIFICATION_2026_09_06.md](VERIFICATION_2026_09_06.md). Focus degeneracy and
+boundary-graphic degeneracy are not independent for elementary two-infinite-saddle
+graphics in the Shi chart; stacking them collapses the focus to a centre and the
+second singularity to a node. Exact where stated, numerical where stated
+(`a* = a_deg` to 14 digits at six values of `l`, shown to be a transversal
+crossing rather than a discontinuity). No five-cycle candidate.
+
 ## Coverage-gap work, 2026-09-06
 
 [ORDER3_GRAPHIC_NEUTRALITY.md](ORDER3_GRAPHIC_NEUTRALITY.md): exact identity
