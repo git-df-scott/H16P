@@ -1,0 +1,12 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+noise engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4 (looser tolerance, rule-1 two-tolerance test)
+row 1 (side +1): 3 certified cycles (0 uncertified) roots=['1.28091', '2.00700', '4.01932']
+            published=[1.26, 1.98, 3.95]  count_ok=True  max|dev|=0.0693  s_max=8.9805  fails=0  (217s)
+row 2 (side +1): 3 certified cycles (0 uncertified) roots=['1.19351', '2.05958', '3.08960']
+            published=[1.4, 1.9, 3.1]  count_ok=True  max|dev|=0.2065  s_max=8.9805  fails=0  (200s)
+row 3 (side -1): 3 certified cycles (0 uncertified) roots=['0.32353', '0.61553', '0.84819']
+            published=[0.32, 0.66, 0.8]  count_ok=True  max|dev|=0.0482  s_max=0.2995  fails=0  (147s)
+row 4 (side -1): 3 certified cycles (0 uncertified) roots=['0.55695', '0.74658', '0.85232']
+            published=[0.56, 0.75, 0.87]  count_ok=True  max|dev|=0.0177  s_max=0.4795  fails=0  (139s)
+row 5 (side -1): 3 certified cycles (0 uncertified) roots=['0.62776', '0.80183', '0.87290']
+            published=[0.63, 0.8, 0.88]  count_ok=True  max|dev|=0.0071  s_max=0.5795  fails=0  (150s)
