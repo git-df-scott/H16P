@@ -1,5 +1,24 @@
 # Status
 
+## Coverage-gap work, 2026-09-06
+
+[ORDER3_GRAPHIC_NEUTRALITY.md](ORDER3_GRAPHIC_NEUTRALITY.md): exact identity
+`resultant = 640*eta_3` for the neutrality condition of the two-saddle graphic
+through infinity on the order-3 stratum; route 1 of `CLAUDE_THOUGHT_SESSION.md`
+section 4b is closed on that stratum. General exact lemma: for every quadratic
+field the compactified linearisations at antipodal infinite singularities are
+negatives of one another, so a graphic through an antipodal pair is
+identically neutral.
+
+[Q3R_FIRST_ORDER.md](Q3R_FIRST_ORDER.md): exact first integral and
+four-dimensional first-order generating space for the reversible two-centre
+family; `M_1 == 0` on an eight-dimensional subspace of the perturbation
+coefficients. The maximum zero count is open and is not reachable by
+quadrature at 70 digits.
+
+No five-cycle candidate, no interval certificate, and no ODE budget was
+charged to the KKL/Shi ledger by either item.
+
 ## Fold closure follow-up, 2026-09-05
 
 [KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md): exact multiplier-band restriction

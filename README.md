@@ -1,5 +1,28 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Two coverage gaps closed and sized, 2026-09-06
+
+[ORDER3_GRAPHIC_NEUTRALITY.md](ORDER3_GRAPHIC_NEUTRALITY.md) settles section 4b
+of `CLAUDE_THOUGHT_SESSION.md`. On the third-order weak-focus stratum the first
+stability coefficient of the boundary graphic through infinity equals one
+exactly on the zero set of `eta_3`: the elimination resultant is `640*eta_3`.
+The graphic-stability direction is therefore not independent of the focus
+unfolding directions, and the proposed codimension-five `3+2` point does not
+exist by this mechanism. Where the graphic's saddles are antipodal the
+coefficient is identically one for every quadratic field, but a 268-point scan
+finds the required connection nowhere on the stratum.
+
+[Q3R_FIRST_ORDER.md](Q3R_FIRST_ORDER.md) gives the reversible two-centre
+family an exact integrating factor `y^(a-1)`, a first integral, and a
+four-dimensional first-order generating space, checked against direct flow
+integration to `1.3e-12`. `M_1` vanishes identically on an **eight-dimensional**
+subspace of the twelve quadratic perturbation coefficients, which no
+first-order search can see. Whether `M_1` admits four zeros stays open: at 70
+digits the Chebyshev determinants sit at the working precision.
+
+**Neither result produces a five-cycle candidate. `H(2)=4` is neither proved
+nor refuted here.**
+
 ## Fold closure follow-up, 2026-09-05
 
 [KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md) proves a global single-negative-band
