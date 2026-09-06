@@ -23,9 +23,11 @@ def s(v, digits=42):
 class Engine:
     """Persistent process wrapper.  D() returns mpf values."""
 
+    DEFAULT_EXE = "cusp_engine4"       # degree-4 jet: also returns D_xxxx
+
     def __init__(self, quad=True, exe=None, env=None):
         self.quad = quad
-        self.exe = exe or os.path.join(HERE, "cusp_engine")
+        self.exe = exe or os.path.join(HERE, os.environ.get("CUSP_EXE", self.DEFAULT_EXE))
         args = [self.exe] + ([] if quad else ["--ld"])
         e = dict(os.environ)
         if env:
@@ -46,10 +48,15 @@ class Engine:
             raise RuntimeError("engine died")
         if f[0] != "OK":
             return {"status": f[0]}
-        return {"status": "OK",
-                "D": mp.mpf(f[1]), "Dx": mp.mpf(f[2]), "Dxx": mp.mpf(f[3]),
-                "Dxxx": mp.mpf(f[4]), "T": mp.mpf(f[5]), "transv": mp.mpf(f[6]),
-                "nsteps": int(f[7])}
+        out = {"status": "OK",
+               "D": mp.mpf(f[1]), "Dx": mp.mpf(f[2]), "Dxx": mp.mpf(f[3]),
+               "Dxxx": mp.mpf(f[4]), "T": mp.mpf(f[5]), "transv": mp.mpf(f[6])}
+        if len(f) >= 9:                      # degree-4 jet build
+            out["Dxxxx"] = mp.mpf(f[7])
+            out["nsteps"] = int(f[8])
+        else:
+            out["nsteps"] = int(f[7])
+        return out
 
     def close(self):
         try:

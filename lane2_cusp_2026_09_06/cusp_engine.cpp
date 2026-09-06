@@ -65,29 +65,36 @@ template <> struct FT<__float128> {
 };
 
 // ------------------------------------------------------------------- jet ----
-// Truncated polynomial in eps of degree 3.
+// Truncated polynomial in eps of degree JETDEG (3 by default; 4 gives D_xxxx,
+// which makes the distance to a swallow-tail scale-free: nu = D_xxx/(D_xxxx r0)).
+#ifndef JETDEG
+#define JETDEG 3
+#endif
+#define NJ (JETDEG + 1)
+
 template <typename T>
 struct Jet {
-    T c[4];
-    Jet() { c[0] = c[1] = c[2] = c[3] = T(0); }
-    explicit Jet(T v) { c[0] = v; c[1] = c[2] = c[3] = T(0); }
+    T c[NJ];
+    Jet() { for (int i = 0; i < NJ; i++) c[i] = T(0); }
+    explicit Jet(T v) { for (int i = 0; i < NJ; i++) c[i] = T(0); c[0] = v; }
 };
 
 template <typename T> inline Jet<T> operator+(const Jet<T>& a, const Jet<T>& b) {
-    Jet<T> r; for (int i = 0; i < 4; i++) r.c[i] = a.c[i] + b.c[i]; return r;
+    Jet<T> r; for (int i = 0; i < NJ; i++) r.c[i] = a.c[i] + b.c[i]; return r;
 }
 template <typename T> inline Jet<T> operator-(const Jet<T>& a, const Jet<T>& b) {
-    Jet<T> r; for (int i = 0; i < 4; i++) r.c[i] = a.c[i] - b.c[i]; return r;
+    Jet<T> r; for (int i = 0; i < NJ; i++) r.c[i] = a.c[i] - b.c[i]; return r;
 }
 template <typename T> inline Jet<T> operator*(T s, const Jet<T>& a) {
-    Jet<T> r; for (int i = 0; i < 4; i++) r.c[i] = s * a.c[i]; return r;
+    Jet<T> r; for (int i = 0; i < NJ; i++) r.c[i] = s * a.c[i]; return r;
 }
 template <typename T> inline Jet<T> operator*(const Jet<T>& a, const Jet<T>& b) {
     Jet<T> r;
-    r.c[0] = a.c[0]*b.c[0];
-    r.c[1] = a.c[0]*b.c[1] + a.c[1]*b.c[0];
-    r.c[2] = a.c[0]*b.c[2] + a.c[1]*b.c[1] + a.c[2]*b.c[0];
-    r.c[3] = a.c[0]*b.c[3] + a.c[1]*b.c[2] + a.c[2]*b.c[1] + a.c[3]*b.c[0];
+    for (int i = 0; i < NJ; i++) {
+        T s = T(0);
+        for (int j = 0; j <= i; j++) s += a.c[j] * b.c[i - j];
+        r.c[i] = s;
+    }
     return r;
 }
 // series inverse (constant term must be nonzero)
@@ -95,14 +102,16 @@ template <typename T> inline Jet<T> inv(const Jet<T>& a) {
     Jet<T> r;
     T i0 = T(1) / a.c[0];
     r.c[0] = i0;
-    r.c[1] = -a.c[1] * i0 * i0;
-    r.c[2] = (a.c[1]*a.c[1]*i0 - a.c[2]) * i0 * i0;
-    r.c[3] = (T(2)*a.c[1]*a.c[2]*i0 - a.c[1]*a.c[1]*a.c[1]*i0*i0 - a.c[3]) * i0 * i0;
+    for (int i = 1; i < NJ; i++) {
+        T s = T(0);
+        for (int j = 1; j <= i; j++) s += a.c[j] * r.c[i - j];
+        r.c[i] = -s * i0;
+    }
     return r;
 }
 template <typename T> inline T jnorm(const Jet<T>& a) {
     T m = FT<T>::fabs_(a.c[0]);
-    for (int i = 1; i < 4; i++) { T v = FT<T>::fabs_(a.c[i]); if (v > m) m = v; }
+    for (int i = 1; i < NJ; i++) { T v = FT<T>::fabs_(a.c[i]); if (v > m) m = v; }
     return m;
 }
 
@@ -336,7 +345,7 @@ int run() {
     char buf[256];
     while (fgets(line, sizeof(line), stdin)) {
         if (line[0] == 'Q') break;
-        if (line[0] == 'V') { printf("ENGINE cusp_engine %s order=%d\n", FT<T>::name(), FT<T>::order()); continue; }
+        if (line[0] == 'V') { printf("ENGINE cusp_engine %s order=%d jetdeg=%d\n", FT<T>::name(), FT<T>::order(), JETDEG); continue; }
         if (line[0] != 'D' && line[0] != 'L') { printf("ERR bad command\n"); continue; }
         int sd = (line[0] == 'L') ? -1 : 1;
         char sa[128], s20[128], s11[128], s01[128], s10[128], sx[128];
@@ -354,9 +363,16 @@ int run() {
         T Dx   = r.R.c[1] - T(1);
         T Dxx  = T(2) * r.R.c[2];
         T Dxxx = T(6) * r.R.c[3];
-        std::string out = "OK";
+#if JETDEG >= 4
+        T Dxxxx = T(24) * r.R.c[4];
+        const int NV = 7;
+        T vals[7] = { D, Dx, Dxx, Dxxx, r.T_return, r.ymin_gap, Dxxxx };
+#else
+        const int NV = 6;
         T vals[6] = { D, Dx, Dxx, Dxxx, r.T_return, r.ymin_gap };
-        for (int i = 0; i < 6; i++) { FT<T>::tostr(vals[i], buf, sizeof(buf)); out += " "; out += buf; }
+#endif
+        std::string out = "OK";
+        for (int i = 0; i < NV; i++) { FT<T>::tostr(vals[i], buf, sizeof(buf)); out += " "; out += buf; }
         out += " " + std::to_string(r.nsteps);
         printf("%s\n", out.c_str());
     }

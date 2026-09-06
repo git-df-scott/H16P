@@ -39,6 +39,11 @@ def record(c, z, r, tang=None, extra=None):
         "r0": js(mp.mpf(x0) - 1),
         "D": js(r["D"], 12), "Dx": js(r["Dx"], 12), "Dxx": js(r["Dxx"], 12),
         "Dxxx": js(r["Dxxx"], 20),
+        "Dxxxx": js(r["Dxxxx"], 16) if "Dxxxx" in r else None,
+        # scale-free distance to a swallow-tail: nu = D_xxx / (D_xxxx * r0).
+        # nu -> 0 with D_xxxx != 0 IS the swallow-tail; |nu| >> 1 is far from one.
+        "nu": (js(r["Dxxx"] / (r["Dxxxx"] * (mp.mpf(x0) - 1)), 12)
+               if r.get("Dxxxx") not in (None, 0) else None),
         "res": js(wres([r["D"], r["Dx"], r["Dxx"]], x0), 6),
         "T": js(r["T"], 18), "transv": js(r["transv"], 8), "nsteps": r["nsteps"],
         "V1": js(V1_of(c.a, mu[0], mu[1]), 12),
