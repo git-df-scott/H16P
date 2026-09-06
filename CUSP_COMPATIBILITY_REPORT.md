@@ -18,7 +18,84 @@ engine calls are logged in `lane2_cusp_2026_09_06/ledger_opus/`.
 
 **NO FIVE-CYCLE FIELD. NO QUADRUPLE-CYCLE CANDIDATE.**
 
+> ## CORRECTIONS, 2026-09-06 (second pass)
+>
+> Three claims below were wrong and are replaced by sections 1R, 2R and 4R:
+>
+> 1. **The rejection in section 1 was invalid.** It interpolated the zeros of `G`
+>    and `H` at *different* points (`1.03349338`, `1.03359934`) and called them
+>    coincident, and read positive sampled `nu` on both sides as excluding a
+>    zero. `D(z;t)=t z^3+(t-\epsilon)z^4` has a genuine `G=0`, `H\neq0` point at
+>    `t=0` and a separate `H=0` point at `t=\epsilon`, with positive `nu` on
+>    either side of both. My samples were `6.5e-3` apart in `x0` while the events
+>    are `1.06e-4` apart. The conclusion happens to survive, but only after an
+>    actual solve (section 1R).
+> 2. **`nu \approx 0.1` is the BASELINE, not a large value.** For the Bautin model
+>    `D(r)=c\,r(r^2-r_0^2)^3`, `D_{rrr}(r_0)=48cr_0^4`, `D_{rrrr}(r_0)=480cr_0^3`,
+>    so `nu = 1/10` at *every* generic triple cycle. The `0.105`–`0.108` plateau
+>    in section 4 is therefore exactly what a triple cycle must give, and is
+>    **not** evidence about the fourth/fifth-cycle compatibility (section 4R).
+> 3. **The invariant coordinates in section 2 were incomplete.** The scaling moves
+>    the marked equilibrium off `(1,-1)`, which the pinned family has already
+>    used. With `a_{00}` and `I_0=a_{00}/a_{11}` included,
+>    `\det\partial(a,I_0,I_1,I_2,I_3)/\partial(a,a_{20},a_{11},a_{01},a_{10})
+>     = (2a-a_{01}-a_{10}-2a_{20})/(a_{11}^2a_{20}^2) = L/(a_{11}^2a_{20}^2)`.
+>    The `a_{11},a_{20}` poles are **chart poles**, so `I_1\to\infty` does not by
+>    itself establish geometric degeneration.
+>
+> Both regression tests are in `lane2_cusp_2026_09_06/regression_tests.py`.
+
+## 1R. The event, resolved by solving
+
+At a quadruple point the Jacobian of `(F,G)` in `(u,s)` has determinant
+`\det(F_u)\cdot D_{ssss}`, so the square Newton system
+
+\[ \Phi(u,x_0)=(D,D_x,D_{xx},D_{xxx})=0,\qquad u=(a_{11},a_{01},a_{10}) \]
+
+needs only the degree-4 jet. Solved from both bracketing ledger points at full
+saved precision (shape `a=-2`, `a_{20}=-3254/675`, exactly `a_{20,c}(-2)-0.08`
+with `a_{20,c}(-2)=-128/27`):
+
+| seed | weighted residual | `x_0` | `H=D_{xxxx}` |
+|---|---|---|---|
+| idx 5 | `5.7e-24` | `1.033772194909540585` | `1.07e-18` |
+| idx 6 | `3.6e-33` | `1.034770377350673663` | `-2.8e-26` |
+
+Both converge to the **same** `u` to 19 digits but **different** `x_0`, with `H`
+at the noise floor: `x_0` is undetermined and every derivative vanishes.
+
+**It is a centre.** At that `u`, `D` measured across the whole annulus:
+
+| `x_0` | 1.005 | 1.02 | 1.0337 | 1.05 | 1.10 | 1.20 |
+|---|---|---|---|---|---|---|
+| `D` (engine A, binary128) | `-1.2e-25` | `-9.8e-25` | `-3.0e-24` | `-7.7e-24` | `-4.9e-23` | `-6.4e-22` |
+| `D` (engine B, independent) | — | `-5.9e-26` | `-2.0e-24` | `-9.9e-24` | `-7.6e-23` | `-6.2e-22` |
+
+Engine B (`indep_engine.py`) is a from-scratch mpmath Taylor integrator in
+Cartesian coordinates with its own step rule and event solver, sharing no code
+with `cusp_engine.cpp` — PROTOCOL rule 2. Both give `D` twenty orders below the
+`~1e-3` scale of `D_{xxx}` on the cusp curve, across the annulus.
+
+The exact structural marker: at `a=-2` the converged point has
+`a_{01}=-a_{11}-3` to `3e-24`, i.e. `V_1=a_{11}+a_{01}-2a-1=0` **exactly**.
+
+**What is NOT established.** I did not derive the exact algebraic centre variety
+membership symbolically (my focal-value routine had an indexing bug and is not
+in the tree). The centre is established numerically, to twenty orders, on two
+independent engines, plus the exact `V_1=0` relation — not by an integrability
+proof.
+
+**Neighbouring shapes are UNRESOLVED, not excluded.** At `a_{20}` offsets
+`\pm0.02` the square Newton *stalls* rather than converging (`D_{xxx}=-45.9`,
+`+18.5`; weighted residuals `1.5e-3`, `4.8e-4`) — `newton_swallow` returns its
+lowest-residual iterate, which is not a root, and I nearly mis-reported those as
+candidates with `H=1320`. Re-entering with the well-conditioned `newton_mu` from
+this seed also fails to converge there. Proper entry needs `enter_cusp` from the
+third-order stratum at each shape. **Whether a genuine `G=0`, `H\neq0` point
+exists at nearby shapes is an open question, not a closed one.**
+
 ## 1. The one `D_xxx` sign change in the saved data is not a swallow-tail
+*(SUPERSEDED by 1R — the reasoning below is invalid; kept as the record.)*
 
 Mining all 15 saved cusp ledgers, exactly one shows a sign change of
 `G = D_xxx`: `ledger_grid/cusp_c_am2p0_om0p08.jsonl`, shape
@@ -145,12 +222,16 @@ curve:
 | **`row8` `(1.04,-120)`** | **yes**, persists (tr `+0.97 -> +0.92`) | `0.132 -> 0.174` |
 | `am2p5`, `am2p9`, `am2p0` grid | **no** (saddles/nodes) | `0.123 -> 0.0032` |
 
-> **The two requirements pull in opposite directions.** The shapes whose `nu`
-> falls toward zero have **no second focus at all**, so no fifth cycle is
-> available there however good the fourth becomes. The two shapes that do carry
-> a persistent second focus have `nu ~ 0.13` to `0.30` and **increasing** along
-> the cusp curve — continuation moves them away from a swallow-tail, not toward
-> one.
+> **RETRACTED (4R).** The half of this that reads `nu ~ 0.13`–`0.30` as "far
+> from a swallow-tail" is vacuous: `nu = 1/10` is the generic Bautin value at
+> *any* triple cycle, so a plateau at `0.105`–`0.108` is exactly what must be
+> observed and says nothing about compatibility. What survives is only the
+> equilibrium fact, which is independent of `nu`: **the shapes examined whose
+> cusp curves reach small `nu` carry no second focus, and the two that carry a
+> persistent second focus are rows 7 and 8.** Whether that is a real tension or
+> an artefact of the four curves sampled is **not** established here, and the
+> small-`nu` endpoints may sit at chart poles (`I_1\to\infty` with `a_{11}\to\infty`)
+> rather than at geometric degeneration.
 
 A direct sweep of `a` at fixed amplitude `r_0=0.05` confirms this is not an
 artefact of the four particular curves:
