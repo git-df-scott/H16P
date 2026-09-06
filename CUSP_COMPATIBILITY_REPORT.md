@@ -164,7 +164,20 @@ artefact of the four particular curves:
 
 `nu` is **flat at `0.105`–`0.108` across the entire second-focus window** and
 almost independent of `a_{20}` (a factor of ten in `a_{20}` moves `nu` by `0.1%`).
-Entry fails for `a \le 1/3`: the third-order stratum's `a_{10}` carries `1/(1-3a)`.
+
+The admissible window is set by `(a-3-a_{20})/(1-3a) < 0` and **flips side with
+`a_{20}`**: at `a_{20}=-12,-120` it is `a > 1/3`, at `a_{20}=-1` it is `a < 1/3`.
+(My first attempt to complete the `a_{20}=-1` row swept `a > 1/3` and every entry
+failed on a guard; the window is the other side. Recorded rather than quietly
+re-run.) Completing it on the correct side:
+
+| `a20 = -1` | `a = 0.3` | `a = 0.0` |
+|---|---|---|
+| `nu` | 0.1038 | 0.1032 |
+| second focus | no (node) | no (node + saddle) |
+
+So the third `a_{20}` value gives the same flat `nu ~ 0.103` and, where entry
+succeeds at all, again **no second focus**. It does not change the conclusion.
 
 ## 5. What this does and does not establish
 
