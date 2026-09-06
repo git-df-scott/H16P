@@ -1,20 +1,29 @@
 # REPORT — Lane 2: the cusp manifold of triple limit cycles, and the hunt for a swallow-tail
 
 Branch `fable/lane2-cusp`. Working directory `lane2_cusp_2026_09_06/`.
-Session started 2026-09-06. **Status: IN PROGRESS — this file is updated every 30–45 min.**
 
-**No counterexample is claimed. Maximum certified cycle count in one nest so far: 3.**
+**No counterexample is claimed anywhere in this file. Maximum certified cycle count in
+one nest so far: 3.**
+
+> **Two Lane-2 sessions have been running in parallel and this branch is their merge.**
+> Session `01MY79ob…` built engine **A/B** (`lane2_cusp_2026_09_06/engine/`) and did the
+> seed validation — Part I below. Session `01QK5W6F…` built engine **C/D**
+> (`lane2_cusp_2026_09_06/*.py`, `cusp_engine.cpp`) and did the cusp-manifold entry and
+> continuation — Part II below. The two engine families are completely independent
+> (different chart, different independent variable, different integrator) and **agree**;
+> that agreement is itself the strongest validation either produced. Keep both.
 
 ---
 
 ## 0. What this lane is doing
 
-Continue the manifold of **triple** limit cycles (Perko's cusp surface `C3`) out of the
-Bautin small-amplitude region of a third-order weak focus to **normal amplitude**, and
-search along it for a **multiplicity-four** limit cycle (Perko's swallow-tail `C4`).
-Perko 1995 Theorem 4.3 (restated verbatim in `coordination_2026_09_06/LIT_A_ROTATED_CHERKAS.md`
-§1.6) says a multiplicity-four cycle satisfying three Jacobian nondegeneracy conditions
-forces an open region nearby in which the system has **four simple limit cycles in one nest**.
+Continue the manifold of **multiplicity-three** limit cycles (Perko's cusp surface `C3`,
+Perko 1995 Def. 4.2) out of the small-amplitude Bautin region of a third-order weak focus
+to **normal amplitude**, and search along it for a **multiplicity-four** limit cycle
+(swallow-tail `C4`). Perko 1995 Theorem 4.3 (verbatim in
+`coordination_2026_09_06/LIT_A_ROTATED_CHERKAS.md` §1.6) says a multiplicity-four cycle
+satisfying three Jacobian nondegeneracy conditions forces an open region nearby in which
+the system has **four simple limit cycles in one nest**.
 
 Setting: the Cherkas–Artés–Llibre normal form
 
@@ -26,62 +35,124 @@ ydot = a00 + a10 x + a20 x^2 + a01 y + a11 x y + a y^2 ,   a00 = a01 + a11 - a10
 focus `A = (1,-1)`; section = a ray of the line `y = -1` from `A` (`x > 1`, or `x < 1`);
 displacement `D(x0)` = (x-coordinate of the first return) − `x0`.
 
-* cusp (triple cycle): `D = D_x = D_xx = 0` — 3 equations, so a curve in
+* cusp (triple cycle): `D = D_x = D_xx = 0` — 3 equations, so a **curve** in
   `(a11, a01, a10, x0)` at fixed shape `(a, a20)`;
 * swallow-tail (quadruple cycle): additionally `D_xxx = 0` — codimension 1 *inside*
   the cusp manifold, detectable as a **sign change of `D_xxx`** along a cusp curve.
 
 ---
 
-## 1. The engine (`cusp_engine.cpp`)
+# PART I — engines A/B and the seed validation (PROTOCOL rule 7)
 
-Taylor-series time-stepping (the field is polynomial, so the series recurrences are
-exact), with the state carried as a **degree-4 jet in the section coordinate**
-`eps`: `x(0) = x0 + eps`, `y(0) = -1`. The jet of the *return time* is solved from the
-jet equation `y(tau) = -1`, and `R(eps) = x(tau(eps))` is then a degree-4 jet, so
+### Engine A — `lane2_cusp_2026_09_06/engine/cusp128.cpp`, binary128
+
+Translate `u = x-1, v = y+1`, then the linear-normalising chart
+`u = xi, v = k1 xi - w eta`, `k1 = 1+T/2`, `T = a11+a01-2a-1` (the trace `= V1`),
+`L = 2a-a01-a10-2a20` (the determinant), `w = sqrt(L - T^2/4)`. In polar
+`xi = rho cos th, eta = rho sin th` the system becomes the scalar equation
+
+```
+d rho / d th = ( (T/2) rho + alpha(th) rho^2 ) / ( w + beta(th) rho )
+```
+
+with `alpha, beta` explicit trigonometric quadratics. The section `{y=-1, x>1}` is the
+**fixed ray** `th = th0 = atan2(k1,w)`, so there is no implicit return-time equation at
+all; `D, D_x, D_xx, D_xxx` come from an exact order-3 jet in the initial radius.
+Gragg–Bulirsch–Stoer, adaptive, rtol `1e-28`, ~35 ms per full evaluation.
+
+### Engine B — `engine/engB.py`
+
+Independent second integrator: mpmath dps 40, Cartesian, time as the independent
+variable, variable-order Taylor, event `v = 0` by Newton. **A vs B on Cherkas row 1 at
+six amplitudes: relative agreement 0 to 1.1e-14.**
+
+### Cherkas rows 1–8 — three cycles recovered for every row
+
+Rows 1,2,6,7,8 are published on `x>1`; rows 3,4,5 on `x<1`; each reproduced on its own ray.
+
+| row | found x | published x | note |
+|---|---|---|---|
+| 1 | 1.2809, 2.0070, 4.0193 | 1.26, 1.98, 3.95 | `a11` published to 4 digits only |
+| 2 | 1.1935, 2.0596, 3.0896 | 1.4, 1.9, 3.1 | `a11` to 5 digits |
+| 3 (left) | 0.8482, 0.6155, 0.3235 | 0.8, 0.66, 0.32 | |
+| 4 (left) | 0.8523, 0.7466, 0.5569 | 0.87, 0.75, 0.56 | all within 0.02 |
+| 5 (left) | 0.8729, 0.8018, 0.6278 | 0.88, 0.80, 0.63 | all within 0.01 |
+| 6 | 1.0504, 1.1817, 1.5415 | 1.05, 1.16, 1.5 | all within 0.05 |
+| 7 | 1.5108, 2.2316, 4.4763 | 1.28, 2.15, 4.43 | |
+| 8 | 1.3573, 2.3071, 4.1455 | 1.29, 2.22, 4.63 | |
+
+Rows whose `a11` is published to 6 significant digits (4, 5, 6) match to `1e-2`; rows
+with 4–5 digits drift by up to `7e-2` — the expected sensitivity of a rotation parameter.
+
+### Row 4's published Andronov–Hopf polynomial — the sharpest test
+
+| | max | min |
+|---|---|---|
+| computed AH | x = 0.620, AH = 9.500081 | x = 0.800, AH = 9.499577 |
+| published polynomial | x = 0.625, AH = 9.500111 | x = 0.805, AH = 9.499583 |
+
+**Exactly two interior extrema, in the right places, to 3e-5 in value.**
+Engine validation PASSED; the lane may sweep.
+
+### Domain ends (PROTOCOL rule 4)
+
+For rows 3 and 5 on the `x>1` ray the return domain ends at `x = 1.346` / `x = 1.152`,
+with the outermost cycle essentially ON the boundary (row 3: outer cycle at 1.3472,
+boundary at 1.3475). The escape is confirmed independently by engine B (blow-up in
+finite time), i.e. it is a genuine separatrix, not a chart artifact.
+
+---
+
+# PART II — engines C/D, and the cusp manifold itself
+
+### Engine C — `lane2_cusp_2026_09_06/cusp_engine.cpp`, binary128 / long double
+
+Taylor-series time-stepping in the **original Cartesian coordinates**, with the state
+carried as a **degree-4 jet in the section coordinate** `eps`: `x(0) = x0 + eps`,
+`y(0) = -1`. The jet of the *return time* is solved from the jet equation `y(tau) = -1`
+(a genuinely implicit return, unlike engine A's fixed ray — which is why the two are a
+real cross-check), and `R(eps) = x(tau(eps))` is a degree-4 jet:
 
 ```
 D = R.c0 - x0 ,  D_x = R.c1 - 1 ,  D_xx = 2 R.c2 ,  D_xxx = 6 R.c3 ,  D_xxxx = 24 R.c4
 ```
 
-come out **exactly** (to integration accuracy) — *not* by finite differencing. This is
-what makes an honest `D_xxx` possible. Templated on `long double` and `__float128`;
-all production runs are binary128 (113-bit mantissa), Taylor order 26, local tolerance
-1e-32.
+exact to integration accuracy — no finite differencing in the amplitude direction.
+Taylor order 26, local tolerance 1e-32, ~55 ms per evaluation.
 
-**Precision established, not assumed.** Re-running the same point at Taylor order 22/26/30,
-tolerance 1e-30/1e-32/1e-34 and `hmax` 0.05/0.10/0.25 changes `D` in the **22nd
-significant digit** (absolute agreement ~4e-34).
+**Precision established, not assumed.** Re-running one point at Taylor order 22/26/30,
+tolerance 1e-30/1e-32/1e-34 and `hmax` 0.05/0.10/0.25 moves `D` in the **22nd significant
+digit** (absolute agreement ~4e-34).
 
-**Second, independent engine** (PROTOCOL rule 2): `indep_engine.py`, an mpmath Taylor
-integrator written from the ODE directly, sharing no code with the C++ engine and using a
-different event solver. Agreement at three test points:
+### Engine D — `indep_engine.py`
 
-| point | relative difference |
-|---|---|
-| `(a,a20,a11,a01,a10)=(3,-12,-1.398,8.4,15.28)`, `x0=1.28` | 1.3e-29 |
-| `(3,-12,-2,9,13.5)`, `x0=1.02` (`D ~ -1.78e-12`) | 2.4e-22 (absolute 4e-34) |
-| `(5,-50,-5.49995,16.5,76.45)`, `x0=1.3` | 1.4e-30 |
+A fourth integrator: mpmath Taylor, written from the ODE directly, no shared code.
+C vs D: 1.3e-29, 2.4e-22 (absolute 4e-34), 1.4e-30 at three test points.
 
-**A representational trap worth recording.** With the parameters carried as Python
-floats the cusp Newton stagnates at a residual of ~1e-17 — not for any numerical-analysis
-reason, but because the Newton steps are of relative size ~1e-25 in `(a11, a01, a10)` and
-a binary64 parameter cannot represent them. All driver arithmetic is mpmath `mpf` at
-dps = 50. After the fix the same Newton reaches residual **5.8e-34**.
+**Cross-family check.** Engines A (polar, angle) and C (Cartesian, time, implicit return)
+produce the *same* cycle positions for Cherkas rows 1, 2, 6, 7, 8 to all printed digits
+(1.2809/2.0070/4.0193, 1.1935/2.0596/3.0896, 1.0504/1.1817/1.5415, 1.5108/2.2316/4.4763,
+1.3573/2.3071/4.1455). Four integrators, two charts, two independent variables.
 
----
+### A representational trap worth recording
 
-## 2. Entering the cusp manifold from the Bautin region (TASK 2) — DONE
+With the parameters carried as Python floats the cusp Newton stagnates at residual
+~1e-17 — not for any numerical-analysis reason, but because its steps are of relative
+size ~1e-25 in `(a11, a01, a10)` and a binary64 parameter cannot represent them. All
+driver arithmetic is mpmath `mpf` at dps = 50. After the fix the same Newton reaches
+residual **5.8e-34**.
 
-At a third-order weak focus (`a11 = 4-2a`, `a01 = 2a+1-a11`, `a10` as in Cherkas eq.(16))
+## II.1 Entering the cusp manifold from the Bautin region (TASK 2) — DONE
+
+At a third-order weak focus (`a11 = 4-2a`, `a01 = 4a-3`, `a10 = (6(a^2-a-2)+a20(6a-7))/(1-3a)`)
 the displacement satisfies `D(r) ~ d7 r^7`. Measured at `(a,a20) = (3,-12)`:
 `D/r^7 = -1.537, -1.392, -1.153` at `r = 0.01, 0.02, 0.04` — the expected 7th-order
-contact, so `d7 ~ -1.5`.
+contact, so `d7 ≈ -1.5`.
 
-Seeding Newton on `(D, D_x, D_xx) = 0` in `(a11, a01, a10)` at fixed `x0 = 1 + r0`
-from the weak-focus point (the Bautin shift is `O(r0^2)` in `V5`, `O(r0^4)` in `V3`,
-`O(r0^6)` in `V1`) converges in 5 iterations to residual 5.8e-34 for every shape tried.
-Example, `(a, a20) = (3, -12)`, `r0 = 0.02`:
+Newton on `(D, D_x, D_xx) = 0` in `(a11, a01, a10)` at fixed `x0 = 1 + r0`, seeded from
+the weak-focus point (the Bautin shift is `O(r0^2)` in `V5`, `O(r0^4)` in `V3`, `O(r0^6)`
+in `V1`), converges in 5 iterations to residual 5.8e-34 for every shape tried. Example,
+`(a, a20) = (3, -12)`, `r0 = 0.02`:
 
 ```
 a11 = -1.998494677833741331488579457852263
@@ -90,14 +161,14 @@ a10 = 13.504422527141653959512639631905580
 D = -5.8e-34   D_x = -3.1e-33   D_xx = -1.3e-32   D_xxx = -9.4920440228e-6
 ```
 
-`D_xxx` at entry agrees with the Bautin prediction `48 r0^4 d7` (`-1.15e-5` with the
-measured `d7 ~ -1.5`) in sign and order of magnitude, as it must.
+`D_xxx` at entry agrees with the Bautin prediction `48 r0^4 d7 = -1.15e-5` in sign and
+order of magnitude, as it must.
 
 ### The triple cycle is real at NORMAL amplitude
 
-Taking the cusp point at `x0 = 2.2654` on the `(a, a20) = (3, -12)` curve and perturbing
-into the cuspidal region (`delta_mu ~ 1e-3`, chosen so that `c1 * D_xxx < 0`) gives
-**three certified sign changes of `D`** in one nest:
+Taking the cusp point at `x0 = 2.2654` on the `(a, a20) = (3, -12)` cusp curve and
+perturbing into the cuspidal region (`delta_mu ~ 1e-3`, chosen so `c1 * D_xxx < 0`)
+gives **three certified sign changes of `D`** in one nest:
 
 | root | bracket `min|D|` | two-tolerance noise | margin |
 |---|---|---|---|
@@ -105,20 +176,18 @@ into the cuspidal region (`delta_mu ~ 1e-3`, chosen so that `c1 * D_xxx < 0`) gi
 | 2.21812962597053274330530 | 2.46e-8 | 1.11e-11 | 2220× |
 | 2.27153111659064560853597 | 2.39e-8 | 1.14e-11 | 2100× |
 
-(PROTOCOL rule 1 satisfied; noise estimated by recomputation at looser tolerance,
-`noise = 10|difference| + 5e-12 s`.) The cycles sit at `x ≈ 2.13–2.27`, i.e. they are of
-normal size, not small-amplitude. `triple_confirm_row1.json`.
+PROTOCOL rule 1 satisfied (noise from recomputation at looser tolerance,
+`noise = 10|difference| + 5e-12 s`). The cycles sit at `x ≈ 2.13–2.27`: normal size,
+not small-amplitude. `data`: `triple_confirm_row1.json`.
 
----
+## II.2 Continuation of the cusp curve (TASK 3) — IN PROGRESS
 
-## 3. Continuation of the cusp curve (TASK 3) — IN PROGRESS
-
-Pseudo-arclength continuation in `(a11, a01, a10, x0)` at fixed `(a, a20)`, with a
-chord Newton (frozen 3×4 Jacobian, refreshed every 4 iterations) for speed and an exact
-Jacobian recomputed at any candidate event. Every accepted point logs `D, D_x, D_xx,
-D_xxx, D_xxxx`, `nu = D_xxx/(D_xxxx r0)` (a scale-free distance to a swallow-tail),
-`V1`, `L = det J(A)`, the return time, the transversality of the section crossing, and
-Perko's nondegeneracy Jacobians with `mu1 = a11` (Cherkas's *rotating* parameter, so
+Pseudo-arclength continuation in `(a11, a01, a10, x0)` at fixed `(a, a20)`, chord Newton
+(frozen 3×4 Jacobian, refreshed every 4 iterations; exact Jacobian recomputed at any
+candidate event). Every accepted point logs `D, D_x, D_xx, D_xxx, D_xxxx`,
+`nu = D_xxx/(D_xxxx r0)` (a scale-free distance to a swallow-tail), `V1`,
+`L = det J(A)`, the return time, the transversality of the crossing, and Perko's
+nondegeneracy Jacobians with `mu1 = a11` (Cherkas's *rotating* parameter, so
 `d_{mu1} != 0` is guaranteed by Duff/Perko monotonicity).
 
 ### Cherkas shapes, rows 1–4 (stopped at budget, not at a curve end)
@@ -132,20 +201,21 @@ Perko's nondegeneracy Jacobians with `mu1 = a11` (Cherkas's *rotating* parameter
 
 Two clearly different behaviours:
 
-* **rows 1 and 2** — the curve runs out in amplitude without bound (`x0` past 10 and 13),
+* **rows 1 and 2** — the curve runs out in amplitude without bound (`x0` past 10 and 13);
   `|D_xxx|` rises to a maximum (−5.9e−2 at `x0 ≈ 2.27` for row 1; +3.2e−3 at `x0 ≈ 2.87`
   for row 2) and then decays monotonically toward zero **without changing sign**. `L`
   stays positive (antisaddle preserved) and the section stays strongly transversal
-  throughout. These runs were stopped by budget, not by a curve end.
+  throughout. Stopped by budget, not by a curve end.
 * **rows 3 and 4** — `x0` stalls near 1.39 while `a11` and `|D_xxx|` blow up. The curve
-  is running into a boundary in parameter space rather than in amplitude.
+  runs into a boundary in parameter space, not in amplitude. Part I's independent
+  finding that the `x>1` return domain for the row-3 *seed* ends at `x = 1.3475` on a
+  genuine separatrix is very likely the same boundary.
 
 **No `D_xxx` sign change on any of the four.** Rows 5–8 and the (a, a20) grid are running.
 
-### The grid (running)
+### The structure that organises the search
 
-`grid.py` records the structural fact that organises the search. On the third-order
-stratum,
+On the third-order stratum,
 
 ```
 V7 = -150 (a-2) [ -4a(a+1)(a-2)^2 + a20 (a-1)(2a+1)^2 ]
@@ -162,79 +232,58 @@ admissible region only for roughly `a ∈ (-3, -0.5)` and `a ∈ (1/3, 1)`:
 | `a20_c` | −7.05 | −6.00 | −5.42 | −4.74 | −3.68 | 0.00 | 0.00 | −1.98 | −2.95 | −3.38 | −3.89 | −4.95 | −10.56 | 20.6 | 0.47 | 0.49 | 2.23 |
 | reachable | no | no | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | **yes** | no | no | no | no |
 
-All eight Cherkas shapes sit on one side of the centre curve or in a region where it is
-unreachable — which is consistent with all four completed curves showing a constant
-`D_xxx` sign. The running grid straddles the centre curve at 16 values of `a` with
-offsets ±0.08, ±0.3, ±1.0, plus a band sweep at the 8 unreachable `a` values: 116 grid
-jobs + rows 5–8.
+All eight Cherkas shapes lie on one side of the centre curve or where it is unreachable —
+consistent with all four completed curves showing a constant `D_xxx` sign. The running
+grid straddles the centre curve at 16 values of `a` with offsets ±0.08, ±0.3, ±1.0, plus
+a band sweep at the 8 unreachable `a` values: 116 grid jobs + rows 5–8, 120 continuation
+points each.
 
-### A negative result worth recording: no swallow-tail at small amplitude
+## II.3 A negative result: no swallow-tail at small amplitude
 
-Seeding the square swallow-tail system `(D, D_x, D_xx, D_xxx) = 0` in
-`(a11, a01, a10, a20)` at fixed `(a, x0)` from a *small-amplitude* cusp point
-(`a = 3`, `x0 = 1.02`) makes the Newton run `a20 → -oo` (it reached −4.6e5 with `a10`
-→ +6.3e5 and the residual still decreasing like 1/|a20|). This is not a solver failure:
-at small amplitude `D_xxx = 48 d7 r0^4`, and `d7 = 0` only on the centre variety, where
-`D` vanishes identically. **A nondegenerate swallow-tail cannot live at the
-small-amplitude end of the Bautin unfolding.** It must be sought at normal amplitude —
-which is exactly what this lane is set up to do.
+With `a20` as a fourth unfolding parameter the swallow-tail system
+`(D, D_x, D_xx, D_xxx) = 0` in `(a11, a01, a10, a20)` is **square** at fixed `(a, x0)`.
+Seeded from a *small-amplitude* cusp point (`a = 3`, `x0 = 1.02`) the Newton runs
+`a20 → -∞` (reached −4.6e5, with `a10 → +6.3e5`, residual still decreasing like
+`1/|a20|`). This is not a solver failure: at small amplitude `D_xxx = 48 d7 r0^4`, and
+`d7 = 0` only on the centre variety, where `D` vanishes identically.
 
----
-
-## 4. Engine validation (PROTOCOL rule 7) — re-running
-
-First pass (right-hand section only) reproduced **3 cycles in the nest** at the published
-parameters for rows 1, 2, 6, 7, 8, with positions ~1.5 % from the published values.
-The discrepancy is explained, not waved away: the 3-cycle window in `a11` is narrower
-than 1e-3, and the paper quotes `a11` to 4–6 digits. At `(a,a20)=(3,-12)`, `a01=8.4`,
-`a10=15.28`:
-
-| `a11` | certified cycles |
-|---|---|
-| −1.400 | 0 (V1 = 0 exactly — the Hopf) |
-| −1.399 | 1 |
-| **−1.398 (published)** | **3** at 1.2809, 2.0070, 4.0193 |
-| −1.397 | 0 |
-| −1.396 | 0 |
-
-So the engine reproduces the delicate three-cycle structure at exactly the published
-`a11` and nowhere else — a sharper validation than matching the rounded positions.
-Rows 3, 4, 5 have their published crossings at `x < 1`, i.e. on the **other** ray of
-`y = -1` from the focus; they are being re-run with the left section, together with
-row 4's published Andronov–Hopf polynomial check (2 extrema on [0.6, 0.9]) and the
-fold check (`D_xx` from the jet vs a centred difference of `D_x`).
+> **A nondegenerate swallow-tail cannot live at the small-amplitude end of the Bautin
+> unfolding.** It must be sought at normal amplitude — which is what the continuation is
+> for. This closes off the one place where an explicit formula would have handed the
+> answer over, and it is worth recording so nobody re-derives it.
 
 ---
 
-## 5. Open problems / next steps
+## Open problems / next steps
 
-1. Finish the (a, a20) grid and tabulate `sgn D_xxx` at the near and far ends of every
-   cusp curve. A shape where the two differ contains a swallow-tail.
-2. Rows 1 and 2 show `|D_xxx| → 0` as `x0 → ∞` **without a sign change**. Determine
-   whether that decay is asymptotic (no swallow-tail, and the cusp curve simply escapes
-   to infinite amplitude) or whether the curve ends at a graphic first. `nu =
-   D_xxx/(D_xxxx r0)` is now logged precisely to tell these apart.
-3. Rows 3 and 4 end with `a11` blowing up at nearly constant `x0`. Identify the
-   boundary: a graphic, a loss of the antisaddle, or a chart failure.
-4. Run the swallow-tail Newton (with `a20` free) from far-amplitude cusp points across
-   the whole grid, not just from the small-amplitude entry where it provably cannot work.
-5. Log the Andronov–Hopf/`beta*` picture at each cusp point for Lane 1 (implemented in
-   `probe.ah_sweep`; not yet run over the grid).
+1. Finish the (a, a20) grid; tabulate `sgn D_xxx` at the near and far end of every cusp
+   curve. A shape where the two differ contains a swallow-tail.
+2. Rows 1 and 2 show `|D_xxx| → 0` as `x0 → ∞` **without a sign change**. Decide whether
+   that decay is asymptotic (no swallow-tail; the cusp curve escapes to infinite
+   amplitude) or whether the curve ends at a graphic first. `nu = D_xxx/(D_xxxx r0)` is
+   now logged to tell these apart.
+3. Rows 3 and 4 end with `a11` blowing up at nearly constant `x0`. Identify the boundary
+   (Part I's separatrix at `x ≈ 1.3475` is the leading candidate).
+4. Run the swallow-tail Newton (with `a20` free) from **far-amplitude** cusp points
+   across the whole grid.
+5. Log the Andronov–Hopf/`beta*` picture at each cusp point for Lane 1 (`probe.ah_sweep`
+   is implemented; not yet run over the grid).
 
 ---
 
-## 6. Files
+## Files
 
 | file | what |
 |---|---|
-| `lane2_cusp_2026_09_06/cusp_engine.cpp` | the Taylor-jet return-map engine (binary128 / long double, jet degree 3 or 4) |
-| `lane2_cusp_2026_09_06/engine.py` | mpmath-precision driver |
-| `lane2_cusp_2026_09_06/indep_engine.py` | independent mpmath integrator (rule 2 cross-check) |
-| `lane2_cusp_2026_09_06/cusp.py` | cusp residual, Jacobians, Newton, pseudo-arclength |
-| `lane2_cusp_2026_09_06/continue_cusp.py` | the continuation driver + JSONL ledger |
-| `lane2_cusp_2026_09_06/swallow.py` | square swallow-tail Newton + Perko Thm 4.3 quantities |
-| `lane2_cusp_2026_09_06/probe.py` | rule-1 cycle counting, cusp unfolding, `AH(x)` |
-| `lane2_cusp_2026_09_06/grid.py`, `make_grid_spec.py` | the (a, a20) grid and the centre curve |
-| `lane2_cusp_2026_09_06/validate.py` | PROTOCOL rule 7 validation |
-| `lane2_cusp_2026_09_06/analyse.py` | ledger summariser |
-| `lane2_cusp_2026_09_06/ledger/`, `ledger_grid/` | append-only JSONL ledgers |
+| `engine/cusp128.cpp`, `engine/cusp128`, `engine/eng.py` | engine A (polar chart, fixed-ray section) |
+| `engine/engB.py` | engine B (mpmath, Cartesian, time) |
+| `validate_seeds.py`, `data/validation_cherkas.json`, `ah_row4.py`, `data/ah_row4.json` | Part I validation |
+| `cusp_engine.cpp`, `engine.py` | engine C (Cartesian Taylor jet, degree 3 or 4, implicit return) |
+| `indep_engine.py` | engine D (independent mpmath integrator) |
+| `cusp.py` | cusp residual, Jacobians, Newton, pseudo-arclength |
+| `continue_cusp.py`, `campaign.py` | the continuation driver + JSONL ledger |
+| `swallow.py` | square swallow-tail Newton + Perko Thm 4.3 quantities |
+| `probe.py` | rule-1 cycle counting, cusp unfolding, `AH(x)` |
+| `grid.py`, `make_grid_spec.py` | the (a, a20) grid and the centre curve |
+| `validate.py`, `analyse.py` | rule-7 validation; ledger summariser |
+| `ledger/`, `ledger_grid/` | append-only JSONL ledgers |
