@@ -12,7 +12,12 @@ Across 125 continued cusp curves **no multiplicity-four limit cycle was found**.
 apparent `D_xxx` sign changes are centre-variety artifacts (§II.4) — a false-positive
 trap that anyone repeating this search will hit. The curves end either by escaping to
 infinite amplitude (`a > 1/3`) or by pressing the triple cycle against the nest's
-bounding graphic (`a < 0`) — §II.5.
+bounding graphic (`a < 0`) — §II.5. §II.7 then reformulates the target: across
+15 289 cusp records `sgn(V1)·sgn(D_xxx) < 0` without exception, and that lock can
+only break at a swallow-tail or at `V1 = 0` — a Hopf at the focus, which is an
+**algebraic** condition. "A cusp point whose focus is simultaneously weak" is a
+cheaper and equally sufficient target than the swallow-tail, and it is where the
+next session should start.
 
 > **Two Lane-2 sessions have been running in parallel and this branch is their merge.**
 > Session `01MY79ob…` built engine **A/B** (`lane2_cusp_2026_09_06/engine/`) and did the
@@ -420,6 +425,81 @@ been characterised.
 
 **On no curve did `D_xxx` approach zero for any reason other than the centre
 variety.**
+
+
+## II.7 ★ THE SIGN LOCK, AND A SECOND ROUTE TO FOUR IN ONE NEST ★
+
+Perko's swallow-tail is a **sufficient** local mechanism for four simple cycles in
+one nest, not the only one. In Cherkas's Andronov–Hopf picture four cycles
+correspond to `AH(x) = a11` having **three** interior extrema; extrema of `AH` are
+folds (`D_x = 0`) and cusps create them in **pairs**, so parity is preserved and
+three extrema can arise either by three merging at a swallow-tail **or** by a cusp
+creating a pair alongside a pre-existing extremum elsewhere in the nest.
+
+The second route is testable directly on every cusp point already computed, and
+the test costs nothing. On the right section:
+
+* just outside the focus, `D ~ (exp∫div − 1)(x−1)`, so `sgn D = sgn V1`;
+* just inside the cusp point, `D ~ (1/6) D_xxx (x−x0)^3` with `x < x0`, so
+  `sgn D = −sgn D_xxx`.
+
+Hence `D` has an **odd number of extra zeros between the focus and the triple
+cycle** — a fourth limit cycle in the same nest, once the cusp is unfolded into
+three — exactly when
+
+```
+sgn(V1) * sgn(D_xxx)  >  0.
+```
+
+`V1` and `D_xxx` are logged at every accepted point, so this is a pure
+post-processing query over the ledgers. The result:
+
+> **Over all 15 289 non-degenerate cusp records computed in this lane, on 125
+> curves spanning the whole admissible `(a, a20)` region, `sgn(V1)·sgn(D_xxx)`
+> is NEGATIVE without a single exception.**
+
+That is not an accident. At the Bautin entry the triple cycle has
+`d1 = −r0^6 d7` and `D_xxx = 48 d7 r0^4`, so `sgn(V1) = −sgn(D_xxx)` is forced
+there; and the product is a continuous nonvanishing function along the cusp
+curve, so it can only flip where one of its factors vanishes:
+
+* **`D_xxx = 0`** — the swallow-tail. §II.4 shows this is unreachable from the
+  Bautin end (the only zeros encountered are on the centre variety), and §II.5
+  shows it does not happen at either kind of curve endpoint either.
+* **`V1 = 0`** — a Hopf bifurcation at the focus. **This is a purely algebraic
+  condition**, `V1 = a11 + a01 − 2a − 1 = 0`, costing no integration at all.
+
+So the lane's target can be restated, and cheapened, as:
+
+> **find a point of the cusp manifold at which the focus is simultaneously weak.**
+
+Crossing `V1 = 0` along the cusp manifold flips the sign lock and puts a fourth
+cycle inside the triple. **Bautin is not violated**: only one of the four cycles
+bifurcates from the focus; the other three sit at `x0`, of normal size. (This is
+also structurally the natural generalisation of Cherkas's own construction, which
+got three from one Hopf cycle plus a fold pair; four would be one Hopf cycle plus
+a cusp triple.)
+
+### Status of that target
+
+`V1` is essentially zero at the Bautin entry (`7.5e-11` for row 1) — but that is
+the degenerate `r0 → 0` branch, where `V1 = −r0^6 d7` and Bautin caps the count
+at three. Along every computed curve `|V1|` then grows **monotonically and
+without changing sign** (row 1: `7.5e-11 → 0.053`; row 2: `−1.3e-12 → −9.8e-3`).
+So a normal-amplitude branch with `V1 = 0`, if it exists, is not reached by
+continuing in amplitude at fixed shape.
+
+Two solvers are implemented for it and are the natural next step:
+
+* `cusp_v1.py` — impose `V1 = 0` exactly by slaving `a01 = 2a + 1 − a11`, leaving
+  the square system `(D, D_x, D_xx) = 0` in `(a11, a10, a20)` at fixed `(a, x0)`.
+  Direct Newton from the row-1 cusp points does **not** converge (residual
+  stalls at `9.1e-5`), so the constraint is not satisfiable near those points.
+* `v1_homotopy.py` — walk `V1` to zero *along* the cusp manifold: unknowns
+  `(a11, a01, a10, a20)`, equations `(D, D_x, D_xx, V1 − t)`, with the fourth
+  Jacobian row exact (`dV1/du = (1,1,0,0)`), stepping `t` from `V1(seed)` to 0.
+  The centre-variety amplitude guard is wired in, because a homotopy that
+  reaches `V1 = 0` by degenerating to a centre would prove nothing.
 
 ---
 
