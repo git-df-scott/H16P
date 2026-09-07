@@ -142,13 +142,41 @@ def residual(a, a20, x, r0, phi=0.0, s_ref=None, window=None):
         f = fit_window(L, phi, s_ref)
     else:
         f = taylor_D(L, phi, window[0], window[1])
-    if f is None or f["c7"] == 0.0:
+    if f is None or f["c7"] == 0.0 or not fit_is_sane(f, L, phi):
         return None, None
     c7 = f["c7"]
-    F = np.array([(f["c1"] + r0 ** 6 * c7) / abs(c7),
-                  (f["c3"] - 3.0 * r0 ** 4 * c7) / abs(c7),
-                  (f["c5"] + 3.0 * r0 ** 2 * c7) / abs(c7)])
+    # Scale each condition by the size of its OWN two terms, never by |c7|.
+    # Dividing by |c7| makes every component small whenever the fit blows c7 up,
+    # so a solver can "descend" by driving the fit degenerate instead of by
+    # finding a cusp: a run that reported F = (4e-15, -8e-10, +4.8e-05) ->
+    # (-8e-11, 6e-09, -4.4e-05), an apparent sign change bracketing a cusp, was
+    # at a point where the fit had returned c7 = 1.8e+08 and c5 = -1.6e+04.
+    # Scaled this way each component lies in [-1, 1] and is small only when the
+    # two terms genuinely cancel.
+    def rel(u, v):
+        d = abs(u) + abs(v)
+        return 0.0 if d == 0.0 else (u + v) / d
+    F = np.array([rel(f["c1"], r0 ** 6 * c7),
+                  rel(f["c3"], -3.0 * r0 ** 4 * c7),
+                  rel(f["c5"], 3.0 * r0 ** 2 * c7)])
     return F, f
+
+
+def fit_is_sane(f, L, phi, tol_resid=1e-3, dom=0.3):
+    """Reject a fit whose s^7 term is not actually visible in the window.
+
+    Away from a weak focus, D is dominated by c1 s across the whole usable
+    window and c3, c5, c7 are unconstrained: a degree-5 least squares will
+    happily return c7 = 1.8e+08.  Require the s^7 term to carry at least `dom`
+    of |D| at the top of the window, and the fit residual to be small.
+    """
+    if f is None or f["rel_resid"] > tol_resid:
+        return False
+    s = f["s_hi"]
+    terms = [abs(f["c1"]) * s, abs(f["c3"]) * s ** 3,
+             abs(f["c5"]) * s ** 5, abs(f["c7"]) * s ** 7]
+    tot = sum(terms)
+    return tot > 0 and terms[3] / tot >= dom
 
 
 def third_order_seed(a, a20):
@@ -214,3 +242,41 @@ def newton(a, a20, x0, r0, phi=0.0, iters=12, tol=1e-6, hstep=2e-3,
                         F=F.tolist())
     return dict(ok=False, why="no_convergence", x=x.tolist(),
                 F=F.tolist(), it=iters)
+
+
+def bracket_solve(a, a20, xa, xb, r0, window, phi=0.0, iters=40, tol=1e-7):
+    """Land the cusp by bisecting the governing residual along a segment.
+
+    Newton brackets the cusp and then stalls, because its Jacobian is finite
+    differenced from a fitted quantity and stops being reliable once |F3| is
+    down at the fit's own noise on c5.  But F1 and F2 are already at 1e-11 and
+    6e-9 by then and the whole residual is F3, which is smooth and monotone
+    along the path -- so a one-dimensional bisection lands it with no Jacobian
+    at all.  `xa` and `xb` must give F3 of opposite signs.
+    """
+    xa, xb = np.array(xa, float), np.array(xb, float)
+    Fa, _ = residual(a, a20, xa, r0, phi, window=window)
+    Fb, _ = residual(a, a20, xb, r0, phi, window=window)
+    if Fa is None or Fb is None:
+        return dict(ok=False, why="endpoint_unresolved")
+    if Fa[2] * Fb[2] >= 0:
+        return dict(ok=False, why="not_bracketed",
+                    F3=[float(Fa[2]), float(Fb[2])])
+    for it in range(iters):
+        xm = 0.5 * (xa + xb)
+        Fm, fm = residual(a, a20, xm, r0, phi, window=window)
+        if Fm is None:
+            return dict(ok=False, why="unresolved", x=xm.tolist(), it=it)
+        if abs(Fm[2]) < tol:
+            return dict(ok=True, x=xm.tolist(), F=Fm.tolist(), fit=fm, it=it)
+        if Fa[2] * Fm[2] < 0:
+            xb, Fb = xm, Fm
+        else:
+            xa, Fa = xm, Fm
+        if np.linalg.norm(xb - xa) < 1e-13 * (1 + np.linalg.norm(xa)):
+            break
+    xm = 0.5 * (xa + xb)
+    Fm, fm = residual(a, a20, xm, r0, phi, window=window)
+    return dict(ok=(Fm is not None and abs(Fm[2]) < 10 * tol),
+                why="tolerance_floor", x=xm.tolist(),
+                F=(Fm.tolist() if Fm is not None else None), fit=fm, it=iters)

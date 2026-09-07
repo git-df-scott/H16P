@@ -174,41 +174,45 @@ not the tolerance: the binary128 build is Dormand-Prince 5(4), so `rtol 1e-20`
 costs 4.4 s per return against 0.12 s at 1e-18.  An order-8 scheme in the quad
 build would cut that by about two orders of magnitude.
 
-### Where the continuation actually got to
+### Where the continuation actually got to -- and the four ways it fails silently
 
-Run on `(a, a20) = (-2, -1)` from the exact `r0 = 0` point
-`x0 = (a11, a01, a10) = (8, -11, 6.142857)`, fixed fit window
-`s in [4.83e-03, 1.01e-02]`, `c7 = 4.09999`, target `r0 = 4e-3`:
+**No cusp has been continued.**  The calibrated *fit* works (table above); the
+*solver* around it does not yet.  An earlier run appeared to bracket a cusp and
+that was retracted -- see the retraction in `REPORT_lane1.md`.  Four separate
+failure modes were found, and every one of them produces a plausible-looking
+result rather than an error:
 
-    start   x = (8.000000, -11.000000, 6.142857)   F3 = +4.78e-05
-    6 accepted descent steps
-    end     x = (7.589915, -10.597467, 5.941706)   F3 = -4.38e-05
+1. **Residual scaled by `|c7|`.**  This was the one that produced a false
+   bracket.  Dividing each condition by `|c7|` makes all three components small
+   whenever the fit inflates `c7`, so the solver descends by driving the fit
+   degenerate.  The apparent sign change `+4.78e-05 -> -4.38e-05` occurred at a
+   point where the fit returned `c7 = 1.8e+08`, `c5 = -1.6e+04`, and the field
+   has no cycle at all.  Now scaled as `(u + v)/(|u| + |v|)` per condition, and
+   `fit_is_sane` rejects a fit whose `s^7` term is under 30% of `|D|` at the top
+   of the window.
+2. **The fit window re-selected per evaluation.**  `fit_window` picks among a
+   discrete list by residual, so re-selecting makes `c5` discontinuous in the
+   parameters and no finite-difference Jacobian survives.  Symptom: `no_descent`
+   at iteration 0 with a residual nowhere near tolerance.  Pass
+   `window=(s_lo, s_hi)` and hold it fixed for the whole solve.
+3. **Jacobian differencing step below the fit noise.**  `hstep = 1e-5` gives
+   derivative estimates dominated by the ~1e-6 relative noise on the fitted
+   coefficients; the first step moved `a11` from 8.0 to 5.4 and left the domain.
+   `2e-3` is above the noise and still linear.
+4. **Uncapped, unbacktracked steps.**  Cap at ~2% of `||x||` and accept only a
+   decrease in `||F||`.
 
-**`F3` changes sign, so the cusp is bracketed on the path Newton walked.**  It
-then reports `no_descent`: the Jacobian is finite differenced from a fitted
-quantity, and once `|F3|` is down at the scale of the fit noise on `c5` the
-direction is no longer reliable, so every backtracked step increases `||F||`.
-
-Landing it does not need a better Jacobian, it needs a one-dimensional solve.
-`F1` and `F2` are already at `1e-11` and `6e-9` and are not the difficulty --
-the whole residual is `F3`, and it is monotone along the accepted path.  So:
-keep the accepted step direction from the last successful iteration, and
-bracket-and-bisect `F3` along it.  That is a dozen lines on top of what is
-there, and each evaluation is one `taylor_D` call (about 2 s at the fixed
-window).
-
-Three step-control facts, each of which cost a run to find:
-
-  * `hstep = 1e-5` for the Jacobian gives derivative estimates dominated by the
-    fit noise; the first step then moved `a11` from 8.0 to 5.4 and left the
-    domain.  `2e-3` is above the noise and still linear.
-  * The step must be capped (2% of `||x||`) and backtracked on `||F||`, not
-    taken raw.
-  * **The fit window must be frozen for the whole solve.**  `fit_window`
-    selects among a discrete list by residual, so re-selecting per evaluation
-    makes `c5` a discontinuous function of `x` and no finite-difference
-    Jacobian survives it -- the symptom is `no_descent` at iteration 0 with a
-    residual that is nowhere near the tolerance.  Pass `window=(s_lo, s_hi)`.
+Under the corrected residual the `r0 = 0` point sits at `F ~ (0.99, -0.99,
+0.99)` for a target of `r0 = 4e-3`: honest, because each condition is then
+entirely dominated by its target term.  So the continuation must step `r0` up
+from zero in genuinely small increments with a predictor, rather than jumping
+to a finite `r0` and hoping Newton walks there.  That, plus a `taylor_D`
+accurate enough at small `s` to resolve `c5` against `3 r0^2 c7`, is what
+remains.  The accuracy lever is the integrator, not the tolerance: the
+binary128 build is Dormand-Prince 5(4), so `rtol 1e-20` costs 4.4 s per return
+against 0.12 s at 1e-18.  An order-8 scheme in the quad build would buy about
+two orders of magnitude and let the fit window reach small enough `s` to pin
+`c5` directly.
 
 ### Then the actual question
 

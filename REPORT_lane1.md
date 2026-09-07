@@ -458,17 +458,32 @@ relative weighting (`D/s` spans seven decades, and the small-`s` points that
 pin `c5` carry no weight in an unweighted fit), and fitting the `O(s^9)` tail
 rather than letting `c5` absorb it.
 
-**The continuation then moves and brackets the cusp.**  From the exact `r0 = 0`
-point of the manifold at `(a, a20) = (-2, -1)`, target `r0 = 4e-3`, six
-accepted descent steps take `(a11, a01, a10)` from `(8, -11, 6.142857)` to
-`(7.589915, -10.597467, 5.941706)` and the governing residual `F3` from
-`+4.78e-05` through zero to `-4.38e-05`.  `F1` and `F2` are at `1e-11` and
-`6e-9` throughout.  Newton then stalls: its Jacobian is finite differenced from
-a fitted quantity, so once `|F3|` reaches the fit's own noise on `c5` the
-direction is unreliable.  Landing it is a one-dimensional bracket along the
-last accepted step, not a better Jacobian; the recipe and the three step-control
-traps are written up in `lane1/RESUME.md`.
+### RETRACTION: the "bracketed cusp" reported earlier was an artefact
 
-**This is a bracketed cusp, not a cycle count, and certainly not a
-counterexample.**  What it buys is the first working handle on the manifold
-PROTOCOL section (c) says has never been continued.
+An earlier version of this section, and the commit message of `c303e18`, said
+that the continuation had bracketed a cusp: six accepted descent steps taking
+the residual `F3` from `+4.78e-05` through zero to `-4.38e-05`.  **That is
+wrong and is withdrawn.**  Re-evaluating the fit at the endpoint shows the
+least-squares had returned `c7 = 1.8e+08` and `c5 = -1.6e+04` there -- the
+point is not near a weak focus, `D` is dominated by `c1 s` across the whole
+window, and `c3, c5, c7` are unconstrained noise.
+
+The cause was my own residual scaling.  I had divided each condition by
+`|c7|`, which makes every component small whenever the fit inflates `c7`, so
+the solver could "descend" by driving the fit degenerate instead of by
+approaching a cusp.  The sign change was in the scaling, not in the
+mathematics.  The field at that endpoint has **no cycle at all**: zero sign
+changes of `D` over six decades of `s`, and `beta*` has zero interior extrema.
+
+Fixed in `bautin2.py`: each condition is now scaled by the size of its own two
+terms, `(u + v)/(|u| + |v|)`, so it lies in `[-1, 1]` and is small only when
+the two terms genuinely cancel; and `fit_is_sane` rejects any fit whose `s^7`
+term does not carry at least 30% of `|D|` at the top of the window.  Under the
+corrected residual the spurious endpoint is rejected outright.
+
+**So the state of the cusp continuation is: the calibrated FIT is built and
+validated (the table above), the solver around it is not yet working, and no
+cusp has been continued.**  What was learned is a list of four ways this
+particular solve goes wrong silently, which is in `lane1/RESUME.md`.  Nothing
+about cycle counts changes: no field in any campaign has three interior
+extrema of `beta*`.
