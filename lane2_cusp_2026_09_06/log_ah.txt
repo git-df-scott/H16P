@@ -1,0 +1,1 @@
+cusp x0=1.51839079   : AH defined at 9/41 samples, 0 interior extrema  (245s)

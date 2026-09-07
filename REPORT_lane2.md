@@ -501,6 +501,27 @@ Two solvers are implemented for it and are the natural next step:
   The centre-variety amplitude guard is wired in, because a homotopy that
   reaches `V1 = 0` by degenerating to a centre would prove nothing.
 
+  **Result on the `a = 3`, `x0 = 1.5184` seed:** the homotopy gets `10.6 %` of the
+  way (`V1: 6.010e-4 → 5.373e-4`) and then sticks, having paid
+
+  ```
+  a20 : -12      ->  -3537.05        a11 : -1.4137 -> -1.71459
+  L   :  7.2     ->   2091.29        amp :  3.70e-5 (not degenerate)
+  ```
+
+  i.e. **the branch escapes to infinity in `a20`** — the same signature as the
+  small-amplitude swallow-tail Newton of §II.3, and for the same kind of reason.
+  So on that slice there is no bounded cusp point with a weak focus.
+
+  **The likely cause is that the slice is wrong, not that the target is empty.**
+  `{cusp} ∩ {V1 = 0}` is 4 equations in the 6 coordinates, hence **2-dimensional**;
+  fixing both `a` and `x0` cuts it with a 2-parameter slice, which generically
+  meets a 2-dimensional set in isolated points that a local Newton can easily
+  miss, and both solvers above fix `x0`. The untried move is to **let `x0`
+  float**: solve `(D, D_x, D_xx, V1) = 0` in `(a11, a01, a10, x0)` at fixed
+  `(a, a20)` — also square — seeding `x0` right across the nest, then continue
+  the solution in `(a, a20)`. That is where the next session should start.
+
 ---
 
 ## Open problems / next steps
