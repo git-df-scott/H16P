@@ -120,7 +120,7 @@ decade in `s`.  The three cusp conditions are solved exactly (residuals
 `1e-20` to `1e-13`), the unfolding in `(e1, e3)` is closed-form, and the
 `(a, a20, r0)` sweep runs.
 
-### What is wrong, and the fix
+### What was wrong, and the fix -- now built in `bautin2.py`
 
 The printed `V1, V3, V5, V7` are focal values **up to per-field normalisation
 constants**.  Measured against the true leading Taylor coefficient of `D`:
@@ -134,24 +134,45 @@ not the triple-root condition on the true series, which is why the 150 fields
 in `ledger/bautin_*.jsonl` have no triple cycle: `D` has no sign change near
 the focus on any of them.
 
-Calibrate numerically instead, which removes the constants entirely:
+`bautin2.py` measures the true coefficients instead, and no normalisation
+constant survives that.  It is written and validated; what remains is to run
+the continuation with it.
 
-1. For a candidate `(a, a20, a11)`, fit the true coefficients of
-   `D(s) = c1 s + c3 s^3 + c5 s^5 + c7 s^7` on a log grid near the focus, in
-   **binary128** (`E.d_curve_quad`, `rtol` 1e-20) and **with the two-tolerance
-   gate**: keep only the points where `|D| > 30 * noise`.  Without that gate the
-   fit is nonsense -- a first pass at the slope check above returned 5.03
-   instead of 7.10 purely from points below the binary128 floor.
-2. `c1` and `c3` are affine in `a01` and `a10` respectively (through `V1` and
-   `V3`), so two extra fits at displaced `a01`, `a10` give the exact affine
-   maps and the triple-root conditions `c1 = -r0^6 c7`, `c3 = 3 r0^4 c7` become
-   a 2x2 linear solve.
-3. `c5 = -3 r0^2 c7` is then one scalar equation in `a11`; bracket and bisect
-   it exactly as `bautin.triple_cycle_field` already does, but on `c5` and `c7`
-   rather than on `V5` and `V7`.
-4. Confirm the construction before trusting it: `D` must show a sign change at
-   the triple cycle, and unfolding by `(e1, e3)` must open three sign changes in
-   a cusped wedge.  Only then continue `r0` upward.
+    bautin2.taylor_D(L, phi, s_lo, s_hi)      # c1, c3, c5, c7 of D(s)
+    bautin2.fit_window(L, phi, s_ref)         # picks the window, ~8 s
+    bautin2.third_order_seed(a, a20)          # the exact r0 = 0 point
+    bautin2.newton(a, a20, x0, r0)            # the three calibrated conditions
+
+Validated on the third-order family, where the direct measurement gives
+`c7 = 4.0758` and `c5 = 0` exactly:
+
+| a, a20 | window in s | rel resid | c1 | c3 | c5 | c7 |
+|---|---|---|---|---|---|---|
+| -2, -1 | [4.8e-3, 1.0e-2] | 5.3e-07 | -7.7e-17 | 1.3e-11 | -9.3e-07 | 4.09999 |
+| 3, -12 | [5.5e-3, 1.4e-2] | 1.3e-05 | -5.5e-16 | 6.2e-11 | -3.1e-06 | -1.57523 |
+| 1.5, -15 | [1.2e-2, 2.7e-2] | 7.4e-06 | 4.8e-16 | -1.3e-11 | 1.5e-07 | 0.01526 |
+
+`c7` to 0.6% and the spurious `c5` down to 1-7% of the `c7` term.  Three
+things had to be right at once, and each of them silently ruined the fit on
+its own:
+
+1. **The two-tolerance gate.**  `|D|` runs down to `1e-28` while the binary128
+   floor is around `1e-24`.  Ungated, the first pass reported the weak focus as
+   second-order (slope 5.03 instead of 7.10).
+2. **Relative weighting.**  `D/s` spans seven decades across a fit window, so
+   an unweighted least squares is decided entirely by the top of the window --
+   and the small-`s` points are exactly the ones that pin `c5`.  Unweighted,
+   `c5` came out `-1.2e-04` where the truth is 0.
+3. **Fitting the tail.**  A bare cubic in `w = s^2` makes `c5` absorb the
+   `O(s^9)` term.  Degree 5 with a narrow window: `c5` improves by a factor of
+   40 and `c7` from 9% off to 0.6% off.
+
+Cost is 8 s per fit at rtol 1e-18 / 1e-16.  Newton needs four fits per
+iteration, so a solve is a few minutes; a `(a, a20)` grid crossed with an `r0`
+ladder is an overnight run.  If that is too slow, the lever is the integrator,
+not the tolerance: the binary128 build is Dormand-Prince 5(4), so `rtol 1e-20`
+costs 4.4 s per return against 0.12 s at 1e-18.  An order-8 scheme in the quad
+build would cut that by about two orders of magnitude.
 
 ### Then the actual question
 
