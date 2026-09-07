@@ -1,0 +1,13 @@
+619 cusp points from 125 ledgers
+   1/ 619 cusp_row1.jsonl                i=0    x0=1.02000000   nest_end=200.0        certified sign changes=1
+   2/ 619 cusp_row1.jsonl                i=25   x0=1.88627433   nest_end=200.0        certified sign changes=1
+   3/ 619 cusp_row1.jsonl                i=50   x0=3.53041959   nest_end=200.0        certified sign changes=1
+   4/ 619 cusp_row1.jsonl                i=75   x0=5.77855995   nest_end=200.0        certified sign changes=1
+   5/ 619 cusp_row1.jsonl                i=100  x0=8.21613969   nest_end=200.0        certified sign changes=1
+   6/ 619 cusp_row2.jsonl                i=0    x0=1.02000000   nest_end=25.4224190   certified sign changes=1
+   7/ 619 cusp_row2.jsonl                i=25   x0=2.03510540   nest_end=40.2896136   certified sign changes=1
+   8/ 619 cusp_row2.jsonl                i=50   x0=3.38028546   nest_end=71.3418456   certified sign changes=1
+   9/ 619 cusp_row2.jsonl                i=75   x0=4.95263661   nest_end=200.0        certified sign changes=1
+  10/ 619 cusp_row2.jsonl                i=100  x0=6.72026646   nest_end=200.0        certified sign changes=1
+  11/ 619 cusp_row2.jsonl                i=125  x0=8.64018319   nest_end=200.0        certified sign changes=1
+  12/ 619 cusp_row2.jsonl                i=150  x0=10.6759848   nest_end=200.0        certified sign changes=1
