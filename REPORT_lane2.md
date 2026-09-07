@@ -522,14 +522,57 @@ Two solvers are implemented for it and are the natural next step:
   `(a, a20)` — also square — seeding `x0` right across the nest, then continue
   the solution in `(a, a20)`. That is where the next session should start.
 
+
+## II.8 The Andronov-Hopf / beta* picture at a cusp point (TASK 5, for Lane 1)
+
+Cherkas's Andronov-Hopf function `AH(x) = a11` is defined implicitly by
+`D(x; a11 = AH(x)) = 0`, with `a11` the rotating parameter (so `D` is strictly
+monotone in it by Duff/Perko and bisection is safe). Differentiating implicitly,
+
+```
+AH'    = -D_x    / D_a11
+AH''   = -D_xx   / D_a11        (once AH' = 0)
+AH'''  = -D_xxx  / D_a11        (once AH' = AH'' = 0)
+```
+
+so at every cusp point of this lane `AH' = AH'' = 0` and `AH''' != 0`: **AH has a
+degenerate inflection at `x0`.** That is exactly the point at which two interior
+extrema of `AH` merge - the boundary between the "AH has 2 extrema" region
+(3 cycles in the nest) and the "AH has 0 extrema" region (1 cycle).
+
+The bridge to Lane 1 follows immediately:
+
+> Four cycles in the nest <=> `AH` has **three** interior extrema. Extrema of `AH`
+> are folds (`D_x = 0`) and cusps create them **in pairs**, so parity is
+> preserved. Three extrema therefore arise either by three merging at a
+> **swallow-tail** (`AH''' = 0`, this lane's original target) or by a cusp
+> creating a pair alongside a pre-existing extremum elsewhere in the nest (the
+> **(3+1) route** of SS II.7). **Lane 1's search for a third extremum of `beta*`
+> and this lane's swallow-tail are the same event**, and SS II.7 is its other
+> realisation. The `d_{mu1} != 0` that Perko Thm 4.3 needs is exactly
+> `D_a11 != 0`, which Duff's monotonicity guarantees for a rotation parameter -
+> so that nondegeneracy condition is free in this normal form, and the Perko
+> Jacobians logged at every ledger point (`perko`) cover the rest.
+
+`ah_at_cusp.py` produces the numerical picture. **Caveat, recorded honestly:** the
+first run defines `AH` at only 9 of 41 samples on the row-1 cusp at `x0 = 1.5184`
+(0 interior extrema among those). The bisection bracket `a11 +- 0.5` is too narrow
+- `AH` moves further than that across the nest - and the nest's own outer end
+moves as `a11` varies, so samples past it have no return at all. The fix is to
+bracket `a11` adaptively from the previous sample and to recompute `s_max` per
+`a11`; the analytic statements above do not depend on it.
 ---
 
 ## Open problems / next steps
 
-1. **Re-run the whole grid with the centre-variety guard on** (in progress, writing to
-   `ledger_grid2/`). Every curve that previously "found" a swallow-tail should now stop
-   with `end_reason = CENTRE_VARIETY` at a well-defined point, which is itself the
-   answer to "where does the cusp curve end and why".
+1. **Finish re-running the grid with the centre-variety guard on.** Status at the end
+   of this session: the guard is implemented and wired in, and 8 of the 120 shapes were
+   re-run into `ledger_grid2/` before the budget ran out (rows 5-8 and four grid
+   shapes, 140 points each, **0 `D_xxx` sign changes and 0 `nu` sign changes**). The
+   shapes that produced the artifacts in the first pass are the ones *below* the centre
+   curve (offsets `-0.08`, `-0.3`), and those had not been reached. Each of them should
+   now terminate with `end_reason = CENTRE_VARIETY` at a well-defined point, which is
+   itself the answer to "where does the cusp curve end and why".
 2. Map the centre variety inside the cusp manifold explicitly. It is a codimension-0
    component of the same solution set, so it is not an obstacle to be avoided but a
    boundary to be charted: the interesting question is whether a swallow-tail branch
@@ -569,3 +612,39 @@ Two solvers are implemented for it and are the natural next step:
 | `grid.py`, `make_grid_spec.py` | the (a, a20) grid and the centre curve |
 | `validate.py`, `analyse.py` | rule-7 validation; ledger summariser |
 | `ledger/`, `ledger_grid/` | append-only JSONL ledgers |
+
+---
+
+## What this lane established, and what it did not
+
+**Established.**
+
+* An engine that returns `D, D_x, D_xx, D_xxx, D_xxxx` exactly (degree-4 jet, no
+  finite differencing in the amplitude direction), in binary128, agreeing with three
+  other independent integrators — two of them written by a different session in a
+  different chart — to `1e-29` or better.
+* The cusp manifold of triple limit cycles can be entered from the Bautin
+  small-amplitude region by Newton from the third-order weak focus, to residual
+  `5.8e-34`, at every `(a, a20)` tried.
+* It can be continued out to normal amplitude. **A triple limit cycle of normal size
+  is exhibited and certified** under PROTOCOL rule 1 (three sign changes at
+  `x = 2.1294, 2.2181, 2.2715`, each `~2000x` above the two-tolerance noise floor).
+  As far as the literature in `coordination_2026_09_06/` shows, this continuation had
+  not been done before.
+* 125 cusp curves across the admissible `(a, a20)` region carry **no multiplicity-four
+  limit cycle**. All 87 apparent `D_xxx` sign changes are centre-variety artifacts,
+  classified individually (§II.4).
+* The curves end in exactly two ways, both characterised (§II.5).
+* `sgn(V1)·sgn(D_xxx) < 0` on all 15 289 non-degenerate records, which is precisely
+  "no fourth cycle inside the triple", and that lock can only break at a swallow-tail
+  or at a weak focus (§II.7).
+
+**Not established.**
+
+* Nothing here rules a swallow-tail out. The search covered the cusp curves reachable
+  by amplitude continuation from the Bautin entry at 125 shapes, plus shape sweeps at
+  fixed amplitude; that is a 1-parameter family of 1-dimensional slices through a
+  3-dimensional manifold, not the manifold.
+* The `{cusp} ∩ {V1 = 0}` target of §II.7 is **untested in the slice that matters**
+  (`x0` free). Both solvers tried fix `x0`, which over-constrains a 2-dimensional set.
+* No claim whatever is made about `H(2)`.
