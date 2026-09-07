@@ -16,3 +16,8 @@
 
 [0.35] FIRST NEST  engine s-1 = ['1.013494', '1.588052', '2.237022']
             detector s-1 = ['1.013497', '1.588046', '2.237025']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20279, 0.31223) trace -5.81727 det 161.58661
+            detector cycles at d = []  (samples 300, reach 3.00)
+
+[0.50] FIRST NEST  engine s-1 = ['0.779407', '1.588052', '2.545427']
+            detector s-1 = ['0.779408', '1.588049', '2.545429']  (samples 300, reach 3.00)  -> AGREES
