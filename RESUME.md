@@ -78,10 +78,33 @@ strings, `D, D_x, D_xx, D_xxx, D_xxxx`, `nu = D_xxx/(D_xxxx r0)`, the weighted r
 return time, transversality, `V1`, `L = det J(A)`, and Perko's Thm 4.3 nondegeneracy
 Jacobians (`perko`).
 
+## READ THIS BEFORE TRUSTING ANY SIGN CHANGE
+
+`{D = D_x = D_xx = 0}` **contains the centre variety as a component of the same
+dimension.** Where the field has a centre, `D` vanishes identically and all three
+cusp equations hold trivially — the Newton reports residual `1e-32` the whole way,
+because `0 = 0`. On or across that component `D_xxx` changes sign for reasons that
+have nothing to do with a swallow-tail. The first pass over 125 curves produced 87
+such sign changes and **every single one** was a centre-variety artifact
+(REPORT_lane2.md §II.4).
+
+So:
+
+* a `D_xxx` sign change is a swallow-tail candidate **only if `D_xxxx` does not flip
+  with it** (equivalently `nu = D_xxx/(D_xxxx r0)` passes through **zero**, not
+  through infinity and not while `D_xxxx` also crosses);
+* every ledger record carries `amp` = `|D|` measured at `0.5 r0` and `1.7 r0` off the
+  cusp point. `amp < 1e-24` means the field has a centre and the record is worthless
+  (engine noise is `~1e-33`). The continuation now stops there with
+  `end_reason = CENTRE_VARIETY`;
+* `signchange_classification.json` holds the classification of all 87 first-pass
+  sign changes, and is the reference for what these artifacts look like.
+
 ## The next step, precisely
 
-1. `python3 analyse.py 'ledger*/cusp_*.jsonl'` and read the `sc` (sign-change) column.
-   **Any nonzero entry is a swallow-tail bracket** — go to step 3.
+1. `python3 analyse.py 'ledger*/cusp_*.jsonl'` and read the **`NUsc`** column, not
+   the `D3sc` column. Then confirm by hand that `D_xxxx` does not flip and that `amp`
+   is healthy at the bracket, as in the classifier above. Only then go to step 3.
 2. If all zero: compare `sign_start` and `sign_end` in `analysis.json` across the grid.
    Two grid neighbours with different `sign_end` bracket a swallow-tail in `(a, a20)`;
    bisect between them.
