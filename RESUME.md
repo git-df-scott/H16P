@@ -72,6 +72,11 @@ python3 analyse.py 'ledger/cusp_*.jsonl' 'ledger_grid/cusp_*.jsonl'   # -> analy
 | `analysis.json` | `analyse.py` output: the D_xxx sign table |
 | `triple_confirm_row1.json` | the rule-1 certified triple cycle at normal amplitude |
 | `validation.json` | rule-7 validation output |
+| `signchange_classification.json` | all 87 first-pass `D_xxx` sign changes, classified |
+| `closest_approach.json` | smallest `\|nu\|` anywhere, excluding centre-variety records |
+| `ledger_grid2/` | the guarded re-run of the grid (`end_reason = CENTRE_VARIETY` where applicable) |
+| `ah_at_cusp_row1.json` | Task 5: the Andronov-Hopf picture at cusp points, for Lane 1 |
+| `v1_homotopy_row1.json` | the `V1 -> 0` homotopy paths |
 
 Each ledger record carries the exact `(a, a20, a11, a01, a10, x0)` as 34-digit decimal
 strings, `D, D_x, D_xx, D_xxx, D_xxxx`, `nu = D_xxx/(D_xxxx r0)`, the weighted residual,
@@ -100,7 +105,39 @@ So:
 * `signchange_classification.json` holds the classification of all 87 first-pass
   sign changes, and is the reference for what these artifacts look like.
 
-## The next step, precisely
+## THE NEXT STEP (start here)
+
+The most actionable target is no longer the swallow-tail directly. Across 15 289
+non-degenerate cusp records `sgn(V1)·sgn(D_xxx) < 0` without exception, and that
+lock is exactly the statement "no fourth cycle inside the triple" (REPORT §II.7).
+It can break only at `D_xxx = 0` (the swallow-tail) or at `V1 = 0` — a Hopf at the
+focus, which is **algebraic**: `V1 = a11 + a01 - 2a - 1`.
+
+> **Find a point of the cusp manifold whose focus is simultaneously weak.**
+> Crossing `V1 = 0` along the cusp manifold puts a fourth cycle inside the triple.
+> Bautin is not violated: only one of the four cycles bifurcates from the focus.
+
+What has been tried, and what to try next:
+
+* `cusp_v1.py` — impose `V1 = 0` exactly (`a01 = 2a+1-a11`), square 3x3 system in
+  `(a11, a10, a20)` at fixed `(a, x0)`. Direct Newton from the row-1 cusp points
+  stalls at residual `9.1e-5`: the constraint is not satisfiable near them.
+* `v1_homotopy.py` — walk `V1` to zero along the cusp manifold at fixed `(a, x0)`.
+  On the `a = 3`, `x0 = 1.518` seed it buys an 11 % reduction in `V1` at the cost
+  of `a20: -12 -> -3487`, i.e. the branch **escapes to infinity in `a20`**, the
+  same signature as the small-amplitude swallow-tail Newton in §II.3.
+* **Not yet tried, and the obvious next move:** let `x0` float. Both solvers above
+  fix the section point, which is one constraint too many — `{cusp} ∩ {V1 = 0}` is
+  2-dimensional in the 6 coordinates, so slicing it at fixed `(a, x0)` may simply
+  miss it. Solve `(D, D_x, D_xx, V1) = 0` in `(a11, a01, a10, x0)` at fixed
+  `(a, a20)` — square — seeding `x0` across the whole nest, and/or continue that
+  solution in `(a, a20)`.
+
+```bash
+python3 -u v1_homotopy.py ledger/cusp_row1.jsonl 1.5,2.27,4.0 v1_homotopy_row1.json
+```
+
+## The older next step, still valid
 
 1. `python3 analyse.py 'ledger*/cusp_*.jsonl'` and read the **`NUsc`** column, not
    the `D3sc` column. Then confirm by hand that `D_xxxx` does not flip and that `amp`
