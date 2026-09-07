@@ -122,8 +122,15 @@ def params_to_L(a, a20, a11, a01, a10):
     return E.local10(v, (1.0, -1.0)), v, tr, dt
 
 
-def residual(a, a20, x, r0, phi=0.0, s_ref=None):
-    """F(x) for x = (a11, a01, a10), scaled by c7 so it is dimensionless."""
+def residual(a, a20, x, r0, phi=0.0, s_ref=None, window=None):
+    """F(x) for x = (a11, a01, a10), scaled by c7 so it is dimensionless.
+
+    `window` MUST be held fixed along a Newton solve.  `fit_window` chooses
+    among a discrete list by residual, so letting it re-choose makes the fitted
+    c5 a discontinuous function of x, and no finite-difference Jacobian can
+    survive that -- the symptom is a Newton that reports no descent direction
+    however far it backtracks.
+    """
     a11, a01, a10 = x
     L, v, tr, dt = params_to_L(a, a20, a11, a01, a10)
     if L is None:
@@ -131,7 +138,10 @@ def residual(a, a20, x, r0, phi=0.0, s_ref=None):
     if s_ref is None:
         import ahsweep as A
         s_ref = A.length_scale(L)
-    f = fit_window(L, phi, s_ref)
+    if window is None:
+        f = fit_window(L, phi, s_ref)
+    else:
+        f = taylor_D(L, phi, window[0], window[1])
     if f is None or f["c7"] == 0.0:
         return None, None
     c7 = f["c7"]
@@ -151,13 +161,24 @@ def third_order_seed(a, a20):
     return np.array([a11, a01, a10], float)
 
 
-def newton(a, a20, x0, r0, phi=0.0, iters=12, tol=1e-6, hstep=1e-5):
-    """Newton on the three calibrated cusp conditions in (a11, a01, a10)."""
+def newton(a, a20, x0, r0, phi=0.0, iters=12, tol=1e-6, hstep=2e-3,
+           cap_rel=0.02, backtrack=6, window=None):
+    """Damped Newton on the three calibrated cusp conditions in (a11, a01, a10).
+
+    Step control matters more than usual here because the Jacobian is finite
+    differenced from a FITTED quantity: the coefficients carry roughly 1e-6 of
+    relative noise, so a differencing step of 1e-5 gives derivative estimates
+    with order-one noise and the first "Newton" step is then arbitrary.  A
+    1e-5 step moved a11 from 8.0 to 5.4 in one go and left the domain.  Hence
+    `hstep = 2e-3` (well above the fit noise, still inside the linear regime),
+    a step capped at 2% of ||x||, and backtracking that only accepts a decrease
+    in ||F||.
+    """
     x = np.array(x0, float)
+    F, f = residual(a, a20, x, r0, phi, window=window)
+    if F is None:
+        return dict(ok=False, why="unresolved_start", x=x.tolist(), it=0)
     for it in range(iters):
-        F, f = residual(a, a20, x, r0, phi)
-        if F is None:
-            return dict(ok=False, why="unresolved", x=x.tolist(), it=it)
         if np.max(np.abs(F)) < tol:
             return dict(ok=True, x=x.tolist(), F=F.tolist(), fit=f, it=it)
         J = np.zeros((3, 3))
@@ -165,19 +186,31 @@ def newton(a, a20, x0, r0, phi=0.0, iters=12, tol=1e-6, hstep=1e-5):
             xp = x.copy()
             dx = hstep * max(1.0, abs(x[j]))
             xp[j] += dx
-            Fp, _ = residual(a, a20, xp, r0, phi)
+            Fp, _ = residual(a, a20, xp, r0, phi, window=window)
             if Fp is None:
-                return dict(ok=False, why="jacobian", x=x.tolist(), it=it)
+                return dict(ok=False, why="jacobian", x=x.tolist(), it=it,
+                            F=F.tolist())
             J[:, j] = (Fp - F) / dx
         try:
             step = np.linalg.solve(J, -F)
         except np.linalg.LinAlgError:
-            return dict(ok=False, why="singular", x=x.tolist(), it=it)
+            return dict(ok=False, why="singular", x=x.tolist(), it=it,
+                        F=F.tolist())
         nrm = np.linalg.norm(step)
-        cap = 0.5 * max(1.0, np.linalg.norm(x))
+        cap = cap_rel * max(1.0, np.linalg.norm(x))
         if nrm > cap:
             step *= cap / nrm
-        x = x + step
-    F, f = residual(a, a20, x, r0, phi)
+        n0 = np.linalg.norm(F)
+        moved = False
+        for _ in range(backtrack):
+            xt = x + step
+            Ft, ft = residual(a, a20, xt, r0, phi, window=window)
+            if Ft is not None and np.linalg.norm(Ft) < n0:
+                x, F, f, moved = xt, Ft, ft, True
+                break
+            step *= 0.4
+        if not moved:
+            return dict(ok=False, why="no_descent", x=x.tolist(), it=it,
+                        F=F.tolist())
     return dict(ok=False, why="no_convergence", x=x.tolist(),
-                F=(F.tolist() if F is not None else None), it=iters)
+                F=F.tolist(), it=iters)

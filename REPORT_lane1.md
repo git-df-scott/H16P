@@ -433,3 +433,42 @@ coefficients as `repr` decimals and `float.hex`, plus the engine source hash.
 
 **No field with three interior extrema of `beta*` has been produced.  No
 counterexample is claimed and none is implied.**  Nothing has triggered.
+
+## Campaign 4b -- the calibrated cusp continuation (`bautin2.py`)
+
+The null result in campaign 4 was traced to the printed focal values carrying
+per-field normalisation constants.  `bautin2.py` removes them by measuring the
+true Taylor coefficients of the displacement instead: `D(s) = c1 s + c3 s^3 +
+c5 s^5 + c7 s^7 + O(s^9)`, fitted in binary128 under the two-tolerance gate,
+with the cusp conditions imposed on `c1, c3, c5, c7`.
+
+Validated against the third-order weak focus family, where the direct
+measurement gives `c7 = 4.0758` and `c5 = 0` exactly:
+
+| a, a20 | window in s | rel resid | c1 | c3 | c5 | c7 |
+|---|---|---|---|---|---|---|
+| -2, -1 | [4.8e-3, 1.0e-2] | 5.3e-07 | -7.7e-17 | 1.3e-11 | -9.3e-07 | 4.09999 |
+| 3, -12 | [5.5e-3, 1.4e-2] | 1.3e-05 | -5.5e-16 | 6.2e-11 | -3.1e-06 | -1.57523 |
+| 1.5, -15 | [1.2e-2, 2.7e-2] | 7.4e-06 | 4.8e-16 | -1.3e-11 | 1.5e-07 | 0.01526 |
+
+`c7` to 0.6% and the spurious `c5` at 1-7% of the `c7` term, 8 s per fit.
+Three things had to be right at once and each silently ruined the fit alone:
+the two-tolerance gate (without it the fit calls the focus second-order), the
+relative weighting (`D/s` spans seven decades, and the small-`s` points that
+pin `c5` carry no weight in an unweighted fit), and fitting the `O(s^9)` tail
+rather than letting `c5` absorb it.
+
+**The continuation then moves and brackets the cusp.**  From the exact `r0 = 0`
+point of the manifold at `(a, a20) = (-2, -1)`, target `r0 = 4e-3`, six
+accepted descent steps take `(a11, a01, a10)` from `(8, -11, 6.142857)` to
+`(7.589915, -10.597467, 5.941706)` and the governing residual `F3` from
+`+4.78e-05` through zero to `-4.38e-05`.  `F1` and `F2` are at `1e-11` and
+`6e-9` throughout.  Newton then stalls: its Jacobian is finite differenced from
+a fitted quantity, so once `|F3|` reaches the fit's own noise on `c5` the
+direction is unreliable.  Landing it is a one-dimensional bracket along the
+last accepted step, not a better Jacobian; the recipe and the three step-control
+traps are written up in `lane1/RESUME.md`.
+
+**This is a bracketed cusp, not a cycle count, and certainly not a
+counterexample.**  What it buys is the first working handle on the manifold
+PROTOCOL section (c) says has never been continued.
