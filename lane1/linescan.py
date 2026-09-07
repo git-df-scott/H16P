@@ -24,7 +24,19 @@ import sweep as W
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
-def scan(L0, phi, v, lams, n=220):
+# A nest cycle of a scale-normalised field has a period of order 1-10; a return
+# that has not closed by SWEEP["Tmax"] is not one, and letting it run to the
+# validation default of 400 makes every failed return cost four times more.
+# This is a speed choice, not an accuracy one: the longest return over every
+# seed's whole AH domain is 6.58 time units, and the status arrays at Tmax 400
+# and Tmax 100 are bitwise identical on all nine seeds.
+SWEEP = dict(Tmax=100.0, nstep=400_000)
+
+
+def scan(L0, phis, v, lams, n=220):
+    """`phis` is a LIST of rays: a section can lose an extremum by truncating
+    the nest domain early, so each field is read on two complementary rays and
+    the larger count is kept."""
     out = []
     for lam in lams:
         n0 = float(np.linalg.norm(L0))
@@ -33,8 +45,7 @@ def scan(L0, phi, v, lams, n=220):
         if nn == 0:
             continue
         L = np.ascontiguousarray(L * (n0 / nn))
-        r = A.evaluate(L, phi, n=n)
-        f = r[0] if isinstance(r, tuple) else r
+        f = W.evaluate_multi(L, phis, n=n, **SWEEP)
         out.append((float(lam), L, f))
     return out
 
@@ -61,8 +72,10 @@ def main():
     for name in a.seed.split(","):
         L0 = np.ascontiguousarray(tab[name]["L"], float)
         phi = W.best_phi(L0)
+        phis = [phi, phi + 0.5 * math.pi]
         t0 = time.time()
         led.write(dict(kind="line_seed", seed=name, phi=float(phi),
+                       phis=[float(x) for x in phis],
                        lam_grid=[float(x) for x in lams],
                        local10=A.coeff_strings(L0)))
         best_max, n3 = 2, 0
@@ -72,7 +85,7 @@ def main():
             if nv == 0:
                 continue
             v = v / nv
-            rows = scan(L0, phi, v, lams, n=a.n)
+            rows = scan(L0, phis, v, lams, n=a.n)
             counts = [(lam, f.get("n_extrema", -1), f.get("n_extrema_robust", -1),
                        f.get("score"), f.get("fold_margin"), f.get("status"))
                       for (lam, L, f) in rows]
@@ -94,10 +107,9 @@ def main():
                 n3 += 1
                 for (lam, L, f) in rows:
                     if f.get("n_extrema", 0) >= 3:
-                        f2 = A.evaluate(L, phi, n=450)
-                        f2 = f2[0] if isinstance(f2, tuple) else f2
+                        f2 = W.evaluate_multi(L, phis, n=450)
                         if f2.get("n_extrema", 0) >= 3:
-                            W.check_trigger(L, phi, f2,
+                            W.check_trigger(L, f2.get("phi", phi), f2,
                                             f"line:{name}:dir{k}:lam{lam:.6g}", led)
             if (k + 1) % 20 == 0:
                 print(f"{name} dirs={k+1}/{a.dirs} max_extrema={best_max} "

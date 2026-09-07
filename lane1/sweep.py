@@ -30,21 +30,45 @@ def seed_table():
     return out
 
 
-def best_phi(L, n=140):
-    """Pick the ray on which the AH curve resolves over the longest run."""
+def best_phi(L, n=140, **kw):
+    """Pick the ray on which the AH curve shows the most interior extrema.
+
+    Extrema of beta* are multiple limit cycles, so the count is a property of
+    the FIELD, not of the section -- but the s-interval on which the return map
+    survives is very much a property of the section, and a ray whose domain is
+    truncated early simply loses the extrema that lie beyond it.  Ranking by
+    resolved length instead of by count therefore UNDERCOUNTS: on Cherkas row 1
+    it picks a ray that reports one extremum where another ray reports two.
+    Since a section can lose extrema by truncation but cannot invent them
+    (spurious ones are excluded by the absolute prominence gate), the maximum
+    over rays is the right estimator, with resolved length as the tie-break.
+    """
     best, bphi = None, 0.0
     for phi in PHI_CHOICES:
-        r = A.evaluate(L, phi, n=n, refine=False)
+        r = A.evaluate(L, phi, n=n, refine=False, **kw)
         f = r[0] if isinstance(r, tuple) else r
         if f.get("status") != "ok":
             continue
-        # rank by resolved length only: the number of interior extrema is a
-        # property of the field (extrema of beta* are multiple cycles), not of
-        # the section, so ranking by it would only import section noise
-        key = f["n_run"]
+        key = (f["n_extrema"], f["n_run"])
         if best is None or key > best:
             best, bphi = key, phi
     return bphi
+
+
+def evaluate_multi(L, phis, n=200, **kw):
+    """Evaluate on several rays and keep the one that sees the most extrema."""
+    best = None
+    for phi in phis:
+        r = A.evaluate(L, phi, n=n, **kw)
+        f = r[0] if isinstance(r, tuple) else r
+        if f.get("status") != "ok":
+            if best is None:
+                best = f
+            continue
+        if best is None or best.get("status") != "ok" or \
+                (f["n_extrema"], f["n_run"]) > (best["n_extrema"], best["n_run"]):
+            best = f
+    return best
 
 
 # ------------------------------------------------------------------ remote
