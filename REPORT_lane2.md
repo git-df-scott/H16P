@@ -5,6 +5,15 @@ Branch `fable/lane2-cusp`. Working directory `lane2_cusp_2026_09_06/`.
 **No counterexample is claimed anywhere in this file. Maximum certified cycle count in
 one nest so far: 3.**
 
+**Headline.** The cusp manifold of triple limit cycles was entered from the Bautin
+region at residual `5.8e-34` and continued to normal amplitude for the first time; a
+triple limit cycle of *normal size* (`x ≈ 2.2`) is certified under PROTOCOL rule 1.
+Across 125 continued cusp curves **no multiplicity-four limit cycle was found**. All 87
+apparent `D_xxx` sign changes are centre-variety artifacts (§II.4) — a false-positive
+trap that anyone repeating this search will hit. The curves end either by escaping to
+infinite amplitude (`a > 1/3`) or by pressing the triple cycle against the nest's
+bounding graphic (`a < 0`) — §II.5.
+
 > **Two Lane-2 sessions have been running in parallel and this branch is their merge.**
 > Session `01MY79ob…` built engine **A/B** (`lane2_cusp_2026_09_06/engine/`) and did the
 > seed validation — Part I below. Session `01QK5W6F…` built engine **C/D**
@@ -341,6 +350,76 @@ approached from the Bautin end at all; what one finds there instead is the
 centre variety, which is exactly what the numerics produced. This is the same
 conclusion as II.3, reached independently, and it means the entire search must
 live at normal amplitude.
+
+
+## II.5 How the cusp curves END (TASK 3's "record the endpoints and why")
+
+Across the 125 curves continued in the first pass, the cusp curve ends in exactly
+two ways, cleanly separated by the sign of `a`.
+
+### (i) `a > 1/3` — the curve escapes to infinite amplitude, parameters bounded
+
+`x0` grows without bound (row 1 past 10, row 2 past 13, the `a = 1.5` and
+`a = 2.5` grid curves past 17), `a11` drifts slowly, `L = det J(A)` stays
+positive, the section stays strongly transversal, and `|D_xxx|` rises to a
+maximum and then **decays monotonically toward zero without changing sign**
+(row 1: max `−5.9e−2` at `x0 ≈ 2.27`, down to `−2.8e−3` at `x0 = 10.1`; row 2:
+max `+3.2e−3` at `x0 ≈ 2.87`, down to `+2.0e−4` at `x0 = 13.4`). These runs were
+stopped by budget, not by any feature of the curve. The decay of `D_xxx` is not
+an approach to a swallow-tail: `nu = D_xxx/(D_xxxx r0)` stays near `0.1`
+throughout, i.e. `D_xxxx` decays in step.
+
+### (ii) `a < 0` — the triple cycle is squeezed against the nest boundary
+
+`x0` converges to a finite limit while `a11 → ∞` at roughly unit speed in
+arclength, and `D_xxx`, `D_xxxx` blow up geometrically:
+
+| curve | `(a, a20)` | `x0 →` | `a11` at end | `D_xxx` at end | `D_xxxx` at end |
+|---|---|---|---|---|---|
+| `p_am4_b0p5` | (−4, −6.5) | 1.1895 | 22.45 | 2.64e5 | 9.79e8 |
+| `c_am2p0_o0p3` | (−2, −4.4407) | 1.3984 | 19.10 | 4.92e3 | 2.66e6 |
+| row 3 | (−2, 12) | 1.394 | — | 1.78e3 | — |
+| row 4 | (−2, −1) | 1.389 | — | 2.33e3 | — |
+
+**Why**: at the final parameters of each of these curves, walking outward along
+the section from the cusp point, the return map fails **immediately** — the nest
+domain end `s_max` coincides with `x0` to within `0.000` and `0.004` respectively.
+The triple cycle has grown until it touches the outer boundary of the nest, and
+the parameters have to run to infinity to keep it a triple cycle. This is
+PROTOCOL §(b)'s outer end: the cusp curve terminates on the bounding
+graphic/separatrix, not at a swallow-tail. It is also consistent with Part I's
+independent finding that the row-3 seed's `x>1` return domain ends at
+`x = 1.3475` on a genuine separatrix (confirmed by engine B blowing up in finite
+time), with the outermost cycle sitting essentially on the boundary.
+
+## II.6 Closest approach to a swallow-tail
+
+Excluding centre-variety records, the smallest `|nu| = |D_xxx/(D_xxxx r0)|` seen
+anywhere is `1.42e-3`, at
+
+```
+a   = -4            (exactly)          a20 = -13/2         (exactly)
+a11 =  22.45086693473904317711227265950205
+a01 = -29.52317781989795110902621214492275
+a10 =  31.91565514198711888059773382354741
+x0  =   1.189462447165467610264657155882525
+D = -2.6e-31   D_x = -2.5e-29   D_xx = -1.4e-26
+D_xxx = 263635.70357303020554   D_xxxx = 978962520.8576926
+T = 6.31432078137962954   L = 2.60752267791   V1 = -0.0723108851589
+```
+
+(`closest_approach.json`; Perko Thm 4.3 quantities all healthy, `min|.| = 14.9`.)
+
+**But this is not a near-miss.** It is the type-(ii) endpoint above: `|nu|` is
+small there only because `D_xxxx` is blowing up *faster* than `D_xxx` as the
+cycle is pressed against the nest boundary — `D_xxx` itself is growing through
+`2.6e5`, not approaching zero. A swallow-tail needs `D_xxx → 0` with `D_xxxx`
+bounded; here both diverge. The `nu` statistic is the right detector for a
+*centre* crossing but is fooled by a *boundary* blow-up, and both traps have now
+been characterised.
+
+**On no curve did `D_xxx` approach zero for any reason other than the centre
+variety.**
 
 ---
 
