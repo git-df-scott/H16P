@@ -307,3 +307,129 @@ does not exclude a cusp in a direction not yet sampled.
 so nothing is missed between samples and the far end of the segment -- where
 the field no longer resembles the seed -- is seen too.  80 directions per seed
 over all 9 seeds are in flight; results in the next checkpoint.
+
+## Campaign 3 -- line scans: results
+
+`linescan.py` walks `lambda` across a 33-point geometric grid spanning
+`+/- 0.6` for each random direction, reading each field on **two** rays (a
+truncated section loses extrema; see the defect note below), so nothing is
+missed between samples and the far end of the segment is seen too.
+
+Partial at the time of writing: **72 directions, 2376 field evaluations, zero
+reaching three interior extrema.**  Counts over every field evaluated:
+`{2 extrema: 592, 1: 175, 0: 1393, unresolved: 183}`.
+
+The scan measures directly what the perturbation statistics measured
+indirectly -- how far the three-cycle configuration survives along a straight
+line in the live coefficient space, as a relative displacement:
+
+| percentile | survival width |
+|---|---|
+| 25th | 4.98e-04 |
+| 50th | 8.89e-04 |
+| 75th | 1.59e-03 |
+| 90th | 5.06e-03 |
+| widest seen | 3.63e-02 |
+
+Cherkas row 7 does not survive even the smallest step on the grid (`1e-4`) in
+either direction, consistent with its three-cycle window being `4.2e-06` wide
+in the rotation angle.
+
+## Campaign 2 -- cusp continuation: results
+
+773 Newton runs, 90 converged.  **Every single converged solution is in the
+`between` window** -- the cusp at which the seed's own two extrema annihilate.
+
+| seed | `between`: converged / runs | median \|lambda*\| | `inner` | `outer` |
+|---|---|---|---|---|
+| cherkas1 | 28 / 30 | 3.16e-04 | 0 / 90 | 0 / 90 |
+| cherkas2 | 30 / 30 | 1.17e-05 | 0 / 90 | 0 / 90 |
+| cherkas3 | 2 / 30 | 4.07e-03 | 0 / 90 | - |
+| cherkas4 | 26 / 30 | 7.71e-04 | 0 / 90 | 0 / 90 |
+| cherkas5 | 4 / 5 | 1.89e-03 | 0 / 18 | - |
+
+`inner` fails almost entirely on the degeneracy gate (277 of 378): Newton
+reaches `A_u = A_uu = 0` on the Andronov-Hopf plateau, where `A_uuu` is also
+below the noise floor and the "solution" is an artefact of flatness rather than
+a cusp.  `outer` fails on non-convergence and on the rotated member losing its
+return (`unresolved`, 183 of 270) -- `beta*` plunges at the nest boundary and a
+cold Newton with a `+/-0.05` trust region in `lambda` cannot follow it.
+
+**The cusp that destroys the three-cycle configuration is three orders of
+magnitude closer than any cusp that would create a fourth cycle, in every
+direction sampled.**  That is a measurement along random lines from published
+seeds; it is not a theorem, and the `outer` window is a search failure as much
+as a negative result.
+
+## Campaign 4 -- landing on the cusp manifold by construction (`bautin.py`)
+
+Rather than search for a multiplicity-three cycle, solve for one.  Cherkas et
+al. publish the focal values of their normal form in closed form, and the three
+Bautin cusp conditions are nearly triangular in their parameters: for a fixed
+`(a, a20)` and target amplitude `r0`, one scalar equation `V5 + 3 r0^2 V7 = 0`
+fixes `a11`, and `a10` and `a01` then follow by substitution because `V3` is
+linear in `a10` and `V1` is linear in `a01`.  The same linearity makes the
+Bautin **unfolding** free: `(e1, e3)` move `V1` and `V3` off the cusp exactly,
+at fixed `V5` and `V7`.
+
+Two things came out of this, one of which is a caveat that matters.
+
+**The transcription of eq. (15) is verified.**  On the paper's own third-order
+weak focus family, the formulas give `V1 = V3 = V5 = 0` and `V7 != 0`, and the
+engine confirms it directly: in binary128 with the two-tolerance gate,
+`log|D|` against `log s` has slope **7.10** (a = -2, a20 = -1) and `D/s^7` is
+constant to four figures over a decade (`4.0758, 4.0689, 4.0753, 4.0866`).
+This is a check of the *order of the weak focus*, independent of everything
+else in the lane.
+
+*A first pass at this fit, without the noise gate, returned slope 5.03 and
+would have said the focus was second-order.  The small-`s` points were below
+even the binary128 floor -- `|D| ~ 4e-28` against an absolute error of `1e-24`.
+PROTOCOL rule 1 is not a formality; it caught this.*
+
+**But the printed focal values carry unknown normalisation constants**, and the
+ratio `c7 / V7` between the true leading Taylor coefficient of `D` and the
+printed `V7` is `-6.7e-05` for one field and `-9.0e-06` for another -- not
+constant, and **negative**, i.e. even the sign convention differs.  Imposing
+`V5 : V3 : V1 = -3 r0^2 : 3 r0^4 : -r0^6` on the *printed* values therefore does
+not impose it on the true coefficients, and the 150 fields built this way have
+no triple cycle: `D` has no sign change near the focus on any of them, and the
+best `beta*` seen has two interior extrema.  **These 150 rows are a null result
+about the construction, not about the mathematics.**  The fix is written up in
+`lane1/RESUME.md`: fit the true `c1, c3, c5, c7` numerically in binary128 with
+the noise gate (which is exactly what the slope-7 check above does) and impose
+the ratios on those.  The apparatus for it is now built and validated.
+
+## Defect found and fixed mid-campaign
+
+`best_phi` ranked candidate rays by how much of the nest domain resolved.  A
+ray whose return map dies early truncates the domain and simply **loses** the
+extrema beyond it: on Cherkas row 1 it reported one interior extremum where
+another ray reports two.  Since a section can lose extrema by truncation but
+cannot invent them (spurious ones are excluded by the absolute prominence
+gate), the maximum over rays is the right estimator.  `best_phi` now ranks on
+the count with resolved length as tie-break, and every field in the line scans
+and the cusp runs is read on two complementary rays.  The pre-fix cusp ledger
+is kept as `cusp_c0_presectionfix.jsonl` and its cherkas1 rows should not be
+used.  Campaign 1's counts were re-checked against the fixed reader on all nine
+seeds and are unchanged at 2.
+
+## Figures
+
+`lane1/figs/ah_curves.png` -- `beta*` for all nine seeds, with the rotation
+window in which three cycles exist shaded; `row4_vs_published.png` -- this
+engine's `beta*` against the published degree-6 AH polynomial;
+`row4_displacement.png` -- `D(s,0)` with the two-tolerance noise band and the
+three brackets.
+
+## Ledger sizes
+
+`lane1/ledger/`: 13,671 rows across `perturb_*` (2713), `climb_*` (9036),
+`line_*` (75), `cusp_c1` (773 Newton runs), `cusp_c0_presectionfix` (877,
+superseded), `bautin_*` (150).  Every row carries the exact `local10`
+coefficients as `repr` decimals and `float.hex`, plus the engine source hash.
+
+## Status
+
+**No field with three interior extrema of `beta*` has been produced.  No
+counterexample is claimed and none is implied.**  Nothing has triggered.
