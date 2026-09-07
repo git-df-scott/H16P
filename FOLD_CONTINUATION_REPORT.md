@@ -293,8 +293,9 @@ Positive control now passes on every point tested:
 | cusp `eps=0.10` | `1.417803, 1.588052, 1.764462` | `1.417843, 1.587973, 1.764502` | AGREES | `-5.81379` | `0` |
 | cusp `eps=0.20` | `1.252914, 1.588052, 1.947748` | `1.252924, 1.588032, 1.947758` | AGREES | `-5.81472` | `0` |
 | cusp `eps=0.35` | `1.013494, 1.588052, 2.237022` | `1.013497, 1.588046, 2.237025` | AGREES | `-5.81727` | `0` |
+| cusp `eps=0.50` | `0.779407, 1.588052, 2.545427` | `0.779408, 1.588049, 2.545429` | AGREES | `-5.82121` | `0` |
 
-Eight independent points, both organizers, every count reproduced — including
+Nine independent points, both organizers, every count reproduced — including
 the single-cycle case at `eta_T = 1e-3`, which is also a negative control: the
 detector does not invent cycles. Second focus throughout at `(-3.203, 0.312)`,
 determinant `161.6`.
@@ -308,7 +309,7 @@ why neither reaches `4+1`.
 Every `remote = 0` reported earlier in this session, including in
 `CENTRE_AND_DOUBLEFOLD_REPORT.md` and the row-7/row-8 fold-start ledger entries,
 came from the **unvalidated** detector and should be read as "not measured".
-The eight rows above are the only validated remote counts.
+The nine rows above are the only validated remote counts.
 
 ## 7. Row 8
 
@@ -331,7 +332,7 @@ same mechanism as rows 2 and 7. No row-8 conclusion is claimed.
 * `rank B = 4` at the cusp means the four-cycle configuration is **not excluded
   by rank**; it is only out of local reach at this point. A cusp at a different
   shape `(a, a20)`, where `sigma_4` is not `1e-5`, is a live target.
-* The remote-nest zero is measured on one ray to `d <= 3` at eight parameters. It
+* The remote-nest zero is measured on one ray to `d <= 3` at nine parameters. It
   is not a statement about the family.
 
 ---
@@ -344,7 +345,7 @@ same mechanism as rows 2 and 7. No row-8 conclusion is claimed.
 | **CONNECTED FOLD CONTINUATION COMPLETED** | **Yes.** 12 accepted predictor-corrector steps on `D=D_s=0` from the row-7 fold, second stationary point tracked by Newton throughout, terminating at an identified event. |
 | **MISSING-EXTREMUM EVENT** | **Identified: fold coalescence to a nondegenerate cusp.** `h_i ~ (2c/3)delta^3` with `|h_i|/delta^3` constant to 6 s.f. over 2 decades in `delta`; terminal solve `D=D_s=D_ss=0` to scaled residual `2.14e-33` with `D_sss = -1.279e-3 != 0`. Not destruction, not a centre, not a return failure, not a rank loss. The earlier "destroyed" is retracted (§C4). |
 | **MAX SIMPLE LOCAL CYCLES COEXISTING WITH THE FOLD** | **3** — verified by full inventory on `[1.002, 6.99]`, at four `eps` values from the cusp unfolding and three `eta_T` values from the Hopf+fold unfolding. At the fold itself (before unfolding): `0` besides the fold cycle. |
-| **REMOTE CYCLE RETAINED** | **No — and now measured, not guessed.** `0` remote cycles at all eight validated points; the second focus is strongly hyperbolic (trace `-5.81`, det `161.6`). The detector's earlier zeros were unvalidated and are withdrawn (§6). |
+| **REMOTE CYCLE RETAINED** | **No — and now measured, not guessed.** `0` remote cycles at all nine validated points; the second focus is strongly hyperbolic (trace `-5.81`, det `161.6`). The detector's earlier zeros were unvalidated and are withdrawn (§6). |
 | **ORDINARY HOPF + SEPARATE CYCLE FOLD** | **Exists and solves.** `T = 2.2e-12`, `D(s_f)=D_s(s_f)=0` at `s_f = 3.4352777547`, with `det J(A) = 51.6496 > 0`, `D_ss = -1.238e-3 != 0`, `l1 < 0` (`D_sss(1) = -5.645e-3`), Hopf side `T > 0` confirmed by search. Its unfolding realises `1+2 = 3` cycles, verified. |
 | **TWO-CONTROL UNFOLDING RANK** | `rank[grad_mu T ; d_mu D(s_f)] = 2`; cosine `0.9474`, row-normalised singular values `(1.3955, 0.2293)`, ratio `0.164`. At the cusp, `rank[d_mu D; d_mu D_s; d_mu D_ss; grad_mu T] = 4` but `sigma_4/sigma_1 = 1.03e-5`. |
 | **FIVE-CYCLE FIELD** | **None.** Maximum verified anywhere in this session: **3** simultaneous simple limit cycles. |
