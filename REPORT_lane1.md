@@ -315,7 +315,7 @@ over all 9 seeds are in flight; results in the next checkpoint.
 truncated section loses extrema; see the defect note below), so nothing is
 missed between samples and the far end of the segment is seen too.
 
-**215 directions, 7095 field evaluations, zero reaching three interior
+**221 directions, 7293 field evaluations, zero reaching three interior
 extrema** (the scan was still running when this was written; the ledger is
 append-only, so re-run `analyze_lines.py` for the current figure).
 
