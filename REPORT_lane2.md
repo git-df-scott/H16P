@@ -38,7 +38,9 @@ displacement `D(x0)` = (x-coordinate of the first return) − `x0`.
 * cusp (triple cycle): `D = D_x = D_xx = 0` — 3 equations, so a **curve** in
   `(a11, a01, a10, x0)` at fixed shape `(a, a20)`;
 * swallow-tail (quadruple cycle): additionally `D_xxx = 0` — codimension 1 *inside*
-  the cusp manifold, detectable as a **sign change of `D_xxx`** along a cusp curve.
+  the cusp manifold, detectable as a sign change of `D_xxx` along a cusp curve
+  **provided `D_xxxx` does not change sign with it**; see §II.4, which is the
+  main methodological result of this lane.
 
 ---
 
@@ -252,21 +254,121 @@ Seeded from a *small-amplitude* cusp point (`a = 3`, `x0 = 1.02`) the Newton run
 > for. This closes off the one place where an explicit formula would have handed the
 > answer over, and it is worth recording so nobody re-derives it.
 
+
+## II.4 ★ THE CENTRE VARIETY IS A SPURIOUS COMPONENT OF THE CUSP MANIFOLD ★
+
+**This is the most important thing Lane 2 has found, and it is a trap that will
+produce false positives for anyone running this search.**
+
+The cusp manifold was defined as the solution set of
+
+```
+D = D_x = D_xx = 0        (3 equations in the 6 coordinates (a,a20,a11,a01,a10,x0))
+```
+
+But **wherever the field has a CENTRE, `D` vanishes identically, so all three
+equations hold trivially.** The centre variety therefore sits inside that
+solution set as a second component *of the same dimension* — it is not a
+lower-dimensional degeneracy that a generic path would miss. A pseudo-arclength
+continuation can slide onto it and stay there, and the Newton residual reports
+`1e-32` the whole way, because `0 = 0` to any precision one likes.
+
+On the centre variety every derivative of `D` is at the integration noise floor,
+so **`D_xxx` changes sign essentially at random**; and where a genuine cusp curve
+*crosses* the centre variety transversally, the whole function `D` changes sign,
+so `D_xxx` and `D_xxxx` — and `D` itself — all flip together. Either way a bare
+`D_xxx` sign watch fires, and neither case is a swallow-tail.
+
+### What this looked like in the data
+
+The first pass over 125 continued cusp curves reported **87 sign changes of
+`D_xxx`**, concentrated exactly on the shapes straddling the centre curve — i.e.
+precisely where the structural argument predicted a swallow-tail should be.
+Classifying every one of them by measuring the displacement scale
+`|D|` at `0.5 r0` and `1.7 r0` off the cusp point:
+
+| class | count |
+|---|---|
+| curve lying **on** the centre variety (`\|D\| < 1e-24` everywhere: the field has a centre, so there are no limit cycles at all) | 58 |
+| curve **crossing** the centre variety (`D_xxxx` flips with `D_xxx`; the whole `D` changes sign) | 29 |
+| **genuine multiplicity-four candidates** | **0** |
+
+The 58 all come from one curve, `c_a0p6_o0p08` (`a = 0.6`, `a20 = -3.8076`,
+against `a20_c(0.6) = -3.8876`), on which the continuation landed on the centre
+variety at `x0 ≈ 3` and then marched `x0` from 3.0 to 13.6 in fixed steps with
+the parameters frozen — the unmistakable signature. Every `D_xxx` and `D_xxxx`
+there is `~1e-34`.
+
+A worked example of the crossing case, `c_am2p0_om0p08` (`a=-2`, `a20=-4.8207`):
+
+| i | x0 | D_xxx | D_xxxx | nu = D_xxx/(D_xxxx r0) | residual |
+|---|---|---|---|---|---|
+| 4 | 1.02826 | −1.747e−3 | −0.5045 | 0.12254 | 1.6e−32 |
+| 5 | 1.03289 | −3.739e−4 | −0.0923 | 0.12322 | 3.9e−32 |
+| 6 | 1.03936 | +3.645e−3 | +0.7507 | 0.12336 | 1.0e−32 |
+| 7 | 1.04825 | +1.401e−2 | +2.3719 | 0.12240 | 1.1e−32 |
+
+`D_xxx` "changes sign" — but so does `D_xxxx`, and `nu` sails through completely
+smoothly. Sampling `D` itself at `0.3, 0.6, 1.6, 2.5, 4.0` times the amplitude
+shows the entire displacement function flipping sign between rows 5 and 6
+(e.g. at `4 r0`: `−1.26e−6 → +2.32e−5`). The curve is crossing a centre.
+
+### The corrected detector, and the guard
+
+* A sign change of `D_xxx` is a swallow-tail candidate **only if `D_xxxx` does
+  not flip with it** — equivalently, only if `nu = D_xxx/(D_xxxx r0)` passes
+  through **zero**. (`nu` passing through **infinity** is a zero of `D_xxxx`
+  with `D_xxx != 0`: an ordinary point of the cusp curve, not a swallow-tail
+  either. Six curves in the grid do that, at `a = 1.04` and `a = 1.5`.)
+* `Cusp.amplitude()` now measures `|D|` at `0.5 r0` and `1.7 r0` off the cusp
+  point at every accepted continuation step, logs it as `amp`, and the
+  continuation **stops with `end_reason = CENTRE_VARIETY`** if it falls below
+  `1e-24` (engine noise is `~1e-33`, so this is a `1e9` margin below which no
+  genuine displacement lives).
+* `analyse.py` now reports both counts and never calls a bare `D_xxx` sign
+  change a swallow-tail.
+
+### Why this is not just a numerical nuisance
+
+It also explains, structurally, why the small-amplitude end is barren. Perko 1992
+Remark 1: the multiplicity `m` of a limit cycle equals the maximum number of
+cycles that can bifurcate from it. A **nondegenerate multiplicity-four cycle at
+small amplitude**, on a family of parameters converging to a weak focus or
+centre as the amplitude shrinks, would put four limit cycles in every
+neighbourhood of that singular point for parameters arbitrarily close to it —
+i.e. cyclicity `>= 4`, contradicting **Bautin**. So the swallow-tail cannot be
+approached from the Bautin end at all; what one finds there instead is the
+centre variety, which is exactly what the numerics produced. This is the same
+conclusion as II.3, reached independently, and it means the entire search must
+live at normal amplitude.
+
 ---
 
 ## Open problems / next steps
 
-1. Finish the (a, a20) grid; tabulate `sgn D_xxx` at the near and far end of every cusp
-   curve. A shape where the two differ contains a swallow-tail.
-2. Rows 1 and 2 show `|D_xxx| → 0` as `x0 → ∞` **without a sign change**. Decide whether
-   that decay is asymptotic (no swallow-tail; the cusp curve escapes to infinite
-   amplitude) or whether the curve ends at a graphic first. `nu = D_xxx/(D_xxxx r0)` is
-   now logged to tell these apart.
-3. Rows 3 and 4 end with `a11` blowing up at nearly constant `x0`. Identify the boundary
-   (Part I's separatrix at `x ≈ 1.3475` is the leading candidate).
-4. Run the swallow-tail Newton (with `a20` free) from **far-amplitude** cusp points
-   across the whole grid.
-5. Log the Andronov–Hopf/`beta*` picture at each cusp point for Lane 1 (`probe.ah_sweep`
+1. **Re-run the whole grid with the centre-variety guard on** (in progress, writing to
+   `ledger_grid2/`). Every curve that previously "found" a swallow-tail should now stop
+   with `end_reason = CENTRE_VARIETY` at a well-defined point, which is itself the
+   answer to "where does the cusp curve end and why".
+2. Map the centre variety inside the cusp manifold explicitly. It is a codimension-0
+   component of the same solution set, so it is not an obstacle to be avoided but a
+   boundary to be charted: the interesting question is whether a swallow-tail branch
+   emanates from it, and §II.4's Bautin argument says it cannot do so at the
+   small-amplitude end.
+3. `nu` passing through **infinity** (a zero of `D_xxxx` with `D_xxx != 0`) happens on
+   six grid curves, at `a = 1.04` and `a = 1.5`, around `x0 ≈ 7–9`. Those are ordinary
+   points of the cusp curve, but they are where the cusp curve is "flattest" and are
+   the natural places to look for a nearby swallow-tail in a transverse direction.
+4. Rows 1 and 2 show `|D_xxx| → 0` as `x0 → ∞` **without a sign change and without
+   approaching a centre**. Decide whether the cusp curve simply escapes to infinite
+   amplitude or ends at a graphic. `nu` is now logged to tell these apart.
+5. Rows 3 and 4 end with `a11` blowing up at nearly constant `x0 ≈ 1.39`. Part I's
+   independently confirmed separatrix at `x ≈ 1.3475` for the row-3 seed is the leading
+   candidate for that boundary.
+6. Run the 5-parameter minimum-norm swallow-tail Newton (`swallow5.py`) from
+   far-amplitude points of the guarded curves, with the amplitude guard wired in so it
+   cannot converge onto a centre.
+7. Log the Andronov–Hopf/`beta*` picture at each cusp point for Lane 1 (`probe.ah_sweep`
    is implemented; not yet run over the grid).
 
 ---

@@ -10,3 +10,23 @@ row 4 (side -1): 3 certified cycles (0 uncertified) roots=['0.55695', '0.74658',
             published=[0.56, 0.75, 0.87]  count_ok=True  max|dev|=0.0177  s_max=0.4795  fails=0  (139s)
 row 5 (side -1): 3 certified cycles (0 uncertified) roots=['0.62776', '0.80183', '0.87290']
             published=[0.63, 0.8, 0.88]  count_ok=True  max|dev|=0.0071  s_max=0.5795  fails=0  (150s)
+row 6 (side +1): 3 certified cycles (0 uncertified) roots=['1.05040', '1.18166', '1.54152']
+            published=[1.05, 1.16, 1.5]  count_ok=True  max|dev|=0.0415  s_max=8.9805  fails=0  (268s)
+row 7 (side +1): 3 certified cycles (0 uncertified) roots=['1.51082', '2.23157', '4.47627']
+            published=[1.28, 2.15, 4.43]  count_ok=True  max|dev|=0.2308  s_max=8.9805  fails=0  (218s)
+row 8 (side +1): 3 certified cycles (0 uncertified) roots=['1.35730', '2.30708', '4.14553']
+            published=[1.29, 2.22, 4.63]  count_ok=True  max|dev|=0.4845  s_max=8.9805  fails=0  (240s)
+
+counts reproduced: 8/8
+
+--- row 4 Andronov-Hopf function on [0.6,0.9] (published: 2 extrema) ---
+  AH defined at 0/61 samples, interior extrema = 0
+
+--- fold check: D_xx from the jet vs a centred difference of D_x ---
+  fold at a11=9.49957706153050976924 x0=0.7978230126631205555753
+    D    = 2.40741e-33   D_x = -1.17482e-32
+    D_xx jet = 0.02456474668117144381676
+    D_xx  fd = 0.02456474668117144384478   rel diff = 1.14e-18
+    D_xxx    = -0.616590441212   (nonzero => the fold is a simple fold, not a cusp)
+
+engine calls: 8641

@@ -93,6 +93,28 @@ class Cusp:
     def val(self, mu, x0):
         return self.eng.D(self.a, self.a20, mu[0], mu[1], mu[2], x0, side=self.side)
 
+    def amplitude(self, mu, x0):
+        """Displacement SCALE of the field, measured off the cusp point.
+
+        Why this is needed.  The solution set {D = D_x = D_xx = 0} contains the
+        CENTRE VARIETY as a spurious component of the SAME DIMENSION: where the
+        field has a centre, D vanishes identically and all three cusp equations
+        hold trivially.  A continuation can slide onto it and stay there, and a
+        bare D_xxx sign watch then fires on noise (or on the sign flip of D
+        itself as the curve crosses the centre variety) rather than on a
+        swallow-tail.  A genuine cusp has |D| well above the noise off the cusp
+        point; a centre has |D| at the 1e-33 integration floor everywhere.
+        """
+        r0 = (mp.mpf(x0) - 1) if self.side > 0 else (1 - mp.mpf(x0))
+        best = None
+        for fac in (mp.mpf("0.5"), mp.mpf("1.7")):
+            xr = 1 + r0 * fac * (1 if self.side > 0 else -1)
+            q = self.val(mu, xr)
+            if q["status"] == "OK":
+                v = abs(q["D"])
+                best = v if best is None else max(best, v)
+        return best
+
     def F(self, mu, x0):
         r = self.val(mu, x0)
         if r["status"] != "OK":

@@ -13,6 +13,12 @@ from cusp import Cusp, perko_data, wres, nullvec, solve4, det
 mp.mp.dps = 50
 
 
+# |D| off the cusp point below this means the field has a centre and the cusp
+# equations are satisfied trivially.  Engine noise is ~1e-33, so this is a
+# margin of ~1e9 over the floor while being far below any genuine displacement.
+AMP_FLOOR = "1e-24"
+
+
 def js(v, n=34):
     return mp.nstr(mp.mpf(v), n, strip_zeros=False)
 
@@ -45,6 +51,7 @@ def record(c, z, r, tang=None, extra=None, J=None):
         "nu": (js(r["Dxxx"] / (r["Dxxxx"] * (mp.mpf(x0) - 1)), 12)
                if r.get("Dxxxx") not in (None, 0) else None),
         "res": js(wres([r["D"], r["Dx"], r["Dxx"]], x0), 6),
+        "amp": (js(extra.pop("_amp"), 8) if extra and "_amp" in extra else None),
         "T": js(r["T"], 18), "transv": js(r["transv"], 8), "nsteps": r["nsteps"],
         "V1": js(V1_of(c.a, mu[0], mu[1]), 12),
         "L": js(L_of(c.a, c.a20, mu[0], mu[1], mu[2]), 12),
@@ -93,7 +100,7 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
                "V7_stratum": js(V7_of(a, a20), 16),
                "engine": eng.banner, "start": None, "end": None,
                "end_reason": None, "npts": 0,
-               "Dxxx_sign_changes": [], "Dxxx_min_abs": None,
+               "Dxxx_sign_changes": [], "swallowtail_candidates": [], "Dxxx_min_abs": None,
                "ledger": led.path}
 
     # ---- enter the cusp manifold at small amplitude (Bautin) -------------
@@ -124,6 +131,7 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
     ds = mp.mpf(ds0)
     dsmax_, dsmin_ = mp.mpf(dsmax), mp.mpf(dsmin)
     prevDxxx = r["Dxxx"]
+    prevD4 = r.get("Dxxxx")
     prevz = list(z)
     minabs = abs(r["Dxxx"])
     minat = dict(x0=js(z[3]), mu=[js(v) for v in mu])
@@ -149,19 +157,39 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
         if tn is None:
             summary["end_reason"] = "TANGENT_LOST"
             break
+        # ---- centre-variety guard (see Cusp.amplitude) --------------------
+        amp = c.amplitude(zn[:3], zn[3])
+        if amp is None or amp < mp.mpf(AMP_FLOOR):
+            summary["end_reason"] = ("CENTRE_VARIETY (|D| off the cusp point is %s,"
+                                     " i.e. D vanishes identically: this is a centre,"
+                                     " not a triple cycle)"
+                                     % (js(amp, 6) if amp is not None else "unavailable"))
+            break
         npts += 1
         # Jn comes from the chord Newton, so it is evaluated at a point ~ds^2
         # away; good to ~1e-3 relative, which is plenty for the tangent and for
         # a nondegeneracy check, but a sign-change point gets an exact Jacobian.
-        rec = record(c, zn, rn, tang=tn, J=Jn)
+        rec = record(c, zn, rn, tang=tn, J=Jn, extra={"_amp": amp})
         # ---- D_xxx watch -------------------------------------------------
         if (rn["Dxxx"] > 0) != (prevDxxx > 0):
-            rec = record(c, zn, rn, tang=tn)          # exact Jacobian here
-            rec["EVENT"] = "DXXX_SIGN_CHANGE"
+            rec = record(c, zn, rn, tang=tn, extra={"_amp": amp})   # exact Jacobian
+            # A sign change of D_xxx is a SWALLOW-TAIL only if D_xxxx does NOT
+            # flip with it.  When both flip it is the whole displacement
+            # changing sign as the curve crosses the centre variety.
+            d4flip = (prevD4 is not None and "Dxxxx" in rn
+                      and (rn["Dxxxx"] > 0) != (prevD4 > 0))
+            rec["EVENT"] = ("DXXX_SIGN_CHANGE_WITH_DXXXX_FLIP(centre-variety crossing,"
+                            " NOT a swallow-tail)" if d4flip else "SWALLOWTAIL_CANDIDATE")
             summary["Dxxx_sign_changes"].append(
                 {"between_x0": [js(z[3], 20), js(zn[3], 20)],
                  "Dxxx": [js(prevDxxx, 12), js(rn["Dxxx"], 12)],
+                 "Dxxxx": [js(prevD4, 12) if prevD4 is not None else None,
+                           js(rn["Dxxxx"], 12) if "Dxxxx" in rn else None],
+                 "amp": js(amp, 8),
+                 "centre_variety_crossing": bool(d4flip),
                  "npt": npts})
+            if not d4flip:
+                summary["swallowtail_candidates"].append(summary["Dxxx_sign_changes"][-1])
             if verbose:
                 print("  *** D_xxx SIGN CHANGE between x0=%s and %s : %s -> %s"
                       % (js(z[3], 12), js(zn[3], 12), js(prevDxxx, 6), js(rn["Dxxx"], 6)))
@@ -171,6 +199,7 @@ def run(a, a20, side=1, r0_start="0.02", ds0="0.004", dsmax="0.25", dsmin="1e-7"
                      "Dxxx": js(rn["Dxxx"], 16)}
         led.write(rec)
         prevDxxx = rn["Dxxx"]
+        prevD4 = rn.get("Dxxxx")
         prevz, z, tang = list(z), zn, tn
         ds = min(dsmax_, ds * mp.mpf("1.5"))
         if verbose and npts % 10 == 0:
