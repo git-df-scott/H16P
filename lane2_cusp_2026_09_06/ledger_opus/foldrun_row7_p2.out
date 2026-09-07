@@ -1,0 +1,9 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+k=0    s_f=3.4689942 s_i=2.2861348 h_i=-0.000250023  Dss_f=-0.001   final inventory: domain=['1.002', '6.997'] cycles=[] stationary=['2.28613480459', '3.46899418303']
+calls: 1361
+8786e-7    Dss_i=8.4509e-5   h=8.702e-6
+   k=10   s_f=2.59328 s_i=2.5828462 h_i=-1.21083e-10  Dss_i=6.6471e-6   h=7.888e-9
+
+EVENT: ('STEP_COLLAPSE', 'corrector/tracker failed below step 1e-9') at step 11
+   final inventory: domain=['1.002', '6.997'] cycles=['2.57795974713'] stationary=['1.47733573383', '2.58301831776', '2.59310643876']
+calls: 3163

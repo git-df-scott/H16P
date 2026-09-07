@@ -1,0 +1,15 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+
+unfolding matrix rows (scaled):
+   d_mu D(s_c)     ['-1.8611158', '0.13794252', '3.1137869', '1.3199745', '-0.098473044']
+   d_mu D_s(s_c)   ['-1.0428337', '0.21558662', '2.8411564', '1.1246711', '-0.15399288']
+   grad_mu T       ['-2.0', '0.0', '2.1493606', '1.0', '0.0']
+   row-normalised singular values: ['1.710898', '0.26986656', '0.00045868574']   ratio sigma_min/sigma_max = 0.00026809649
+   => UNFOLDING RANK = 3
+
+eps=0.02   tau=0         achieved D=9.69983e-5 D_s=0.000189463 T=-4.66065e-39 (target D_s=2.55834e-7)
+   domain ['1.002', '6.998']
+   LOCAL cycles (2): ['2.11042474663', '3.27157010144']
+   stationary   (2): ['1.750312728', '2.85652594']
+   REMOTE (-2.8409,0.3520) tr -5.2418 cycles=0
+   TOTAL = 2

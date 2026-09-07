@@ -85,6 +85,10 @@ the jet, parameter columns by central differences. Guards:
 
 ## 4. Entry census — the promising part
 
+> **CORRECTED — see §C4 below.** Three interior stationary points are what
+> three simple cycles already force (Rolle). They are *not* evidence for two
+> separated double folds, which need **four**. The "promising" reading was wrong.
+
 Displacement census on the `(3,1)` controls with a second focus, and on row 2:
 
 | row | `D` zeros | `D_s` zeros | stationary structure |
@@ -109,7 +113,7 @@ the focus.** Without the amplitude guard `s_1\to1` with the residual falling to
 **Why — the unfolding rank.** `B_{full}=[\partial_\mu D(s_1);\partial_\mu D(s_2)]`
 over `\mu=(a,a_{20},a_{11},a_{01},a_{10})` has **rank 2**, but badly conditioned:
 
-| row | `cos` angle between rows | `|row_1|`,`|row_2|` | `\sigma_{min}/\sigma_{max}` |
+| row | `cos` angle between rows | `|row_1|`,`|row_2|` | `\sigma_{min}/\sigma_{max}` **(rows normalised to unit length first)** |
 |---|---|---|---|
 | 8 | `0.9693` | `0.100`, `2.233` | `0.125` |
 | 7 | `0.9298` | `0.355`, `5.006` | `0.191` |
@@ -128,15 +132,15 @@ direction. Rank is not lost — the path is.
 | 8 | `3.2755755769` | `8.1e-29` | `+9.776e-5` (min) | `s_1=2.1770`, `D=+1.66e-5`, `D_{ss}=-6.10e-5` (max) |
 
 On the fold's constraint surface the surviving neighbour is of the **opposite
-type**, and the inner **same-type** extremum present at the seed (row 7: the max
-near `1.28`) is **gone**. Two opposite-type folds cannot both sit at zero — `D`
-would have to vanish identically between a maximum at `0` and a minimum at `0`,
-i.e. be a centre.
+type**, and the inner extremum present at the seed (row 7: the max near `1.28`)
+is **not present in the endpoint profile**.
 
-> **Failure mode, named precisely: the inner same-type extremum is destroyed
-> while the outer fold is driven to zero.** Not a coalescence of the two folds,
-> not a rank loss, not a return failure, and not a centre approach along the
-> guarded path.
+> **CORRECTED — see §C4.** The two claims made here were both wrong. (i) Two
+> opposite-type double zeros *can* coexist without the map being identically
+> zero (regression: `d(r)=r(r-1)^2(r-2)(r-3)^2`, a max at `1`, a min at `3`, a
+> simple zero at `2` between them). (ii) "Destroyed" was inferred from a
+> sampled endpoint profile, not from continuous tracking, so the event was
+> **unidentified**, not established.
 
 ## 6. Scope
 
@@ -164,3 +168,86 @@ python3 singlefold_track.py                     # single fold + the surviving ne
 ```
 
 New evaluations logged under `lane2_cusp_2026_09_06/ledger_opus/`.
+
+
+---
+
+## C. CORRECTIONS AND COMPLETIONS (2026-09-07, second pass)
+
+Four claims in sections 4 and 5 above are wrong or unsupported. They are
+corrected here rather than deleted; the ledger is append-only.
+
+### C1. Row-normalised singular values (§5)
+
+The table's `\sigma_{min}/\sigma_{max}` was computed after normalising each row
+of `B_{full}` to unit length. That is a measure of the **angle** between the two
+gradients, not of the conditioning of the unscaled matrix — the row-length ratio
+(`14`–`34x`) is reported separately in the same table and must not be read as
+already folded into the singular values. The header now says so.
+
+### C2. Three stationary points is not evidence (§4)
+
+**Lemma 1.** If the displacement `D` has three simple zeros on the return
+interval, Rolle forces at least **three** interior stationary points (two between
+the zeros, plus, on these seeds, one more forced by the sign of `D` at the ends
+of the return domain). So the census in §4 measured exactly what three cycles
+already imply.
+
+**Lemma 2.** Two **separated** double zeros of `D` together with the ambient
+sign structure force at least **four** interior stationary points.
+
+Machine-checked in `lane2_cusp_2026_09_06/rolle.py`. The §4 census gave three,
+not four, so it was **neutral**, never "promising".
+
+### C3. Opposite-type folds are not mutually exclusive
+
+The §5 argument — "`D` would have to vanish identically between a maximum at `0`
+and a minimum at `0`" — is false. Counterexample, verified in `rolle.py`:
+
+```
+d(r) = r (r-1)^2 (r-2) (r-3)^2
+stationary points: 0.2517, 1.0 (d'' = -8, maximum), 1.6022, 2.4794, 3.0 (d'' = +24, minimum)
+```
+
+A double zero that is a maximum at `r=1` and a double zero that is a minimum at
+`r=3` coexist, with a simple zero at `r=2` between them. `D` is not identically
+zero. So the opposite type of the surviving neighbour is **not** a reason the
+double-fold target is unreachable.
+
+### C4. "Destroyed" → unidentified event
+
+The inner extremum's absence was read off the endpoint profile of the guarded
+Newton path. No continuous tracking was performed, so none of the candidate
+events (collision `D_s = D_{ss} = 0` with the fold, exit of the return domain,
+passage to a centre, or an engine return failure) was distinguished. The correct
+label is **unresolved**. §D records what continuous tracking then found.
+
+### D. What continuous tracking found
+
+The event left unresolved by §C4 is identified in `FOLD_CONTINUATION_REPORT.md`
+§4: along the fold-preserving steepest-descent path, the second extremum's
+critical value `h_i` and the fold separation `delta` go to zero **together**, at
+the exact cubic rate `|h_i|/delta^3 -> 8.52791e-4` (constant to six significant
+figures over two decades in `delta`), and the path terminates at a nondegenerate
+cusp of the return map — `D = D_s = D_ss = 0`, `D_sss = -1.279e-3`, scaled Newton
+residual `2.14e-33`, at
+
+```
+a = 0.7266687384078295434888743   a20 = -12.00139906654482774401223
+a11 = 2.149360603432544109053414  a01 = 0.3045260121871923258255834
+a10 = -26.49779478462597842880328 a00 = 40.22641172838271306420563
+s_c = 2.5880523017615422998
+```
+
+The extremum was not destroyed; it merged with the fold. Its 2-parameter
+unfolding gives three simple limit cycles, verified by full inventory.
+
+### E. Remote-cycle counts in this file are withdrawn
+
+Every `remote cycles = 0` reported here came from a ray-shooting detector that
+was later run as a positive control against the engine-certified first nest and
+**failed it** — it found none of three certified cycles, because 40 samples over
+`d in (0,3]` cannot resolve cycles `0.015` apart. The detector was repaired
+(`remote2.py`, 300 samples) and now passes the control; see
+`FOLD_CONTINUATION_REPORT.md` §6 for the four validated counts. Read every
+remote count in this file as **not measured**.
