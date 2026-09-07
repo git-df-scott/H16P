@@ -70,8 +70,11 @@ def derivs(L, phi, u, h, dirhint, **kw):
 
 # ------------------------------------------------------------------ the solve
 def solve_cusp(L0, phi, v, u0, dirhint, lam0=0.0, h=0.03, dlam=2e-3,
-               lam_max=0.8, iters=40, **kw):
-    """Damped Newton on (A_u, A_uu) = 0 in (u, lambda).  Returns a dict."""
+               lam_max=0.8, iters=40, u_lo=None, u_hi=None, **kw):
+    """Damped Newton on (A_u, A_uu) = 0 in (u, lambda), with u confined to
+    [u_lo, u_hi].  The confinement matters: without it Newton runs to the
+    Andronov-Hopf plateau near the focus, where A_u and A_uu are both zero to
+    within the noise for trivial reasons and every direction "converges"."""
     u, lam = float(u0), float(lam0)
     hist = []
     for it in range(iters):
@@ -86,8 +89,12 @@ def solve_cusp(L0, phi, v, u0, dirhint, lam0=0.0, h=0.03, dlam=2e-3,
             return dict(ok=False, why="unresolved", lam=lam, u=u)
         _a, au, auu, auuu = d
         hist.append((u, lam, au, auu))
-        # scale-free residual: beta* moves by `rng` over the curve
         if abs(au) < 1e-13 and abs(auu) < 1e-11:
+            # a genuine cusp is nondegenerate: A_uuu must be clear of the noise
+            # floor of the third derivative of a 1e-12-accurate beta*
+            if abs(auuu) < 1e-10:
+                return dict(ok=False, why="degenerate_flat", lam=lam, u=u,
+                            au=au, auu=auu, auuu=auuu)
             return dict(ok=True, u=u, lam=lam, au=au, auu=auu, auuu=auuu,
                         iters=it, hist=hist)
         # Jacobian: d/du analytic from the same fit, d/dlambda by difference
@@ -106,6 +113,10 @@ def solve_cusp(L0, phi, v, u0, dirhint, lam0=0.0, h=0.03, dlam=2e-3,
         step[1] = float(np.clip(step[1], -0.05, 0.05))
         u += step[0]
         lam += step[1]
+        if u_lo is not None and u < u_lo:
+            u = u_lo
+        if u_hi is not None and u > u_hi:
+            u = u_hi
         if abs(lam) > lam_max:
             return dict(ok=False, why="lam_out_of_range", lam=lam, u=u)
     return dict(ok=False, why="no_convergence", lam=lam, u=u, hist=hist)
@@ -135,20 +146,38 @@ def cross_cusp(L0, phi, v, lam_star, n=260, deltas=(0.0, 5e-4, 2e-3, 8e-3, 3e-2)
     return out
 
 
-def start_points(feat, s_lo, s_hi):
-    """Where to launch Newton: the near-shoulder of each outside region, the
-    midpoints of the two outside regions, and the interval between the two
-    known extrema (which finds the annihilating cusp -- kept as a control)."""
-    us = []
-    ex = [e["s"] for e in (feat.get("extrema") or [])]
-    lo, hi = math.log(s_lo), math.log(s_hi)
-    if feat.get("fold_margin_s"):
-        us.append(math.log(feat["fold_margin_s"]))
-    if ex:
-        e0, e1 = math.log(min(ex)), math.log(max(ex))
-        us += [0.5 * (lo + e0), 0.5 * (e1 + hi),
-               e0 - 0.25 * (e0 - lo), e1 + 0.25 * (hi - e1),
-               0.5 * (e0 + e1)]
+def regions(feat, plateau_frac=0.05):
+    """The two windows a NEW pair of extrema can be born in, as (u_lo, u_hi,
+    tag, [start points]).  The `between` window -- where the seed's own two
+    extrema annihilate -- is returned too, as a control: a cusp found there is
+    the useless direction and must not be counted as progress.
+
+    The inner window starts above the Andronov-Hopf plateau.  On the plateau
+    beta* is flat to within its own noise, so A_u = A_uu = 0 holds there for
+    every field and every direction; excluding it is what makes the solve
+    meaningful rather than a noise detector."""
+    ex = sorted(e["s"] for e in (feat.get("extrema") or []))
+    lo, hi = math.log(feat["s_lo"]), math.log(feat["s_hi"])
+    # leave the plateau: the first point at which beta* has moved appreciably
+    u_start = lo + plateau_frac * (hi - lo)
+    out = []
+    if len(ex) >= 2:
+        e0, e1 = math.log(ex[0]), math.log(ex[-1])
+        if e0 - u_start > 0.15:
+            out.append((u_start, e0 - 0.05, "inner",
+                        [u_start + f * (e0 - 0.05 - u_start) for f in (0.25, 0.5, 0.75)]))
+        if hi - e1 > 0.15:
+            out.append((e1 + 0.05, hi - 0.02,
+                        "outer",
+                        [e1 + 0.05 + f * (hi - 0.07 - e1) for f in (0.25, 0.5, 0.75)]))
+        out.append((e0 + 0.02, e1 - 0.02, "between",
+                    [0.5 * (e0 + e1)]))
     else:
-        us += [lo + 0.25 * (hi - lo), 0.5 * (lo + hi), lo + 0.75 * (hi - lo)]
-    return [u for u in us if lo + 0.02 * (hi - lo) < u < hi - 0.02 * (hi - lo)]
+        out.append((u_start, hi - 0.02, "whole",
+                    [u_start + f * (hi - 0.02 - u_start) for f in (0.2, 0.4, 0.6, 0.8)]))
+    if feat.get("fold_margin_s"):
+        u = math.log(feat["fold_margin_s"])
+        for k, (a, c, tag, st) in enumerate(out):
+            if a < u < c:
+                out[k] = (a, c, tag, st + [u])
+    return out
