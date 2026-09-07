@@ -315,9 +315,9 @@ over all 9 seeds are in flight; results in the next checkpoint.
 truncated section loses extrema; see the defect note below), so nothing is
 missed between samples and the far end of the segment is seen too.
 
-Partial at the time of writing: **72 directions, 2376 field evaluations, zero
-reaching three interior extrema.**  Counts over every field evaluated:
-`{2 extrema: 592, 1: 175, 0: 1393, unresolved: 183}`.
+**215 directions, 7095 field evaluations, zero reaching three interior
+extrema** (the scan was still running when this was written; the ledger is
+append-only, so re-run `analyze_lines.py` for the current figure).
 
 The scan measures directly what the perturbation statistics measured
 indirectly -- how far the three-cycle configuration survives along a straight
@@ -326,10 +326,10 @@ line in the live coefficient space, as a relative displacement:
 | percentile | survival width |
 |---|---|
 | 25th | 4.98e-04 |
-| 50th | 8.89e-04 |
-| 75th | 1.59e-03 |
-| 90th | 5.06e-03 |
-| widest seen | 3.63e-02 |
+| 50th | 1.14e-03 |
+| 75th | 2.39e-03 |
+| 90th | 6.49e-03 |
+| widest seen | 3.70e-02 |
 
 Cherkas row 7 does not survive even the smallest step on the grid (`1e-4`) in
 either direction, consistent with its three-cycle window being `4.2e-06` wide
