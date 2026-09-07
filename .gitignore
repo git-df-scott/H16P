@@ -1,2 +1,2 @@
-__pycache__/
-*.py[cod]
+lane1/build/
+lane1/__pycache__/

@@ -13,26 +13,30 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "retmap1.c")
-LIB = os.path.join(HERE, "libretmap1.so")
+BUILD = os.path.join(HERE, "build")
+SRC_HASH = hashlib.sha256(open(SRC, "rb").read()).hexdigest()
 
 
-def _build():
-    src_hash = hashlib.sha256(open(SRC, "rb").read()).hexdigest()
-    stamp = LIB + ".sha256"
-    if os.path.exists(LIB) and os.path.exists(stamp):
-        if open(stamp).read().strip() == src_hash:
-            return src_hash
-    cmd = ["cc", "-O3", "-march=native", "-fno-fast-math", "-fopenmp",
-           "-shared", "-fPIC", SRC, "-o", LIB, "-lm"]
-    subprocess.run(cmd, check=True)
-    open(stamp, "w").write(src_hash)
-    return src_hash
+def _build(tag, extra):
+    """Build to a hash-stamped path so old and new engines can coexist and a
+    ledger row's engine_sha256 always names the binary that produced it."""
+    os.makedirs(BUILD, exist_ok=True)
+    lib = os.path.join(BUILD, f"libretmap1{tag}_{SRC_HASH[:12]}.so")
+    if not os.path.exists(lib):
+        cmd = (["cc", "-O3", "-march=native", "-fno-fast-math", "-fopenmp",
+                "-shared", "-fPIC", SRC, "-o", lib] + extra + ["-lm"])
+        subprocess.run(cmd, check=True)
+    return lib
 
 
-ENGINE_HASH = _build()
+ENGINE_HASH = SRC_HASH
 ENGINE_NAME = "lane1/retmap1.c"
 
-_lib = ctypes.CDLL(LIB)
+_lib = ctypes.CDLL(_build("", []))
+try:
+    _libq = ctypes.CDLL(_build("q", ["-DLANE1_QUAD", "-lquadmath"]))
+except Exception:                                     # quadmath unavailable
+    _libq = None
 _dbl = np.ctypeslib.ndpointer(dtype=np.float64, flags="C_CONTIGUOUS")
 _int = np.ctypeslib.ndpointer(dtype=np.int32, flags="C_CONTIGUOUS")
 
@@ -47,7 +51,32 @@ _lib.betastar.argtypes = [_dbl, ctypes.c_double, _dbl, ctypes.c_int,
                           ctypes.c_long, ctypes.c_double, ctypes.c_double,
                           ctypes.c_int, _dbl, _int, _dbl, _dbl]
 
+if _libq is not None:
+    for _nm in ("d_curve_q", "returns_q"):
+        _f = getattr(_libq, _nm)
+        _f.restype = None
+        _f.argtypes = [_dbl, ctypes.c_double, _dbl, ctypes.c_int,
+                       ctypes.c_double, ctypes.c_double, ctypes.c_double,
+                       ctypes.c_double, ctypes.c_long, _dbl, _int] + \
+                      ([_dbl] if _nm == "d_curve_q" else [])
+    _libq.betastar_q.restype = None
+    _libq.betastar_q.argtypes = _lib.betastar.argtypes
+
 DEFAULTS = dict(rtol=1e-12, Tmax=400.0, Rmax=1.0e4, nstep=4_000_000)
+QUAD_DEFAULTS = dict(rtol=1e-18, Tmax=400.0, Rmax=1.0e4, nstep=200_000_000)
+
+
+def d_curve_quad(loc10, phi, s, b=0.0, **kw):
+    """binary128 displacement (PROTOCOL rule 6: trigger-deciding precision)."""
+    if _libq is None:
+        raise RuntimeError("binary128 engine unavailable")
+    o = dict(QUAD_DEFAULTS); o.update(kw)
+    s = np.ascontiguousarray(np.asarray(s, float))
+    n = s.size
+    D = np.empty(n); st = np.empty(n, np.int32); T = np.empty(n)
+    _libq.d_curve_q(np.ascontiguousarray(loc10), float(phi), s, n, float(b),
+                    o["rtol"], o["Tmax"], o["Rmax"], o["nstep"], D, st, T)
+    return D, st, T
 
 
 # ----------------------------------------------------------------- fields
