@@ -26,8 +26,10 @@ def main():
     for name in a.seed.split(","):
         L0 = np.ascontiguousarray(tab[name]["L"], float)
         phi = W.best_phi(L0)
-        r = A.evaluate(L0, phi, n=a.n)
-        feat = r[0] if isinstance(r, tuple) else r
+        # read the seed on two rays: a truncated section loses extrema, and the
+        # region split below depends on where they are
+        feat = W.evaluate_multi(L0, [phi, phi + 0.5 * math.pi], n=a.n)
+        phi = feat.get("phi", phi)
         if feat.get("status") != "ok":
             led.write(dict(kind="cusp_seed_failed", seed=name, feat=feat))
             continue
