@@ -105,34 +105,70 @@ launch of the line scan by roughly 30x.
 
 The line scans and the cusp solve agree that a third extremum is not reachable
 by moving a *published seed* along a random line.  The instrument that has not
-been tried is the one PROTOCOL section (c) names: **start from the cusp, not
-from the seed.**
+been made to work yet is the one PROTOCOL section (c) names: **start from the
+cusp, not from the seed.**  `bautin.py` and `bautinrun.py` build that, and they
+are one calibration away from being correct.
 
-Triple cycles are known to exist at small amplitude in the Bautin unfolding of
-a third-order weak focus,
-`D(r) ~ V1 r + V3 r^3 + V5 r^5 + V7 r^7` with
-`V5 = -3 r0^2 V7`, `V3 = 3 r0^4 V7`, `V1 = -r0^6 V7` giving a triple cycle at
-`r0`.  Cherkas--Artes--Llibre's own two-parameter family of third-order weak
-foci is in `SEEDS.json`
-(`a11 = 4 - 2a`, `a01 = 2a + 1 - a11`,
-`a10 = (6(a^2 - a - 2) + a20(6a - 7))/(1 - 3a)`, parameters `a` and `a20`),
-and `V3, V5, V7` are given in closed form in `LIT_A` section 3.1.  So:
+### What is already verified
 
-1. Solve the three focal-value conditions for a triple cycle at small `r0` on
-   that two-parameter family -- this is algebra, not a search, and it lands
-   exactly on the cusp manifold.
-2. Continue that cusp in `r0` up to normal amplitude with `cusp.py`'s Newton,
-   using the small-`r0` solution as the first predictor.  **Nobody has done
-   this** (PROTOCOL section (c), last sentence).
-3. Watch for the swallowtail `D = D_s = D_ss = D_sss = 0`.  By Perko 1995
-   Theorem 4.3 a multiplicity-four cycle with the nondegeneracy conditions
-   *forces* four simple cycles in the nest nearby -- it does not merely permit
-   them.  That is the only route in this literature that converts a solved
-   equation directly into four cycles.
+`bautin.focal_values` is a faithful transcription of Cherkas-Artes-Llibre
+eq. (15): on the paper's own third-order weak focus family it returns
+`V1 = V3 = V5 = 0`, `V7 != 0`, and the engine confirms the focus really is
+third-order -- in binary128 with the two-tolerance gate, `log|D|` against
+`log s` has slope **7.10** and `D/s^7` is constant to four figures over a
+decade in `s`.  The three cusp conditions are solved exactly (residuals
+`1e-20` to `1e-13`), the unfolding in `(e1, e3)` is closed-form, and the
+`(a, a20, r0)` sweep runs.
 
-The apparatus for step 3 already exists here: extend `cusp.py`'s stencil fit
-from degree 4 to degree 6 and solve `A_u = A_uu = A_uuu = 0` in
-`(u, lambda1, lambda2)`.
+### What is wrong, and the fix
+
+The printed `V1, V3, V5, V7` are focal values **up to per-field normalisation
+constants**.  Measured against the true leading Taylor coefficient of `D`:
+
+    c7 / V7 = -6.7e-05   (a = -2,  a20 = -1)
+    c7 / V7 = -9.0e-06   (a =  3,  a20 = -12)
+
+Not constant across fields, and negative -- the sign convention differs too.
+So `V5 : V3 : V1 = -3 r0^2 : 3 r0^4 : -r0^6` imposed on the *printed* values is
+not the triple-root condition on the true series, which is why the 150 fields
+in `ledger/bautin_*.jsonl` have no triple cycle: `D` has no sign change near
+the focus on any of them.
+
+Calibrate numerically instead, which removes the constants entirely:
+
+1. For a candidate `(a, a20, a11)`, fit the true coefficients of
+   `D(s) = c1 s + c3 s^3 + c5 s^5 + c7 s^7` on a log grid near the focus, in
+   **binary128** (`E.d_curve_quad`, `rtol` 1e-20) and **with the two-tolerance
+   gate**: keep only the points where `|D| > 30 * noise`.  Without that gate the
+   fit is nonsense -- a first pass at the slope check above returned 5.03
+   instead of 7.10 purely from points below the binary128 floor.
+2. `c1` and `c3` are affine in `a01` and `a10` respectively (through `V1` and
+   `V3`), so two extra fits at displaced `a01`, `a10` give the exact affine
+   maps and the triple-root conditions `c1 = -r0^6 c7`, `c3 = 3 r0^4 c7` become
+   a 2x2 linear solve.
+3. `c5 = -3 r0^2 c7` is then one scalar equation in `a11`; bracket and bisect
+   it exactly as `bautin.triple_cycle_field` already does, but on `c5` and `c7`
+   rather than on `V5` and `V7`.
+4. Confirm the construction before trusting it: `D` must show a sign change at
+   the triple cycle, and unfolding by `(e1, e3)` must open three sign changes in
+   a cusped wedge.  Only then continue `r0` upward.
+
+### Then the actual question
+
+Three small cycles out of the focus is Bautin's cap and is not new.  What is
+new is whether a field **on** the cusp manifold also carries an extremum of
+`beta*` further out: an extremum beyond the cusp is a third extremum, and a
+third extremum is four cycles in the nest.  Bautin caps what comes out of the
+focus, not what the rest of the nest does.  `bautinrun.py` already records the
+full `beta*` for every constructed field, so once the calibration is in, that
+question is answered by re-reading the same ledger column.
+
+Watch also for the swallowtail `D = D_s = D_ss = D_sss = 0`: by Perko 1995
+Theorem 4.3 a multiplicity-four cycle with the nondegeneracy conditions
+*forces* four simple cycles in the nest nearby -- it does not merely permit
+them.  With the calibration in place that is `c1, c3, c5, c7` all tied to a
+fourth-order root, one more condition than above and one more free parameter
+(`a20` joins `a11`, `a10`, `a01`).
 
 ## Trigger discipline (PROTOCOL rule 3) -- wired, never fired
 
