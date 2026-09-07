@@ -3,8 +3,10 @@
 
 TEST 1 (Bautin baseline).  For the leading Bautin model D(r) = c r (r^2-r0^2)^3,
         D_rrr(r0) = 48 c r0^4,  D_rrrr(r0) = 480 c r0^3,  nu = G/(r0 H) = 1/10.
-        So nu = 0.1 is the GENERIC value at a triple cycle, not a small
-        "distance to a swallow-tail".
+        So nu = 0.1 is the value predicted by THIS leading model.  It is NOT a
+        universal exact value for an arbitrary return map; it is the baseline a
+        triple cycle is expected to sit near, so a measured plateau near 0.1
+        carries no information about a swallow-tail.
 
 TEST 2 (coordinate rank).  With a00 = a01+a11-a10-a20-a pinning A=(1,-1) and
         I0 = a00/a11, I1 = a11^2/a20, I2 = a01^2/a11, I3 = a10/(a01 a11),
@@ -22,7 +24,7 @@ H = S.simplify(S.diff(D, r, 4).subs(r, r0))
 print("   D_rrr(r0)  =", G, "   expected 48 c r0^4   ->", S.simplify(G - 48*c*r0**4) == 0)
 print("   D_rrrr(r0) =", H, "   expected 480 c r0^3  ->", S.simplify(H - 480*c*r0**3) == 0)
 nu = S.simplify(G/(r0*H))
-print("   nu = G/(r0 H) =", nu, "  -> baseline nu = 1/10 = 0.1")
+print("   nu = G/(r0 H) =", nu, "  -> leading-model baseline 1/10 (not universal)")
 assert S.simplify(G - 48*c*r0**4) == 0 and S.simplify(H - 480*c*r0**3) == 0
 assert nu == S.Rational(1, 10)
 print("   PASS\n")

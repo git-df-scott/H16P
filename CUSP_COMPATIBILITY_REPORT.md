@@ -30,11 +30,14 @@ engine calls are logged in `lane2_cusp_2026_09_06/ledger_opus/`.
 >    either side of both. My samples were `6.5e-3` apart in `x0` while the events
 >    are `1.06e-4` apart. The conclusion happens to survive, but only after an
 >    actual solve (section 1R).
-> 2. **`nu \approx 0.1` is the BASELINE, not a large value.** For the Bautin model
->    `D(r)=c\,r(r^2-r_0^2)^3`, `D_{rrr}(r_0)=48cr_0^4`, `D_{rrrr}(r_0)=480cr_0^3`,
->    so `nu = 1/10` at *every* generic triple cycle. The `0.105`–`0.108` plateau
->    in section 4 is therefore exactly what a triple cycle must give, and is
->    **not** evidence about the fourth/fifth-cycle compatibility (section 4R).
+> 2. **`nu \approx 0.1` is the BASELINE, not a large value.** For the *leading
+>    Bautin model* `D(r)=c\,r(r^2-r_0^2)^3`, `D_{rrr}(r_0)=48cr_0^4`,
+>    `D_{rrrr}(r_0)=480cr_0^3`, so `nu = 1/10` **in that model**. This is not a
+>    universal exact value for an arbitrary return map; it is the value the
+>    leading small-amplitude model predicts, and the measured `0.105`–`0.108` is
+>    consistent with it. Either way a plateau near `0.1` is what a triple cycle
+>    is expected to give, so it is **not** evidence about the fourth/fifth-cycle
+>    compatibility (section 4R).
 > 3. **The invariant coordinates in section 2 were incomplete.** The scaling moves
 >    the marked equilibrium off `(1,-1)`, which the pinned family has already
 >    used. With `a_{00}` and `I_0=a_{00}/a_{11}` included,
