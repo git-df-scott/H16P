@@ -53,7 +53,19 @@ DENSE_SAMPLES = 400      # dense-output samples used by the gates
 
 
 class ReturnFailure(RuntimeError):
-    """A half return that did not resolve. Recorded, never read as a zero."""
+    """A half return that did not resolve. Recorded, never read as a zero.
+
+    Carries the structured measurements taken before the gate fired, so a
+    failure is evidence rather than a discarded string.
+    """
+
+    def __init__(self, message, measurements=None):
+        super().__init__(message)
+        self.message = message
+        self.measurements = dict(measurements or {})
+
+    def as_record(self):
+        return {'reason': self.message, 'measurements': self.measurements}
 
 
 def seed_theta(tau=1e-4):
@@ -120,7 +132,9 @@ def half_return(th, s0, side, sign, rtol=1e-12, variational=True, gates=True):
     fx0, _ = vector_field(th, 0.0, y0)
     launch = sign * fx0                      # signed departure speed off {x=0}
     if abs(launch) < TRANSVERSALITY:
-        raise ReturnFailure('launch not transverse: x_dot = %.3e' % launch)
+        raise ReturnFailure('launch not transverse: x_dot = %.3e' % launch,
+                            {'s0': s0, 'side': side, 'sign': sign,
+                             'launch_xdot': launch})
     launch_side = math.copysign(1.0, launch)
 
     n = 14 if variational else 2
@@ -139,11 +153,16 @@ def half_return(th, s0, side, sign, rtol=1e-12, variational=True, gates=True):
 
     sol = solve_ivp(rhs, [0.0, TMAX], u0, method='DOP853', events=ev,
                     rtol=rtol, atol=rtol * 1e-3, dense_output=True)
+    base = {'s0': s0, 'side': side, 'sign': sign, 'launch_xdot': launch,
+            'launch_side': launch_side, 'solver_status': sol.status,
+            'solver_message': sol.message, 't_final': float(sol.t[-1]),
+            'z_final': [float(sol.y[0, -1]), float(sol.y[1, -1])]}
     if not sol.success:
-        raise ReturnFailure('integration failed: %s' % sol.message)
+        raise ReturnFailure('integration failed: %s' % sol.message, base)
     if len(sol.t_events[0]) != 1:
+        base['qualifying_crossings'] = len(sol.t_events[0])
         raise ReturnFailure('itinerary incomplete: %d qualifying crossings'
-                            % len(sol.t_events[0]))
+                            % len(sol.t_events[0]), base)
 
     T = float(sol.t_events[0][0])
     uT = sol.y_events[0][0]
@@ -170,16 +189,19 @@ def half_return(th, s0, side, sign, rtol=1e-12, variational=True, gates=True):
                                      for i in range(len(xs)) for ex, ey in eq)
                                  if eq else float('inf'))
         # gate order matters: report every measurement before raising
+        report.update(base)
         if report['interior_sign_changes']:
-            raise ReturnFailure('unintended interior crossing of the section')
+            raise ReturnFailure('unintended interior crossing of the section', report)
         if not report['side_preserved']:
-            raise ReturnFailure('side not preserved along the return segment')
+            raise ReturnFailure('side not preserved along the return segment', report)
         if report['eq_distance'] < EQ_GUARD:
-            raise ReturnFailure('equilibrium approach %.3e' % report['eq_distance'])
+            raise ReturnFailure('equilibrium approach %.3e' % report['eq_distance'],
+                                report)
         if not np.all(np.sign(interior) == launch_side):
-            raise ReturnFailure('return segment left the launch side of the section')
+            raise ReturnFailure('return segment left the launch side of the section',
+                                report)
     if abs(xdotT) < TRANSVERSALITY:
-        raise ReturnFailure('terminal crossing not transverse: %.3e' % xdotT)
+        raise ReturnFailure('terminal crossing not transverse: %.3e' % xdotT, report)
 
     report['s_end'] = math.log(abs(yT))
     if variational:
@@ -269,3 +291,135 @@ def log_cross_check(th, s, side, rtol=1e-12):
             raise ReturnFailure('log-coordinate cross-check did not resolve')
         ends.append(sol.y_events[0][0][1])
     return ends[0] - ends[1]
+
+
+def parameter_sensitivity_audit(th, s, side, rel_steps=(1e-2, 1e-3, 1e-4),
+                                rtol_list=(1e-12, 1e-13)):
+    """Audit ALL FIVE dD/dtheta sensitivities, not just dD/ds.
+
+    These five drive the tangent prediction in the continuation, so leaving
+    them unaudited overstates what has been checked. Central differences at
+    three relative step sizes and two tolerances; the spread is an empirical
+    uncertainty, not an error bound.
+    """
+    names = ('a', 'b', 'e0', 'e1', 'e2')
+    rows = []
+    for j, name in enumerate(names):
+        entry = {'parameter': name, 'variational': {}, 'finite_differences': {}}
+        for rtol in rtol_list:
+            entry['variational']['rtol=%g' % rtol] = float(
+                displacement(th, s, side, rtol)['dD_dtheta'][j])
+            for rel in rel_steps:
+                h = rel * THETA_SCALE[j]
+                tp, tm = np.array(th, dtype=float), np.array(th, dtype=float)
+                tp[j] += h
+                tm[j] -= h
+                try:
+                    val = (D_only(tp, s, side, rtol) - D_only(tm, s, side, rtol)) / (2 * h)
+                except ReturnFailure as exc:
+                    val = 'failed: %s' % exc.message
+                entry['finite_differences']['rtol=%g,rel=%g' % (rtol, rel)] = val
+        vals = [v for v in list(entry['variational'].values())
+                + list(entry['finite_differences'].values()) if isinstance(v, float)]
+        centre = float(np.mean(vals)) if vals else float('nan')
+        spread = (max(vals) - min(vals)) if vals else float('nan')
+        entry['estimate'] = centre
+        entry['spread'] = spread
+        entry['relative_spread'] = abs(spread / centre) if centre else float('inf')
+        rows.append(entry)
+    return {'rows': rows,
+            'worst_relative_spread': max(r['relative_spread'] for r in rows),
+            'note': 'spread across tolerances and step sizes; empirical '
+                    'uncertainty, not an error bound'}
+
+
+# --- distinctness and equilibrium safeguards -------------------------------
+#
+# A sign change of D is NOT by itself a distinct periodic orbit. Two facts
+# found on the seed field force these checks:
+#
+#   * The upper section coordinate is two-to-one on cycles. The equilibrium
+#     at (0, 1/2) lies ON the section {x = 0}, so a closed orbit around it
+#     meets the section twice, once with |y| < 1/2 and once with |y| > 1/2.
+#     The seed's three upper cycles appear at s = 0.98024, 1.38995, 2.04521
+#     and AGAIN at s = -1.45588, -1.53575, -1.63899. Counting both is
+#     double counting.
+#   * D changes sign across the equilibrium itself (near s = log(1/2)), with
+#     the return period collapsing to the linearised value 2*pi. That zero is
+#     an equilibrium artefact, not a cycle.
+
+SECTION_EQ_GUARD = 5e-2   # minimum distance from the SECTION POINT to an equilibrium
+
+
+def section_equilibrium_distance(th, s, side):
+    """Distance from the section point (0, side*e^s) to the nearest equilibrium."""
+    eq = equilibria(th)
+    if not eq:
+        return float('inf')
+    y0 = side * math.exp(s)
+    return min(math.hypot(0.0 - ex, y0 - ey) for ex, ey in eq)
+
+
+def partner_intersection(th, s, side, rtol=1e-12):
+    """The other section crossing of the orbit through (0, side*e^s).
+
+    At a root of D the forward and backward half returns land on the same
+    point, which is the closed orbit's second intersection with the section.
+    """
+    r = displacement(th, s, side, rtol, variational=False)
+    return {'forward_end': r['forward']['s_end'],
+            'backward_end': r['backward']['s_end'],
+            'mismatch': r['D']}
+
+
+def cycle_key(th, s, side, rtol=1e-12):
+    """Identity of the closed orbit through a root, invariant to which
+    intersection was used: the unordered pair of its section crossings."""
+    p = partner_intersection(th, s, side, rtol)
+    a, b = sorted((s, 0.5 * (p['forward_end'] + p['backward_end'])))
+    return (side, a, b)
+
+
+CYCLE_TOL = 1e-3          # two crossings closer than this are the same orbit
+
+
+def distinct_cycles(th, roots, rtol=1e-12, tol=CYCLE_TOL):
+    """Cluster candidate roots by cycle identity, with an explicit tolerance.
+
+    Matching is by proximity of the unordered crossing pair, not by rounding:
+    the two intersections of one orbit are located independently and agree
+    only to solver accuracy.
+    """
+    keys = [cycle_key(th, r['s_root'], r['side'], rtol) for r in roots]
+    groups = []
+    for r, k in zip(roots, keys):
+        for g in groups:
+            if (g['key'][0] == k[0] and abs(g['key'][1] - k[1]) < tol
+                    and abs(g['key'][2] - k[2]) < tol):
+                g['roots'].append(r['s_root'])
+                break
+        else:
+            groups.append({'key': list(k), 'roots': [r['s_root']]})
+    return {'distinct_count': len(groups), 'tolerance': tol,
+            'groups': groups,
+            'duplicates': [g for g in groups if len(g['roots']) > 1]}
+
+
+def candidate_gate(th, s, side, rtol=1e-12):
+    """Every check a candidate root must pass before it is called a cycle."""
+    out = {'s': s, 'side': side}
+    out['section_eq_distance'] = section_equilibrium_distance(th, s, side)
+    out['section_eq_ok'] = out['section_eq_distance'] >= SECTION_EQ_GUARD
+    try:
+        r = displacement(th, s, side, rtol)
+        out['D'] = r['D']
+        out['dD_ds'] = r['dD_ds']
+        out['period_estimate'] = r['period_estimate']
+        out['orbit_eq_distance'] = r['eq_distance']
+        out['resolved'] = True
+    except ReturnFailure as exc:
+        out['resolved'] = False
+        out['failure'] = exc.as_record()
+        return out
+    out['cycle_key'] = list(cycle_key(th, s, side, rtol))
+    return out

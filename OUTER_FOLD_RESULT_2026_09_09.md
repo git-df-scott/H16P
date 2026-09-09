@@ -1,186 +1,219 @@
-# Outer-fold strike: repaired machinery, seed audit, and compensated continuation
+# Anchored continuation for a fifth cycle: repairs, corrections, and results
 
-**Status: executed and bounded. No counterexample. No fifth cycle. Everything
-below is floating-point evidence, not certification.**
+**No counterexample. No fifth cycle. Everything here is floating-point
+evidence: no interval arithmetic, no validated integration, no certified
+periodic orbit.** Later sections supersede earlier claims wherever they
+conflict.
 
-Execution of [H16P_NEXT_STRIKE.md](H16P_NEXT_STRIKE.md) Steps 1-3, plus
-repairs to the evidence machinery that the first pass of this work got wrong.
-Code and data: [outer_fold_2026_09_09/](outer_fold_2026_09_09/).
+## What was read, and how
 
-## Corrections to the first pass
+Source commit reviewed: `1a6e8e7d5d0ca07de333cc59add7b5dc66ba721f` (the PR
+head at the time of the review).
 
-The first version of this document and of the pull-request text overstated
-several things. They are corrected here and the wording is not reused.
+- **Read literally**: `H16P_NEXT_STRIKE.md`; the previous version of this
+  file; `reversible_reseed/verify_control.py` and `README.md`;
+  `research_2026_09_08/outputs/H16P-focus-route-correction.md`,
+  `H16P-center-locus-compatibility.md`, `H16P-extreme-boundary-search.md`;
+  `STAGED_SHI_2026_09_05.md` (opening); `FOUR_CYCLE_FRONTIER.md` (opening).
+- **Machine-inspected**: `reversible_reseed/data/verified_control.json`
+  (replayed, bit-identical); `outer_fold_2026_09_09/data/*.json`;
+  `outer_fold_2026_09_09/*.py` (all executed).
+- **Still pending**: the bulk of `research_2026_09_08/outputs/` (roughly 180
+  files), the `q4/`, `kkl/`, `staged_2026_09_05/` and `council/` trees, and
+  the full text of every cited paper. Claims below that depend on unread
+  material are marked.
 
-- **"No outer fold on the branches tried" / "the fold isn't there."** Wrong
-  form of claim. Sampled profiles cannot establish absence. What the scans
-  show is that at every sampled point of the outer windows examined, `dD/ds`
-  was negative; nothing was sampled between grid points, and a double zero
-  need not change sign, so no sampled profile can exclude one.
-- **"`a_sweep` rejected at step 1, root lost."** Wrong attribution. A single
-  unadapted step of `0.05` in `a` failed *the tracker*. It establishes
-  nothing about whether a cycle continued to exist. With sensitivity-based
-  prediction and adaptive step reduction (below), the `a` direction is
-  followed successfully.
-- **"A fold would need `a` moving with `b, e0, e1, e2` compensating."** Not
-  established. That was one hypothesis, not a necessity, and it is stated as
-  a chosen search direction below rather than as a requirement.
-- **"Two independent solvers" / "isolated roots" / "roots are distinct for
-  reasons far larger than the solver disagreement."** The Cartesian and
-  logarithmic formulations share the DOP853 stepper and the same event
-  machinery, and in the first pass they also shared a Cartesian launch step.
-  They differ only in the coordinate the flow is written in. Their agreement
-  is a **coordinate cross-check**, not independent numerical verification,
-  and it is not evidence of isolation. The shared launch has been removed;
-  the shared stepper has not.
+## The nine review findings: all nine confirmed
 
-No claim of certified existence or isolation is made anywhere in this work.
+| # | Finding | Verification |
+|---|---|---|
+| 1 | No actual double-zero solve; `double_zero_found` only tested a sampled slope | Read in source. Replaced by a real solve. |
+| 2 | Negative branch reverses the compensation gradient; no objective-improvement check | `delta = step * direction * THETA_SCALE` with `step < 0` negates the gradient component too. Confirmed by inspection. |
+| 3 | Tracker requires `0.35 x gap >= 0.001`, forcing a stop near gap 0.002857 | `1e-3 / 0.35 = 0.0028571`. Reported "0.0028". **The stop was a built-in cutoff, not a located bifurcation.** |
+| 4 | Newton accepted on a pre-update residual, no final acceptance check, no preserved bracket | Read in source: `converged` used `r['D']` from before the update; `final` was computed but never tested. |
+| 5 | Only `dD/ds` was audited, not the five parameter sensitivities driving prediction | Confirmed; now audited. |
+| 6 | Identity check compared corrected against *predicted* ordering | Confirmed. Made moot by the anchored scheme, which pins identities. |
+| 7 | Failed gates discarded their measurements | Confirmed; `ReturnFailure` now carries them. |
+| 8 | Rank-2 2x6 Jacobian does not establish a well-posed fold solve | Accepted. The claim is withdrawn. |
+| 9 | Approaching root pairs do not establish a saddle-node or its unfolding | Accepted, and finding 3 makes the reported approach partly an artefact. |
 
-## Repairs to the machinery
+### Corrections to earlier text, which no longer stands
 
-[machinery.py](outer_fold_2026_09_09/machinery.py) replaces the first-pass
-evaluator.
+- The "incipient saddle-node at separation 2.8e-3" was **at the tracker's own
+  cutoff**. It is not evidence of a bifurcation. Withdrawn.
+- "The fold isn't there", "a cycle was lost", and "coordinated five-parameter
+  motion is necessary" are all withdrawn; none was established.
+- The rank-2 Jacobian was described as making the solve "well posed". It does
+  not. Withdrawn.
 
-**Itinerary gates.** Each half return now checks, and records before it
-raises: launch transversality and the launch side of the section; that the
-return segment stays on the launch side for its whole length (dense output,
-400 samples, not solver steps); that the side `sign(y)` is preserved; that
-exactly one qualifying section crossing occurs, with unintended interior
-crossings detected on the dense grid; distance to every equilibrium along the
-dense trajectory; and transversality at the terminal crossing. The event is
-armed by direction so that the `t = 0` departure is excluded structurally
-rather than by an artificial lead-in integration. **These are numerical
-safeguards. Passing them is not an enclosure.**
+## Two correctness findings that change how cycles are counted
 
-**Derivatives.** `dD/ds` and `dD/dtheta` now come from variational equations
-integrated alongside the flow, with the event correction for the crossing
-time (`dT/du = -v_x / x_dot`). Every seed root is audited against central
-differences at three step sizes and two tolerances, and the *spread* is
-reported as an empirical uncertainty:
+These emerged while testing the repairs and matter more than anything else
+here.
 
-| Side | `s` root | `dD/ds` (variational) | relative spread | log cross-check gap |
+**1. The upper section coordinate is two-to-one on cycles.** The equilibrium
+at `(0, 1/2)` lies *on* the section `{x = 0}`, so a closed orbit around it
+meets the section twice. Scanning inward from the tracked roots produced what
+looked like three additional sign changes at `s = -1.4559, -1.5357, -1.6390`.
+They are not new cycles: each one's partner crossing is exactly a known root.
+
+| inner root `s` | partner crossing | known root |
+|---|---|---|
+| -1.4558815 | 0.9802426 | 0.9802427 |
+| -1.5357456 | 1.3899484 | 1.3899488 |
+| -1.6389947 | 2.0452069 | 2.0452069 |
+
+Seven sign changes, four cycles. **A sign change of `D` is not a distinct
+periodic orbit**, and `distinct_cycles()` now clusters candidates by their
+unordered crossing pair before anything is counted.
+
+**2. `D` changes sign across the equilibrium itself.** Near `s = log(1/2)`
+there is a further sign change whose return period collapses to `6.28318` —
+the linearised value `2*pi` — with the section point `1.6e-03` from the
+equilibrium. It is an equilibrium artefact. The old `EQ_GUARD = 1e-3` measured
+distance along the orbit and did not catch it; a dedicated
+`SECTION_EQ_GUARD = 5e-2` on the section point does.
+
+Nothing in the earlier reported counts is invalidated by this — they used only
+the outer crossings — but the counting procedure was not safe, and now is.
+
+## Repairs
+
+`machinery.py`: structured failure evidence (`ReturnFailure.as_record()`);
+launch/terminal transversality, dense-output side preservation, interior
+crossings, orbit and section equilibrium distance; event-corrected variational
+derivatives in `s` and in all five coefficients;
+`parameter_sensitivity_audit()` covering all five; distinctness machinery.
+
+`anchored.py`: `refine_root()` keeps a sign bracket throughout, bisects when
+Newton would leave it, and **re-evaluates at the returned point before
+accepting**, rejecting a final residual above `5e-14`. It reports a position
+uncertainty `|D| / |dD/ds|`. On the seed the worst is `5.86e-07` against a
+minimum upper separation of `0.4097` — a ratio of `1.43e-06`.
+
+Audited seed quantities (spreads are empirical, not error bounds):
+
+| Side | `s` root | `dD/ds` | `dD/ds` rel. spread | worst parameter rel. spread |
 |---|---|---|---|---|
-| upper | 0.9802427 | -1.2481e-07 | 7.1e-02 | 1.5e-12 |
-| upper | 1.3899488 | +8.5268e-08 | 9.6e-02 | -7.9e-13 |
-| upper | 2.0452069 | -2.4629e-07 | 9.3e-02 | 2.9e-13 |
-| lower | 9.1437116 | +1.0228e-04 | 1.1e-05 | -1.3e-13 |
+| upper | 0.9802427 | -1.2481e-07 | 7.1e-02 | 1.5e-02 (`a`) |
+| upper | 1.3899488 | +8.5268e-08 | 9.6e-02 | 1.5e-02 (`a`) |
+| upper | 2.0452069 | -2.4629e-07 | 9.3e-02 | 1.5e-02 (`a`) |
+| lower | 9.1437116 | +1.0228e-04 | 1.1e-05 | ~1e-06 |
 
-The three upper derivatives carry a spread of roughly 7-10%. That is an
-uncertainty estimate, not an error bound, and **a derivative that is large
-compared with an arbitrary threshold does not certify nonvanishing.**
+The Cartesian and logarithmic formulations share the DOP853 stepper and the
+same event machinery: a **coordinate cross-check**, not independent
+verification. Cross-check gaps are `~1e-12`.
 
-**Fixed residual scales.** `D_SCALE = 1e-6`, `DS_SCALE = 1e-6`,
-`THETA_SCALE = (1, 1, 1e-4, 1e-3, 1e-3)`, declared once in `machinery.py` and
-never recomputed from the profile being measured. The first pass's
-profile-normalised "fold score" was a heuristic and is not used.
+**Controls** (`controls_repairs.py`, 12/12 passing): a deliberately failed
+return carrying measurements; an unresolved return not read as a zero; a bad
+guess rejected; position uncertainty against separation; a deliberate tracker
+failure labelled as such; a positive sampled slope *not* accepted as a fold;
+all five sensitivities audited; the two-to-one counting test; the equilibrium
+artefact rejected; and the false-fold regression below.
 
-**Root tracking.** Each tracked root is now predicted by its own sensitivity,
-`s -> s - (dD/dtheta . delta) / (dD/ds)`, then corrected by a Newton iteration
-confined to a guard interval of at most 35% of the distance to its nearest
-neighbour. Leaving the guard, changing sort order, or two trackers closing to
-within `1e-3` are all reported as **tracker failures**, distinct from any
-statement about the field. Newton convergence is declared at the integrator
-noise floor (`|D| < 2e-14`), since it cannot be driven below it.
+## The experiment, and a false positive worth recording
 
-## The compensated continuation
+### step4: fixed anchors — and 15 spurious folds
 
-[step3_compensated.py](outer_fold_2026_09_09/step3_compensated.py). `a` is the
-driver; `(b, e0, e1, e2)` compensate along the unit scaled gradient of
+Fixing all four anchors `s_i` and solving `D(s_i; theta) = 0` gives a scaled
+`4x5` Jacobian of **rank 4**, singular values
+`(7997.7, 4123.0, 25.03, 0.926)`, condition on its range `8.64e+03`. Its
+kernel is
 
-    J(theta) = sup { dD/ds (s; theta) : s in the outer window }
+    (-7.3e-08, -9.8e-08, 0.8804, 0.3039, 0.3640)
 
-over a window starting `5e-3` past the outermost tracked upper root and 4.0
-wide in `s`. The four tracked roots are *tracked, not constrained*: nothing is
-imposed as an overdetermined system on their positions, and the free parameter
-is the driver step alone. The target is a genuine double zero, `D = 0` and
-`dD/ds = 0` together; **no sampled sign change is required to look for one.**
+— no measurable `(a, b)` component. Following that kernel, the six-equation
+fold solve reported **converged 15 times out of 15**, at every multi-start.
 
-Caps, all predeclared: 50 accepted steps, 60 rejected steps, 10 consecutive
-halvings, 40000 return evaluations per run. Actual use: 4769 return
-evaluations, 296 s wall.
+All fifteen are spurious. `D` is very nearly linear in `(e0, e1, e2)`, so the
+kernel is essentially the ray that *shrinks the perturbation*. Newton slid
+down it to `|(e0,e1,e2)| = 1.7e-10`, a factor `1e-6` below the seed, where the
+field is numerically the unperturbed reversible one and `D` vanishes
+identically — satisfying both fold equations everywhere at once. Conditioning
+`1e+09`–`1e+10` and `|d2D/ds2| ~ 1e-10` flagged it. The raw data is kept in
+`data/step4_anchored.json` as the record of the failure mode, and a control
+now regression-tests that this field is rejected.
 
-| Branch | accepted | rejected | stop | best `sup dD/ds` (scaled) |
-|---|---|---|---|---|
-| `a_up_compensated` | 11 | 44 | halving cap at `a = -1.749994` | -2.966e-01 |
-| `a_down_compensated` | 10 | 44 | halving cap at `a = -1.750013` | -4.101e-03 |
+**This is why a small residual is not a candidate.**
 
-Both branches stopped at the halving cap. That is a **tracker limit**, not
-evidence that any cycle ceased to exist.
+### step5: normalisation and a released anchor
 
-### What the ascent actually found
+Stated before running:
 
-In both branches the functional rose toward zero, and in both branches it did
-so by flattening `D` around an **adjacent pair of already-tracked upper
-cycles**, which approached each other:
+- **Unknowns (7)**: `theta = (a, b, e0, e1, e2)`, the released anchor position
+  `s_1`, the fold coordinate `s*`.
+- **Equations (7)**: `D(s_1) = 0`; `D(s_i) = 0` for the three pinned anchors;
+  `N(theta) = |(e0,e1,e2)|^2 / |(e0,e1,e2)_seed|^2 - 1 = 0`; `D(s*) = 0`;
+  `dD/ds(s*) = 0`.
+- Dropping the two fold equations and `s*` leaves **5 equations in 6
+  unknowns**: one degree of freedom, followed by pseudo-arclength.
 
-- `a_up`: upper roots end at `1.161045, 1.163860, 2.091932` — the inner pair
-  separated by `2.8e-03`, with `dD/ds` there down to `-8.0e-10` and `+7.8e-10`.
-- `a_down`: upper roots end at `0.848744, 1.780242, 1.783025` — the outer pair
-  separated by `2.8e-03`, with `dD/ds` down to `+8.8e-10` and `-8.8e-10`.
+`N` removes the scaling degeneracy: the collapsed field is no longer in the
+feasible set. The released anchor is the innermost upper root; releasing it is
+what supplies the freedom to move `a` and `b` at all — under four fixed
+anchors that freedom does not exist to first order.
 
-This is an incipient saddle-node of a pair that already exists. If completed
-it would **remove** two cycles, not add any. The objective was gameable: a
-window beginning just past the outermost tracked root rewards flattening
-caused by a merging pair inside or at the edge of it. That is a defect of the
-functional as posed, and it is why the branches stalled where they did.
+The curve system has **rank 5**, singular values
+`(7997.7, 4123.0, 25.06, 4.98, 0.901)`, condition on range `8.87e+03`, and
+tangent dominated by the released anchor (component `0.9974`).
 
-At the best `a_down` point the fold Jacobian of `F = (D, dD/ds)` in
-`(s, a, b, e0, e1, e2)`, scaled, has **rank 2 and condition number 12.2**
-(singular values `2.67e+03`, `2.18e+02`), with residual
-`(D/D_SCALE, dD_ds/DS_SCALE) = (-1.24e-05, -4.10e-03)` and
-`d^2D/ds^2 = -6.50e-07`. So a fold solve there is well posed numerically — but
-the fold it is converging on is the annihilation of the existing pair, not a
-new double zero beyond the outermost cycle.
+Acceptance thresholds, fixed and documented, all of which must hold:
+residual `< 1e-3` in the fixed scales; `7x7` condition `<= 1e+06`;
+`|d2D/ds2| / DS_SCALE >= 1e-3`; every anchor slope at least `0.1x` its seed
+value; and `s*` a **distinct** cycle from all four anchors by the crossing-pair
+test. Caps: 50 accepted and 40 rejected steps per branch, plus separate
+return-evaluation and wall-time caps.
 
-### Outer profiles
+Early steps confirm the repair: `pert_ratio` stays exactly `1.0`, `a` and `b`
+move (`a: -1.75 -> -1.74757`, `b: 0.3333 -> 0.3262` by step 2), and **no fold
+solve converges** — the false positives are gone. Results are in
+`data/step5_normalized.json`.
 
-Full profiles (22 points, `D` and variational `dD/ds` at each) are retained for
-every accepted step in
-[data/step3_compensated.json](outer_fold_2026_09_09/data/step3_compensated.json),
-along with every rejected step and its reason. No return in any outer window
-failed to resolve during the continuation (0 failures out of 22 at every
-accepted step).
+## Literature corrections
 
-At every sampled point of every outer window examined, `dD/ds` was negative.
-**Sampled monotonicity is not continuous monotonicity**: nothing was evaluated
-between grid points, the windows are finite, and a double zero need not change
-sign. No absence statement follows.
-
-## Earlier scans, restated correctly
-
-The first-pass scans stand as data. Their correct reading: at the seed, 60 of
-60 sampled points in `s` in `[2.046, 11.0]` resolved, with `D` negative and
-decreasing at every sampled point; along a 50-step branch that scaled
-`(e0, e1, e2)` to 13.5x the seed while all four trackers held, the same held at
-every accepted step. These are sampled profiles over finite windows on
-particular branches. They do not establish that no fold exists.
-
-## What passed, what failed, what is unresolved
-
-**Passed.** The saved control replays bit-identically. The four seed roots
-reproduce under the repaired gates with event-corrected variational
-derivatives, and the log-coordinate cross-check agrees to `~1e-12`. The
-repaired tracker follows the `a` direction that the first pass reported as a
-failure, for 10-11 accepted steps in each direction. Fold Jacobians are rank 2
-and well conditioned, so the fold solve is well posed where it was attempted.
-
-**Failed.** Both branches hit the halving cap rather than a fold. The slope
-functional is gameable and was gamed: the ascent found the annihilation fold of
-an existing pair. The first pass's independence and absence claims were wrong
-and are withdrawn.
-
-**Unresolved.** Whether a genuine double zero exists beyond the outermost upper
-cycle anywhere in this family. Whether a differently posed objective — one that
-excludes a neighbourhood of every tracked root, so that a merging pair cannot
-be rewarded — would find one. Whether any of the four numerical roots
-corresponds to an actual periodic orbit in the rigorous sense: no interval
-arithmetic, validated integration, or enclosure of any kind has been
-implemented, and none of this bears on H16P.
+- The distribution result previously cited here as an unrestricted theorem of
+  Zhang Pingguang is **Huang and Reyn, "On the limit cycle distribution over
+  two nests in quadratic systems", Bull. Austral. Math. Soc. 52 (1995)
+  461-474**, [DOI 10.1017/S0004972700014945](https://doi.org/10.1017/S0004972700014945).
+  Its abstract restricts to systems where *the sum of the multiplicities of
+  the finite critical points equals three*. The seed field here has two finite
+  equilibria, so that hypothesis is not verified for it, and the result must
+  not be used to constrain this family. The earlier "(1, i) distribution, so
+  five cycles need four in one nest" claim is withdrawn. I read the abstract,
+  not the proof.
+- Li Chengzhi's result concerns an **exact** third-order weak focus. It does
+  not imply any positive parameter-distance exclusion around that stratum, and
+  the earlier text that leaned on it that way is corrected.
+- The broad random sampling in `five_cycle_2026_09_09/` had failing positive
+  controls (not one of 576 samples reproduced a three-cycle nest). Per the
+  research discipline, it is **not resumed**.
 
 ## Budget
 
-The only budget information available inside this session is the resource use
-of the runs themselves: 4769 return evaluations and 296 s wall for the
-continuation, a few minutes for the seed audit. The account usage meter
-referenced in `H16P_NEXT_STRIKE.md` is not readable from here, so no percentage
-of it can be reported honestly.
+No account usage meter is readable from this session, so no baseline or
+percentage can be reported honestly. Explicit computational caps are imposed
+instead and recorded in the data: 50 accepted steps and 40 rejected steps per
+branch, a return-evaluation cap, and a wall-time cap, each enforced by the
+`Budget` object and reported in the output.
+
+## Status
+
+**Passed**: control replays bit-identically; four distinct cycles reproduced
+under the repaired gates with audited derivatives and distinctness; the
+repaired tracker follows directions the first pass called lost roots; 12/12
+controls; the normalised scheme eliminates the collapse mode.
+
+**Failed**: step3's slope criterion and step4's fold criterion both produced
+false positives, now regression-tested.
+
+**Unresolved**: whether a genuine double zero exists beyond the outermost
+upper cycle in this family; whether any tracked root is an actual periodic
+orbit in the rigorous sense. `certify/` contains a working validated Taylor
+integrator (a full revolution of the Chen-Wang field enclosed to width
+`7.6e-18`; measured interval wrapping factor `267` per revolution) but it is
+not yet wired to these return maps.
+
+**Most valuable next experiment**: complete the step5 curve in both
+directions, and if no fold candidate passes the gates, wire the validated
+integrator to the seed return map so that the four existing brackets can be
+certified rather than merely sampled.

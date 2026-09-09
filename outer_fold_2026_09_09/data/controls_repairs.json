@@ -1,0 +1,314 @@
+{
+  "controls": [
+    {
+      "control": "failed-return carries measurements",
+      "expectation": "raises with a non-empty measurement dictionary",
+      "passed": true,
+      "detail": {
+        "reason": "side not preserved along the return segment",
+        "measurement_keys": [
+          "eq_distance",
+          "equilibria",
+          "interior_min_abs_x",
+          "interior_sign_changes",
+          "launch_side",
+          "launch_xdot",
+          "max_abs_y",
+          "min_abs_y",
+          "s0",
+          "side",
+          "side_preserved",
+          "sign",
+          "solver_message",
+          "solver_status",
+          "t_final",
+          "terminal_xdot",
+          "time",
+          "y_end",
+          "z_final"
+        ]
+      }
+    },
+    {
+      "control": "e0 = 0 is the invariant-line class, not a centre",
+      "expectation": "D does not vanish at e0 = 0, so \"centre limit\" is the wrong reason",
+      "passed": true,
+      "detail": {
+        "D_at_e0_zero": 0.00045697508828856925,
+        "correct_reason": "y = 0 is an invariant straight line; that class has at most one limit cycle"
+      }
+    },
+    {
+      "control": "seven sign changes are four cycles",
+      "expectation": "the three inner upper roots are the same cycles as the three outer",
+      "passed": true,
+      "detail": {
+        "candidate_roots": 7,
+        "distinct_cycles": 4,
+        "duplicate_groups": 3,
+        "groups": [
+          {
+            "key": [
+              1,
+              -1.4558814774595281,
+              0.9802427
+            ],
+            "roots": [
+              0.9802427,
+              -1.4558815
+            ]
+          },
+          {
+            "key": [
+              1,
+              -1.5357456266561504,
+              1.3899488
+            ],
+            "roots": [
+              1.3899488,
+              -1.5357456
+            ]
+          },
+          {
+            "key": [
+              1,
+              -1.638994696325664,
+              2.0452069
+            ],
+            "roots": [
+              2.0452069,
+              -1.6389947
+            ]
+          },
+          {
+            "key": [
+              -1,
+              -2.025809327972485,
+              9.1437116
+            ],
+            "roots": [
+              9.1437116
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "control": "equilibrium artefact rejected by the section guard",
+      "expectation": "the crossing at the equilibrium fails the section guard; a real root passes it",
+      "passed": true,
+      "detail": {
+        "artefact": {
+          "s": -0.69,
+          "section_eq_distance": 0.001576493490043434,
+          "period": 6.2831818652310165,
+          "two_pi": 6.283185307179586
+        },
+        "genuine": {
+          "s": 2.0452069,
+          "section_eq_distance": 7.230757871331249,
+          "period": 5.3794021040243365
+        },
+        "guard": 0.05
+      }
+    },
+    {
+      "control": "unresolved return is not a zero",
+      "expectation": "either resolves with a recorded D, or fails with evidence",
+      "passed": true,
+      "detail": {
+        "resolved": true,
+        "D": -0.06530236450329507
+      }
+    },
+    {
+      "control": "root acceptance rejects a bad guess",
+      "expectation": "no sign bracket within the cap -> ReturnFailure",
+      "passed": true,
+      "detail": {
+        "reason": "no sign bracket within +-0.2 of the guess",
+        "measurements": {
+          "s_guess": 5.0,
+          "side": 1
+        }
+      }
+    },
+    {
+      "control": "position uncertainty << root separation",
+      "expectation": "max uncertainty at least 1e3 times smaller than the separation",
+      "passed": true,
+      "detail": {
+        "worst_position_uncertainty": 5.863905586724985e-07,
+        "min_upper_separation": 0.40970496167547377,
+        "ratio": 1.4312508110091595e-06
+      }
+    },
+    {
+      "control": "large a step is a tracker statement",
+      "expectation": "either the root is found, or the failure is explicitly a tracker failure -- never reported as a vanished cycle",
+      "passed": true,
+      "detail": {
+        "reason": "final residual -7.838e-14 exceeds the acceptance level 5.0e-14",
+        "measurements": {
+          "s": 1.9509556101785865,
+          "D": -7.838174553853605e-14,
+          "dD_ds": -4.366535841321406e-06
+        }
+      }
+    },
+    {
+      "control": "positive sampled slope is not a fold",
+      "expectation": "a point with dD/ds > 0 is not reported as a double zero",
+      "passed": true,
+      "detail": {
+        "s": 1.4099477114901655,
+        "D_scaled": 0.0017410866082201437,
+        "dD_ds_scaled": 0.08872702814133326,
+        "positive_slope": true,
+        "meets_double_zero_test": false
+      }
+    },
+    {
+      "control": "all five parameter sensitivities audited",
+      "expectation": "each of dD/da, dD/db, dD/de0, dD/de1, dD/de2 has an independent finite-difference cross-check",
+      "passed": true,
+      "detail": {
+        "section_derivative_relative_spread": 0.06696096222374692,
+        "parameter_relative_spreads": {
+          "a": 0.014948722548950527,
+          "b": 5.041034383695678e-06,
+          "e0": 3.005813537337452e-06,
+          "e1": 4.1935164008999045e-07,
+          "e2": 9.8603334288327e-07
+        },
+        "worst_parameter_relative_spread": 0.014948722548950527
+      }
+    },
+    {
+      "control": "anchored 4x5 Jacobian has rank 4",
+      "expectation": "rank 4 gives a one-dimensional kernel, hence a local curve",
+      "passed": true,
+      "detail": {
+        "singular_values": [
+          7997.700022540743,
+          4123.01742038521,
+          25.034099076075858,
+          0.9258174388671211
+        ],
+        "rank": 4,
+        "condition_on_range": 8638.528166338225,
+        "null_vector_scaled": [
+          -7.321332962779399e-08,
+          -9.753162471307133e-08,
+          0.8804269589183489,
+          0.3038960707894586,
+          0.36399937935180837
+        ],
+        "note": "rank alone does not establish that the fold system below is well posed; that needs its own 6x6 diagnostics"
+      }
+    },
+    {
+      "control": "collapsed field rejected as a false fold",
+      "expectation": "it satisfies both fold equations numerically, and is rejected anyway by the perturbation-normalisation gate",
+      "passed": true,
+      "detail": {
+        "perturbation_ratio_to_seed": 8.511026076779973e-07,
+        "D_scaled": -8.846923194028022e-06,
+        "dD_ds_scaled": -2.739392046535727e-06,
+        "satisfies_fold_equations_numerically": true,
+        "rejected_by_normalisation_gate": true,
+        "note": "this is exactly the step4 false positive"
+      }
+    }
+  ],
+  "seed_roots": [
+    {
+      "s_root": 0.9802427498146917,
+      "side": 1,
+      "D": -4.8405723873656825e-14,
+      "D_scaled": -4.8405723873656825e-08,
+      "dD_ds": -1.2480749470022978e-07,
+      "dD_dtheta": [
+        6.375660211488388e-05,
+        -8.443638785665675e-05,
+        10.451809215080441,
+        -1.7440772102224433,
+        -1.071944829040572
+      ],
+      "bracket_half_width": 0.001,
+      "bracket_D_low": 1.2516410130558597e-10,
+      "bracket_D_high": -1.242541625146032e-10,
+      "position_uncertainty": 4.0061696711477975e-07,
+      "period_estimate": 5.817398013818001,
+      "eq_distance": 0.26680528261109626,
+      "terminal_transversality": 0.24307693172794037
+    },
+    {
+      "s_root": 1.3899477114901655,
+      "side": 1,
+      "D": 9.103828801926284e-15,
+      "D_scaled": 9.103828801926284e-09,
+      "dD_ds": 8.526740286063372e-08,
+      "dD_dtheta": [
+        4.299694568554724e-05,
+        -0.00012639154808147257,
+        11.394059150918878,
+        -1.8462390930969943,
+        -1.2145594551132197
+      ],
+      "bracket_half_width": 0.001,
+      "bracket_D_low": -8.536016338211994e-11,
+      "bracket_D_high": 8.534617457200966e-11,
+      "position_uncertainty": 5.863905586724985e-07,
+      "period_estimate": 5.64706959791038,
+      "eq_distance": 0.28470485431654347,
+      "terminal_transversality": 0.257685905115642
+    },
+    {
+      "s_root": 2.045206936061908,
+      "side": 1,
+      "D": -1.5543122344752192e-15,
+      "D_scaled": -1.5543122344752192e-09,
+      "dD_ds": -2.4629273595588863e-07,
+      "dD_dtheta": [
+        -1.2541122380582692e-06,
+        -0.00020592184383977363,
+        12.64683350649943,
+        -1.9511890608336624,
+        -1.42995476683303
+      ],
+      "bracket_half_width": 0.001,
+      "bracket_D_low": 2.4577118118429553e-10,
+      "bracket_D_high": -2.467726023525074e-10,
+      "position_uncertainty": 2.030104534181433e-07,
+      "period_estimate": 5.3794020898706405,
+      "eq_distance": 0.30582484897997864,
+      "terminal_transversality": 0.27464857180853974
+    },
+    {
+      "s_root": 9.143711643146204,
+      "side": -1,
+      "D": 5.773159728050814e-15,
+      "D_scaled": 5.773159728050814e-09,
+      "dD_ds": 0.00010227816149516178,
+      "dD_dtheta": [
+        0.0034582785525634208,
+        0.00364118103416855,
+        -15.910957342310475,
+        -1.9829061725177164,
+        5.503969773518058
+      ],
+      "bracket_half_width": 0.001,
+      "bracket_D_low": -1.0226879743058248e-07,
+      "bracket_D_high": 1.0228746871732142e-07,
+      "position_uncertainty": 4.888629133440694e-10,
+      "period_estimate": 3.2981711086943313,
+      "eq_distance": 0.6318870550788732,
+      "terminal_transversality": 0.4987933072321384
+    }
+  ],
+  "evaluations": 73,
+  "wall_seconds": 6.1319263249997675,
+  "passed": 12,
+  "total": 12
+}

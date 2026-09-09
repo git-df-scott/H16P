@@ -8,18 +8,25 @@ floating point, no enclosures.
 
 Two published results narrow what a five-cycle quadratic field can look like:
 
-- **Zhang Pingguang**: the limit cycles of a quadratic system with two foci
-  are distributed `(0,1)` or `(1,i)` — one nest holds *exactly one* cycle.
-  Five cycles therefore require **four around a single focus**.
-- **Li Chengzhi (1986)**: no limit cycle surrounds a third-order weak focus of
-  a real quadratic system. Since three small-amplitude cycles need exactly
-  that focus (Bautin caps small-amplitude cyclicity at three), a fourth cycle
-  in the same nest must be a large one, appearing at finite distance from that
-  stratum.
+- **Huang and Reyn (1995)**, Bull. Austral. Math. Soc. 52, 461-474,
+  [DOI 10.1017/S0004972700014945](https://doi.org/10.1017/S0004972700014945):
+  in a quadratic system with two nests of limit cycles, one nest contains
+  exactly one cycle — **but the abstract restricts to systems where the sum of
+  the multiplicities of the finite critical points equals three.** An earlier
+  version of this file attributed an unrestricted form of this to Zhang
+  Pingguang; that was wrong and is withdrawn. The hypothesis must be checked
+  before the result is applied to any particular family, and it is *not*
+  verified for the reversible seed family used elsewhere in this repository.
+  Only the abstract was read.
+- **Li Chengzhi (1986)**: no limit cycle surrounds an **exact** third-order
+  weak focus of a real quadratic system. This says nothing about a positive
+  parameter-distance neighbourhood of that stratum, and must not be read as
+  excluding one.
 
 Both were taken from the repository's existing literature audit and the
-[focus-route correction](../research_2026_09_08/outputs/H16P-focus-route-correction.md);
-neither proof was independently audited here.
+[focus-route correction](../research_2026_09_08/outputs/H16P-focus-route-correction.md).
+Neither proof was audited here, and in the Huang-Reyn case not even the full
+paper — only the abstract, which is where the multiplicity hypothesis appears.
 
 ## Contents
 
