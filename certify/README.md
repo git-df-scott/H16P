@@ -48,8 +48,23 @@ pair additionally requires `D` to be defined and continuous across the whole
 bracket, which needs the return map validated for *every* initial condition in
 `[s0-1e-3, s0+1e-3]`, not just the two endpoints. **That step is not done**, so
 this is not yet an existence proof, and none of the four candidate cycles is
-certified. Completing it means propagating the segment as interval initial
-data (subdivided, since the measured wrapping is about `267x` per revolution).
+certified. Completing it means propagating the segment as interval initial data, and
+**that is not achievable with the plain interval boxes used here.** Measured
+directly: starting a half return from a section segment of width `2e-5`
+(y-width `1.5e-4`), the enclosure reaches x-width `4.2e-03` at `t = 0.4`,
+`3.3e-01` at `t = 1.6`, and overflows before the crossing at `t ~ 2.7` —
+roughly `2200x` amplification and then divergence. This is the wrapping
+effect: re-boxing a rotating set inflates it every step.
+
+Subdivision does not rescue it at this amplification. Holding the final width
+below `1e-3` would need initial segments under `5e-7`, so about 4000
+subintervals per bracket, times two time directions, at about 5 s each —
+roughly 11 hours per bracket. The right fix is the standard one: a Lohner
+QR (or doubleton) representation that propagates the set as
+`z_c + Q [q] + [r]` with `Q` orthogonal, re-orthogonalised each step so
+rotation stops inflating the box. That requires the step Jacobian, hence
+variational Taylor coefficients alongside the solution ones. It is not
+implemented here, and it is the named next build.
 
 The lower bracket is not attempted at all: at `|y| ~ 9355` the field has
 `x' ~ b y^2 ~ 3e7`, which drives the validated step below any usable floor.

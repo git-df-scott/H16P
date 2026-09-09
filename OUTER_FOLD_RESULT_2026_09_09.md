@@ -210,7 +210,15 @@ of `D` is **strictly signed, with opposite signs at the two endpoints**:
 Those six signs are rigorous. **They are not an existence proof.** Concluding
 a root lies between each pair needs `D` defined and continuous across the
 whole bracket, i.e. the return map validated for every initial condition in
-it, not just at its ends. That is not done. The lower bracket is not attempted
+it, not just at its ends.
+
+That step was attempted and **failed on the wrapping effect**, measured: from
+a section segment of width `2e-5`, the enclosure grows to x-width `4.2e-03` at
+`t = 0.4`, `3.3e-01` at `t = 1.6`, and overflows before the crossing at
+`t ~ 2.7`. Subdivision does not rescue it — holding the final width under
+`1e-3` would need about 4000 subintervals per bracket per time direction,
+roughly 11 hours of compute per bracket. Closing it needs a Lohner QR or
+doubleton representation, which is not implemented. The lower bracket is not attempted
 at all: `x' ~ b y^2 ~ 3e7` at `|y| ~ 9355` drives the validated step below any
 usable floor, and needs a logarithmic reformulation that is not implemented.
 
