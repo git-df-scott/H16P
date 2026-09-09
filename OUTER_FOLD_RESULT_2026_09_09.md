@@ -169,6 +169,51 @@ move (`a: -1.75 -> -1.74757`, `b: 0.3333 -> 0.3262` by step 2), and **no fold
 solve converges** — the false positives are gone. Results are in
 `data/step5_normalized.json`.
 
+### A third defect, found in the running experiment
+
+The first step5 run moved the released anchor from `s = 1.288775` to
+`s = 1.431203` in a single accepted step, passing through the pinned anchor at
+`1.3899488`. Two roots of the same `D(.; theta)` cannot cross — they can only
+merge and separate — so that step was the corrector jumping to a different
+root, not the root moving. Every step after it is unsound. The run is kept as
+`data/step5_normalized_firstrun.json` and `data/step5_firstrun_defect.log`,
+and the re-run adds two guards: the released anchor may move at most `0.05`
+per accepted step, and must stay at least `0.02` from every pinned anchor.
+
+Under those guards the released anchor advances in controlled increments
+(`0.980 -> 1.030 -> 1.080 -> 1.130`), moving outward toward the middle anchor,
+with `pert_ratio` pinned at `1.0` and no fold solve converging. If the
+continuation stops when the gap reaches `0.02`, that is the **identity guard
+firing**, and must not be reported as a located merge — that is exactly the
+mistake finding 3 identified in the previous run.
+
+## Validated integration
+
+`certify/` now contains a working validated integrator: interval arithmetic on
+`mpmath.iv`, a Picard-Lindelof rough enclosure, an order-K Taylor step whose
+remainder is bounded over that enclosure, and a validated return map for this
+family with rigorous crossing localisation.
+
+Measured: a full harmonic-oscillator period encloses to width `4e-36`; a
+Chen-Wang revolution to `7.6e-18`; a seed half return to `3.8e-21` in `4.4 s`;
+interval initial data amplifies about `267x` per revolution.
+
+At `s0 +- 1e-3` around each of the three upper candidate roots, the enclosure
+of `D` is **strictly signed, with opposite signs at the two endpoints**:
+
+| bracket | `D(s0 - 1e-3)` | `D(s0 + 1e-3)` | enclosure width |
+|---|---|---|---|
+| upper inner | positive | negative | `4.9e-29` |
+| upper middle | negative | positive | `1.7e-25` |
+| upper outer | positive | negative | `7.8e-21` |
+
+Those six signs are rigorous. **They are not an existence proof.** Concluding
+a root lies between each pair needs `D` defined and continuous across the
+whole bracket, i.e. the return map validated for every initial condition in
+it, not just at its ends. That is not done. The lower bracket is not attempted
+at all: `x' ~ b y^2 ~ 3e7` at `|y| ~ 9355` drives the validated step below any
+usable floor, and needs a logarithmic reformulation that is not implemented.
+
 ## Literature corrections
 
 - The distribution result previously cited here as an unrestricted theorem of
