@@ -212,13 +212,46 @@ a root lies between each pair needs `D` defined and continuous across the
 whole bracket, i.e. the return map validated for every initial condition in
 it, not just at its ends.
 
-That step was attempted and **failed on the wrapping effect**, measured: from
-a section segment of width `2e-5`, the enclosure grows to x-width `4.2e-03` at
-`t = 0.4`, `3.3e-01` at `t = 1.6`, and overflows before the crossing at
-`t ~ 2.7`. Subdivision does not rescue it — holding the final width under
-`1e-3` would need about 4000 subintervals per bracket per time direction,
-roughly 11 hours of compute per bracket. Closing it needs a Lohner QR or
-doubleton representation, which is not implemented. The lower bracket is not attempted
+That step first **failed on the wrapping effect**, measured: from a section
+segment of width `2e-5`, the enclosure grows to x-width `4.2e-03` at `t = 0.4`,
+`3.3e-01` at `t = 1.6`, and overflows before the crossing at `t ~ 2.7`.
+Subdivision does not rescue it at that rate.
+
+**It was then closed a different way.** Wrapping is beaten by shrinking the
+bracket rather than subdividing it: `|D|` at the endpoints falls only linearly
+in the half-width, while the enclosure error stays near `1e-20`, so a
+half-width in the `1e-6` to `3e-7` range makes the endpoint signs rigorous
+*and* keeps the segment small enough to propagate. `certify/prove_cycles.py`
+searches that half-width per bracket.
+
+### Result: three distinct periodic orbits, proved
+
+| bracket | half-width | `D` at the two ends | enclosure widths |
+|---|---|---|---|
+| upper inner | `1e-6` | positive / negative | `5.0e-29` |
+| upper middle | `1e-6` | negative / positive | `6.5e-26`, `9.1e-26` |
+| upper outer | `3e-7` | positive / negative | `7.6e-21`, `7.5e-21` |
+
+For each bracket the whole interval was propagated as interval initial data
+and both half returns validated, proving that for **every** point of it the
+returns exist and cross transversally; hence `D` is defined and continuous
+there. With strictly opposite endpoint signs, the intermediate value theorem
+gives a zero, i.e. a closed orbit. Distinctness: each validated half return
+stops at the *first* crossing, so each orbit meets the upper section exactly
+twice, and the partner enclosures (`-1.4558814768662185`, `-1.5357456235202572`,
+`-1.6389947020748460`) are disjoint from all three brackets.
+
+Fixing the crossing routine changed a result, which is worth recording. A fat
+box can straddle the section for more than one step, which broke the sign
+tracking; the step is now enlarged until a single validated step carries the
+whole box across, and the return is refused if none does. Under the earlier
+code the outer bracket passed through that unsound path, so its first
+"validated" segment did not stand. It now passes honestly at `3e-7`.
+
+**Not proved: that any of these orbits is isolated**, i.e. that they are limit
+cycles. That needs a rigorous enclosure of `dD/ds` across each bracket, hence
+validated variational equations, which are not implemented. The lower bracket
+remains out of reach. Three is not five, and none of this is a counterexample. The lower bracket is not attempted
 at all: `x' ~ b y^2 ~ 3e7` at `|y| ~ 9355` drives the validated step below any
 usable floor, and needs a logarithmic reformulation that is not implemented.
 
