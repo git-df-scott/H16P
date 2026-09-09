@@ -224,7 +224,8 @@ had already been written up.
 | 11 | **Released anchor lost its identity**, moving `1.288775 -> 1.431203` past the pinned anchor at `1.3899488` in one accepted step | Two roots of one `D` cannot cross | Motion and gap guards; run redone |
 | 12 | **Fat-box crossing was unsound**; the outer bracket's first "validated" segment went through it | Found by tightening | Step-enlargement; bracket re-proved at `3e-7` |
 | 13 | Broad random sampling had failing positive controls | 0 of 576 samples reproduced even a three-cycle nest | Not resumed |
-| 14 | Guarded continuation stalls against its own guard, consuming accepted steps on microscopic moves | `theta` frozen to 6 digits over steps 12-20 | Recorded; step-size policy defect |
+| 14 | Guarded continuation stalls against its own guard, consuming accepted steps on microscopic moves | `theta` frozen to 6 digits over steps 12-24 | Recorded; step-size policy defect |
+| 15 | **The fold solver is attracted to existing roots.** 466 of 634 solves walked inward to the known outermost cycle | Newton on `(D, dD/ds)` reaches the `D = 0` manifold at a simple root before the second equation bites | Recorded; the outer region was therefore never searched |
 
 ### Detail on #10, the instructive one
 
@@ -290,18 +291,56 @@ fixed scales; `7x7` condition `<= 1e+06`; `|d2D/ds2| / DS_SCALE >= 1e-3`; every
 anchor slope at least `0.1x` its seed value; and `s*` a **distinct** cycle from
 all four anchors.
 
-**Result so far.** Forward branch: 20 accepted steps, `pert_ratio` pinned at
-exactly `1.0`, `a: -1.75 -> -1.74116`, `b: 0.3333 -> 0.309128`, and **zero fold
-solves converged**. The released anchor moved outward in controlled increments
-and then stalled asymptotically at `s_free -> 1.369948`, which is precisely the
-`0.02` identity guard below the pinned anchor at `1.3899488`.
+**Result (complete).** 172,980 return evaluations, 10,800 s.
+**634 fold solves attempted, 0 converged, 0 passing the gates.**
 
-**That is the guard firing, not a located merge** — the same mistake as defect
-#3, avoided here only because the caveat was written before the result. It is
-also the wrong direction: a merge of two existing cycles would *reduce* the
-count. The backward branch, which is the interesting one, had not run at the
-time of writing. Defect #14 applies: the stall consumes accepted steps on
-microscopic moves.
+| branch | accepted | rejected | stop | released anchor | curve condition |
+|---|---|---|---|---|---|
+| `curve_forward` | 24 | 40 | rejected cap | `0.980 -> 1.369948` | `1.96e+05` |
+| `curve_backward` | 19 | 0 | **wall-time cap** | `0.980 -> 0.032454` | `3.15e+03` |
+
+`pert_ratio` stayed exactly `1.0` throughout both, so the collapse mode of
+defect #10 never recurred.
+
+*Forward.* All 40 rejections are the identity guard: the released anchor moved
+outward and stalled asymptotically at `s_free -> 1.369948`, precisely the
+`0.02` guard below the pinned anchor at `1.3899488`. **That is the guard
+firing, not a located merge** — the same mistake as defect #3, avoided here
+only because the caveat was written before the result. It is also the wrong
+direction: a merge of two existing cycles would *reduce* the count. The curve
+conditioning degraded to `1.96e+05` as it stalled.
+
+*Backward.* **Zero rejections.** The released anchor moved inward from
+`0.980` to `0.032454` (`|y|: 2.665 -> 1.033`), with `a: -1.75 -> -1.76472` and
+`b: 0.3333 -> 0.388666` — a far larger coefficient excursion than anything the
+earlier schemes achieved — and the curve conditioning stayed healthy at
+`3.15e+03`. **It was still running cleanly when the wall-time cap ended it.**
+This branch is unfinished, not exhausted, and is the one to resume.
+
+### The fold solver has a nameable failure mode
+
+The 634 outcomes:
+
+| count | status |
+|---|---|
+| 466 | iterate entered the excluded region |
+| 151 | iteration cap without convergence |
+| 17 | return failure during solve |
+
+The dominant mode is the iterate walking **inward**: started across the outer
+window, `s*` is consistently pulled back toward `1.88`-`2.06`, i.e. toward the
+existing outermost root at `2.0452`, where the exclusion margin correctly
+rejects it.
+
+This is a defect in the formulation, and it should have been anticipated.
+A damped Newton on `(D, dD/ds)` is attracted to the `D = 0` manifold, and the
+nearest point of that manifold is an *existing simple root*. The second
+equation is supposed to exclude it, but not before the trust-region steps have
+already walked there. So the search never effectively explored outward at all.
+**The correct reading is that this run did not test the outer region**, not
+that the outer region is empty. A usable third attempt needs deflation —
+dividing out the known roots — or solving `dD/ds = 0` first and only then
+checking `D`.
 
 ### five_cycle probe — null, and its own controls failed
 A general-quadratic nest counter, validated against the Chen-Wang
@@ -430,7 +469,7 @@ percentage can be reported honestly. Explicit computational caps are imposed
 instead and recorded in every output: 50 accepted and 40 rejected steps per
 branch, plus separate return-evaluation and wall-time caps enforced by the
 `Budget` object. Actual use: step3 4,769 evaluations / 296 s; step5 forward
-branch about 58,000 evaluations / 4,900 s; the proof 134 s; the abandoned
+branch and backward branch together 172,980 evaluations / 10,800 s; the proof 134 s; the abandoned
 random search 1,658 s.
 
 ---
@@ -443,13 +482,19 @@ random search 1,658 s.
 2. **The lower bracket.** A validated logarithmic reformulation, to bring the
    fourth orbit into the same rigorous framework and match the published
    four-cycle record with my own machinery.
-3. **The backward continuation branch**, which had not run at the time of
-   writing, and a step-size policy that does not stall against its own guard
-   (defect #14).
-4. **A fold search that cannot be gamed.** Both criteria I wrote were gamed —
-   once by a merging existing pair, once by global collapse. A third attempt
-   needs its degeneracies identified *before* running, not after.
-5. The unexplained discrepancy between my Chen-Wang inner radii and those in
+3. **Resume the backward branch.** It took 19 accepted steps with **zero**
+   rejections, moved the coefficients further than any earlier scheme
+   (`a -> -1.76472`, `b -> 0.388666`), kept conditioning at `3.15e+03`, and
+   stopped only because the wall-time cap expired. It is unfinished, not
+   exhausted.
+4. **A fold solver that does not fall into known roots.** Deflation of the
+   existing roots, or solving `dD/ds = 0` first and checking `D` after. As it
+   stands, 466 of 634 solves walked back to the outermost existing cycle, so
+   the outer region was never actually searched. This is the third fold
+   criterion of mine to fail, after slope maximisation and global collapse;
+   the next one needs its degeneracies identified *before* it runs.
+5. A step-size policy that does not stall against its own guard (defect #14).
+6. The unexplained discrepancy between my Chen-Wang inner radii and those in
    `STAGED_SHI_2026_09_05.md`.
 
 **No counterexample has been found, and nothing here bears on whether one
