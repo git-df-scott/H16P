@@ -6,13 +6,26 @@ Execution of Steps 1 and a bounded Step 2/3 reconnaissance from
 Run from the repository root:
 
 ```bash
-python3 outer_fold_2026_09_09/step1_seed.py
-python3 outer_fold_2026_09_09/step2_outer_scan.py
+python3 outer_fold_2026_09_09/step1_seed.py        # first pass, superseded
+python3 outer_fold_2026_09_09/step2_outer_scan.py  # first pass, superseded
+python3 outer_fold_2026_09_09/step3_compensated.py # repaired machinery
 ```
 
-- `step1_seed.py`: re-establishes the four-cycle seed. Two independent
-  solvers on the same field (Cartesian state `(x, y)`, logarithmic state
-  `(x, log|y|)` — a different ODE, not a rescaling of the first), section
+- `machinery.py`: the repaired evaluator — itinerary gates, event-corrected
+  variational derivatives in the section coordinate and in the five
+  coefficients, fixed residual scales, and a log-coordinate cross-check.
+  The Cartesian and logarithmic formulations share DOP853 and the same event
+  machinery, so their agreement is a coordinate cross-check, not independent
+  verification.
+- `step3_compensated.py`: repaired seed audit with derivative uncertainty,
+  sensitivity-predicted root tracking inside identity-preserving guards, and
+  the compensated continuation (`a` driven, `(b, e0, e1, e2)` compensating)
+  searching for a double zero `D = 0`, `dD/ds = 0` beyond the outermost upper
+  cycle. Writes `data/step3_compensated.json`.
+- `step1_seed.py` (first pass, superseded by `machinery.py`): two coordinate
+  formulations of the same field (Cartesian `(x, y)`, logarithmic
+  `(x, log|y|)`), sharing the stepper and, in this script, a Cartesian launch;
+  section
   `{x = 0}` with coordinate `s = log|y|`, displacement
   `D(s) = s_forward - s_backward`. Refines the four saved sign brackets to
   isolated roots, estimates the section derivative at each, and gates every
@@ -27,9 +40,11 @@ python3 outer_fold_2026_09_09/step2_outer_scan.py
 - `data/outer_extension.json`: the outward scan extended to `s = 11` at the
   seed and at the branch-A endpoint.
 
-Evidence class is **NUM** throughout: floating-point ODE integration and
-bisection, no interval arithmetic, no validated integration. Nothing here
-establishes existence or isolation of any cycle in the rigorous sense, and
-no fifth cycle is asserted.
+Evidence class is **NUM** throughout: floating-point ODE integration, Newton
+correction and bisection. No interval arithmetic, no validated integration, no
+enclosure of any kind. The itinerary gates are numerical safeguards that can
+reject a bad return; passing them establishes nothing about existence or
+isolation of a periodic orbit. No fifth cycle is asserted, and sampled
+profiles are never read as absence statements.
 
 Results and their limits: [../OUTER_FOLD_RESULT_2026_09_09.md](../OUTER_FOLD_RESULT_2026_09_09.md).
