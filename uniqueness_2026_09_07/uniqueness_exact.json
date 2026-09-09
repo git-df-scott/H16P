@@ -1,0 +1,103 @@
+{
+  "arithmetic": "exact rational SymPy; zero ODE calls",
+  "psi_derivative_identity": "d(psi)/dx = u^c N /(5 W^2); d(psi)/dz = u^{2c+1} N/(5 W^2)",
+  "Theta_identity": "Theta = 5 m W (psi - lambda0), lambda0 = 21/(5m)",
+  "certificate_integrand": "-f - lambda0*g = g*(psi-lambda0); sign(g)=sign(x)",
+  "Theta_m_monotone": "dTheta/dm = (21+dx)u^{c+1} - 21 u^2 = u^2[(21+dx)u^{c-1} - 21] >= 0 for x>=0, c>=1, d>=0, strict for x>0",
+  "Theta3_coefficients": {
+    "x": "11*c*m - 5*m - 210",
+    "x^2": "3*(20*c*m + 350*c + 10*m - 1477)/5",
+    "x^3": "-3*(15*c*m - 812*c - 45*m + 1981)/5",
+    "x^4": "-(105*c**2 + 50*c*m - 1491*c - 80*m + 2562)/5"
+  },
+  "Theta3_m_thresholds": {
+    "x^2": "7*(211 - 50*c)/(10*(2*c + 1))",
+    "x^3": "7*(116*c - 283)/(15*(c - 3))",
+    "x^4": "21*(-5*c**2 + 71*c - 122)/(10*(5*c - 8))"
+  },
+  "Theta3_criterion": "K>0 and m >= max over the three thresholds implies Theta3>0 on x>0, hence Theta>0 on x>0",
+  "Theta3_sufficient_points": [
+    {
+      "c": "1",
+      "m_sufficient": "196/5",
+      "K_sufficient": "126/25",
+      "K_sufficient_decimal": "5.0400000"
+    },
+    {
+      "c": "11/10",
+      "m_sufficient": "20979/500",
+      "K_sufficient": "439509/25000",
+      "K_sufficient_decimal": "17.580360"
+    },
+    {
+      "c": "6/5",
+      "m_sufficient": "231/5",
+      "K_sufficient": "4221/125",
+      "K_sufficient_decimal": "33.768000"
+    },
+    {
+      "c": "13/10",
+      "m_sufficient": "5341/100",
+      "K_sufficient": "286713/5000",
+      "K_sufficient_decimal": "57.342600"
+    },
+    {
+      "c": "7/5",
+      "m_sufficient": "1701/25",
+      "K_sufficient": "62202/625",
+      "K_sufficient_decimal": "99.523200"
+    },
+    {
+      "c": "3/2",
+      "m_sufficient": "2247/20",
+      "K_sufficient": "43281/200",
+      "K_sufficient_decimal": "216.40500"
+    },
+    {
+      "c": "31/20",
+      "m_sufficient": "40257/200",
+      "K_sufficient": "8861937/20000",
+      "K_sufficient_decimal": "443.09685"
+    }
+  ],
+  "c_equal_1_exact_threshold": "K* (c=1) = 126/25 exactly; Theta>0 on x>0 iff K >= 126/25",
+  "exact_K_star_brackets": [
+    {
+      "c": "1",
+      "K_star_lower_open": "41285/8192",
+      "K_star_upper_certified": "20645/4096",
+      "decimal": "(5.0396729, 5.0402832]"
+    },
+    {
+      "c": "11/10",
+      "K_star_lower_open": "26855/4096",
+      "K_star_upper_certified": "53715/8192",
+      "decimal": "(6.5563965, 6.5570068]"
+    },
+    {
+      "c": "6/5",
+      "K_star_lower_open": "137505/16384",
+      "K_star_upper_certified": "8595/1024",
+      "decimal": "(8.3926392, 8.3935547]"
+    },
+    {
+      "c": "13/10",
+      "K_star_lower_open": "43355/4096",
+      "K_star_upper_certified": "1355/128",
+      "decimal": "(10.584717, 10.585938]"
+    },
+    {
+      "c": "7/5",
+      "K_star_lower_open": "57075/4096",
+      "K_star_upper_certified": "7135/512",
+      "decimal": "(13.934326, 13.935547]"
+    },
+    {
+      "c": "3/2",
+      "K_star_lower_open": "88525/4096",
+      "K_star_upper_certified": "177075/8192",
+      "decimal": "(21.612549, 21.615601]"
+    }
+  ],
+  "c_equal_8_5": "d=0; Theta<0 for large x at every K>0 (checked exactly at K=10^6)"
+}

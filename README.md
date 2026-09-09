@@ -1,5 +1,20 @@
 # H16P: quadratic limit-cycle feasibility audit
 
+## Origin-cycle exclusion for the KKL strip, 2026-09-07
+
+Read [KKL_ORIGIN_CYCLE_EXCLUSION.md](KKL_ORIGIN_CYCLE_EXCLUSION.md) first.
+The weighted-orbit comparison left open by the fold-closure follow-up is
+carried out. It gives the family's first cycle-count theorem: on
+`1<=c<8/5` the beta-zero KKL field has **no periodic orbit at all in the
+half-plane `x>-1`** whenever `K>=K*(c)`, with `K*(1)=126/25` exactly and
+exact rational brackets for `K*` at six rational `c`. The K1 target
+(three origin cycles) is therefore confined to the bounded residual window
+`0<K<K*(c)`, where the same certificate supplies exact amplitude gates.
+No archived point lies in the certified region, so nothing previously
+recorded is contradicted or newly excluded. **This is a statement about
+one two-parameter family, not about H(2).** Zero ODE calls: the shared
+ledger stays at 4096/4096. Replay: [`uniqueness_2026_09_07/`](uniqueness_2026_09_07/).
+
 ## Fold closure follow-up, 2026-09-05
 
 [KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md) proves a global single-negative-band

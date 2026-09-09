@@ -1,5 +1,23 @@
 # Status
 
+## Origin-cycle exclusion, 2026-09-07
+
+[KKL_ORIGIN_CYCLE_EXCLUSION.md](KKL_ORIGIN_CYCLE_EXCLUSION.md) proves, for
+the beta-zero KKL family on `1<=c<8/5`, that `Theta(x)=m(21+dx)(1+x)^{c+1}-21W(x)>0`
+on `x>0` implies no periodic orbit exists in `x>-1`; the condition holds
+exactly on `K>=K*(c)`, with `K*(1)=126/25` and exact Sturm brackets at
+`c=11/10,6/5,13/10,7/5,3/2`, and fails at `c=8/5` for every `K`. A
+`c`-uniform closed-form sufficient condition is also proved. In the
+residual window `0<K<K*(c)` the same certificate gives exact lower bounds
+on the amplitude of any stable, semistable or multiplier-one origin cycle,
+quantifying the previously unquantified `delta` of `kkl/notes_lienard.md`
+§8. The nondecreasing-multiplier (Cherkas/Zhang) certificate family is
+shown to reduce entirely to this `Theta` condition. The residual window,
+cycles in `x<-1`, and every other family remain open; there is no
+five-cycle result and no statement about H(2). Zero ODE calls; shared
+ledger unchanged at 4096/4096. The line below that no cycle-count theorem
+had been obtained is superseded for this strip only.
+
 ## Fold closure follow-up, 2026-09-05
 
 [KKL_FOLD_CLOSURE.md](KKL_FOLD_CLOSURE.md): exact multiplier-band restriction
