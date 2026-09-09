@@ -115,8 +115,39 @@ def half_return(a, b, e0, e1, e2, s0, side, direction, h=0.004, order=16,
                 left = True
             x, y, t = x1, y1, t + h_try
             continue
-        crosses = (x1.b < 0) if launch_positive else (x1.a > 0)
-        if crosses:
+        past = (x1.b < 0) if launch_positive else (x1.a > 0)
+        touching = not ((x1.a > 0) if launch_positive else (x1.b < 0))
+        if touching and not past:
+            # The box straddles the section: its members cross at different
+            # times, spanning more than this step, which the single-step
+            # crossing routine cannot handle soundly. Retry the step LARGER,
+            # so that one step takes the whole box from strictly one side to
+            # strictly the other. (Shrinking h would make the spread worse.)
+            grown = None
+            h_big = h_try
+            for _ in range(12):
+                h_big = h_big * 2
+                rb = step(fld, x, y, h_big, order)
+                if rb is None:
+                    continue
+                xb = rb[0]
+                if (xb.b < 0) if launch_positive else (xb.a > 0):
+                    grown = (rb, h_big)
+                    break
+            if grown is None:
+                raise Unresolved('box straddles the section and no enlarged '
+                                 'step takes it fully across; the crossing-time '
+                                 'spread exceeds what a single validated step '
+                                 'can cover')
+            rb, h_big = grown
+            _, _, _, (Xb, Yb, XBb, YBb) = rb
+            T, yT = _crossing(fld, Xb, Yb, XBb, YBb, h_big, order)
+            if yT.a <= 0 <= yT.b:
+                raise Unresolved('y encloses zero at the crossing')
+            ay = yT if yT.a > 0 else iv.mpf([-yT.b, -yT.a])
+            return {'s_end': iv.log(ay), 'time': ival(t) + T,
+                    'y_end': yT, 'steps': nsteps}
+        if past:
             T, yT = _crossing(fld, X, Y, XB, YB, h_try, order)
             if yT.a <= 0 <= yT.b:
                 raise Unresolved('y encloses zero at the crossing')

@@ -1,0 +1,237 @@
+{
+  "claim": "at least three distinct periodic orbits, proved by validated integration and the intermediate value theorem",
+  "not_claimed": [
+    "isolation (limit-cycle property) of any of them",
+    "anything about the lower bracket",
+    "five cycles, or any counterexample"
+  ],
+  "precision_dps": 40,
+  "delta_ladder": [
+    "1e-6",
+    "3e-7",
+    "1e-7",
+    "3e-8",
+    "1e-8"
+  ],
+  "field": {
+    "a": "-7/4",
+    "b": "1/3",
+    "tau": 0.0001,
+    "e0": "-4*tau/11",
+    "e1": "-31379*tau/25000",
+    "e2": "-7517*tau/5000"
+  },
+  "brackets": [
+    {
+      "label": "upper_inner",
+      "attempts": [
+        {
+          "delta": "1e-6",
+          "segment_validated": true,
+          "segment_D_width": 0.019975984827977075,
+          "endpoints": {
+            "low": {
+              "sign": "positive",
+              "width": 4.9872358823246556e-29,
+              "D_low": "[1.097802227229536072228e-13, 1.097802227229536072228e-13]",
+              "D_high": "[1.097802227229536570951e-13, 1.097802227229536570951e-13]"
+            },
+            "high": {
+              "sign": "negative",
+              "width": 4.991229964154543e-29,
+              "D_low": "[-1.398348540140425787518e-13, -1.398348540140425787518e-13]",
+              "D_high": "[-1.398348540140425288395e-13, -1.398348540140425288395e-13]"
+            }
+          },
+          "strict_opposite_signs": true
+        }
+      ],
+      "delta": "1e-6",
+      "interval": [
+        "0.9802416972516128",
+        "0.9802436972516128"
+      ],
+      "segment_validated": true,
+      "segment_D_width": 0.019975984827977075,
+      "endpoints": {
+        "low": {
+          "sign": "positive",
+          "width": 4.9872358823246556e-29,
+          "D_low": "[1.097802227229536072228e-13, 1.097802227229536072228e-13]",
+          "D_high": "[1.097802227229536570951e-13, 1.097802227229536570951e-13]"
+        },
+        "high": {
+          "sign": "negative",
+          "width": 4.991229964154543e-29,
+          "D_low": "[-1.398348540140425787518e-13, -1.398348540140425787518e-13]",
+          "D_high": "[-1.398348540140425288395e-13, -1.398348540140425288395e-13]"
+        }
+      },
+      "strict_opposite_signs": true,
+      "partner_enclosure": [
+        "[-1.4558814768662185004, -1.4558814768662185004]",
+        "[-1.4558814768662185004, -1.4558814768662185004]"
+      ],
+      "periodic_orbit_proved": true
+    },
+    {
+      "label": "upper_middle",
+      "attempts": [
+        {
+          "delta": "1e-6",
+          "segment_validated": true,
+          "segment_D_width": 0.0816167321203265,
+          "endpoints": {
+            "low": {
+              "sign": "negative",
+              "width": 6.516936461964519e-26,
+              "D_low": "[-6.139155863309581838347e-14, -6.139155863309581838347e-14]",
+              "D_high": "[-6.139155863303064901885e-14, -6.139155863303064901885e-14]"
+            },
+            "high": {
+              "sign": "positive",
+              "width": 9.071965057604222e-26,
+              "D_low": "[1.091437262133161266838e-13, 1.091437262133161266838e-13]",
+              "D_high": "[1.091437262134068463344e-13, 1.091437262134068463344e-13]"
+            }
+          },
+          "strict_opposite_signs": true
+        }
+      ],
+      "delta": "1e-6",
+      "interval": [
+        "1.3899477822846022",
+        "1.3899497822846022"
+      ],
+      "segment_validated": true,
+      "segment_D_width": 0.0816167321203265,
+      "endpoints": {
+        "low": {
+          "sign": "negative",
+          "width": 6.516936461964519e-26,
+          "D_low": "[-6.139155863309581838347e-14, -6.139155863309581838347e-14]",
+          "D_high": "[-6.139155863303064901885e-14, -6.139155863303064901885e-14]"
+        },
+        "high": {
+          "sign": "positive",
+          "width": 9.071965057604222e-26,
+          "D_low": "[1.091437262133161266838e-13, 1.091437262133161266838e-13]",
+          "D_high": "[1.091437262134068463344e-13, 1.091437262134068463344e-13]"
+        }
+      },
+      "strict_opposite_signs": true,
+      "partner_enclosure": [
+        "[-1.5357456235202571515, -1.5357456235202571515]",
+        "[-1.5357456235202571515, -1.5357456235202571515]"
+      ],
+      "periodic_orbit_proved": true
+    },
+    {
+      "label": "upper_outer",
+      "attempts": [
+        {
+          "delta": "1e-6",
+          "segment_validated": false,
+          "segment_failure": "box straddles the section and no enlarged step takes it fully across; the crossing-time spread exceeds what a single validated step can cover",
+          "endpoints": {
+            "low": {
+              "sign": "positive",
+              "width": 7.549388451434181e-21,
+              "D_low": "[2.432336418604359261902e-13, 2.432336418604359261902e-13]",
+              "D_high": "[2.432336494098243776244e-13, 2.432336494098243776244e-13]"
+            },
+            "high": {
+              "sign": "negative",
+              "width": 7.524720192255383e-21,
+              "D_low": "[-2.493518413413606555773e-13, -2.493518413413606555773e-13]",
+              "D_high": "[-2.493518338166404633219e-13, -2.493518338166404633219e-13]"
+            }
+          },
+          "strict_opposite_signs": true
+        },
+        {
+          "delta": "3e-7",
+          "segment_validated": true,
+          "segment_D_width": 0.22132532063918947,
+          "endpoints": {
+            "low": {
+              "sign": "positive",
+              "width": 7.643778340152467e-21,
+              "D_low": "[7.082930307117079025168e-14, 7.082930307117079025168e-14]",
+              "D_high": "[7.082931071494913040415e-14, 7.082931071494913040415e-14]"
+            },
+            "high": {
+              "sign": "negative",
+              "width": 7.512165916366366e-21,
+              "D_low": "[-7.69463418266190740988e-14, -7.69463418266190740988e-14]",
+              "D_high": "[-7.694633431445315773243e-14, -7.694633431445315773243e-14]"
+            }
+          },
+          "strict_opposite_signs": true
+        }
+      ],
+      "delta": "3e-7",
+      "interval": [
+        "2.0452066404076005",
+        "2.0452072404076005"
+      ],
+      "segment_validated": true,
+      "segment_D_width": 0.22132532063918947,
+      "endpoints": {
+        "low": {
+          "sign": "positive",
+          "width": 7.643778340152467e-21,
+          "D_low": "[7.082930307117079025168e-14, 7.082930307117079025168e-14]",
+          "D_high": "[7.082931071494913040415e-14, 7.082931071494913040415e-14]"
+        },
+        "high": {
+          "sign": "negative",
+          "width": 7.512165916366366e-21,
+          "D_low": "[-7.69463418266190740988e-14, -7.69463418266190740988e-14]",
+          "D_high": "[-7.694633431445315773243e-14, -7.694633431445315773243e-14]"
+        }
+      },
+      "strict_opposite_signs": true,
+      "partner_enclosure": [
+        "[-1.6389947020748460039, -1.6389947020748460039]",
+        "[-1.6389947020748460039, -1.6389947020748460039]"
+      ],
+      "periodic_orbit_proved": true
+    }
+  ],
+  "orbits_proved": 3,
+  "distinctness": {
+    "bracket_intervals": [
+      [
+        "0.9802416972516128",
+        "0.9802436972516128"
+      ],
+      [
+        "1.3899477822846022",
+        "1.3899497822846022"
+      ],
+      [
+        "2.0452066404076005",
+        "2.0452072404076005"
+      ]
+    ],
+    "partner_enclosures": [
+      [
+        "[-1.4558814768662185004, -1.4558814768662185004]",
+        "[-1.4558814768662185004, -1.4558814768662185004]"
+      ],
+      [
+        "[-1.5357456235202571515, -1.5357456235202571515]",
+        "[-1.5357456235202571515, -1.5357456235202571515]"
+      ],
+      [
+        "[-1.6389947020748460039, -1.6389947020748460039]",
+        "[-1.6389947020748460039, -1.6389947020748460039]"
+      ]
+    ],
+    "pairwise_disjoint_brackets": true,
+    "partners_disjoint_from_brackets": true,
+    "argument": "each validated half return stops at the first crossing, so each closed orbit meets the upper section exactly twice: once in its bracket and once at its partner. The brackets are pairwise disjoint and every partner enclosure lies below all of them, so the orbits are pairwise distinct."
+  },
+  "wall_seconds": 133.6366750569996
+}
