@@ -1,0 +1,25 @@
+
+[0.05] FIRST NEST  engine s-1 = ['1.502205', '1.588052', '1.675441']
+            detector s-1 = ['1.502366', '1.587735', '1.675599']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20281, 0.31223) trace -5.81356 det 161.59009
+            detector cycles at d = []  (samples 300, reach 3.00)
+
+[0.10] FIRST NEST  engine s-1 = ['1.417803', '1.588052', '1.764462']
+            detector s-1 = ['1.417843', '1.587973', '1.764502']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20281, 0.31223) trace -5.81379 det 161.58988
+            detector cycles at d = []  (samples 300, reach 3.00)
+
+[0.20] FIRST NEST  engine s-1 = ['1.252914', '1.588052', '1.947748']
+            detector s-1 = ['1.252924', '1.588032', '1.947758']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20280, 0.31223) trace -5.81472 det 161.58900
+            detector cycles at d = []  (samples 300, reach 3.00)
+
+[0.35] FIRST NEST  engine s-1 = ['1.013494', '1.588052', '2.237022']
+            detector s-1 = ['1.013497', '1.588046', '2.237025']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20279, 0.31223) trace -5.81727 det 161.58661
+            detector cycles at d = []  (samples 300, reach 3.00)
+
+[0.50] FIRST NEST  engine s-1 = ['0.779407', '1.588052', '2.545427']
+            detector s-1 = ['0.779408', '1.588049', '2.545429']  (samples 300, reach 3.00)  -> AGREES
+            SECOND NEST focus (-3.20276, 0.31223) trace -5.82121 det 161.58291
+            detector cycles at d = []  (samples 300, reach 3.00)

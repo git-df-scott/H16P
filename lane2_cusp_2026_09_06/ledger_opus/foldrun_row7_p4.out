@@ -1,0 +1,5 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+k=0    s_f=3.4689942 s_i=2.2861348 h_i=-0.000250023  Dss_f=-0.00129    T=-4.71924e-5  cyc=0 sta=2 dom=[1.002,6.992]
+step 0: CORRECTOR FAILED (GUARD_TIME) -- halving
+
+calls: 747

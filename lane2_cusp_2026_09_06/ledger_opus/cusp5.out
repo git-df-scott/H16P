@@ -1,0 +1,2 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+eps=0.05   tau=0        : NO_CONVERGE res=0.00047647

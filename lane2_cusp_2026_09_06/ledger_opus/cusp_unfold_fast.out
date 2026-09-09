@@ -1,0 +1,6 @@
+engine: ENGINE cusp_engine binary128 (113-bit mantissa) order=26 jetdeg=4
+
+eps=0.05   tau=0        T=-8.9539609e-40  D(s_c)=9.65062e-5 D_s(s_c)=0.000189829 (target 1.59896e-6)
+   domain ['1.002', '6.992']
+   LOCAL cycles (2): ['2.11323888576', '3.27223091182']
+   stationary   (2): ['1.751904186', '2.857580922']

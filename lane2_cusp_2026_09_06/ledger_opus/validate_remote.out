@@ -1,0 +1,10 @@
+POSITIVE CONTROL: same detector, first nest (engine-certified counts)
+
+eta_T=1e-5   engine cycles at s-1 = ['0.072124', '2.420004', '2.435369']
+            detector  at s-1 = []   (samples 40, reach 3.000)
+            -> DISAGREES
+
+eta_T=1e-4   engine cycles at s-1 = ['0.266432', '2.277757', '2.435232']
+            detector  at s-1 = ['0.266427', '2.277680', '2.435303']   (samples 40, reach 3.000)
+            -> AGREES
+
