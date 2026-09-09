@@ -67,6 +67,16 @@ MAX_FOLD_CONDITION = 1e6
 MIN_D2 = 1e-3                      # |d2D/ds2| / DS_SCALE
 MIN_ANCHOR_SLOPE_FRACTION = 0.1
 E0_FLOOR = 1e-9
+MAX_FREE_MOVE = 0.05      # most the released anchor may move in one accepted step
+MIN_ANCHOR_GAP = 0.02     # released anchor must stay this far from every pinned one
+
+# Both guards were added after a first run lost the released anchor's identity:
+# it moved from s = 1.288775 to s = 1.431203 in a single accepted step, passing
+# through the pinned anchor at 1.3899488. Two roots of the same D(.; theta)
+# cannot cross -- they can only merge and separate -- so that step was the
+# corrector jumping to a different root, not the root moving. Steps after it in
+# data/step5_normalized_firstrun.json are unsound and are kept only as the
+# record of the defect.
 MAX_ACCEPTED = int(os.environ.get('MAX_ACCEPTED', '50'))
 MAX_REJECTED = 40
 MAX_EVALUATIONS = int(os.environ.get('MAX_EVALUATIONS', '400000'))
@@ -334,6 +344,27 @@ def main():
                 continue
             u_new = np.array(ci['u'], dtype=float)
             th_new, s_free_new = u_new[:5], u_new[5]
+            move = abs(s_free_new - u[5])
+            if move > MAX_FREE_MOVE:
+                rejected += 1
+                branch['rejected'].append(
+                    {'attempt': rejected,
+                     'failure': {'reason': 'released anchor moved %.4f in one step, '
+                                           'above the %.3f identity guard'
+                                           % (move, MAX_FREE_MOVE)}})
+                ds *= 0.5
+                continue
+            gap = min(abs(s_free_new - s) for s, side in pinned if side == 1)
+            if gap < MIN_ANCHOR_GAP:
+                rejected += 1
+                branch['rejected'].append(
+                    {'attempt': rejected,
+                     'failure': {'reason': 'released anchor within %.4f of a pinned '
+                                           'anchor (guard %.3f); roots approaching '
+                                           'a merge, identity no longer separable'
+                                           % (gap, MIN_ANCHOR_GAP)}})
+                ds *= 0.5
+                continue
             if abs(th_new[2]) < E0_FLOOR:
                 rejected += 1
                 branch['rejected'].append(
@@ -389,7 +420,7 @@ def main():
                 break
             if branch['stop_reason']:
                 break
-            ds = math.copysign(min(abs(ds) * 1.3, 0.2), ds)
+            ds = math.copysign(min(abs(ds) * 1.3, 0.05), ds)
         else:
             branch['stop_reason'] = ('accepted cap reached' if accepted >= MAX_ACCEPTED
                                      else 'rejected cap reached')

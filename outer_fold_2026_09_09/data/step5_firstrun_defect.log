@@ -1,0 +1,31 @@
+{
+  "rank": 5,
+  "singular_values": [
+    7997.701266567838,
+    4123.023660196789,
+    25.06147304706106,
+    4.982019334498255,
+    0.9012482322711292
+  ],
+  "condition_on_range": 8874.027132806437,
+  "null_vector": [
+    0.020563403147588616,
+    -0.06197437926509503,
+    -0.02038297967543198,
+    -0.018151406784550347,
+    0.015647278835054547,
+    0.997369814061989
+  ],
+  "residual_norm": 4.9615915413860095e-08,
+  "unknowns": 6,
+  "equations": 5,
+  "degrees_of_freedom": 1
+}
+{"branch": "curve_forward", "step": 1, "theta": ["-1.74896", "0.330233", "-3.64649e-05", "-0.00012642", "-0.000149556"], "s_free": 1.030111, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 3809}
+{"branch": "curve_forward", "step": 2, "theta": ["-1.74757", "0.3262", "-3.65946e-05", "-0.000127583", "-0.000148533"], "s_free": 1.094939, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 7383}
+{"branch": "curve_forward", "step": 3, "theta": ["-1.74569", "0.320959", "-3.67598e-05", "-0.000129073", "-0.000147199"], "s_free": 1.179216, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 12164}
+{"branch": "curve_forward", "step": 4, "theta": ["-1.74314", "0.314155", "-3.69685e-05", "-0.000130971", "-0.00014546"], "s_free": 1.288775, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 15873}
+{"branch": "curve_forward", "step": 5, "theta": ["-1.73963", "0.305346", "-3.72293e-05", "-0.000133364", "-0.000143201"], "s_free": 1.431203, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 19736}
+{"branch": "curve_forward", "step": 6, "theta": ["-1.73475", "0.293988", "-3.75503e-05", "-0.000136342", "-0.000140284"], "s_free": 1.616363, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 22017}
+{"branch": "curve_forward", "step": 7, "theta": ["-1.72908", "0.281905", "-3.78737e-05", "-0.000139371", "-0.000137186"], "s_free": 1.815844, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 25063}
+{"branch": "curve_forward", "step": 8, "theta": ["-1.72299", "0.270012", "-3.81747e-05", "-0.00014221", "-0.000134155"], "s_free": 2.015332, "pert_ratio": 1.0, "converged": 0, "accepted_folds": 0, "evals": 27089}
