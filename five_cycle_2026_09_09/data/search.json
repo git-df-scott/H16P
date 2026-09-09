@@ -1,0 +1,11 @@
+{
+  "evidence": "NUM; floating-point return-map sign counting",
+  "target": "four limit cycles in one nest (Zhang: distribution is (1,i))",
+  "samples_evaluated": 576,
+  "seconds": 1657.945830992,
+  "rtol": 1e-09,
+  "grid_points": 45,
+  "hits_four_in_one_nest": [],
+  "three_cycle_nests_found": 0,
+  "closest_outer_folds": []
+}
