@@ -1,0 +1,17 @@
+medium_boundary accepted 1 D/amp -8.924282389231854e-08 c [-1.99669748  0.04631627  0.08        0.08        0.2       ] roots [5.67405432 5.75405432 5.83405432] lower 22.16690381616782 calls 40
+medium_boundary reject upper cycle orientation changed rho 0.35 calls 52
+medium_boundary reject upper cycle orientation changed rho 0.175 calls 61
+medium_boundary reject upper cycle orientation changed rho 0.0875 calls 70
+medium_boundary reject upper cycle orientation changed rho 0.04375 calls 88
+medium_boundary reject old sign bracket lost rho 0.021875 calls 114
+medium_boundary accepted 2 D/amp -5.687645955391535e-08 c [-1.99778721  0.04622253  0.08        0.08        0.2       ] roots [5.68302986 5.76302986 5.84302986] lower 22.28144941278825 calls 141
+medium_boundary reject numerically weak upper derivative rho 0.014765625 calls 147
+medium_boundary accepted 3 D/amp -3.546312267898636e-08 c [-1.99852439  0.04618232  0.08        0.08        0.2       ] roots [5.68814701 5.76814701 5.84814701] lower 22.35723183600962 calls 167
+medium_boundary reject numerically weak upper derivative rho 0.009966796875 calls 173
+medium_boundary reject numerically weak upper derivative rho 0.0049833984375 calls 179
+medium_boundary reject no objective improvement rho 0.00249169921875 calls 186
+medium_boundary reject numerically weak upper derivative rho 0.001245849609375 calls 189
+medium_boundary reject no objective improvement rho 0.0006229248046875 calls 208
+medium_boundary reject no objective improvement rho 0.00031146240234375 calls 218
+medium_boundary reject no objective improvement rho 0.000155731201171875 calls 225
+medium_boundary STOP persistent trust-region gate calls 225

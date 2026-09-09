@@ -1,0 +1,34 @@
+strong accepted 1 D/amp -0.004427230824151666 c [-1.76880706  0.33628568  0.40569177  0.64606207  0.88681803] roots [1.71903682 2.12472859 2.77079066] lower 14.31921147244611 calls 34
+strong accepted 2 D/amp -0.0025830917923735388 c [-1.79078577  0.33981699  0.4011532   0.63558936  0.75482399] roots [1.73825258 2.13940577 2.77499513] lower 14.708469012892923 calls 55
+strong accepted 3 D/amp -0.001386247684103665 c [-1.81285753  0.34356092  0.39682948  0.62551053  0.62312821] roots [1.75705985 2.15388933 2.77939986] lower 15.165416192362168 calls 76
+strong accepted 4 D/amp -0.0006593271361410071 c [-1.83513836  0.34767006  0.39279196  0.6159798   0.49227565] roots [1.77483263 2.16762459 2.78360439] lower 15.709685366578036 calls 97
+strong accepted 5 D/amp -0.00025783463819497194 c [-1.85787921  0.35236129  0.3891495   0.60724562  0.3634873 ] roots [1.79081309 2.17996259 2.7872082 ] lower 16.374667739295372 calls 118
+strong accepted 6 D/amp -6.733145922599776e-05 c [-1.88167688  0.35800432  0.386082    0.59974343  0.2399555 ] roots [1.80399818 2.19008018 2.78982361] lower 17.227378519654053 calls 139
+strong reject upper cycle orientation changed rho 0.35 calls 148
+strong accepted 7 D/amp -2.4507284586042118e-05 c [-1.89499316  0.36173899  0.38501501  0.59706868  0.2       ] roots [1.80821984 2.19323484 2.79030353] lower 17.799793880431434 calls 169
+strong reject upper cycle orientation changed rho 0.23625 calls 178
+strong accepted 8 D/amp -2.532266323385741e-06 c [-1.90625656  0.36523956  0.38454048  0.59586736  0.2       ] roots [1.80985134 2.19439182 2.79025918] lower 18.351700273467024 calls 199
+strong reject upper cycle orientation changed rho 0.15946875 calls 208
+strong reject upper cycle orientation changed rho 0.079734375 calls 217
+strong reject upper cycle orientation changed rho 0.0398671875 calls 226
+strong reject upper cycle orientation changed rho 0.01993359375 calls 232
+strong accepted 9 D/amp -7.310009879409501e-07 c [-1.9072001   0.36556059  0.38453611  0.5958563   0.2       ] roots [1.80982069 2.19435681 2.7902131 ] lower 18.401468989086 calls 249
+strong reject upper cycle orientation changed rho 0.01345517578125 calls 255
+strong reject upper cycle orientation changed rho 0.006727587890625 calls 261
+strong accepted 10 D/amp -1.2480348745616277e-07 c [-1.90751829  0.36566969  0.38453569  0.59585521  0.2       ] roots [1.80980539 2.19434108 2.79019629] lower 18.41838194501545 calls 278
+strong reject upper cycle orientation changed rho 0.004541121826171875 calls 284
+strong reject upper cycle orientation changed rho 0.0022705609130859376 calls 290
+strong reject upper cycle orientation changed rho 0.0011352804565429688 calls 296
+strong accepted 11 D/amp -2.2593133732456625e-08 c [-1.90757197  0.36568815  0.38453567  0.59585518  0.2       ] roots [1.80980259 2.19433826 2.79019345] lower 18.42124185156192 calls 313
+strong reject upper cycle orientation changed rho 0.000766314308166504 calls 319
+strong reject upper cycle orientation changed rho 0.000383157154083252 calls 325
+strong reject upper cycle orientation changed rho 0.000191578577041626 calls 331
+strong accepted 12 D/amp -5.347568032873938e-09 c [-1.90758103  0.36569126  0.38453567  0.59585518  0.2       ] roots [1.80980204 2.19433771 2.79019289] lower 18.421724508981853 calls 348
+strong reject upper cycle orientation changed rho 0.00012931553950309754 calls 354
+strong reject upper cycle orientation changed rho 6.465776975154877e-05 calls 360
+strong reject numerically weak upper derivative rho 3.2328884875774386e-05 calls 363
+strong reject no objective improvement rho 1.6164442437887193e-05 calls 370
+strong reject no objective improvement rho 8.082221218943596e-06 calls 377
+strong reject no objective improvement rho 4.041110609471798e-06 calls 384
+strong reject no objective improvement rho 2.020555304735899e-06 calls 391
+strong STOP persistent trust-region gate calls 391

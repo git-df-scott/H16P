@@ -1,0 +1,39 @@
+{
+  "evidence": "NUM derivative implementation check",
+  "checks": [
+    {
+      "control_index": 0,
+      "step": 0.0001,
+      "implicit_derivative": -0.002431610552605284,
+      "finite_difference": -0.0024316104394188527,
+      "error": 1.1318643114779925e-10
+    },
+    {
+      "control_index": 0,
+      "step": 3e-05,
+      "implicit_derivative": -0.002431610552605284,
+      "finite_difference": -0.0024316102699226357,
+      "error": 2.8268264812281174e-10
+    },
+    {
+      "control_index": 2,
+      "step": 0.0001,
+      "implicit_derivative": -0.00042936613319164774,
+      "finite_difference": -0.00042936612317662215,
+      "error": 1.0015025592689797e-11
+    },
+    {
+      "control_index": 2,
+      "step": 3e-05,
+      "implicit_derivative": -0.00042936613319164774,
+      "finite_difference": -0.000429365986645211,
+      "error": 1.465464367694444e-10
+    }
+  ],
+  "counts": {
+    "pairs": 56,
+    "halves": 112,
+    "nfev": 124792,
+    "failed_halves": 0
+  }
+}
