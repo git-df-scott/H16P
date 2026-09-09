@@ -1,0 +1,6 @@
+{
+  "status": "exact identity passed",
+  "identity": "positive_scaled_l1=-B^3*det*core/4",
+  "core": "A**2*a*e2 - A*B*a**2 - A*B*a + 2*A*B - 2*A*a*b*y + 2*A*b*y - A*e2**2*y + B*a*e2*y + 2*b*e2*y**2",
+  "scope": "Cubic degeneracy condition when det>0 and B!=0; no higher-focus coefficient or unfolding certificate"
+}

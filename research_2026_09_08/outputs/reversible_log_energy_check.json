@@ -1,0 +1,102 @@
+{
+  "scope": "Independent exact first-integral check of unperturbed large-return endpoints.",
+  "records": [
+    {
+      "a": -1,
+      "b": 1,
+      "side": 1,
+      "start_height": 10000000000.0,
+      "end_log_height": -24.412145291055808,
+      "log_energy_error": 4.54036808150704e-12
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "side": 1,
+      "start_height": 1e+30,
+      "end_log_height": -70.46384715093117,
+      "log_energy_error": 1.0089706847793423e-11
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "side": 1,
+      "start_height": 1e+60,
+      "end_log_height": -139.541399940748,
+      "log_energy_error": 1.4637180356658064e-11
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "side": -1,
+      "start_height": 10000000000.0,
+      "end_log_height": -24.412145291055808,
+      "log_energy_error": 4.54036808150704e-12
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "side": -1,
+      "start_height": 1e+30,
+      "end_log_height": -70.46384715093117,
+      "log_energy_error": 1.0089706847793423e-11
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "side": -1,
+      "start_height": 1e+60,
+      "end_log_height": -139.541399940748,
+      "log_energy_error": 1.4637180356658064e-11
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": 1,
+      "start_height": 10000000000.0,
+      "end_log_height": -14.454319530281612,
+      "log_energy_error": 1.2079226507921703e-12
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": 1,
+      "start_height": 1e+30,
+      "end_log_height": -42.08533783086816,
+      "log_energy_error": 1.3997691894473974e-12
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": 1,
+      "start_height": 1e+60,
+      "end_log_height": -83.53186950475867,
+      "log_energy_error": 1.4921397450962104e-12
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": -1,
+      "start_height": 10000000000.0,
+      "end_log_height": -14.454313899590291,
+      "log_energy_error": 1.1191048088221578e-12
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": -1,
+      "start_height": 1e+30,
+      "end_log_height": -42.08533783086816,
+      "log_energy_error": 1.3997691894473974e-12
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": -1,
+      "start_height": 1e+60,
+      "end_log_height": -83.53186950475867,
+      "log_energy_error": 1.4921397450962104e-12
+    }
+  ],
+  "max_log_energy_error": 1.4637180356658064e-11
+}

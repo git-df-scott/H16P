@@ -1,0 +1,12 @@
+{
+  "user_budget_percent": 30,
+  "interpretation": "Conservative total weekly usage ceiling of30%; main Codex meter6% and reserve2% at2026-09-08T04:22:08Z. Periodically recheck both and preserve margin. Shared account usage can include other tasks.",
+  "main_used_percent_at_instruction": 6,
+  "reserve_used_percent_at_instruction": 2,
+  "stop_margin_percent": 1,
+  "latest_main_used_percent": 29,
+  "latest_reserve_used_percent": 2,
+  "budget_stop_observations": 3,
+  "stop_reason": "Preserve1pointmarginunderconservative30total-accountceiling; onlywrap-upremaining.",
+  "research_status": "blocked by conservative usage ceiling and preserved reporting margin"
+}

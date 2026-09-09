@@ -1,0 +1,96 @@
+{
+  "scope": "Resolve the coarse lower-annulus gap before its first failed return.",
+  "records": [
+    {
+      "parameters": {
+        "a": -1.01,
+        "b": 1.0,
+        "e0": -1e-100,
+        "e1": 0.0025251010082069448,
+        "e2": -0.00500005,
+        "epsilon_minus": 0.01,
+        "epsilon_plus": 1.0000000000000001e-07
+      },
+      "trials": [
+        {
+          "side": -1,
+          "height": 2.2677137554770615e+100,
+          "forward": {
+            "status": "passed",
+            "log_height": -227.7698110181316,
+            "height": 1.2045585945759427e-99,
+            "nfev": 45727,
+            "time": 1141.4022401385175
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -228.03494538753552,
+            "height": 9.240203524472282e-100,
+            "nfev": 45775,
+            "time": 1142.4347608471098
+          },
+          "log_difference": 0.2651343694039099
+        }
+      ],
+      "bracket": [
+        9.502002165056702e+98,
+        2.2677137554770615e+100
+      ]
+    },
+    {
+      "parameters": {
+        "a": -1.003,
+        "b": 1.0,
+        "e0": -1e-250,
+        "e1": 0.0025075037612923142,
+        "e2": -0.005000015,
+        "epsilon_minus": 0.01,
+        "epsilon_plus": 3.0000000000000004e-08
+      },
+      "trials": [
+        {
+          "side": -1,
+          "height": 8.281103915201298e+250,
+          "forward": {
+            "status": "passed",
+            "log_height": -574.7252506942419,
+            "height": 2.5118575878638135e-250,
+            "nfev": 115159,
+            "time": 2877.3201036015575
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "A termination event occurred.",
+            "guard": 1
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.5774357519910096e+249,
+          "forward": {
+            "status": "passed",
+            "log_height": -571.738721902262,
+            "height": 4.977691619017361e-249,
+            "nfev": 114499,
+            "time": 2860.4745358745686
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -571.7714845303951,
+            "height": 4.817251923520471e-249,
+            "nfev": 114499,
+            "time": 2860.560557192702
+          },
+          "log_difference": 0.03276262813312769
+        }
+      ],
+      "bracket": [
+        3.00479691734294e+247,
+        1.5774357519910096e+249
+      ]
+    }
+  ],
+  "counts": {
+    "log_halves": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "NUM independent central-difference control of moving-event sensitivity",
+  "rows": [
+    {
+      "step": 0.001,
+      "finite_difference": 0.0014241215447047262,
+      "sensitivity": 0.0014241215446990575,
+      "error": 5.668642638623211e-15
+    },
+    {
+      "step": 0.0001,
+      "finite_difference": 0.001424121548049273,
+      "sensitivity": 0.0014241215446990575,
+      "error": 3.3502155043219073e-12
+    }
+  ],
+  "half_passages": 10
+}

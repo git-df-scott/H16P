@@ -1,0 +1,19 @@
+{
+  "status": "exact determinant identity passed; displayed coefficient mismatch verified",
+  "source": "https://arxiv.org/html/2501.16924v1#S4.E23",
+  "actual": "-c4*c5*k*kh*x*z**2 - c4*c5*k*kh*y*z**2 + c5*k*x*y + z",
+  "displayed": "c5*k*x*y + z*(-c5*k*kh*z*(x + y) + 1)",
+  "actual_minus_displayed": "-c5*k*kh*z**2*(c4 - 1)*(x + y)",
+  "example": {
+    "x": "1/100",
+    "y": "1/50",
+    "z": "3/100",
+    "c4": "2",
+    "c5": "3",
+    "k": "1",
+    "kh": "1"
+  },
+  "actual_example": "15219/500000",
+  "displayed_example": "30519/1000000",
+  "interpretation": "The missing nu4 factor remains bounded locally; for positive nu5 and positive coefficients, the original small-variable positivity argument survives. No theorem refutation and no H16P counterexample."
+}

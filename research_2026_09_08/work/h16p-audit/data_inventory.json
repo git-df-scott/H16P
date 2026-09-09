@@ -1,0 +1,1087 @@
+[
+  {
+    "path": "controls/four_cycle_control.json",
+    "counts": {
+      "dict": 6,
+      "str": 13,
+      "list": 1,
+      "int": 4,
+      "float": 20,
+      "flag:closure_error": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/accounting.json",
+    "counts": {
+      "dict": 1,
+      "int": 8,
+      "bool": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/cusp_attempt.json",
+    "counts": {
+      "dict": 21,
+      "float": 80,
+      "list": 34,
+      "str": 372,
+      "int": 16,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/generalized_exact.json",
+    "counts": {
+      "dict": 1,
+      "str": 6,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/outermost_check.json",
+    "counts": {
+      "dict": 10,
+      "list": 1,
+      "float": 2,
+      "str": 120,
+      "int": 13,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/returns.jsonl",
+    "counts": {
+      "dict": 57,
+      "int": 60,
+      "str": 571,
+      "float": 19
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/source_manifest.json",
+    "counts": {
+      "dict": 1,
+      "str": 7
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_closure_2026_09_05/theory_exact.json",
+    "counts": {
+      "dict": 1,
+      "str": 43,
+      "list": 10,
+      "int": 2,
+      "bool": 3
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/angular_transfer.json",
+    "counts": {
+      "list": 1,
+      "dict": 3,
+      "str": 15,
+      "float": 51,
+      "int": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/center_binary128.json",
+    "counts": {
+      "dict": 25,
+      "str": 449,
+      "list": 5,
+      "int": 40
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/component_summary.json",
+    "counts": {
+      "dict": 207,
+      "str": 1027,
+      "int": 626,
+      "flag:UNRESOLVED": 1,
+      "list": 96,
+      "float": 156,
+      "bool": 193
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/crossing_c1.json",
+    "counts": {
+      "dict": 10,
+      "list": 1,
+      "str": 198,
+      "int": 18
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/derivative_controls.json",
+    "counts": {
+      "dict": 5,
+      "str": 8,
+      "float": 32,
+      "list": 3,
+      "int": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_angular_ld.json",
+    "counts": {
+      "list": 6,
+      "dict": 45,
+      "str": 392,
+      "int": 78,
+      "float": 2,
+      "flag:error": 4,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_arclength.json",
+    "counts": {
+      "list": 1480,
+      "dict": 1005,
+      "int": 1315,
+      "float": 16022,
+      "str": 2483,
+      "bool": 475,
+      "NoneType": 17,
+      "flag:error": 70,
+      "flag:unresolved": 17
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_decreasing.json",
+    "counts": {
+      "list": 317,
+      "dict": 198,
+      "str": 446,
+      "float": 3392,
+      "int": 252,
+      "bool": 126,
+      "flag:unresolved": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_half.json",
+    "counts": {
+      "list": 49,
+      "dict": 514,
+      "str": 7728,
+      "int": 789,
+      "float": 24,
+      "bool": 8,
+      "flag:error": 7
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_increasing.json",
+    "counts": {
+      "list": 1333,
+      "dict": 876,
+      "str": 1959,
+      "float": 14302,
+      "int": 1077,
+      "bool": 511,
+      "flag:unresolved": 18,
+      "flag:error": 29,
+      "NoneType": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_logm.json",
+    "counts": {
+      "list": 68,
+      "dict": 729,
+      "str": 11702,
+      "int": 1132,
+      "float": 33,
+      "bool": 11,
+      "flag:error": 5
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_m.json",
+    "counts": {
+      "list": 38,
+      "dict": 404,
+      "str": 7120,
+      "int": 631,
+      "float": 18,
+      "bool": 6,
+      "flag:error": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_negative.json",
+    "counts": {
+      "list": 122,
+      "dict": 1298,
+      "str": 19916,
+      "int": 2014,
+      "float": 60,
+      "bool": 20,
+      "flag:error": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/events_quad.json",
+    "counts": {
+      "list": 61,
+      "dict": 649,
+      "str": 9882,
+      "int": 1003,
+      "float": 30,
+      "bool": 10,
+      "flag:error": 5
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/full_return_reproduction.json",
+    "counts": {
+      "dict": 45,
+      "str": 499,
+      "list": 7,
+      "int": 64
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/graphic_coefficient.json",
+    "counts": {
+      "dict": 3,
+      "list": 1,
+      "str": 50,
+      "int": 4,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/graphic_connection.json",
+    "counts": {
+      "dict": 28,
+      "float": 307,
+      "str": 73,
+      "list": 28,
+      "int": 54,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/graphic_initial.json",
+    "counts": {
+      "list": 13,
+      "dict": 12,
+      "float": 126,
+      "str": 32,
+      "int": 26
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/half_control.json",
+    "counts": {
+      "dict": 1,
+      "str": 22,
+      "int": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/infinity_binary128.json",
+    "counts": {
+      "dict": 20,
+      "list": 5,
+      "str": 294,
+      "int": 28,
+      "flag:error": 2,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/infinity_tolerance_control.json",
+    "counts": {
+      "list": 1,
+      "dict": 2,
+      "str": 44,
+      "int": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/large_m_full_reproduction.json",
+    "counts": {
+      "dict": 21,
+      "list": 3,
+      "int": 32,
+      "str": 258
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/log_derivative_controls.json",
+    "counts": {
+      "list": 9,
+      "dict": 6,
+      "str": 20,
+      "float": 98,
+      "int": 8
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/long_double_control.json",
+    "counts": {
+      "dict": 3,
+      "str": 23,
+      "float": 17,
+      "int": 5
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/pair_replay_claims.json",
+    "counts": {
+      "dict": 44,
+      "str": 635,
+      "list": 19,
+      "int": 93,
+      "bool": 7
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/quad_control.json",
+    "counts": {
+      "dict": 3,
+      "str": 45,
+      "int": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/returns.jsonl",
+    "counts": {
+      "dict": 11583,
+      "int": 10378,
+      "str": 75364,
+      "float": 35802,
+      "list": 2410,
+      "bool": 978,
+      "flag:error": 123
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/runtime.json",
+    "counts": {
+      "dict": 1,
+      "str": 7
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/source_manifest.json",
+    "counts": {
+      "dict": 1,
+      "str": 41
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/theory_exact.json",
+    "counts": {
+      "dict": 2,
+      "str": 22,
+      "int": 1,
+      "list": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/theory_melnikov.json",
+    "counts": {
+      "dict": 3,
+      "str": 19,
+      "int": 3,
+      "list": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/theory_negative_checks.json",
+    "counts": {
+      "dict": 49,
+      "str": 247,
+      "int": 44,
+      "flag:failures": 3,
+      "list": 44,
+      "float": 37,
+      "bool": 40
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "fold_surface_2026_09_05/theory_outcome_audit.json",
+    "counts": {
+      "dict": 44,
+      "str": 40,
+      "int": 41,
+      "list": 24,
+      "float": 45,
+      "bool": 12,
+      "flag:failures": 2,
+      "flag:UNRESOLVED_RETURN": 1,
+      "flag:CORRECTOR_UNRESOLVED": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/K_margin_c09_repaired.jsonl",
+    "counts": {
+      "dict": 4,
+      "str": 23,
+      "list": 8,
+      "float": 58,
+      "int": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/K_margin_to_c09.jsonl",
+    "counts": {
+      "dict": 23,
+      "str": 138,
+      "list": 46,
+      "float": 275,
+      "int": 22,
+      "flag:error": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/K_margin_toward_boundary.jsonl",
+    "counts": {
+      "dict": 19,
+      "str": 115,
+      "list": 38,
+      "float": 261,
+      "int": 18,
+      "flag:error": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/c_gt_1_remote_controls.json",
+    "counts": {
+      "dict": 13,
+      "str": 21,
+      "list": 9,
+      "float": 112,
+      "int": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/constant_K_path.jsonl",
+    "counts": {
+      "dict": 28,
+      "str": 154,
+      "list": 56,
+      "float": 350,
+      "int": 28
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/continuation_events.jsonl",
+    "counts": {
+      "dict": 94,
+      "str": 569,
+      "list": 188,
+      "float": 1202,
+      "int": 140,
+      "flag:error": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/exact_controls.json",
+    "counts": {
+      "dict": 4,
+      "str": 10
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/fold_direction_at_boundary.json",
+    "counts": {
+      "dict": 1,
+      "str": 4,
+      "float": 5
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/last_field_profile.json",
+    "counts": {
+      "dict": 21,
+      "str": 24,
+      "list": 21,
+      "float": 310,
+      "int": 10
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/last_inside_boundary.jsonl",
+    "counts": {
+      "dict": 4,
+      "str": 23,
+      "list": 8,
+      "float": 58,
+      "int": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/next_seed_geometry.json",
+    "counts": {
+      "dict": 4,
+      "str": 28,
+      "list": 7
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/pilot_summary.json",
+    "counts": {
+      "dict": 2,
+      "str": 8,
+      "int": 2,
+      "list": 1,
+      "bool": 2,
+      "float": 4
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/reduce_K.jsonl",
+    "counts": {
+      "dict": 16,
+      "str": 92,
+      "list": 32,
+      "float": 200,
+      "int": 16
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/remote_radius_boundary.json",
+    "counts": {
+      "dict": 14,
+      "str": 62,
+      "int": 6,
+      "list": 23,
+      "float": 140
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/returns.jsonl",
+    "counts": {
+      "dict": 618,
+      "int": 421,
+      "str": 1054,
+      "float": 5691,
+      "list": 412,
+      "bool": 17
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/stationary_control.json",
+    "counts": {
+      "dict": 4,
+      "str": 4,
+      "list": 7,
+      "float": 93,
+      "int": 3
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "kkl/data/strike_summary.json",
+    "counts": {
+      "dict": 4,
+      "str": 21,
+      "bool": 3,
+      "int": 9,
+      "float": 7,
+      "list": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/controls.json",
+    "counts": {
+      "dict": 5,
+      "str": 11,
+      "float": 38,
+      "list": 10,
+      "int": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/second_green_shoot.json",
+    "counts": {
+      "dict": 1,
+      "str": 9,
+      "float": 35,
+      "list": 16,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/second_lobe_certificate.json",
+    "counts": {
+      "dict": 14,
+      "str": 38,
+      "int": 8,
+      "flag:error_bound": 1,
+      "list": 9,
+      "bool": 8
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/second_spine_diagnostic.json",
+    "counts": {
+      "dict": 7,
+      "str": 92,
+      "float": 91,
+      "list": 55,
+      "int": 12
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/smoke.json",
+    "counts": {
+      "dict": 7,
+      "str": 4,
+      "int": 29,
+      "float": 47,
+      "list": 15,
+      "flag:candidate_mode": 1,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_confluent_shoot.json",
+    "counts": {
+      "dict": 5,
+      "str": 23,
+      "list": 5,
+      "float": 17
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_independent_checks.json",
+    "counts": {
+      "dict": 3,
+      "str": 6,
+      "list": 5,
+      "int": 2,
+      "float": 21,
+      "bool": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_initial_shoot.json",
+    "counts": {
+      "dict": 17,
+      "str": 83,
+      "float": 601,
+      "list": 269,
+      "int": 32,
+      "bool": 32
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_reverse_tangency.json",
+    "counts": {
+      "dict": 11,
+      "str": 4,
+      "int": 9,
+      "float": 57,
+      "list": 13,
+      "NoneType": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_shape_shoot.json",
+    "counts": {
+      "dict": 4,
+      "str": 18,
+      "float": 145,
+      "list": 52,
+      "int": 6,
+      "bool": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_threshold_certificate.json",
+    "counts": {
+      "dict": 12,
+      "str": 43,
+      "list": 11,
+      "int": 6,
+      "bool": 8
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/data/third_tuned_shoot.json",
+    "counts": {
+      "dict": 6,
+      "str": 28,
+      "float": 239,
+      "list": 85,
+      "int": 10,
+      "bool": 10
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/poincare_candidate.schema.json",
+    "counts": {
+      "dict": 12,
+      "str": 27,
+      "list": 4,
+      "int": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "q4/zero_certificate.schema.json",
+    "counts": {
+      "dict": 27,
+      "str": 44,
+      "list": 6,
+      "int": 13
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/MANIFEST.json",
+    "counts": {
+      "dict": 2,
+      "str": 21
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/arrangement_controls.json",
+    "counts": {
+      "dict": 12,
+      "int": 22,
+      "float": 15,
+      "flag:five_candidate": 2,
+      "NoneType": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/boundary_search.json",
+    "counts": {
+      "dict": 34,
+      "str": 8,
+      "int": 62,
+      "list": 842,
+      "float": 4153,
+      "NoneType": 10
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/control_search.json",
+    "counts": {
+      "dict": 6,
+      "str": 4,
+      "int": 10,
+      "list": 86,
+      "float": 416,
+      "NoneType": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/geometry.json",
+    "counts": {
+      "dict": 5,
+      "bool": 12,
+      "str": 20,
+      "list": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/moment_search.json",
+    "counts": {
+      "dict": 165,
+      "str": 57,
+      "int": 328,
+      "list": 4538,
+      "float": 22411,
+      "NoneType": 54
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "reversible_reseed/data/verified_control.json",
+    "counts": {
+      "dict": 33,
+      "str": 66,
+      "int": 34,
+      "list": 2,
+      "float": 217,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "review_2026_09_05/EVIDENCE_MANIFEST.json",
+    "counts": {
+      "dict": 1,
+      "str": 6,
+      "int": 6,
+      "bool": 2
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/MANIFEST.json",
+    "counts": {
+      "dict": 2,
+      "str": 39,
+      "flag:staged_2026_09_05/fold_refined_candidate.json": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/controls.json",
+    "counts": {
+      "list": 25,
+      "dict": 16,
+      "str": 28,
+      "float": 300,
+      "bool": 12,
+      "int": 12
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/derivative_validation.json",
+    "counts": {
+      "list": 8,
+      "dict": 6,
+      "str": 11,
+      "float": 81,
+      "flag:error": 2,
+      "bool": 3,
+      "int": 3
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/final_verification.json",
+    "counts": {
+      "list": 3,
+      "dict": 16,
+      "str": 18,
+      "float": 103,
+      "int": 8,
+      "bool": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/fold_attempts.json",
+    "counts": {
+      "list": 175,
+      "dict": 54,
+      "str": 60,
+      "float": 864,
+      "bool": 24,
+      "int": 24
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/fold_followup.json",
+    "counts": {
+      "list": 59,
+      "dict": 18,
+      "str": 20,
+      "float": 285,
+      "bool": 8,
+      "int": 11
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/fold_pair_coefficients.json",
+    "counts": {
+      "dict": 4,
+      "str": 18,
+      "list": 2,
+      "int": 2,
+      "float": 1
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/fold_refined_candidate.json",
+    "counts": {
+      "list": 18,
+      "dict": 6,
+      "float": 99,
+      "str": 6,
+      "bool": 3,
+      "int": 3
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/kkl_returns.jsonl",
+    "counts": {
+      "dict": 1200,
+      "int": 1194,
+      "str": 3586,
+      "float": 10596,
+      "bool": 391,
+      "list": 774,
+      "flag:error": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/profiles.json",
+    "counts": {
+      "list": 313,
+      "dict": 324,
+      "str": 648,
+      "float": 4062,
+      "bool": 156,
+      "int": 156,
+      "flag:error": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/shi_continuation.json",
+    "counts": {
+      "dict": 34,
+      "bool": 21,
+      "list": 129,
+      "str": 176,
+      "float": 468,
+      "int": 118
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/shi_returns.jsonl",
+    "counts": {
+      "dict": 150,
+      "int": 421,
+      "str": 1552,
+      "list": 150,
+      "float": 1140,
+      "bool": 150,
+      "flag:error": 11
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/terminal_followup.json",
+    "counts": {
+      "list": 58,
+      "dict": 34,
+      "str": 71,
+      "float": 650,
+      "bool": 26,
+      "int": 26
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/terminal_path.json",
+    "counts": {
+      "list": 247,
+      "dict": 147,
+      "str": 318,
+      "float": 2775,
+      "bool": 111,
+      "int": 111
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/theory_exact_checks.json",
+    "counts": {
+      "dict": 8,
+      "str": 17,
+      "int": 18,
+      "list": 6
+    },
+    "parse_errors": []
+  },
+  {
+    "path": "staged_2026_09_05/validation.json",
+    "counts": {
+      "dict": 1,
+      "str": 2,
+      "int": 10,
+      "bool": 2,
+      "flag:new_kkl_unresolved": 1,
+      "flag:new_shi_failed": 1,
+      "float": 1
+    },
+    "parse_errors": []
+  }
+]

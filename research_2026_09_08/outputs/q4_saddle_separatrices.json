@@ -1,0 +1,1799 @@
+{
+  "scope": "Nonvalidated saddle branch shooting at two finite offsets and tolerances; guard is not an escape proof",
+  "records": [
+    {
+      "r": 0.5,
+      "epsilon": 2.0,
+      "saddle": [
+        6.051959963293618,
+        -20.468153311869646
+      ],
+      "eigenvalues": [
+        -60.48622341432981,
+        1.9513951489580186
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 13.867994217411074,
+          "itinerary": [
+            [
+              5.384581669432009e-15,
+              -13.867994217411074
+            ]
+          ],
+          "nfev": 521,
+          "time": 0.26117279610695165,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -60.48622341432981,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2777,
+          "time": 0.26612874154903177,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -60.48622341432981,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.37484613449988,
+          "itinerary": [
+            [
+              1.6479873021779667e-17,
+              0.16636159339456277
+            ],
+            [
+              1.429412144204889e-15,
+              -2.37484613449988
+            ]
+          ],
+          "nfev": 3132,
+          "time": 15.957942831025468,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.9513951489580186,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3713,
+          "time": 8.261310155814414,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.9513951489580186,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 13.867994217411088,
+          "itinerary": [
+            [
+              -3.524958103184872e-15,
+              -13.867994217411088
+            ]
+          ],
+          "nfev": 701,
+          "time": 0.33730898018754946,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -60.48622341432981,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3833,
+          "time": 0.34226491925999075,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -60.48622341432981,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.3748461344903835,
+          "itinerary": [
+            [
+              -9.974659986866641e-17,
+              0.16636159339455356
+            ],
+            [
+              -1.0356299151581538e-15,
+              -2.3748461344903835
+            ]
+          ],
+          "nfev": 4056,
+          "time": 18.3178811760635,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.9513951489580186,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 5045,
+          "time": 10.621244152704262,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.9513951489580186,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": 3.0,
+      "saddle": [
+        2.235119530453207,
+        -8.374152501123945
+      ],
+      "eigenvalues": [
+        -29.301655358343112,
+        1.9676679444946639
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 5.806075132819301,
+          "itinerary": [
+            [
+              -5.551115123125783e-16,
+              -5.806075132819301
+            ]
+          ],
+          "nfev": 521,
+          "time": 0.534715426465575,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -29.301655358343112,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2909,
+          "time": 0.5504611002362877,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -29.301655358343112,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.08825912127532,
+          "itinerary": [
+            [
+              2.42861286636753e-17,
+              0.14317396842061844
+            ],
+            [
+              9.298117831235686e-16,
+              -2.08825912127532
+            ]
+          ],
+          "nfev": 2160,
+          "time": 15.698527975952125,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.9676679444946639,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3137,
+          "time": 8.195798516761,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.9676679444946639,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 5.806075132819381,
+          "itinerary": [
+            [
+              -1.4155343563970746e-15,
+              -5.806075132819381
+            ]
+          ],
+          "nfev": 677,
+          "time": 0.6918814755212118,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -29.301655358343112,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4013,
+          "time": 0.7076271142974715,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -29.301655358343112,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.088259121215259,
+          "itinerary": [
+            [
+              2.949029909160572e-17,
+              0.1431739684205803
+            ],
+            [
+              -1.457167719820518e-16,
+              -2.088259121215259
+            ]
+          ],
+          "nfev": 2796,
+          "time": 18.038949595517074,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.9676679444946639,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4313,
+          "time": 10.536218126954951,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.9676679444946639,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": 4.0,
+      "saddle": [
+        1.4764417170267816,
+        -6.1325844176905555
+      ],
+      "eigenvalues": [
+        -24.860702602129233,
+        1.952658967935712
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 4.370036056450123,
+          "itinerary": [
+            [
+              -5.551115123125783e-17,
+              -4.370036056450123
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.6250524415373458,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -24.860702602129233,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2945,
+          "time": 0.64964266951949,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -24.860702602129233,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.9628900781740297,
+          "itinerary": [
+            [
+              8.673617379884035e-17,
+              0.12587845886860027
+            ],
+            [
+              1.1050188541972261e-15,
+              -1.9628900781740297
+            ]
+          ],
+          "nfev": 2160,
+          "time": 15.867225296651577,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.952658967935712,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3161,
+          "time": 8.260556283548947,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 1.952658967935712,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 4.370036056450098,
+          "itinerary": [
+            [
+              5.273559366969494e-16,
+              -4.370036056450098
+            ]
+          ],
+          "nfev": 689,
+          "time": 0.8102921367569907,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -24.860702602129233,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4073,
+          "time": 0.8348824042523026,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -24.860702602129233,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.962890078121403,
+          "itinerary": [
+            [
+              5.377642775528102e-17,
+              0.12587845886858398
+            ],
+            [
+              6.591949208711867e-16,
+              -1.962890078121403
+            ]
+          ],
+          "nfev": 2796,
+          "time": 18.22563593016183,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.952658967935712,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4361,
+          "time": 10.618967326708853,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 1.952658967935712,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": 2.0,
+      "saddle": [
+        6.311388892669344,
+        -25.833289997748434
+      ],
+      "eigenvalues": [
+        -87.92797446355219,
+        2.3558970300012403
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 17.008784907447712,
+          "itinerary": [
+            [
+              -2.9976021664879227e-15,
+              -17.008784907447712
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.17947491821006106,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -87.92797446355219,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2753,
+          "time": 0.18244737961057267,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -87.92797446355219,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.0617637558083803,
+          "itinerary": [
+            [
+              -8.326672684688674e-17,
+              0.11695878526787003
+            ],
+            [
+              7.355227538141662e-16,
+              -2.0617637558083803
+            ]
+          ],
+          "nfev": 3768,
+          "time": 14.300620880038714,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.3558970300012403,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4013,
+          "time": 6.841228098866258,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.3558970300012403,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 17.008784907448657,
+          "itinerary": [
+            [
+              1.2212453270876722e-15,
+              -17.008784907448657
+            ]
+          ],
+          "nfev": 701,
+          "time": 0.23184940357605016,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -87.92797446355219,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3797,
+          "time": 0.23482187025702886,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -87.92797446355219,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.061763755798654,
+          "itinerary": [
+            [
+              -4.85722573273506e-17,
+              0.1169587852678588
+            ],
+            [
+              -8.257283745649602e-16,
+              -2.061763755798654
+            ]
+          ],
+          "nfev": 4740,
+          "time": 16.25535986865188,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.3558970300012403,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 5429,
+          "time": 8.79597317984477,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.3558970300012403,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": 3.0,
+      "saddle": [
+        1.895026507085516,
+        -8.201427805800524
+      ],
+      "eigenvalues": [
+        -32.57638465385986,
+        2.31592699086086
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 5.536692451245939,
+          "itinerary": [
+            [
+              5.551115123125783e-16,
+              -5.536692451245939
+            ]
+          ],
+          "nfev": 521,
+          "time": 0.4812720940418284,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -32.57638465385986,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2921,
+          "time": 0.49348848023631703,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -32.57638465385986,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.7606627779377397,
+          "itinerary": [
+            [
+              6.591949208711867e-17,
+              0.1046544985621994
+            ],
+            [
+              1.5959455978986625e-16,
+              -1.7606627779377397
+            ]
+          ],
+          "nfev": 2172,
+          "time": 14.15074677576455,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.31592699086086,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3065,
+          "time": 6.960181620554519,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.31592699086086,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 5.536692451246044,
+          "itinerary": [
+            [
+              -1.56472057533108e-15,
+              -5.536692451246044
+            ]
+          ],
+          "nfev": 725,
+          "time": 0.6226381928529362,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -32.57638465385986,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4037,
+          "time": 0.6348546305502982,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -32.57638465385986,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.7606627779055146,
+          "itinerary": [
+            [
+              -1.5612511283791264e-17,
+              0.1046544985621704
+            ],
+            [
+              -1.0061396160665481e-15,
+              -1.7606627779055146
+            ]
+          ],
+          "nfev": 2748,
+          "time": 16.139224459906874,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.31592699086086,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4229,
+          "time": 8.948658260141771,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.31592699086086,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": 4.0,
+      "saddle": [
+        1.1980504893562511,
+        -5.518817467943567
+      ],
+      "eigenvalues": [
+        -24.919510901116034,
+        2.2809537076016126
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 3.815232983543073,
+          "itinerary": [
+            [
+              4.163336342344337e-16,
+              -3.815232983543073
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.6253028751055771,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -24.919510901116034,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2969,
+          "time": 0.6460262502044009,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -24.919510901116034,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.6129867501341333,
+          "itinerary": [
+            [
+              1.0408340855860843e-17,
+              0.09489542592381703
+            ],
+            [
+              -2.706168622523819e-16,
+              -1.6129867501341333
+            ]
+          ],
+          "nfev": 2112,
+          "time": 14.288950818318783,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.2809537076016126,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3113,
+          "time": 7.06829377289543,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.2809537076016126,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 3.81523298354312,
+          "itinerary": [
+            [
+              -5.551115123125783e-16,
+              -3.81523298354312
+            ]
+          ],
+          "nfev": 701,
+          "time": 0.8101054488607116,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -24.919510901116034,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4109,
+          "time": 0.8308288779300292,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -24.919510901116034,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.6129867500658204,
+          "itinerary": [
+            [
+              -1.214306433183765e-17,
+              0.09489542592377273
+            ],
+            [
+              -3.5388358909926865e-16,
+              -1.6129867500658204
+            ]
+          ],
+          "nfev": 2628,
+          "time": 16.307917720645946,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.2809537076016126,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4289,
+          "time": 9.087261131118138,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.2809537076016126,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": 6.0,
+      "saddle": [
+        0.7372714919802742,
+        -3.888487921596417
+      ],
+      "eigenvalues": [
+        -21.880720361720975,
+        2.1963833688170227
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 2.819524353572554,
+          "itinerary": [
+            [
+              -2.498001805406602e-16,
+              -2.819524353572554
+            ]
+          ],
+          "nfev": 461,
+          "time": 0.7033708943057285,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -21.880720361720975,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3029,
+          "time": 0.737143958118857,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -21.880720361720975,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.4849739039921,
+          "itinerary": [
+            [
+              5.724587470723463e-17,
+              0.0801454459727538
+            ],
+            [
+              1.734723475976807e-16,
+              -1.4849739039921
+            ]
+          ],
+          "nfev": 2136,
+          "time": 14.787544892896143,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.1963833688170227,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3173,
+          "time": 7.342662122299831,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.1963833688170227,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.8195243535725845,
+          "itinerary": [
+            [
+              5.516420653606247e-16,
+              -2.8195243535725845
+            ]
+          ],
+          "nfev": 689,
+          "time": 0.9138384133336165,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -21.880720361720975,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4181,
+          "time": 0.9476114474150815,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -21.880720361720975,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.4849739039403167,
+          "itinerary": [
+            [
+              2.2551405187698492e-17,
+              0.08014544597274124
+            ],
+            [
+              -4.2674197509029455e-16,
+              -1.4849739039403167
+            ]
+          ],
+          "nfev": 2700,
+          "time": 16.884250580491344,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.1963833688170227,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4373,
+          "time": 9.439368348927967,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.1963833688170227,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": 8.0,
+      "saddle": [
+        0.5562250982519403,
+        -3.392927341007076
+      ],
+      "eigenvalues": [
+        -23.18562554943817,
+        2.0928069980808646
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 2.5787396144293906,
+          "itinerary": [
+            [
+              7.077671781985373e-16,
+              -2.5787396144293906
+            ]
+          ],
+          "nfev": 461,
+          "time": 0.6551755729995017,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -23.18562554943817,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3041,
+          "time": 0.6966096704228357,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -23.18562554943817,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.4421590231414925,
+          "itinerary": [
+            [
+              -2.211772431870429e-17,
+              0.06943926136366425
+            ],
+            [
+              3.469446951953614e-16,
+              -1.4421590231414925
+            ]
+          ],
+          "nfev": 2244,
+          "time": 15.444095652587093,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.0928069980808646,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3221,
+          "time": 7.707227201402981,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.0928069980808646,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.5787396144294434,
+          "itinerary": [
+            [
+              3.694961003830599e-16,
+              -2.5787396144294434
+            ]
+          ],
+          "nfev": 677,
+          "time": 0.8537978592402737,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -23.18562554943817,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4217,
+          "time": 0.8952319779896852,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -23.18562554943817,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.4421590230532988,
+          "itinerary": [
+            [
+              -2.5153490401663703e-17,
+              0.06943926136365759
+            ],
+            [
+              2.5587171270657905e-16,
+              -1.4421590230532988
+            ]
+          ],
+          "nfev": 2880,
+          "time": 17.644571724786655,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.0928069980808646,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4433,
+          "time": 9.907701361762419,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.0928069980808646,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": 2.0,
+      "saddle": [
+        21.903844880530997,
+        -135.71114859998488
+      ],
+      "eigenvalues": [
+        -635.6129394563598,
+        3.6235794109370985
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 85.44551848784583,
+          "itinerary": [
+            [
+              -4.107825191113079e-13,
+              -85.44551848784583
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.024829742065130767,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -635.6129394563598,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2537,
+          "time": 0.02512069057808197,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -635.6129394563598,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.6748284845114836,
+          "itinerary": [
+            [
+              6.938893903907228e-18,
+              0.054652277253866816
+            ],
+            [
+              6.591949208711867e-16,
+              -1.6748284845114836
+            ]
+          ],
+          "nfev": 9420,
+          "time": 11.765510430835748,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.6235794109370985,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 15173,
+          "time": 4.447794779433588,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.6235794109370985,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 85.44551848785079,
+          "itinerary": [
+            [
+              -3.723688024592775e-13,
+              -85.44551848785079
+            ]
+          ],
+          "nfev": 713,
+          "time": 0.03207500573794371,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -635.6129394563598,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3509,
+          "time": 0.032365954158598144,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -635.6129394563598,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.6748284845117367,
+          "itinerary": [
+            [
+              -2.211772431870429e-17,
+              0.054652277253867794
+            ],
+            [
+              8.500145032286355e-16,
+              -1.6748284845117367
+            ]
+          ],
+          "nfev": 13044,
+          "time": 13.0363900643409,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.6235794109370985,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 17753,
+          "time": 5.71867665978823,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.6235794109370985,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": 3.0,
+      "saddle": [
+        1.5927330813647356,
+        -9.856155848706026
+      ],
+      "eigenvalues": [
+        -52.94663381053029,
+        3.391434340590696
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 6.386921826988688,
+          "itinerary": [
+            [
+              -9.853229343548264e-16,
+              -6.386921826988688
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.29641223393864513,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -52.94663381053029,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2921,
+          "time": 0.30207326617955227,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -52.94663381053029,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.364860929162232,
+          "itinerary": [
+            [
+              -2.688821387764051e-17,
+              0.05154717637856884
+            ],
+            [
+              4.544975507059235e-16,
+              -1.364860929162232
+            ]
+          ],
+          "nfev": 2484,
+          "time": 11.511563657722704,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.391434340590696,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3089,
+          "time": 4.749749477891825,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.391434340590696,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 6.386921826988739,
+          "itinerary": [
+            [
+              1.0894063429134349e-15,
+              -6.386921826988739
+            ]
+          ],
+          "nfev": 701,
+          "time": 0.3833902346935551,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -52.94663381053029,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4025,
+          "time": 0.38905126903471837,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -52.94663381053029,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.3648609291611813,
+          "itinerary": [
+            [
+              3.230922474006803e-17,
+              0.051547176378568225
+            ],
+            [
+              5.169475958410885e-16,
+              -1.3648609291611813
+            ]
+          ],
+          "nfev": 3000,
+          "time": 12.869446883445779,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.391434340590696,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4241,
+          "time": 6.1076344794075075,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.391434340590696,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": 4.0,
+      "saddle": [
+        0.8876006450555018,
+        -5.533686644444413
+      ],
+      "eigenvalues": [
+        -33.09214858486036,
+        3.2467857924460426
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 3.661315104453159,
+          "itinerary": [
+            [
+              -6.245004513516506e-17,
+              -3.661315104453159
+            ]
+          ],
+          "nfev": 497,
+          "time": 0.4722473526101225,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -33.09214858486036,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3005,
+          "time": 0.48390803383622943,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -33.09214858486036,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.1967630292671205,
+          "itinerary": [
+            [
+              -4.336808689942018e-19,
+              0.04888088105730917
+            ],
+            [
+              -5.637851296924623e-16,
+              -1.1967630292671205
+            ]
+          ],
+          "nfev": 2100,
+          "time": 11.686201956502579,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.2467857924460426,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 2993,
+          "time": 4.960827691256978,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.2467857924460426,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 3.6613151044530903,
+          "itinerary": [
+            [
+              8.760353553682876e-17,
+              -3.6613151044530903
+            ]
+          ],
+          "nfev": 713,
+          "time": 0.6114101245301155,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -33.09214858486036,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4145,
+          "time": 0.6230708497060577,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -33.09214858486036,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.196763029252599,
+          "itinerary": [
+            [
+              1.0842021724855044e-19,
+              0.048880881057297945
+            ],
+            [
+              -5.499073418846478e-16,
+              -1.196763029252599
+            ]
+          ],
+          "nfev": 2640,
+          "time": 13.104579256733789,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.2467857924460426,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4157,
+          "time": 6.379206459029946,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.2467857924460426,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": 6.0,
+      "saddle": [
+        0.5065510984879463,
+        -3.2582716314500684
+      ],
+      "eigenvalues": [
+        -23.076227656764463,
+        3.0642024794671716
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 2.2273117346678593,
+          "itinerary": [
+            [
+              1.5265566588595902e-16,
+              -2.2273117346678593
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.6724861684678357,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -23.076227656764463,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3065,
+          "time": 0.6951715178836402,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -23.076227656764463,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.021233616038055,
+          "itinerary": [
+            [
+              3.469446951953614e-17,
+              0.04443772325348984
+            ],
+            [
+              1.4224732503009818e-16,
+              -1.021233616038055
+            ]
+          ],
+          "nfev": 1980,
+          "time": 12.04170692907936,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.0642024794671716,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3077,
+          "time": 5.257087255632906,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 3.0642024794671716,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 2.2273117346678992,
+          "itinerary": [
+            [
+              -8.326672684688674e-17,
+              -2.2273117346678992
+            ]
+          ],
+          "nfev": 689,
+          "time": 0.872050139480514,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -23.076227656764463,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4241,
+          "time": 0.8947354943155829,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -23.076227656764463,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.0212336160199045,
+          "itinerary": [
+            [
+              -2.992397996059992e-17,
+              0.044437723253477994
+            ],
+            [
+              2.636779683484747e-16,
+              -1.0212336160199045
+            ]
+          ],
+          "nfev": 2460,
+          "time": 13.54459990384178,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.0642024794671716,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4253,
+          "time": 6.759980162084457,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 3.0642024794671716,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": 8.0,
+      "saddle": [
+        0.3690064270344171,
+        -2.482877256544687
+      ],
+      "eigenvalues": [
+        -20.186367856150714,
+        2.9375113865390885
+      ],
+      "rows": [
+        {
+          "status": "negative_section",
+          "radius": 1.74606900509565,
+          "itinerary": [
+            [
+              -1.5612511283791264e-16,
+              -1.74606900509565
+            ]
+          ],
+          "nfev": 509,
+          "time": 0.7638010439011069,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -20.186367856150714,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3101,
+          "time": 0.7956907291424327,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": -20.186367856150714,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 0.9350794702671275,
+          "itinerary": [
+            [
+              0.0,
+              0.0408127728602188
+            ],
+            [
+              3.712308238590367e-16,
+              -0.9350794702671275
+            ]
+          ],
+          "nfev": 2004,
+          "time": 12.37871815593621,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.9375113865390885,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 3125,
+          "time": 5.485031693893406,
+          "offset": 1e-07,
+          "rtol": 3e-12,
+          "eigenvalue": 2.9375113865390885,
+          "manifold": "unstable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 1.746069005095641,
+          "itinerary": [
+            [
+              -2.671474153004283e-16,
+              -1.746069005095641
+            ]
+          ],
+          "nfev": 689,
+          "time": 0.9919341025394691,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -20.186367856150714,
+          "manifold": "stable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4289,
+          "time": 1.0238238091873861,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": -20.186367856150714,
+          "manifold": "stable",
+          "branch": 1
+        },
+        {
+          "status": "negative_section",
+          "radius": 0.9350794702470555,
+          "itinerary": [
+            [
+              -2.3418766925686896e-17,
+              0.04081277286020906
+            ],
+            [
+              -3.877106968808164e-16,
+              -0.9350794702470555
+            ]
+          ],
+          "nfev": 2448,
+          "time": 13.946428281215209,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.9375113865390885,
+          "manifold": "unstable",
+          "branch": -1
+        },
+        {
+          "status": "guard",
+          "message": "A termination event occurred.",
+          "itinerary": [],
+          "nfev": 4325,
+          "time": 7.052743924683708,
+          "offset": 1e-09,
+          "rtol": 3e-13,
+          "eigenvalue": 2.9375113865390885,
+          "manifold": "unstable",
+          "branch": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "affine_P": true,
+  "affine_Q": true,
+  "upper_J": "Matrix([[0, 1], [-1, 0]])",
+  "lower_J": "Matrix([[0, -1], [(2 - b)/b, 0]])",
+  "upper_det": "1",
+  "lower_det": "-(b - 2)/b",
+  "off_axis_x_squared": "(2 - b)/(4*a)",
+  "orbit_equation": true,
+  "H_derivative": true,
+  "integrating_factor": true,
+  "normal_weighted_divergence": true,
+  "full_chart_determinant": "-16*(a + 2)",
+  "boundary_replacement_determinant": "-48*b",
+  "area_flux_identity": true,
+  "boundary_invisible_old_direction": {
+    "epsilon0": "(2-b)/(12*b)",
+    "epsilon1": "(1-b)/b",
+    "epsilon2": "1"
+  },
+  "boundary_log_first_integral": true,
+  "reciprocal_U_equation": true,
+  "reciprocal_W_equation": true,
+  "infinity_horizontal_eigenvalues": [
+    "-a",
+    "-a - 2"
+  ],
+  "bicycle_radial_eigenvalue": true,
+  "bicycle_angular_eigenvalue": true,
+  "yu_zeng_shape": {
+    "a": "-671/450",
+    "b": "7/15",
+    "lambda": "229/671"
+  },
+  "bicycle_seed": {
+    "a": "-7/3",
+    "b": "1"
+  },
+  "bicycle_seed_R": "3*(28*y**2 - 1)/28",
+  "bicycle_seed_h_center": "-18*2**(1/3)/7",
+  "versions": {
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "automation_matches": [
+    {
+      "id": "overnight-h16p-counterexample-research",
+      "name": "Overnight H16P counterexample research",
+      "status": "PAUSED"
+    }
+  ],
+  "manifest_entries_checked": 184,
+  "integrity_failures": [],
+  "budget_stop_observations": 2
+}

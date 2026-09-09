@@ -1,0 +1,425 @@
+{
+  "scope": "Local compactified infinity eigenvalues for outer-anchor endpoint fields.\nChart x=1/z,y=s/z, time rescaled by z: z'=-p2(s)z+O(z^2),\ns'=q2(s)-s*p2(s)+O(z). No global connection inferred.\n",
+  "records": [
+    {
+      "r": 0.5,
+      "shift": 0.225,
+      "points": [
+        {
+          "slope": -4.414341413256493,
+          "radial_eigenvalue": 0.9087929072959393,
+          "angular_eigenvalue": -15.462651626079605,
+          "saddle": true,
+          "residual": 2.220446049250313e-14
+        },
+        {
+          "slope": -1.0920090667116613,
+          "radial_eigenvalue": 5.5462324891150345,
+          "angular_eigenvalue": 4.424759405181508,
+          "saddle": false,
+          "residual": 2.4424906541753444e-15
+        },
+        {
+          "slope": 0.23981416577836456,
+          "radial_eigenvalue": 1.2067301776829178,
+          "angular_eigenvalue": -6.198512527781693,
+          "saddle": true,
+          "residual": 2.220446049250313e-16
+        }
+      ],
+      "conditional_two_saddle_product": 3.3123920432708975
+    },
+    {
+      "r": 0.5,
+      "shift": 0.24,
+      "points": [
+        {
+          "slope": -4.386128569953364,
+          "radial_eigenvalue": 1.0233233003954374,
+          "angular_eigenvalue": -15.219794562867607,
+          "saddle": true,
+          "residual": 6.439293542825908e-15
+        },
+        {
+          "slope": -1.093962132112081,
+          "radial_eigenvalue": 5.545555000268743,
+          "angular_eigenvalue": 4.381434708419042,
+          "saddle": false,
+          "residual": 1.9984014443252818e-15
+        },
+        {
+          "slope": 0.2369045756148862,
+          "radial_eigenvalue": 1.2210378359692045,
+          "angular_eigenvalue": -6.152640902155065,
+          "saddle": true,
+          "residual": 1.9984014443252818e-15
+        }
+      ],
+      "conditional_two_saddle_product": 2.9516406358372027
+    },
+    {
+      "r": 0.5,
+      "shift": 0.2475,
+      "points": [
+        {
+          "slope": -4.37299418920405,
+          "radial_eigenvalue": 1.0775496345814526,
+          "angular_eigenvalue": -15.107442775232753,
+          "saddle": true,
+          "residual": 1.0658141036401503e-14
+        },
+        {
+          "slope": -1.0948137469016432,
+          "radial_eigenvalue": 5.545464773569927,
+          "angular_eigenvalue": 4.360975762938755,
+          "saddle": false,
+          "residual": 2.220446049250313e-15
+        },
+        {
+          "slope": 0.23549001144664738,
+          "radial_eigenvalue": 1.227885601019726,
+          "angular_eigenvalue": -6.13068385241434,
+          "saddle": true,
+          "residual": 8.881784197001252e-16
+        }
+      ],
+      "conditional_two_saddle_product": 2.808035923838394
+    },
+    {
+      "r": 0.5,
+      "shift": 0.249,
+      "points": [
+        {
+          "slope": -4.370432002324067,
+          "radial_eigenvalue": 1.0881906862088235,
+          "angular_eigenvalue": -15.085578070380544,
+          "saddle": true,
+          "residual": 2.55351295663786e-14
+        },
+        {
+          "slope": -1.0949757144741434,
+          "radial_eigenvalue": 5.545463341772466,
+          "angular_eigenvalue": 4.356964176764955,
+          "saddle": false,
+          "residual": 3.1086244689504383e-15
+        },
+        {
+          "slope": 0.23520969905947764,
+          "radial_eigenvalue": 1.2292351308168337,
+          "angular_eigenvalue": -6.126357411142559,
+          "saddle": true,
+          "residual": 1.3322676295501878e-15
+        }
+      ],
+      "conditional_two_saddle_product": 2.78156738864015
+    },
+    {
+      "r": 0.5,
+      "shift": 0.2499,
+      "points": [
+        {
+          "slope": -4.368901879771971,
+          "radial_eigenvalue": 1.094551942693594,
+          "angular_eigenvalue": -15.072528392591861,
+          "saddle": true,
+          "residual": 1.9317880628477724e-14
+        },
+        {
+          "slope": -1.0950719573147754,
+          "radial_eigenvalue": 5.545464513276887,
+          "angular_eigenvalue": 4.3545660314157875,
+          "saddle": false,
+          "residual": 1.7763568394002505e-15
+        },
+        {
+          "slope": 0.23504174271135048,
+          "radial_eigenvalue": 1.2300428035675333,
+          "angular_eigenvalue": -6.123768486412976,
+          "saddle": true,
+          "residual": 8.881784197001252e-16
+        }
+      ],
+      "conditional_two_saddle_product": 2.765993756459573
+    },
+    {
+      "r": 1.0,
+      "shift": 0.225,
+      "points": [
+        {
+          "slope": -4.905563105405219,
+          "radial_eigenvalue": 1.216368105694862,
+          "angular_eigenvalue": -18.476319211755236,
+          "saddle": true,
+          "residual": 9.769962616701378e-15
+        },
+        {
+          "slope": -1.3046435220299695,
+          "radial_eigenvalue": 7.2235562280236,
+          "angular_eigenvalue": 5.5096973658198465,
+          "saddle": false,
+          "residual": 3.774758283725532e-15
+        },
+        {
+          "slope": 0.22543712494061396,
+          "radial_eigenvalue": 1.925249580867768,
+          "angular_eigenvalue": -7.85084415205376,
+          "saddle": true,
+          "residual": 0.0
+        }
+      ],
+      "conditional_two_saddle_product": 3.7249557170375214
+    },
+    {
+      "r": 1.0,
+      "shift": 0.24,
+      "points": [
+        {
+          "slope": -4.870412179694065,
+          "radial_eigenvalue": 1.3796637373840788,
+          "angular_eigenvalue": -18.138162184660118,
+          "saddle": true,
+          "residual": 3.26405569239796e-14
+        },
+        {
+          "slope": -1.3090235368716654,
+          "radial_eigenvalue": 7.226442830157862,
+          "angular_eigenvalue": 5.454673119435723,
+          "saddle": false,
+          "residual": 2.4424906541753444e-15
+        },
+        {
+          "slope": 0.2225905795570593,
+          "radial_eigenvalue": 1.9403991707814738,
+          "angular_eigenvalue": -7.800514921079462,
+          "saddle": true,
+          "residual": 0.0
+        }
+      ],
+      "conditional_two_saddle_product": 3.270301847593059
+    },
+    {
+      "r": 1.0,
+      "shift": 0.2475,
+      "points": [
+        {
+          "slope": -4.855276649699701,
+          "radial_eigenvalue": 1.4532658264712333,
+          "angular_eigenvalue": -17.99367963713469,
+          "saddle": true,
+          "residual": 2.886579864025407e-14
+        },
+        {
+          "slope": -1.3107919284624887,
+          "radial_eigenvalue": 7.228506031563659,
+          "angular_eigenvalue": 5.43030769805066,
+          "saddle": false,
+          "residual": 8.659739592076221e-15
+        },
+        {
+          "slope": 0.2212523953610288,
+          "radial_eigenvalue": 1.9472896489161369,
+          "angular_eigenvalue": -7.777467508210508,
+          "saddle": true,
+          "residual": 2.220446049250313e-16
+        }
+      ],
+      "conditional_two_saddle_product": 3.100039821375881
+    },
+    {
+      "r": 1.0,
+      "shift": 0.249,
+      "points": [
+        {
+          "slope": -4.852490910007636,
+          "radial_eigenvalue": 1.4671888545719611,
+          "angular_eigenvalue": -17.967175652944498,
+          "saddle": true,
+          "residual": 2.0872192862952943e-14
+        },
+        {
+          "slope": -1.311103574980862,
+          "radial_eigenvalue": 7.228972491339417,
+          "angular_eigenvalue": 5.425751396256464,
+          "saddle": false,
+          "residual": 9.103828801926284e-15
+        },
+        {
+          "slope": 0.2209941265588764,
+          "radial_eigenvalue": 1.9485975181130162,
+          "angular_eigenvalue": -7.773074763319801,
+          "saddle": true,
+          "residual": 8.881784197001252e-16
+        }
+      ],
+      "conditional_two_saddle_product": 3.069891982169985
+    },
+    {
+      "r": 1.0,
+      "shift": 0.2499,
+      "points": [
+        {
+          "slope": -4.850860783885134,
+          "radial_eigenvalue": 1.4754058828342695,
+          "angular_eigenvalue": -17.951680538136962,
+          "saddle": true,
+          "residual": 4.440892098500626e-16
+        },
+        {
+          "slope": -1.3112833580132912,
+          "radial_eigenvalue": 7.229261108916319,
+          "angular_eigenvalue": 5.423072184395423,
+          "saddle": false,
+          "residual": 1.1102230246251565e-15
+        },
+        {
+          "slope": 0.2208408285510559,
+          "radial_eigenvalue": 1.949370055400827,
+          "angular_eigenvalue": -7.770476707450884,
+          "saddle": true,
+          "residual": 1.9984014443252818e-15
+        }
+      ],
+      "conditional_two_saddle_product": 3.0523914463815007
+    },
+    {
+      "r": 2.0,
+      "shift": 0.225,
+      "points": [
+        {
+          "slope": -6.384830012223636,
+          "radial_eigenvalue": 2.8715965208029908,
+          "angular_eigenvalue": -29.05547820530603,
+          "saddle": true,
+          "residual": 1.2612133559741778e-13
+        },
+        {
+          "slope": -1.9597699876841355,
+          "radial_eigenvalue": 13.711862636922213,
+          "angular_eigenvalue": 9.474321984528562,
+          "saddle": false,
+          "residual": 2.0872192862952943e-14
+        },
+        {
+          "slope": 0.18129068312891272,
+          "radial_eigenvalue": 4.898451293708872,
+          "angular_eigenvalue": -14.058462780630958,
+          "saddle": true,
+          "residual": 8.881784197001252e-15
+        }
+      ],
+      "conditional_two_saddle_product": 3.5255393616022306
+    },
+    {
+      "r": 2.0,
+      "shift": 0.24,
+      "points": [
+        {
+          "slope": -6.313299568373661,
+          "radial_eigenvalue": 3.262040253331204,
+          "angular_eigenvalue": -28.150661645195637,
+          "saddle": true,
+          "residual": 8.704148513061227e-14
+        },
+        {
+          "slope": -1.9771674218795876,
+          "radial_eigenvalue": 13.715798747269053,
+          "angular_eigenvalue": 9.348619653336378,
+          "saddle": false,
+          "residual": 5.329070518200751e-15
+        },
+        {
+          "slope": 0.17881383918393512,
+          "radial_eigenvalue": 4.9166684892539765,
+          "angular_eigenvalue": -13.996874851393432,
+          "saddle": true,
+          "residual": 3.1086244689504383e-15
+        }
+      ],
+      "conditional_two_saddle_product": 3.0313713242470928
+    },
+    {
+      "r": 2.0,
+      "shift": 0.2475,
+      "points": [
+        {
+          "slope": -6.282857439962212,
+          "radial_eigenvalue": 3.4350304894822203,
+          "angular_eigenvalue": -27.76915311948246,
+          "saddle": true,
+          "residual": 3.68594044175552e-14
+        },
+        {
+          "slope": -1.984569102430721,
+          "radial_eigenvalue": 13.720052115457712,
+          "angular_eigenvalue": 9.293870486923229,
+          "saddle": false,
+          "residual": 8.43769498715119e-15
+        },
+        {
+          "slope": 0.17765682498593627,
+          "radial_eigenvalue": 4.924773747665822,
+          "angular_eigenvalue": -13.969091448116055,
+          "saddle": true,
+          "residual": 5.773159728050814e-15
+        }
+      ],
+      "conditional_two_saddle_product": 2.8500347911831305
+    },
+    {
+      "r": 2.0,
+      "shift": 0.249,
+      "points": [
+        {
+          "slope": -6.278045876664497,
+          "radial_eigenvalue": 3.464221927190656,
+          "angular_eigenvalue": -27.70912595370893,
+          "saddle": true,
+          "residual": 8.926193117986259e-14
+        },
+        {
+          "slope": -1.9857153586777305,
+          "radial_eigenvalue": 13.721292370022258,
+          "angular_eigenvalue": 9.28502467806834,
+          "saddle": false,
+          "residual": 5.329070518200751e-15
+        },
+        {
+          "slope": 0.17745093039529936,
+          "radial_eigenvalue": 4.9261406458098245,
+          "angular_eigenvalue": -13.964313072250329,
+          "saddle": true,
+          "residual": 8.881784197001252e-16
+        }
+      ],
+      "conditional_two_saddle_product": 2.8216578504192817
+    },
+    {
+      "r": 2.0,
+      "shift": 0.2499,
+      "points": [
+        {
+          "slope": -6.27566643224019,
+          "radial_eigenvalue": 3.479572052495827,
+          "angular_eigenvalue": -27.679506479984365,
+          "saddle": true,
+          "residual": 4.3076653355456074e-14
+        },
+        {
+          "slope": -1.986268263635817,
+          "radial_eigenvalue": 13.722172039757837,
+          "angular_eigenvalue": 9.280569831157791,
+          "saddle": false,
+          "residual": 1.865174681370263e-14
+        },
+        {
+          "slope": 0.17733825326102215,
+          "radial_eigenvalue": 4.926857862979092,
+          "angular_eigenvalue": -13.96176299111624,
+          "saddle": true,
+          "residual": 6.661338147750939e-15
+        }
+      ],
+      "conditional_two_saddle_product": 2.8071284157665035
+    }
+  ]
+}

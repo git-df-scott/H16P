@@ -1,0 +1,104 @@
+{
+  "status": "independent numerical quadrature, not certification",
+  "evaluations": [
+    {
+      "fraction": 0.2,
+      "order": 256,
+      "M": [
+        0.7336281079319791,
+        -4.3299446802756224e-05,
+        -0.00014038599269422468,
+        -0.003779147156255481
+      ],
+      "min_angular_sampled": 0.799467822376141,
+      "max_energy_root_residual": 9.992007221626409e-16,
+      "quadrature_change_max": 2.758142564167343e-16,
+      "cartesian_difference_max": 2.7755575615628914e-15
+    },
+    {
+      "fraction": 0.25,
+      "order": 256,
+      "M": [
+        0.9162146885749244,
+        -0.00011278595044038325,
+        -0.0002884126102776898,
+        -0.005995622553811125
+      ],
+      "min_angular_sampled": 0.7814607839471279,
+      "max_energy_root_residual": 9.992007221626409e-16,
+      "quadrature_change_max": 4.3261021934887234e-16,
+      "cartesian_difference_max": 1.5543122344752192e-15
+    },
+    {
+      "fraction": 0.3,
+      "order": 256,
+      "M": [
+        1.0984508907197321,
+        -0.0002502711019755054,
+        -0.0005254644765070378,
+        -0.008778038410582497
+      ],
+      "min_angular_sampled": 0.7658966198395325,
+      "max_energy_root_residual": 7.771561172376096e-16,
+      "quadrature_change_max": 4.440892098500626e-16,
+      "cartesian_difference_max": 4.1744385725905886e-14
+    },
+    {
+      "fraction": 0.5,
+      "order": 256,
+      "M": [
+        1.8236188098285455,
+        -0.0026300547532614265,
+        -0.003097185510626416,
+        -0.026520854157675362
+      ],
+      "min_angular_sampled": 0.718193191492409,
+      "max_energy_root_residual": 1.887379141862766e-15,
+      "quadrature_change_max": 3.1086244689504383e-15,
+      "cartesian_difference_max": 5.329070518200751e-15
+    },
+    {
+      "fraction": 0.6,
+      "order": 256,
+      "M": [
+        2.183703565202201,
+        -0.006566162272306852,
+        -0.006188134579976312,
+        -0.040442544745097016
+      ],
+      "min_angular_sampled": 0.6996032740933216,
+      "max_energy_root_residual": 1.6653345369377348e-15,
+      "quadrature_change_max": 4.884981308350689e-15,
+      "cartesian_difference_max": 7.149836278586008e-14
+    },
+    {
+      "fraction": 0.75,
+      "order": 256,
+      "M": [
+        2.7202002122838445,
+        -0.022602209882438228,
+        -0.015806404501528627,
+        -0.0712114836148783
+      ],
+      "min_angular_sampled": 0.6409961866723697,
+      "max_energy_root_residual": 3.3306690738754696e-15,
+      "quadrature_change_max": 1.2450630804128338e-12,
+      "cartesian_difference_max": 8.881784197001252e-15
+    },
+    {
+      "fraction": 0.8,
+      "order": 256,
+      "M": [
+        2.8979342451794787,
+        -0.03372002922182951,
+        -0.021425875551746732,
+        -0.08553930443387808
+      ],
+      "min_angular_sampled": 0.6178705287514313,
+      "max_energy_root_residual": 3.4416913763379853e-15,
+      "quadrature_change_max": 3.10733105912675e-11,
+      "cartesian_difference_max": 5.169198402654729e-13
+    }
+  ],
+  "new_ode_returns": 0
+}

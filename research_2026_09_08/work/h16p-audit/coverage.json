@@ -1,0 +1,3947 @@
+{
+  "commit": "45f4ea9b4ab448bdd36702036244faa4f15c9819",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 23,
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+      "status": "read",
+      "read_chars": 23
+    },
+    {
+      "path": "ASTRA_FIFTH_STRIKE.md",
+      "bytes": 4832,
+      "sha256": "38f42cd3c45b3589a94f9d0aaf8ee44403dfc2180c73146b55f66505fa092ff2",
+      "status": "read",
+      "read_chars": 4832
+    },
+    {
+      "path": "ASTRA_FIRST_STRIKE.md",
+      "bytes": 7289,
+      "sha256": "9ec22f9ebd718e0aca888da8bed7469b09545c260ff545f47223e51d4b5c9b23",
+      "status": "read",
+      "read_chars": 7277
+    },
+    {
+      "path": "ASTRA_FOURTH_STRIKE.md",
+      "bytes": 4515,
+      "sha256": "34540abb649888ec94f7a14616b4ece9e4c86e35b289a070b32e1bd63447b42b",
+      "status": "read",
+      "read_chars": 4515
+    },
+    {
+      "path": "ASTRA_HANDOFF.md",
+      "bytes": 3170,
+      "sha256": "f95620034931242b015bd9e1ae3aa11b844738624a4de2ee585a4e55194decc8",
+      "status": "read"
+    },
+    {
+      "path": "ASTRA_SECOND_STRIKE.md",
+      "bytes": 9346,
+      "sha256": "4d491a8b5b362b3f59f29028d353e6b3f28ca0362d3f719616ec1eea299a7542",
+      "status": "read",
+      "read_chars": 9346
+    },
+    {
+      "path": "ASTRA_STRIKE5_CHECKPOINT.md",
+      "bytes": 8814,
+      "sha256": "f456dfd0503aafc2740aedfb04c95de58b464c40e11d0c4a6a2f835925281fd8",
+      "status": "read",
+      "read_chars": 8810
+    },
+    {
+      "path": "ASTRA_THIRD_STRIKE.md",
+      "bytes": 10641,
+      "sha256": "490cd2d7d3751aad8b38a2885c642d530c0945972c32695567e2dad91dba8d3f",
+      "status": "read",
+      "read_chars": 10641
+    },
+    {
+      "path": "ATTACK_MATRIX.md",
+      "bytes": 9392,
+      "sha256": "59fd11a7c808128c6ce480870b4b6dd4c20ee06b3c72686cf73dbc54abba1e94",
+      "status": "read"
+    },
+    {
+      "path": "BIFURCATION_MECHANISMS.md",
+      "bytes": 4471,
+      "sha256": "f501e9f0b5071069a23010118e9ada383ba9b2720a7a52a07df076c7bf8a8947",
+      "status": "read",
+      "read_chars": 4471
+    },
+    {
+      "path": "CLAUDE_AUDIT_ASTRA_1_3.md",
+      "bytes": 26756,
+      "sha256": "ca9382e4f0031eecd7e1969173627557a84d3cecbe443f804902b11015ca597e",
+      "status": "read",
+      "read_chars": 26696
+    },
+    {
+      "path": "CLAUDE_AUDIT_ASTRA_4.md",
+      "bytes": 6279,
+      "sha256": "f406ef24be28c710c64e12afea15448fda1fe20a50d0422a2c2a14e796f7e100",
+      "status": "read"
+    },
+    {
+      "path": "CLAUDE_LANES_B_C.md",
+      "bytes": 7912,
+      "sha256": "87b6411be55e670ede285b4b11ca8be4a2abdb4d6a88e000bec4ffd903a73172",
+      "status": "read",
+      "read_chars": 7904
+    },
+    {
+      "path": "CLAUDE_Q4_ENDPOINT_LANE.md",
+      "bytes": 5184,
+      "sha256": "e201981d3339cf96ec61ac853532f249f53351e928077128b621db3157d8c41b",
+      "status": "read"
+    },
+    {
+      "path": "CLAUDE_ROUTES_4AB.md",
+      "bytes": 5026,
+      "sha256": "ffb3704b4b5caa36b5d80a5d9ca6fc9bdbb9b9848f3168d8a9f9eb5b75270b29",
+      "status": "read",
+      "read_chars": 5021
+    },
+    {
+      "path": "CLAUDE_THOUGHT_SESSION.md",
+      "bytes": 10501,
+      "sha256": "aa0542e21e9c8651cebf763a07f789e9b3aa4ea7190027c8a8c3043b770397dd",
+      "status": "read",
+      "read_chars": 10479
+    },
+    {
+      "path": "FASTRA_COUNCIL_2026_09_04.md",
+      "bytes": 43425,
+      "sha256": "c08e952b63dd3d477d0a48305ca002e01c1ee47ff26f988ec8ff2f40b6555b25",
+      "status": "read",
+      "read_chars": 43363
+    },
+    {
+      "path": "FASTRA_H16_HANDOFF.md",
+      "bytes": 13762,
+      "sha256": "be6248c0c9a4fe273d9cffcc5b6a7c196af2c4aea36d8b0a4d235ae0a36e14bb",
+      "status": "read",
+      "read_chars": 13748
+    },
+    {
+      "path": "FASTRA_H16_HANDOFF_5.md",
+      "bytes": 4073,
+      "sha256": "a26d349261857b428c1d702f7e16df31578992304f0bdce328f9e00423628591",
+      "status": "read",
+      "read_chars": 4067
+    },
+    {
+      "path": "FASTRA_ZOOM_OUT_2026_09_05.md",
+      "bytes": 27184,
+      "sha256": "ed6803df9f2d87de5e9ce9acd7e9d2dd3e54cb759dcd2e912f29786ee1721dee",
+      "status": "read",
+      "note": "Combined output was truncated. Re-read in bounded chunks before marking read.",
+      "read_chars": 27147
+    },
+    {
+      "path": "FOUR_CYCLE_FRONTIER.md",
+      "bytes": 5967,
+      "sha256": "ca0cc709309cf8121763aab3dddf643f5b64922437d25105ffe16c9aa5dd584d",
+      "status": "read",
+      "read_chars": 5967
+    },
+    {
+      "path": "KKL_FOLD_CLOSURE.md",
+      "bytes": 6636,
+      "sha256": "2a26521e8d0bd15dbafc8dcad4fb2b3f109f7521ff5d74febd31a599f4d18bb0",
+      "status": "read"
+    },
+    {
+      "path": "KKL_FOLD_SURFACE_STRIKE.md",
+      "bytes": 18664,
+      "sha256": "e1c1f065b9bfb6d0332a0d9d67b8bb6b63182751f908284d31dc056a9aac28bf",
+      "status": "read"
+    },
+    {
+      "path": "LITERATURE_AUDIT.md",
+      "bytes": 7763,
+      "sha256": "deac952dbba94ba643b0bfb814907c9ac06b7281c3934c0c5265907b723839ae",
+      "status": "read"
+    },
+    {
+      "path": "Q4_CERTIFICATE_PLAN.md",
+      "bytes": 5685,
+      "sha256": "3273f438b196ca7c999a09decdfabf9419fd12c2c5907b98bb13c3f7679aa718",
+      "status": "read",
+      "read_chars": 5685
+    },
+    {
+      "path": "Q4_CERTIFICATION.md",
+      "bytes": 4071,
+      "sha256": "1c04e60c39e784008a0a37961e927968dc0aa73b3527d3296e9adf07c560a9e9",
+      "status": "read",
+      "read_chars": 4064
+    },
+    {
+      "path": "Q4_CONTROLS.md",
+      "bytes": 2438,
+      "sha256": "7e019e1eb41c5512bd5e8942c80fd356a71056141e674eb631fd2dfdc1447260",
+      "status": "read",
+      "read_chars": 2438
+    },
+    {
+      "path": "Q4_COST_MODEL.md",
+      "bytes": 3109,
+      "sha256": "2ef84e2a55b2ca33b153c7a82b897367d309da18e581fd30fb469365eb3358b0",
+      "status": "read",
+      "read_chars": 3109
+    },
+    {
+      "path": "Q4_GREEN_MAX_3.md",
+      "bytes": 24092,
+      "sha256": "700529abe9a22ead85b36375c752ee51eb3e40c9fed7fc1ec02edab84d142a02",
+      "status": "read",
+      "read_chars": 23951
+    },
+    {
+      "path": "Q4_LOBE_REGION.md",
+      "bytes": 17109,
+      "sha256": "bd15ddfb2c4801bf3e7b4136b7e2a0635dc71498a7a11c2efd5f58d37f0f409a",
+      "status": "read",
+      "read_chars": 17109
+    },
+    {
+      "path": "Q4_PARAMETERIZATION.md",
+      "bytes": 4038,
+      "sha256": "1f018fa0e9c52dfcb767a7f402b47043b77e2ec00b28135335c0fabcca97eeee",
+      "status": "read",
+      "read_chars": 4038
+    },
+    {
+      "path": "Q4_RECONSTRUCTION_GEOMETRY.md",
+      "bytes": 22770,
+      "sha256": "840d855c6de8e2032065c3adc036871fbcf50a7a0e99260224275bc9d96ac8bb",
+      "status": "read",
+      "read_chars": 22549
+    },
+    {
+      "path": "Q4_SEARCH.md",
+      "bytes": 3907,
+      "sha256": "294419acf75b61a2ec4df44a7b402d2363946fb8e96005907bc63ac4269dbdc3",
+      "status": "read",
+      "read_chars": 3907
+    },
+    {
+      "path": "Q4_STRUCTURE.md",
+      "bytes": 14856,
+      "sha256": "c5c4ad80392697b29e2bf86d6467df6a86a0b8ef899656dc47731bd108e904a0",
+      "status": "read",
+      "read_chars": 14656
+    },
+    {
+      "path": "Q4_THEOREM_N.md",
+      "bytes": 12617,
+      "sha256": "7668baed107ded3483d9d292b7767bc6b902b644d74b38ea81a503c9cd3ec288",
+      "status": "read"
+    },
+    {
+      "path": "Q4_THEORY.md",
+      "bytes": 4953,
+      "sha256": "9d38f69bdea09755384e9495348d15d52b81245338aa4016f97293cebe22eef0",
+      "status": "read",
+      "read_chars": 4945
+    },
+    {
+      "path": "Q4_THRESHOLD_PATH.md",
+      "bytes": 10833,
+      "sha256": "32bc88a0ba0cef8f87f43563522ef1d2f208ea200ff95c41f216d3b36f0c4095",
+      "status": "read",
+      "read_chars": 10833
+    },
+    {
+      "path": "Q4_TWO_ROOT_REDUCTION.md",
+      "bytes": 11493,
+      "sha256": "117e9afda4772bdcd21aecffa4b9314d087a73e5b4e28f0af60aad1f93ec2a9d",
+      "status": "read",
+      "read_chars": 11491
+    },
+    {
+      "path": "Q4_ZERO_GEOMETRY.md",
+      "bytes": 16121,
+      "sha256": "09d86c5e97fdd328fd033228f9015f6cecc0548fdec58e9159a4db32d9d27085",
+      "status": "read",
+      "read_chars": 16117
+    },
+    {
+      "path": "README.md",
+      "bytes": 8028,
+      "sha256": "e1cb1e0c2bad4db0293173c598a90e01cd6e5f163984ae20daf4306bec233314",
+      "status": "read"
+    },
+    {
+      "path": "REVERSIBLE_RESEED_2026_09_05.md",
+      "bytes": 14071,
+      "sha256": "4a0bb084f4fa21f15cd809c66202a88db4875bd5daac122da5c24354d5f0065e",
+      "status": "read"
+    },
+    {
+      "path": "RIGOROUS_CERTIFICATION.md",
+      "bytes": 5067,
+      "sha256": "8decd962e4c19cea365ce8822c06c02346f6bfc33b65c8f3d00d00fab131eb0b",
+      "status": "read",
+      "read_chars": 5063
+    },
+    {
+      "path": "SEARCH_SPACE.md",
+      "bytes": 5283,
+      "sha256": "8e5b2d472ac43667abedf095ff67868b1853f759974bb76d9258cf7bf31969ea",
+      "status": "read",
+      "read_chars": 5283
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 6991,
+      "sha256": "dc37ce4a0fb685ba844f30d816548c14e179329d98a2f933875efd22dde4c763",
+      "status": "read"
+    },
+    {
+      "path": "STAGED_INFINITY_2026_09_05.md",
+      "bytes": 8821,
+      "sha256": "402797f25484faf7bd6313400d8a9677fbfa14220cb704f42a6cc7361277e771",
+      "status": "read",
+      "read_chars": 8821
+    },
+    {
+      "path": "STAGED_K1_THEORY_2026_09_05.md",
+      "bytes": 9059,
+      "sha256": "9dcdcba861313d8d9ce60ab416ac9b9918602ea9c2239481741612ea0519817b",
+      "status": "read",
+      "read_chars": 9049
+    },
+    {
+      "path": "STAGED_RUN_2026_09_05.md",
+      "bytes": 12482,
+      "sha256": "66dd6b28a03671569b60297bf2d728ecf092f253af29587bf408e9865b929491",
+      "status": "read",
+      "read_chars": 12413
+    },
+    {
+      "path": "STAGED_SHI_2026_09_05.md",
+      "bytes": 8289,
+      "sha256": "d712ba22d6dc9563e889c057c9123e36f5630629b105ec61d261ff8c7ab33b92",
+      "status": "read",
+      "read_chars": 8257
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 5778,
+      "sha256": "576b985192ffddfe230c29fc8e522172043ba232f976b73e828fbee72d8301e9",
+      "status": "read"
+    },
+    {
+      "path": "STRIKE5_PRECURSOR.md",
+      "bytes": 11964,
+      "sha256": "b854730021d6c7a92aa149395534c1e525214a61f517283fb14ef31c3f7c5c3b",
+      "status": "read",
+      "read_chars": 11959
+    },
+    {
+      "path": "ZERO_TO_CYCLE.md",
+      "bytes": 2949,
+      "sha256": "f451ad1630bbda448c6e066d54052f8502e1bd22dc0ba894030da2d8f63edbd4",
+      "status": "read",
+      "read_chars": 2940
+    },
+    {
+      "path": "audit/claude_center_identify.py",
+      "bytes": 2405,
+      "sha256": "67c9cade1e6aed2e28761419a48e66d6731e87a919cda92cb501d85d37e14eb6",
+      "status": "read",
+      "read_chars": 2405
+    },
+    {
+      "path": "audit/claude_check_boundaries.py",
+      "bytes": 3257,
+      "sha256": "5e82bede946889c60142babb8fb6eb3da00bd36a93a5b0ff50a2eb9fba692124",
+      "status": "read",
+      "read_chars": 3257
+    },
+    {
+      "path": "audit/claude_check_endpoint_identities.py",
+      "bytes": 2428,
+      "sha256": "58560d006b1e0ad3bccc19726d24928713356e232e4ac5c1f3ee29c7f9dc0519",
+      "status": "read",
+      "read_chars": 2428
+    },
+    {
+      "path": "audit/claude_check_large_kappa.py",
+      "bytes": 2078,
+      "sha256": "5d8051225ea96f006b5059af483e692fee6d7f95736fa38bf2a7b7ce5ccc4901",
+      "status": "read",
+      "read_chars": 2078
+    },
+    {
+      "path": "audit/claude_check_reconstruction.py",
+      "bytes": 1712,
+      "sha256": "e1a9b80daadfbebdd7dd651126c5e4f3fa3883dd2d86d50fa82e74722094f252",
+      "status": "read",
+      "read_chars": 1712
+    },
+    {
+      "path": "audit/claude_check_strike1.py",
+      "bytes": 3590,
+      "sha256": "0a23c57586534eaefa686c43fb8cc4b399c14507be731cfd35bc611661aca81b",
+      "status": "read",
+      "read_chars": 3590
+    },
+    {
+      "path": "audit/claude_check_strike2.py",
+      "bytes": 3649,
+      "sha256": "d42a1f13e1c775898eb1822857da06cd085f9d39fda5f24ab244eeae019c95ce",
+      "status": "read",
+      "read_chars": 3649
+    },
+    {
+      "path": "audit/claude_check_theoremN.py",
+      "bytes": 4077,
+      "sha256": "f649ac4fd0c8ffe2c4500551c90a1203068206bc4e9c759e0eece4b6348c205d",
+      "status": "read",
+      "read_chars": 4077
+    },
+    {
+      "path": "audit/claude_check_threshold.py",
+      "bytes": 4457,
+      "sha256": "fad11c9f94145869ac87edf75e1a81729b22af4507d96fa8853132d2d168804e",
+      "status": "read",
+      "read_chars": 4457
+    },
+    {
+      "path": "audit/claude_corner_derivatives.py",
+      "bytes": 1632,
+      "sha256": "a404a348d5eaeabf9b324bdbbf6daa5064922bcceeb301579c604dea5c234f56",
+      "status": "read",
+      "read_chars": 1632
+    },
+    {
+      "path": "audit/claude_corner_map.py",
+      "bytes": 1591,
+      "sha256": "1087ca4e350c58608ec6edefa3ed2ca6f412baa7d051bb0b2df70898261d6554",
+      "status": "read",
+      "read_chars": 1591
+    },
+    {
+      "path": "audit/claude_green_tools.py",
+      "bytes": 2435,
+      "sha256": "61cb2b7896e10e2677d772570df75ccc860860c665a529f4d9a1ce344e14ab54",
+      "status": "read",
+      "read_chars": 2435
+    },
+    {
+      "path": "audit/claude_laneB_loop_functionals.py",
+      "bytes": 2405,
+      "sha256": "cbb1f72629bea9554be0bc56f554cbd983174e6574e684ff83872209b9494ac3",
+      "status": "read",
+      "read_chars": 2405
+    },
+    {
+      "path": "audit/claude_laneC_focus_numeric.py",
+      "bytes": 1017,
+      "sha256": "d6b18b9b452be7f13cc2daca808cae00d4019520a08724dcb27a1be7999172aa",
+      "status": "read",
+      "read_chars": 1015
+    },
+    {
+      "path": "audit/claude_laneC_locate_loop.py",
+      "bytes": 1783,
+      "sha256": "de1f9527273f40dac9239ad1b600e49735e1ab614c8886743155f89c08a05fcd",
+      "status": "read",
+      "read_chars": 1783
+    },
+    {
+      "path": "audit/claude_laneC_loop01.py",
+      "bytes": 2641,
+      "sha256": "13a0f470c731898f12f13b61a229698e01b83df8f1a2cb3d8eef7acf1681ac98",
+      "status": "read",
+      "read_chars": 2641
+    },
+    {
+      "path": "audit/claude_laneC_loop_probe.py",
+      "bytes": 2305,
+      "sha256": "ce2a01290c698052877e1e8bfe6730489cb04847d3a6868a376f65fa689d84e0",
+      "status": "read",
+      "read_chars": 2305
+    },
+    {
+      "path": "audit/claude_laneC_portrait.py",
+      "bytes": 1388,
+      "sha256": "70e398c03099d26cb1a27ce36ad1247bba5d4ba690c8f90714f5acb8d0bf78f3",
+      "status": "read",
+      "read_chars": 1388
+    },
+    {
+      "path": "audit/claude_laneC_saddle_region.py",
+      "bytes": 1913,
+      "sha256": "4972c032dac410ea6f37601098566bbbb89ab0bb222dcf3ff9d6b548fc4e3647",
+      "status": "read",
+      "read_chars": 1913
+    },
+    {
+      "path": "audit/claude_laneC_shi_focus.py",
+      "bytes": 2160,
+      "sha256": "e75e09ef15f2fcc5ffaf08f6abdd92bd6d7e84904e842aa70342a6bf49a7c786",
+      "status": "read",
+      "read_chars": 2160
+    },
+    {
+      "path": "audit/claude_laneC_splitting.py",
+      "bytes": 2858,
+      "sha256": "027001165da0864af821be4400d56e191d3646d0764989d961eb8c23837abb9e",
+      "status": "read",
+      "read_chars": 2858
+    },
+    {
+      "path": "audit/claude_laneC_splitting2.py",
+      "bytes": 3831,
+      "sha256": "5eacce920694c08feec830107c3292a75c9e86f9d00c8ac9ec86c27e44e32cb2",
+      "status": "read",
+      "read_chars": 3831
+    },
+    {
+      "path": "audit/claude_laneC_splitting3.py",
+      "bytes": 3516,
+      "sha256": "f8168b16c48dd25b7ec1e2987000bfef8907032b7cc29e52e1572cd7c2c93b32",
+      "status": "read",
+      "read_chars": 3516
+    },
+    {
+      "path": "audit/claude_laneC_splitting4.py",
+      "bytes": 2755,
+      "sha256": "b4a4456f10e5f1a2a96065585e20cde838dc7306d3ff39469061874c316d50f3",
+      "status": "read",
+      "read_chars": 2755
+    },
+    {
+      "path": "audit/claude_laneC_stratum_saddles.py",
+      "bytes": 1198,
+      "sha256": "0647a759e26a136ad7d139c8c990c21bce7b080e9e1e58f97eabfb03cfa8f8ca",
+      "status": "read",
+      "read_chars": 1198
+    },
+    {
+      "path": "audit/claude_laneC_unfolding.py",
+      "bytes": 933,
+      "sha256": "f7ecf01e36e29170bc269a61d6f320c180e45f1f9ef15596bdffa88cde25b40e",
+      "status": "read",
+      "read_chars": 933
+    },
+    {
+      "path": "audit/claude_lobe_scan_phi.py",
+      "bytes": 1104,
+      "sha256": "a0a365815acb0d4528080cddb00afcaa1d356875a142fefbbdf90ffded1c0f07",
+      "status": "read",
+      "read_chars": 1104
+    },
+    {
+      "path": "audit/claude_q4_boundary_level.py",
+      "bytes": 2001,
+      "sha256": "bc6e740838d56a937ed5d1b6ea1696e71d068dcc1dff1218f7048962d7822a40",
+      "status": "read",
+      "read_chars": 2000
+    },
+    {
+      "path": "audit/claude_q4_crossing_count.py",
+      "bytes": 1495,
+      "sha256": "1234456a4577804cfdfd6f96a351557cc4f2b9e15e4706c6f6984335adf4e2f0",
+      "status": "read",
+      "read_chars": 1495
+    },
+    {
+      "path": "audit/claude_q4_endpoint_c0.py",
+      "bytes": 1653,
+      "sha256": "b17af81b95d275ecccd29611eb29c742f34b9af064cd05e1f2207c68d4c60620",
+      "status": "read",
+      "read_chars": 1653
+    },
+    {
+      "path": "audit/claude_q4_graphic_itinerary.py",
+      "bytes": 2629,
+      "sha256": "aae147ecefd863a753b3790f5602d766b11e65f23f5c605dedd9c16badba60d5",
+      "status": "read",
+      "read_chars": 2629
+    },
+    {
+      "path": "audit/claude_q4_original_infinity.py",
+      "bytes": 2879,
+      "sha256": "603c40322499b32324d8be6a60048b523a10adbeec053961ca4901f5d65eccd5",
+      "status": "read",
+      "read_chars": 2877
+    },
+    {
+      "path": "audit/claude_q4_trace_boundary.py",
+      "bytes": 1600,
+      "sha256": "95ec13d3e37b4772edce5a549fe74f3d8905e015be144d4bbbc827bc6b6f5e22",
+      "status": "read",
+      "read_chars": 1600
+    },
+    {
+      "path": "audit/claude_q4_triple_center_face.py",
+      "bytes": 1647,
+      "sha256": "22f9e7221835bc0800574b13ae249632fe9b09060fb526673746630646fbaae2",
+      "status": "read",
+      "read_chars": 1647
+    },
+    {
+      "path": "audit/claude_q4_triple_center_face2.py",
+      "bytes": 1412,
+      "sha256": "3eaa7894a5c17ed668903fee8f361cf8863f6eb1532d80f27f2f9a4e10e9b8cf",
+      "status": "read",
+      "read_chars": 1412
+    },
+    {
+      "path": "audit/claude_q4_triple_center_point.py",
+      "bytes": 2348,
+      "sha256": "30b2a18da97051ae32f15807919ea818530a2dd55e5f3f46ee00df1a95e9c99c",
+      "status": "read",
+      "read_chars": 2348
+    },
+    {
+      "path": "audit/claude_q4_tworoot_scan.py",
+      "bytes": 2318,
+      "sha256": "90c8d3d391b9ab1eb8d7b37b4a358c65eca230416f1f7ee1e3ce6c36e2b28d27",
+      "status": "read",
+      "read_chars": 2318
+    },
+    {
+      "path": "audit/claude_route4a_normal_form.py",
+      "bytes": 1276,
+      "sha256": "83069dc37616ae70f653b840eeb236dbfa8150d06afd1d55deda0783a59098e4",
+      "status": "read",
+      "read_chars": 1276
+    },
+    {
+      "path": "audit/claude_route4b_hemicycle.py",
+      "bytes": 2765,
+      "sha256": "1b7d52651b886f0fdcffa1b3ff38b1f25729d6965e02efb304b75433ac105714",
+      "status": "read",
+      "read_chars": 2765
+    },
+    {
+      "path": "audit/claude_route4b_infinity.py",
+      "bytes": 2195,
+      "sha256": "89a6e1c10093998ae12cbf446e1f54e6addbf9f12f155b06f6b76d0e6f04d3ae",
+      "status": "read",
+      "read_chars": 2195
+    },
+    {
+      "path": "audit/claude_shots_phi.py",
+      "bytes": 1219,
+      "sha256": "77c48bd5da795fedefd5767bb1d02f8b9a2b619fc1af191a7150625936e8cb36",
+      "status": "read",
+      "read_chars": 1219
+    },
+    {
+      "path": "audit/corner_derivatives.log",
+      "bytes": 149,
+      "sha256": "f92c1172f090cd7fb9127356090febcb47d950035893906e8128a43b4b10c19e",
+      "status": "read",
+      "read_chars": 149,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "audit/corner_map.log",
+      "bytes": 3000,
+      "sha256": "28003e282a1be338f2f16f4247c82d7fdb474e94416c8edfc3e8cdc6e3044a12",
+      "status": "read",
+      "read_chars": 3000,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "audit/large_kappa.log",
+      "bytes": 1394,
+      "sha256": "c89af8263b22d748d7af82fe609e8a50488ca3fb3c168140b8f4b06abb3ac507",
+      "status": "read",
+      "read_chars": 1394,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "audit/lobe_scan_phi.log",
+      "bytes": 2098,
+      "sha256": "8fa0dd7fab20552b20f4a03949a517202c4d40b862a8827329e3eded6e3205c8",
+      "status": "read",
+      "read_chars": 2098,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "audit/test_claude_hostile.log",
+      "bytes": 623,
+      "sha256": "a941120e3edd1cee573ec21e6f5ed52b3a851b37dc81177dd6aac02ea7183a62",
+      "status": "read",
+      "read_chars": 623,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "audit/test_claude_hostile.py",
+      "bytes": 1653,
+      "sha256": "e905591261a2dff58dc64c664199aab9c23b4667b6953eabc369e6f5ba528890",
+      "status": "read",
+      "read_chars": 1653
+    },
+    {
+      "path": "controls/README.md",
+      "bytes": 707,
+      "sha256": "38ad93225d255cb2997eb1043583611694ae810bb80f673724e8040b5a54e89c",
+      "status": "read",
+      "read_chars": 707
+    },
+    {
+      "path": "controls/four_cycle_control.json",
+      "bytes": 1621,
+      "sha256": "3c05acb0e9744461eb54cdb2d8da7e6fbb75979b14eeecc3274feceb968021db",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "controls/four_cycle_control.png",
+      "bytes": 123189,
+      "sha256": "0c01649126e3498bbdba804df5f2ef3a7934dcb84c7caee974a855ef9a05e23a",
+      "status": "visually_inspected",
+      "inspection": "Viewed complete rendered plot; numerical illustration, not orbit or continuation certificate."
+    },
+    {
+      "path": "controls/reproduce_four_cycle.py",
+      "bytes": 5370,
+      "sha256": "facfe85ea911098c33806adde54d6e43b5997778e2f2be4ff4cbfde4bea87371",
+      "status": "read",
+      "read_chars": 5370
+    },
+    {
+      "path": "controls/requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "status": "read",
+      "read_chars": 46
+    },
+    {
+      "path": "council/check_council_algebra.py",
+      "bytes": 3029,
+      "sha256": "e50af06f01636ad4c24ce8fc788ea8d2413a1f7eec7ee1b42a12f01e6e578eb3",
+      "status": "read",
+      "read_chars": 3029
+    },
+    {
+      "path": "council/notes_kkl_hostile.md",
+      "bytes": 13585,
+      "sha256": "61698c3a93f5537c27a302a42c7737fb5dbf9eb2ff9f2d8b94e8f12ade8e9ff7",
+      "status": "read",
+      "read_chars": 13561
+    },
+    {
+      "path": "council/notes_reversible.md",
+      "bytes": 12893,
+      "sha256": "5f73e70e87573ecfdadf3aa0af56201b2de5256947b5859d7cb57497e60662f8",
+      "status": "read"
+    },
+    {
+      "path": "council/notes_third_routes.md",
+      "bytes": 15144,
+      "sha256": "fc73f90f3a9318f50c00c468f2d33df225cfb4e65095784b945403d714c497f7",
+      "status": "read",
+      "read_chars": 15102
+    },
+    {
+      "path": "fold_closure_2026_09_05/accounting.json",
+      "bytes": 258,
+      "sha256": "87cbaf299c89a801a259a18ab01ac0539d1c87ca2a87bb0dfa9821c8e525ed75",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/closure_budget.py",
+      "bytes": 1152,
+      "sha256": "e51e95269a030bca1029f53aa282601a12475228e32f9ab2d572cb322fe027d6",
+      "status": "read",
+      "read_chars": 1152
+    },
+    {
+      "path": "fold_closure_2026_09_05/cusp.log",
+      "bytes": 17368,
+      "sha256": "ad3452772c9bceae6f5bc8a820851466cd6000c2da270e032d898c04e44da340",
+      "status": "read",
+      "read_chars": 17368,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 16,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 16
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/cusp_attempt.json",
+      "bytes": 23447,
+      "sha256": "63a24367c587a178815d7cfc779c8019d684bbd34748d9cd62cd54012841b024",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 16
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/cusp_return.cpp",
+      "bytes": 3748,
+      "sha256": "37d401ac853a2c16b3b58c0217ad83adeba5c48724429c8365c91e85c1c750d5",
+      "status": "read",
+      "read_chars": 3748
+    },
+    {
+      "path": "fold_closure_2026_09_05/cusp_return.py",
+      "bytes": 974,
+      "sha256": "efe14e19573a3362c46f42432d377d5bdf7b271a5429e481da2bc4a6f9c9110b",
+      "status": "read",
+      "read_chars": 974
+    },
+    {
+      "path": "fold_closure_2026_09_05/cusp_test.py",
+      "bytes": 1922,
+      "sha256": "791423543dcd974e4f99cd565bfbc60126ed4cc5522347dbe2f784c66bba940f",
+      "status": "read",
+      "read_chars": 1922
+    },
+    {
+      "path": "fold_closure_2026_09_05/exact_checks.log",
+      "bytes": 1501,
+      "sha256": "00df8a76612ff92bad980ecea9e0306052b8852e6540ac81575dc0ff2c4dbca5",
+      "status": "read",
+      "read_chars": 1501,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 9,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/generalized_checks.log",
+      "bytes": 377,
+      "sha256": "ec8ea4e38c9926863ad3d21699d2f23e51fdca1b628ddd7bf8865efc54058a15",
+      "status": "read",
+      "read_chars": 377,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/generalized_exact.json",
+      "bytes": 377,
+      "sha256": "ec8ea4e38c9926863ad3d21699d2f23e51fdca1b628ddd7bf8865efc54058a15",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/generalized_exact.py",
+      "bytes": 1400,
+      "sha256": "00e5d3bfa4b49a77260d093456058317e5604bb30fe801081fdc2d8fc5b55647",
+      "status": "read"
+    },
+    {
+      "path": "fold_closure_2026_09_05/outermost.log",
+      "bytes": 3108,
+      "sha256": "5008d4f035730aad94ee23f271511249b66b2e48b0761fc0273467a4f2ab89f9",
+      "status": "read",
+      "read_chars": 3108,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 3,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 3
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/outermost_check.json",
+      "bytes": 7972,
+      "sha256": "2f756a46ff3000d8738d519ee94f3b96dfe2f0552bf99ebd16c2ce0a7eb0920c",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 3,
+          "L=log(return_coordinate/r)": 3
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/outermost_check.py",
+      "bytes": 595,
+      "sha256": "e3c4335de7cafa227a22edfdf25497d6c23ed9dc48433bb809d8179e3ea7e03e",
+      "status": "read",
+      "read_chars": 595
+    },
+    {
+      "path": "fold_closure_2026_09_05/returns.jsonl",
+      "bytes": 27380,
+      "sha256": "cd56b8a42e3d40a552d7a1027f4ffdbc12f6c32a9d89752ef33d2da0ee4cdefd",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 19,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 16,
+          "L=log(return_coordinate/r)": 3
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/source_manifest.json",
+      "bytes": 631,
+      "sha256": "68055bbf5db1fc3a57318856ff83762bb724de8eb2d1bf526c96b155553aa212",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/theory_exact.json",
+      "bytes": 1501,
+      "sha256": "00df8a76612ff92bad980ecea9e0306052b8852e6540ac81575dc0ff2c4dbca5",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_closure_2026_09_05/theory_exact.py",
+      "bytes": 4500,
+      "sha256": "752c57114d0b95acbea553074641b3f72f48a8cc8abf0c016b34a7ec1fd781b2",
+      "status": "read"
+    },
+    {
+      "path": "fold_closure_2026_09_05/theory_obstructions.md",
+      "bytes": 11294,
+      "sha256": "0286e0fdb11072836196c5281beb030d31ecd3f264cb618178ec11a7103c8cda",
+      "status": "read"
+    },
+    {
+      "path": "fold_surface_2026_09_05/EVENT_LEDGER.md",
+      "bytes": 14032,
+      "sha256": "8a53a50ca1759d329640e8115081638630b946c6f9140c031740f3bb2d6b96f7",
+      "status": "read",
+      "read_chars": 13920
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_ld.cpp",
+      "bytes": 3397,
+      "sha256": "1a09154c13916a87fe132f7f6fb3a3015b1018112ebe79a874e7a82e69cc2076",
+      "status": "read",
+      "read_chars": 3397
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_ld.log",
+      "bytes": 3619,
+      "sha256": "b66fe4da858014dd8e733f4d5ca16a12d46c6974f54f92b4263ee83d58ee9a36",
+      "status": "read",
+      "read_chars": 3619,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 17,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_ld.py",
+      "bytes": 972,
+      "sha256": "a8c614ac64558805b6f574dd337a363cbc85f8c3ead7040af247be248d35e53e",
+      "status": "read",
+      "read_chars": 972
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_m_quad.cpp",
+      "bytes": 3611,
+      "sha256": "fe8683078ef5f17763c19cfd15c080652f66b6bd767276701145de57caa6c363",
+      "status": "read",
+      "read_chars": 3611
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_m_quad.py",
+      "bytes": 1021,
+      "sha256": "30d6af0708395f30e7f490d15616b63a6bd0f1c00f85405e0b53a3d772d0313a",
+      "status": "read",
+      "read_chars": 1021
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_quad.cpp",
+      "bytes": 3638,
+      "sha256": "8f65908be063872a0539f13a527f32f4b253f99a38e455e545160fb2c0c6cfe0",
+      "status": "read",
+      "read_chars": 3638
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_quad.py",
+      "bytes": 1017,
+      "sha256": "ecd6dd4e0d915e6b745bfbd83279f9b66f980687ab1c7c681d8041b019ce90a0",
+      "status": "read",
+      "read_chars": 1017
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_return.py",
+      "bytes": 2715,
+      "sha256": "fc79c5abbcc6a03323aac63843f6683eb51063cf5fa133fed5eb78cd9dc4fc6b",
+      "status": "read",
+      "read_chars": 2715
+    },
+    {
+      "path": "fold_surface_2026_09_05/angular_transfer.json",
+      "bytes": 2650,
+      "sha256": "c7ab3f313934ac5fe5d1bbc0cc3fb8aba3206d866e5e4dc1a301eb7f4d2cf277",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 3
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/arc_continue.py",
+      "bytes": 3049,
+      "sha256": "bbf95b6884a4af28517eb56c1026183a128d066b97db42550db75a47e904a552",
+      "status": "read",
+      "read_chars": 3049
+    },
+    {
+      "path": "fold_surface_2026_09_05/arclength.log",
+      "bytes": 113612,
+      "sha256": "bf07581bb7ace796bbe8ab8ac8125a209882091eca20d6aaac3badbcf6ad7e4c",
+      "status": "partial",
+      "read_chars": 54763,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 661,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/budget.py",
+      "bytes": 2055,
+      "sha256": "bdeb77a8ef2e1ed9961c6dee67e4feed08d266adce71513ed20232fcd6225689",
+      "status": "read",
+      "read_chars": 2055
+    },
+    {
+      "path": "fold_surface_2026_09_05/build_summary.py",
+      "bytes": 3649,
+      "sha256": "f75609f4ac50badc4f745cf7148d3ddd7b246ef87c38f628a5f53df6d1a2f681",
+      "status": "read",
+      "read_chars": 3647
+    },
+    {
+      "path": "fold_surface_2026_09_05/center_binary128.json",
+      "bytes": 30594,
+      "sha256": "130ba0f9849032a9b068c965f1b8941ec373b09a240961b668d548a04d852e3a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 20
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/component_summary.json",
+      "bytes": 84554,
+      "sha256": "c6c560d38d5e22452118c93cd65e5377e6e9547c1aabc04808e3c76e81b8c31d",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_angular.py",
+      "bytes": 2924,
+      "sha256": "3beed411d82d63f1c61857f43304cfd7f0885c5ff6b35d13cc66b2ea3c674b2e",
+      "status": "read",
+      "read_chars": 2924
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_fold.py",
+      "bytes": 6264,
+      "sha256": "34d75a3da036330fe1c70db2c1414404393088b90271a979ba96bb8616f3c9c9",
+      "status": "read",
+      "read_chars": 6264
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_half.py",
+      "bytes": 3800,
+      "sha256": "87128976f8c6e238cbabc01db0872e0ee42eed252ac9776958c1d7a737aa9024",
+      "status": "read",
+      "read_chars": 3800
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_logm.py",
+      "bytes": 2111,
+      "sha256": "e94751d81d63e2e80a2b0ea7dcca772bcd9acf13effa40dacf66d8aca46780d8",
+      "status": "read",
+      "read_chars": 2111
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_m.py",
+      "bytes": 2502,
+      "sha256": "e156131fbd72bb63c6b76cead7400a366eca91db14d6f495fb840e5bd02e8408",
+      "status": "read",
+      "read_chars": 2502
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_negative.py",
+      "bytes": 2116,
+      "sha256": "ac4dc27fe5b069dd89bee594a99331b8944fb0d0d2afc6160f4fe773434ede40",
+      "status": "read",
+      "read_chars": 2116
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_positive_last.py",
+      "bytes": 1282,
+      "sha256": "19b1011da3f5b48239ac6d186bbfc67133961401166d2266cedbe3236f7ce539",
+      "status": "read",
+      "read_chars": 1282
+    },
+    {
+      "path": "fold_surface_2026_09_05/continue_quad.py",
+      "bytes": 2077,
+      "sha256": "259de149b637f98fe5ac38d636b56cd7deafd9b17487909b43318c938a97ccb2",
+      "status": "read",
+      "read_chars": 2077
+    },
+    {
+      "path": "fold_surface_2026_09_05/crossing_c1.json",
+      "bytes": 12338,
+      "sha256": "771ac192f9488dc75635623929556adc3dac7ab6ad15d91648098d894d04d53b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 9
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/decreasing.log",
+      "bytes": 20014,
+      "sha256": "f0c441d912aefd0b36e449b585f2e59407bc1b16fa1f745dce3dc33fa1e08d44",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 121,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/derivative_controls.json",
+      "bytes": 1516,
+      "sha256": "2c6c0cc9552cb85fae84d7b925b94b2fee0e1df8883feff28af211418f422f8a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 1
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/endpoint_controls.py",
+      "bytes": 2411,
+      "sha256": "a562c0f7a574000a9da15f50ee80441e35415b8a20bf58d9e0bba1e094565352",
+      "status": "read",
+      "read_chars": 2409
+    },
+    {
+      "path": "fold_surface_2026_09_05/endpoints.log",
+      "bytes": 8231,
+      "sha256": "0ba4bc8640e85063cedbc87434028a74c7625191d3a3244a2b824f25dc55d2c7",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 35,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_angular_ld.json",
+      "bytes": 23482,
+      "sha256": "be0606559eb942f38a7b8dc81bde88a6dbe314ae3bdb9be0a39116989e0fdf9a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 21
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_arclength.json",
+      "bytes": 956146,
+      "sha256": "d0e3929d591ddac63242b4ca7b0f2523a095868986b7a2de332257ba24bb3083",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 168
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_decreasing.json",
+      "bytes": 200664,
+      "sha256": "b23505b8c5abdf3e8aaeb42851d8a1768e54cb024292abd5b5b739c4b26d67a6",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 12
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_half.json",
+      "bytes": 471491,
+      "sha256": "64413c74fed4792ece33cae90cf40851834d0a8a98af5d7dc142c82036987cc5",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 347
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_increasing.json",
+      "bytes": 842759,
+      "sha256": "30e1f0ce07b3577ee50dbdc01782600d9200c2d07f0e7bb7e3f24ebec8495a72",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 66
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_logm.json",
+      "bytes": 780170,
+      "sha256": "960369a367c12d1bc9456c8e51147427bfa813da1b3f3559dfd82009ffb5e08b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 503
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_m.json",
+      "bytes": 422519,
+      "sha256": "360139a0e082cd7f0a9250681a1d0430621d9b7cdbb81a0bae97e06c23ff7059",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 282
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_negative.json",
+      "bytes": 1207818,
+      "sha256": "7a6ec2e37f12091179ef794b784bf84c611ea1c9ecec3f0df3c1797ff2420a6f",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 896
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/events_quad.json",
+      "bytes": 716611,
+      "sha256": "8eff8436436e7f972022bb5bee4157f0a9b6ff64eb3e44ca1b2458b6330e3d99",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 444
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/exact_recheck.log",
+      "bytes": 1145,
+      "sha256": "dabb3bbff99424bd456545ca99a85630c44ebe287bc509b52dbfe9415782cf16",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 2,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/final_controls.log",
+      "bytes": 2211,
+      "sha256": "88653320b0b897431ae822d77d260f27e9408f57c87b5dd986b4b0415e2e0d6e",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 8,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/final_controls.py",
+      "bytes": 1036,
+      "sha256": "cd5f46f07119c55dbda213ae2c9e260cbcf7e9585a1b93d53754eccb9c70d0b9",
+      "status": "read",
+      "read_chars": 1036
+    },
+    {
+      "path": "fold_surface_2026_09_05/fold_continuation.png",
+      "bytes": 129974,
+      "sha256": "d57c93cc423607b18b09ee86d2209ecbbf12be9900d60ba806b898d32f43b773",
+      "status": "visually_inspected",
+      "inspection": "Viewed complete rendered plot; numerical illustration, not orbit or continuation certificate."
+    },
+    {
+      "path": "fold_surface_2026_09_05/fold_continuation.svg",
+      "bytes": 95356,
+      "sha256": "b52d2a468552699239d6924daeeabf234b574b6ca57eb7215f6f25dbc63328e8",
+      "status": "visually_inspected",
+      "inspection": "Full unmodified SVG rendered with bundled sharp, all three panels viewed; graph agrees visually with PNG; numerical illustration not proof."
+    },
+    {
+      "path": "fold_surface_2026_09_05/full_replay.log",
+      "bytes": 3315,
+      "sha256": "3883b294a4416a97923f7f464da4131f62d7be140c9e014959c65bd1bbf4644b",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 12,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/full_return_replay.py",
+      "bytes": 1092,
+      "sha256": "e4c45ed2072fc4089b52a5151568712c1663d0671ed62017919e86a3096a1f23",
+      "status": "read",
+      "read_chars": 1092
+    },
+    {
+      "path": "fold_surface_2026_09_05/full_return_reproduction.json",
+      "bytes": 35940,
+      "sha256": "00b1223b5dd7ace1995d19daa73f6a74ceaa486e06e0cac705a53d28576d5b5b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 12,
+          "L=log(return_coordinate/r)": 12
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic.log",
+      "bytes": 3270,
+      "sha256": "c7b7ddd2cfd9a8a8e882a6c4e703d8a561b3c16996f50263d01e4b728ff4aa3c",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 18,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_coefficient.json",
+      "bytes": 3152,
+      "sha256": "0e75479b4a50215f8181d44ec964c4e1c52cf4fed5808e027b19609fbd9186c0",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 2
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_coefficient.log",
+      "bytes": 502,
+      "sha256": "f752831c5332c624fd6d9b6d75a0cb7bd2d5df69360029387cd076a8ab0479da",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 2,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_coefficient.py",
+      "bytes": 876,
+      "sha256": "2fd8152edddf80dc0dc9b8c85c4812c8b15dca0c5b27e7828eb6086bc4100f35",
+      "status": "read",
+      "read_chars": 876
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_connection.json",
+      "bytes": 16616,
+      "sha256": "ac38b0b371f223c35062e6a7bbd680781c371677d81fd23626bc6f015b814f04",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_initial.json",
+      "bytes": 6348,
+      "sha256": "25544ffa6a6f29a17b1dd6074c30eac70880f4eb5fcddad0e2d485ed4948cb4c",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/graphic_shoot.py",
+      "bytes": 2733,
+      "sha256": "f4d9af6ee9a73c04863d532a6eeb39d3265084f9d114db7e3f7431f8fe2fadd5",
+      "status": "read",
+      "read_chars": 2733
+    },
+    {
+      "path": "fold_surface_2026_09_05/half.log",
+      "bytes": 58223,
+      "sha256": "2f4a5782f8139a5d5a17454e36aabbeadd3108db7a66090ba440b7403076be9c",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 266,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_control.json",
+      "bytes": 1040,
+      "sha256": "869d30765e04636c83e3e3af3130ca9fd666e790b8c210dfd257c4e49fadef5b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 1
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_ld.cpp",
+      "bytes": 3692,
+      "sha256": "f331e94c581cf3b20387bbd0ea4fcd5c73ca7fe53ec39b4e5f6837b2455001cb",
+      "status": "read",
+      "read_chars": 3692
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_ld.py",
+      "bytes": 966,
+      "sha256": "b21b92ab9ed21dadddb770266d4b60b49a3a7522dc04c1c6f9d8ee0ff2731d4b",
+      "status": "read",
+      "read_chars": 966
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_m.cpp",
+      "bytes": 3665,
+      "sha256": "595a8552518f629f48ec1af6e4c89522a9f0fdee356b961dae9a04a541cb69e7",
+      "status": "read",
+      "read_chars": 3665
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_m.py",
+      "bytes": 967,
+      "sha256": "b51f67e1d351504b9b3ace86b9e9acef93f2fabbdca3dda0db2724861cb91ed4",
+      "status": "read",
+      "read_chars": 967
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_m_quad.cpp",
+      "bytes": 3906,
+      "sha256": "0f77b5ef564748ebd8bf998b4636e966eea34b75fafc99659ea72606a932a62f",
+      "status": "read",
+      "read_chars": 3906
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_m_quad.py",
+      "bytes": 1015,
+      "sha256": "132e81b87a0271fa4feedb49627ef5d4f18f0201bdeed5e60edd2acadc36cade",
+      "status": "read",
+      "read_chars": 1015
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_quad.cpp",
+      "bytes": 3933,
+      "sha256": "2a9fa7f709f945914ece20847988aae2e936c5e63dec6c3f965792a9047ee3fd",
+      "status": "read",
+      "read_chars": 3933
+    },
+    {
+      "path": "fold_surface_2026_09_05/half_quad.py",
+      "bytes": 1011,
+      "sha256": "a4df5da341fb49a77117619f3939d7eed3adc7526ebbeed204312eef3a4c2d2e",
+      "status": "read",
+      "read_chars": 1011
+    },
+    {
+      "path": "fold_surface_2026_09_05/increasing.log",
+      "bytes": 82067,
+      "sha256": "3d43ca0f8c2c22e321de6dc129f891b04ad19187c4d72a241a1760daf6b89353",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 504,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/infinity_binary128.json",
+      "bytes": 19735,
+      "sha256": "f301ca423ef2449517fe74c0a81a2e1fd418a7c2c7e9614686c7d8ee4b4409f2",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 13
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/infinity_tolerance_control.json",
+      "bytes": 2683,
+      "sha256": "f9eec2d6ed4a3913eb04518d9c2fe614ebc959ff0657e54ebd3a39ae6bfc10f9",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 2
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/large_m_full_reproduction.json",
+      "bytes": 18198,
+      "sha256": "9eaded55577a52ca25ff213a137f373fbea2afbe6ac78a13dd45bfbd00cd98e9",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 6,
+          "L=log(return_coordinate/r)": 6
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/log_derivative_controls.json",
+      "bytes": 4674,
+      "sha256": "c94dbdd3102be82bb4448f59d09bb71a312e983bff8f17fde68bcf4dfdc0b80b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 4
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/log_variational.py",
+      "bytes": 5028,
+      "sha256": "6a96af10a3262793604ac533432d3a195aaa02db940fcec86d3ba2869e69ebd0",
+      "status": "read",
+      "read_chars": 5028
+    },
+    {
+      "path": "fold_surface_2026_09_05/logm.log",
+      "bytes": 92894,
+      "sha256": "80fc661404520844549326648262562a5234a6df7a9ece87d8b4b09dc951bb6d",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 387,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/long_double_control.json",
+      "bytes": 1757,
+      "sha256": "476a4572ed7c9dde949ad7e79ddf4b6bee3091f0265e8597e263ec9905966ece",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 2
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/m.log",
+      "bytes": 49010,
+      "sha256": "09539a848d9863bad1fe1efbdf5021f936f4c96842b8add08ddbe975827dd49b",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 218,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/negative.log",
+      "bytes": 143043,
+      "sha256": "9629f05a2f5247a291214d513b8ee20bb8f641191ae8c15fc79e7f3eea2395d7",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 677,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/negative_recheck.log",
+      "bytes": 1563,
+      "sha256": "5b6a1a00e7ed07e993cda5844d4cbb72df307829674d85cdf59329cbd2560267",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 0,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/outcome_recheck.log",
+      "bytes": 9434,
+      "sha256": "62718592460a13bf4356f8a59e143fa26be90fff442e6b89971fbccfc6dfaca4",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 18,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/outermost_replay.py",
+      "bytes": 725,
+      "sha256": "1cd7e53e87abcbc944bdd601680da12fcf954124c14ed865d6640d5071fe1780",
+      "status": "read",
+      "read_chars": 725
+    },
+    {
+      "path": "fold_surface_2026_09_05/pair_replay_claims.json",
+      "bytes": 42541,
+      "sha256": "7eae3d9ef80c9a31570315e1b796666eea58ecb1b8f2cf512fdb340fd99cbb3b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 31
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/polish_replay_roots.py",
+      "bytes": 2342,
+      "sha256": "863216cc39487782edccb02b28b60493b3182c605584c55de4fff1973a365d2b",
+      "status": "read",
+      "read_chars": 2342
+    },
+    {
+      "path": "fold_surface_2026_09_05/polished.log",
+      "bytes": 3620,
+      "sha256": "018b1d9ef1e0e2b82360541ca6872e2b21c23eda6c626fc0459741bf6f8ac738",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 13,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/positive_last.log",
+      "bytes": 34928,
+      "sha256": "8863815ee7ce211adf924b896eb951276052608b5ef9054ee68b9ca12d3d9a27",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 135,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/quad.log",
+      "bytes": 52812,
+      "sha256": "f00d14f96f57c4b2116893c01e50aa7722cc7f1791bd202af604b48e3d834ecc",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 204,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/quad_control.json",
+      "bytes": 2542,
+      "sha256": "371789b43b0725be0b28a9fa358c15d69f8735ce006ec80e9923f6e936e8963f",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "multiplier_at_match=exp(G)": 2
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/refine_graphic.py",
+      "bytes": 662,
+      "sha256": "91aca4a4f446c88f988aeb67ea5407f621725e44264d740d9906e9a42fbd6d7c",
+      "status": "read",
+      "read_chars": 662
+    },
+    {
+      "path": "fold_surface_2026_09_05/render_results.py",
+      "bytes": 5887,
+      "sha256": "b393300f88ad077a2bb4f9717cfc8a7f3a674e43be08a42dc55a8d6db1e3fa68",
+      "status": "read",
+      "read_chars": 5875
+    },
+    {
+      "path": "fold_surface_2026_09_05/returns.jsonl",
+      "bytes": 5031998,
+      "sha256": "b6f03b454813d79fe71bbdb6aeb632568659f43f640dc58c84f27b0d21c7a8e2",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 3297,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {
+          "L=log(return_coordinate/r)": 262,
+          "multiplier_at_match=exp(G)": 1908
+        },
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/runtime.json",
+      "bytes": 266,
+      "sha256": "5dcefbde82faa2bff2da94bb7b6fbefa21c87dd24e15d5d33ef98af12865fbdf",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/source_manifest.json",
+      "bytes": 4696,
+      "sha256": "0c87194437aceacde22f14ca6e4d4926fec898992b56406fb2106dfec38eaca9",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_angular_review.md",
+      "bytes": 5682,
+      "sha256": "b982ae15c77de404102bbdd49f7e7050a737b0b147fcbb6947a42064ea061c7b",
+      "status": "read",
+      "read_chars": 5678
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_exact.json",
+      "bytes": 1145,
+      "sha256": "dabb3bbff99424bd456545ca99a85630c44ebe287bc509b52dbfe9415782cf16",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_exact.py",
+      "bytes": 7182,
+      "sha256": "93a2d3517a1dd4ff350ebe830c7971f1f8f57a95c4fdacac24393733137778cd",
+      "status": "read",
+      "read_chars": 7182
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_melnikov.json",
+      "bytes": 1238,
+      "sha256": "8cf93bb33e6e1de8878bef2e57be55ea943749b8d5dbe59da21da2f6a2b481f7",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_melnikov.py",
+      "bytes": 3098,
+      "sha256": "a0969d705cb9d1fe595a6510c30e6747b0fabb8b4071a4c93112571c97b63fe6",
+      "status": "read",
+      "read_chars": 3098
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_negative_checks.json",
+      "bytes": 21688,
+      "sha256": "504e8d1c7158056449f35a8169cb0110da2ad3916ae1bf4a074e3a0151f382bc",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_negative_checks.py",
+      "bytes": 4207,
+      "sha256": "25d66fb4330226d0e78eac599ff40c9c362864cb1a07f7d4b79ecf2318c41b25",
+      "status": "read",
+      "read_chars": 4207
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_negative_review.md",
+      "bytes": 8516,
+      "sha256": "e2d21044e337c38ccff152f6ffde69c59141e5185dfc826e60e4df81d1cb5b8b",
+      "status": "read",
+      "read_chars": 8496
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_notes.md",
+      "bytes": 23520,
+      "sha256": "39a60013fede427ed03dcccbd061d457908484c1935976a85a5d9ff4d0637bd4",
+      "status": "read",
+      "read_chars": 23511
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_outcome_audit.json",
+      "bytes": 9434,
+      "sha256": "62718592460a13bf4356f8a59e143fa26be90fff442e6b89971fbccfc6dfaca4",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_outcome_audit.py",
+      "bytes": 5002,
+      "sha256": "5a4bc7de021be71ae95471256013189ee84d01e18d4e5fb8b465d3b6b3e18729",
+      "status": "read",
+      "read_chars": 5002
+    },
+    {
+      "path": "fold_surface_2026_09_05/theory_outcome_review.md",
+      "bytes": 8219,
+      "sha256": "63611ab8c629756d11e502bdc21907b195484ebd4a4b63babbc6135b21237beb",
+      "status": "read",
+      "read_chars": 8219
+    },
+    {
+      "path": "fold_surface_2026_09_05/variational_return.py",
+      "bytes": 4350,
+      "sha256": "01a394ead9a17067d27732b350b80805fe582868676885c01e6fe1bfba224da5",
+      "status": "read",
+      "read_chars": 4350
+    },
+    {
+      "path": "kkl/.gitignore",
+      "bytes": 13,
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "status": "read",
+      "read_chars": 13
+    },
+    {
+      "path": "kkl/NEXT_BOUNDED_TEST.md",
+      "bytes": 3991,
+      "sha256": "3929bf77ce9df26890051018c29ffa52df3178eed7cdd0e2a929943d69222269",
+      "status": "read",
+      "read_chars": 3989
+    },
+    {
+      "path": "kkl/README.md",
+      "bytes": 3584,
+      "sha256": "9d40d4201acdd215f9c970c6a184e4b2214b6daa5f307fe24c7ffc46d2f6f14d",
+      "status": "read",
+      "read_chars": 3584
+    },
+    {
+      "path": "kkl/SHA256SUMS",
+      "bytes": 3028,
+      "sha256": "139be0e487f97006f4b890828828bfcfa936df98891f08f73431ae49292208fa",
+      "status": "read",
+      "read_chars": 3028
+    },
+    {
+      "path": "kkl/check_exact.py",
+      "bytes": 1602,
+      "sha256": "ee12f27f7db2720b6dd78ca7858862ac33cb39cce156d258b5de10899dd1750c",
+      "status": "read",
+      "read_chars": 1602
+    },
+    {
+      "path": "kkl/check_new_gate_review.py",
+      "bytes": 3226,
+      "sha256": "b88c6505c672d59718c33f762aa25bf41be813b5d598a02b8b889c89872cd3da",
+      "status": "read",
+      "read_chars": 3226
+    },
+    {
+      "path": "kkl/continue_path.py",
+      "bytes": 4528,
+      "sha256": "556ffb1bdf156b69c519aa419488b596eb0d796b58eed83aad2ece77fb2e5c9d",
+      "status": "read",
+      "read_chars": 4528
+    },
+    {
+      "path": "kkl/data/K_margin_c09_repaired.jsonl",
+      "bytes": 3446,
+      "sha256": "8882409588562491c91a1cc2a53b865d9ba2586d1ac22486f5e29dd42fe5aa46",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/K_margin_to_c09.jsonl",
+      "bytes": 17968,
+      "sha256": "aae4aca8e94aa424126871aaf93cd2bbe860a4369bed6ae417699665999f3227",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 6,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/K_margin_toward_boundary.jsonl",
+      "bytes": 16431,
+      "sha256": "a1a5573547340975fdf8a3bf1a81de5a00ad4693ab323802318a08837bfb48b9",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 5,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/c_gt_1_remote_controls.json",
+      "bytes": 5656,
+      "sha256": "ccb2914bdd50e28ee30e95137de6825b34734e9598f62a1449ca65f6cf4cc527",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/constant_K_path.jsonl",
+      "bytes": 22514,
+      "sha256": "c3fce9f7364b0f50fa8b28b9f572914f6f6ff6e395ad05fd6497b0275d3aea5a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 7,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/continuation_events.jsonl",
+      "bytes": 78950,
+      "sha256": "9886dbd5c0b3644720ee885684e8b7f40af1ae82f225b3154ee920ae16baf052",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 24,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/exact_controls.json",
+      "bytes": 311,
+      "sha256": "80aff554cb41d52db4f00f577cd50db34fef307ee7b05b55301ce8cabdbb3a90",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/fold_direction_at_boundary.json",
+      "bytes": 362,
+      "sha256": "f0083bf55def273d29ac85b8458f437a5165c47af4f27dcfadb8660180b59a1c",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/last_field_profile.json",
+      "bytes": 14363,
+      "sha256": "8dab4396daa0179f65e192c269323ece6421722e05cb87581973940e93a60ddf",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/last_inside_boundary.jsonl",
+      "bytes": 3572,
+      "sha256": "f3afe93018156a225746c1560b4f5960e7793a6ac91e215575c0b0774deb3d22",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/next_seed_geometry.json",
+      "bytes": 1821,
+      "sha256": "38b66b20387f955d960a4f51be919385e17fb73a3147e6e97ab95c715d2a4b8c",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/pilot_summary.json",
+      "bytes": 608,
+      "sha256": "499c85bced4b958e83a1de47a6d140e0d6f336dc78b27388feaebe278540c1c1",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/reduce_K.jsonl",
+      "bytes": 13035,
+      "sha256": "eed64941076cea099b67e2bf6898eff630364a431258cbf55b354dbfc9bc2cb9",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 4,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/remote_radius_boundary.json",
+      "bytes": 12674,
+      "sha256": "8f454b1fd0665cd4cdf584e7eb267cdf1cbe13b5b7f6d1777f76deece8d6ccad",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/returns.jsonl",
+      "bytes": 223114,
+      "sha256": "6512aee92e51455a0d17291535a4f6019885340463e31b1f53e9643dcb44c3fe",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 206,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/stationary_control.json",
+      "bytes": 4015,
+      "sha256": "51835a8331010361712ff68a2945384505c5cca6aef25539753262cccf9b0709",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/data/strike_summary.json",
+      "bytes": 1912,
+      "sha256": "2d71afa1f0b9274aad7a04abf7a7a1c67cfb79730d6f51e795b9a3f85d6ef9ea",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "kkl/follow_segment.py",
+      "bytes": 2854,
+      "sha256": "39805fa550a78200a5847e23c67abdb4e87ec1fd0106edaa0459f395e3696c0c",
+      "status": "read",
+      "read_chars": 2854
+    },
+    {
+      "path": "kkl/geometry.py",
+      "bytes": 2455,
+      "sha256": "5074c1d212ec416cf90f058a1f764f18467b2f91dc675c15d6b68aca3a368831",
+      "status": "read",
+      "read_chars": 2455
+    },
+    {
+      "path": "kkl/notes_geometry.md",
+      "bytes": 8826,
+      "sha256": "c6761957668b713f44016bf765047833f100335c290daf6c5f376c002b2dfac2",
+      "status": "read",
+      "read_chars": 8826
+    },
+    {
+      "path": "kkl/notes_lienard.md",
+      "bytes": 16837,
+      "sha256": "4c8667a6752b1b9b7741c13b89bd333f4d62d791e0987331b048cde9b352c7dc",
+      "status": "read",
+      "read_chars": 16833
+    },
+    {
+      "path": "kkl/notes_local_unfolding.md",
+      "bytes": 10461,
+      "sha256": "d5f45c1ebe4378f0dd7cbd54bdb5d2a5e5f34062621e9dd2cb0994c99ded2322",
+      "status": "read",
+      "read_chars": 10456
+    },
+    {
+      "path": "kkl/notes_new_gate_review.md",
+      "bytes": 8783,
+      "sha256": "76005ecd4a0f6f005841f875752d99f6b8011312267b9ec3a807aeb050fc05aa",
+      "status": "read",
+      "read_chars": 8783
+    },
+    {
+      "path": "kkl/notes_other_strata.md",
+      "bytes": 12630,
+      "sha256": "ffd17800408e0faca03831d709d51450ec802dfe2a5435068db911ac0211620f",
+      "status": "read",
+      "read_chars": 12629
+    },
+    {
+      "path": "kkl/notes_return_review.md",
+      "bytes": 20502,
+      "sha256": "6fa7699ebdbd1e3e7bf3fee8905a25417c2cddb1fd2f2be9466438049cec8c9c",
+      "status": "read",
+      "read_chars": 20496
+    },
+    {
+      "path": "kkl/pilot.py",
+      "bytes": 2160,
+      "sha256": "d016426c29d51a0be81a7478dcdcaf52b75f6e9e7fd5a0060140d682af4d1fdc",
+      "status": "read",
+      "read_chars": 2160
+    },
+    {
+      "path": "kkl/return_map.py",
+      "bytes": 6108,
+      "sha256": "8a291f6233a425117cd7f7626a5683837aa1da2e24a281bafdc2339bbc2127c9",
+      "status": "read",
+      "read_chars": 6108
+    },
+    {
+      "path": "kkl/summarize.py",
+      "bytes": 3479,
+      "sha256": "40932b48af6fb5e5be62916869d2cd09332660de434e1e2fb3a66347925e815a",
+      "status": "read",
+      "read_chars": 3479
+    },
+    {
+      "path": "q4/.gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "status": "read",
+      "read_chars": 19
+    },
+    {
+      "path": "q4/README.md",
+      "bytes": 2379,
+      "sha256": "0f86ca71fe52b23c3021f64311b46f427d049094dde2e31d8a796c354a672b1b",
+      "status": "read",
+      "read_chars": 2378
+    },
+    {
+      "path": "q4/check_N_kernel.py",
+      "bytes": 1614,
+      "sha256": "979d329fb5f695da5aebb4a2f435feeacd726967805429a2feba7af4f484980d",
+      "status": "read",
+      "read_chars": 1614
+    },
+    {
+      "path": "q4/check_fifth_loop_gate.py",
+      "bytes": 2129,
+      "sha256": "ae3c612304c9fb42e327129dfe9b409775b1633a1af06ada7e6fbb38f07f6556",
+      "status": "read",
+      "read_chars": 2129
+    },
+    {
+      "path": "q4/check_fifth_two_anchor.py",
+      "bytes": 1831,
+      "sha256": "4e5ceb3fcb35726e751332093cd3c31caa86f08615960e506e80a777e3af3e0d",
+      "status": "read",
+      "read_chars": 1831
+    },
+    {
+      "path": "q4/data/astra_verification.txt",
+      "bytes": 1462,
+      "sha256": "d1aaa242d898daacba13432bf3a18058a5a78729943c8d67b82dae6d7527f44a",
+      "status": "read",
+      "read_chars": 1462
+    },
+    {
+      "path": "q4/data/controls.json",
+      "bytes": 2149,
+      "sha256": "a77dd6deb45b3d0cb6d1414fa7ce34d862bb49013ff28389d700d5ef1a54d5e6",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/fifth_exact_checks.txt",
+      "bytes": 1292,
+      "sha256": "6eef59ea469d7a8491c1227e2cb8c2c473f224ecbf55fb83a2de193c5cc56c34",
+      "status": "read",
+      "read_chars": 1290
+    },
+    {
+      "path": "q4/data/fourth_exact_checks.txt",
+      "bytes": 795,
+      "sha256": "c23fcf0ece09fb6dd8d78ce28f1c03c4062a62de388852709ca932cc9d62e36e",
+      "status": "read",
+      "read_chars": 793
+    },
+    {
+      "path": "q4/data/second_green_shoot.json",
+      "bytes": 1732,
+      "sha256": "d0c1d67b9c1c1e5864d45ad5f06ddc24bfe1b50b9989f88d88cd46b917a82f54",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/second_lobe_certificate.json",
+      "bytes": 2796,
+      "sha256": "7da5bddf79c2ee97425747241503c466dfde63d11053d18b51058d5ff07eb139",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/second_spine_diagnostic.json",
+      "bytes": 9207,
+      "sha256": "978e81e61cfeb83299534128494b95d8efeb3aa0bef7883c90fc03d61f491e89",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/second_verification.txt",
+      "bytes": 15805,
+      "sha256": "b8d682c6638e5464dfd192a1120e5c41f02415990624f69c3f3518e7addfe0a2",
+      "status": "read",
+      "read_chars": 15803
+    },
+    {
+      "path": "q4/data/smoke.json",
+      "bytes": 2728,
+      "sha256": "0555fa0627aa8b0d0bd606385edb4b1ae47a738ff11a39d8e8e9204514f51498",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_confluent_shoot.json",
+      "bytes": 2018,
+      "sha256": "807c7d69951b9f64a5e75912f6894227084a0201f4352be01f2e5e97525a6a58",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_independent_checks.json",
+      "bytes": 1283,
+      "sha256": "1ab9e4183737bed429852cee28b630d49a04a11578d995ecb875d75bc7c437cc",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_initial_shoot.json",
+      "bytes": 28599,
+      "sha256": "5e6c456bb3e139d78396c9818dba24bd4b29566cc20e1d3e02f2a0502e0325b4",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_reverse_tangency.json",
+      "bytes": 3339,
+      "sha256": "8540c330a3b6ed4caca28f391fa9a364a2b3ecddbf51a33200fc2c1b9ec144ec",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_shape_shoot.json",
+      "bytes": 6841,
+      "sha256": "edd48527b3bb9e7a33e879a571a4b4527e9620826410c1594901beebb5b20d8b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_threshold_certificate.json",
+      "bytes": 2864,
+      "sha256": "91b47c47d1862c42639e862f38437b5d20ff0212296265f4bdea24a518d3bb94",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_tuned_shoot.json",
+      "bytes": 11094,
+      "sha256": "c4291d0bec9fa16aabc892be9ae1390c5920a91daaac244f4a198152ed280734",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/data/third_verification.txt",
+      "bytes": 4418,
+      "sha256": "a4417267e5abb8b47f1466554fd85bac4ad153990e90298fdacab14d45a2f30f",
+      "status": "read",
+      "read_chars": 4416
+    },
+    {
+      "path": "q4/notes_N_compact.md",
+      "bytes": 9607,
+      "sha256": "d5863fb8dbac080345586edd00196798542286dca51859b08fc5eab9600126e7",
+      "status": "read",
+      "read_chars": 9603
+    },
+    {
+      "path": "q4/notes_N_double.md",
+      "bytes": 6947,
+      "sha256": "6af68a44f225ac09b308b136c379ded04d788ac5ccf5a5bf56c92e640fed6fd0",
+      "status": "read",
+      "read_chars": 6947
+    },
+    {
+      "path": "q4/notes_N_loop.md",
+      "bytes": 9924,
+      "sha256": "16141467ddbc028455fa2c7a10d12baad69a9bd4839ba05c669021b19879e06f",
+      "status": "read",
+      "read_chars": 9924
+    },
+    {
+      "path": "q4/notes_audit.md",
+      "bytes": 7843,
+      "sha256": "a96f976c695e78067f3cd1bdc53b12df12aaaaa7b4e3595631030da6eeea7c36",
+      "status": "read",
+      "read_chars": 7843
+    },
+    {
+      "path": "q4/notes_audit_third.md",
+      "bytes": 11731,
+      "sha256": "45c0f464e20676870e37e73e77de9ace3896dd658dc6863053e0e8be41dc8fbd",
+      "status": "read",
+      "read_chars": 11731
+    },
+    {
+      "path": "q4/notes_certificate_second.md",
+      "bytes": 10480,
+      "sha256": "c7b8692149b305ab478742010012936ea4476371d10fc7c35ec0e3512f946f86",
+      "status": "read",
+      "read_chars": 10480
+    },
+    {
+      "path": "q4/notes_fifth_green.md",
+      "bytes": 8611,
+      "sha256": "2ed9909e594025c3a6a2c8c46cf70da9ad61037485ac534f5b8e7a77586c61bd",
+      "status": "read",
+      "read_chars": 8611
+    },
+    {
+      "path": "q4/notes_fifth_loop_gate.md",
+      "bytes": 3506,
+      "sha256": "0c902990f6e4fefc46dae3e710917f6984157aec23fee909123426590defd5c0",
+      "status": "read",
+      "read_chars": 3506
+    },
+    {
+      "path": "q4/notes_fifth_original_height.md",
+      "bytes": 5515,
+      "sha256": "45e66624f4dffa6ba8878f7571a0180466b6f8a6aef34e6c993fbbd9a8711c51",
+      "status": "read",
+      "read_chars": 5515
+    },
+    {
+      "path": "q4/notes_fifth_sign_chain.md",
+      "bytes": 13134,
+      "sha256": "85b508923761066c36633b0266d67e977157de30a6107aed57f95c7ad044256d",
+      "status": "read",
+      "read_chars": 13134
+    },
+    {
+      "path": "q4/notes_fifth_two_anchor.md",
+      "bytes": 14313,
+      "sha256": "31cf635a2eada44b2a5902a55992a449be8c42d4675e3f2f869ee965a36c4437",
+      "status": "read",
+      "read_chars": 14307
+    },
+    {
+      "path": "q4/notes_geometry.md",
+      "bytes": 15974,
+      "sha256": "1c2c53360a489df36bd90ae89cbed12500115c8f7cccc6b2d545cdcfa10bc9e9",
+      "status": "read",
+      "read_chars": 15968
+    },
+    {
+      "path": "q4/notes_green_third.md",
+      "bytes": 13789,
+      "sha256": "139a078a75f55a1a79818b25c4ca3208e485f595a12ef0a5a66e14694027ad79",
+      "status": "read",
+      "read_chars": 13650
+    },
+    {
+      "path": "q4/notes_lobe_second.md",
+      "bytes": 17098,
+      "sha256": "4d1afe0e550a5ed9b5fddbc305ef49e68a4e1fe1d419fa1b18faac28198d9003",
+      "status": "read",
+      "read_chars": 17098
+    },
+    {
+      "path": "q4/notes_pf.md",
+      "bytes": 14557,
+      "sha256": "024ae2267e34e65aef059ac1a0066dc7a31967c9a7622054e4025498f9b4e996",
+      "status": "read",
+      "read_chars": 14355
+    },
+    {
+      "path": "q4/notes_reconstruction_second.md",
+      "bytes": 19982,
+      "sha256": "9a749d26ee169100dc432bb81a256f268f35baef6427e42c0398166c0a4d5c67",
+      "status": "read",
+      "read_chars": 19777
+    },
+    {
+      "path": "q4/notes_threshold_third.md",
+      "bytes": 9810,
+      "sha256": "6bc3e7d6ac2b728fb1a698f36f3851b5eb59802689f19c4a5c104382513636da",
+      "status": "read",
+      "read_chars": 9810
+    },
+    {
+      "path": "q4/poincare_candidate.schema.json",
+      "bytes": 921,
+      "sha256": "19e270fda1488655f753e435c688a8ee67f7b97db83c456cd541d028284e6bbe",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "q4/q4_N_loop_checks.py",
+      "bytes": 1844,
+      "sha256": "16845b2af882bdccdf1e4e90f9f20178650f2e477eba4c47cc23a4824d0cd750",
+      "status": "read",
+      "read_chars": 1844
+    },
+    {
+      "path": "q4/q4_controls.py",
+      "bytes": 4517,
+      "sha256": "668f7def654bc486f317cdb80b71d9a01da7638f74a6b6d3e455d7a22ebcf07f",
+      "status": "read",
+      "read_chars": 4517
+    },
+    {
+      "path": "q4/q4_fifth_green_checks.py",
+      "bytes": 1997,
+      "sha256": "825647060e83f831f639ec75ff604d6237fceb079c957c7e75680647258bda85",
+      "status": "read",
+      "read_chars": 1997
+    },
+    {
+      "path": "q4/q4_green_boundary_3.py",
+      "bytes": 2586,
+      "sha256": "fc403791ec6d35e48ef1bb730a534c57edd39b7e07a34164a4089ec9ec4b255c",
+      "status": "read",
+      "read_chars": 2586
+    },
+    {
+      "path": "q4/q4_green_endpoint_third.py",
+      "bytes": 3309,
+      "sha256": "e859b137afd7bc3147170433e053baf9689e1aa0dfb57e47e75b39831bad2688",
+      "status": "read",
+      "read_chars": 3309
+    },
+    {
+      "path": "q4/q4_green_max_3.py",
+      "bytes": 5852,
+      "sha256": "3f89f53f16293afd865caa67afc40aa1e1b22bb783719778ec5eeeaaaf8afd79",
+      "status": "read",
+      "read_chars": 5852
+    },
+    {
+      "path": "q4/q4_green_shoot.py",
+      "bytes": 2988,
+      "sha256": "60439f0b52dfbc9eb729633963cef4b5914a802eb7ba9cc25dbe2bd721eb220a",
+      "status": "read",
+      "read_chars": 2988
+    },
+    {
+      "path": "q4/q4_integrals.py",
+      "bytes": 9340,
+      "sha256": "28a87f95dc9b721e350b69cf7f3f2a9bf5b77f5ed91a6bac618075ae35106e46",
+      "status": "read",
+      "read_chars": 9340
+    },
+    {
+      "path": "q4/q4_lobe_anchors.py",
+      "bytes": 5627,
+      "sha256": "2ae2c12dc613120c7a2b657495dc31e239cabdbe1bc161221bfc40ff8c5010c6",
+      "status": "read",
+      "read_chars": 5627
+    },
+    {
+      "path": "q4/q4_lobe_certificate.py",
+      "bytes": 6656,
+      "sha256": "6ae3cef2ffc9307f35da8295173e8b81bf05400d3d7e4a3f73e86226ff3ae085",
+      "status": "read",
+      "read_chars": 6656
+    },
+    {
+      "path": "q4/q4_reconstruction.py",
+      "bytes": 7740,
+      "sha256": "1195e9536251d97e907e13956328b6bf62efe80c11d9991f6443da2b30c1eae4",
+      "status": "read",
+      "read_chars": 7740
+    },
+    {
+      "path": "q4/q4_reverse_tangency_third.py",
+      "bytes": 5970,
+      "sha256": "797a4eed85bde6603a6af35318a488589c23468639e929802dcc3c61be5e6d2b",
+      "status": "read",
+      "read_chars": 5970
+    },
+    {
+      "path": "q4/q4_search.py",
+      "bytes": 10156,
+      "sha256": "6a349537a23334b03c93a1061b3366a1d2ce51f818ed6280545b634e68309a5e",
+      "status": "read",
+      "read_chars": 10156
+    },
+    {
+      "path": "q4/q4_structure_checks.py",
+      "bytes": 3316,
+      "sha256": "b43f22b5cc26693058844cf1288d4d970519d846fc3708807eb3fa29a0df7ae5",
+      "status": "read",
+      "read_chars": 3316
+    },
+    {
+      "path": "q4/q4_third_independent.py",
+      "bytes": 2225,
+      "sha256": "8b953d496f9ac5fccaffff07e2091a8be392d89bd4b42c2310311dbd240e96ac",
+      "status": "read",
+      "read_chars": 2225
+    },
+    {
+      "path": "q4/q4_threshold_path.py",
+      "bytes": 6864,
+      "sha256": "6c8d1e0deda164d2db12622e6b8b5ffdd08cbafb4d8ea45a9996eefa27b13d07",
+      "status": "read",
+      "read_chars": 6864
+    },
+    {
+      "path": "q4/requirements.txt",
+      "bytes": 87,
+      "sha256": "5f3f4af9bbb8163dd91d3e6ec3f66d8023eceddb1e2d287de7128a99b05d53a5",
+      "status": "read",
+      "read_chars": 87
+    },
+    {
+      "path": "q4/strike_completion_audit.md",
+      "bytes": 3576,
+      "sha256": "d94be6d29b2dac3168ba0337b8dcb406b02430c9faec71beb8c28153f9862067",
+      "status": "read",
+      "read_chars": 3576
+    },
+    {
+      "path": "q4/test_q4.py",
+      "bytes": 2752,
+      "sha256": "637ca439849f644b422875639d5c20251da0a8edf9cd9a98b41f7a29667e55e5",
+      "status": "read",
+      "read_chars": 2752
+    },
+    {
+      "path": "q4/test_q4_second.py",
+      "bytes": 3791,
+      "sha256": "b6ea162bbb317a41d5e1d0f0275d48026d0fe14908978f7af0ea15888891fa52",
+      "status": "read",
+      "read_chars": 3791
+    },
+    {
+      "path": "q4/test_q4_third.py",
+      "bytes": 3438,
+      "sha256": "a3580523d068be4c2e700fa0024784e6ef7986045f4f7f06d31f67c38e83dfc6",
+      "status": "read",
+      "read_chars": 3438
+    },
+    {
+      "path": "q4/third_completion_audit.md",
+      "bytes": 12539,
+      "sha256": "5de7ed5d51688907510e1cc0b06c56f71792a12d50d5ec4896ab21bb40619ce8",
+      "status": "read",
+      "read_chars": 12539
+    },
+    {
+      "path": "q4/zero_certificate.schema.json",
+      "bytes": 1661,
+      "sha256": "02923025e995ed6aa7039fb1c8c0944df7db001fb49c34ff3064659b477a2bbf",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/.gitignore",
+      "bytes": 13,
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "status": "read",
+      "read_chars": 13
+    },
+    {
+      "path": "reversible_reseed/README.md",
+      "bytes": 1747,
+      "sha256": "89dc7d28f34b06ed4fb0e19113b32a0a4e13dff4f03240a717feb628f4b51203",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/boundary_search.py",
+      "bytes": 2753,
+      "sha256": "13c2edc3950209726b58c01b80ca7c6bf209e9bc9b87e06740fee4da6db549e0",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/check_arrangement.py",
+      "bytes": 889,
+      "sha256": "ffce858bc240fa506ecaf4fdd775d15c9e0bd462dfbe856bda1bc7db5a337e77",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/check_geometry.py",
+      "bytes": 4272,
+      "sha256": "769e236000cefa19d55f50b62a41c996f9f6fdb66075c72489bf035cf665a0c4",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/data/MANIFEST.json",
+      "bytes": 2321,
+      "sha256": "831fc6affc6029aaff44d80e7d81e5f63c81b57191b1dde16bb829b01b3712bd",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/arrangement_controls.json",
+      "bytes": 1324,
+      "sha256": "db9f6c93d9586d4412215bf8e4ddcebc02bc6633ec1bd49e5303d3d7a7d4f395",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/boundary_search.json",
+      "bytes": 146070,
+      "sha256": "ed545bdde19eb1eea85e0fb31bb98bd16f2adc39690c93632100521a2b1d5eaa",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/boundary_search.log",
+      "bytes": 2695,
+      "sha256": "45b9aa35878166fa1852199b63d41f8a1cfa48608fe1dfaf1e98d7bbc29551da",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 10,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/control_search.json",
+      "bytes": 14744,
+      "sha256": "9f9e5c79a73acd6565fbe1b737b8b683ef0662ae124771ed2ca5f96f2c91b3a3",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/geometry.json",
+      "bytes": 1107,
+      "sha256": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/geometry.log",
+      "bytes": 1107,
+      "sha256": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/moment_search.json",
+      "bytes": 784089,
+      "sha256": "206fb349e76ca738c27f21eddae4c4775e488a48a73766f54d90014e685a7039",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/moment_search.log",
+      "bytes": 16426,
+      "sha256": "57ab700662732a41893a1733a34b6bacc14ec03e8bce5bd17e7498c6b41fe6e4",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 54,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/verified_control.json",
+      "bytes": 11905,
+      "sha256": "12a00100b339693ad7e228f2bacd93d1029a416dee2c2386a9881613db60f58d",
+      "status": "read",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "read_chars": 11905,
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/data/verify_control.log",
+      "bytes": 9281,
+      "sha256": "5225b19ad29f2b1ee9b920d8fcc821106485b811654e179faf2e697225876a90",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 30,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "reversible_reseed/moment_search.py",
+      "bytes": 6888,
+      "sha256": "2a3207445575f86954d30a0f81fd154986887a7c2fce37cfd0ea6aedeedf0eda",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/requirements.txt",
+      "bytes": 47,
+      "sha256": "e665dc7ab0ba53cedc9c54091926e59eab2ac4df2f788ec0ecf813b715fc24e0",
+      "status": "read"
+    },
+    {
+      "path": "reversible_reseed/verify_control.py",
+      "bytes": 4348,
+      "sha256": "5587cc45560968aca9741acec3cad88d76eb2f68e69ca8473ce6af497d2b8f0b",
+      "status": "read",
+      "read_chars": 4348
+    },
+    {
+      "path": "review_2026_09_05/COVERAGE_AUDIT.md",
+      "bytes": 21686,
+      "sha256": "32f17c0e941385d8e4f17d1a68b693cedf89cd7ef64f57fc4b9b67ece9de845d",
+      "status": "read",
+      "note": "Combined output was truncated. Re-read in bounded chunks before marking read.",
+      "read_chars": 21648
+    },
+    {
+      "path": "review_2026_09_05/EVIDENCE_MANIFEST.json",
+      "bytes": 723,
+      "sha256": "adc0edf962c04c99e7de767ea98dd3e42c782a1347df7794aa24ac96f3f607fc",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "review_2026_09_05/FRONTIER_AUDIT.md",
+      "bytes": 17559,
+      "sha256": "15eb62b7119354d80c3631277062310679071b29ad089f215af0032b7dd75b2e",
+      "status": "read"
+    },
+    {
+      "path": "review_2026_09_05/KKL_NEXT_CONSTRUCTION.md",
+      "bytes": 16826,
+      "sha256": "d5fb468419a81c5b8ac45997abb2cf1062cbec3e1bd31839948f692f13358ef1",
+      "status": "read",
+      "read_chars": 16817
+    },
+    {
+      "path": "review_2026_09_05/KKL_SECTION_REPAIR.md",
+      "bytes": 5670,
+      "sha256": "87874fc7364d876d221ce811c768bc7a9d7b6025390e4cc8969fd58a355b8acb",
+      "status": "read",
+      "read_chars": 5670
+    },
+    {
+      "path": "review_2026_09_05/README.md",
+      "bytes": 1659,
+      "sha256": "1d732eba29fde7108d56674d30cd6e06721e6c0c3ea933a5599a318622240207",
+      "status": "read",
+      "read_chars": 1659
+    },
+    {
+      "path": "review_2026_09_05/check_nullcline_section.py",
+      "bytes": 1233,
+      "sha256": "e342b01533621dd206c0aeeaf92af1a5cb520ea1e247daa32351ad26a873351e",
+      "status": "read",
+      "read_chars": 1233
+    },
+    {
+      "path": "review_2026_09_05/export_visible_transcript.py",
+      "bytes": 6677,
+      "sha256": "38e111275c150760ea7e5bc41e499baa5e5ddb577174453eb7a9027037e1224a",
+      "status": "read",
+      "read_chars": 6667
+    },
+    {
+      "path": "review_2026_09_05/nullcline_exact_check.txt",
+      "bytes": 154,
+      "sha256": "dfa1b310f1042d2e18648be70de6ed9134a0afc8774c43026266cbc49af3cbf7",
+      "status": "read",
+      "read_chars": 154
+    },
+    {
+      "path": "staged_2026_09_05/MANIFEST.json",
+      "bytes": 4310,
+      "sha256": "970cc940e1c9b12ddbd8a38896bba8e8e496113edfb5b94f44c9579dae86dded",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/PROFILE_SIGNS.md",
+      "bytes": 1029,
+      "sha256": "a949be8db99d2ba40a2cec535945496b316ed042312859fce756b318d5b189b0",
+      "status": "read",
+      "read_chars": 893
+    },
+    {
+      "path": "staged_2026_09_05/budget.py",
+      "bytes": 1910,
+      "sha256": "2329a5ee34620310b5e9dbb3d599ffd0317aa5fe8a7e4ce1230f032ad1df9c4b",
+      "status": "read",
+      "read_chars": 1910
+    },
+    {
+      "path": "staged_2026_09_05/cartesian_check.py",
+      "bytes": 2047,
+      "sha256": "9425689434ae2c193d3a23554d1852e76facb3d9c9d4ae26f5a802cba5325abe",
+      "status": "read",
+      "read_chars": 2047
+    },
+    {
+      "path": "staged_2026_09_05/compact_return.py",
+      "bytes": 5765,
+      "sha256": "9e991ccd03cc847db2f9a1b6a9f82723b84043a1432a773a70da2f2bfb557d99",
+      "status": "read",
+      "read_chars": 5765
+    },
+    {
+      "path": "staged_2026_09_05/compact_return_v1.py",
+      "bytes": 5138,
+      "sha256": "3e5a2591309840f63b43aa9c74499ee572133654f1e8903ba27afd36eead3dd2",
+      "status": "read",
+      "read_chars": 5138
+    },
+    {
+      "path": "staged_2026_09_05/controls.json",
+      "bytes": 12946,
+      "sha256": "9360397d61f3ac8b1234898ca7100b57e24cb1adc6be52383a43a2523e9c8a9a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/derivative_validation.json",
+      "bytes": 3737,
+      "sha256": "2beb4be1fff65664f3c855dfc5e11d483825fd0b0733a02e48181486a2f8d1b3",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/final_verification.json",
+      "bytes": 4886,
+      "sha256": "d80fb7c9b70dace38d20d6ba136b9a9268dac2a10924075e0fb3541e1cb32a0a",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/finalize_kkl.py",
+      "bytes": 2699,
+      "sha256": "db76e01f680c2dfbc193586e44e3d32e4cd029c10090c4639837372118a392e3",
+      "status": "read",
+      "read_chars": 2699
+    },
+    {
+      "path": "staged_2026_09_05/fold_attempts.json",
+      "bytes": 42532,
+      "sha256": "5e59e134e76baa9a6787ab84f699adcc10f022a9a75c59acc80545abe5b4f742",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/fold_followup.json",
+      "bytes": 14256,
+      "sha256": "57a3d1a0d080698418f020f7dc127ee8eb9a044f8a7088defdd2f658d1c28be2",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/fold_followup.log",
+      "bytes": 3701,
+      "sha256": "3ed5a945c4af09e4fd173e760845cdfdb731dd5b2983f33c5af6d21b9d3473e2",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 24,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/fold_pair_coefficients.json",
+      "bytes": 641,
+      "sha256": "c6002d1d3d9e65adffa5f40f3a9e0fca4340f4f03eea275bcdc306d2088975da",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/fold_refined_candidate.json",
+      "bytes": 4284,
+      "sha256": "4d27f31a9f4552274abba42bd4853beb5d0c8b6cb8c055ae4e69960bad528f55",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/fold_scope_review.md",
+      "bytes": 6558,
+      "sha256": "f9035991d32a2e2837ff63c5d75816279088e83022f9d7d7061223b7196333c3",
+      "status": "read",
+      "read_chars": 6558
+    },
+    {
+      "path": "staged_2026_09_05/infinity_check.py",
+      "bytes": 2194,
+      "sha256": "a2eac2d9cafda8c953e789df3746fe42a4aee900a5230ae01c8eefd743084577",
+      "status": "read",
+      "read_chars": 2194
+    },
+    {
+      "path": "staged_2026_09_05/kkl_returns.jsonl",
+      "bytes": 503173,
+      "sha256": "1aacd7b8fe7d6aea66317a949d8098c4e6cdf75a9f704634ed63b3ed6d810f59",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 400,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/profile_run.log",
+      "bytes": 25775,
+      "sha256": "b872add4c0515f75f2759b5182af4a23047e92491910e824ecb1b33ba63f15d4",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 162,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/profiles.json",
+      "bytes": 176079,
+      "sha256": "5187a74d195cb25d1532b6e43f2b36fe3507e713492bfa38d376cfccad8960e3",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/refine_kkl.py",
+      "bytes": 3177,
+      "sha256": "d2b5831e92f92bf6d78c4efd07a74de91c06f89f5453c27687eac23d88b6fe2b",
+      "status": "read",
+      "read_chars": 3177
+    },
+    {
+      "path": "staged_2026_09_05/return_review.md",
+      "bytes": 12810,
+      "sha256": "af50378a7c3955423de9eea73c65bd905b71e2d7c8de1f69d6363df8bbf4515b",
+      "status": "read",
+      "read_chars": 12802
+    },
+    {
+      "path": "staged_2026_09_05/run_kkl.py",
+      "bytes": 5832,
+      "sha256": "55abd29da995df302155d6105c707aa6694358058cbfb4711206d1fdd726a2e2",
+      "status": "read",
+      "read_chars": 5832
+    },
+    {
+      "path": "staged_2026_09_05/shi_continuation.json",
+      "bytes": 31248,
+      "sha256": "fc00660d331084b7f2d7f7773005567b7e93155cc9ab96e742e3624d9f531490",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/shi_mp_verify.py",
+      "bytes": 2807,
+      "sha256": "0f6a437f61eb521f052fc80cc96ce0472048c0b8de8ca7f1f7476aba1219448c",
+      "status": "read",
+      "read_chars": 2807
+    },
+    {
+      "path": "staged_2026_09_05/shi_returns.jsonl",
+      "bytes": 92328,
+      "sha256": "1b0f2e1b5ee398f1a1b7e6dbd9ac6e4eac9cea78ea5929c421cf93e524585373",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 150,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/shi_run_continuation.py",
+      "bytes": 2583,
+      "sha256": "932a3d003c7fbb4bf04ee5d26a561d61278d973756592df36a94924517a4edd7",
+      "status": "read",
+      "read_chars": 2583
+    },
+    {
+      "path": "staged_2026_09_05/shi_trace.py",
+      "bytes": 5254,
+      "sha256": "47225ea521bc91d985711c285df9171e00d6b3490d366a57553dcaea3ba5831e",
+      "status": "read",
+      "read_chars": 5254
+    },
+    {
+      "path": "staged_2026_09_05/terminal_followup.json",
+      "bytes": 32288,
+      "sha256": "96dfc25bd34c4a413e127da09bfd2fe2816da3e38764ae3d11417f3853897d44",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/terminal_followup.log",
+      "bytes": 3529,
+      "sha256": "bb19f71142f3cf1601a741b9bd33e765399869697f0b850bd2a23acf0af689a6",
+      "status": "pending",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 22,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "unstructured_text_read": true,
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/terminal_path.json",
+      "bytes": 137229,
+      "sha256": "a78a98c7fc0aa36437bb5ed668918ff39daf47cf21b1d8da3ce3041b4bed8a51",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/theory_exact_checks.json",
+      "bytes": 988,
+      "sha256": "983b3e97cd01f8fdfc9ac275c8cd7b5c19545c68b2d32348eb46f4263dfea002",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    },
+    {
+      "path": "staged_2026_09_05/theory_exact_checks.py",
+      "bytes": 3037,
+      "sha256": "49eb83e71d945767204c4581cc9fb3f89510f72e912c0ab105106c5f88ba755f",
+      "status": "read",
+      "read_chars": 3037
+    },
+    {
+      "path": "staged_2026_09_05/validate_artifacts.py",
+      "bytes": 3224,
+      "sha256": "1ff9051602f80d7c5f19de30ac68afb3e7b9d913ca5b14ab004d05ab6770cb76",
+      "status": "read",
+      "read_chars": 3224
+    },
+    {
+      "path": "staged_2026_09_05/validation.json",
+      "bytes": 602,
+      "sha256": "9ce5e324d7948647382f733198e4bcdd05c8713a78d5c7b24d1d257d1561298b",
+      "status": "pending",
+      "machine_inspection": "All JSON records parsed and recursive scalar/type/flag inventory; no parse failures or nonfinite floats. Not mathematical verification.",
+      "machine_semantic_inspection": {
+        "all_structured_records_traversed": true,
+        "structured_records": 1,
+        "schemas_and_numeric_ranges_saved": true,
+        "identity_checks": {},
+        "identity_flags": 0,
+        "scope": "Structural and arithmetic consistency only; not mathematical verification or full human reading."
+      },
+      "extracted_text_review": "Read deduplicated nonnumeric annotations, excluding timestamps, hash fields and parameter subfields; does not mean every raw value has been manually read."
+    }
+  ]
+}

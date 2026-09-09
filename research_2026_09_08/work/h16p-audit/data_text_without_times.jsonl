@@ -1,0 +1,590 @@
+{"text": "NON-RIGOROUS NUMERICAL CONTROL; NOT A CERTIFICATE", "first_occurrence": ["controls/four_cycle_control.json", "$.status", 1], "occurrences": 1}
+{"text": "y + x^2 + x*y", "first_occurrence": ["controls/four_cycle_control.json", "$.system.dx", 1], "occurrences": 1}
+{"text": "-10*x^2 + 2.2*x*y + 0.7*y^2 - 72.7778*x + 0.0015*y", "first_occurrence": ["controls/four_cycle_control.json", "$.system.dy", 1], "occurrences": 1}
+{"text": "DOP853 plus Brent roots of a downward y=0 return map", "first_occurrence": ["controls/four_cycle_control.json", "$.method", 1], "occurrences": 1}
+{"text": "1.17.0", "first_occurrence": ["controls/four_cycle_control.json", "$.scipy_version", 1], "occurrences": 4}
+{"text": "y=0, downward crossing", "first_occurrence": ["controls/four_cycle_control.json", "$.cycles[].section", 4], "occurrences": 4}
+{"text": "stable", "first_occurrence": ["controls/four_cycle_control.json", "$.cycles[].stability", 2], "occurrences": 94}
+{"text": "unstable", "first_occurrence": ["controls/four_cycle_control.json", "$.cycles[].stability", 2], "occurrences": 94}
+{"text": "fixed-focus augmented cusp residual", "first_occurrence": ["fold_closure_2026_09_05/cusp.log", "$.purpose", 4], "occurrences": 8}
+{"text": "finite-difference augmented cusp Jacobian", "first_occurrence": ["fold_closure_2026_09_05/cusp.log", "$.purpose", 12], "occurrences": 24}
+{"text": "NUMERICAL_TWO_HALF_PASSAGES", "first_occurrence": ["fold_closure_2026_09_05/cusp.log", "$.result.status", 16], "occurrences": 6459}
+{"text": "positive horizontal ray matched on negative ray", "first_occurrence": ["fold_closure_2026_09_05/cusp.log", "$.result.section", 16], "occurrences": 4498}
+{"text": "AUGMENTED_STEP", "first_occurrence": ["fold_closure_2026_09_05/cusp_attempt.json", "$.records[].status", 4], "occurrences": 4}
+{"text": "(-14465*c**3 + 47192*c**2 - 56089*c + 22570)/(50*c*(5*c - 8))", "first_occurrence": ["fold_closure_2026_09_05/exact_checks.log", "$", 1], "occurrences": 2}
+{"text": "EXACT_IDENTITIES_ONLY", "first_occurrence": ["fold_closure_2026_09_05/generalized_exact.json", "$.status", 1], "occurrences": 1}
+{"text": "(B*c*m - 10*B - m - 20)/(8*m**(3/2))", "first_occurrence": ["fold_closure_2026_09_05/generalized_exact.json", "$.focus_coefficient", 1], "occurrences": 1}
+{"text": "B**2*c**2 + B**2*c - 2*B*c**2 - B*c - B + 40*c**3 - 28*c - 10", "first_occurrence": ["fold_closure_2026_09_05/generalized_exact.json", "$.center_parity_polynomial", 1], "occurrences": 1}
+{"text": "2*(B - 1)**2", "first_occurrence": ["fold_closure_2026_09_05/generalized_exact.json", "$.center_projection_at_c1", 1], "occurrences": 1}
+{"text": "6*g1*g2*(g1*h2 - g2*h1)/(g1 + g2*r)**4", "first_occurrence": ["fold_closure_2026_09_05/generalized_exact.json", "$.angular_velocity_third_derivative", 1], "occurrences": 1}
+{"text": "outermost pair complete-return sign check", "first_occurrence": ["fold_closure_2026_09_05/outermost.log", "$.purpose", 3], "occurrences": 6}
+{"text": "NUMERICAL_ONLY", "first_occurrence": ["fold_closure_2026_09_05/outermost.log", "$.result.status", 3], "occurrences": 5104}
+{"text": "positive horizontal ray; clockwise", "first_occurrence": ["fold_closure_2026_09_05/outermost.log", "$.result.section", 3], "occurrences": 125}
+{"text": "exact rational SymPy; zero ODE calls", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.arithmetic", 1], "occurrences": 1}
+{"text": "-5*(x + 1)**2*(10*c**2*x - 16*c*x - 11*c + 5)/(11*c - 5)", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.N_K_derivative", 1], "occurrences": 1}
+{"text": "21*(25*c**2 - 396*c + 305)/(25*(5*c**2 - 19*c + 5))", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.positive_root_coefficient_thresholds[]", 1], "occurrences": 1}
+{"text": "4*(-1375*c**3 + 6529*c**2 - 13445*c + 7625)/(25*(20*c**2 - 43*c + 5))", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.positive_root_coefficient_thresholds[]", 1], "occurrences": 1}
+{"text": "f_z*g_zz-f_zz*g_z = 2K", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.first_focal_numerator", 1], "occurrences": 1}
+{"text": "n = 4q = 16c/(2c+1)", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.analytic_density_necessary_order", 1], "occurrences": 1}
+{"text": "impossible for c>1/2, K!=0, m>0", "first_occurrence": ["fold_closure_2026_09_05/theory_exact.json", "$.monic_quartic_one_sign_scalar_certificate_at_fold", 1], "occurrences": 1}
+{"text": "long-double fixed-amplitude fold continuation", "first_occurrence": ["fold_surface_2026_09_05/angular_ld.log", "$.purpose", 4], "occurrences": 8}
+{"text": "angular pair-side full-turn profile", "first_occurrence": ["fold_surface_2026_09_05/angular_ld.log", "$.purpose", 13], "occurrences": 26}
+{"text": "UNRESOLVED", "first_occurrence": ["fold_surface_2026_09_05/angular_ld.log", "$.status", 4], "occurrences": 392}
+{"text": "positive horizontal ray, strictly clockwise", "first_occurrence": ["fold_surface_2026_09_05/angular_transfer.json", "$[].section", 3], "occurrences": 7}
+{"text": "arclength_fold_corrector", "first_occurrence": ["fold_surface_2026_09_05/arclength.log", "$.purpose", 153], "occurrences": 306}
+{"text": "fold_pair_profile", "first_occurrence": ["fold_surface_2026_09_05/arclength.log", "$.purpose", 204], "occurrences": 936}
+{"text": "pair_root_isolation", "first_occurrence": ["fold_surface_2026_09_05/arclength.log", "$.purpose", 304], "occurrences": 1214}
+{"text": "events_decreasing.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 4], "occurrences": 4}
+{"text": "events_increasing.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 18], "occurrences": 18}
+{"text": "events_arclength.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 27], "occurrences": 27}
+{"text": "events_angular_ld.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 2], "occurrences": 2}
+{"text": "events_half.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 8], "occurrences": 8}
+{"text": "events_quad.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 10], "occurrences": 12}
+{"text": "events_negative.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 21], "occurrences": 23}
+{"text": "events_m.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 7], "occurrences": 7}
+{"text": "events_logm.json", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].file", 12], "occurrences": 13}
+{"text": "ACCEPTED_NUMERICAL_FOLD", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].status", 95], "occurrences": 173}
+{"text": "UNRESOLVED_CORRECTION", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].status", 14], "occurrences": 14}
+{"text": "UNRESOLVED_RETURN", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].raw_status", 2], "occurrences": 4}
+{"text": "CORRECTOR_ITERATION_LIMIT", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].raw_status", 8], "occurrences": 16}
+{"text": "CORRECTOR_UNRESOLVED", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].raw_status", 4], "occurrences": 11}
+{"text": "curved P=0 maximum x", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].section", 39], "occurrences": 39}
+{"text": "positive horizontal ray", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].section", 56], "occurrences": 56}
+{"text": "L=L_z=0", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].equations", 40], "occurrences": 40}
+{"text": "F=G=0", "first_occurrence": ["fold_surface_2026_09_05/component_summary.json", "$.events[].equations", 55], "occurrences": 55}
+{"text": "seed_chart_corrector", "first_occurrence": ["fold_surface_2026_09_05/decreasing.log", "$.purpose", 1], "occurrences": 4}
+{"text": "fold_decreasing", "first_occurrence": ["fold_surface_2026_09_05/decreasing.log", "$.purpose", 8], "occurrences": 16}
+{"text": "r", "first_occurrence": ["fold_surface_2026_09_05/derivative_controls.json", "$.checks[].key", 1], "occurrences": 1}
+{"text": "c", "first_occurrence": ["fold_surface_2026_09_05/derivative_controls.json", "$.checks[].key", 1], "occurrences": 2}
+{"text": "K", "first_occurrence": ["fold_surface_2026_09_05/derivative_controls.json", "$.checks[].key", 1], "occurrences": 1}
+{"text": "neutral infinity connection finite-radius convergence", "first_occurrence": ["fold_surface_2026_09_05/endpoints.log", "$.purpose", 11], "occurrences": 22}
+{"text": "finite fold crossing c=1", "first_occurrence": ["fold_surface_2026_09_05/endpoints.log", "$.purpose", 8], "occurrences": 16}
+{"text": "center-limit finite fold continuation", "first_occurrence": ["fold_surface_2026_09_05/endpoints.log", "$.purpose", 16], "occurrences": 32}
+{"text": "ACCEPTED", "first_occurrence": ["fold_surface_2026_09_05/events_angular_ld.json", "$[].status", 1], "occurrences": 56}
+{"text": "long-double process exit -9", "first_occurrence": ["fold_surface_2026_09_05/events_angular_ld.json", "$[].pair_profile.samples[].result.error", 3], "occurrences": 47}
+{"text": "nullcline", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.profile[].result.section", 136], "occurrences": 2714}
+{"text": "Floquet multiplier only at a fixed point", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.profile[].result.multiplier_interpretation", 136], "occurrences": 1993}
+{"text": "no full return: A termination event occurred.; guard/time reached", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.profile[].result.error", 68], "occurrences": 212}
+{"text": "NUMERICAL_SIGN_BRACKET", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.root_brackets[].status", 33], "occurrences": 152}
+{"text": "NUMERICAL_SIMPLE_ROOT", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.root_brackets[].status", 1], "occurrences": 35}
+{"text": "unsampled intervals and return-domain endpoints", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].pair.unresolved", 17], "occurrences": 39}
+{"text": "no complete return (guard/horizon/integration)", "first_occurrence": ["fold_surface_2026_09_05/events_arclength.json", "$[].fold.history[].error", 2], "occurrences": 4}
+{"text": "decreasing", "first_occurrence": ["fold_surface_2026_09_05/events_decreasing.json", "$[].direction", 4], "occurrences": 4}
+{"text": "increasing", "first_occurrence": ["fold_surface_2026_09_05/events_increasing.json", "$[].direction", 18], "occurrences": 18}
+{"text": "focus/section gate", "first_occurrence": ["fold_surface_2026_09_05/events_negative.json", "$[].history[].error", 1], "occurrences": 2}
+{"text": "binary128 2e-26 final tolerance", "first_occurrence": ["fold_surface_2026_09_05/events_quad.json", "$[].protocol", 4], "occurrences": 4}
+{"text": "no invariant conic carrying both c=8/5 saddles", "first_occurrence": ["fold_surface_2026_09_05/exact_recheck.log", "$", 1], "occurrences": 2}
+{"text": "complete-return replay on large-m pair", "first_occurrence": ["fold_surface_2026_09_05/final_controls.log", "$.purpose", 6], "occurrences": 12}
+{"text": "neutral infinity convergence tolerance control", "first_occurrence": ["fold_surface_2026_09_05/final_controls.log", "$.purpose", 2], "occurrences": 4}
+{"text": "complete full-return replay of two-sided pair bracket", "first_occurrence": ["fold_surface_2026_09_05/full_replay.log", "$.purpose", 12], "occurrences": 24}
+{"text": "two-cycle numerical cross-formulation check; not five-cycle trigger", "first_occurrence": ["fold_surface_2026_09_05/full_return_reproduction.json", "$.purpose", 1], "occurrences": 1}
+{"text": "left", "first_occurrence": ["fold_surface_2026_09_05/full_return_reproduction.json", "$.rows[].replays[].checks[].side", 4], "occurrences": 6}
+{"text": "right", "first_occurrence": ["fold_surface_2026_09_05/full_return_reproduction.json", "$.rows[].replays[].checks[].side", 4], "occurrences": 6}
+{"text": "approximation", "first_occurrence": ["fold_surface_2026_09_05/full_return_reproduction.json", "$.rows[].replays[].checks[].side", 4], "occurrences": 6}
+{"text": "infinity separatrix connection refinement", "first_occurrence": ["fold_surface_2026_09_05/graphic.log", "$.purpose", 18], "occurrences": 36}
+{"text": "NUMERICAL_SEPARATRIX_PASSAGE", "first_occurrence": ["fold_surface_2026_09_05/graphic.log", "$.status", 18], "occurrences": 70}
+{"text": "refined neutral graphic connection and coefficient", "first_occurrence": ["fold_surface_2026_09_05/graphic_coefficient.log", "$.purpose", 2], "occurrences": 4}
+{"text": "two-sided fixed-amplitude fold correction", "first_occurrence": ["fold_surface_2026_09_05/half.log", "$.purpose", 26], "occurrences": 52}
+{"text": "two-sided pair-side stationary/root profile", "first_occurrence": ["fold_surface_2026_09_05/half.log", "$.purpose", 112], "occurrences": 1540}
+{"text": "two-sided simple-root refinement", "first_occurrence": ["fold_surface_2026_09_05/half.log", "$.purpose", 128], "occurrences": 1758}
+{"text": "fold_increasing", "first_occurrence": ["fold_surface_2026_09_05/increasing.log", "$.purpose", 48], "occurrences": 96}
+{"text": "log-m fold correction", "first_occurrence": ["fold_surface_2026_09_05/logm.log", "$.purpose", 57], "occurrences": 114}
+{"text": "actual-coefficient chart transfer", "first_occurrence": ["fold_surface_2026_09_05/m.log", "$.purpose", 1], "occurrences": 2}
+{"text": "actual-coefficient fold continuation through c=5/11", "first_occurrence": ["fold_surface_2026_09_05/m.log", "$.purpose", 37], "occurrences": 74}
+{"text": "negative-K center-selected fold correction", "first_occurrence": ["fold_surface_2026_09_05/negative.log", "$.purpose", 77], "occurrences": 154}
+{"text": "NUMERICAL_TWO_CYCLE_FIELDS_ONLY", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.status", 1], "occurrences": 1}
+{"text": "x", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].exact_coefficients.basis[]", 3], "occurrences": 3}
+{"text": "y", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].exact_coefficients.basis[]", 3], "occurrences": 3}
+{"text": "x^2", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].exact_coefficients.basis[]", 3], "occurrences": 3}
+{"text": "xy", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].exact_coefficients.basis[]", 3], "occurrences": 3}
+{"text": "y^2", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].exact_coefficients.basis[]", 3], "occurrences": 3}
+{"text": "y=0,x>0; clockwise full return", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].section", 3], "occurrences": 3}
+{"text": "NUMERICAL_ROOT_WITH_SIGN_BRACKET", "first_occurrence": ["fold_surface_2026_09_05/pair_replay_claims.json", "$.rows[].cycles[].status", 6], "occurrences": 6}
+{"text": "polish complete-return root at fixed replay field", "first_occurrence": ["fold_surface_2026_09_05/polished.log", "$.purpose", 13], "occurrences": 26}
+{"text": "binary128 two-sided fold correction", "first_occurrence": ["fold_surface_2026_09_05/positive_last.log", "$.purpose", 16], "occurrences": 80}
+{"text": "new_second_variation_seed_control", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "second_variation_difference_r", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "second_variation_difference_c", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "logarithmic_variation_crosscheck", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "infinity_connection_shoot", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 8], "occurrences": 8}
+{"text": "angular_chart_fold_transfer", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 3], "occurrences": 3}
+{"text": "long_double_solver_control", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "two-sided shooting crosscheck at accepted fold", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "binary128 two-sided control at largest continued fold", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "fold_surface_2026_09_05/variational_return.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 52], "occurrences": 52}
+{"text": "staged_2026_09_05/compact_return.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 1075], "occurrences": 1468}
+{"text": "fold_surface_2026_09_05/log_variational.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 164], "occurrences": 164}
+{"text": "fold_surface_2026_09_05/graphic_shoot.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 26], "occurrences": 26}
+{"text": "fold_surface_2026_09_05/angular_return.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 3], "occurrences": 3}
+{"text": "fold_surface_2026_09_05/angular_ld.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 18], "occurrences": 18}
+{"text": "fold_surface_2026_09_05/half_ld.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 944], "occurrences": 944}
+{"text": "fold_surface_2026_09_05/half_quad.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 379], "occurrences": 379}
+{"text": "fold_surface_2026_09_05/half_m.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 401], "occurrences": 401}
+{"text": "fold_surface_2026_09_05/half_m_quad.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 204], "occurrences": 204}
+{"text": "fold_surface_2026_09_05/angular_quad.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 21], "occurrences": 21}
+{"text": "fold_surface_2026_09_05/angular_m_quad.py", "first_occurrence": ["fold_surface_2026_09_05/returns.jsonl", "$.source", 10], "occurrences": 10}
+{"text": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.python", 1], "occurrences": 1}
+{"text": "Linux-6.18.35-x86_64-with-glibc2.39", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.platform", 1], "occurrences": 1}
+{"text": "2.3.5", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.numpy", 1], "occurrences": 3}
+{"text": "1.14.0", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.sympy", 1], "occurrences": 3}
+{"text": "1.3.0", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.mpmath", 1], "occurrences": 1}
+{"text": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0", "first_occurrence": ["fold_surface_2026_09_05/runtime.json", "$.compiler", 1], "occurrences": 1}
+{"text": "EXACT_IDENTITIES_PASS", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.status", 1], "occurrences": 1}
+{"text": "reversible coordinates modulo J", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "A+2C=21/5", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "Darboux first integral", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "Melnikov even divergence", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "moment integration-by-parts identity", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "c=1 no-cycle factorization", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "1<c<8/5 sufficient no-cycle thresholds", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "global Lienard residual becomes (u-1)u^(-c)(a*u+b)", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "c=8/5 infinity separatrix jet through v^2", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "infinity product derivative 10/sqrt(159)", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "half-passage exponents 6/5 and difference slope 12/sqrt(159)", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.checks[]", 1], "occurrences": 1}
+{"text": "(-3/10,-29/100)", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.proved_normalized_bounds.b", 1], "occurrences": 1}
+{"text": "(101/100,51/50)", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.proved_normalized_bounds.d", 1], "occurrences": 1}
+{"text": "positive", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.proved_normalized_bounds.A", 1], "occurrences": 2}
+{"text": "(-8800*c**5 + 58120*c**4 - 92089*c**3 - 39218*c**2 + 53831*c + 31720)/((2*c + 1)**2*(500*c - 500))", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.K2", 1], "occurrences": 1}
+{"text": "(-2200*c**4 + 19095*c**3 - 40912*c**2 + 20175*c + 3050)/(50*c*(5*c - 8))", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.K3", 1], "occurrences": 1}
+{"text": "No global at-most-two theorem or complete fold-component exclusion.", "first_occurrence": ["fold_surface_2026_09_05/theory_exact.json", "$.scope", 1], "occurrences": 1}
+{"text": "NUMERICAL_QUADRATURE_ONLY", "first_occurrence": ["fold_surface_2026_09_05/theory_melnikov.json", "$.status", 1], "occurrences": 1}
+{"text": "Local stationary ratio only; no uniqueness, interval enclosure, or complete-component theorem.", "first_occurrence": ["fold_surface_2026_09_05/theory_melnikov.json", "$.limitations", 1], "occurrences": 1}
+{"text": "EXACT_IDENTITIES_AND_SAVED_DATA_ONLY", "first_occurrence": ["fold_surface_2026_09_05/theory_negative_checks.json", "$.status", 1], "occurrences": 1}
+{"text": "(2/9)*log(25/19)", "first_occurrence": ["fold_surface_2026_09_05/theory_negative_checks.json", "$.conditional_delta_log_radius_limit", 1], "occurrences": 1}
+{"text": "(21000*c**2 + 21441*c + 10101)/(50*(8 - 5*c)*(2*c + 1)**2)", "first_occurrence": ["fold_surface_2026_09_05/theory_negative_checks.json", "$.m_H", 1], "occurrences": 1}
+{"text": "negative", "first_occurrence": ["fold_surface_2026_09_05/theory_negative_checks.json", "$.full_return_reproduction.rows[].endpoint_derivative_sign", 1], "occurrences": 1}
+{"text": "SAVED_DATA_AUDIT_ONLY", "first_occurrence": ["fold_surface_2026_09_05/theory_outcome_audit.json", "$.status", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired", "first_occurrence": ["kkl/data/K_margin_c09_repaired.jsonl", "$.segment", 1], "occurrences": 2}
+{"text": "ACCEPTED_NUMERICAL_POINT", "first_occurrence": ["kkl/data/K_margin_c09_repaired.jsonl", "$.status", 1], "occurrences": 44}
+{"text": "EXACT_RATIONAL_INTERVAL_GATES", "first_occurrence": ["kkl/data/K_margin_c09_repaired.jsonl", "$.geometry.status", 1], "occurrences": 52}
+{"text": "c<241/250", "first_occurrence": ["kkl/data/K_margin_c09_repaired.jsonl", "$.geometry.infinity_region", 1], "occurrences": 51}
+{"text": "K_margin_to_c09", "first_occurrence": ["kkl/data/K_margin_to_c09.jsonl", "$.segment", 6], "occurrences": 12}
+{"text": "derivative cross-check failed", "first_occurrence": ["kkl/data/K_margin_to_c09.jsonl", "$.error", 1], "occurrences": 2}
+{"text": "K_margin_toward_boundary", "first_occurrence": ["kkl/data/K_margin_toward_boundary.jsonl", "$.segment", 5], "occurrences": 10}
+{"text": "section range boundary", "first_occurrence": ["kkl/data/K_margin_toward_boundary.jsonl", "$.error", 1], "occurrences": 2}
+{"text": "NUMERICAL_CONTROLS_NOT_CYCLE_CERTIFICATES", "first_occurrence": ["kkl/data/c_gt_1_remote_controls.json", "$.status", 1], "occurrences": 1}
+{"text": "K=6/5", "first_occurrence": ["kkl/data/constant_K_path.jsonl", "$.path", 7], "occurrences": 14}
+{"text": "constant_K_path.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 7], "occurrences": 7}
+{"text": "reduce_K.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 4], "occurrences": 4}
+{"text": "K_margin_to_c09.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 6], "occurrences": 6}
+{"text": "K_margin_c09_repaired.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 5], "occurrences": 5}
+{"text": "last_inside_boundary.jsonl", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.source_file", 1], "occurrences": 1}
+{"text": "reduce_K", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.segment", 4], "occurrences": 8}
+{"text": "last_inside_boundary", "first_occurrence": ["kkl/data/continuation_events.jsonl", "$.segment", 1], "occurrences": 2}
+{"text": "y+x^2+xy", "first_occurrence": ["kkl/data/exact_controls.json", "$.field.P", 1], "occurrences": 1}
+{"text": "-10x^2+(11/5)xy+c*y^2+alpha*x+beta*y", "first_occurrence": ["kkl/data/exact_controls.json", "$.field.Q", 1], "occurrences": 1}
+{"text": "Exact field coefficients only; cycle locations remain numerical until validated.", "first_occurrence": ["kkl/data/exact_controls.json", "$.evidence", 1], "occurrences": 1}
+{"text": "NUMERICAL_LOCAL_DIRECTIONS_NOT_GLOBAL_OBSTRUCTION", "first_occurrence": ["kkl/data/fold_direction_at_boundary.json", "$.status", 1], "occurrences": 1}
+{"text": "SAMPLED_RETURNS_ONLY_NOT_ZERO_COUNT", "first_occurrence": ["kkl/data/last_field_profile.json", "$.status", 1], "occurrences": 1}
+{"text": "EXACT_GEOMETRY_ONLY", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.status", 1], "occurrences": 1}
+{"text": "requires separate itinerary audit", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.geometry.infinity_region", 1], "occurrences": 1}
+{"text": "-600+100*sqrt(37)", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.infinity.finite_directions[]", 1], "occurrences": 1}
+{"text": "-600-100*sqrt(37)", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.infinity.finite_directions[]", 1], "occurrences": 1}
+{"text": "saddle", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.infinity.types[]", 2], "occurrences": 2}
+{"text": "node", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.infinity.vertical_type", 1], "occurrences": 1}
+{"text": "../NEXT_BOUNDED_TEST.md", "first_occurrence": ["kkl/data/next_seed_geometry.json", "$.next_protocol", 1], "occurrences": 1}
+{"text": "PILOT_COMPLETE_NUMERICAL_ONLY", "first_occurrence": ["kkl/data/pilot_summary.json", "$.status", 1], "occurrences": 1}
+{"text": "Two known cycles followed at seven rational shapes, not a cover of other roots or intervening parameters.", "first_occurrence": ["kkl/data/pilot_summary.json", "$.scope", 1], "occurrences": 1}
+{"text": "NUMERICAL_PARAMETER_BOUNDARY_ONLY", "first_occurrence": ["kkl/data/remote_radius_boundary.json", "$.status", 1], "occurrences": 1}
+{"text": "start_origin_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "start_remote_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_inner", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_middle", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_outer", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_remote", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_beta0_middle", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "incumbent_beta0_outer", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "off_root_derivative", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "off_root_derivative_left", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "off_root_derivative_right", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_57/80_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_29/40_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_59/80_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_3/4_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_31/40_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_4/5_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "constant_K_c_33/40_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "pilot_second_derivative_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "full_strike_fold_direction_at_pilot_endpoint", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_1_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_2_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_3_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "reduce_K_4_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_1_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_2_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_3_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_4_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_5_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_6_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_6_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_6_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_6_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_to_c09_6_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "large_remote_derivative_tolerance_replay", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "transverse_determinant_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "large_remote_transverse_determinant_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_c09_repaired_1_remote_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_1_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_2_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_3_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_4_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_5_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_5_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_5_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "K_margin_toward_boundary_5_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "remote_section_boundary_locator", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "remote_radius_boundary_corrector", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 3], "occurrences": 3}
+{"text": "remote_radius_boundary_parameter_sign", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "last_inside_boundary_1_origin_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_origin_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_origin_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_origin_corrector_3", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_remote_corrector_0", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_remote_corrector_1", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_inside_boundary_1_remote_corrector_2", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_field_origin_profile", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 10], "occurrences": 10}
+{"text": "K_zero_quintic_positive_sign_control_not_precursor", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "last_field_origin_fold_gradient", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "last_field_stationary_return_point", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 3], "occurrences": 3}
+{"text": "c_gt_1_fixed_field_remote_control", "first_occurrence": ["kkl/data/returns.jsonl", "$.purpose", 4], "occurrences": 4}
+{"text": "NUMERICAL_POSITIVE_MAXIMUM_NOT_A_FOLD", "first_occurrence": ["kkl/data/stationary_control.json", "$.status", 1], "occurrences": 1}
+{"text": "NUMERICAL_BRANCH_CHECKPOINT_NOT_WHOLE_BOX_EXCLUSION", "first_occurrence": ["kkl/data/strike_summary.json", "$.status", 1], "occurrences": 1}
+{"text": "Selected path reached K=1/64 and remote section-radius allowance before a detected origin fold.", "first_occurrence": ["kkl/data/strike_summary.json", "$.phase_end_reason", 1], "occurrences": 1}
+{"text": "Four numerical inward returns; no remote U-root bracket; conditional origin controls not run.", "first_occurrence": ["kkl/data/strike_summary.json", "$.additional_fixed_field_test.result", 1], "occurrences": 1}
+{"text": "No fixed-field or stratum-wide absence proof.", "first_occurrence": ["kkl/data/strike_summary.json", "$.additional_fixed_field_test.scope", 1], "occurrences": 1}
+{"text": "unvisited cycle sheets", "first_occurrence": ["kkl/data/strike_summary.json", "$.not_excluded[]", 1], "occurrences": 1}
+{"text": "additional zeros between section samples", "first_occurrence": ["kkl/data/strike_summary.json", "$.not_excluded[]", 1], "occurrences": 1}
+{"text": "other parameter paths", "first_occurrence": ["kkl/data/strike_summary.json", "$.not_excluded[]", 1], "occurrences": 1}
+{"text": "other infinity strata", "first_occurrence": ["kkl/data/strike_summary.json", "$.not_excluded[]", 1], "occurrences": 1}
+{"text": "the KKL precursor in the full specified box", "first_occurrence": ["kkl/data/strike_summary.json", "$.not_excluded[]", 1], "occurrences": 1}
+{"text": "Evaluations 1-131 used fixed-time projected first derivatives; 132 onward used transverse determinants. Historical rows were retained unchanged. Original intermediate source hashes were not captured; this manifest records the final reviewed implementation, not bitwise provenance for those earlier rows.", "first_occurrence": ["kkl/data/strike_summary.json", "$.historical_engine_note", 1], "occurrences": 1}
+{"text": "3.14.6", "first_occurrence": ["kkl/data/strike_summary.json", "$.software.python", 1], "occurrences": 1}
+{"text": "2.5.2", "first_occurrence": ["kkl/data/strike_summary.json", "$.software.numpy", 1], "occurrences": 1}
+{"text": "1.18.1", "first_occurrence": ["kkl/data/strike_summary.json", "$.software.scipy", 1], "occurrences": 1}
+{"text": "NONRIGOROUS_NUMERICAL_CONTROLS", "first_occurrence": ["q4/data/controls.json", "$.status", 1], "occurrences": 1}
+{"text": "constructed in this audit; finite instantiation of Zhao Corollary 9", "first_occurrence": ["q4/data/controls.json", "$.positive.provenance", 1], "occurrences": 1}
+{"text": "I=h*I00<0 throughout the open annulus", "first_occurrence": ["q4/data/controls.json", "$.negative.reason", 1], "occurrences": 1}
+{"text": "constructed in this audit", "first_occurrence": ["q4/data/controls.json", "$.degenerate.provenance", 1], "occurrences": 1}
+{"text": "Floating P signs and roots are diagnostic, not certified. The analytic first-primitive-zero theorem independently excludes five original zeros for this coefficient box for every kappa.", "first_occurrence": ["q4/data/second_green_shoot.json", "$.warning", 1], "occurrences": 1}
+{"text": "four P crossings found", "first_occurrence": ["q4/data/second_green_shoot.json", "$.S1_diagnostic", 1], "occurrences": 1}
+{"text": "fails: all four Z extrema are negative", "first_occurrence": ["q4/data/second_green_shoot.json", "$.S2_diagnostic", 1], "occurrences": 1}
+{"text": "H16P-Q4-LOBE-CERTIFICATE-v1", "first_occurrence": ["q4/data/second_lobe_certificate.json", "$.format", 1], "occurrences": 1}
+{"text": "RIGOROUS_UNIVERSAL_PRIMITIVE_ONLY", "first_occurrence": ["q4/data/second_lobe_certificate.json", "$.status", 1], "occurrences": 1}
+{"text": "Python fractions.Fraction and integer rounding", "first_occurrence": ["q4/data/second_lobe_certificate.json", "$.evaluator.arithmetic", 1], "occurrences": 1}
+{"text": "positive hypergeometric coefficient geometric majorant", "first_occurrence": ["q4/data/second_lobe_certificate.json", "$.evaluator.error_bound", 1], "occurrences": 1}
+{"text": "Fixed compact samples are neither root counts nor endpoint exclusions.", "first_occurrence": ["q4/data/second_spine_diagnostic.json", "$.warning", 1], "occurrences": 1}
+{"text": "NONRIGOROUS_SCREEN_ONLY", "first_occurrence": ["q4/data/smoke.json", "$.status", 1], "occurrences": 1}
+{"text": "smoke", "first_occurrence": ["q4/data/smoke.json", "$.mode", 1], "occurrences": 1}
+{"text": "sign changes are leads, not certified Abelian zeros or limit cycles", "first_occurrence": ["q4/data/smoke.json", "$.warning", 1], "occurrences": 1}
+{"text": "These are primitive contacts, not original-integral double roots. All four shots fail the first positive Z maximum numerically.", "first_occurrence": ["q4/data/third_confluent_shoot.json", "$.warning", 1], "occurrences": 1}
+{"text": "third_tuned_shoot.json", "first_occurrence": ["q4/data/third_independent_checks.json", "$.checks[].record_file", 1], "occurrences": 1}
+{"text": "third_shape_shoot.json", "first_occurrence": ["q4/data/third_independent_checks.json", "$.checks[].record_file", 1], "occurrences": 1}
+{"text": "survives", "first_occurrence": ["q4/data/third_independent_checks.json", "$.checks[].corrected_Zhao_filter[]", 2], "occurrences": 2}
+{"text": "P sign bands are floating diagnostics, not certificates. Fixed original samples do not cover endpoint slivers. Extremely late anchors require arbitrary precision; this replay stops at 1-r=1e-4.", "first_occurrence": ["q4/data/third_initial_shoot.json", "$.warning", 1], "occurrences": 3}
+{"text": "(r,(1+r)/2,(3+r)/4)", "first_occurrence": ["q4/data/third_initial_shoot.json", "$.rows[].path", 16], "occurrences": 21}
+{"text": "NUMERICAL; no rigorous line or global exclusion", "first_occurrence": ["q4/data/third_reverse_tangency.json", "$.status", 1], "occurrences": 1}
+{"text": "four preselected reverse-tangency lines; two ratio diagnostics", "first_occurrence": ["q4/data/third_reverse_tangency.json", "$.scope", 1], "occurrences": 1}
+{"text": "No three-root H profile was detected. Finite meshes can miss roots or thin windows.", "first_occurrence": ["q4/data/third_reverse_tangency.json", "$.interpretation", 1], "occurrences": 1}
+{"text": "(r,1-(1-r)^2,1-(1-r)^3)", "first_occurrence": ["q4/data/third_shape_shoot.json", "$.rows[].path", 3], "occurrences": 3}
+{"text": "H16P-Q4-THRESHOLD-CERTIFICATE-v1", "first_occurrence": ["q4/data/third_threshold_certificate.json", "$.format", 1], "occurrences": 1}
+{"text": "RIGOROUS_LATE_PRIMITIVE_ROOT_ONLY", "first_occurrence": ["q4/data/third_threshold_certificate.json", "$.status", 1], "occurrences": 1}
+{"text": "fractions.Fraction and directed integer rounding", "first_occurrence": ["q4/data/third_threshold_certificate.json", "$.arithmetic", 1], "occurrences": 1}
+{"text": "https://json-schema.org/draft/2020-12/schema", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.$schema", 1], "occurrences": 2}
+{"text": "https://github.com/git-df-scott/H16P/q4/poincare_candidate.schema.json", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.$id", 1], "occurrences": 1}
+{"text": "Q4 candidate-to-Poincare handoff", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.title", 1], "occurrences": 1}
+{"text": "object", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.type", 1], "occurrences": 12}
+{"text": "format", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 2}
+{"text": "original_q4", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "perturbation", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "epsilon", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "sections", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "predicted_roots", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "H16P-Q4-POINCARE-v1", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.format.const", 1], "occurrences": 1}
+{"text": "rho", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.original_q4.required[]", 1], "occurrences": 1}
+{"text": "b", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.original_q4.required[]", 1], "occurrences": 1}
+{"text": "x_coefficients", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.perturbation.required[]", 1], "occurrences": 1}
+{"text": "y_coefficients", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.perturbation.required[]", 1], "occurrences": 1}
+{"text": "melnikov_realization_proof", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.perturbation.required[]", 1], "occurrences": 1}
+{"text": "rational", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.epsilon.required[]", 1], "occurrences": 3}
+{"text": "array", "first_occurrence": ["q4/poincare_candidate.schema.json", "$.properties.sections.type", 1], "occurrences": 11}
+{"text": "https://github.com/git-df-scott/H16P/q4/zero_certificate.schema.json", "first_occurrence": ["q4/zero_certificate.schema.json", "$.$id", 1], "occurrences": 1}
+{"text": "Q4 interval Abelian-zero certificate", "first_occurrence": ["q4/zero_certificate.schema.json", "$.title", 1], "occurrences": 1}
+{"text": "kappa", "first_occurrence": ["q4/zero_certificate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "mu", "first_occurrence": ["q4/zero_certificate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "root_boxes", "first_occurrence": ["q4/zero_certificate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "evaluator", "first_occurrence": ["q4/zero_certificate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "artifact_hashes", "first_occurrence": ["q4/zero_certificate.schema.json", "$.required[]", 1], "occurrences": 1}
+{"text": "H16P-Q4-ZERO-v1", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.format.const", 1], "occurrences": 1}
+{"text": "string", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.kappa.properties.rational.type", 1], "occurrences": 8}
+{"text": "s", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.root_boxes.items.required[]", 1], "occurrences": 1}
+{"text": "I_left", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.root_boxes.items.required[]", 1], "occurrences": 1}
+{"text": "I_right", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.root_boxes.items.required[]", 1], "occurrences": 1}
+{"text": "I_prime", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.root_boxes.items.required[]", 1], "occurrences": 1}
+{"text": "interval_newton_image", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.root_boxes.items.required[]", 1], "occurrences": 1}
+{"text": "none", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.endpoint_claim.enum[]", 1], "occurrences": 1}
+{"text": "excluded_with_expansions", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.endpoint_claim.enum[]", 1], "occurrences": 1}
+{"text": "library", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.evaluator.required[]", 1], "occurrences": 1}
+{"text": "version", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.evaluator.required[]", 1], "occurrences": 1}
+{"text": "precision_bits", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.evaluator.required[]", 1], "occurrences": 1}
+{"text": "method", "first_occurrence": ["q4/zero_certificate.schema.json", "$.properties.evaluator.required[]", 1], "occurrences": 1}
+{"text": "Reversible re-seed strike only; NUM data are not interval certificates", "first_occurrence": ["reversible_reseed/data/MANIFEST.json", "$.scope", 1], "occurrences": 1}
+{"text": "NUM, finite compact energies only", "first_occurrence": ["reversible_reseed/data/boundary_search.json", "$.evidence", 1], "occurrences": 1}
+{"text": "-c", "first_occurrence": ["reversible_reseed/data/boundary_search.json", "$.a_minus_2_coefficients.epsilon1", 1], "occurrences": 2}
+{"text": "m/3", "first_occurrence": ["reversible_reseed/data/boundary_search.json", "$.a_minus_2_coefficients.gamma", 1], "occurrences": 1}
+{"text": "-m", "first_occurrence": ["reversible_reseed/data/boundary_search.json", "$.a_zero_coefficients.epsilon2", 1], "occurrences": 1}
+{"text": "NUM only; finite curves and finite shapes; no exclusion theorem", "first_occurrence": ["reversible_reseed/data/control_search.json", "$.evidence", 1], "occurrences": 2}
+{"text": "published_Yu_Zeng", "first_occurrence": ["reversible_reseed/data/control_search.json", "$.records[].label", 1], "occurrences": 3}
+{"text": "Matrix([[0, 1], [-1, 0]])", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.upper_J", 1], "occurrences": 1}
+{"text": "Matrix([[0, -1], [(2 - b)/b, 0]])", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.lower_J", 1], "occurrences": 1}
+{"text": "-(b - 2)/b", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.lower_det", 1], "occurrences": 1}
+{"text": "(2 - b)/(4*a)", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.off_axis_x_squared", 1], "occurrences": 1}
+{"text": "-16*(a + 2)", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.full_chart_determinant", 1], "occurrences": 1}
+{"text": "-48*b", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.boundary_replacement_determinant", 1], "occurrences": 1}
+{"text": "(2-b)/(12*b)", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.boundary_invisible_old_direction.epsilon0", 1], "occurrences": 1}
+{"text": "(1-b)/b", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.boundary_invisible_old_direction.epsilon1", 1], "occurrences": 1}
+{"text": "-a", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.infinity_horizontal_eigenvalues[]", 1], "occurrences": 1}
+{"text": "-a - 2", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.infinity_horizontal_eigenvalues[]", 1], "occurrences": 2}
+{"text": "3*(28*y**2 - 1)/28", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.bicycle_seed_R", 1], "occurrences": 1}
+{"text": "-18*2**(1/3)/7", "first_occurrence": ["reversible_reseed/data/geometry.json", "$.bicycle_seed_h_center", 1], "occurrences": 1}
+{"text": "geometry_grid", "first_occurrence": ["reversible_reseed/data/moment_search.json", "$.records[].label", 35], "occurrences": 70}
+{"text": "near_focus_line", "first_occurrence": ["reversible_reseed/data/moment_search.json", "$.records[].label", 18], "occurrences": 36}
+{"text": "NUM; non-interval quadrature and original-field half returns", "first_occurrence": ["reversible_reseed/data/verified_control.json", "$.evidence", 1], "occurrences": 1}
+{"text": "-4*tau/11", "first_occurrence": ["reversible_reseed/data/verified_control.json", "$.exact_arc.epsilon0", 1], "occurrences": 1}
+{"text": "-31379*tau/25000", "first_occurrence": ["reversible_reseed/data/verified_control.json", "$.exact_arc.epsilon1", 1], "occurrences": 1}
+{"text": "-7517*tau/5000", "first_occurrence": ["reversible_reseed/data/verified_control.json", "$.exact_arc.epsilon2", 1], "occurrences": 1}
+{"text": "check_nullcline_section.py", "first_occurrence": ["review_2026_09_05/EVIDENCE_MANIFEST.json", "$.new_exact_replay", 1], "occurrences": 1}
+{"text": "Rational identities and initial section derivatives, not a validated return map", "first_occurrence": ["review_2026_09_05/EVIDENCE_MANIFEST.json", "$.new_exact_replay_scope", 1], "occurrences": 1}
+{"text": "local outputs only; not in public Git commit", "first_occurrence": ["review_2026_09_05/EVIDENCE_MANIFEST.json", "$.full_conversation_delivery", 1], "occurrences": 1}
+{"text": "FINAL_FILE_HASHES_NOT_HISTORICAL_EXECUTION_HASHES", "first_occurrence": ["staged_2026_09_05/MANIFEST.json", "$.status", 1], "occurrences": 1}
+{"text": "origin", "first_occurrence": ["staged_2026_09_05/controls.json", "$[].name", 1], "occurrences": 2}
+{"text": "remote", "first_occurrence": ["staged_2026_09_05/controls.json", "$[].name", 1], "occurrences": 1}
+{"text": "cutoff_origin", "first_occurrence": ["staged_2026_09_05/controls.json", "$[].name", 1], "occurrences": 1}
+{"text": "cutoff_remote", "first_occurrence": ["staged_2026_09_05/controls.json", "$[].name", 1], "occurrences": 2}
+{"text": "horizontal", "first_occurrence": ["staged_2026_09_05/controls.json", "$[].old.section", 4], "occurrences": 12}
+{"text": "ACCEPTED_NUMERICAL_ROOT", "first_occurrence": ["staged_2026_09_05/derivative_validation.json", "$[].status", 1], "occurrences": 29}
+{"text": "fold_independent_cartesian", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "fold_pair_lower_sign", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "fold_pair_middle_sign", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "fold_pair_upper_sign", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "fold_absent_side_middle", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "fold_pair_outer_profile", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "terminal_independent_origin", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "terminal_independent_remote", "first_occurrence": ["staged_2026_09_05/final_verification.json", "$[].purpose", 1], "occurrences": 2}
+{"text": "ITERATION_LIMIT", "first_occurrence": ["staged_2026_09_05/fold_attempts.json", "$[].status", 6], "occurrences": 8}
+{"text": "fold_followup_base", "first_occurrence": ["staged_2026_09_05/fold_followup.log", "$.purpose", 8], "occurrences": 16}
+{"text": "fold_followup_difference", "first_occurrence": ["staged_2026_09_05/fold_followup.log", "$.purpose", 16], "occurrences": 32}
+{"text": "NUMERICAL_TWO_CYCLE_PAIR_ONLY", "first_occurrence": ["staged_2026_09_05/fold_pair_coefficients.json", "$.status", 1], "occurrences": 1}
+{"text": "(r,-r^2/(1+r))", "first_occurrence": ["staged_2026_09_05/fold_pair_coefficients.json", "$.section", 1], "occurrences": 1}
+{"text": "+", "first_occurrence": ["staged_2026_09_05/fold_pair_coefficients.json", "$.numerical_log_return_signs[]", 2], "occurrences": 2}
+{"text": "-", "first_occurrence": ["staged_2026_09_05/fold_pair_coefficients.json", "$.numerical_log_return_signs[]", 1], "occurrences": 1}
+{"text": "positive trace, exactly checked; not precursor", "first_occurrence": ["staged_2026_09_05/fold_pair_coefficients.json", "$.remote_stability", 1], "occurrences": 1}
+{"text": "origin_logpolar_old_section", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "origin_transport", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "origin_curved_control", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "remote_logpolar_old_section", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "remote_transport", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "remote_curved_control", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_origin_logpolar_old_section", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_origin_transport", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_origin_curved_control", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_remote_logpolar_old_section", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_remote_transport", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "cutoff_remote_curved_control", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 1], "occurrences": 1}
+{"text": "derivative_control_minus", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "derivative_control_plus", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "rounded_remote_seed_correct", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 2], "occurrences": 2}
+{"text": "terminal_origin", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 40], "occurrences": 40}
+{"text": "terminal_remote", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 47], "occurrences": 47}
+{"text": "augmented_fold_base", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 24], "occurrences": 24}
+{"text": "augmented_fold_difference", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 48], "occurrences": 48}
+{"text": "origin_displacement_profile", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 162], "occurrences": 324}
+{"text": "terminal_neutrality_followup", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 22], "occurrences": 44}
+{"text": "low_K_fold_final_refinement", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 3], "occurrences": 3}
+{"text": "low_K_fold_final_difference", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.purpose", 4], "occurrences": 4}
+{"text": "staged_2026_09_05/cartesian_check.py", "first_occurrence": ["staged_2026_09_05/kkl_returns.jsonl", "$.engine", 7], "occurrences": 7}
+{"text": "Shi conditioned", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.family", 3], "occurrences": 89}
+{"text": "root-detail-shi-initial-0", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-shi-initial-1", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-shi-initial-2", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "ok", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.status", 3], "occurrences": 159}
+{"text": "deltaV_over_Vinitial", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_initial[].detail.measure", 3], "occurrences": 86}
+{"text": "root-detail-shi-zero-0", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_trace_zero[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-shi-zero-1", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.roots_trace_zero[].detail.tag", 1], "occurrences": 2}
+{"text": "shi-intermediate", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.intermediate_signs[].tag", 4], "occurrences": 8}
+{"text": "shi-origin-endpoint", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.shi.origin_endpoint.tag", 1], "occurrences": 2}
+{"text": "Chen-Wang visualization", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_initial[].detail.family", 3], "occurrences": 81}
+{"text": "root-detail-chen-initial-0", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-chen-initial-1", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-chen-initial-2", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_initial[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-chen-zero-0", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_trace_zero[].detail.tag", 1], "occurrences": 2}
+{"text": "root-detail-chen-zero-1", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.roots_trace_zero[].detail.tag", 1], "occurrences": 2}
+{"text": "chen-intermediate", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.intermediate_signs[].tag", 4], "occurrences": 8}
+{"text": "chen-origin-endpoint", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.paths.chen.origin_endpoint.tag", 1], "occurrences": 2}
+{"text": "Rational conditioned Shi point differs from Shi/Galias certified hierarchy.", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.notes[]", 1], "occurrences": 1}
+{"text": "No interval integration or exhaustive cycle count.", "first_occurrence": ["staged_2026_09_05/shi_continuation.json", "$.notes[]", 1], "occurrences": 1}
+{"text": "conditioned-control", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 7], "occurrences": 7}
+{"text": "outer-control", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 4], "occurrences": 4}
+{"text": "outer-control-corrected-measure", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 3], "occurrences": 3}
+{"text": "chen-control", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 7], "occurrences": 7}
+{"text": "mp-independent", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 4], "occurrences": 4}
+{"text": "chen-outer-bracket", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 4], "occurrences": 4}
+{"text": "chen-outer-refine", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 3], "occurrences": 3}
+{"text": "mp-refinement", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 4], "occurrences": 4}
+{"text": "root-shi-initial-0", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 8], "occurrences": 8}
+{"text": "root-shi-initial-1", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 10], "occurrences": 10}
+{"text": "root-shi-initial-2", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 7], "occurrences": 7}
+{"text": "root-shi-zero-0", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 10], "occurrences": 10}
+{"text": "root-shi-zero-1", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 7], "occurrences": 7}
+{"text": "root-chen-initial-0", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 7], "occurrences": 7}
+{"text": "root-chen-initial-1", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 8], "occurrences": 8}
+{"text": "root-chen-initial-2", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 6], "occurrences": 6}
+{"text": "root-chen-zero-0", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 9], "occurrences": 9}
+{"text": "root-chen-zero-1", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 6], "occurrences": 6}
+{"text": "chen-mp-control", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 8], "occurrences": 8}
+{"text": "shi-mp-zero", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 3], "occurrences": 3}
+{"text": "chen-mp-zero", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 3], "occurrences": 3}
+{"text": "shi-mp-intermediate", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.tag", 2], "occurrences": 2}
+{"text": "failed", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.status", 11], "occurrences": 11}
+{"text": "https://arxiv.org/html/2002.09987v1; equation (10), conditioned delta=-1/100 epsilon=-1/1000000 chosen in this session", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.parameter_source", 79], "occurrences": 79}
+{"text": "https://arxiv.org/html/2002.09987v1; equations (12), (15)", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.parameter_source", 71], "occurrences": 71}
+{"text": "integral_dotV_over_V; original diagnostic before outer-domain correction", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.historical_measure", 11], "occurrences": 11}
+{"text": "Required step size is less than spacing between numbers.", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.error", 2], "occurrences": 2}
+{"text": "Lyapunov polynomial not positive", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.error", 2], "occurrences": 2}
+{"text": "polar chart lost or radius >3", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.error", 7], "occurrences": 7}
+{"text": "mp-midpoint-extrapolation", "first_occurrence": ["staged_2026_09_05/shi_returns.jsonl", "$.method", 66], "occurrences": 66}
+{"text": "CORRECTOR_NOT_CONVERGED", "first_occurrence": ["staged_2026_09_05/terminal_followup.json", "$[].origin.status", 1], "occurrences": 1}
+{"text": "EXACT_CHECKS_PASS", "first_occurrence": ["staged_2026_09_05/theory_exact_checks.json", "$.status", 1], "occurrences": 1}
+{"text": "[9/10,1]", "first_occurrence": ["staged_2026_09_05/theory_exact_checks.json", "$.domain.c", 1], "occurrences": 1}
+{"text": "[0,6/5]", "first_occurrence": ["staged_2026_09_05/theory_exact_checks.json", "$.domain.K", 1], "occurrences": 1}
+{"text": "5*(11*c-5)", "first_occurrence": ["staged_2026_09_05/theory_exact_checks.json", "$.positive_denominator", 1], "occurrences": 1}
+{"text": "Trace zero alone does not require a double cycle.", "first_occurrence": ["staged_2026_09_05/theory_exact_checks.json", "$.nonquadratic_logic_control.claim", 1], "occurrences": 1}
+{"text": "STATIC_NUMERICAL_EVIDENCE_CHECKS_PASS_NOT_INTERVAL_CERTIFICATE", "first_occurrence": ["staged_2026_09_05/validation.json", "$.status", 1], "occurrences": 1}
+{"text": "UNSTABLE: 0<trace<0.006, determinant>88", "first_occurrence": ["staged_2026_09_05/validation.json", "$.exact_rational_pair_remote_focus", 1], "occurrences": 1}

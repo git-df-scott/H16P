@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-09-08T07:15:34.711921+00:00",
+  "scope": "Completion audit: no claim of goal achievement",
+  "requirements": [
+    {
+      "requirement": "Counterexample",
+      "status": "not_achieved",
+      "evidence": "No field with five verified distinct isolated periodic orbits. Latest two extreme fields each have three numerical brackets."
+    },
+    {
+      "requirement": "Pinned repository",
+      "status": "verified",
+      "evidence": "Commit45f4ea9b4ab448bdd36702036244faa4f15c9819; git status --porcelain is empty."
+    },
+    {
+      "requirement": "Reading and inspection",
+      "status": "incomplete_literal_reading",
+      "evidence": "387files:264fullyread,3figuresvisuallyinspected,120rawfilesnotfullymanualread. All120rawfilesmachine-traversed.14,239,724literalcharactersnotmanualread."
+    },
+    {
+      "requirement": "Reproducibility",
+      "status": "recorded_not_certified",
+      "evidence": "Scripts, parameter records, failed gates, tighter checks and exact symbolic calculations saved; no interval certification."
+    },
+    {
+      "requirement": "Continuous work through08:00Edmonton",
+      "status": "incomplete_budget_stop",
+      "evidence": "Research stopped short of08:00dueconservative29%stopmarginunder30%accountceiling."
+    },
+    {
+      "requirement": "Periodic automation",
+      "status": "required_paused",
+      "evidence": "Previously paused; no reactivation requested or performed."
+    },
+    {
+      "requirement": "Usage",
+      "status": "margin_reached",
+      "evidence": "Latest main29%,reserve2%; mainatbudgetinstruction6%. Sharedaccount, delta23percentagepointsnotexacttaskattribution."
+    }
+  ],
+  "budget_block_observations": 1
+}

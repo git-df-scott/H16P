@@ -1,0 +1,766 @@
+{
+  "scope": "Independent Cartesian endpoint checks plus unperturbed very-large-orbit identity controls",
+  "records": [
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.3858754711196688,
+          "height": 0.2501047444367224,
+          "nfev": 535,
+          "time": 8.755633164275222
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.3867132291951851,
+          "height": 0.24989530490942263,
+          "nfev": 535,
+          "time": 8.7534765071717
+        },
+        "log_difference": 0.0008377580755163372
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.2501047444367139,
+          "log_height_difference": 3.397282455352979e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.24989530490941222,
+          "log_height_difference": 4.1744385725905886e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -3.682772315928797,
+          "height": 0.025153145619367653,
+          "nfev": 991,
+          "time": 18.475410749817545
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -3.6950231790915216,
+          "height": 0.02484687772776225,
+          "nfev": 991,
+          "time": 18.518398319217837
+        },
+        "log_difference": 0.012250863162724723
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.025153145619356887,
+          "log_height_difference": 4.2810199829546036e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.024846877727751397,
+          "log_height_difference": 4.3653969328261155e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.3871324363759598,
+          "height": 0.24979056895772805,
+          "nfev": 535,
+          "time": 8.755699768625238
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.3854569198266518,
+          "height": 0.2502094480112758,
+          "nfev": 535,
+          "time": 8.753412841427167
+        },
+        "log_difference": -0.001675516549308087
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.2497905689577168,
+          "log_height_difference": 4.5075054799781356e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.25020944801126566,
+          "log_height_difference": 4.063416270128073e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -3.6961682280989243,
+          "height": 0.024818443117700838,
+          "nfev": 991,
+          "time": 18.52583317323736
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -3.681643342706896,
+          "height": 0.02518155888310753,
+          "nfev": 991,
+          "time": 18.468042026265504
+        },
+        "log_difference": -0.014524885392028342
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.024818443117690027,
+          "log_height_difference": 4.3565151486291143e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.025181558883096606,
+          "log_height_difference": 4.338751580235112e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.258415889253672,
+          "height": 0.28410372198107103,
+          "nfev": 499,
+          "time": 8.129547953472368
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.2590978419756202,
+          "height": 0.2839100427221054,
+          "nfev": 499,
+          "time": 8.126747191660215
+        },
+        "log_difference": 0.0006819527219481536
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.28410372198106426,
+          "log_height_difference": 2.375877272697835e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.28391004272209946,
+          "log_height_difference": 2.0872192862952943e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.4210425338990214,
+          "height": 0.08882896196546788,
+          "nfev": 655,
+          "time": 11.157321043246402
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.423968186695168,
+          "height": 0.08856945905731924,
+          "nfev": 655,
+          "time": 11.161069066022037
+        },
+        "log_difference": 0.0029256527961467604
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.08882896196551565,
+          "log_height_difference": 5.377920331284258e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0885694590573671,
+          "log_height_difference": 5.404565683875262e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 3.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -0.28679996879634556,
+          "height": 0.750661869617464,
+          "nfev": 343,
+          "time": 4.328188937496144
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -0.2858023143397654,
+          "height": 0.7514111444736253,
+          "nfev": 343,
+          "time": 4.32751890969179
+        },
+        "log_difference": -0.000997654456580177
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.7506618696173303,
+          "log_height_difference": 1.7802426199864385e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.7514111444734561,
+          "log_height_difference": 2.2515322939398175e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 30.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.356118737415038,
+          "height": 0.09478740497937467,
+          "nfev": 667,
+          "time": 10.09604560385488
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.351631330626474,
+          "height": 0.09521371041152518,
+          "nfev": 667,
+          "time": 10.083220290961265
+        },
+        "log_difference": -0.0044874067885638524
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.09478740497937334,
+          "log_height_difference": 1.4210854715202004e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.09521371041152274,
+          "log_height_difference": 2.5757174171303632e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.583856264674271,
+          "height": 0.20518233324806445,
+          "nfev": 607,
+          "time": 10.382289169590724
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.5850509267359318,
+          "height": 0.2049373560604223,
+          "nfev": 607,
+          "time": 10.381748337254919
+        },
+        "log_difference": 0.001194662061660745
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.205182333248048,
+          "log_height_difference": 8.01581023779363e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.20493735606040817,
+          "log_height_difference": 6.905587213168474e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -6.147654148905937,
+          "height": 0.0021384924754686914,
+          "nfev": 2275,
+          "time": 52.05644711199079
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -6.386148548363209,
+          "height": 0.0016847323873360538,
+          "nfev": 2359,
+          "time": 54.011610779873536
+        },
+        "log_difference": 0.2384943994572728
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.002138492475467675,
+          "log_height_difference": 4.75175454539567e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0016847323873350616,
+          "log_height_difference": 5.88862292261183e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 0.3333333333333333,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.4888885177517217,
+          "height": 0.08300217076339318,
+          "nfev": 1291,
+          "time": 31.269308058631367
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.483710654421903,
+          "height": 0.08343305923781388,
+          "nfev": 1291,
+          "time": 31.2863867320917
+        },
+        "log_difference": -0.005177863329818511
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.08300217076339313,
+          "log_height_difference": 4.440892098500626e-16
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0834330592378138,
+          "log_height_difference": 8.881784197001252e-16
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 3.333333333333333,
+        "forward": {
+          "status": "passed",
+          "log_height": -5.135198128741823,
+          "height": 0.005885885226644305,
+          "nfev": 1939,
+          "time": 44.16934054411532
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -5.057350093773317,
+          "height": 0.006362396949535529,
+          "nfev": 1915,
+          "time": 43.59411598594542
+        },
+        "log_difference": -0.07784803496850667
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.005885885226644487,
+          "log_height_difference": 3.108624468950438e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.006362396949535703,
+          "log_height_difference": 2.7533531010703882e-14
+        }
+      ]
+    }
+  ],
+  "large_controls": [
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -24.412145291055527,
+          "height": 2.500000000012051e-11,
+          "nfev": 4999,
+          "time": 122.06072645527642
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -24.412145291055527,
+          "height": 2.500000000012051e-11,
+          "nfev": 4999,
+          "time": 122.06072645527642
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+30,
+        "forward": {
+          "status": "passed",
+          "log_height": -70.46384715093099,
+          "height": 2.5000000000256825e-31,
+          "nfev": 14179,
+          "time": 352.31923575465413
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -70.46384715093099,
+          "height": 2.5000000000256825e-31,
+          "nfev": 14179,
+          "time": 352.31923575465413
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+60,
+        "forward": {
+          "status": "passed",
+          "log_height": -139.54139994074714,
+          "height": 2.5000000000387273e-61,
+          "nfev": 27967,
+          "time": 697.7069997037336
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -139.54139994074714,
+          "height": 2.5000000000387273e-61,
+          "nfev": 27967,
+          "time": 697.7069997037336
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -24.412145291055527,
+          "height": 2.500000000012051e-11,
+          "nfev": 4999,
+          "time": 122.06072645527642
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -24.412145291055527,
+          "height": 2.500000000012051e-11,
+          "nfev": 4999,
+          "time": 122.06072645527642
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 1e+30,
+        "forward": {
+          "status": "passed",
+          "log_height": -70.46384715093099,
+          "height": 2.5000000000256825e-31,
+          "nfev": 14179,
+          "time": 352.31923575465413
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -70.46384715093099,
+          "height": 2.5000000000256825e-31,
+          "nfev": 14179,
+          "time": 352.31923575465413
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 1e+60,
+        "forward": {
+          "status": "passed",
+          "log_height": -139.54139994074714,
+          "height": 2.5000000000387273e-61,
+          "nfev": 27967,
+          "time": 697.7069997037336
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -139.54139994074714,
+          "height": 2.5000000000387273e-61,
+          "nfev": 27967,
+          "time": 697.7069997037336
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -14.45431953028162,
+          "height": 5.27920818059989e-07,
+          "nfev": 2515,
+          "time": 58.76222575487504
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -14.45431953028162,
+          "height": 5.27920818059989e-07,
+          "nfev": 2515,
+          "time": 58.76222575487504
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 1e+30,
+        "forward": {
+          "status": "passed",
+          "log_height": -42.085337830868156,
+          "height": 5.279223043397393e-19,
+          "nfev": 6919,
+          "time": 169.2862742713046
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -42.085337830868156,
+          "height": 5.279223043397393e-19,
+          "nfev": 6919,
+          "time": 169.2862742713046
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 1e+60,
+        "forward": {
+          "status": "passed",
+          "log_height": -83.5318695047582,
+          "height": 5.279223043412029e-37,
+          "nfev": 13519,
+          "time": 335.0724009668702
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -83.5318695047582,
+          "height": 5.279223043412029e-37,
+          "nfev": 13519,
+          "time": 335.0724009668702
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -14.45431389959037,
+          "height": 5.279237906274887e-07,
+          "nfev": 2515,
+          "time": 58.76215386020061
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -14.45431389959037,
+          "height": 5.279237906274887e-07,
+          "nfev": 2515,
+          "time": 58.76215386020061
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 1e+30,
+        "forward": {
+          "status": "passed",
+          "log_height": -42.085337830868156,
+          "height": 5.279223043397393e-19,
+          "nfev": 6919,
+          "time": 169.2862742713046
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -42.085337830868156,
+          "height": 5.279223043397393e-19,
+          "nfev": 6919,
+          "time": 169.2862742713046
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 1e+60,
+        "forward": {
+          "status": "passed",
+          "log_height": -83.5318695047582,
+          "height": 5.279223043412029e-37,
+          "nfev": 13519,
+          "time": 335.0724009668702
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -83.5318695047582,
+          "height": 5.279223043412029e-37,
+          "nfev": 13519,
+          "time": 335.0724009668702
+        },
+        "log_difference": 0.0
+      }
+    }
+  ],
+  "counts": {
+    "log_halves": 48
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "scope": "Exact first-integral endpoint test at initial height1e250; nonvalidated error",
+  "records": [
+    {
+      "a": -1.0,
+      "b": 1.0,
+      "side": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+250,
+        "forward": {
+          "status": "passed",
+          "log_height": -577.0325676095954,
+          "height": 2.5000000000898053e-251,
+          "nfev": 115447,
+          "time": 2885.162838047847
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -577.0325676095954,
+          "height": 2.5000000000898053e-251,
+          "nfev": 115447,
+          "time": 2885.162838047847
+        },
+        "log_difference": 0.0
+      },
+      "log_energy_error": 3.5925040720030665e-11
+    },
+    {
+      "a": -1.0,
+      "b": 1.0,
+      "side": -1,
+      "row": {
+        "side": -1,
+        "height": 1e+250,
+        "forward": {
+          "status": "passed",
+          "log_height": -577.0325676095954,
+          "height": 2.5000000000898053e-251,
+          "nfev": 115447,
+          "time": 2885.162838047847
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -577.0325676095954,
+          "height": 2.5000000000898053e-251,
+          "nfev": 115447,
+          "time": 2885.162838047847
+        },
+        "log_difference": 0.0
+      },
+      "log_energy_error": 3.5925040720030665e-11
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+250,
+        "forward": {
+          "status": "passed",
+          "log_height": -346.02657010606856,
+          "height": 5.279223043469319e-151,
+          "nfev": 55531,
+          "time": 1385.05120337216
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -346.02657010606856,
+          "height": 5.279223043469319e-151,
+          "nfev": 55531,
+          "time": 1385.05120337216
+        },
+        "log_difference": 0.0
+      },
+      "log_energy_error": 1.5518253349000588e-11
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "side": -1,
+      "row": {
+        "side": -1,
+        "height": 1e+250,
+        "forward": {
+          "status": "passed",
+          "log_height": -346.02657010606856,
+          "height": 5.279223043469319e-151,
+          "nfev": 55531,
+          "time": 1385.05120337216
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -346.02657010606856,
+          "height": 5.279223043469319e-151,
+          "nfev": 55531,
+          "time": 1385.05120337216
+        },
+        "log_difference": 0.0
+      },
+      "log_energy_error": 1.5518253349000588e-11
+    }
+  ],
+  "counts": {
+    "log_halves": 8
+  }
+}

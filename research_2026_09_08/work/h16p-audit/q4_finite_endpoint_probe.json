@@ -1,0 +1,4569 @@
+{
+  "evidence": "NUM only; sampled two-sided passages; no rigorous root count",
+  "direction": [
+    "20569265961809427/50000000000000000000",
+    "42436759177461253/100000000000000000",
+    "-1",
+    "1029863328970071/10000000000000000"
+  ],
+  "records": [
+    {
+      "delta": "1/1000",
+      "parameters": [
+        "20569265961809427/50000000000000000000000",
+        "42436759177461253/100000000000000000000",
+        "-1/1000",
+        "1029863328970071/10000000000000000000"
+      ],
+      "rows": [
+        {
+          "radius": 0.01,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.00943391470444714,
+            "time": 3.1479702985179436,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.009433891150893079,
+            "time": 3.13501774525594,
+            "nfev": 283
+          },
+          "difference": 2.355355406026549e-08
+        },
+        {
+          "radius": 0.01291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.01198653688059002,
+            "time": 3.149725160443863,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.011986507303406828,
+            "time": 3.1331365404625946,
+            "nfev": 283
+          },
+          "difference": 2.957718319221425e-08
+        },
+        {
+          "radius": 0.016681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.015163229385338832,
+            "time": 3.151926342541987,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.015163192569519788,
+            "time": 3.1307305297262973,
+            "nfev": 283
+          },
+          "difference": 3.6815819044397347e-08
+        },
+        {
+          "radius": 0.021544346900318832,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.019077964240275923,
+            "time": 3.154665135220483,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.019077918947459263,
+            "time": 3.127662220319455,
+            "nfev": 283
+          },
+          "difference": 4.52928166604083e-08
+        },
+        {
+          "radius": 0.027825594022071243,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.023844292216805202,
+            "time": 3.1580383487883297,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.023844237358565293,
+            "time": 3.1237639714604475,
+            "nfev": 283
+          },
+          "difference": 5.485823990902805e-08
+        },
+        {
+          "radius": 0.03593813663804628,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.02956285709439234,
+            "time": 3.162140380118872,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.029562792025564975,
+            "time": 3.1188352414281706,
+            "nfev": 295
+          },
+          "difference": 6.506882736442843e-08
+        },
+        {
+          "radius": 0.046415888336127774,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.036304230139770285,
+            "time": 3.167050370951648,
+            "nfev": 307
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.03630415509870475,
+            "time": 3.1126422711714867,
+            "nfev": 307
+          },
+          "difference": 7.504106553507528e-08
+        },
+        {
+          "radius": 0.05994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.04408843917908233,
+            "time": 3.17281379607351,
+            "nfev": 319
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.044088355861076976,
+            "time": 3.104922148424098,
+            "nfev": 307
+          },
+          "difference": 8.331800535610334e-08
+        },
+        {
+          "radius": 0.0774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.05286468412562691,
+            "time": 3.1794190606438506,
+            "nfev": 331
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.05286459628250203,
+            "time": 3.095393698538569,
+            "nfev": 319
+          },
+          "difference": 8.784312487825074e-08
+        },
+        {
+          "radius": 0.1,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.062496815166484566,
+            "time": 3.186771805626302,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.06249672897161189,
+            "time": 3.0837777016709658,
+            "nfev": 331
+          },
+          "difference": 8.61948726768591e-08
+        },
+        {
+          "radius": 0.1291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.07276093342303402,
+            "time": 3.1946723310239564,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.07276085717339,
+            "time": 3.0698280387955803,
+            "nfev": 355
+          },
+          "difference": 7.624964402930257e-08
+        },
+        {
+          "radius": 0.16681005372000582,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.08335962670653692,
+            "time": 3.202803910656994,
+            "nfev": 379
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.08335956938789107,
+            "time": 3.0533730859720496,
+            "nfev": 379
+          },
+          "difference": 5.731864584357371e-08
+        },
+        {
+          "radius": 0.21544346900318834,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.09395260176894847,
+            "time": 3.210740319366034,
+            "nfev": 427
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.09395257029108893,
+            "time": 3.034363049686203,
+            "nfev": 415
+          },
+          "difference": 3.1477859541162445e-08
+        },
+        {
+          "radius": 0.2782559402207124,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.10419750143202154,
+            "time": 3.2179783193280125,
+            "nfev": 451
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.10419749707369882,
+            "time": 3.012914875890312,
+            "nfev": 451
+          },
+          "difference": 4.358322716613294e-09
+        },
+        {
+          "radius": 0.3593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.11379061896403807,
+            "time": 3.223995040966457,
+            "nfev": 475
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.11379063456542585,
+            "time": 2.989343581402896,
+            "nfev": 451
+          },
+          "difference": -1.5601387778896303e-08
+        },
+        {
+          "radius": 0.46415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.12249750077080963,
+            "time": 3.2283227278017823,
+            "nfev": 523
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.12249752088980825,
+            "time": 2.9641690745919966,
+            "nfev": 463
+          },
+          "difference": -2.011899861986688e-08
+        },
+        {
+          "radius": 0.5994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.13016786868279862,
+            "time": 3.230626788594355,
+            "nfev": 511
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13016787457931808,
+            "time": 2.938091401955751,
+            "nfev": 487
+          },
+          "difference": -5.8965194671412036e-09
+        },
+        {
+          "radius": 0.774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1367351707052509,
+            "time": 3.230769720789535,
+            "nfev": 547
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13673515032623457,
+            "time": 2.9119339550135828,
+            "nfev": 511
+          },
+          "difference": 2.037901633555883e-08
+        },
+        {
+          "radius": 1.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.14220528131225238,
+            "time": 3.22884429391466,
+            "nfev": 595
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14220524189902498,
+            "time": 2.886561562077728,
+            "nfev": 547
+          },
+          "difference": 3.9413227403972684e-08
+        },
+        {
+          "radius": 1.291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1466400187079914,
+            "time": 3.2251647066388265,
+            "nfev": 631
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14663999740605757,
+            "time": 2.8627866389932835,
+            "nfev": 583
+          },
+          "difference": 2.1301933827988506e-08
+        },
+        {
+          "radius": 1.6681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15013987862559747,
+            "time": 3.2202141016430432,
+            "nfev": 655
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15013994591788613,
+            "time": 2.8412802610836843,
+            "nfev": 631
+          },
+          "difference": -6.729228865798298e-08
+        },
+        {
+          "radius": 2.154434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1528283088507496,
+            "time": 3.2145592317786837,
+            "nfev": 715
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15282856159740918,
+            "time": 2.8225051019141167,
+            "nfev": 679
+          },
+          "difference": -2.5274665957364384e-07
+        },
+        {
+          "radius": 2.782559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15483827579755458,
+            "time": 3.208753970485789,
+            "nfev": 763
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1548388207236781,
+            "time": 2.8066829946695404,
+            "nfev": 727
+          },
+          "difference": -5.449261235301872e-07
+        },
+        {
+          "radius": 3.593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1563012434073688,
+            "time": 3.203257139437192,
+            "nfev": 811
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15630217614615907,
+            "time": 2.7938017886908812,
+            "nfev": 775
+          },
+          "difference": -9.327387902602347e-07
+        },
+        {
+          "radius": 4.6415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15733869640919337,
+            "time": 3.198383874991563,
+            "nfev": 859
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15734008324485269,
+            "time": 2.7836563617766394,
+            "nfev": 823
+          },
+          "difference": -1.386835659311636e-06
+        },
+        {
+          "radius": 5.994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15805644467061736,
+            "time": 3.194296355368821,
+            "nfev": 919
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15805831269001508,
+            "time": 2.7759106415180463,
+            "nfev": 871
+          },
+          "difference": -1.868019397721632e-06
+        },
+        {
+          "radius": 7.742636826811269,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15854179760243015,
+            "time": 3.19102624241456,
+            "nfev": 967
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15854413504348808,
+            "time": 2.770164350445836,
+            "nfev": 919
+          },
+          "difference": -2.337441057931322e-06
+        },
+        {
+          "radius": 10.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15886331794976638,
+            "time": 3.188513829579191,
+            "nfev": 1015
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15886608255063814,
+            "time": 2.7660106098715427,
+            "nfev": 967
+          },
+          "difference": -2.76460087175745e-06
+        },
+        {
+          "radius": 12.915496650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1590724899547191,
+            "time": 3.186649137880218,
+            "nfev": 1051
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15907562103888637,
+            "time": 2.7630765411462996,
+            "nfev": 1003
+          },
+          "difference": -3.131084167273812e-06
+        },
+        {
+          "radius": 16.681005372000573,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1592064704665717,
+            "time": 3.18530532306579,
+            "nfev": 1123
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15920990071442925,
+            "time": 2.7610454639007687,
+            "nfev": 1063
+          },
+          "difference": -3.430247857566515e-06
+        },
+        {
+          "radius": 21.54434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15929116950550853,
+            "time": 3.184360805190867,
+            "nfev": 1171
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159294833930792,
+            "time": 2.759663835686678,
+            "nfev": 1111
+          },
+          "difference": -3.6644252834616697e-06
+        },
+        {
+          "radius": 27.82559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15934413382914575,
+            "time": 3.1837108979275666,
+            "nfev": 1207
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1593479752104138,
+            "time": 2.7587379729345796,
+            "nfev": 1159
+          },
+          "difference": -3.8413812680493375e-06
+        },
+        {
+          "radius": 35.93813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15937695958736897,
+            "time": 3.1832717389854173,
+            "nfev": 1255
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15938093078756407,
+            "time": 2.758125408671103,
+            "nfev": 1219
+          },
+          "difference": -3.971200195101998e-06
+        },
+        {
+          "radius": 46.41588833612777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15939715770701102,
+            "time": 3.1829795760266424,
+            "nfev": 1315
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594012218135107,
+            "time": 2.7577245104655788,
+            "nfev": 1255
+          },
+          "difference": -4.0641064996960186e-06
+        },
+        {
+          "radius": 59.94842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15940951413642568,
+            "time": 3.182787828265748,
+            "nfev": 1375
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15941364336518515,
+            "time": 2.7574645589407196,
+            "nfev": 1315
+          },
+          "difference": -4.12922875947519e-06
+        },
+        {
+          "radius": 77.4263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15941703857160308,
+            "time": 3.182663494825488,
+            "nfev": 1435
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594212126584232,
+            "time": 2.7572973331764974,
+            "nfev": 1363
+          },
+          "difference": -4.174086820130096e-06
+        },
+        {
+          "radius": 100.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594216038938519,
+            "time": 3.1825837608244516,
+            "nfev": 1471
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15942580843007284,
+            "time": 2.7571904935662688,
+            "nfev": 1411
+          },
+          "difference": -4.204536220936417e-06
+        },
+        {
+          "radius": 129.15496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159424365883444,
+            "time": 3.182533161846042,
+            "nfev": 1519
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15942859083402589,
+            "time": 2.7571226442555288,
+            "nfev": 1459
+          },
+          "difference": -4.224950581888098e-06
+        },
+        {
+          "radius": 166.81005372000593,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942603310880785,
+            "time": 3.1825013843996532,
+            "nfev": 1591
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943027160281312,
+            "time": 2.7570797875935487,
+            "nfev": 1519
+          },
+          "difference": -4.238494005270876e-06
+        },
+        {
+          "radius": 215.44346900318823,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942703772746114,
+            "time": 3.182481642953795,
+            "nfev": 1639
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594312851264253,
+            "time": 2.7570528508917778,
+            "nfev": 1567
+          },
+          "difference": -4.247398964152271e-06
+        },
+        {
+          "radius": 278.2559402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594276422476493,
+            "time": 3.182469524668717,
+            "nfev": 1675
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943189545697853,
+            "time": 2.7570359993553235,
+            "nfev": 1615
+          },
+          "difference": -4.253209329230234e-06
+        },
+        {
+          "radius": 359.38136638046257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594280056225997,
+            "time": 3.1824621889006686,
+            "nfev": 1723
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943226259811172,
+            "time": 2.757025505310062,
+            "nfev": 1675
+          },
+          "difference": -4.25697551201254e-06
+        },
+        {
+          "radius": 464.1588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942822386395128,
+            "time": 3.182457823961229,
+            "nfev": 1771
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594324832667007,
+            "time": 2.7570190008078352,
+            "nfev": 1723
+          },
+          "difference": -4.259402749423602e-06
+        },
+        {
+          "radius": 599.4842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942835485382265,
+            "time": 3.182455284503526,
+            "nfev": 1819
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943261581308243,
+            "time": 2.7570149891569256,
+            "nfev": 1771
+          },
+          "difference": -4.260959259788644e-06
+        },
+        {
+          "radius": 774.2636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942843343523905,
+            "time": 3.1824538527035084,
+            "nfev": 1891
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943269538826957,
+            "time": 2.75701252859574,
+            "nfev": 1819
+          },
+          "difference": -4.261953030521015e-06
+        },
+        {
+          "radius": 1000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942848055818815,
+            "time": 3.1824530827240105,
+            "nfev": 1939
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943274314324335,
+            "time": 2.7570110289904757,
+            "nfev": 1879
+          },
+          "difference": -4.262585055203605e-06
+        },
+        {
+          "radius": 1291.5496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942850880786483,
+            "time": 3.1824527003850434,
+            "nfev": 1987
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943277179351428,
+            "time": 2.7570101220022853,
+            "nfev": 1927
+          },
+          "difference": -4.262985649455819e-06
+        },
+        {
+          "radius": 1668.100537200059,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942852573924907,
+            "time": 3.1824525389846636,
+            "nfev": 2035
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943278897802476,
+            "time": 2.7570095786212425,
+            "nfev": 1975
+          },
+          "difference": -4.263238775698008e-06
+        },
+        {
+          "radius": 2154.4346900318824,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285358851939,
+            "time": 3.1824524985643188,
+            "nfev": 2095
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943279928348336,
+            "time": 2.7570092570293436,
+            "nfev": 2035
+          },
+          "difference": -4.263398289461318e-06
+        },
+        {
+          "radius": 2782.55940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942854196418163,
+            "time": 3.1824525202390053,
+            "nfev": 2155
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943280546273664,
+            "time": 2.7570090697760623,
+            "nfev": 2083
+          },
+          "difference": -4.2634985550071836e-06
+        },
+        {
+          "radius": 3593.813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285456060366,
+            "time": 3.1824525701398825,
+            "nfev": 2203
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943280916747327,
+            "time": 2.7570089631895134,
+            "nfev": 2131
+          },
+          "difference": -4.263561436679275e-06
+        },
+        {
+          "radius": 4641.588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285477876463,
+            "time": 3.1824526294446605,
+            "nfev": 2263
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281138844378,
+            "time": 2.7570089045069555,
+            "nfev": 2179
+          },
+          "difference": -4.263600797471678e-06
+        },
+        {
+          "radius": 5994.8425031894085,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942854909442977,
+            "time": 3.1824526882386532,
+            "nfev": 2299
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328127198195,
+            "time": 2.757008873858026,
+            "nfev": 2239
+          },
+          "difference": -4.2636253897165854e-06
+        },
+        {
+          "radius": 7742.636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942854987715024,
+            "time": 3.1824527417705215,
+            "nfev": 2359
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328135178728,
+            "time": 2.757008859286861,
+            "nfev": 2287
+          },
+          "difference": -4.263640722562689e-06
+        },
+        {
+          "radius": 10000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855034595244,
+            "time": 3.1824527881935887,
+            "nfev": 2407
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281399623696,
+            "time": 2.7570088536719015,
+            "nfev": 2335
+          },
+          "difference": -4.263650284525022e-06
+        },
+        {
+          "radius": 12915.496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285506267398,
+            "time": 3.182452827223799,
+            "nfev": 2455
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281428295503,
+            "time": 2.7570088528273216,
+            "nfev": 2383
+          },
+          "difference": -4.263656215225398e-06
+        },
+        {
+          "radius": 16681.005372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855079489437,
+            "time": 3.1824528593559203,
+            "nfev": 2515
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159432814454804,
+            "time": 2.757008854336328,
+            "nfev": 2455
+          },
+          "difference": -4.26365990963129e-06
+        },
+        {
+          "radius": 21544.346900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855089561517,
+            "time": 3.182452885418199,
+            "nfev": 2551
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281455780348,
+            "time": 2.7570088568391236,
+            "nfev": 2503
+          },
+          "difference": -4.263662188308537e-06
+        },
+        {
+          "radius": 27825.5940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285509559272,
+            "time": 3.182452906329041,
+            "nfev": 2611
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328146195368,
+            "time": 2.7570088595995434,
+            "nfev": 2539
+          },
+          "difference": -4.263663609588297e-06
+        },
+        {
+          "radius": 35938.13663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855099205427,
+            "time": 3.182452922971621,
+            "nfev": 2659
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328146565359,
+            "time": 2.7570088622435116,
+            "nfev": 2599
+          },
+          "difference": -4.263664481612972e-06
+        },
+        {
+          "radius": 46415.888336127726,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855101368852,
+            "time": 3.1824529361362726,
+            "nfev": 2719
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281467871237,
+            "time": 2.7570088646024833,
+            "nfev": 2659
+          },
+          "difference": -4.263665023845897e-06
+        },
+        {
+          "radius": 59948.42503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855102664427,
+            "time": 3.1824529465011437,
+            "nfev": 2755
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328146920016,
+            "time": 2.7570088666208057,
+            "nfev": 2719
+          },
+          "difference": -4.263665357329138e-06
+        },
+        {
+          "radius": 77426.36826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510344028,
+            "time": 3.1824529546322156,
+            "nfev": 2803
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281469996654,
+            "time": 2.757008868301412,
+            "nfev": 2755
+          },
+          "difference": -4.263665563747354e-06
+        },
+        {
+          "radius": 100000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855103904946,
+            "time": 3.1824529609931127,
+            "nfev": 2875
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281470474047,
+            "time": 2.757008869675095,
+            "nfev": 2791
+          },
+          "difference": -4.263665691006668e-06
+        },
+        {
+          "radius": 129154.96650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104183282,
+            "time": 3.182452965958199,
+            "nfev": 2923
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281470759743,
+            "time": 2.7570088707831104,
+            "nfev": 2851
+          },
+          "difference": -4.263665764614455e-06
+        },
+        {
+          "radius": 166810.05372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104349285,
+            "time": 3.182452969827386,
+            "nfev": 2947
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147093173,
+            "time": 2.7570088716682797,
+            "nfev": 2899
+          },
+          "difference": -4.263665824455476e-06
+        },
+        {
+          "radius": 215443.46900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510444956,
+            "time": 3.182452972837945,
+            "nfev": 3031
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471034434,
+            "time": 2.757008872370425,
+            "nfev": 2971
+          },
+          "difference": -4.263665848741605e-06
+        },
+        {
+          "radius": 278255.94022071204,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104508832,
+            "time": 3.182452975178337,
+            "nfev": 3079
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471095655,
+            "time": 2.757008872924306,
+            "nfev": 3007
+          },
+          "difference": -4.263665868226019e-06
+        },
+        {
+          "radius": 359381.36638046254,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510454517,
+            "time": 3.182452976996127,
+            "nfev": 3127
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471133236,
+            "time": 2.7570088733593456,
+            "nfev": 3055
+          },
+          "difference": -4.2636658806605165e-06
+        },
+        {
+          "radius": 464158.8833612772,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510456607,
+            "time": 3.1824529784073485,
+            "nfev": 3175
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159432814711555,
+            "time": 2.7570088737000544,
+            "nfev": 3103
+          },
+          "difference": -4.263665894288504e-06
+        },
+        {
+          "radius": 599484.2503189408,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104578676,
+            "time": 3.1824529795019165,
+            "nfev": 3235
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147116826,
+            "time": 2.757008873966325,
+            "nfev": 3175
+          },
+          "difference": -4.263665895842816e-06
+        },
+        {
+          "radius": 774263.6826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104586948,
+            "time": 3.1824529803507637,
+            "nfev": 3283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147117594,
+            "time": 2.7570088741738967,
+            "nfev": 3223
+          },
+          "difference": -4.263665889930879e-06
+        },
+        {
+          "radius": 1000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104591783,
+            "time": 3.1824529810086215,
+            "nfev": 3343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471181,
+            "time": 2.7570088743354333,
+            "nfev": 3271
+          },
+          "difference": -4.2636658921790804e-06
+        },
+        {
+          "radius": 1291549.6650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510459453,
+            "time": 3.182452981518596,
+            "nfev": 3379
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471184162,
+            "time": 2.7570088744609746,
+            "nfev": 3319
+          },
+          "difference": -4.263665896314661e-06
+        },
+        {
+          "radius": 1668100.5372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104596151,
+            "time": 3.182452981913851,
+            "nfev": 3439
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471185555,
+            "time": 2.757008874558671,
+            "nfev": 3367
+          },
+          "difference": -4.263665894038704e-06
+        },
+        {
+          "radius": 2154434.6900318777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104597176,
+            "time": 3.1824529822198793,
+            "nfev": 3499
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471186938,
+            "time": 2.757008874634387,
+            "nfev": 3415
+          },
+          "difference": -4.263665897619173e-06
+        },
+        {
+          "radius": 2782559.402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510459781,
+            "time": 3.1824529824569914,
+            "nfev": 3535
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159432814711868,
+            "time": 2.757008874693255,
+            "nfev": 3475
+          },
+          "difference": -4.263665889875368e-06
+        },
+        {
+          "radius": 3593813.6638046256,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510459803,
+            "time": 3.1824529826407173,
+            "nfev": 3595
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471187584,
+            "time": 2.7570088747388497,
+            "nfev": 3523
+          },
+          "difference": -4.263665895537505e-06
+        },
+        {
+          "radius": 4641588.833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104597592,
+            "time": 3.182452982783153,
+            "nfev": 3619
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471187817,
+            "time": 2.757008874774194,
+            "nfev": 3583
+          },
+          "difference": -4.263665902254354e-06
+        },
+        {
+          "radius": 5994842.503189396,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510459831,
+            "time": 3.182452982893091,
+            "nfev": 3703
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147118837,
+            "time": 2.7570088748014983,
+            "nfev": 3631
+          },
+          "difference": -4.26366590058902e-06
+        },
+        {
+          "radius": 7742636.826811277,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104597647,
+            "time": 3.182452982978536,
+            "nfev": 3739
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471187573,
+            "time": 2.757008874822812,
+            "nfev": 3691
+          },
+          "difference": -4.263665899256752e-06
+        },
+        {
+          "radius": 10000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598647,
+            "time": 3.1824529830445014,
+            "nfev": 3799
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147118808,
+            "time": 2.7570088748392436,
+            "nfev": 3739
+          },
+          "difference": -4.263665894344015e-06
+        },
+        {
+          "radius": 12915496.650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104597795,
+            "time": 3.1824529830958523,
+            "nfev": 3835
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594328147118795,
+            "time": 2.757008874851934,
+            "nfev": 3799
+          },
+          "difference": -4.263665901560465e-06
+        },
+        {
+          "radius": 16681005.372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598574,
+            "time": 3.182452983135311,
+            "nfev": 3895
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188062,
+            "time": 2.7570088748618553,
+            "nfev": 3823
+          },
+          "difference": -4.263665894871371e-06
+        },
+        {
+          "radius": 21544346.90031878,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598358,
+            "time": 3.1824529831661734,
+            "nfev": 3955
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188017,
+            "time": 2.7570088748695336,
+            "nfev": 3895
+          },
+          "difference": -4.263665896592217e-06
+        },
+        {
+          "radius": 27825594.022071257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594285510459866,
+            "time": 3.1824529831897754,
+            "nfev": 4003
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188084,
+            "time": 2.7570088748754187,
+            "nfev": 3931
+          },
+          "difference": -4.263665894232993e-06
+        },
+        {
+          "radius": 35938136.63804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598488,
+            "time": 3.182452983208293,
+            "nfev": 4039
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188145,
+            "time": 2.757008874880021,
+            "nfev": 3991
+          },
+          "difference": -4.263665896564461e-06
+        },
+        {
+          "radius": 46415888.33612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598597,
+            "time": 3.1824529832223685,
+            "nfev": 4111
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188145,
+            "time": 2.7570088748835726,
+            "nfev": 4039
+          },
+          "difference": -4.263665895481994e-06
+        },
+        {
+          "radius": 59948425.03189397,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598114,
+            "time": 3.182452983233357,
+            "nfev": 4147
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188137,
+            "time": 2.757008874886306,
+            "nfev": 4087
+          },
+          "difference": -4.263665900228197e-06
+        },
+        {
+          "radius": 77426368.26811247,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104597878,
+            "time": 3.182452983241943,
+            "nfev": 4183
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15943281471188062,
+            "time": 2.7570088748884616,
+            "nfev": 4147
+          },
+          "difference": -4.263665901838021e-06
+        },
+        {
+          "radius": 100000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942855104598633,
+            "time": 3.182452983248538,
+            "nfev": 4267
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159432814711877,
+            "time": 2.7570088748900834,
+            "nfev": 4195
+          },
+          "difference": -4.263665890680279e-06
+        }
+      ],
+      "brackets": [
+        [
+          0.2782559402207124,
+          0.3593813663804626
+        ],
+        [
+          0.5994842503189409,
+          0.774263682681127
+        ],
+        [
+          1.291549665014884,
+          1.6681005372000592
+        ]
+      ],
+      "tight": [
+        {
+          "radius": 0.2782559402207124,
+          "difference": 4.358313765440158e-09,
+          "change": -8.951173136040325e-15
+        },
+        {
+          "radius": 0.3593813663804626,
+          "difference": -1.5601375052964883e-08,
+          "change": 1.2725931419765857e-14
+        },
+        {
+          "radius": 0.5994842503189409,
+          "difference": -5.896517579762062e-09,
+          "change": 1.887379141862766e-15
+        },
+        {
+          "radius": 0.774263682681127,
+          "difference": 2.037901905560524e-08,
+          "change": 2.7200464103316335e-15
+        },
+        {
+          "radius": 1.291549665014884,
+          "difference": 2.1301941627305254e-08,
+          "change": 7.799316747991725e-15
+        },
+        {
+          "radius": 1.6681005372000592,
+          "difference": -6.729229803936754e-08,
+          "change": -9.381384558082573e-15
+        }
+      ],
+      "unresolved": 0
+    },
+    {
+      "delta": "1/10000",
+      "parameters": [
+        "20569265961809427/500000000000000000000000",
+        "42436759177461253/1000000000000000000000",
+        "-1/10000",
+        "1029863328970071/100000000000000000000"
+      ],
+      "rows": [
+        {
+          "radius": 0.01,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0094339575053071,
+            "time": 3.147967140276543,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.00943395514993197,
+            "time": 3.1350207081659414,
+            "nfev": 283
+          },
+          "difference": 2.355375129312054e-09
+        },
+        {
+          "radius": 0.01291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.011986609794100928,
+            "time": 3.149721088228613,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.011986606836351327,
+            "time": 3.1331402944450977,
+            "nfev": 283
+          },
+          "difference": 2.957749600795978e-09
+        },
+        {
+          "radius": 0.016681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0151633508406135,
+            "time": 3.1519210946981064,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.015163347158982854,
+            "time": 3.1307352602871292,
+            "nfev": 283
+          },
+          "difference": 3.6816306461795456e-09
+        },
+        {
+          "radius": 0.021544346900318832,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.019078162452315726,
+            "time": 3.154658377282096,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.01907815792296089,
+            "time": 3.127668140566772,
+            "nfev": 283
+          },
+          "difference": 4.529354835636212e-09
+        },
+        {
+          "radius": 0.027825594022071243,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.02384460925286701,
+            "time": 3.1580296547955458,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.023844603766932752,
+            "time": 3.1237713161421135,
+            "nfev": 283
+          },
+          "difference": 5.4859342589475e-09
+        },
+        {
+          "radius": 0.03593813663804628,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.029563353731002086,
+            "time": 3.1621292103365355,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.029563347223955396,
+            "time": 3.118844253285315,
+            "nfev": 295
+          },
+          "difference": 6.507046689668838e-09
+        },
+        {
+          "radius": 0.046415888336127774,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.036304990969135344,
+            "time": 3.1670360461982647,
+            "nfev": 307
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.03630498346482101,
+            "time": 3.1126531761682164,
+            "nfev": 307
+          },
+          "difference": 7.504314336603812e-09
+        },
+        {
+          "radius": 0.05994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.044089576897593255,
+            "time": 3.172795469626839,
+            "nfev": 319
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.044089568565547264,
+            "time": 3.1049351163517547,
+            "nfev": 307
+          },
+          "difference": 8.332045990655512e-09
+        },
+        {
+          "radius": 0.0774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.05286634145096141,
+            "time": 3.1793956898410225,
+            "nfev": 331
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.05286633266640939,
+            "time": 3.0954087865480977,
+            "nfev": 319
+          },
+          "difference": 8.784552023299863e-09
+        },
+        {
+          "radius": 0.1,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.06249916271161591,
+            "time": 3.1867421267267804,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.06249915409203886,
+            "time": 3.0837947810477435,
+            "nfev": 331
+          },
+          "difference": 8.619577052115801e-09
+        },
+        {
+          "radius": 0.1291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0727641624583481,
+            "time": 3.1946348422574515,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.07276415483371114,
+            "time": 3.0698467099805344,
+            "nfev": 355
+          },
+          "difference": 7.624636963465825e-09
+        },
+        {
+          "radius": 0.16681005372000582,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.08336393715115377,
+            "time": 3.2027568688626524,
+            "nfev": 379
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.08336393142051629,
+            "time": 3.0533925927978727,
+            "nfev": 379
+          },
+          "difference": 5.730637478440492e-09
+        },
+        {
+          "radius": 0.21544346900318834,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.09395818752404322,
+            "time": 3.2106817542905293,
+            "nfev": 427
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.09395818437908963,
+            "time": 3.03438220922191,
+            "nfev": 415
+          },
+          "difference": 3.144953589218069e-09
+        },
+        {
+          "radius": 0.2782559402207124,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.10420453642310681,
+            "time": 3.217906065964959,
+            "nfev": 451
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.10420453599262014,
+            "time": 3.012932042629653,
+            "nfev": 451
+          },
+          "difference": 4.3048667408562835e-10
+        },
+        {
+          "radius": 0.3593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.11379924723061915,
+            "time": 3.2239067849947767,
+            "nfev": 475
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.11379924879960215,
+            "time": 2.989356661833204,
+            "nfev": 451
+          },
+          "difference": -1.5689829990783721e-09
+        },
+        {
+          "radius": 0.46415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.12250783255196704,
+            "time": 3.228216054483308,
+            "nfev": 523
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.12250783457682538,
+            "time": 2.964175600524268,
+            "nfev": 463
+          },
+          "difference": -2.0248583365578554e-09
+        },
+        {
+          "radius": 0.5994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.13017998233971204,
+            "time": 3.230499224507869,
+            "nfev": 511
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13017998294629374,
+            "time": 2.938088660824526,
+            "nfev": 487
+          },
+          "difference": -6.065817015343811e-10
+        },
+        {
+          "radius": 0.774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.13674911836364845,
+            "time": 3.2306187628205327,
+            "nfev": 547
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13674911634504872,
+            "time": 2.9119191660059327,
+            "nfev": 511
+          },
+          "difference": 2.0185997318122872e-09
+        },
+        {
+          "radius": 1.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.14222109492203974,
+            "time": 3.2286674309518775,
+            "nfev": 595
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14222109099894298,
+            "time": 2.886532080451084,
+            "nfev": 547
+          },
+          "difference": 3.9230967641135095e-09
+        },
+        {
+          "radius": 1.291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.14665771312797382,
+            "time": 3.224959453095317,
+            "nfev": 631
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14665771100976438,
+            "time": 2.8627401669942776,
+            "nfev": 583
+          },
+          "difference": 2.1182094411820174e-09
+        },
+        {
+          "radius": 1.6681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15015944951118962,
+            "time": 3.2199780713114787,
+            "nfev": 655
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1501594562401282,
+            "time": 2.841215041058837,
+            "nfev": 631
+          },
+          "difference": -6.728938573008492e-09
+        },
+        {
+          "radius": 2.154434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1528497254513841,
+            "time": 3.2142902767703307,
+            "nfev": 715
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15284975070855258,
+            "time": 2.8224200653542093,
+            "nfev": 679
+          },
+          "difference": -2.5257168495551596e-08
+        },
+        {
+          "radius": 2.782559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1548614715421523,
+            "time": 3.2084503875408332,
+            "nfev": 763
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15486152599854514,
+            "time": 2.8065778424490433,
+            "nfev": 727
+          },
+          "difference": -5.4456392839519197e-08
+        },
+        {
+          "radius": 3.593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15632610899069238,
+            "time": 3.202917910068355,
+            "nfev": 811
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15632620221347235,
+            "time": 2.79367698603497,
+            "nfev": 775
+          },
+          "difference": -9.322277996770545e-08
+        },
+        {
+          "radius": 4.6415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1573650796987327,
+            "time": 3.1980088750812663,
+            "nfev": 859
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15736521832595776,
+            "time": 2.783513047243399,
+            "nfev": 823
+          },
+          "difference": -1.38627225060306e-07
+        },
+        {
+          "radius": 5.994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15808415906824982,
+            "time": 3.19388646504147,
+            "nfev": 919
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1580843458226102,
+            "time": 2.775750468182405,
+            "nfev": 871
+          },
+          "difference": -1.867543603650823e-07
+        },
+        {
+          "radius": 7.742636826811269,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1585706369980244,
+            "time": 3.190583315095012,
+            "nfev": 967
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15857087071875453,
+            "time": 2.7699892918359112,
+            "nfev": 919
+          },
+          "difference": -2.3372073013061545e-07
+        },
+        {
+          "radius": 10.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1588930740687708,
+            "time": 3.1880405256938076,
+            "nfev": 1015
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15889335054339998,
+            "time": 2.7658227670174895,
+            "nfev": 955
+          },
+          "difference": -2.7647462919055954e-07
+        },
+        {
+          "radius": 12.915496650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15910296773691723,
+            "time": 3.186148668835539,
+            "nfev": 1051
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15910328090742595,
+            "time": 2.762877979912734,
+            "nfev": 1003
+          },
+          "difference": -3.131705087200398e-07
+        },
+        {
+          "radius": 16.681005372000573,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15923749867314752,
+            "time": 3.1847811677360247,
+            "nfev": 1099
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15923784181209596,
+            "time": 2.7608380983099092,
+            "nfev": 1051
+          },
+          "difference": -3.431389484498393e-07
+        },
+        {
+          "radius": 21.54434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15932260582339863,
+            "time": 3.1838164532902336,
+            "nfev": 1171
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1593229724319362,
+            "time": 2.7594493594191505,
+            "nfev": 1099
+          },
+          "difference": -3.666085375553241e-07
+        },
+        {
+          "radius": 27.82559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15937586531524167,
+            "time": 3.183149653102271,
+            "nfev": 1219
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15937624966737007,
+            "time": 2.758517831815121,
+            "nfev": 1171
+          },
+          "difference": -3.8435212840193245e-07
+        },
+        {
+          "radius": 35.93813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15940890000403302,
+            "time": 3.182696591677355,
+            "nfev": 1267
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15940929737999177,
+            "time": 2.757900802784709,
+            "nfev": 1207
+          },
+          "difference": -3.973759587494463e-07
+        },
+        {
+          "radius": 46.41588833612777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15942924329715707,
+            "time": 3.1823931397862544,
+            "nfev": 1327
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15942964999874534,
+            "time": 2.7574964144774516,
+            "nfev": 1255
+          },
+          "difference": -4.067015882680547e-07
+        },
+        {
+          "radius": 59.94842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15944169901302707,
+            "time": 3.182192325010162,
+            "nfev": 1363
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159442112254934,
+            "time": 2.7572337513399434,
+            "nfev": 1327
+          },
+          "difference": -4.1324190691582885e-07
+        },
+        {
+          "radius": 77.4263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594492904399113,
+            "time": 3.182060772882419,
+            "nfev": 1423
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15944970818948842,
+            "time": 2.757064427982052,
+            "nfev": 1363
+          },
+          "difference": -4.1774957712514826e-07
+        },
+        {
+          "radius": 100.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594539004454478,
+            "time": 3.181975331699005,
+            "nfev": 1471
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15945432125653702,
+            "time": 2.756955970585447,
+            "nfev": 1411
+          },
+          "difference": -4.208110892245376e-07
+        },
+        {
+          "radius": 129.15496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594566919467105,
+            "time": 3.181920245181945,
+            "nfev": 1531
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15945711481151764,
+            "time": 2.756886875912394,
+            "nfev": 1471
+          },
+          "difference": -4.2286480714248675e-07
+        },
+        {
+          "radius": 166.81005372000593,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15945837849985509,
+            "time": 3.1818849541398477,
+            "nfev": 1591
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15945880272793161,
+            "time": 2.7568430616126776,
+            "nfev": 1519
+          },
+          "difference": -4.2422807652875427e-07
+        },
+        {
+          "radius": 215.44346900318823,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594593956852979,
+            "time": 3.181862470592729,
+            "nfev": 1639
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15945982081026625,
+            "time": 2.7568153888734397,
+            "nfev": 1567
+          },
+          "difference": -4.2512496833957414e-07
+        },
+        {
+          "radius": 278.2559402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946000832540283,
+            "time": 3.181848217558368,
+            "nfev": 1687
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946043403591953,
+            "time": 2.7567979716459035,
+            "nfev": 1615
+          },
+          "difference": -4.2571051669937354e-07
+        },
+        {
+          "radius": 359.38136638046257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594603769185663,
+            "time": 3.181839222918522,
+            "nfev": 1735
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946080300884954,
+            "time": 2.756787042723097,
+            "nfev": 1663
+          },
+          "difference": -4.260902832509128e-07
+        },
+        {
+          "radius": 464.1588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946059849755212,
+            "time": 3.181833570641936,
+            "nfev": 1771
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946102483272515,
+            "time": 2.756780203760189,
+            "nfev": 1723
+          },
+          "difference": -4.2633517302603785e-07
+        },
+        {
+          "radius": 599.4842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946073161336258,
+            "time": 3.1818300331431466,
+            "nfev": 1831
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946115810567071,
+            "time": 2.7567759347373517,
+            "nfev": 1771
+          },
+          "difference": -4.2649230813651684e-07
+        },
+        {
+          "radius": 774.2636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946081154396122,
+            "time": 3.1818278281195407,
+            "nfev": 1867
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946123813666052,
+            "time": 2.756773276005975,
+            "nfev": 1831
+          },
+          "difference": -4.2659269930411803e-07
+        },
+        {
+          "radius": 1000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946085952036998,
+            "time": 3.181826459376082,
+            "nfev": 1939
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946128617694783,
+            "time": 2.7567716237210593,
+            "nfev": 1879
+          },
+          "difference": -4.266565778454634e-07
+        },
+        {
+          "radius": 1291.5496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594608883083676,
+            "time": 3.1818256135149805,
+            "nfev": 1975
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946131500544758,
+            "time": 2.756770599031554,
+            "nfev": 1927
+          },
+          "difference": -4.266970799748915e-07
+        },
+        {
+          "radius": 1668.100537200059,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946090557841158,
+            "time": 3.181825093358606,
+            "nfev": 2047
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946133230111076,
+            "time": 2.756769964863112,
+            "nfev": 1987
+          },
+          "difference": -4.267226991760964e-07
+        },
+        {
+          "radius": 2154.4346900318824,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946091593691167,
+            "time": 3.181824775299844,
+            "nfev": 2083
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946134267576015,
+            "time": 2.756769573207533,
+            "nfev": 2035
+          },
+          "difference": -4.267388484802126e-07
+        },
+        {
+          "radius": 2782.55940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946092214902172,
+            "time": 3.1818245821241287,
+            "nfev": 2155
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946134889802918,
+            "time": 2.756769331858573,
+            "nfev": 2083
+          },
+          "difference": -4.267490074649771e-07
+        },
+        {
+          "radius": 3593.813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946092587409225,
+            "time": 3.181824465765012,
+            "nfev": 2215
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613526294777,
+            "time": 2.756769183487724,
+            "nfev": 2131
+          },
+          "difference": -4.267553854464534e-07
+        },
+        {
+          "radius": 4641.588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946092810761908,
+            "time": 3.1818243964092563,
+            "nfev": 2239
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135486700141,
+            "time": 2.7567690925188657,
+            "nfev": 2191
+          },
+          "difference": -4.267593823326088e-07
+        },
+        {
+          "radius": 5994.8425031894085,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946092944675982,
+            "time": 3.1818243556358765,
+            "nfev": 2311
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135620862595,
+            "time": 2.7567690369145534,
+            "nfev": 2239
+          },
+          "difference": -4.267618661235595e-07
+        },
+        {
+          "radius": 7742.636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093024960395,
+            "time": 3.1818243321118205,
+            "nfev": 2359
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135701302566,
+            "time": 2.7567690030490954,
+            "nfev": 2287
+          },
+          "difference": -4.2676342171255044e-07
+        },
+        {
+          "radius": 10000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609307309074,
+            "time": 3.181824318898139,
+            "nfev": 2407
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135749531137,
+            "time": 2.7567689825132633,
+            "nfev": 2335
+          },
+          "difference": -4.267644039823715e-07
+        },
+        {
+          "radius": 12915.496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093101944608,
+            "time": 3.181824311770801,
+            "nfev": 2455
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135778444825,
+            "time": 2.756768970127569,
+            "nfev": 2395
+          },
+          "difference": -4.2676500217053714e-07
+        },
+        {
+          "radius": 16681.005372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093119240898,
+            "time": 3.1818243081764197,
+            "nfev": 2515
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613579577965,
+            "time": 2.7567689627080703,
+            "nfev": 2443
+          },
+          "difference": -4.26765387528949e-07
+        },
+        {
+          "radius": 21544.346900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609312961046,
+            "time": 3.181824306584855,
+            "nfev": 2551
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135806171344,
+            "time": 2.75676895830272,
+            "nfev": 2503
+          },
+          "difference": -4.267656088241534e-07
+        },
+        {
+          "radius": 27825.5940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093135826042,
+            "time": 3.1818243060894544,
+            "nfev": 2587
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159461358124015,
+            "time": 2.7567689557174537,
+            "nfev": 2539
+          },
+          "difference": -4.2676575456868093e-07
+        },
+        {
+          "radius": 35938.13663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093139551082,
+            "time": 3.181824306161549,
+            "nfev": 2671
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613581613641,
+            "time": 2.756768954224461,
+            "nfev": 2611
+          },
+          "difference": -4.267658532675078e-07
+        },
+        {
+          "radius": 46415.888336127726,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093141785406,
+            "time": 3.1818243064983656,
+            "nfev": 2719
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135818375126,
+            "time": 2.7567689533816235,
+            "nfev": 2647
+          },
+          "difference": -4.26765897204584e-07
+        },
+        {
+          "radius": 59948.42503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093143124196,
+            "time": 3.1818243069326764,
+            "nfev": 2779
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135819717341,
+            "time": 2.7567689529215986,
+            "nfev": 2707
+          },
+          "difference": -4.2676593145496433e-07
+        },
+        {
+          "radius": 77426.36826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314392649,
+            "time": 3.1818243073758388,
+            "nfev": 2803
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135820521892,
+            "time": 2.7567689526837764,
+            "nfev": 2755
+          },
+          "difference": -4.267659540202473e-07
+        },
+        {
+          "radius": 100000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093144407705,
+            "time": 3.1818243077849346,
+            "nfev": 2863
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821004323,
+            "time": 2.756768952572494,
+            "nfev": 2803
+          },
+          "difference": -4.267659661771894e-07
+        },
+        {
+          "radius": 129154.96650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093144696222,
+            "time": 3.181824308142152,
+            "nfev": 2911
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582129306,
+            "time": 2.7567689525309453,
+            "nfev": 2851
+          },
+          "difference": -4.267659683698799e-07
+        },
+        {
+          "radius": 166810.05372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159460931448684,
+            "time": 3.181824308443901,
+            "nfev": 2959
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582146701,
+            "time": 2.7567689525260985,
+            "nfev": 2899
+          },
+          "difference": -4.267659861056927e-07
+        },
+        {
+          "radius": 215443.46900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093144972237,
+            "time": 3.1818243086924443,
+            "nfev": 2995
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821571195,
+            "time": 2.7567689525392316,
+            "nfev": 2947
+          },
+          "difference": -4.2676598957513967e-07
+        },
+        {
+          "radius": 278255.94022071204,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145034654,
+            "time": 3.181824308894538,
+            "nfev": 3079
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821633503,
+            "time": 2.7567689525596935,
+            "nfev": 3007
+          },
+          "difference": -4.267659884926722e-07
+        },
+        {
+          "radius": 359381.36638046254,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145071755,
+            "time": 3.1818243090566956,
+            "nfev": 3115
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821670437,
+            "time": 2.75676895258193,
+            "nfev": 3067
+          },
+          "difference": -4.267659868273377e-07
+        },
+        {
+          "radius": 464158.8833612772,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314509427,
+            "time": 3.181824309185933,
+            "nfev": 3151
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582169273,
+            "time": 2.7567689526029957,
+            "nfev": 3115
+          },
+          "difference": -4.2676598460689164e-07
+        },
+        {
+          "radius": 599484.2503189408,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145107124,
+            "time": 3.181824309288024,
+            "nfev": 3235
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821706162,
+            "time": 2.7567689526216124,
+            "nfev": 3163
+          },
+          "difference": -4.2676599038005136e-07
+        },
+        {
+          "radius": 774263.6826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145115578,
+            "time": 3.1818243093684986,
+            "nfev": 3283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821713858,
+            "time": 2.75676895263753,
+            "nfev": 3223
+          },
+          "difference": -4.267659828027792e-07
+        },
+        {
+          "radius": 1000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512047,
+            "time": 3.1818243094316006,
+            "nfev": 3331
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821718949,
+            "time": 2.7567689526506283,
+            "nfev": 3259
+          },
+          "difference": -4.267659847734251e-07
+        },
+        {
+          "radius": 1291549.6650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145122822,
+            "time": 3.181824309481146,
+            "nfev": 3391
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172188,
+            "time": 2.7567689526613757,
+            "nfev": 3319
+          },
+          "difference": -4.267659905743404e-07
+        },
+        {
+          "radius": 1668100.5372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145124984,
+            "time": 3.1818243095194654,
+            "nfev": 3439
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821723706,
+            "time": 2.7567689526701096,
+            "nfev": 3355
+          },
+          "difference": -4.2676598721591574e-07
+        },
+        {
+          "radius": 2154434.6900318777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145125398,
+            "time": 3.1818243095494676,
+            "nfev": 3463
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821724286,
+            "time": 2.756768952677007,
+            "nfev": 3427
+          },
+          "difference": -4.267659888812503e-07
+        },
+        {
+          "radius": 2782559.402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145125828,
+            "time": 3.1818243095729057,
+            "nfev": 3511
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821725382,
+            "time": 2.756768952682451,
+            "nfev": 3463
+          },
+          "difference": -4.2676599554258843e-07
+        },
+        {
+          "radius": 3593813.6638046256,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512714,
+            "time": 3.181824309590931,
+            "nfev": 3595
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172578,
+            "time": 2.7567689526867585,
+            "nfev": 3511
+          },
+          "difference": -4.267659863832485e-07
+        },
+        {
+          "radius": 4641588.833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127302,
+            "time": 3.181824309605168,
+            "nfev": 3631
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821725915,
+            "time": 2.756768952690183,
+            "nfev": 3595
+          },
+          "difference": -4.267659861334483e-07
+        },
+        {
+          "radius": 5994842.503189396,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512728,
+            "time": 3.1818243096161773,
+            "nfev": 3679
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726354,
+            "time": 2.756768952692758,
+            "nfev": 3619
+          },
+          "difference": -4.2676599074087385e-07
+        },
+        {
+          "radius": 7742636.826811277,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145126652,
+            "time": 3.1818243096245578,
+            "nfev": 3739
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726132,
+            "time": 2.75676895269487,
+            "nfev": 3691
+          },
+          "difference": -4.267659947931879e-07
+        },
+        {
+          "radius": 10000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127319,
+            "time": 3.1818243096310193,
+            "nfev": 3787
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172623,
+            "time": 2.756768952696477,
+            "nfev": 3715
+          },
+          "difference": -4.267659891032949e-07
+        },
+        {
+          "radius": 12915496.650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127052,
+            "time": 3.1818243096363727,
+            "nfev": 3859
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172613,
+            "time": 2.7567689526976764,
+            "nfev": 3775
+          },
+          "difference": -4.267659907686294e-07
+        },
+        {
+          "radius": 16681005.372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512764,
+            "time": 3.1818243096401986,
+            "nfev": 3895
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172627,
+            "time": 2.756768952698722,
+            "nfev": 3823
+          },
+          "difference": -4.2676598629998175e-07
+        },
+        {
+          "radius": 21544346.90031878,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512765,
+            "time": 3.1818243096432037,
+            "nfev": 3967
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821725832,
+            "time": 2.75676895269948,
+            "nfev": 3883
+          },
+          "difference": -4.267659818313341e-07
+        },
+        {
+          "radius": 27825594.022071257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127707,
+            "time": 3.1818243096455263,
+            "nfev": 3991
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594613582172626,
+            "time": 2.756768952700054,
+            "nfev": 3931
+          },
+          "difference": -4.2676598552282563e-07
+        },
+        {
+          "radius": 35938136.63804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594609314512758,
+            "time": 3.181824309647404,
+            "nfev": 4075
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726273,
+            "time": 2.7567689527005124,
+            "nfev": 4003
+          },
+          "difference": -4.2676598693836e-07
+        },
+        {
+          "radius": 46415888.33612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159460931451276,
+            "time": 3.1818243096488255,
+            "nfev": 4111
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821725937,
+            "time": 2.756768952700895,
+            "nfev": 4039
+          },
+          "difference": -4.267659833856463e-07
+        },
+        {
+          "radius": 59948425.03189397,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127593,
+            "time": 3.181824309649929,
+            "nfev": 4147
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726254,
+            "time": 2.7567689527011354,
+            "nfev": 4111
+          },
+          "difference": -4.267659866052931e-07
+        },
+        {
+          "radius": 77426368.26811247,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127652,
+            "time": 3.18182430965079,
+            "nfev": 4219
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726298,
+            "time": 2.756768952701358,
+            "nfev": 4159
+          },
+          "difference": -4.267659864665152e-07
+        },
+        {
+          "radius": 100000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946093145127535,
+            "time": 3.1818243096513865,
+            "nfev": 4267
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946135821726493,
+            "time": 2.7567689527014263,
+            "nfev": 4183
+          },
+          "difference": -4.2676598957513967e-07
+        }
+      ],
+      "brackets": [
+        [
+          0.2782559402207124,
+          0.3593813663804626
+        ],
+        [
+          0.5994842503189409,
+          0.774263682681127
+        ],
+        [
+          1.291549665014884,
+          1.6681005372000592
+        ]
+      ],
+      "tight": [
+        {
+          "radius": 0.2782559402207124,
+          "difference": 4.3047743147894835e-10,
+          "change": -9.242606680004428e-15
+        },
+        {
+          "radius": 0.3593813663804626,
+          "difference": -1.568970078857923e-09,
+          "change": 1.292022044907526e-14
+        },
+        {
+          "radius": 0.5994842503189409,
+          "difference": -6.065809521338394e-10,
+          "change": 7.494005416219807e-16
+        },
+        {
+          "radius": 0.774263682681127,
+          "difference": 2.0186004257016776e-09,
+          "change": 6.938893903907228e-16
+        },
+        {
+          "radius": 1.291549665014884,
+          "difference": 2.1182107179384957e-09,
+          "change": 1.27675647831893e-15
+        },
+        {
+          "radius": 1.6681005372000592,
+          "difference": -6.728945428635669e-09,
+          "change": -6.855627177060342e-15
+        }
+      ],
+      "unresolved": 0
+    },
+    {
+      "delta": "-1/1000",
+      "parameters": [
+        "-20569265961809427/50000000000000000000000",
+        "-42436759177461253/100000000000000000000",
+        "1/1000",
+        "-1029863328970071/10000000000000000000"
+      ],
+      "rows": [
+        {
+          "radius": 0.01,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.009434009818064889,
+            "time": 3.147963280302971,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.009434033372058564,
+            "time": 3.135024329638133,
+            "nfev": 283
+          },
+          "difference": -2.3553993675623497e-08
+        },
+        {
+          "radius": 0.01291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.011986698911910862,
+            "time": 3.149716111236042,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.01198672848979221,
+            "time": 3.1331448828704955,
+            "nfev": 283
+          },
+          "difference": -2.9577881349024393e-08
+        },
+        {
+          "radius": 0.016681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.015163499288684134,
+            "time": 3.1519146809224687,
+            "nfev": 283
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.01516353610559466,
+            "time": 3.1307410424477933,
+            "nfev": 283
+          },
+          "difference": -3.681691052546954e-08
+        },
+        {
+          "radius": 0.021544346900318832,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.019078404717068485,
+            "time": 3.1546501179888096,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.01907845001155742,
+            "time": 3.1276753770108012,
+            "nfev": 283
+          },
+          "difference": -4.529448893383914e-08
+        },
+        {
+          "radius": 0.027825594022071243,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.023844996752462967,
+            "time": 3.1580190294555854,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.02384505161318104,
+            "time": 3.1237802939108548,
+            "nfev": 283
+          },
+          "difference": -5.4860718072535786e-08
+        },
+        {
+          "radius": 0.03593813663804628,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.029563960752486525,
+            "time": 3.1621155594090347,
+            "nfev": 295
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.029564025824818405,
+            "time": 3.1188552692546145,
+            "nfev": 295
+          },
+          "difference": -6.507233188055017e-08
+        },
+        {
+          "radius": 0.046415888336127774,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.03630592091067689,
+            "time": 3.167018539775253,
+            "nfev": 307
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.03630599595642409,
+            "time": 3.112666506799846,
+            "nfev": 307
+          },
+          "difference": -7.504574720679225e-08
+        },
+        {
+          "radius": 0.05994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.04409096751116057,
+            "time": 3.172773073121614,
+            "nfev": 319
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.04409105083473918,
+            "time": 3.1049509695742565,
+            "nfev": 307
+          },
+          "difference": -8.332357861323691e-08
+        },
+        {
+          "radius": 0.0774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.05286836718629184,
+            "time": 3.1793671293076913,
+            "nfev": 331
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.05286845503466255,
+            "time": 3.09542723277413,
+            "nfev": 319
+          },
+          "difference": -8.784837070979767e-08
+        },
+        {
+          "radius": 0.1,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0625020321175446,
+            "time": 3.186705858169401,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.06250211831435885,
+            "time": 3.0838156637064995,
+            "nfev": 331
+          },
+          "difference": -8.619681425570125e-08
+        },
+        {
+          "radius": 0.1291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.07276810933438432,
+            "time": 3.1945890309402345,
+            "nfev": 343
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.07276818557660111,
+            "time": 3.0698695416732655,
+            "nfev": 355
+          },
+          "difference": -7.624221678992349e-08
+        },
+        {
+          "radius": 0.16681005372000582,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0833692058658305,
+            "time": 3.2026993852240184,
+            "nfev": 379
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.08336926315721395,
+            "time": 3.0534164504745784,
+            "nfev": 379
+          },
+          "difference": -5.729138344290341e-08
+        },
+        {
+          "radius": 0.21544346900318834,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.0939650150829998,
+            "time": 3.2106101914303604,
+            "nfev": 427
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.0939650464979451,
+            "time": 3.034405648409478,
+            "nfev": 415
+          },
+          "difference": -3.1414945297902896e-08
+        },
+        {
+          "radius": 0.2782559402207124,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.10421313540385052,
+            "time": 3.217817779177023,
+            "nfev": 451
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.10421313964318983,
+            "time": 3.0129530536093228,
+            "nfev": 451
+          },
+          "difference": -4.239339310152523e-09
+        },
+        {
+          "radius": 0.3593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.11380979366639328,
+            "time": 3.223798947318999,
+            "nfev": 475
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.11380977786870433,
+            "time": 2.9893726873712128,
+            "nfev": 451
+          },
+          "difference": 1.579768894865996e-08
+        },
+        {
+          "radius": 0.46415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.12252046114764586,
+            "time": 3.2280857165214383,
+            "nfev": 523
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.12252044074040136,
+            "time": 2.9641836254039258,
+            "nfev": 463
+          },
+          "difference": 2.0407244505360467e-08
+        },
+        {
+          "radius": 0.5994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.13019478882529611,
+            "time": 3.2303433655474993,
+            "nfev": 511
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13019478255244754,
+            "time": 2.9380853709928134,
+            "nfev": 487
+          },
+          "difference": 6.272848573907197e-09
+        },
+        {
+          "radius": 0.774263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.13676616639700803,
+            "time": 3.230434326459717,
+            "nfev": 547
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.13676618634689636,
+            "time": 2.911901163717105,
+            "nfev": 511
+          },
+          "difference": -1.9949888324655163e-08
+        },
+        {
+          "radius": 1.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1422404235041636,
+            "time": 3.228451351858857,
+            "nfev": 595
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14224046251176264,
+            "time": 2.886496133847189,
+            "nfev": 547
+          },
+          "difference": -3.900759903974205e-08
+        },
+        {
+          "radius": 1.291549665014884,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.14667934038680874,
+            "time": 3.2247086981746174,
+            "nfev": 631
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.14667936142206708,
+            "time": 2.8626834677484756,
+            "nfev": 583
+          },
+          "difference": -2.103525834074027e-08
+        },
+        {
+          "radius": 1.6681005372000592,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15018337014105781,
+            "time": 3.219689729956848,
+            "nfev": 655
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1501833028544881,
+            "time": 2.8411354402772124,
+            "nfev": 631
+          },
+          "difference": 6.72865697048941e-08
+        },
+        {
+          "radius": 2.154434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15287590193826062,
+            "time": 3.2139617302694448,
+            "nfev": 715
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15287564957969052,
+            "time": 2.8223162556878334,
+            "nfev": 679
+          },
+          "difference": 2.523585700964226e-07
+        },
+        {
+          "radius": 2.782559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15488982268510057,
+            "time": 3.2080795603371217,
+            "nfev": 763
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15488927856322188,
+            "time": 2.806449456223982,
+            "nfev": 727
+          },
+          "difference": 5.441218786927937e-07
+        },
+        {
+          "radius": 3.593813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15635650146433122,
+            "time": 3.2025035620172075,
+            "nfev": 811
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1563555698609099,
+            "time": 2.793524589290376,
+            "nfev": 775
+          },
+          "difference": 9.3160342132248e-07
+        },
+        {
+          "radius": 4.6415888336127775,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15739732792143196,
+            "time": 3.1975508563874766,
+            "nfev": 859
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15739594233827248,
+            "time": 2.7833380287794585,
+            "nfev": 823
+          },
+          "difference": 1.3855831594855594e-06
+        },
+        {
+          "radius": 5.994842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15811803537055494,
+            "time": 3.1933858497977847,
+            "nfev": 919
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1581161684101258,
+            "time": 2.7755548457764054,
+            "nfev": 871
+          },
+          "difference": 1.8669604291421393e-06
+        },
+        {
+          "radius": 7.742636826811269,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1586058898288501,
+            "time": 3.1900423635182187,
+            "nfev": 967
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15860355290990102,
+            "time": 2.7697754753305115,
+            "nfev": 907
+          },
+          "difference": 2.336918949075173e-06
+        },
+        {
+          "radius": 10.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15892944913312324,
+            "time": 3.187462481709667,
+            "nfev": 1003
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1589266842124596,
+            "time": 2.7655933226617435,
+            "nfev": 967
+          },
+          "difference": 2.7649206636448653e-06
+        },
+        {
+          "radius": 12.915496650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1591402267542027,
+            "time": 3.1855374484678247,
+            "nfev": 1051
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15913709429420986,
+            "time": 2.762635431591187,
+            "nfev": 1003
+          },
+          "difference": 3.132459992838399e-06
+        },
+        {
+          "radius": 16.681005372000573,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1592754323373986,
+            "time": 3.1841410139322326,
+            "nfev": 1111
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1592719995565332,
+            "time": 2.7605847848811744,
+            "nfev": 1075
+          },
+          "difference": 3.4327808653977776e-06
+        },
+        {
+          "radius": 21.54434690031882,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15936104006628116,
+            "time": 3.183151623303743,
+            "nfev": 1171
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1593573719555671,
+            "time": 2.759187350876618,
+            "nfev": 1111
+          },
+          "difference": 3.6681107140612568e-06
+        },
+        {
+          "radius": 27.82559402207123,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15941466188789466,
+            "time": 3.1824641784093477,
+            "nfev": 1219
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594108157539975,
+            "time": 2.7582488955202,
+            "nfev": 1159
+          },
+          "difference": 3.846133897172921e-06
+        },
+        {
+          "radius": 35.93813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15944795326066266,
+            "time": 3.1819941227519326,
+            "nfev": 1255
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15944397637478713,
+            "time": 2.7576264059286633,
+            "nfev": 1207
+          },
+          "difference": 3.976885875528469e-06
+        },
+        {
+          "radius": 46.41588833612777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15946847506446427,
+            "time": 3.181676868114618,
+            "nfev": 1303
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15946440449355673,
+            "time": 2.7572177488163168,
+            "nfev": 1255
+          },
+          "difference": 4.070570907538373e-06
+        },
+        {
+          "radius": 59.94842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15948105297751752,
+            "time": 3.1814649647660116,
+            "nfev": 1363
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15947691665872768,
+            "time": 2.7569517688677614,
+            "nfev": 1303
+          },
+          "difference": 4.136318789843552e-06
+        },
+        {
+          "radius": 77.4263682681127,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15948872693179877,
+            "time": 3.1813245826254852,
+            "nfev": 1423
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15948454526794129,
+            "time": 2.7567798796405096,
+            "nfev": 1363
+          },
+          "difference": 4.181663857488749e-06
+        },
+        {
+          "radius": 100.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15949339203550136,
+            "time": 3.1812321589835153,
+            "nfev": 1483
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159489179553033,
+            "time": 2.7566694432244487,
+            "nfev": 1411
+          },
+          "difference": 4.212482468374246e-06
+        },
+        {
+          "radius": 129.15496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15949621996246596,
+            "time": 3.1811715812391457,
+            "nfev": 1519
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949198679189935,
+            "time": 2.7565988250719333,
+            "nfev": 1471
+          },
+          "difference": 4.233170566608768e-06
+        },
+        {
+          "radius": 166.81005372000593,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15949793039503388,
+            "time": 3.1811319900979687,
+            "nfev": 1567
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949368348187193,
+            "time": 2.756553839250143,
+            "nfev": 1531
+          },
+          "difference": 4.246913161948251e-06
+        },
+        {
+          "radius": 215.44346900318823,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594989631221744,
+            "time": 3.181106150205378,
+            "nfev": 1639
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949470716146866,
+            "time": 2.756525266070748,
+            "nfev": 1567
+          },
+          "difference": 4.255960705745743e-06
+        },
+        {
+          "radius": 278.2559402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15949958581447407,
+            "time": 3.1810892839382348,
+            "nfev": 1687
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949532394274712,
+            "time": 2.756507156793345,
+            "nfev": 1615
+          },
+          "difference": 4.2618717269460316e-06
+        },
+        {
+          "radius": 359.38136638046257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1594999608741517,
+            "time": 3.181078258418223,
+            "nfev": 1735
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949569516601816,
+            "time": 2.756495695852423,
+            "nfev": 1687
+          },
+          "difference": 4.265708133527335e-06
+        },
+        {
+          "radius": 464.1588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159500186593385,
+            "time": 3.181071029992997,
+            "nfev": 1771
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949591840955224,
+            "time": 2.7564884477186253,
+            "nfev": 1723
+          },
+          "difference": 4.268183832756289e-06
+        },
+        {
+          "radius": 599.4842503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950032234905803,
+            "time": 3.1810662704684156,
+            "nfev": 1843
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594960525755622,
+            "time": 2.756483863834336,
+            "nfev": 1771
+          },
+          "difference": 4.269773495824136e-06
+        },
+        {
+          "radius": 774.2636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950040395671647,
+            "time": 3.1810631186433733,
+            "nfev": 1891
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949613316697048,
+            "time": 2.7564809626682236,
+            "nfev": 1819
+          },
+          "difference": 4.270789745991488e-06
+        },
+        {
+          "radius": 1000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595004529950792,
+            "time": 3.181061016692128,
+            "nfev": 1927
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949618155814188,
+            "time": 2.7564791236014097,
+            "nfev": 1879
+          },
+          "difference": 4.271436937319795e-06
+        },
+        {
+          "radius": 1291.5496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950048245357493,
+            "time": 3.181059603214652,
+            "nfev": 1987
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962106059095,
+            "time": 2.756477954921632,
+            "nfev": 1939
+          },
+          "difference": 4.271847665437978e-06
+        },
+        {
+          "radius": 1668.100537200059,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950050014587347,
+            "time": 3.181058643724778,
+            "nfev": 2035
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949622803832356,
+            "time": 2.7564772096891477,
+            "nfev": 1975
+          },
+          "difference": 4.272107549913029e-06
+        },
+        {
+          "radius": 2154.4346900318824,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950051076966584,
+            "time": 3.181057985663636,
+            "nfev": 2095
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949623849814623,
+            "time": 2.7564767323221333,
+            "nfev": 2035
+          },
+          "difference": 4.272271519611959e-06
+        },
+        {
+          "radius": 2782.55940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005171481019,
+            "time": 3.181057529373272,
+            "nfev": 2143
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949624477337607,
+            "time": 2.7564764247963494,
+            "nfev": 2071
+          },
+          "difference": 4.2723747258333056e-06
+        },
+        {
+          "radius": 3593.813663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052097724815,
+            "time": 3.1810572094034297,
+            "nfev": 2203
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949624853770708,
+            "time": 2.7564762253101707,
+            "nfev": 2155
+          },
+          "difference": 4.272439541069817e-06
+        },
+        {
+          "radius": 4641.588833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052327579406,
+            "time": 3.1810569824820623,
+            "nfev": 2251
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625079563223,
+            "time": 2.7564760948448277,
+            "nfev": 2191
+          },
+          "difference": 4.272480161826575e-06
+        },
+        {
+          "radius": 5994.8425031894085,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052465546857,
+            "time": 3.1810568197720666,
+            "nfev": 2299
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625214989657,
+            "time": 2.75647600871227,
+            "nfev": 2227
+          },
+          "difference": 4.27250557200054e-06
+        },
+        {
+          "radius": 7742.636826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052548355853,
+            "time": 3.181056701880063,
+            "nfev": 2359
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962529621133,
+            "time": 2.7564759512442163,
+            "nfev": 2287
+          },
+          "difference": 4.272521445219946e-06
+        },
+        {
+          "radius": 10000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052598056033,
+            "time": 3.1810566156309594,
+            "nfev": 2407
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625344922708,
+            "time": 2.7564759124557434,
+            "nfev": 2347
+          },
+          "difference": 4.272531333254781e-06
+        },
+        {
+          "radius": 12915.496650148827,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052627884964,
+            "time": 3.181056551975803,
+            "nfev": 2455
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962537413547,
+            "time": 2.756475885951827,
+            "nfev": 2383
+          },
+          "difference": 4.2725374949370565e-06
+        },
+        {
+          "radius": 16681.005372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052645785834,
+            "time": 3.181056504628312,
+            "nfev": 2515
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625391653963,
+            "time": 2.7564758676104333,
+            "nfev": 2443
+          },
+          "difference": 4.272541318711687e-06
+        },
+        {
+          "radius": 21544.346900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052656529365,
+            "time": 3.181056469169736,
+            "nfev": 2551
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.159496254021596,
+            "time": 2.7564758547544264,
+            "nfev": 2491
+          },
+          "difference": 4.272543697642073e-06
+        },
+        {
+          "radius": 27825.5940220712,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052662977116,
+            "time": 3.181056442458939,
+            "nfev": 2611
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625408459342,
+            "time": 2.7564758456299447,
+            "nfev": 2539
+          },
+          "difference": 4.272545177735898e-06
+        },
+        {
+          "radius": 35938.13663804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052666847098,
+            "time": 3.181056422237218,
+            "nfev": 2647
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625412237536,
+            "time": 2.756475839076164,
+            "nfev": 2599
+          },
+          "difference": 4.272546095612784e-06
+        },
+        {
+          "radius": 46415.888336127726,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159500526691692,
+            "time": 3.181056406864455,
+            "nfev": 2719
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625414503046,
+            "time": 2.756475834316477,
+            "nfev": 2647
+          },
+          "difference": 4.2725466615489704e-06
+        },
+        {
+          "radius": 59948.42503189409,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267056263,
+            "time": 3.181056395137197,
+            "nfev": 2767
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625415861604,
+            "time": 2.75647583082481,
+            "nfev": 2707
+          },
+          "difference": 4.2725470102700225e-06
+        },
+        {
+          "radius": 77426.36826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052671399007,
+            "time": 3.1810563861653898,
+            "nfev": 2827
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625416675997,
+            "time": 2.7564758282403883,
+            "nfev": 2755
+          },
+          "difference": 4.272547230094181e-06
+        },
+        {
+          "radius": 100000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267190075,
+            "time": 3.1810563792854225,
+            "nfev": 2863
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417164753,
+            "time": 2.7564758263124465,
+            "nfev": 2803
+          },
+          "difference": 4.27254735996252e-06
+        },
+        {
+          "radius": 129154.96650148826,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672201945,
+            "time": 3.1810563739995885,
+            "nfev": 2911
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541745739,
+            "time": 2.7564758248646086,
+            "nfev": 2851
+          },
+          "difference": 4.272547445560715e-06
+        },
+        {
+          "radius": 166810.05372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267238271,
+            "time": 3.181056369932221,
+            "nfev": 2983
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417633365,
+            "time": 2.756475823771236,
+            "nfev": 2923
+          },
+          "difference": 4.272547493466838e-06
+        },
+        {
+          "radius": 215443.46900318822,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672491138,
+            "time": 3.181056366798492,
+            "nfev": 3007
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417738614,
+            "time": 2.7564758229415802,
+            "nfev": 2971
+          },
+          "difference": 4.2725475252469725e-06
+        },
+        {
+          "radius": 278255.94022071204,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267255576,
+            "time": 3.181056364382004,
+            "nfev": 3067
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417802216,
+            "time": 2.7564758223094636,
+            "nfev": 3007
+          },
+          "difference": 4.272547535433269e-06
+        },
+        {
+          "radius": 359381.36638046254,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672595016,
+            "time": 3.181056362516423,
+            "nfev": 3127
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417839758,
+            "time": 2.756475821826513,
+            "nfev": 3055
+          },
+          "difference": 4.2725475525862144e-06
+        },
+        {
+          "radius": 464158.8833612772,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672618087,
+            "time": 3.181056361076005,
+            "nfev": 3175
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417862387,
+            "time": 2.7564758214564473,
+            "nfev": 3115
+          },
+          "difference": 4.272547556999351e-06
+        },
+        {
+          "radius": 599484.2503189408,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672632342,
+            "time": 3.181056359962786,
+            "nfev": 3223
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541787605,
+            "time": 2.756475821172223,
+            "nfev": 3163
+          },
+          "difference": 4.2725475629112886e-06
+        },
+        {
+          "radius": 774263.6826811262,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672641274,
+            "time": 3.1810563591020014,
+            "nfev": 3271
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541788422,
+            "time": 2.756475820953744,
+            "nfev": 3223
+          },
+          "difference": 4.272547570544072e-06
+        },
+        {
+          "radius": 1000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672646425,
+            "time": 3.181056358436481,
+            "nfev": 3319
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417889365,
+            "time": 2.7564758207853726,
+            "nfev": 3247
+          },
+          "difference": 4.272547570599583e-06
+        },
+        {
+          "radius": 1291549.6650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672649387,
+            "time": 3.181056357921771,
+            "nfev": 3379
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417892083,
+            "time": 2.75647582065564,
+            "nfev": 3319
+          },
+          "difference": 4.272547573042074e-06
+        },
+        {
+          "radius": 1668100.5372000558,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672651135,
+            "time": 3.181056357523523,
+            "nfev": 3427
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417894245,
+            "time": 2.756475820555385,
+            "nfev": 3355
+          },
+          "difference": 4.272547568906493e-06
+        },
+        {
+          "radius": 2154434.6900318777,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265226,
+            "time": 3.1810563572153683,
+            "nfev": 3499
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417894872,
+            "time": 2.756475820478159,
+            "nfev": 3415
+          },
+          "difference": 4.272547573874741e-06
+        },
+        {
+          "radius": 2782559.402207126,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672652879,
+            "time": 3.181056356976894,
+            "nfev": 3547
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417895466,
+            "time": 2.7564758204183772,
+            "nfev": 3487
+          },
+          "difference": 4.272547574124541e-06
+        },
+        {
+          "radius": 3593813.6638046256,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265248,
+            "time": 3.1810563567924413,
+            "nfev": 3571
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896118,
+            "time": 2.7564758203720974,
+            "nfev": 3511
+          },
+          "difference": 4.272547563605178e-06
+        },
+        {
+          "radius": 4641588.833612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653664,
+            "time": 3.181056356649437,
+            "nfev": 3643
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896154,
+            "time": 2.7564758203364566,
+            "nfev": 3583
+          },
+          "difference": 4.272547575095986e-06
+        },
+        {
+          "radius": 5994842.503189396,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265328,
+            "time": 3.181056356538827,
+            "nfev": 3691
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896587,
+            "time": 2.7564758203087827,
+            "nfev": 3619
+          },
+          "difference": 4.272547566935847e-06
+        },
+        {
+          "radius": 7742636.826811277,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265384,
+            "time": 3.181056356453327,
+            "nfev": 3727
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896346,
+            "time": 2.7564758202874833,
+            "nfev": 3679
+          },
+          "difference": 4.272547574929453e-06
+        },
+        {
+          "radius": 10000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653817,
+            "time": 3.1810563563869367,
+            "nfev": 3799
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896282,
+            "time": 2.756475820270962,
+            "nfev": 3715
+          },
+          "difference": 4.2725475753457864e-06
+        },
+        {
+          "radius": 12915496.650148828,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653559,
+            "time": 3.18105635633588,
+            "nfev": 3847
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789667,
+            "time": 2.7564758202580406,
+            "nfev": 3775
+          },
+          "difference": 4.272547568878737e-06
+        },
+        {
+          "radius": 16681005.372000556,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653042,
+            "time": 3.1810563562960414,
+            "nfev": 3895
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896382,
+            "time": 2.7564758202482236,
+            "nfev": 3823
+          },
+          "difference": 4.27254756660278e-06
+        },
+        {
+          "radius": 21544346.90031878,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653944,
+            "time": 3.181056356265222,
+            "nfev": 3967
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789604,
+            "time": 2.756475820240584,
+            "nfev": 3871
+          },
+          "difference": 4.272547579037278e-06
+        },
+        {
+          "radius": 27825594.022071257,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653958,
+            "time": 3.181056356241411,
+            "nfev": 4003
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896476,
+            "time": 2.756475820234607,
+            "nfev": 3931
+          },
+          "difference": 4.2725475748184305e-06
+        },
+        {
+          "radius": 35938136.63804626,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159500526726539,
+            "time": 3.181056356222972,
+            "nfev": 4051
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789645,
+            "time": 2.756475820230025,
+            "nfev": 4003
+          },
+          "difference": 4.272547574485364e-06
+        },
+        {
+          "radius": 46415888.33612773,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.15950052672653814,
+            "time": 3.1810563562086394,
+            "nfev": 4099
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789601,
+            "time": 2.756475820226475,
+            "nfev": 4027
+          },
+          "difference": 4.272547578038077e-06
+        },
+        {
+          "radius": 59948425.03189397,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.159500526726539,
+            "time": 3.1810563561976455,
+            "nfev": 4159
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789641,
+            "time": 2.756475820223716,
+            "nfev": 4087
+          },
+          "difference": 4.272547574901697e-06
+        },
+        {
+          "radius": 77426368.26811247,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265402,
+            "time": 3.181056356189057,
+            "nfev": 4207
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.1594962541789612,
+            "time": 2.75647582022156,
+            "nfev": 4147
+          },
+          "difference": 4.272547578981767e-06
+        },
+        {
+          "radius": 100000000.0,
+          "forward": {
+            "status": "half_passage",
+            "y": 0.1595005267265392,
+            "time": 3.1810563561824656,
+            "nfev": 4267
+          },
+          "backward": {
+            "status": "half_passage",
+            "y": 0.15949625417896152,
+            "time": 2.7564758202199022,
+            "nfev": 4195
+          },
+          "difference": 4.272547577677255e-06
+        }
+      ],
+      "brackets": [
+        [
+          0.2782559402207124,
+          0.3593813663804626
+        ],
+        [
+          0.5994842503189409,
+          0.774263682681127
+        ],
+        [
+          1.291549665014884,
+          1.6681005372000592
+        ]
+      ],
+      "tight": [
+        {
+          "radius": 0.2782559402207124,
+          "difference": -4.239348358470174e-09,
+          "change": -9.048317650695026e-15
+        },
+        {
+          "radius": 0.3593813663804626,
+          "difference": 1.5797701771735895e-08,
+          "change": 1.2823075934420558e-14
+        },
+        {
+          "radius": 0.5994842503189409,
+          "difference": 6.272849795152524e-09,
+          "change": 1.2212453270876722e-15
+        },
+        {
+          "radius": 0.774263682681127,
+          "difference": -1.9949885604608752e-08,
+          "change": 2.7200464103316335e-15
+        },
+        {
+          "radius": 1.291549665014884,
+          "difference": -2.1035248543022078e-08,
+          "change": 9.797718192317006e-15
+        },
+        {
+          "radius": 1.6681005372000592,
+          "difference": 6.728656112842124e-08,
+          "change": -8.576472865229334e-15
+        }
+      ],
+      "unresolved": 0
+    }
+  ],
+  "wall_seconds": 4.14564566698391,
+  "requested_tight_rtol": 2e-14,
+  "effective_tight_rtol": 2.220446049250313e-14,
+  "tight_tolerance_note": "SciPy raised requested tolerance to its double-precision floor; warning preserved in session.",
+  "half_flow_count": 582,
+  "boundary_consistency": {
+    "base_positive_section_y_approx": 0.1594645301477301,
+    "h_y_approx": 7.336635034845941,
+    "predicted_first_order_separation": -0.004268103996660816,
+    "observed_large_radius_difference_over_delta": [
+      -0.004263665890680279,
+      -0.004267659895751397,
+      -0.004272547577677255
+    ],
+    "scope": "Numerical consistency at radius 1e8; not a rigorous infinite-radius limit or parameter remainder."
+  }
+}

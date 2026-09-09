@@ -1,0 +1,16 @@
+{
+  "status": "exact identities passed",
+  "base_exponents": [
+    "2",
+    "1/2"
+  ],
+  "base_product": "1",
+  "log_product_derivatives": {
+    "tau": "0",
+    "u": "5*sqrt(2)",
+    "v": "5*sqrt(2)/4",
+    "w": "7*sqrt(2)/4"
+  },
+  "normalization": "rho=Rprime(zminus)*p(zplus)/(p(zminus)*Rprime(zplus)), physical saddle itinerary as in boundary proof",
+  "scope": "Local saddle data only. Global splitting, regular transition, uniform Dulac remainders, and cycle coexistence are separate obligations."
+}

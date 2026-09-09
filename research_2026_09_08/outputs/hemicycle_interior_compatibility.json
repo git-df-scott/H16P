@@ -1,0 +1,18 @@
+{
+  "status": "exact identities passed",
+  "assumptions": "a in (-2,0) excluding -1; b in (0,2); t=abs(y)>0; k=sqrt(b(a+2)/(a(b-2)))>0",
+  "direction": "epsilon0=0, epsilon1=delta, epsilon2=-2*k*delta",
+  "checks": [
+    {
+      "half_plane": 1,
+      "unperturbed_Lie_derivative": "0",
+      "perturbation_Lie_derivative": "-2*t**a*x**2*(2*k*t - 1)"
+    },
+    {
+      "half_plane": -1,
+      "unperturbed_Lie_derivative": "0",
+      "perturbation_Lie_derivative": "2*t**a*x**2*(2*k*t + 1)"
+    }
+  ],
+  "conclusion": "For delta>0 the lower-half-plane energy derivative is positive except x=0. There is no lower periodic orbit entirely in y<0 for this exact direction. Along perturbation arcs with this nonzero leading direction, the lower first Melnikov integral is strictly positive on each regular compact orbit. This does not exclude boundary cycles, upper interior zeros, or other limiting directions."
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Reading/inspection distinction, not mathematical verification",
+  "total_pinned_files": 387,
+  "fully_read": 264,
+  "visually_inspected": 3,
+  "raw_files_not_fully_read": 120,
+  "raw_files_all_machine_traversed": true,
+  "remaining_literal_characters": 14239724,
+  "note": "All narrative/code/txt/extensionless files fully read; raw numerical JSON/JSONL/logs additionally have structural, scalar, schema, identity and extracted-text inspection. This does not mean every raw numeric literal was manually read."
+}

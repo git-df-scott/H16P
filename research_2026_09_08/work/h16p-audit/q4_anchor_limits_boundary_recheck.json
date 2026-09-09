@@ -1,0 +1,41 @@
+{
+  "scope": "Replacement narrower outer bracket after 1.2R exceeded stable boundary; original failed shot retained",
+  "rows": [
+    {
+      "radius": 0.825465981969385,
+      "forward": {
+        "status": "passed",
+        "y": 0.11295161900088355,
+        "time": 4.72794960365536,
+        "nfev": 1123
+      },
+      "backward": {
+        "status": "passed",
+        "y": 0.1128662394088163,
+        "time": 3.467149533261478,
+        "nfev": 967
+      },
+      "difference": 8.537959206725287e-05
+    },
+    {
+      "radius": 0.9123571379661626,
+      "forward": {
+        "status": "passed",
+        "y": 0.11300716371629453,
+        "time": 5.141389724304934,
+        "nfev": 1255
+      },
+      "backward": {
+        "status": "passed",
+        "y": 0.11308860357404976,
+        "time": 3.526317646842926,
+        "nfev": 1003
+      },
+      "difference": -8.143985775523055e-05
+    }
+  ],
+  "counts": {
+    "sensitivity_halves": 0,
+    "plain_halves": 4
+  }
+}

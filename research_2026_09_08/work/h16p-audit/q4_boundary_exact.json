@@ -1,0 +1,19 @@
+{
+  "status": "all exact assertions passed",
+  "parameter_interval": "-1/sqrt(2) < z < 1/sqrt(2)",
+  "X": "(4*z**4 + 8*z + 3)/(12 - 24*z**2)",
+  "Y": "(-4*z**4 - 16*z**3 - 24*z**2 - 8*z + 1)/(12 - 24*z**2)",
+  "physical_parameter_velocity": "z**3/3 - z/2 - 1/3",
+  "graph": "dX/dz>0 on the interval; X ranges over all real numbers",
+  "orientation": "forward flow goes from X=+infinity to X=-infinity",
+  "boundary_level": "N/D^(3/2)=-1/sqrt(2)",
+  "annulus_domain": "Y < boundary_graph(X), excluding the origin",
+  "angular_chart": "Positive physical angular velocity throughout the open annulus, by the accompanying radial graph argument.",
+  "origin_crossing_parameter_bracket": [
+    "-2/5",
+    "-3/8"
+  ],
+  "positive_Y_numerator_lower_bound": "18027/20000",
+  "scope": "Exact unperturbed boundary geometry only; no perturbed cycle or splitting certificate.",
+  "ode_evaluations": 0
+}

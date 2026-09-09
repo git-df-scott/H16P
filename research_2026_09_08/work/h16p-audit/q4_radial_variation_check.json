@@ -1,0 +1,200 @@
+{
+  "scope": "Analytic variational derivative vs independent central differences; nonvalidated",
+  "records": [
+    {
+      "r": 0.5,
+      "row": {
+        "radius": 0.49514481642889563,
+        "forward": {
+          "status": "passed",
+          "y": 0.11517301051280923,
+          "radial_derivative": 0.040505094869909254,
+          "time": 3.7591533299978557
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.11527653236262689,
+          "radial_derivative": 0.041232714450143086,
+          "time": 2.9779744606774115
+        },
+        "difference": -0.000103521849817656,
+        "radial_derivative": -0.000727619580233832
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.0007276295244038056,
+          "error": 9.944169973574724e-09
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.0007276196797162404,
+          "error": 9.948240842216904e-11
+        }
+      ]
+    },
+    {
+      "r": 0.5,
+      "row": {
+        "radius": 2.195268670176143,
+        "forward": {
+          "status": "passed",
+          "y": 0.12586970882009252,
+          "radial_derivative": 4.9150410035950914e-05,
+          "time": 4.520982588569361
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.12594325955499744,
+          "radial_derivative": 0.00020888978547812598,
+          "time": 3.246707026953857
+        },
+        "difference": -7.355073490492026e-05,
+        "radial_derivative": -0.00015973937544217507
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.00015973939068714138,
+          "error": 1.524496631363781e-11
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.00015973937672608685,
+          "error": 1.2839117789764654e-12
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "row": {
+        "radius": 0.3492848465665871,
+        "forward": {
+          "status": "passed",
+          "y": 0.0836829030660902,
+          "radial_derivative": 0.04855012251214265,
+          "time": 3.5625838369084413
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.08374235105129385,
+          "radial_derivative": 0.04920446558597947,
+          "time": 2.9832401598210376
+        },
+        "difference": -5.9447985203645026e-05,
+        "radial_derivative": -0.0006543430738368203
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.0006543545249607097,
+          "error": 1.1451123889394399e-08
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.0006543431905342567,
+          "error": 1.1669743643638597e-10
+        }
+      ]
+    },
+    {
+      "r": 1.0,
+      "row": {
+        "radius": 1.6940221470705599,
+        "forward": {
+          "status": "passed",
+          "y": 0.09484917657720746,
+          "radial_derivative": 0.0002301462454459037,
+          "time": 4.135439621878931
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.09494426768945705,
+          "radial_derivative": 0.0005472287226110895,
+          "time": 3.1318427101007003
+        },
+        "difference": -9.50911122495901e-05,
+        "radial_derivative": -0.00031708247716518583
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.00031708235836286347,
+          "error": 1.1880232236340105e-10
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.0003170824761089541,
+          "error": 1.0562317079992889e-12
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "row": {
+        "radius": 0.16964097137889997,
+        "forward": {
+          "status": "passed",
+          "y": 0.04036316735434326,
+          "radial_derivative": 0.05432293697251429,
+          "time": 3.3385020068088354
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.04037599338633704,
+          "radial_derivative": 0.054643573124804355,
+          "time": 2.998649481852629
+        },
+        "difference": -1.2826031993776188e-05,
+        "radial_derivative": -0.0003206361522900686
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.0003206506224567862,
+          "error": 1.4470166717628352e-08
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.00032063629647194336,
+          "error": 1.441818747727197e-10
+        }
+      ]
+    },
+    {
+      "r": 2.0,
+      "row": {
+        "radius": 0.9973336018260613,
+        "forward": {
+          "status": "passed",
+          "y": 0.04862865481247974,
+          "radial_derivative": 0.0009993958318725842,
+          "time": 3.6057056204981683
+        },
+        "backward": {
+          "status": "passed",
+          "y": 0.04867541173588318,
+          "radial_derivative": 0.0013120217450084007,
+          "time": 2.96985006561639
+        },
+        "difference": -4.675692340344595e-05,
+        "radial_derivative": -0.0003126259131358165
+      },
+      "checks": [
+        {
+          "step": 0.001,
+          "central_derivative": -0.00031262559384639954,
+          "error": 3.192894169543048e-10
+        },
+        {
+          "step": 0.0001,
+          "central_derivative": -0.0003126259118593766,
+          "error": 1.2764398912845643e-12
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "radial_halves": 12
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Nests of limit cycles in quadratic systems",
+  "author": "Andre Zegeling",
+  "venue": "Advances in Nonlinear Analysis 13 (2024), 20240012",
+  "doi": "10.1515/anona-2024-0012",
+  "url": "https://d-nb.info/1332906729/34",
+  "access_date": "2026-09-07 America/Edmonton",
+  "sha256": "068dfee666a5878bf23552e224b0b38170a8752f7da7690773e6a911ff3b6761",
+  "coverage": "34 pages text extracted; full pages 3 and 29 visually read. Other pages not fully read.",
+  "claims_checked": [
+    "Theorem 1.2: distribution (n,1) or (n,0).",
+    "Theorem 5.4: four real singularities imply (1,1) or (n,0)."
+  ],
+  "limitation": "Statement and local proof text check, not independent verification of whole paper."
+}

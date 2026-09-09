@@ -1,0 +1,18 @@
+{
+  "status": "all exact assertions passed",
+  "modulus": "r>0",
+  "base": {
+    "P": "-X**2*(r**2 + 2) + 2*X*Y*r + Y**2 - Y",
+    "Q": "X**2*r - X*Y*(3*r**2 + 1) + X - Y**2*r"
+  },
+  "D": "-Y*(2*r**2 + 2) + (r**2 + 1)*(X*r + Y)**2 + 1",
+  "N": "Y*(3*r**2 + 3)*(-X*r - Y + 1) + (r**2 + 1)*(X*r + Y)**3 - 1",
+  "gradient_factor": "3*r^2*(1+r^2)*D^(-5/2)",
+  "parameter_interval": "-r/sqrt(1+r\u00b2)<s<r/sqrt(1+r\u00b2)",
+  "X": "-(r**4*s**4 + 4*r**4*s + 3*r**4 + 2*r**2*s**4 + 4*r**2*s + s**4)/(6*r*(r**2 + 1)*(r**2*s**2 - r**2 + s**2))",
+  "Y": "(r**4*s**4 + 4*r**4*s**3 + 6*r**4*s**2 + 4*r**4*s + r**4 + 2*r**2*s**4 + 8*r**2*s**3 + 12*r**2*s**2 + 4*r**2*s - 2*r**2 + s**4 + 4*s**3 + 6*s**2)/(6*(r**2 + 1)*(r**2*s**2 - r**2 + s**2))",
+  "parameter_velocity": "(-3*r**2*s - 2*r**2 + s**3*(r**2 + 1))/(6*r)",
+  "boundary_level": "h=N/D^(3/2)=-1/sqrt(1+r\u00b2)",
+  "angular_cubic_minimum": "2-2/sqrt(1+r\u00b2)>0",
+  "scope": "Exact unperturbed base and connection identities. No perturbation compatibility, remainder, or cycle certificate."
+}

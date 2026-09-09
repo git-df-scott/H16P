@@ -1,0 +1,17 @@
+{
+  "title": "The cyclicity of hyperbolic hemicycles",
+  "authors": [
+    "D. Mar\u00edn",
+    "J. Villadelprat"
+  ],
+  "repository": "arXiv:2501.16924v1",
+  "url": "https://arxiv.org/html/2501.16924v1",
+  "search_date": "2026-09-08",
+  "scope": "Read equations13\u201323 and proof of simultaneous cyclicity, Lemmas5.1\u20135.4; full proof of all paper results not audited",
+  "metadata_note": "HTML states arXiv v1 28 Jan2025 but displays manuscript date August24,2026; record accessed URL without inferring version history",
+  "claims": [
+    "Boundary simultaneous-count restrictions are not a bound for the union of closed period annuli",
+    "Leading upper-double/lower-single construction has epsilon0 and epsilon+ subordinate to epsilon- away from special zero-coefficient cases"
+  ],
+  "calculation_note": "Displayed eq23 lacks nu4 factor relative to preceding determinant; independent symbolic check confirms discrepancy, bounded factor does not destroy local sign argument."
+}

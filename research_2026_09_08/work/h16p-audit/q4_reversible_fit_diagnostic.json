@@ -1,0 +1,32 @@
+{
+  "scope": "Exact reversible projection near one numerical continuation endpoint; fitted rational field is near, not exactly on, this center locus",
+  "projected_parameters": {
+    "r": "1/2",
+    "tau": "0",
+    "u": "-1/2",
+    "v": "2/5",
+    "w": "0"
+  },
+  "P": "-9*x**2/4 + y**2 - y",
+  "Q": "-27*x*y/20 + x",
+  "reflection": "(x,y)->(-x,y), time reversal",
+  "equilibria": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "linear_traces": [
+    0,
+    0
+  ],
+  "linear_determinants": [
+    "1",
+    "7/20"
+  ],
+  "conclusion": "Both projected equilibria are nondegenerate reversible centers; the near-center fit is not counted as isolated cycles."
+}

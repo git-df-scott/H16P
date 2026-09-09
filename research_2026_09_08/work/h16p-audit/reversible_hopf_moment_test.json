@@ -1,0 +1,2823 @@
+{
+  "evidence": "Finite saved-profile NUM test only; tangent Hopf constraint, not exact finite-perturbation Hopf",
+  "constraint": "c=side*(1/yc-m*yc); eps0=tau/(a-1),eps1=-tau*c,eps2=-tau*m",
+  "sources": [
+    {
+      "path": "/Users/scottg/Documents/Codex/2026-09-07/dir/work/H16P/reversible_reseed/data/moment_search.json",
+      "sha256": "206fb349e76ca738c27f21eddae4c4775e488a48a73766f54d90014e685a7039"
+    },
+    {
+      "path": "/Users/scottg/Documents/Codex/2026-09-07/dir/work/h16p-audit/resonant_shape_probe.json",
+      "sha256": "806fd9d45b792a294d1c62c1a2d341221afd51c8cabf029d025a19d30a75283c"
+    }
+  ],
+  "records": [
+    {
+      "a": -1.491111111111111,
+      "b": 0.4666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 3.8057793154457755,
+        "c": 0.09711034227711224,
+        "crossings": [
+          2,
+          1
+        ],
+        "normalized_margins": [
+          1.1665537927376595e-09,
+          0.014480544244103827
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.491111111111111,
+      "b": 0.4666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -5733.626745579077,
+        "c": -9420.138349103514,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.142949624712696,
+          5.8631846800498025e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 116.02063240330978,
+        "c": -56.01031620165489,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.3234551923909107e-10,
+          0.576011813822909
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -177961404.23752588,
+        "c": -444903510.99381477,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          3.000003388705397,
+          5.638016452556883e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 15.20175622288023,
+        "c": -5.600878111440115,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          6.029552216038009e-10,
+          0.09233904233231238
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -94400.76918382438,
+        "c": -236002.322959561,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          3.0000187851196602,
+          0.00012568779657487912
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 4.724588819191574,
+        "c": -0.36229440959578696,
+        "crossings": [
+          2,
+          1
+        ],
+        "normalized_margins": [
+          1.1742483309571823e-08,
+          0.2465096587021728
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1939.730321223837,
+        "c": -4849.725803059593,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.9997160255409487,
+          0.00012555457279199146
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 1.5391587706923802,
+        "c": 1.23042061465381,
+        "crossings": [
+          2,
+          1
+        ],
+        "normalized_margins": [
+          5.521332196105808e-07,
+          0.08310454491005
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.680278239393289,
+        "c": 8.800695598483225,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.3602052356014793,
+          3.650175860639496e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.3147077861669759,
+        "c": 1.842646106916512,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          2.6263292986455394e-06,
+          0.9766483679456199
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.21029496058272368,
+        "c": 0.12573740145680934,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.4614757171993158,
+          1.8062977567727994e-05
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.9999263713126051,
+        "c": 2.4999631856563025,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.16761514206379e-10,
+          2.7000136344424437
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.05265629273157045,
+        "c": -0.26835926817107375,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.041547885635503,
+          1.1871299448264225e-06
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.8180670120006015,
+        "c": 2.9090335060003008,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.2187815290720516e-10,
+          2.7871056150660163
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.022851567209914353,
+        "c": -0.4571289180247858,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.298570601832781,
+          1.3056487499631381e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.2522222222222221,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 4.70297723182626,
+        "c": -0.3514886159131301,
+        "crossings": [
+          2,
+          1
+        ],
+        "normalized_margins": [
+          1.3866076127297709e-08,
+          0.2535725824239817
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.2522222222222221,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1910.0967534336776,
+        "c": -4775.641883584194,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.9997109669316906,
+          0.00012423051913484196
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.192222222222222,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 5.31441620242401,
+        "c": -0.6572081012120048,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.660648780223825e-10,
+          0.01587970089746936
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.192222222222222,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -3073.775191562579,
+        "c": -7684.837978906448,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.999838868478372,
+          0.0001696584342432473
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.4744444444444444,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.4530130235097056,
+        "c": 2.726506511754853,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.8007906082203375e-10,
+          2.7554235518512753
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.4744444444444444,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.01701721795265502,
+        "c": -0.35745695511836234,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          2.1985708596097195,
+          1.4440570470950468e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.414444444444445,
+      "b": 0.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.4034165166062333,
+        "c": 2.7017082583031167,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.8957614283512668e-10,
+          2.750376521465314
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.414444444444445,
+      "b": 0.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.01842939613940737,
+        "c": -0.3539265096514815,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.193109265678684,
+          1.6298083410458766e-07
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -13424666062.562237,
+        "c": 6712333033.281118,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          9.997622956302814e-06,
+          0.8608345793775246
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -934322299.952559,
+        "c": -934322300.9525592,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.3588402440395873,
+          2.8794852612523717e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 92.01907329316539,
+        "c": -44.009536646582696,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.2763931401334602e-10,
+          0.29776247198788075
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -157397.68554971105,
+        "c": -157398.68554971108,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.50001273101581,
+          1.7995949391371247e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 9.714730567155367,
+        "c": -2.8573652835776837,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.7098330202898975e-10,
+          0.10951527401389288
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -23547.10542501687,
+        "c": -23548.105425016875,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.5000712689788198,
+          6.391346157876224e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.3846402184147815,
+        "c": 0.30767989079260927,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.1046157052058165e-10,
+          0.09840155245706175
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.800178768539185,
+        "c": 2.800178768539186,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.006146098494151105,
+          3.4974182518696297e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 1.0526623819428125,
+        "c": 1.4736688090285939,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.0571005986588347e-10,
+          0.5484839061383493
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.7131913231651035,
+        "c": -0.2868086768348962,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.1266831662557717,
+          1.7418307639081312e-05
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.571356258676575,
+        "c": 2.2856781293382875,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.5963177924402722e-10,
+          2.45459919755411
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.20000791540238677,
+        "c": -0.799992084597613,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          2.197570108108301,
+          1.0524072712641048e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.5998845385316365,
+        "c": 2.7999422692658182,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.3803533887392255e-10,
+          2.0769546306859468
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.2499774493968862,
+        "c": -1.249977449396886,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.6397948917488816,
+          1.1214581605073217e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.8077777777777777,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 3.010374947562728,
+        "c": 0.49481252621863603,
+        "crossings": [
+          2,
+          1
+        ],
+        "normalized_margins": [
+          2.476227112351542e-09,
+          0.04096604131672711
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.8077777777777777,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.215597772007902,
+        "c": 2.2155977720079028,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.06274423896517249,
+          4.406943676400135e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.7477777777777777,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.399821263313741,
+        "c": 0.3000893683431296,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.1742330215750235e-10,
+          0.10316567252947065
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.7477777777777777,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 3.82591773729691,
+        "c": 2.825917737296911,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.007268686745625277,
+          3.469942578094799e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.918888888888889,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.4478813584067493,
+        "c": 2.2239406792033747,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.8281280853234284e-10,
+          2.53600697204942
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.918888888888889,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.2613963864126318,
+        "c": -0.7386036135873679,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          2.0183083076488706,
+          1.423921323136353e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.8588888888888895,
+      "b": 0.6666666666666666,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.3506645648834881,
+        "c": 2.175332282441744,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.042616282362733e-10,
+          2.6105754863548913
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.8588888888888895,
+      "b": 0.6666666666666666,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.23836401181858524,
+        "c": -0.7616359881814145,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.0968781806408323,
+          1.32577003291511e-06
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -5351253923.056057,
+        "c": 2675626963.5280285,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.4461268382637028e-05,
+          0.7551013101408655
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -5351253923.056057,
+        "c": -2675626963.5280285,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.7551013101408655,
+          1.4461268382637028e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -927500.3314745921,
+        "c": 463752.16573729605,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          4.585829385106186e-06,
+          0.8923753242450058
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -927500.3314745921,
+        "c": -463752.16573729605,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.8923753242450058,
+          4.585829385106186e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 28.002702499909024,
+        "c": -12.001351249954512,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.0859943117900232e-10,
+          0.16984366125598346
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 28.002702499909024,
+        "c": 12.001351249954512,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.16984366125598346,
+          2.0859943117900232e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 6.666807547095196,
+        "c": -1.333403773547598,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.0753429586763496e-10,
+          0.012986991276049855
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 6.666807547095196,
+        "c": 1.333403773547598,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.012986991276049855,
+          1.0753429586763496e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 1.6189724406771049,
+        "c": 1.1905137796614476,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.0222464531530854e-05,
+          0.9090897104455031
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 1.6189724406771049,
+        "c": -1.1905137796614476,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.9090897104455031,
+          1.0222464531530854e-05
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.22508415232877949,
+        "c": 1.8874579238356102,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.8891317485723755e-06,
+          3.0767017236546264
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.22508415232877949,
+        "c": -1.8874579238356102,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          3.0767017236546264,
+          1.8891317485723755e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.3332250892487523,
+        "c": 2.666612544624376,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.4599735134362286e-10,
+          2.285773932969172
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.3332250892487523,
+        "c": -2.666612544624376,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.285773932969172,
+          1.4599735134362286e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.3633333333333333,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 1.867988304059549,
+        "c": 1.0660058479702255,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.310723795288106e-10,
+          0.6690691710220485
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.3633333333333333,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 1.867988304059549,
+        "c": -1.0660058479702255,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          0.6690691710220485,
+          1.310723795288106e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.3033333333333337,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 1.4829825366887395,
+        "c": 1.2585087316556303,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          7.592101330342066e-06,
+          1.0136594300236563
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.3033333333333337,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 1.4829825366887395,
+        "c": -1.2585087316556303,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.0136594300236563,
+          7.592101330342066e-06
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -10550473272.958605,
+        "c": 5275236638.479302,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.1822117382456594e-05,
+          0.6789756918729716
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -53698664250.24891,
+        "c": -13424666066.562231,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.43037584225497066,
+          4.99881147834741e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -792949.0098244206,
+        "c": 396476.5049122103,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.0700494086680975e-05,
+          0.7500082211996344
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 368.0762931713441,
+        "c": 88.01907329283604,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.049294596858264136,
+          1.1474505571397121e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -94188.42170006761,
+        "c": 47096.21085003381,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          3.195774863285093e-06,
+          0.7500589214726036
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 38.85948955081449,
+        "c": 5.7148723877036245,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.058888349707144044,
+          1.4949414613491062e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 15.200715075551322,
+        "c": -5.600357537775661,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.0725260272716977e-10,
+          0.0036421072210356567
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 13.53861859402502,
+        "c": -0.615345351493743,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.05935687471794329,
+          1.0875234965417843e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 2.85276529266041,
+        "c": 0.573617353669795,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.54906365913225e-05,
+          1.0019939849762933
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 4.210719525760055,
+        "c": -2.9473201185599853,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          0.4321133836171255,
+          2.0479764019812086e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.8000316615905361,
+        "c": 1.599984169204732,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.403228246353551e-10,
+          2.9300612657662874
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -2.285425035157671,
+        "c": -4.571356258789417,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.347976149517173,
+          1.5269956051580037e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.9999097975957892,
+        "c": 2.4999548987978946,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.4018622780289925e-10,
+          3.2998329121535854
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -6.399275797022504,
+        "c": -5.599818949255626,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.4595330664824038,
+          2.2311835625092178e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.9188888888888886,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 1.04557280477152,
+        "c": 1.47721359761424,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.0894527611761902e-10,
+          2.4891729458650036
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.9188888888888886,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.7915254332735915,
+        "c": -4.447881358318397,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.630703038360966,
+          1.8963783033607382e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.858888888888889,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.9534560472743387,
+        "c": 1.5232719763628306,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.680903852988544e-06,
+          2.658568622208231
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.858888888888889,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1.402658259830249,
+        "c": -4.350664564957562,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.9350922371567405,
+          2.2965327836052005e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.807777777777778,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 12.862391087896826,
+        "c": -4.431195543948413,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.6803384782322153e-10,
+          0.03816145027117248
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.807777777777778,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 12.04149979025144,
+        "c": -0.9896250524371384,
+        "crossings": [
+          1,
+          2
+        ],
+        "normalized_margins": [
+          0.025194830109946782,
+          1.5229217318212414e-09
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.7477777777777779,
+      "b": 1.3333333333333333,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 15.303670949496508,
+        "c": -5.651835474748254,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.0542263582388854e-10,
+          0.00430309033864017
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.7477777777777779,
+      "b": 1.3333333333333333,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 13.599347259444896,
+        "c": -0.6001631851387743,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.062186438347197406,
+          1.1544755999404635e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -49578661991.489944,
+        "c": 24789330997.744972,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.9616628397689138e-05,
+          0.600000818991139
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.4,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 2901.5313126887995,
+        "c": 280.15313126887986,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.08736394220041223,
+          2.350951328438736e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -2360019.229595609,
+        "c": 1180011.6147978045,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.5137814949447274e-05,
+          0.6000098587047515
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -0.75,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 380.04390557118165,
+        "c": 28.004390557118157,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.019631000941114213,
+          1.281865449569199e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -48493.25803059597,
+        "c": 24248.629015297985,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.5123342050743486e-05,
+          0.6002401193720079
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.25,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 118.11472047978995,
+        "c": 1.8114720479789916,
+        "crossings": [
+          1,
+          2
+        ],
+        "normalized_margins": [
+          0.059235602045872734,
+          2.8216879163593497e-09
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 92.01090892452326,
+        "c": -44.00545446226163,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          2.2586166101741267e-10,
+          0.10691130114269302
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.75,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 38.52661237978478,
+        "c": -6.1473387620215245,
+        "crossings": [
+          1,
+          2
+        ],
+        "normalized_margins": [
+          0.025899725590718625,
+          7.441339650194243e-08
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 5.257374014568091,
+        "c": -0.6286870072840456,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.7468614366763066e-05,
+          1.4133857840543722
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -2.25,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 7.867694654174443,
+        "c": -9.213230534582557,
+        "crossings": [
+          0,
+          2
+        ],
+        "normalized_margins": [
+          0.7239802810987216,
+          1.9468732948317595e-06
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 1.3164073182892593,
+        "c": 1.3417963408553704,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.697366294710796e-06,
+          4.638752890649183
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.0,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -24.99711348181703,
+        "c": -12.499711348181705,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.038519714154048,
+          1.1043632922189582e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -0.5713718734226594,
+        "c": 2.28568593671133,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          1.0793945430366236e-10,
+          7.481064317073882
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -4.0,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -45.447488833321586,
+        "c": -14.54474888333216,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.8454437698833825,
+          1.4556172012413957e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.4744444444444444,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 0.42535110288056055,
+        "c": 1.7873244485597197,
+        "crossings": [
+          2,
+          0
+        ],
+        "normalized_margins": [
+          1.3053713109541115e-10,
+          7.843661716392557
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.4744444444444444,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -36.323656850739354,
+        "c": -13.632365685073935,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.9054431126965212,
+          1.361117981851315e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.414444444444445,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 0.4607349034851823,
+        "c": 1.769632548257409,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          5.681539853788577e-07,
+          7.64521659537226
+        ],
+        "first_sample_signs": [
+          1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -3.414444444444445,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -35.083743350839946,
+        "c": -13.508374335083996,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.9159387849827021,
+          1.452172969811061e-10
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.2522222222222221,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -47752.41883584196,
+        "c": 23878.20941792098,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.485859102882565e-05,
+          0.6002437134239038
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.2522222222222221,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 2,
+      "best": {
+        "m": 117.57443079565641,
+        "c": 1.7574430795656362,
+        "crossings": [
+          1,
+          2
+        ],
+        "normalized_margins": [
+          0.060979363530384384,
+          3.334526255528604e-09
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.192222222222222,
+      "b": 1.6666666666666667,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -76844.37978906455,
+        "c": 38424.189894532276,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          3.3942284238176054e-05,
+          0.6001551529058261
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1.192222222222222,
+      "b": 1.6666666666666667,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 132.8624862977914,
+        "c": 3.286248629779136,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.0037389630878690307,
+          1.5467300327681912e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.2,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 6.0000120174157185,
+        "c": -1.0000060087078593,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.5492614318506908e-10,
+          0.15619814027759435
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.2,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -1324.715005771695,
+        "c": -5961.43974819485,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          4.99799622766734,
+          0.0008198264381695991
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.5,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 12.002102593907512,
+        "c": -4.001051296953756,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          1.2215114968061069e-09,
+          0.06341345364917808
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.5,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -7530.844019703594,
+        "c": -11296.932696222057,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          2.0001455798209555,
+          0.00017085790524683583
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.8,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 36.01051184463033,
+        "c": -16.005255922315165,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          8.579815686481535e-10,
+          0.1261001304645247
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 0.8,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -43400.02319398763,
+        "c": -32551.35072882405,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          1.2500708112834906,
+          3.416868408823009e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.0,
+      "hopf_side": 1,
+      "max_home_crossings": 0,
+      "best": {
+        "m": 4.001051219888048,
+        "c": -0.0005256099440238415,
+        "crossings": [
+          0,
+          1
+        ],
+        "normalized_margins": [
+          0.00018233805763252152,
+          2.786172673825627e-05
+        ],
+        "first_sample_signs": [
+          1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.0,
+      "hopf_side": -1,
+      "max_home_crossings": 0,
+      "best": {
+        "m": 4.001051219888048,
+        "c": 0.0005256099440238415,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.786172673825627e-05,
+          0.00018233805763252152
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.2,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -97650.05218647205,
+        "c": 48827.026093236025,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          2.277941431364806e-05,
+          0.8333912086943857
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.2,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 81.02365165001825,
+        "c": 24.00788388333942,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.0853478895138828,
+          5.807043819666134e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.5,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -67777.59617733237,
+        "c": 33890.79808866618,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          5.6959357279404515e-05,
+          0.6667938865757708
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.5,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 108.01892334539005,
+        "c": 12.00315389089834,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.022688948072019335,
+          4.3704933923195273e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.8,
+      "hopf_side": 1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": -107301.91546750732,
+        "c": 53652.95773375366,
+        "crossings": [
+          1,
+          0
+        ],
+        "normalized_margins": [
+          9.115974023940139e-05,
+          0.5557469442509041
+        ],
+        "first_sample_signs": [
+          -1,
+          -1
+        ]
+      },
+      "candidate_directions": []
+    },
+    {
+      "a": -1,
+      "b": 1.8,
+      "hopf_side": -1,
+      "max_home_crossings": 1,
+      "best": {
+        "m": 486.0048182898254,
+        "c": 9.000267682768062,
+        "crossings": [
+          1,
+          1
+        ],
+        "normalized_margins": [
+          0.0202082303432916,
+          1.0003430630479484e-10
+        ],
+        "first_sample_signs": [
+          -1,
+          1
+        ]
+      },
+      "candidate_directions": []
+    }
+  ],
+  "candidate_count": 0
+}

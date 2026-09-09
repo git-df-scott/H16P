@@ -1,0 +1,62 @@
+{
+  "synthetic_upper_five": {
+    "slope_cells": 44,
+    "maxima": {
+      "upper": 6,
+      "total": 7,
+      "upper_with_lower": 6
+    },
+    "best": {
+      "m": -0.6190476190476191,
+      "c": 1.5476190476190477,
+      "upper": 4,
+      "lower": 1,
+      "normalized_level_gap": 0.0451127819548872
+    },
+    "five_candidate": {
+      "m": -0.6190476190476191,
+      "c": 1.5476190476190477,
+      "upper": 4,
+      "lower": 1,
+      "normalized_level_gap": 0.0451127819548872
+    }
+  },
+  "synthetic_lower_five": {
+    "slope_cells": 44,
+    "maxima": {
+      "upper": 1,
+      "total": 7,
+      "upper_with_lower": 1
+    },
+    "best": {
+      "m": -1.1666666666666665,
+      "c": -1.5833333333333333,
+      "upper": 1,
+      "lower": 2,
+      "normalized_level_gap": 0.13333333333333347
+    },
+    "five_candidate": {
+      "m": -0.6190476190476191,
+      "c": -2.7857142857142856,
+      "upper": 0,
+      "lower": 5,
+      "normalized_level_gap": 0.03243243243243241
+    }
+  },
+  "parabola_negative": {
+    "slope_cells": 33,
+    "maxima": {
+      "upper": 2,
+      "total": 3,
+      "upper_with_lower": 2
+    },
+    "best": {
+      "m": 3.166666666666667,
+      "c": -2.2500000000000004,
+      "upper": 2,
+      "lower": 1,
+      "normalized_level_gap": 0.025974025974026014
+    },
+    "five_candidate": null
+  }
+}

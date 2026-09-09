@@ -1,0 +1,437 @@
+
+FILE fold_surface_2026_09_05/exact_recheck.log
+1: {
+2:   "status": "EXACT_IDENTITIES_PASS",
+3:   "orbit_evaluations": 0,
+4:   "checks": [
+5:     "reversible coordinates modulo J",
+6:     "A+2C=21/5",
+7:     "Darboux first integral",
+8:     "Melnikov even divergence",
+9:     "moment integration-by-parts identity",
+10:     "c=1 no-cycle factorization",
+11:     "1<c<8/5 sufficient no-cycle thresholds",
+12:     "global Lienard residual becomes (u-1)u^(-c)(a*u+b)",
+13:     "c=8/5 infinity separatrix jet through v^2",
+14:     "infinity product derivative 10/sqrt(159)",
+15:     "half-passage exponents 6/5 and difference slope 12/sqrt(159)",
+17:   ],
+18:   "c1_no_cycle_K_threshold": "6292/1125",
+19:   "algebraic_center_isolation": [
+20:     "96862063355349/100000000000000",
+22:   ],
+23:   "proved_normalized_bounds": {
+24:     "b": "(-3/10,-29/100)",
+25:     "d": "(101/100,51/50)",
+26:     "A": "positive"
+27:   },
+28:   "K2": "(-8800*c**5 + 58120*c**4 - 92089*c**3 - 39218*c**2 + 53831*c + 31720)/((2*c + 1)**2*(500*c - 500))",
+29:   "K3": "(-2200*c**4 + 19095*c**3 - 40912*c**2 + 20175*c + 3050)/(50*c*(5*c - 8))",
+30:   "scope": "No global at-most-two theorem or complete fold-component exclusion."
+31: }
+
+FILE fold_surface_2026_09_05/half.log
+35: POINT 556117.45111284822547759 1.5764619705305016747953 6.7474760318518484636906 BRACKETS 2
+69: POINT 1511683.9618490167748632 1.5785125111264862382554 6.7861818601483412881879 BRACKETS 2
+103: POINT 4109183.0438671588985926 1.5802335277487991693855 6.8185795501679076330813 BRACKETS 2
+137: POINT 11169917.597956125778182 1.5816986456124914806791 6.8460967863030362345715 BRACKETS 2
+171: POINT 30362984.0319090440953 1.5829610835512431533641 6.8697608463805224796386 BRACKETS 2
+205: POINT 82535147.75173050986632 1.584060250429665121937 6.8903294466055304253252 BRACKETS 2
+239: POINT 224353792.34271146684478 1.585025948924048712612 6.9083736506459054666288 BRACKETS 2
+274: POINT 609856836.87106666801265 1.5858811351472328702574 6.924332020286051205156 BRACKETS 2
+
+FILE fold_surface_2026_09_05/logm.log
+35: POINT 12987.049612774667233239 0.34615110591359078275422 846262.44045480184945518 BRACKETS 2
+70: POINT 48517.773830784313311426 0.34359621614945051203452 3792685.130023902839639 BRACKETS 2
+105: POINT 183815.08880990924954801 0.34181276162019752742536 16997635.494461827620398 BRACKETS 2
+140: POINT 706258.3315232977400342 0.34051615129165022999649 76178117.217119921006088 BRACKETS 2
+178: POINT 2750457.4744661858012478 0.33954105530377762971802 341406635.33089830854442 BRACKETS 2
+223: POINT 10846390.2669672943151234316173148637 0.338786470747483586959082749614985479 1530078386.10338035629331950018948814 BRACKETS 2
+258: POINT 43260344.8105715031713062191011335408 0.338188111300065443436399466255860802 6857335579.76002531101775431852971942 BRACKETS 2
+293: POINT 174291687.661392451795747928859933657 0.337703613199332467538102981558561169 30732445919.4508425956059561924493573 BRACKETS 2
+328: POINT 708467882.743623568299550461737669673 0.337304198984821298335508168522187621 137733266981.958500540904056203058392 BRACKETS 2
+363: POINT 2902276185.16192911379837724520640703 0.33696978472464394999746162446944167 617277677254.998071536416139727214206 BRACKETS 2
+398: POINT 11970315900.3204410765906567835952969 0.336686008655352486604299821822669964 2766446619517.39232853325408805246624 BRACKETS 2
+
+FILE fold_surface_2026_09_05/m.log
+36: POINT 18.442102221567045117548 0.46000000000000000000759 352.6817591226600705212 K -37.767818890528079157215 BRACKETS 2
+71: POINT 19.572570841798566671638 0.45454545454545454546687 381.85986315160415194292 K -42 BRACKETS 2
+107: POINT 23.484668875861226592511 0.43999999999999999999783 485.08063993747639111587 K -57.522580477999244501219 BRACKETS 2
+143: POINT 32.588549566052535669952 0.41999999999999999998807 736.92646953958674532759 K -98.006411685008592661605 BRACKETS 2
+180: POINT 52.441636983320489985572 0.40000000000000000000542 1328.776217562749653478 K -201.45314610752995840293 BRACKETS 2
+223: POINT 3523.0333764740692545914 0.34999999999999999999458 188826.67386628099870904 K -43472.134989244629707628 BRACKETS 2
+
+FILE fold_surface_2026_09_05/negative.log
+33: POINT 6.7578693076930954177287 0.96860692273277339796192 -0.00010000000000000000000114 BRACKETS 2
+66: POINT 6.7572019268810632254031 0.96848353798514854939372 -0.0009999999999999999999585 BRACKETS 2
+100: POINT 6.7505763524901349669285 0.96725094676823326564092 -0.0099999999999999999997967 BRACKETS 2
+134: POINT 6.7361645175352011937105 0.96452012934891156141623 -0.02999999999999999999939 BRACKETS 2
+168: POINT 6.7221773648223616119853 0.96180093874713090289002 -0.050000000000000000000678 BRACKETS 2
+202: POINT 6.6890259882258611299696 0.95505548617558295261196 -0.10000000000000000000136 BRACKETS 2
+236: POINT 6.6301774016260925283944 0.94180206944744434020486 -0.20000000000000000000271 BRACKETS 2
+271: POINT 6.5396617424274705184482 0.91633034646630129153606 -0.40000000000000000000542 BRACKETS 2
+306: POINT 6.4613439608832013197857 0.88095077392814155435715 -0.69999999999999999998916 BRACKETS 2
+341: POINT 6.4372077633534292898619 0.84910372624635357068469 -1 BRACKETS 2
+376: POINT 6.4817285630391510281578 0.80352751452938005676885 -1.5 BRACKETS 2
+411: POINT 6.5949492047247723577365 0.7661178814293054145949 -2 BRACKETS 2
+446: POINT 6.9273642438970905021306 0.70960973693677839493205 -3 BRACKETS 2
+481: POINT 7.3204599009563675140501 0.66951042806087022140043 -4 BRACKETS 2
+517: POINT 8.1463403806512598263889 0.61656337968836084266824 -6 BRACKETS 2
+552: POINT 8.9586601318709880208482 0.58287769251172663137689 -8 BRACKETS 2
+587: POINT 9.7396551010206836637012 0.55926587826233941464979 -10 BRACKETS 2
+623: POINT 11.560108816057507363263 0.52194186855980772584253 -15 BRACKETS 2
+659: POINT 13.231502007151731137302 0.49951342570136731354217 -20 BRACKETS 2
+696: POINT 16.27191084960516027566 0.47287693481152797580396 -30 BRACKETS 2
+
+FILE fold_surface_2026_09_05/negative_recheck.log
+1: {
+2:   "status": "EXACT_IDENTITIES_AND_SAVED_DATA_ONLY",
+3:   "orbit_evaluations": 0,
+4:   "right_Melnikov_constant_c_one_third": "152/675",
+5:   "left_Melnikov_constant_c_one_third": "8/27",
+6:   "conditional_delta_log_radius_limit": "(2/9)*log(25/19)",
+7:   "conditional_delta_log_radius_limit_decimal": "0.060985965711502286487",
+8:   "m_H": "(21000*c**2 + 21441*c + 10101)/(50*(8 - 5*c)*(2*c + 1)**2)",
+9:   "full_return_reproduction": {
+10:     "sha256": "9eaded55577a52ca25ff213a137f373fbea2afbe6ac78a13dd45bfbd00cd98e9",
+11:     "field": {
+12:       "c": "168343696162308681404693782077301251/500000000000000000000000000000000000",
+13:       "m": "8645145685991851026666419025163957/3125000000000000000000"
+14:     },
+15:     "two_brackets_verified": true,
+16:     "rows": [
+17:       {
+18:         "left_radius": "10316597428.823826792489975159991449",
+19:         "right_radius": "10536434437.7175644518232860548041899",
+20:         "left_L": "-2.29867080575891196819789187216140617e-05",
+21:         "right_L": "1.20738567234630713842799157371722757e-06",
+22:         "endpoint_derivative_sign": "positive"
+23:       },
+24:       {
+25:         "left_radius": "13550003248.5874964614567880789195467",
+26:         "right_radius": "14113621314.7445041902780326625196984",
+27:         "left_L": "5.01111327291526340428189164832706537e-07",
+28:         "right_L": "-6.41797751693528722053276577288341005e-05",
+29:         "endpoint_derivative_sign": "negative"
+30:       }
+31:     ],
+32:     "interval_certified": false,
+33:     "third_cycle_trigger": false
+34:   }
+35: }
+36: events_negative.json accepted 20 failed 1
+37: events_m.json accepted 6 failed 1
+38: events_logm.json accepted 11 failed 1
+
+FILE fold_surface_2026_09_05/outcome_recheck.log
+1: {
+2:   "status": "SAVED_DATA_AUDIT_ONLY",
+3:   "orbit_evaluations": 0,
+4:   "files": {
+5:     "events_increasing.json": {
+6:       "sha256": "30e1f0ce07b3577ee50dbdc01782600d9200c2d07f0e7bb7e3f24ebec8495a72",
+7:       "events": 18,
+8:       "accepted": 18,
+9:       "failures": {},
+10:       "saved_root_bracket_count_histogram": {
+11:         "2": 17,
+12:         "1": 1
+13:       },
+14:       "adjacent_profile_sign_change_histogram": {
+15:         "2": 17,
+16:         "1": 1
+17:       },
+18:       "bracket_or_label_problems": [],
+19:       "minimum_positive_fold_curvature": 4.4205393131768744e-05,
+20:       "max_abs_residual_components": [
+21:         4.9106853790043446e-08,
+23:       ],
+24:       "maximum_recorded_flux_discrepancy": 6.230904681103766e-12,
+25:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 0.07257150954823606,
+26:       "all_checked_remote_traces_positive": true,
+27:       "root_stability_labels": {
+28:         "stable": 18,
+29:         "unstable": 17
+30:       },
+31:       "last_accepted": {
+32:         "r": 823.5861819676869,
+33:         "c": 1.5377596872835322,
+34:         "K": 6.0
+35:       },
+36:       "last_remote_exact_enclosure": {
+37:         "x_interval": [
+38:           "-10357017948746556989/4611686018427387904",
+40:         ],
+41:         "trace_interval": [
+42:           "468132892549655011309647052664160449439345272045642981/66239167335693369295389343140649369600000000000000000",
+44:         ],
+45:         "trace_approximation": 7.067312458461398,
+46:         "trace_positive_exact": true
+47:       }
+48:     },
+49:     "events_decreasing.json": {
+50:       "sha256": "b23505b8c5abdf3e8aaeb42851d8a1768e54cb024292abd5b5b739c4b26d67a6",
+51:       "events": 4,
+52:       "accepted": 4,
+53:       "failures": {},
+54:       "saved_root_bracket_count_histogram": {
+55:         "2": 4
+56:       },
+57:       "adjacent_profile_sign_change_histogram": {
+58:         "2": 4
+59:       },
+60:       "bracket_or_label_problems": [],
+61:       "minimum_positive_fold_curvature": 1.3803017386849063e-06,
+62:       "max_abs_residual_components": [
+63:         6.439293542825701e-14,
+65:       ],
+66:       "maximum_recorded_flux_discrepancy": 9.140799228646301e-12,
+67:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 0.0022650175918103024,
+68:       "all_checked_remote_traces_positive": true,
+69:       "root_stability_labels": {
+70:         "stable": 4,
+71:         "unstable": 4
+72:       },
+73:       "last_accepted": {
+74:         "r": 6.947634627431674,
+75:         "c": 0.9686373707756747,
+76:         "K": 0.0001220703125
+77:       },
+78:       "last_remote_exact_enclosure": {
+79:         "x_interval": [
+80:           "-7669153856173585441/2305843009213693952",
+82:         ],
+83:         "trace_interval": [
+84:           "19416517486444282146412109950852452616340806503307/61834764113512208920002883993877872640000000000000000",
+86:         ],
+87:         "trace_approximation": 0.00031400649399746596,
+88:         "trace_positive_exact": true
+89:       }
+90:     },
+91:     "events_arclength.json": {
+92:       "sha256": "d0e3929d591ddac63242b4ca7b0f2523a095868986b7a2de332257ba24bb3083",
+93:       "events": 27,
+94:       "accepted": 17,
+95:       "failures": {
+96:         "UNRESOLVED_RETURN": 2,
+97:         "CORRECTOR_ITERATION_LIMIT": 8
+98:       },
+99:       "saved_root_bracket_count_histogram": {
+100:         "2": 17
+101:       },
+102:       "adjacent_profile_sign_change_histogram": {
+103:         "2": 17
+104:       },
+105:       "bracket_or_label_problems": [],
+106:       "minimum_positive_fold_curvature": 0.024178378394631266,
+107:       "max_abs_residual_components": [
+108:         1.0094187314777909e-08,
+110:       ],
+111:       "maximum_recorded_flux_discrepancy": 8.835876080470761e-06,
+112:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 891.0394216926605,
+113:       "all_checked_remote_traces_positive": true,
+114:       "root_stability_labels": {
+115:         "stable": 17,
+116:         "unstable": 17
+117:       },
+118:       "last_accepted": {
+119:         "r": 214759.01581060505,
+120:         "c": 1.573977181093815,
+121:         "K": 6.700420526114401
+122:       },
+123:       "last_remote_exact_enclosure": {
+124:         "x_interval": [
+125:           "-2580718377026226149/1152921504606846976",
+127:         ],
+128:         "trace_interval": [
+129:           "1214990646518368865328255771427041782327229455281363/164613771842270096925139424693243084800000000000000",
+131:         ],
+132:         "trace_approximation": 7.380856613154765,
+133:         "trace_positive_exact": true
+134:       }
+135:     },
+136:     "events_angular_ld.json": {
+137:       "sha256": "be0606559eb942f38a7b8dc81bde88a6dbe314ae3bdb9be0a39116989e0fdf9a",
+138:       "events": 2,
+139:       "accepted": 1,
+140:       "failures": {
+141:         "CORRECTOR_UNRESOLVED": 1
+142:       },
+143:       "saved_root_bracket_count_histogram": {
+144:         "2": 1
+145:       },
+146:       "adjacent_profile_sign_change_histogram": {
+147:         "2": 1
+148:       },
+149:       "bracket_or_label_problems": [],
+150:       "minimum_positive_fold_curvature": 0.024169259673899993,
+151:       "max_abs_residual_components": [
+152:         3.979027177192229e-11,
+154:       ],
+155:       "maximum_recorded_flux_discrepancy": 6.294498342690469e-15,
+156:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 2060.7020550944203,
+157:       "all_checked_remote_traces_positive": true,
+158:       "root_stability_labels": {
+159:         "unassigned": 2
+160:       },
+161:       "last_accepted": {
+162:         "r": "204584.17714108149999674",
+163:         "c": "1.5739771810940594701017",
+164:         "K": "6.7004205261159836214645"
+165:       },
+166:       "last_remote_exact_enclosure": {
+167:         "x_interval": [
+168:           "-20645747016208558795/9223372036854775808",
+170:         ],
+171:         "trace_interval": [
+172:           "155518802754383746422986993077272003364867078006578305640377/21070562795808265831072892940513915699200000000000000000000",
+174:         ],
+175:         "trace_approximation": 7.380856613157117,
+176:         "trace_positive_exact": true
+177:       }
+178:     },
+179:     "events_half.json": {
+180:       "sha256": "64413c74fed4792ece33cae90cf40851834d0a8a98af5d7dc142c82036987cc5",
+181:       "events": 8,
+182:       "accepted": 8,
+183:       "failures": {},
+184:       "saved_root_bracket_count_histogram": {
+185:         "2": 8
+186:       },
+187:       "adjacent_profile_sign_change_histogram": {
+188:         "2": 8
+189:       },
+190:       "bracket_or_label_problems": [],
+191:       "minimum_positive_fold_curvature": 0.013268726459541504,
+192:       "max_abs_residual_components": [
+193:         4.2500725161431774e-17,
+195:       ],
+196:       "maximum_recorded_flux_discrepancy": 7.186091999e-13,
+197:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 2288.2136436061714,
+198:       "all_checked_remote_traces_positive": true,
+199:       "root_stability_labels": {
+200:         "stable": 8,
+201:         "unstable": 8
+202:       },
+203:       "last_accepted": {
+204:         "r": "609856836.87106666801265",
+205:         "c": "1.5858811351472328702574",
+206:         "K": "6.924332020286051205156"
+207:       },
+208:       "last_remote_exact_enclosure": {
+209:         "x_interval": [
+210:           "-20625226979592994895/9223372036854775808",
+212:         ],
+213:         "trace_interval": [
+214:           "26232368852939020155606450820003347931081953609247371857189/3505451668237536698895170202819048243200000000000000000000",
+216:         ],
+217:         "trace_approximation": 7.483306385487286,
+218:         "trace_positive_exact": true
+219:       }
+220:     },
+221:     "events_quad.json": {
+222:       "sha256": "8eff8436436e7f972022bb5bee4157f0a9b6ff64eb3e44ca1b2458b6330e3d99",
+223:       "events": 10,
+224:       "accepted": 10,
+225:       "failures": {},
+226:       "saved_root_bracket_count_histogram": {
+227:         "2": 10
+228:       },
+229:       "adjacent_profile_sign_change_histogram": {
+230:         "2": 10
+231:       },
+232:       "bracket_or_label_problems": [],
+233:       "minimum_positive_fold_curvature": 0.006238945295932732,
+234:       "max_abs_residual_components": [
+235:         1.1292959859106772e-28,
+237:       ],
+238:       "maximum_recorded_flux_discrepancy": 6.8706139691e-24,
+239:       "minimum_exact_remote_Hopf_gap_KH_minus_K": 4331.599683280402,
+240:       "all_checked_remote_traces_positive": true,
+241:       "root_stability_labels": {
+242:         "stable": 10,
+243:         "unstable": 10
+244:       },
+245:       "last_accepted": {
+246:         "r": "295881311432547652.547112249151329666",
+247:         "c": "1.5934058052781371099083577066172161",
+248:         "K": "7.06390700436779910773804298664181037"
+249:       },
+250:       "last_remote_exact_enclosure": {
+251:         "x_interval": [
+252:           "-20612626894692837161/9223372036854775808",
+254:         ],
+255:         "trace_interval": [
+256:           "3964459016552499362910383460870121552576541518398778092450758154321339281/525236673881979950116694893670820741120000000000000000000000000000000000",
+258:         ],
+259:         "trace_approximation": 7.547947837022722,
+260:         "trace_positive_exact": true
+261:       }
+262:     }
+263:   }
+264: }
+
+FILE fold_surface_2026_09_05/positive_last.log
+35: POINT 733416444748324.175069574953387832703 1.59215134414205588694074335798796206 7.04074234868043038754800162275472733 BRACKETS 2
+70: POINT 5419255254123639.00203822252390382583 1.59261938973365232127200051906964812 7.04939005342531325053777474733964048 BRACKETS 2
+105: POINT 40043181087144245.5476310151190609196 1.59303473348178026226347889957709373 7.05705918411665138113043770771787927 BRACKETS 2
+139: POINT 295881311432547652.547112249151329666 1.5934058052781371099083577066172161 7.06390700436779910773804298664181037 BRACKETS 2
+
+FILE fold_surface_2026_09_05/quad.log
+35: POINT 4506266379.95670980685550095019231317 1.58732815126123739676822334027976613 6.95128974396977924826188600956369886 BRACKETS 2
+70: POINT 33297055078.2252694048295892513944614 1.58850584021388963418892131813963567 6.97318865362212999635510913212332839 BRACKETS 2
+105: POINT 246033807902.190205788103312683893935 1.58948305742095116703157143873584783 6.99133177589201089274362790699780757 BRACKETS 2
+140: POINT 1817957608822.81054686500033282530319 1.59030701295128842773300287237025104 7.00660969724511808077037700746479306 BRACKETS 2
+175: POINT 13432990757069.569534557778685486796 1.59101116274078365293337640047635881 7.01965188284737953878754210918839545 BRACKETS 2
+210: POINT 99257122280403.9552800102030195382154 1.59161988023981570408975877445700667 7.03091589407048308772197181838284973 BRACKETS 2
+
+FILE reversible_reseed/data/geometry.log
+1: {
+2:   "affine_P": true,
+3:   "affine_Q": true,
+4:   "upper_J": "Matrix([[0, 1], [-1, 0]])",
+5:   "lower_J": "Matrix([[0, -1], [(2 - b)/b, 0]])",
+6:   "upper_det": "1",
+7:   "lower_det": "-(b - 2)/b",
+8:   "off_axis_x_squared": "(2 - b)/(4*a)",
+9:   "orbit_equation": true,
+10:   "H_derivative": true,
+11:   "integrating_factor": true,
+12:   "normal_weighted_divergence": true,
+13:   "full_chart_determinant": "-16*(a + 2)",
+14:   "boundary_replacement_determinant": "-48*b",
+15:   "area_flux_identity": true,
+16:   "boundary_invisible_old_direction": {
+17:     "epsilon0": "(2-b)/(12*b)",
+18:     "epsilon1": "(1-b)/b",
+19:     "epsilon2": "1"
+20:   },
+21:   "boundary_log_first_integral": true,
+22:   "reciprocal_U_equation": true,
+23:   "reciprocal_W_equation": true,
+24:   "infinity_horizontal_eigenvalues": [
+25:     "-a",
+27:   ],
+28:   "bicycle_radial_eigenvalue": true,
+29:   "bicycle_angular_eigenvalue": true,
+30:   "yu_zeng_shape": {
+31:     "a": "-671/450",
+32:     "b": "7/15",
+33:     "lambda": "229/671"
+34:   },
+35:   "bicycle_seed": {
+36:     "a": "-7/3",
+37:     "b": "1"
+38:   },
+39:   "bicycle_seed_R": "3*(28*y**2 - 1)/28",
+40:   "bicycle_seed_h_center": "-18*2**(1/3)/7",
+41:   "versions": {
+42:     "sympy": "1.14.0"
+43:   }
+44: }
+
+FILE reversible_reseed/data/moment_search.log
+55: saved /workspace/scratch/97757d9f13f6/H16P/reversible_reseed/data/moment_search.json seconds 3.5598204900015844
+
+FILE reversible_reseed/data/verify_control.log
+31: seconds 3.168144650000613

@@ -1,0 +1,41 @@
+{
+  "access_date_utc": "2026-09-08",
+  "records": [
+    {
+      "file": "gavrilov-iliev-2009.pdf",
+      "sha256": "7d0774c8d722f0ae8761d3080980f42742b4d5af6ee9a0571f753dab21962a71",
+      "pages": 9,
+      "read_scope": "Relevant theorem/introduction/endpoint scope passages read through web text; full proof not audited."
+    },
+    {
+      "file": "zhao-2010.pdf",
+      "sha256": "abbcda0969433ca3f47d1d52253d51ab1fe455157fdd9341d66faae0a0b542b8",
+      "pages": 19,
+      "read_scope": "Relevant theorem/introduction/endpoint scope passages read through web text; full proof not audited."
+    }
+  ],
+  "sources": [
+    {
+      "authors": [
+        "Lubomir Gavrilov",
+        "Iliya D. Iliev"
+      ],
+      "title": "Quadratic perturbations of quadratic codimension-four centers",
+      "year": 2009,
+      "venue": "Journal of Mathematical Analysis and Applications 357(1),69\u201376",
+      "doi": "10.1016/j.jmaa.2009.04.004",
+      "url": "https://www.math.univ-toulouse.fr/~gavrilov/publications/45.pdf",
+      "claim": "Theorem1 explicitly bounds cyclicity of open period annulus, not whole original closed annulus."
+    },
+    {
+      "authors": [
+        "Yulin Zhao"
+      ],
+      "title": "On the number of limit cycles in quadratic perturbations of quadratic codimension four centers",
+      "year": 2010,
+      "status": "arXiv preprint version inspected",
+      "url": "https://arxiv.org/abs/1011.2253",
+      "claim": "Intro distinguishes center, outerloop, and annulus bifurcations; warns transfer can fail with >=2saddles. Boundfive concerns integral zeros in openinterval."
+    }
+  ]
+}

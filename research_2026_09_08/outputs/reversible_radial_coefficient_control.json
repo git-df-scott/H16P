@@ -1,0 +1,23 @@
+{
+  "scope": "Independent cubic analytic formula controls for angular formal-series solver",
+  "records": [
+    {
+      "k": "1/10",
+      "angular_return_c3": 0.008138068125786064,
+      "analytic_2pi_l1": 0.00813806812578599,
+      "difference": 7.45931094670027e-17
+    },
+    {
+      "k": "2/5",
+      "angular_return_c3": 0.0022868965736791698,
+      "analytic_2pi_l1": 0.0022868965736810264,
+      "difference": -1.8565878001641778e-15
+    },
+    {
+      "k": "1/2",
+      "angular_return_c3": -0.00899059819349562,
+      "analytic_2pi_l1": -0.008990598193492592,
+      "difference": -3.0270924655795284e-15
+    }
+  ]
+}

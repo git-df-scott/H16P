@@ -1,0 +1,302 @@
+{
+  "scope": "Tighter replay of all extreme-field brackets",
+  "records": [
+    {
+      "a": -1.01,
+      "side": 1,
+      "bracket": [
+        341.74130153350416,
+        194645.19528968932
+      ],
+      "rows": [
+        {
+          "side": 1,
+          "height": 341.74130153350416,
+          "forward": {
+            "status": "passed",
+            "log_height": -7.1109012162301255,
+            "height": 0.0008161591247174572,
+            "nfev": 1771,
+            "time": 35.60817061770711
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -7.1108966074233315,
+            "height": 0.0008161628862458441,
+            "nfev": 1771,
+            "time": 35.57458829902043
+          },
+          "log_difference": -4.608806793982012e-06
+        },
+        {
+          "side": 1,
+          "height": 194645.19528968932,
+          "forward": {
+            "status": "passed",
+            "log_height": -13.330137833756453,
+            "height": 1.6247804910196863e-06,
+            "nfev": 2923,
+            "time": 66.76717116240056
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -13.330138125788254,
+            "height": 1.624780016532182e-06,
+            "nfev": 2935,
+            "time": 66.73343714431994
+          },
+          "log_difference": 2.9203180140768836e-07
+        }
+      ],
+      "signs_retained": true
+    },
+    {
+      "a": -1.01,
+      "side": 1,
+      "bracket": [
+        2.929022363253736e+93,
+        1.6682798577318318e+96
+      ],
+      "rows": [
+        {
+          "side": 1,
+          "height": 2.929022363253736e+93,
+          "forward": {
+            "status": "passed",
+            "log_height": -212.3457687363027,
+            "height": 6.017337658876396e-93,
+            "nfev": 42703,
+            "time": 1063.8555847515283
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -212.34576899677305,
+            "height": 6.017336091538504e-93,
+            "nfev": 42691,
+            "time": 1063.8218502705492
+          },
+          "log_difference": 2.604703581710055e-07
+        },
+        {
+          "side": 1,
+          "height": 1.6682798577318318e+96,
+          "forward": {
+            "status": "passed",
+            "log_height": -218.565020284656,
+            "height": 1.197892244848301e-95,
+            "nfev": 43939,
+            "time": 1095.0146630838553
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -218.56499440136903,
+            "height": 1.1979232506382761e-95,
+            "nfev": 43939,
+            "time": 1094.9808240053196
+          },
+          "log_difference": -2.588328695196651e-05
+        }
+      ],
+      "signs_retained": true
+    },
+    {
+      "a": -1.01,
+      "side": -1,
+      "bracket": [
+        9.502002165056702e+98,
+        2.2677137554770615e+100
+      ],
+      "rows": [
+        {
+          "side": -1,
+          "height": 9.502002165056702e+98,
+          "forward": {
+            "status": "passed",
+            "log_height": -224.79321017014854,
+            "height": 2.3634654270145318e-98,
+            "nfev": 45187,
+            "time": 1126.2217888340685
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -224.7751077818431,
+            "height": 2.4066393928783153e-98,
+            "nfev": 45175,
+            "time": 1126.1041625233668
+          },
+          "log_difference": -0.018102388305436534
+        },
+        {
+          "side": -1,
+          "height": 2.2677137554770615e+100,
+          "forward": {
+            "status": "passed",
+            "log_height": -227.76981101812908,
+            "height": 1.2045585945789897e-99,
+            "nfev": 45811,
+            "time": 1141.4022401385066
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -228.03494538753475,
+            "height": 9.240203524479374e-100,
+            "nfev": 45847,
+            "time": 1142.434760847109
+          },
+          "log_difference": 0.26513436940567203
+        }
+      ],
+      "signs_retained": true
+    },
+    {
+      "a": -1.003,
+      "side": 1,
+      "bracket": [
+        0.6,
+        4557193.498503173
+      ],
+      "rows": [
+        {
+          "side": 1,
+          "height": 0.6,
+          "forward": {
+            "status": "passed",
+            "log_height": -0.8754045574355883,
+            "height": 0.4166934091574528,
+            "nfev": 367,
+            "time": 7.919567943865091
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -0.875400295670714,
+            "height": 0.4166951850105714,
+            "nfev": 367,
+            "time": 7.918008762072892
+          },
+          "log_difference": -4.261764874335938e-06
+        },
+        {
+          "side": 1,
+          "height": 4557193.498503173,
+          "forward": {
+            "status": "passed",
+            "log_height": -16.628629322533225,
+            "height": 6.001751968879645e-08,
+            "nfev": 3583,
+            "time": 83.19951140266934
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -16.628629416326046,
+            "height": 6.001751405958425e-08,
+            "nfev": 3571,
+            "time": 83.16589797450744
+          },
+          "log_difference": 9.379282062127459e-08
+        }
+      ],
+      "signs_retained": true
+    },
+    {
+      "a": -1.003,
+      "side": 1,
+      "bracket": [
+        3.9561149883102334e+240,
+        3.00479691734294e+247
+      ],
+      "rows": [
+        {
+          "side": 1,
+          "height": 3.9561149883102334e+240,
+          "forward": {
+            "status": "passed",
+            "log_height": -552.0697827279896,
+            "height": 1.7343619447645328e-240,
+            "nfev": 110587,
+            "time": 2762.016435367531
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -552.0697828219177,
+            "height": 1.7343617818592783e-240,
+            "nfev": 110587,
+            "time": 2761.9828219270826
+          },
+          "log_difference": 9.392806532559916e-08
+        },
+        {
+          "side": 1,
+          "height": 3.00479691734294e+247,
+          "forward": {
+            "status": "passed",
+            "log_height": -567.8186781611511,
+            "height": 2.50888845483338e-247,
+            "nfev": 113767,
+            "time": 2840.808299501852
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -567.8174272787685,
+            "height": 2.512028742857399e-247,
+            "nfev": 113731,
+            "time": 2840.7696807017583
+          },
+          "log_difference": -0.001250882382578311
+        }
+      ],
+      "signs_retained": true
+    },
+    {
+      "a": -1.003,
+      "side": -1,
+      "bracket": [
+        3.00479691734294e+247,
+        1.5774357519910096e+249
+      ],
+      "rows": [
+        {
+          "side": -1,
+          "height": 3.00479691734294e+247,
+          "forward": {
+            "status": "passed",
+            "log_height": -567.8331008531262,
+            "height": 2.4729632214806494e-247,
+            "nfev": 113743,
+            "time": 2840.8716913761646
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -567.8029828386722,
+            "height": 2.5485769150414135e-247,
+            "nfev": 113767,
+            "time": 2840.7062019919185
+          },
+          "log_difference": -0.030118014454046715
+        },
+        {
+          "side": -1,
+          "height": 1.5774357519910096e+249,
+          "forward": {
+            "status": "passed",
+            "log_height": -571.738721902258,
+            "height": 4.977691619037168e-249,
+            "nfev": 114511,
+            "time": 2860.4745358745527
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -571.7714845303931,
+            "height": 4.817251923530329e-249,
+            "nfev": 114535,
+            "time": 2860.5605571927
+          },
+          "log_difference": 0.03276262813506037
+        }
+      ],
+      "signs_retained": true
+    }
+  ],
+  "counts": {
+    "log_halves": 24
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "evidence": "Exact identities, not a cycle-count theorem",
+  "scalar_equation": "y_ddot=(1-a/2)*y_dot\u00b2/y+D(y)*y_dot-C(y)",
+  "D": "e0*(a - 1)/y + e1 + e2*y",
+  "C": "(a*e0**2 + 4*b*y**4 - 4*b*y**3 + b*y**2 + 2*e0*e1*y + 2*e0*e2*y**2 + 4*y**3 - 2*y**2)/(2*y)",
+  "Hopf_D": "-e0*(a - 1)*(y - y0)*(m*y*y0 + 1)/(y*y0)",
+  "positive_side_transformation": "z=(2/a)*y^(a/2), y>0,a!=0; z_ddot=D(y)*z_dot-y^(a/2-1)*C(y)",
+  "barrier": "For epsilon0 !=0, dy/dt=epsilon0 on y=0, so no periodic orbit can cross y=0.",
+  "scope": "Damping zero at selected positive Hopf focus and negative root -1/(m*y0) when m,y0>0. No uniqueness theorem follows from this factorization alone."
+}

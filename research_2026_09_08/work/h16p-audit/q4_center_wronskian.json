@@ -1,0 +1,38 @@
+{
+  "scope": "Exact algebra conditional on inherited PF reconstruction normalization; local center leading term only",
+  "basis_order": [
+    "A",
+    "B",
+    "eta",
+    "c"
+  ],
+  "X_coefficients_t1_to_t4": [
+    [
+      "9/3080",
+      "162/85085",
+      "-3/560",
+      "-9/40040"
+    ],
+    [
+      "-27/12320",
+      "-243/170170",
+      "19/13440",
+      "27/160160"
+    ],
+    [
+      "-(12024*a + 2329)/5322240",
+      "-3*(167*a + 27)/340340",
+      "(5724*a + 719)/2903040",
+      "(12024*a + 6949)/69189120"
+    ],
+    [
+      "-(1136268*a**2 + 314415*a + 105682)/574801920",
+      "-(9090144*a**2 + 2099520*a + 714941)/7057290240",
+      "(2163672*a**2 + 630180*a + 121483)/1254113280",
+      "(1136268*a**2 + 938115*a + 414067)/7472424960"
+    ]
+  ],
+  "Wronskian_X_leading_power": 4,
+  "Wronskian_X_leading_coefficient": "1/15416885772288",
+  "relation": "Original I has common nonzero scalar factor away from center; W_I is that scalar to the fourth power times W_X."
+}

@@ -1,0 +1,1920 @@
+{
+  "scope": "Publication integrity only; not mathematical validation",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2908,
+      "sha256": "fec2a5c9deafe27d1f2a78634c978e5017603bb4a1956d1ebdc86146d1e86bf5"
+    },
+    {
+      "path": "outputs/H16P-Bautin-precursor-search.md",
+      "bytes": 2675,
+      "sha256": "c0ba053e3b269aedfb3ecb56013e6df40f7814ffd4befa9b5b28f2d358fbd0c5"
+    },
+    {
+      "path": "outputs/H16P-Q4-anchor-limits.md",
+      "bytes": 3324,
+      "sha256": "0314cb6ccca237fdc066c1248488fae0e97eebe5a24ab2f4abf145563e8aa859"
+    },
+    {
+      "path": "outputs/H16P-Q4-anchor-placement.md",
+      "bytes": 3021,
+      "sha256": "94bbdd8de89daf001fe0ee646a296f6c25ab396c4b49d4d902990b6859fd8f59"
+    },
+    {
+      "path": "outputs/H16P-Q4-boundary-connection.md",
+      "bytes": 6195,
+      "sha256": "2fefb8c234311bdea8450a12df4915d8ba236fe57052ce0ba84e1b1be1b8b19e"
+    },
+    {
+      "path": "outputs/H16P-Q4-boundary-exact.json",
+      "bytes": 891,
+      "sha256": "0d4ddff9d11446939f02eb2902a9a29f370bb9ffb8452387d83f35c5ed97029b"
+    },
+    {
+      "path": "outputs/H16P-Q4-boundary-exact.py",
+      "bytes": 2307,
+      "sha256": "f6d79b85936e05c92a0488b0b17052b8fc848e3f38662245397d7242db8ae85f"
+    },
+    {
+      "path": "outputs/H16P-Q4-confluent-test.md",
+      "bytes": 2399,
+      "sha256": "08a02f219012750a47f4176686e8142f178cfac7a1bc24cbd4dbddc2d11c681d"
+    },
+    {
+      "path": "outputs/H16P-Q4-finite-endpoint-test.md",
+      "bytes": 1702,
+      "sha256": "d7d43d1dabab5354fb6d49c905f57601e8d2b63796a3eba66a0658d3a7ca460f"
+    },
+    {
+      "path": "outputs/H16P-Q4-first-compatibility-test.md",
+      "bytes": 4354,
+      "sha256": "ef5be248396259b9ac0870fc15fe683e79c710f153e5a9e560e270d1bba234fd"
+    },
+    {
+      "path": "outputs/H16P-Q4-four-crossing-search.md",
+      "bytes": 2230,
+      "sha256": "202e93cb9780d444e7b066c857cca4518adfe3d712668b14ef142b353469ffb0"
+    },
+    {
+      "path": "outputs/H16P-Q4-general-boundary.json",
+      "bytes": 1043,
+      "sha256": "936ac30b2e77ba4f9b60065943ad53a5492a02ae266de1b6d9f797c1033de179"
+    },
+    {
+      "path": "outputs/H16P-Q4-general-boundary.py",
+      "bytes": 1895,
+      "sha256": "b2f0cc32b9545a175b848587742eb6b2af08a48ec29b37d663182ee6899b47c3"
+    },
+    {
+      "path": "outputs/H16P-Q4-modulus-compatibility.md",
+      "bytes": 2236,
+      "sha256": "0db7024722a0f0824143e030dbfaebca1bba9a83f93c26e206c8bd0ef5313030"
+    },
+    {
+      "path": "outputs/H16P-Q4-modulus-probe.json",
+      "bytes": 9436,
+      "sha256": "47c7277ded258cd4a5804a761d2d3e1d674cfab261ec536b2c9d50948d4dd2c2"
+    },
+    {
+      "path": "outputs/H16P-Q4-modulus-probe.py",
+      "bytes": 3846,
+      "sha256": "81e96686a77467ae2b6f77df24a9b19ba0249a2c29d89801afd71d8f03fa31b4"
+    },
+    {
+      "path": "outputs/H16P-Q4-modulus-test.md",
+      "bytes": 2507,
+      "sha256": "51c82848014be9beba8bfa7c85fe739260109e9c6b1b683d007e19d9398f6bb1"
+    },
+    {
+      "path": "outputs/H16P-Q4-negative-fold-search.md",
+      "bytes": 2818,
+      "sha256": "6c878b583711f60ebda4975bf5b6fa29b8bd8e4d7f605667be3a163d00901e9d"
+    },
+    {
+      "path": "outputs/H16P-Q4-outer-fold-search.md",
+      "bytes": 3677,
+      "sha256": "288a5b80e493b48b2c345daa4e504ecdb77a4564c5ff07a0625bc9d27e9b6343"
+    },
+    {
+      "path": "outputs/H16P-Q4-saddle-boundary.md",
+      "bytes": 3973,
+      "sha256": "0ae08f341b2d361bc29a2b493b116c730de20a25a2d4e87b67028e72139ead68"
+    },
+    {
+      "path": "outputs/H16P-Q4-saddle-ratio.json",
+      "bytes": 506,
+      "sha256": "645bd94c81b5347811a4a3841a4c00fac3e3458cc1a302bac7273523905cab46"
+    },
+    {
+      "path": "outputs/H16P-Q4-saddle-ratio.py",
+      "bytes": 1686,
+      "sha256": "5ee9bdf28eef7e0c6a8dcac8868f6ce6289af42879e8d887f7f54ea5b9f8d8b2"
+    },
+    {
+      "path": "outputs/H16P-Q4-second-focus-and-saddle.md",
+      "bytes": 2302,
+      "sha256": "6faec712ca176658e28b3b825b2a3515699eb979a3cae2dde2aaf7aa7ead0d46"
+    },
+    {
+      "path": "outputs/H16P-Q4-variational-boundary-test.md",
+      "bytes": 2874,
+      "sha256": "986e1e8fc529d6f175e0426f58817d70a3c13bb4fd88a72de9e34bf4b4927bf1"
+    },
+    {
+      "path": "outputs/H16P-artifact-manifest.json",
+      "bytes": 30469,
+      "sha256": "d7c37c7dafe9190152cb90b86cf59893aa7b9e9f9b73a0f6501c0e0153ab28ea"
+    },
+    {
+      "path": "outputs/H16P-center-locus-compatibility.md",
+      "bytes": 4327,
+      "sha256": "9f24629688555d3d95dc48271c6b4f7b5f6392e97a11428f866986aded4b70a7"
+    },
+    {
+      "path": "outputs/H16P-check_resonant_moments.json",
+      "bytes": 1969,
+      "sha256": "1da9a35abf969e39c5eae263852430e74fa874ead3fbe6738ff90fafb9291271"
+    },
+    {
+      "path": "outputs/H16P-check_resonant_moments.py",
+      "bytes": 2038,
+      "sha256": "9452efc2b2043fff9dcd024399ad424160fa4df6de5d17bcf1026e90de1676d9"
+    },
+    {
+      "path": "outputs/H16P-completion-audit.json",
+      "bytes": 1710,
+      "sha256": "dbbed72f694ad085242d8c71a97692da37525cd4333f0c4c07563c380877d12b"
+    },
+    {
+      "path": "outputs/H16P-coverage-status.json",
+      "bytes": 526,
+      "sha256": "a5798defd640a783483d1bacb42bf63ce59edbca52d835d698c6894b518489fb"
+    },
+    {
+      "path": "outputs/H16P-current-status.md",
+      "bytes": 3867,
+      "sha256": "90158c571ef86f7e3fd4ebc6310bb4712e6606bc0ab1cf430bc43b52b9b67537"
+    },
+    {
+      "path": "outputs/H16P-extreme-boundary-search.md",
+      "bytes": 2929,
+      "sha256": "f0be4781f688b6c56a451080292b8a960b592e7373385e90c373b5ba5fd935fc"
+    },
+    {
+      "path": "outputs/H16P-finite-Hopf-results.md",
+      "bytes": 3843,
+      "sha256": "4b802a26644ca52e5a27be6d7df7eb9456c122dbaa6188649b9f4be230690194"
+    },
+    {
+      "path": "outputs/H16P-finite-Q4-continuation.md",
+      "bytes": 2115,
+      "sha256": "e53b960fa16852a85cf6cbfdbdf2532bf3c604216e4460b05f5f44fb791861e0"
+    },
+    {
+      "path": "outputs/H16P-focus-route-correction.md",
+      "bytes": 2014,
+      "sha256": "995618554305d2ac2f93b3fd69875fd8019acd741797b7b9bd3b0a7fdb8d704e"
+    },
+    {
+      "path": "outputs/H16P-hemicycle-compatibility.md",
+      "bytes": 2905,
+      "sha256": "642547aa8cbd32d44625108c4d493a4c9b1971437b5275085be52425b602eb26"
+    },
+    {
+      "path": "outputs/H16P-implementation-audit.md",
+      "bytes": 3469,
+      "sha256": "9e6acaf6f15350036f0c130c7864883f46d3bf3cabcaa1030ad432de1662e65c"
+    },
+    {
+      "path": "outputs/H16P-logarithmic-boundary-search.md",
+      "bytes": 2992,
+      "sha256": "36d2fb6cd5c8b4a598a54a7c2798e943374ad1f1e4f306828b4b28cb85518895"
+    },
+    {
+      "path": "outputs/H16P-original-Q4-exact.json",
+      "bytes": 1311,
+      "sha256": "0f640ebc4414047464e26f2a35d23674675b4cc4e0abc036d7a3f7aa3716b77b"
+    },
+    {
+      "path": "outputs/H16P-original-Q4-exact.py",
+      "bytes": 2071,
+      "sha256": "53163f8193bd12a0fb4213e7f472e39312236e20106888672601ef15e7434494"
+    },
+    {
+      "path": "outputs/H16P-original-Q4-preflight.md",
+      "bytes": 2685,
+      "sha256": "903d29ba7560c3dd3eb55d3a03b1a559ead1046ecee7c1eb333b7a28cf4fc66f"
+    },
+    {
+      "path": "outputs/H16P-q4_boundary_constrained.json",
+      "bytes": 7560,
+      "sha256": "0243493e8adf25ae2fcf1a8d7c6ab5c1a29a69e174f98aea1c4eb50d985a9211"
+    },
+    {
+      "path": "outputs/H16P-q4_boundary_constrained.py",
+      "bytes": 1485,
+      "sha256": "fc74b4c02b84a4d421d15d755612142298d291c5e0e69217018027accf81d94a"
+    },
+    {
+      "path": "outputs/H16P-q4_boundary_integral.json",
+      "bytes": 1776,
+      "sha256": "d7f5aa011d2d816b8c04022e913d51a61eb34616841c79926ca475abe868aed7"
+    },
+    {
+      "path": "outputs/H16P-q4_boundary_integral.py",
+      "bytes": 1953,
+      "sha256": "76aeae10492ddc8c6fb30483beef4b97e4caf53cfa67255e87304655a1272d1c"
+    },
+    {
+      "path": "outputs/H16P-q4_original_probe.json",
+      "bytes": 2238,
+      "sha256": "644af767cb6fb527b40999b9f8aa112f3bbcd8ae6ed4f9c6c8ee4b364d46253a"
+    },
+    {
+      "path": "outputs/H16P-q4_original_probe.py",
+      "bytes": 3664,
+      "sha256": "3f6f3a86c95eb9f327a3e0ea094329bf2307c5db29a3a9f80589be6ba0bf382a"
+    },
+    {
+      "path": "outputs/H16P-q4_original_probe_calls.json",
+      "bytes": 7096,
+      "sha256": "92558fb448c1bf38d87fb0121e81956e5716b2edf94bea3caf6082ad2e81df73"
+    },
+    {
+      "path": "outputs/H16P-q4_polar_quadrature.json",
+      "bytes": 3028,
+      "sha256": "844add64d121d23170f6b23eab56a17adfae5a4a6d5c7349b48265ed09bb5c3b"
+    },
+    {
+      "path": "outputs/H16P-q4_polar_quadrature.py",
+      "bytes": 2497,
+      "sha256": "18c04e2fb78c0f7a187e88b7920664f8505b1b6d3194a6570d65c16ddcab0a6b"
+    },
+    {
+      "path": "outputs/H16P-requirements.lock.txt",
+      "bytes": 55,
+      "sha256": "48b56515dfc301838195134a1f222cd71d80c402a1998261b009503a6dd8dc58"
+    },
+    {
+      "path": "outputs/H16P-resonant-seed-check.md",
+      "bytes": 3499,
+      "sha256": "3c76c1f5ff111f469694649ad3eef06f6289e43d167ebc758f5c6fd1d0a57250"
+    },
+    {
+      "path": "outputs/H16P-resonant-shape-probe.json",
+      "bytes": 148738,
+      "sha256": "806fd9d45b792a294d1c62c1a2d341221afd51c8cabf029d025a19d30a75283c"
+    },
+    {
+      "path": "outputs/H16P-resonant-shape-probe.py",
+      "bytes": 3172,
+      "sha256": "3f5a0370e55b2c1fd11d11999744ea1fe8b467ed3a83352fc742c50236293a2f"
+    },
+    {
+      "path": "outputs/H16P-resonant-shape-test.md",
+      "bytes": 2169,
+      "sha256": "153a50c2155c9df06f8e9044548f201319d02a28d0db234d5d6951d3a1a723e5"
+    },
+    {
+      "path": "outputs/H16P-reversible-hopf-moment-test.json",
+      "bytes": 58268,
+      "sha256": "bc74eae41b9d9001501c8e384f2348794796df5247a9070d2aec03d14057ebc3"
+    },
+    {
+      "path": "outputs/H16P-reversible-hopf-moment-test.py",
+      "bytes": 2908,
+      "sha256": "e90bc07cba6696bfdf0cc0d41d337ddb0a6332f089d0f15e7be15fda425896ac"
+    },
+    {
+      "path": "outputs/H16P-reversible-hopf-test.md",
+      "bytes": 1473,
+      "sha256": "60ec7982639494672c24ed4751a4f0bf9e5ec03497360e127da850844cadf597"
+    },
+    {
+      "path": "outputs/H16P-semantic-data-audit.py",
+      "bytes": 3969,
+      "sha256": "baf8d52bd5f71997f2e3b6ec383f555d41bf2d8d88096c4a5c16f894c115bcb0"
+    },
+    {
+      "path": "outputs/H16P-third-focus-branch.md",
+      "bytes": 2480,
+      "sha256": "b1df0586bd30ed4e0763a9e8a3f33754ae97721467dacf42c50108dc3b688169"
+    },
+    {
+      "path": "outputs/H16P-third-focus-candidates.md",
+      "bytes": 3176,
+      "sha256": "1d20c1cc7d8469bcd9da6f2dd31310b163f2dec02a9d80109613eb3760162767"
+    },
+    {
+      "path": "outputs/H16P-upper-annulus-compatibility.md",
+      "bytes": 4419,
+      "sha256": "e62b3953de1289fc0fc19c3edd1ab91e75e125101dd8c41768bf17bb566b16ef"
+    },
+    {
+      "path": "outputs/hemicycle_center_locus.json",
+      "bytes": 70453,
+      "sha256": "a13dd61cfe9f1edc24af317068700741d78b2678a2910d5124b8de6ed09a6c6f"
+    },
+    {
+      "path": "outputs/hemicycle_center_locus.py",
+      "bytes": 1359,
+      "sha256": "f52dbbbdb8f4c573ad6f7984f024643f241f5028cb661b89ee8876e601b7a519"
+    },
+    {
+      "path": "outputs/hemicycle_center_locus_resonant.json",
+      "bytes": 11888,
+      "sha256": "a5e0001f8af57f0d19f64f6881fe3b2753d3d3cbbcfab3b2983670ce9dc140db"
+    },
+    {
+      "path": "outputs/hemicycle_determinant_check.json",
+      "bytes": 768,
+      "sha256": "387bf322a01412f4b6c2dd93572e6b1066d11b6c0da2cecdf17011ca88ef1f48"
+    },
+    {
+      "path": "outputs/hemicycle_determinant_check.py",
+      "bytes": 1354,
+      "sha256": "6b7301dd27e06bca34667017d460843ea20af855be586790908d7b2f86090789"
+    },
+    {
+      "path": "outputs/hemicycle_interior_compatibility.json",
+      "bytes": 911,
+      "sha256": "64ddb5caa5c5400be68104d86c2b49ac82a1a8ff34230467088905ac84b44bbd"
+    },
+    {
+      "path": "outputs/hemicycle_interior_compatibility.py",
+      "bytes": 1349,
+      "sha256": "176b89f133e8d78f27801add4e748ffbb505558a82f4e4de94d3a58f3e1f78aa"
+    },
+    {
+      "path": "outputs/hemicycle_upper_flow_check.json",
+      "bytes": 4411,
+      "sha256": "a950f59c0505d40c21f49cff12dab1880dda12aea60ed7ce462c30e644b3555e"
+    },
+    {
+      "path": "outputs/hemicycle_upper_flow_check.py",
+      "bytes": 1836,
+      "sha256": "ef1ceea202a857c26f3bc89b1a31f2d535c95c7a82c4de2ffdf73c2dcf6e2108"
+    },
+    {
+      "path": "outputs/hemicycle_upper_moment.json",
+      "bytes": 368555,
+      "sha256": "e4c87ec21bfb32e8136d3ae74b8baf5df1d858d0553c3b5cf15cc15cd7997521"
+    },
+    {
+      "path": "outputs/hemicycle_upper_moment.py",
+      "bytes": 1181,
+      "sha256": "0f1f05de2d94416bba29e359b783930e2b32ee8566882516fc84fc17b93a8931"
+    },
+    {
+      "path": "outputs/q4_anchor_infinity.json",
+      "bytes": 12733,
+      "sha256": "cf9909c840e043b0cc223e135d1d37194346c917fe9429cb5037547e2206e306"
+    },
+    {
+      "path": "outputs/q4_anchor_infinity.py",
+      "bytes": 1423,
+      "sha256": "b09778f67d304d501cadfb1b402c2dd1322f4a9e9cc2336818809aae614bafc3"
+    },
+    {
+      "path": "outputs/q4_anchor_limits.json",
+      "bytes": 1254315,
+      "sha256": "6ceaec69a5d20113bd17adce124826050a553ee0b85c80df1b021a3ddb7a1e6c"
+    },
+    {
+      "path": "outputs/q4_anchor_limits.py",
+      "bytes": 390,
+      "sha256": "fae0da987d44063f9c79bba9507aa75679e8f5bc742d4905311d6293a3ee1b3e"
+    },
+    {
+      "path": "outputs/q4_anchor_limits_boundary_recheck.json",
+      "bytes": 970,
+      "sha256": "02854d75fd0e3e358f8c1d396e3c1cbee0abc23e6ca858f69b55c94c0d53cb46"
+    },
+    {
+      "path": "outputs/q4_anchor_limits_refine.json",
+      "bytes": 68130,
+      "sha256": "ff253dadb141d62721bfddd9c698f321c5ee7eef3587db5434e065ad71cf7a8f"
+    },
+    {
+      "path": "outputs/q4_anchor_limits_refine.py",
+      "bytes": 1174,
+      "sha256": "c954fdf66e5481dba3e7e6a04e38dbd2b3663541a6a5b61417ac485e2d489d7f"
+    },
+    {
+      "path": "outputs/q4_anchor_placement.json",
+      "bytes": 1150919,
+      "sha256": "5c53dabcf59608da6eeca45ee8f9ee71a22382064aef87a2baef811fa78711d1"
+    },
+    {
+      "path": "outputs/q4_anchor_placement.py",
+      "bytes": 4417,
+      "sha256": "7f6ad0384d5ef0814704ef480a6a0b648e0f67e5e6c536b7ea275ea6a099dbc4"
+    },
+    {
+      "path": "outputs/q4_anchor_placement_refine.json",
+      "bytes": 24323,
+      "sha256": "8e2e9351f15a70e9beb4f076c676744aabaa5e442148fcf5ea9095ca259f8a51"
+    },
+    {
+      "path": "outputs/q4_anchor_placement_refine.py",
+      "bytes": 1078,
+      "sha256": "79a5c16ce4ccbbc3f4deaa088ac4c030bd9e6c5b3ed1614f48598dcc1f382c42"
+    },
+    {
+      "path": "outputs/q4_center_wronskian.json",
+      "bytes": 986,
+      "sha256": "547c921a1161a02d20a77ca2b40f71fab532195dae64fce6f068d151b3261e17"
+    },
+    {
+      "path": "outputs/q4_center_wronskian.py",
+      "bytes": 1735,
+      "sha256": "1446a83ed63b8d66d10abf5d2087d3280f14dc0af75c40d38ded6776ae4ef03b"
+    },
+    {
+      "path": "outputs/q4_confluent_probe.json",
+      "bytes": 298790,
+      "sha256": "b21f0ffc0929a8307c7e772493959ad3d3c399d27e9d4750a397d55ba20e1294"
+    },
+    {
+      "path": "outputs/q4_confluent_probe.py",
+      "bytes": 2387,
+      "sha256": "a07715d98e4aff24c23221f2e01a8945782f1b89d7c40ddf87a5c0c136fb52f9"
+    },
+    {
+      "path": "outputs/q4_confluent_transport_check.json",
+      "bytes": 2206,
+      "sha256": "4128b1632491fd92289be75cc0856bc51305c1f77aa52bf74593a895cc4c6752"
+    },
+    {
+      "path": "outputs/q4_confluent_transport_check.py",
+      "bytes": 1449,
+      "sha256": "c67a9080fd37de1c86bac9387a13c7ef10eb41b8ba6eef98bd08f6587e523927"
+    },
+    {
+      "path": "outputs/q4_double_boundary_constraint.json",
+      "bytes": 9454,
+      "sha256": "494a31fc75874299fe57ce461eaefa04765a09cd8f122e2122de85f836517dba"
+    },
+    {
+      "path": "outputs/q4_double_boundary_constraint.py",
+      "bytes": 1854,
+      "sha256": "d56850db10b0897f9aa27ec2b3a965fe3b8159f7fa8a5d0b15c59e5dd3bdec5c"
+    },
+    {
+      "path": "outputs/q4_finite_continuation.json",
+      "bytes": 858481,
+      "sha256": "9ca996caf172c1ed47f59536b7ef388ca164d9777ca3b4e9411d16bc2c566030"
+    },
+    {
+      "path": "outputs/q4_finite_continuation.py",
+      "bytes": 5953,
+      "sha256": "38af5a49fbbb108afebe12850ce5cc3bb8b9ea5e02b0dbaa4c9bce2fe532f00f"
+    },
+    {
+      "path": "outputs/q4_finite_continuation_refine.json",
+      "bytes": 25107,
+      "sha256": "91ad29f3d37556347349a334cbde6a205528487c0e52de97626c4c7aefccb655"
+    },
+    {
+      "path": "outputs/q4_finite_continuation_refine.py",
+      "bytes": 1357,
+      "sha256": "dc314fdf13783c4314f0c8ebe61bac3b8bb57c13e793d3bf342f33bafae1e1d9"
+    },
+    {
+      "path": "outputs/q4_finite_endpoint_probe.json",
+      "bytes": 130753,
+      "sha256": "7c855e6d2f60c174b4603b2d4b0ea33380ae2071375b0bc80490665ff4ea75de"
+    },
+    {
+      "path": "outputs/q4_finite_endpoint_probe.py",
+      "bytes": 3300,
+      "sha256": "05e5a282bf9d9c796ad3d827f9973d67a6facbd7ea8209ca161ba26b01385d8a"
+    },
+    {
+      "path": "outputs/q4_finite_equilibria.json",
+      "bytes": 14578,
+      "sha256": "bce32681be8176f288df9d12d31839ef3cf1ac54593b3508125ef1f78ba8578e"
+    },
+    {
+      "path": "outputs/q4_finite_equilibria.py",
+      "bytes": 1737,
+      "sha256": "6dadfc564085f48d4b51b365127d678ff8715767361d77a1a287bc90837d0048"
+    },
+    {
+      "path": "outputs/q4_finite_extended.json",
+      "bytes": 1132310,
+      "sha256": "e9c01231996354eceb9b6d5405a9ba90aaff92ad0b0b5cb4049f85686233250a"
+    },
+    {
+      "path": "outputs/q4_finite_extended.py",
+      "bytes": 390,
+      "sha256": "40758be5ba40e793f40ef155cd4ee8d3cd43d95e9d4e4c00f027c31a4d8c259f"
+    },
+    {
+      "path": "outputs/q4_finite_extended_equilibria.json",
+      "bytes": 20061,
+      "sha256": "a612b8ba0b9ec5ceb6495fc40e73f7131e10afeebd771723a3c250eaf225df43"
+    },
+    {
+      "path": "outputs/q4_finite_negative.json",
+      "bytes": 950728,
+      "sha256": "cb538ffaf0e3a0c6ea9985f7d47ccd1b45a7ef44390a6c151fa17df521673177"
+    },
+    {
+      "path": "outputs/q4_finite_negative.py",
+      "bytes": 144,
+      "sha256": "2b6b850f9b83b59eb2b4fc6f464f81d589d1637cc9b8557f4348d16cf88a5ef2"
+    },
+    {
+      "path": "outputs/q4_finite_negative_equilibria.json",
+      "bytes": 14668,
+      "sha256": "8e2e2dc2b6a6442b4aa9c48d5063fe93a55d0d80ca59450bacaac5477a6d7ca9"
+    },
+    {
+      "path": "outputs/q4_four_crossing_lp.json",
+      "bytes": 23583,
+      "sha256": "0cd02bfaea60e32bc9e65398beba1fb327bb9a8037c7124c9b48da99a214996b"
+    },
+    {
+      "path": "outputs/q4_four_crossing_lp.py",
+      "bytes": 3252,
+      "sha256": "c658838e92dfc105d6683bd170cdbd1c8ed56eded149c5a2c07dc83f3171fa9d"
+    },
+    {
+      "path": "outputs/q4_modulus_boundary_constraints.json",
+      "bytes": 291173,
+      "sha256": "00490af8efb0073088f58be02de6ea71d48a4ad49fb890d54d4b05b9fadadda3"
+    },
+    {
+      "path": "outputs/q4_modulus_boundary_constraints.py",
+      "bytes": 3796,
+      "sha256": "6ae0da46eb564649f0c8a15ade2113146635b4fc4d8881031a2b4c0eb28f273d"
+    },
+    {
+      "path": "outputs/q4_modulus_constraint_refine.json",
+      "bytes": 129956,
+      "sha256": "772d967aac0e700a0280c92382680de272a228eec196fd59111536176654c265"
+    },
+    {
+      "path": "outputs/q4_modulus_constraint_refine.py",
+      "bytes": 951,
+      "sha256": "5d0d434c4982f5b52d681f49c768be0e46bb0bb62bd6875df0a443d3ade3a504"
+    },
+    {
+      "path": "outputs/q4_modulus_probe.py",
+      "bytes": 3974,
+      "sha256": "6a4262a885d0866d31ac19068761d4b51ca9a63125df083633f33555a4ac16f8"
+    },
+    {
+      "path": "outputs/q4_negative_fold_search.json",
+      "bytes": 3631533,
+      "sha256": "1b3f3cde17363434a898d69b1e0ad406c83e404b70d66ff458a3ef85fe6774d5"
+    },
+    {
+      "path": "outputs/q4_negative_fold_search.py",
+      "bytes": 201,
+      "sha256": "32058942584b6d9069c00c724ddb72f51b52a8ec717f529a1d2740ae62dee5d7"
+    },
+    {
+      "path": "outputs/q4_outer_fold_domain_search.json",
+      "bytes": 1874022,
+      "sha256": "9ecddebf012a403e48e313c6a52ded7e7c8451ab9450dcc07d42b9d0d62c841c"
+    },
+    {
+      "path": "outputs/q4_outer_fold_domain_search.py",
+      "bytes": 103,
+      "sha256": "197a0ffa64e52a52a6f0d3aea606a064a42b5f85e10000d845d95578c355b5e5"
+    },
+    {
+      "path": "outputs/q4_outer_fold_search.json",
+      "bytes": 1076863,
+      "sha256": "671c22e209b6085e8e697719145d67dff2555e4fdf3dcad9cfe9ee1f786ea451"
+    },
+    {
+      "path": "outputs/q4_outer_fold_search.py",
+      "bytes": 6507,
+      "sha256": "1ce4e3af80bd2e3223b893f99081647d6914de5edffe3ba8f099f55943e4be12"
+    },
+    {
+      "path": "outputs/q4_radial_variation.py",
+      "bytes": 2930,
+      "sha256": "32f46fdd9664d968976184c8d1a2d3be1a7e954b324e531bf8ac533c79fec953"
+    },
+    {
+      "path": "outputs/q4_radial_variation_check.json",
+      "bytes": 5440,
+      "sha256": "d1e3d9d265cd4d6ea7cf17986194b9741ca0ffde434b3d673b76249789896325"
+    },
+    {
+      "path": "outputs/q4_reversible_center_map.json",
+      "bytes": 737,
+      "sha256": "6c7ad054e1be44e0cf7d8c37902950b3c90245588bede0144ae2dfbbeb04e8da"
+    },
+    {
+      "path": "outputs/q4_reversible_center_map.py",
+      "bytes": 1148,
+      "sha256": "5e7df66c3d494dbabc0e64ccd9fca18dd0251a9afa5b9c4c5b5220b399a59f6f"
+    },
+    {
+      "path": "outputs/q4_reversible_fit_diagnostic.json",
+      "bytes": 678,
+      "sha256": "5e095e9c5455028ffc2798e58394375d32231a691e9832aea58c332380adaa49"
+    },
+    {
+      "path": "outputs/q4_saddle_boundary_profile.json",
+      "bytes": 104009,
+      "sha256": "f47793b75d058e6019104db72dbc72c75dbcc36264c3b721e2da5e3f33f0bc2c"
+    },
+    {
+      "path": "outputs/q4_saddle_boundary_profile.py",
+      "bytes": 1778,
+      "sha256": "e7254403e39eacc6187e975d9a1e9a5fbface8716e50ff1c003a72fe8b1e5d1a"
+    },
+    {
+      "path": "outputs/q4_saddle_boundary_refine.json",
+      "bytes": 7507,
+      "sha256": "c3916e3d5039db93dd90299b75daf2f09008cf752c5fbbf359788426a4de3701"
+    },
+    {
+      "path": "outputs/q4_saddle_boundary_refine.py",
+      "bytes": 1050,
+      "sha256": "6a92330785fae8a70b72c69e586a67bce50e980bc00f99d12491dc66b7a184e7"
+    },
+    {
+      "path": "outputs/q4_saddle_separatrices.json",
+      "bytes": 47228,
+      "sha256": "3ce0e36d1212cdddb12fc42cd6dd1f69521321495c2ea4867d92ee5ec6f4da6e"
+    },
+    {
+      "path": "outputs/q4_saddle_separatrices.py",
+      "bytes": 3557,
+      "sha256": "37fcc16788e80f05cf5e86a9d61bb8bc47a9f45c699038ff948e49010237da9a"
+    },
+    {
+      "path": "outputs/q4_sample_minor_certificate.json",
+      "bytes": 2289,
+      "sha256": "52a29e64e5f64601598ba88d8d1a67b6c62218d8a07e4a3255f951d4381a351f"
+    },
+    {
+      "path": "outputs/q4_sample_minor_certificate.py",
+      "bytes": 2198,
+      "sha256": "5c0e8b29391ef84f6a6d5b6e9f8adafb41ee218549d3da470b7f9678e1f2a541"
+    },
+    {
+      "path": "outputs/q4_two_focus_profile.json",
+      "bytes": 397707,
+      "sha256": "4b4fbffb4ceba6b8ff32f6b94afda8e1047618210935c7747f5aed7eea79f610"
+    },
+    {
+      "path": "outputs/q4_two_focus_profile.py",
+      "bytes": 2292,
+      "sha256": "ef522b571f33e4f5a2684a8ff7a271bf0f6dd919678cf7fb59df67884c4fab17"
+    },
+    {
+      "path": "outputs/q4_variational_endpoint.json",
+      "bytes": 11817,
+      "sha256": "2c5562ca6f5ac8e2fe27a82d170d21ed6260dc78747e3c0ac1a95c43f5ff8652"
+    },
+    {
+      "path": "outputs/q4_variational_endpoint.py",
+      "bytes": 3445,
+      "sha256": "6ef94a74a0351590c52059ad701cd6c4998156424d28c65916af601fdee20f5d"
+    },
+    {
+      "path": "outputs/reversible_bautin_identity.json",
+      "bytes": 316,
+      "sha256": "49f383994598336d8ae55ef070c82be7d2d600ef1c7931546c84719a45475b57"
+    },
+    {
+      "path": "outputs/reversible_bautin_precursor.json",
+      "bytes": 578626,
+      "sha256": "5d19b247a35e4fdef73fb3ed092590f087b303b90efe9cf0475ff47feb5fd33e"
+    },
+    {
+      "path": "outputs/reversible_bautin_precursor.py",
+      "bytes": 2953,
+      "sha256": "017c3bdc419e64c3891d306d599a5a212e5c3ca1923d953e71e7056586b91762"
+    },
+    {
+      "path": "outputs/reversible_bautin_refine.json",
+      "bytes": 11821,
+      "sha256": "498cc15e44265d89689adf393058fe758f767f3a2695dd817b1e8be4718c7e2d"
+    },
+    {
+      "path": "outputs/reversible_bautin_refine.py",
+      "bytes": 1521,
+      "sha256": "2e1fa9e3ce33c25ee04640afe023edc704778099df8f0570b18a42c91d444b98"
+    },
+    {
+      "path": "outputs/reversible_bicycle_hopf.json",
+      "bytes": 401160,
+      "sha256": "6de5762395f2ed63c55b5b8f198f3dee98fd90d41355e9d8fadbb33008982850"
+    },
+    {
+      "path": "outputs/reversible_bicycle_hopf.py",
+      "bytes": 1388,
+      "sha256": "24dea52a97359ebc4dce13850cab54e1aca90e3e280dfea8a437b51348b3d4aa"
+    },
+    {
+      "path": "outputs/reversible_branch_remote_refine.json",
+      "bytes": 26258,
+      "sha256": "65069149274e74a11c1d29f04e309ff3f7dd18f2eeea80963e185d6647be2a32"
+    },
+    {
+      "path": "outputs/reversible_branch_remote_refine.py",
+      "bytes": 1423,
+      "sha256": "2acde1ad253c801ac5f08bf8b13393a11ca22177bc824990359a6227810e803c"
+    },
+    {
+      "path": "outputs/reversible_extreme_control.json",
+      "bytes": 2703,
+      "sha256": "9f8ff2bec5f51752620494008f4a255534b79481a4e93a3d6f3b717d40728e3e"
+    },
+    {
+      "path": "outputs/reversible_extreme_control.py",
+      "bytes": 905,
+      "sha256": "8e53721d8418f050f17f829c7d14c2debf84e08e450257eb2a3e69cdcd37bb11"
+    },
+    {
+      "path": "outputs/reversible_extreme_gap.json",
+      "bytes": 2516,
+      "sha256": "095436ec4ac5314d1d98a148d6990a88cdf5fe2529d6066140c45d49c881ffd3"
+    },
+    {
+      "path": "outputs/reversible_extreme_gap.py",
+      "bytes": 1124,
+      "sha256": "b61a38ccf39ea0486d6564db3c05d861f221dd1c1aaff588a00911b635f4c38e"
+    },
+    {
+      "path": "outputs/reversible_extreme_probe.json",
+      "bytes": 108039,
+      "sha256": "4c22affc7ed917f44dd01d3c66210ffc121729f02f1e2a319b92789a81401c52"
+    },
+    {
+      "path": "outputs/reversible_extreme_probe.py",
+      "bytes": 1291,
+      "sha256": "1f58dc1170aa37228a1fabf35ac6c8e94311382804bcd72cb401c6f8091abc1a"
+    },
+    {
+      "path": "outputs/reversible_extreme_refine.json",
+      "bytes": 8265,
+      "sha256": "9eb1b34e7741fe9642e3f46665ac4f6e497e551572a69526a9a5223a23637e99"
+    },
+    {
+      "path": "outputs/reversible_extreme_refine.py",
+      "bytes": 1006,
+      "sha256": "d4ebb43314b59d2c4cb01b05ca4017cfd339fb3440a629e565410ce4cf2e6451"
+    },
+    {
+      "path": "outputs/reversible_finite_hopf.json",
+      "bytes": 230664,
+      "sha256": "3145ca5895dad2503cb7bdde6b3a35cc9cefc2ef977a4a7785a98182781fc251"
+    },
+    {
+      "path": "outputs/reversible_finite_hopf.py",
+      "bytes": 4802,
+      "sha256": "09b436fe5720d5b65f16a0624c38ba4ae4251474c0edb526f059dcf60dea2a29"
+    },
+    {
+      "path": "outputs/reversible_finite_hopf_followup.json",
+      "bytes": 276905,
+      "sha256": "29f9ef64fcfb3186c5d9fbf616455cca9812a7bb88f2087059560fbf5bc66c9a"
+    },
+    {
+      "path": "outputs/reversible_finite_hopf_followup.py",
+      "bytes": 2204,
+      "sha256": "aa4bf31f04379258e2b38ea55a0f402685bd335b8d1809e1729a96e6b18e9b03"
+    },
+    {
+      "path": "outputs/reversible_focus_sanity.json",
+      "bytes": 866,
+      "sha256": "f94b521b7fb12bb987ee726892296baa886f617301f47240866bd6aac80fbeac"
+    },
+    {
+      "path": "outputs/reversible_focus_sanity.py",
+      "bytes": 1997,
+      "sha256": "d952a5330e934f5571a4b2d65ebb35669ea7226a16d4ea6542f6560ee407a15a"
+    },
+    {
+      "path": "outputs/reversible_hopf_focus.json",
+      "bytes": 3836,
+      "sha256": "b1a7e66259dbc29b7b50f69a1eebea16262e2e8c9ba44f3feff86722111fa530"
+    },
+    {
+      "path": "outputs/reversible_hopf_focus.py",
+      "bytes": 1824,
+      "sha256": "a20831280042177fd232d91ffca1e83d9946af7724f5fd96cdd95d4ec5fc3c5c"
+    },
+    {
+      "path": "outputs/reversible_hopf_shape_followup.json",
+      "bytes": 802911,
+      "sha256": "b4c166876c38d720f359f5bf51161b89efefefb909977b930d9b60dba2b61204"
+    },
+    {
+      "path": "outputs/reversible_hopf_shape_followup.py",
+      "bytes": 1447,
+      "sha256": "29acfcbfd14e0732aea26b6bbbbb08402c20d674a610d1e16eec57374c42c89f"
+    },
+    {
+      "path": "outputs/reversible_lienard_exact.json",
+      "bytes": 677,
+      "sha256": "8633719c6ad95d451f5849336da40475e51057b38866abd91ae5b251d69033ed"
+    },
+    {
+      "path": "outputs/reversible_lienard_exact.py",
+      "bytes": 1338,
+      "sha256": "1b84387d06300f7edca5340d71cd54c2bf930d20b6010f6a32f4e0d8ffd28d12"
+    },
+    {
+      "path": "outputs/reversible_log_boundary_probe.json",
+      "bytes": 65931,
+      "sha256": "eb6543149821a3204e9e3103bed83f5ea55c56dbeee4460c045a19de8bfe592c"
+    },
+    {
+      "path": "outputs/reversible_log_boundary_probe.py",
+      "bytes": 1178,
+      "sha256": "d04fa09bde7bf804772ec342c921745c3a5add7b9dce4b36e10d45de0a51fac9"
+    },
+    {
+      "path": "outputs/reversible_log_boundary_refine.json",
+      "bytes": 4942,
+      "sha256": "10478a53be7f34ae2a69d3f2759803c01de092b814f3b4f71cd894620f92f8b7"
+    },
+    {
+      "path": "outputs/reversible_log_boundary_refine.py",
+      "bytes": 1025,
+      "sha256": "f82319ebd0805b63421211d1959b3d50817e4be9cca99a8cc379a91a7032ae51"
+    },
+    {
+      "path": "outputs/reversible_log_energy_check.json",
+      "bytes": 2402,
+      "sha256": "921f472362d38ea60a7f68fdd9802aa2f88a0e8fdc4fe9ba9eb5d921acb0245a"
+    },
+    {
+      "path": "outputs/reversible_log_energy_check.py",
+      "bytes": 1141,
+      "sha256": "d9cba138594a68abeb7b2f8edfbea7ac43408b4cff9278ccb8fb07a64e5f7b83"
+    },
+    {
+      "path": "outputs/reversible_log_return.py",
+      "bytes": 3948,
+      "sha256": "6ffe857dc36fe90635caab9c014962c06812427cef22201c979e4c759da804a6"
+    },
+    {
+      "path": "outputs/reversible_log_return_check.json",
+      "bytes": 17590,
+      "sha256": "d24dcec26815b0b2c166c3b925eeab6f794023e9b26a45e462ac434ed2a392dc"
+    },
+    {
+      "path": "outputs/reversible_log_return_v1.py",
+      "bytes": 3634,
+      "sha256": "1fef788272d127e825ca101d4f5c8588ae579ff83540108eb3cd2baca98a9210"
+    },
+    {
+      "path": "outputs/reversible_log_return_v2.py",
+      "bytes": 3657,
+      "sha256": "2a95a9750bd596778fdd8cc68884cd124590cc7aeadb1724a6fe718bf84514b4"
+    },
+    {
+      "path": "outputs/reversible_log_return_v2_check.json",
+      "bytes": 18715,
+      "sha256": "ed242464d031df7ef1825bbb77589ef196eb8aab430fb5dce8a985af54e2dae1"
+    },
+    {
+      "path": "outputs/reversible_log_return_v3_check.json",
+      "bytes": 18732,
+      "sha256": "9abc6241d51cfc874e84707cef06bfa5d0f21cf93f2be8cc633079f4751d63ad"
+    },
+    {
+      "path": "outputs/reversible_quintic_focus.json",
+      "bytes": 41240,
+      "sha256": "d6ad1555dbf3efd71690d2412ab5ecd0e4b7e11b74e6c66614eb53d7fe2c2d57"
+    },
+    {
+      "path": "outputs/reversible_quintic_focus.py",
+      "bytes": 2156,
+      "sha256": "4d30642e2e85cca06293ab3e070c901aa145e9552f7316a897231ad6223ea00c"
+    },
+    {
+      "path": "outputs/reversible_radial_coefficient_control.json",
+      "bytes": 626,
+      "sha256": "c4bcd6810e5a6d5410511169aa73fa7766d4f2ca3cfc19a37084cfd1bf1fc199"
+    },
+    {
+      "path": "outputs/reversible_seventh_direct_check.json",
+      "bytes": 4476,
+      "sha256": "a868924cd2acc08192d19fa8423af40e71a271381d676d9e5fedb43c3fdd1863"
+    },
+    {
+      "path": "outputs/reversible_seventh_direct_check.py",
+      "bytes": 1941,
+      "sha256": "b18aabc13a9fdbf07945952f5609af6284503a42fbab61026090cee9c24b1b3c"
+    },
+    {
+      "path": "outputs/reversible_third_focus_branch.json",
+      "bytes": 767233,
+      "sha256": "1b545992a3a88a47d2f2e33f2a2f0407f823893a81b5c13e886b780bc5d15e56"
+    },
+    {
+      "path": "outputs/reversible_third_focus_branch.py",
+      "bytes": 3225,
+      "sha256": "45fec94025b507c801e8f2fd28e0e5d15d0cd4e17f71bce471a2d4fa476ebbc0"
+    },
+    {
+      "path": "outputs/reversible_third_focus_probe.json",
+      "bytes": 268235,
+      "sha256": "98c0e48b82b2046f2dddd7fa732a008b7b554dec1d2eed335e4ac20e57468d38"
+    },
+    {
+      "path": "outputs/reversible_third_focus_probe.py",
+      "bytes": 2561,
+      "sha256": "d5a302b48d3073eb037957a7fdcdd2b208a95c4aa763f6c5bde97a06031f2a8f"
+    },
+    {
+      "path": "publication-exclusions.json",
+      "bytes": 650,
+      "sha256": "f95ac67f76d861f2539122fcb43320db316f1db311268f70715b921a20b5d855"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 55,
+      "sha256": "453ef727b9a28d069ce001f8bcbc9a061a68b2938762a86ec14ada204b591d39"
+    },
+    {
+      "path": "work/h16p-audit/CHECKPOINT.md",
+      "bytes": 69192,
+      "sha256": "b411b316177b29e8c1ff27ac56a02b67aaceb6c2fd2da67a73fe60cf8674fea7"
+    },
+    {
+      "path": "work/h16p-audit/arrangement_replay.log",
+      "bytes": 1324,
+      "sha256": "db9f6c93d9586d4412215bf8e4ddcebc02bc6633ec1bd49e5303d3d7a7d4f395"
+    },
+    {
+      "path": "work/h16p-audit/check_infinity_independent.json",
+      "bytes": 381,
+      "sha256": "7779f4cc1acbc07cde335a9094e8a91edf7613acf14764693a6f1d3bd8268538"
+    },
+    {
+      "path": "work/h16p-audit/check_infinity_independent.py",
+      "bytes": 1791,
+      "sha256": "8a483cdc348ff6202df5033a5d0f7fe46c7659c6b8b188b8d61669dfb1e76e67"
+    },
+    {
+      "path": "work/h16p-audit/check_resonant_moments.json",
+      "bytes": 1969,
+      "sha256": "1da9a35abf969e39c5eae263852430e74fa874ead3fbe6738ff90fafb9291271"
+    },
+    {
+      "path": "work/h16p-audit/check_resonant_moments.py",
+      "bytes": 2038,
+      "sha256": "9452efc2b2043fff9dcd024399ad424160fa4df6de5d17bcf1026e90de1676d9"
+    },
+    {
+      "path": "work/h16p-audit/completion_audit.json",
+      "bytes": 1710,
+      "sha256": "dbbed72f694ad085242d8c71a97692da37525cd4333f0c4c07563c380877d12b"
+    },
+    {
+      "path": "work/h16p-audit/coverage.json",
+      "bytes": 172190,
+      "sha256": "10fe74a19318431f44df934a1391bd945c5fc4dfc7151c7745933742ce984d4a"
+    },
+    {
+      "path": "work/h16p-audit/coverage_delivery.json",
+      "bytes": 526,
+      "sha256": "a5798defd640a783483d1bacb42bf63ce59edbca52d835d698c6894b518489fb"
+    },
+    {
+      "path": "work/h16p-audit/data_inventory.json",
+      "bytes": 19850,
+      "sha256": "a62ba8a44448634bc6f1c0b459f078deec858b08c53a9b98a3d3525d248f0879"
+    },
+    {
+      "path": "work/h16p-audit/data_text_extract.jsonl",
+      "bytes": 624667,
+      "sha256": "7e18fdd64475dfbf1d4908a92e15e7ba06ae5d510c0a9ffb31044a23d09c1586"
+    },
+    {
+      "path": "work/h16p-audit/data_text_without_times.jsonl",
+      "bytes": 83565,
+      "sha256": "64b8cb9f3a113c34906663740e37130046f043f8489a2e177b002f7b24e9ce29"
+    },
+    {
+      "path": "work/h16p-audit/figure-render/fold-svg-full.png",
+      "bytes": 157166,
+      "sha256": "aac63bef3dfeb7238ed2c64155a7a61dfef631944da15a153d1139f4d6d30e58"
+    },
+    {
+      "path": "work/h16p-audit/figure-render/fold_continuation.svg.png",
+      "bytes": 518713,
+      "sha256": "28eef1be5e90d83beeda6c08e447955a1a9e0805da57c5780cb0270625a22a73"
+    },
+    {
+      "path": "work/h16p-audit/figure-render/padded.svg",
+      "bytes": 95356,
+      "sha256": "6721ae078cc769dc92c7a9942d600f577a3adccd8b5af2ea7176cd2e15ea3399"
+    },
+    {
+      "path": "work/h16p-audit/figure-render/padded.svg.png",
+      "bytes": 160900,
+      "sha256": "329aa512f92a5d987d9cf41e2aa61510c42afb198900d88a9a64fb9818caf7a4"
+    },
+    {
+      "path": "work/h16p-audit/geometry_replay.log",
+      "bytes": 1107,
+      "sha256": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_center_locus.json",
+      "bytes": 70453,
+      "sha256": "a13dd61cfe9f1edc24af317068700741d78b2678a2910d5124b8de6ed09a6c6f"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_center_locus.py",
+      "bytes": 1359,
+      "sha256": "f52dbbbdb8f4c573ad6f7984f024643f241f5028cb661b89ee8876e601b7a519"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_center_locus_resonant.json",
+      "bytes": 11888,
+      "sha256": "a5e0001f8af57f0d19f64f6881fe3b2753d3d3cbbcfab3b2983670ce9dc140db"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_determinant_check.json",
+      "bytes": 768,
+      "sha256": "387bf322a01412f4b6c2dd93572e6b1066d11b6c0da2cecdf17011ca88ef1f48"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_determinant_check.py",
+      "bytes": 1354,
+      "sha256": "6b7301dd27e06bca34667017d460843ea20af855be586790908d7b2f86090789"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_interior_compatibility.json",
+      "bytes": 911,
+      "sha256": "64ddb5caa5c5400be68104d86c2b49ac82a1a8ff34230467088905ac84b44bbd"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_interior_compatibility.py",
+      "bytes": 1349,
+      "sha256": "176b89f133e8d78f27801add4e748ffbb505558a82f4e4de94d3a58f3e1f78aa"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_upper_flow_check.json",
+      "bytes": 4411,
+      "sha256": "a950f59c0505d40c21f49cff12dab1880dda12aea60ed7ce462c30e644b3555e"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_upper_flow_check.log",
+      "bytes": 3504,
+      "sha256": "4f117c7ce18236aa20cb23c89a15d254a1b1afe9b722c089fe0babd5c18ffe36"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_upper_flow_check.py",
+      "bytes": 1836,
+      "sha256": "ef1ceea202a857c26f3bc89b1a31f2d535c95c7a82c4de2ffdf73c2dcf6e2108"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_upper_moment.json",
+      "bytes": 368555,
+      "sha256": "e4c87ec21bfb32e8136d3ae74b8baf5df1d858d0553c3b5cf15cc15cd7997521"
+    },
+    {
+      "path": "work/h16p-audit/hemicycle_upper_moment.py",
+      "bytes": 1181,
+      "sha256": "0f1f05de2d94416bba29e359b783930e2b32ee8566882516fc84fc17b93a8931"
+    },
+    {
+      "path": "work/h16p-audit/historical/ASTRA_FIFTH_STRIKE_HANDOFF.md",
+      "bytes": 10242,
+      "sha256": "a3af298413d50cea49f4860bc1f4cdfeadf2ef8dcf1c6616725654a2ab35c566"
+    },
+    {
+      "path": "work/h16p-audit/historical/FIVE_CYCLE_MECHANISMS.md",
+      "bytes": 7149,
+      "sha256": "34cc7f13ae987212389f4ef2d1989529ce136b2775e0ac869fc511707ca7ec78"
+    },
+    {
+      "path": "work/h16p-audit/historical/FOUR_CYCLE_SEED_LEDGER.md",
+      "bytes": 15474,
+      "sha256": "193fb98fc3da93149a196f348edb306296469b0bb3e9712a4ddf47af856b6a8d"
+    },
+    {
+      "path": "work/h16p-audit/historical/H16_POST_Q4_FRONTIER_2026_09_04.md",
+      "bytes": 11907,
+      "sha256": "8b9e7c82540a8bba5350ba3032eb7a1f7e667c5bd607dcf0efff987b66ce0438"
+    },
+    {
+      "path": "work/h16p-audit/historical/HISTORICAL_FIVE_CYCLE_CLAIMS.md",
+      "bytes": 20151,
+      "sha256": "8e33454d8f5e5568d08b843c6e770fa7e08f5cb27458a63e242d96d3d4e0ad7a"
+    },
+    {
+      "path": "work/h16p-audit/historical/coverage.json",
+      "bytes": 1299,
+      "sha256": "d00b71cc165897b005a7e3d546c87575bac93714a0736da33a04166851cbf523"
+    },
+    {
+      "path": "work/h16p-audit/inherited_precision_diagnostic.json",
+      "bytes": 1259,
+      "sha256": "89f710a7c3fd0bb9b3c933542a3225601c842341a6a2d7a67e715e9dc496da73"
+    },
+    {
+      "path": "work/h16p-audit/inherited_precision_diagnostic.py",
+      "bytes": 1226,
+      "sha256": "6c0c2d10a312ed50203f7cb36a1f8837211abee72ad552588765475bbcf59404"
+    },
+    {
+      "path": "work/h16p-audit/log_narrative_extract.txt",
+      "bytes": 19986,
+      "sha256": "8f20d36c3f7a5afc2d4c989421886b8574401b82f97d3ece90bf983cc7eb1228"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_infinity.json",
+      "bytes": 12733,
+      "sha256": "cf9909c840e043b0cc223e135d1d37194346c917fe9429cb5037547e2206e306"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_infinity.py",
+      "bytes": 1423,
+      "sha256": "b09778f67d304d501cadfb1b402c2dd1322f4a9e9cc2336818809aae614bafc3"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_limits.json",
+      "bytes": 1254315,
+      "sha256": "6ceaec69a5d20113bd17adce124826050a553ee0b85c80df1b021a3ddb7a1e6c"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_limits.py",
+      "bytes": 390,
+      "sha256": "fae0da987d44063f9c79bba9507aa75679e8f5bc742d4905311d6293a3ee1b3e"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_limits_boundary_recheck.json",
+      "bytes": 970,
+      "sha256": "02854d75fd0e3e358f8c1d396e3c1cbee0abc23e6ca858f69b55c94c0d53cb46"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_limits_refine.json",
+      "bytes": 68130,
+      "sha256": "ff253dadb141d62721bfddd9c698f321c5ee7eef3587db5434e065ad71cf7a8f"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_limits_refine.py",
+      "bytes": 1174,
+      "sha256": "c954fdf66e5481dba3e7e6a04e38dbd2b3663541a6a5b61417ac485e2d489d7f"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_placement.json",
+      "bytes": 1150919,
+      "sha256": "5c53dabcf59608da6eeca45ee8f9ee71a22382064aef87a2baef811fa78711d1"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_placement.py",
+      "bytes": 4417,
+      "sha256": "7f6ad0384d5ef0814704ef480a6a0b648e0f67e5e6c536b7ea275ea6a099dbc4"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_placement_refine.json",
+      "bytes": 24323,
+      "sha256": "8e2e9351f15a70e9beb4f076c676744aabaa5e442148fcf5ea9095ca259f8a51"
+    },
+    {
+      "path": "work/h16p-audit/q4_anchor_placement_refine.py",
+      "bytes": 1078,
+      "sha256": "79a5c16ce4ccbbc3f4deaa088ac4c030bd9e6c5b3ed1614f48598dcc1f382c42"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_constrained.json",
+      "bytes": 7560,
+      "sha256": "0243493e8adf25ae2fcf1a8d7c6ab5c1a29a69e174f98aea1c4eb50d985a9211"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_constrained.py",
+      "bytes": 1485,
+      "sha256": "fc74b4c02b84a4d421d15d755612142298d291c5e0e69217018027accf81d94a"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_exact.json",
+      "bytes": 891,
+      "sha256": "0d4ddff9d11446939f02eb2902a9a29f370bb9ffb8452387d83f35c5ed97029b"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_exact.py",
+      "bytes": 2307,
+      "sha256": "f6d79b85936e05c92a0488b0b17052b8fc848e3f38662245397d7242db8ae85f"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_integral.json",
+      "bytes": 1776,
+      "sha256": "d7f5aa011d2d816b8c04022e913d51a61eb34616841c79926ca475abe868aed7"
+    },
+    {
+      "path": "work/h16p-audit/q4_boundary_integral.py",
+      "bytes": 1953,
+      "sha256": "76aeae10492ddc8c6fb30483beef4b97e4caf53cfa67255e87304655a1272d1c"
+    },
+    {
+      "path": "work/h16p-audit/q4_center_wronskian.json",
+      "bytes": 986,
+      "sha256": "547c921a1161a02d20a77ca2b40f71fab532195dae64fce6f068d151b3261e17"
+    },
+    {
+      "path": "work/h16p-audit/q4_center_wronskian.py",
+      "bytes": 1735,
+      "sha256": "1446a83ed63b8d66d10abf5d2087d3280f14dc0af75c40d38ded6776ae4ef03b"
+    },
+    {
+      "path": "work/h16p-audit/q4_confluent_probe.json",
+      "bytes": 298790,
+      "sha256": "b21f0ffc0929a8307c7e772493959ad3d3c399d27e9d4750a397d55ba20e1294"
+    },
+    {
+      "path": "work/h16p-audit/q4_confluent_probe.py",
+      "bytes": 2387,
+      "sha256": "a07715d98e4aff24c23221f2e01a8945782f1b89d7c40ddf87a5c0c136fb52f9"
+    },
+    {
+      "path": "work/h16p-audit/q4_confluent_transport_check.json",
+      "bytes": 2206,
+      "sha256": "4128b1632491fd92289be75cc0856bc51305c1f77aa52bf74593a895cc4c6752"
+    },
+    {
+      "path": "work/h16p-audit/q4_confluent_transport_check.py",
+      "bytes": 1449,
+      "sha256": "c67a9080fd37de1c86bac9387a13c7ef10eb41b8ba6eef98bd08f6587e523927"
+    },
+    {
+      "path": "work/h16p-audit/q4_double_boundary_constraint.json",
+      "bytes": 9454,
+      "sha256": "494a31fc75874299fe57ce461eaefa04765a09cd8f122e2122de85f836517dba"
+    },
+    {
+      "path": "work/h16p-audit/q4_double_boundary_constraint.py",
+      "bytes": 1854,
+      "sha256": "d56850db10b0897f9aa27ec2b3a965fe3b8159f7fa8a5d0b15c59e5dd3bdec5c"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_continuation.json",
+      "bytes": 858481,
+      "sha256": "9ca996caf172c1ed47f59536b7ef388ca164d9777ca3b4e9411d16bc2c566030"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_continuation.py",
+      "bytes": 5953,
+      "sha256": "38af5a49fbbb108afebe12850ce5cc3bb8b9ea5e02b0dbaa4c9bce2fe532f00f"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_continuation_refine.json",
+      "bytes": 25107,
+      "sha256": "91ad29f3d37556347349a334cbde6a205528487c0e52de97626c4c7aefccb655"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_continuation_refine.py",
+      "bytes": 1357,
+      "sha256": "dc314fdf13783c4314f0c8ebe61bac3b8bb57c13e793d3bf342f33bafae1e1d9"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_endpoint_probe.json",
+      "bytes": 130753,
+      "sha256": "7c855e6d2f60c174b4603b2d4b0ea33380ae2071375b0bc80490665ff4ea75de"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_endpoint_probe.py",
+      "bytes": 3300,
+      "sha256": "05e5a282bf9d9c796ad3d827f9973d67a6facbd7ea8209ca161ba26b01385d8a"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_equilibria.json",
+      "bytes": 14578,
+      "sha256": "bce32681be8176f288df9d12d31839ef3cf1ac54593b3508125ef1f78ba8578e"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_equilibria.log",
+      "bytes": 1750,
+      "sha256": "b38d0c0eadab5785bfac4a4f751f9c7cbf33717973d4b2378b60c1ac88e7938d"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_equilibria.py",
+      "bytes": 1737,
+      "sha256": "6dadfc564085f48d4b51b365127d678ff8715767361d77a1a287bc90837d0048"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_extended.json",
+      "bytes": 1132310,
+      "sha256": "e9c01231996354eceb9b6d5405a9ba90aaff92ad0b0b5cb4049f85686233250a"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_extended.py",
+      "bytes": 390,
+      "sha256": "40758be5ba40e793f40ef155cd4ee8d3cd43d95e9d4e4c00f027c31a4d8c259f"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_extended_equilibria.json",
+      "bytes": 20061,
+      "sha256": "a612b8ba0b9ec5ceb6495fc40e73f7131e10afeebd771723a3c250eaf225df43"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_jacobian_control.json",
+      "bytes": 458,
+      "sha256": "996f2a5a03a08382bfdd86b76edcd74c61a43a0ebdb3eae1432ad62907c96360"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_negative.json",
+      "bytes": 950728,
+      "sha256": "cb538ffaf0e3a0c6ea9985f7d47ccd1b45a7ef44390a6c151fa17df521673177"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_negative.py",
+      "bytes": 144,
+      "sha256": "2b6b850f9b83b59eb2b4fc6f464f81d589d1637cc9b8557f4348d16cf88a5ef2"
+    },
+    {
+      "path": "work/h16p-audit/q4_finite_negative_equilibria.json",
+      "bytes": 14668,
+      "sha256": "8e2e2dc2b6a6442b4aa9c48d5063fe93a55d0d80ca59450bacaac5477a6d7ca9"
+    },
+    {
+      "path": "work/h16p-audit/q4_four_crossing_lp.json",
+      "bytes": 23583,
+      "sha256": "0cd02bfaea60e32bc9e65398beba1fb327bb9a8037c7124c9b48da99a214996b"
+    },
+    {
+      "path": "work/h16p-audit/q4_four_crossing_lp.py",
+      "bytes": 3252,
+      "sha256": "c658838e92dfc105d6683bd170cdbd1c8ed56eded149c5a2c07dc83f3171fa9d"
+    },
+    {
+      "path": "work/h16p-audit/q4_general_boundary.json",
+      "bytes": 1043,
+      "sha256": "936ac30b2e77ba4f9b60065943ad53a5492a02ae266de1b6d9f797c1033de179"
+    },
+    {
+      "path": "work/h16p-audit/q4_general_boundary.py",
+      "bytes": 1895,
+      "sha256": "b2f0cc32b9545a175b848587742eb6b2af08a48ec29b37d663182ee6899b47c3"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_boundary_constraints.json",
+      "bytes": 291173,
+      "sha256": "00490af8efb0073088f58be02de6ea71d48a4ad49fb890d54d4b05b9fadadda3"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_boundary_constraints.py",
+      "bytes": 3796,
+      "sha256": "6ae0da46eb564649f0c8a15ade2113146635b4fc4d8881031a2b4c0eb28f273d"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_constraint_refine.json",
+      "bytes": 129956,
+      "sha256": "772d967aac0e700a0280c92382680de272a228eec196fd59111536176654c265"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_constraint_refine.py",
+      "bytes": 951,
+      "sha256": "5d0d434c4982f5b52d681f49c768be0e46bb0bb62bd6875df0a443d3ade3a504"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_probe.json",
+      "bytes": 9436,
+      "sha256": "47c7277ded258cd4a5804a761d2d3e1d674cfab261ec536b2c9d50948d4dd2c2"
+    },
+    {
+      "path": "work/h16p-audit/q4_modulus_probe.py",
+      "bytes": 3974,
+      "sha256": "6a4262a885d0866d31ac19068761d4b51ca9a63125df083633f33555a4ac16f8"
+    },
+    {
+      "path": "work/h16p-audit/q4_negative_fold_search.json",
+      "bytes": 3631533,
+      "sha256": "1b3f3cde17363434a898d69b1e0ad406c83e404b70d66ff458a3ef85fe6774d5"
+    },
+    {
+      "path": "work/h16p-audit/q4_negative_fold_search.py",
+      "bytes": 201,
+      "sha256": "32058942584b6d9069c00c724ddb72f51b52a8ec717f529a1d2740ae62dee5d7"
+    },
+    {
+      "path": "work/h16p-audit/q4_original_exact.json",
+      "bytes": 1311,
+      "sha256": "0f640ebc4414047464e26f2a35d23674675b4cc4e0abc036d7a3f7aa3716b77b"
+    },
+    {
+      "path": "work/h16p-audit/q4_original_exact.py",
+      "bytes": 2071,
+      "sha256": "53163f8193bd12a0fb4213e7f472e39312236e20106888672601ef15e7434494"
+    },
+    {
+      "path": "work/h16p-audit/q4_original_probe.json",
+      "bytes": 2238,
+      "sha256": "644af767cb6fb527b40999b9f8aa112f3bbcd8ae6ed4f9c6c8ee4b364d46253a"
+    },
+    {
+      "path": "work/h16p-audit/q4_original_probe.py",
+      "bytes": 3664,
+      "sha256": "3f6f3a86c95eb9f327a3e0ea094329bf2307c5db29a3a9f80589be6ba0bf382a"
+    },
+    {
+      "path": "work/h16p-audit/q4_original_probe_calls.json",
+      "bytes": 7096,
+      "sha256": "92558fb448c1bf38d87fb0121e81956e5716b2edf94bea3caf6082ad2e81df73"
+    },
+    {
+      "path": "work/h16p-audit/q4_outer_fold_domain_search.json",
+      "bytes": 1874022,
+      "sha256": "9ecddebf012a403e48e313c6a52ded7e7c8451ab9450dcc07d42b9d0d62c841c"
+    },
+    {
+      "path": "work/h16p-audit/q4_outer_fold_domain_search.py",
+      "bytes": 103,
+      "sha256": "197a0ffa64e52a52a6f0d3aea606a064a42b5f85e10000d845d95578c355b5e5"
+    },
+    {
+      "path": "work/h16p-audit/q4_outer_fold_search.json",
+      "bytes": 1076863,
+      "sha256": "671c22e209b6085e8e697719145d67dff2555e4fdf3dcad9cfe9ee1f786ea451"
+    },
+    {
+      "path": "work/h16p-audit/q4_outer_fold_search.py",
+      "bytes": 6507,
+      "sha256": "1ce4e3af80bd2e3223b893f99081647d6914de5edffe3ba8f099f55943e4be12"
+    },
+    {
+      "path": "work/h16p-audit/q4_polar_quadrature.json",
+      "bytes": 3028,
+      "sha256": "844add64d121d23170f6b23eab56a17adfae5a4a6d5c7349b48265ed09bb5c3b"
+    },
+    {
+      "path": "work/h16p-audit/q4_polar_quadrature.py",
+      "bytes": 2497,
+      "sha256": "18c04e2fb78c0f7a187e88b7920664f8505b1b6d3194a6570d65c16ddcab0a6b"
+    },
+    {
+      "path": "work/h16p-audit/q4_radial_variation.py",
+      "bytes": 2930,
+      "sha256": "32f46fdd9664d968976184c8d1a2d3be1a7e954b324e531bf8ac533c79fec953"
+    },
+    {
+      "path": "work/h16p-audit/q4_radial_variation_check.json",
+      "bytes": 5440,
+      "sha256": "d1e3d9d265cd4d6ea7cf17986194b9741ca0ffde434b3d673b76249789896325"
+    },
+    {
+      "path": "work/h16p-audit/q4_reversible_center_map.json",
+      "bytes": 737,
+      "sha256": "6c7ad054e1be44e0cf7d8c37902950b3c90245588bede0144ae2dfbbeb04e8da"
+    },
+    {
+      "path": "work/h16p-audit/q4_reversible_center_map.py",
+      "bytes": 1148,
+      "sha256": "5e7df66c3d494dbabc0e64ccd9fca18dd0251a9afa5b9c4c5b5220b399a59f6f"
+    },
+    {
+      "path": "work/h16p-audit/q4_reversible_fit_diagnostic.json",
+      "bytes": 678,
+      "sha256": "5e095e9c5455028ffc2798e58394375d32231a691e9832aea58c332380adaa49"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_boundary_profile.json",
+      "bytes": 104009,
+      "sha256": "f47793b75d058e6019104db72dbc72c75dbcc36264c3b721e2da5e3f33f0bc2c"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_boundary_profile.py",
+      "bytes": 1778,
+      "sha256": "e7254403e39eacc6187e975d9a1e9a5fbface8716e50ff1c003a72fe8b1e5d1a"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_boundary_refine.json",
+      "bytes": 7507,
+      "sha256": "c3916e3d5039db93dd90299b75daf2f09008cf752c5fbbf359788426a4de3701"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_boundary_refine.py",
+      "bytes": 1050,
+      "sha256": "6a92330785fae8a70b72c69e586a67bce50e980bc00f99d12491dc66b7a184e7"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_ratio.json",
+      "bytes": 506,
+      "sha256": "645bd94c81b5347811a4a3841a4c00fac3e3458cc1a302bac7273523905cab46"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_ratio.py",
+      "bytes": 1686,
+      "sha256": "5ee9bdf28eef7e0c6a8dcac8868f6ce6289af42879e8d887f7f54ea5b9f8d8b2"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_separatrices.json",
+      "bytes": 47228,
+      "sha256": "3ce0e36d1212cdddb12fc42cd6dd1f69521321495c2ea4867d92ee5ec6f4da6e"
+    },
+    {
+      "path": "work/h16p-audit/q4_saddle_separatrices.py",
+      "bytes": 3557,
+      "sha256": "37fcc16788e80f05cf5e86a9d61bb8bc47a9f45c699038ff948e49010237da9a"
+    },
+    {
+      "path": "work/h16p-audit/q4_sample_minor_certificate.json",
+      "bytes": 2289,
+      "sha256": "52a29e64e5f64601598ba88d8d1a67b6c62218d8a07e4a3255f951d4381a351f"
+    },
+    {
+      "path": "work/h16p-audit/q4_sample_minor_certificate.py",
+      "bytes": 2198,
+      "sha256": "5c0e8b29391ef84f6a6d5b6e9f8adafb41ee218549d3da470b7f9678e1f2a541"
+    },
+    {
+      "path": "work/h16p-audit/q4_two_focus_profile.json",
+      "bytes": 397707,
+      "sha256": "4b4fbffb4ceba6b8ff32f6b94afda8e1047618210935c7747f5aed7eea79f610"
+    },
+    {
+      "path": "work/h16p-audit/q4_two_focus_profile.py",
+      "bytes": 2292,
+      "sha256": "ef522b571f33e4f5a2684a8ff7a271bf0f6dd919678cf7fb59df67884c4fab17"
+    },
+    {
+      "path": "work/h16p-audit/q4_variational_endpoint.json",
+      "bytes": 11817,
+      "sha256": "2c5562ca6f5ac8e2fe27a82d170d21ed6260dc78747e3c0ac1a95c43f5ff8652"
+    },
+    {
+      "path": "work/h16p-audit/q4_variational_endpoint.py",
+      "bytes": 3445,
+      "sha256": "6ef94a74a0351590c52059ad701cd6c4998156424d28c65916af601fdee20f5d"
+    },
+    {
+      "path": "work/h16p-audit/read_batch.py",
+      "bytes": 1662,
+      "sha256": "8f4b2dc604f6515b52c323f395d2b7cd86788a87042260b7702d6323b1933562"
+    },
+    {
+      "path": "work/h16p-audit/replay/fold_closure_2026_09_05/generalized_exact.py",
+      "bytes": 1400,
+      "sha256": "00e5d3bfa4b49a77260d093456058317e5604bb30fe801081fdc2d8fc5b55647"
+    },
+    {
+      "path": "work/h16p-audit/replay/fold_closure_2026_09_05/theory_exact.json",
+      "bytes": 1501,
+      "sha256": "00df8a76612ff92bad980ecea9e0306052b8852e6540ac81575dc0ff2c4dbca5"
+    },
+    {
+      "path": "work/h16p-audit/replay/fold_closure_2026_09_05/theory_exact.py",
+      "bytes": 4500,
+      "sha256": "752c57114d0b95acbea553074641b3f72f48a8cc8abf0c016b34a7ec1fd781b2"
+    },
+    {
+      "path": "work/h16p-audit/replay/reversible_reseed/check_arrangement.py",
+      "bytes": 889,
+      "sha256": "ffce858bc240fa506ecaf4fdd775d15c9e0bd462dfbe856bda1bc7db5a337e77"
+    },
+    {
+      "path": "work/h16p-audit/replay/reversible_reseed/check_geometry.py",
+      "bytes": 4272,
+      "sha256": "769e236000cefa19d55f50b62a41c996f9f6fdb66075c72489bf035cf665a0c4"
+    },
+    {
+      "path": "work/h16p-audit/replay/reversible_reseed/data/arrangement_controls.json",
+      "bytes": 1324,
+      "sha256": "db9f6c93d9586d4412215bf8e4ddcebc02bc6633ec1bd49e5303d3d7a7d4f395"
+    },
+    {
+      "path": "work/h16p-audit/replay/reversible_reseed/data/geometry.json",
+      "bytes": 1107,
+      "sha256": "f7238012cd840ba87836f3fc0847f74259011259dc1484fca997b6d5e10428c8"
+    },
+    {
+      "path": "work/h16p-audit/replay/reversible_reseed/moment_search.py",
+      "bytes": 6888,
+      "sha256": "2a3207445575f86954d30a0f81fd154986887a7c2fce37cfd0ea6aedeedf0eda"
+    },
+    {
+      "path": "work/h16p-audit/requirements.lock.txt",
+      "bytes": 55,
+      "sha256": "48b56515dfc301838195134a1f222cd71d80c402a1998261b009503a6dd8dc58"
+    },
+    {
+      "path": "work/h16p-audit/resonant_shape_probe.json",
+      "bytes": 148738,
+      "sha256": "806fd9d45b792a294d1c62c1a2d341221afd51c8cabf029d025a19d30a75283c"
+    },
+    {
+      "path": "work/h16p-audit/resonant_shape_probe.py",
+      "bytes": 3172,
+      "sha256": "3f5a0370e55b2c1fd11d11999744ea1fe8b467ed3a83352fc742c50236293a2f"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bautin_identity.json",
+      "bytes": 316,
+      "sha256": "49f383994598336d8ae55ef070c82be7d2d600ef1c7931546c84719a45475b57"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bautin_precursor.json",
+      "bytes": 578626,
+      "sha256": "5d19b247a35e4fdef73fb3ed092590f087b303b90efe9cf0475ff47feb5fd33e"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bautin_precursor.py",
+      "bytes": 2953,
+      "sha256": "017c3bdc419e64c3891d306d599a5a212e5c3ca1923d953e71e7056586b91762"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bautin_refine.json",
+      "bytes": 11821,
+      "sha256": "498cc15e44265d89689adf393058fe758f767f3a2695dd817b1e8be4718c7e2d"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bautin_refine.py",
+      "bytes": 1521,
+      "sha256": "2e1fa9e3ce33c25ee04640afe023edc704778099df8f0570b18a42c91d444b98"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bicycle_hopf.json",
+      "bytes": 401160,
+      "sha256": "6de5762395f2ed63c55b5b8f198f3dee98fd90d41355e9d8fadbb33008982850"
+    },
+    {
+      "path": "work/h16p-audit/reversible_bicycle_hopf.py",
+      "bytes": 1388,
+      "sha256": "24dea52a97359ebc4dce13850cab54e1aca90e3e280dfea8a437b51348b3d4aa"
+    },
+    {
+      "path": "work/h16p-audit/reversible_branch_remote_refine.json",
+      "bytes": 26258,
+      "sha256": "65069149274e74a11c1d29f04e309ff3f7dd18f2eeea80963e185d6647be2a32"
+    },
+    {
+      "path": "work/h16p-audit/reversible_branch_remote_refine.py",
+      "bytes": 1423,
+      "sha256": "2acde1ad253c801ac5f08bf8b13393a11ca22177bc824990359a6227810e803c"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_control.json",
+      "bytes": 2703,
+      "sha256": "9f8ff2bec5f51752620494008f4a255534b79481a4e93a3d6f3b717d40728e3e"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_control.py",
+      "bytes": 905,
+      "sha256": "8e53721d8418f050f17f829c7d14c2debf84e08e450257eb2a3e69cdcd37bb11"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_gap.json",
+      "bytes": 2516,
+      "sha256": "095436ec4ac5314d1d98a148d6990a88cdf5fe2529d6066140c45d49c881ffd3"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_gap.py",
+      "bytes": 1124,
+      "sha256": "b61a38ccf39ea0486d6564db3c05d861f221dd1c1aaff588a00911b635f4c38e"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_probe.json",
+      "bytes": 108039,
+      "sha256": "4c22affc7ed917f44dd01d3c66210ffc121729f02f1e2a319b92789a81401c52"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_probe.py",
+      "bytes": 1291,
+      "sha256": "1f58dc1170aa37228a1fabf35ac6c8e94311382804bcd72cb401c6f8091abc1a"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_refine.json",
+      "bytes": 8265,
+      "sha256": "9eb1b34e7741fe9642e3f46665ac4f6e497e551572a69526a9a5223a23637e99"
+    },
+    {
+      "path": "work/h16p-audit/reversible_extreme_refine.py",
+      "bytes": 1006,
+      "sha256": "d4ebb43314b59d2c4cb01b05ca4017cfd339fb3440a629e565410ce4cf2e6451"
+    },
+    {
+      "path": "work/h16p-audit/reversible_finite_hopf.json",
+      "bytes": 230664,
+      "sha256": "3145ca5895dad2503cb7bdde6b3a35cc9cefc2ef977a4a7785a98182781fc251"
+    },
+    {
+      "path": "work/h16p-audit/reversible_finite_hopf.py",
+      "bytes": 4802,
+      "sha256": "09b436fe5720d5b65f16a0624c38ba4ae4251474c0edb526f059dcf60dea2a29"
+    },
+    {
+      "path": "work/h16p-audit/reversible_finite_hopf_followup.json",
+      "bytes": 276905,
+      "sha256": "29f9ef64fcfb3186c5d9fbf616455cca9812a7bb88f2087059560fbf5bc66c9a"
+    },
+    {
+      "path": "work/h16p-audit/reversible_finite_hopf_followup.py",
+      "bytes": 2204,
+      "sha256": "aa4bf31f04379258e2b38ea55a0f402685bd335b8d1809e1729a96e6b18e9b03"
+    },
+    {
+      "path": "work/h16p-audit/reversible_focus_sanity.json",
+      "bytes": 866,
+      "sha256": "f94b521b7fb12bb987ee726892296baa886f617301f47240866bd6aac80fbeac"
+    },
+    {
+      "path": "work/h16p-audit/reversible_focus_sanity.py",
+      "bytes": 1997,
+      "sha256": "d952a5330e934f5571a4b2d65ebb35669ea7226a16d4ea6542f6560ee407a15a"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_focus.json",
+      "bytes": 3836,
+      "sha256": "b1a7e66259dbc29b7b50f69a1eebea16262e2e8c9ba44f3feff86722111fa530"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_focus.py",
+      "bytes": 1824,
+      "sha256": "a20831280042177fd232d91ffca1e83d9946af7724f5fd96cdd95d4ec5fc3c5c"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_moment_test.json",
+      "bytes": 58268,
+      "sha256": "bc74eae41b9d9001501c8e384f2348794796df5247a9070d2aec03d14057ebc3"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_moment_test.py",
+      "bytes": 2908,
+      "sha256": "e90bc07cba6696bfdf0cc0d41d337ddb0a6332f089d0f15e7be15fda425896ac"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_shape_followup.json",
+      "bytes": 802911,
+      "sha256": "b4c166876c38d720f359f5bf51161b89efefefb909977b930d9b60dba2b61204"
+    },
+    {
+      "path": "work/h16p-audit/reversible_hopf_shape_followup.py",
+      "bytes": 1447,
+      "sha256": "29acfcbfd14e0732aea26b6bbbbb08402c20d674a610d1e16eec57374c42c89f"
+    },
+    {
+      "path": "work/h16p-audit/reversible_lienard_exact.json",
+      "bytes": 677,
+      "sha256": "8633719c6ad95d451f5849336da40475e51057b38866abd91ae5b251d69033ed"
+    },
+    {
+      "path": "work/h16p-audit/reversible_lienard_exact.py",
+      "bytes": 1338,
+      "sha256": "1b84387d06300f7edca5340d71cd54c2bf930d20b6010f6a32f4e0d8ffd28d12"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_boundary_probe.json",
+      "bytes": 65931,
+      "sha256": "eb6543149821a3204e9e3103bed83f5ea55c56dbeee4460c045a19de8bfe592c"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_boundary_probe.py",
+      "bytes": 1178,
+      "sha256": "d04fa09bde7bf804772ec342c921745c3a5add7b9dce4b36e10d45de0a51fac9"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_boundary_refine.json",
+      "bytes": 4942,
+      "sha256": "10478a53be7f34ae2a69d3f2759803c01de092b814f3b4f71cd894620f92f8b7"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_boundary_refine.py",
+      "bytes": 1025,
+      "sha256": "f82319ebd0805b63421211d1959b3d50817e4be9cca99a8cc379a91a7032ae51"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_energy_check.json",
+      "bytes": 2402,
+      "sha256": "921f472362d38ea60a7f68fdd9802aa2f88a0e8fdc4fe9ba9eb5d921acb0245a"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_energy_check.py",
+      "bytes": 1141,
+      "sha256": "d9cba138594a68abeb7b2f8edfbea7ac43408b4cff9278ccb8fb07a64e5f7b83"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return.py",
+      "bytes": 3948,
+      "sha256": "6ffe857dc36fe90635caab9c014962c06812427cef22201c979e4c759da804a6"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return_check.json",
+      "bytes": 17590,
+      "sha256": "d24dcec26815b0b2c166c3b925eeab6f794023e9b26a45e462ac434ed2a392dc"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return_v1.py",
+      "bytes": 3634,
+      "sha256": "1fef788272d127e825ca101d4f5c8588ae579ff83540108eb3cd2baca98a9210"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return_v2.py",
+      "bytes": 3657,
+      "sha256": "2a95a9750bd596778fdd8cc68884cd124590cc7aeadb1724a6fe718bf84514b4"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return_v2_check.json",
+      "bytes": 18715,
+      "sha256": "ed242464d031df7ef1825bbb77589ef196eb8aab430fb5dce8a985af54e2dae1"
+    },
+    {
+      "path": "work/h16p-audit/reversible_log_return_v3_check.json",
+      "bytes": 18732,
+      "sha256": "9abc6241d51cfc874e84707cef06bfa5d0f21cf93f2be8cc633079f4751d63ad"
+    },
+    {
+      "path": "work/h16p-audit/reversible_quintic_focus.json",
+      "bytes": 41240,
+      "sha256": "d6ad1555dbf3efd71690d2412ab5ecd0e4b7e11b74e6c66614eb53d7fe2c2d57"
+    },
+    {
+      "path": "work/h16p-audit/reversible_quintic_focus.py",
+      "bytes": 2156,
+      "sha256": "4d30642e2e85cca06293ab3e070c901aa145e9552f7316a897231ad6223ea00c"
+    },
+    {
+      "path": "work/h16p-audit/reversible_radial_coefficient_control.json",
+      "bytes": 626,
+      "sha256": "c4bcd6810e5a6d5410511169aa73fa7766d4f2ca3cfc19a37084cfd1bf1fc199"
+    },
+    {
+      "path": "work/h16p-audit/reversible_seventh_direct_check.json",
+      "bytes": 4476,
+      "sha256": "a868924cd2acc08192d19fa8423af40e71a271381d676d9e5fedb43c3fdd1863"
+    },
+    {
+      "path": "work/h16p-audit/reversible_seventh_direct_check.py",
+      "bytes": 1941,
+      "sha256": "b18aabc13a9fdbf07945952f5609af6284503a42fbab61026090cee9c24b1b3c"
+    },
+    {
+      "path": "work/h16p-audit/reversible_third_focus_branch.json",
+      "bytes": 767233,
+      "sha256": "1b545992a3a88a47d2f2e33f2a2f0407f823893a81b5c13e886b780bc5d15e56"
+    },
+    {
+      "path": "work/h16p-audit/reversible_third_focus_branch.py",
+      "bytes": 3225,
+      "sha256": "45fec94025b507c801e8f2fd28e0e5d15d0cd4e17f71bce471a2d4fa476ebbc0"
+    },
+    {
+      "path": "work/h16p-audit/reversible_third_focus_probe.json",
+      "bytes": 268235,
+      "sha256": "98c0e48b82b2046f2dddd7fa732a008b7b554dec1d2eed335e4ac20e57468d38"
+    },
+    {
+      "path": "work/h16p-audit/reversible_third_focus_probe.py",
+      "bytes": 2561,
+      "sha256": "d5a302b48d3073eb037957a7fdcdd2b208a95c4aa763f6c5bde97a06031f2a8f"
+    },
+    {
+      "path": "work/h16p-audit/semantic_data_audit.json",
+      "bytes": 1228514,
+      "sha256": "c4045a50114b8a776d47d159e727a8c830bd737a71876fb22081189b19bee7ca"
+    },
+    {
+      "path": "work/h16p-audit/semantic_data_audit.py",
+      "bytes": 3969,
+      "sha256": "baf8d52bd5f71997f2e3b6ec383f555d41bf2d8d88096c4a5c16f894c115bcb0"
+    },
+    {
+      "path": "work/h16p-audit/sources/focus-nonexistence-ledger.json",
+      "bytes": 2616,
+      "sha256": "f2dd2bd5cf3db14fda3bdaa3c686b522072d61e7cfb446483e2e9b9dabddfbad"
+    },
+    {
+      "path": "work/h16p-audit/sources/hemicycle-compatibility-ledger.json",
+      "bytes": 987,
+      "sha256": "c9552d9caaa0ce2c4d30bd8ff685aa0fe52ac150411a912522333942b26e7b37"
+    },
+    {
+      "path": "work/h16p-audit/sources/invariant-line-uniqueness-ledger.json",
+      "bytes": 707,
+      "sha256": "976e50689517e2e92636aa9a6770e2341c69d64ab4ad94f21dac9bd257601742"
+    },
+    {
+      "path": "work/h16p-audit/sources/q4-primary-scope-ledger.json",
+      "bytes": 1610,
+      "sha256": "ef0d83b266f7af64a5a88bd0754746e5f5e9cf86d503b572d9bac9ec44ba8ee4"
+    },
+    {
+      "path": "work/h16p-audit/sources/zegeling-2024-ledger.json",
+      "bytes": 711,
+      "sha256": "f81c5b686f44e2131461c6b4bc7a5eb40a9d6f72abd7cbb13c3f0c002f48ab31"
+    },
+    {
+      "path": "work/h16p-audit/theory_exact_replay.log",
+      "bytes": 1501,
+      "sha256": "00df8a76612ff92bad980ecea9e0306052b8852e6540ac81575dc0ff2c4dbca5"
+    },
+    {
+      "path": "work/h16p-audit/usage_budget.json",
+      "bytes": 664,
+      "sha256": "735ebe18054e4c5045e00ac3e82dee11862fa4ac8d4615ef3c799887b105a18b"
+    },
+    {
+      "path": "work/h16p-audit/wrapup_verification.json",
+      "bytes": 277,
+      "sha256": "3a9702347e93cb467d9afddb5f903255ef0caf70aeeac9f89c594f8819683ca9"
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "scope": "Independent Cartesian endpoint checks plus unperturbed very-large-orbit identity controls",
+  "records": [
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.385875471119531,
+          "height": 0.2501047444367569,
+          "nfev": 523,
+          "time": 1.7511650390752824
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.3867132291949924,
+          "height": 0.24989530490947082,
+          "nfev": 499,
+          "time": 1.7503427786221575
+        },
+        "log_difference": 0.0008377580754614922
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.2501047444367139,
+          "log_height_difference": 1.7186252421197423e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.24989530490941222,
+          "log_height_difference": 2.3447910280083306e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -3.6827723159261767,
+          "height": 0.02515314561943356,
+          "nfev": 1495,
+          "time": 3.698298395174522
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -3.695023179088918,
+          "height": 0.02484687772782694,
+          "nfev": 1471,
+          "time": 3.697915078449929
+        },
+        "log_difference": 0.012250863162741155
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.025153145619356887,
+          "log_height_difference": 3.0482283364108298e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.024846877727751397,
+          "log_height_difference": 3.0402347306335287e-12
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.3871324363756825,
+          "height": 0.24979056895779733,
+          "nfev": 523,
+          "time": 1.7503752900923035
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.3854569198263644,
+          "height": 0.2502094480113477,
+          "nfev": 511,
+          "time": 1.7511326424350095
+        },
+        "log_difference": -0.001675516549318079
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.2497905689577168,
+          "log_height_difference": 3.2240876635114546e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.25020944801126566,
+          "log_height_difference": 3.2795988147427124e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.0,
+        1.0,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -3.6961682280963153,
+          "height": 0.024818443117765588,
+          "nfev": 1471,
+          "time": 3.6984524930721503
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -3.6816433427042763,
+          "height": 0.0251815588831735,
+          "nfev": 1483,
+          "time": 3.6977611015775245
+        },
+        "log_difference": -0.014524885392039
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.024818443117690027,
+          "log_height_difference": 3.0446756227320293e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.025181558883096606,
+          "log_height_difference": 3.0535574069290305e-12
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.258415889253739,
+          "height": 0.28410372198105205,
+          "nfev": 499,
+          "time": 1.795744819369761
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.2590978419756704,
+          "height": 0.28391004272209114,
+          "nfev": 499,
+          "time": 1.7948626440014834
+        },
+        "log_difference": 0.0006819527219315002
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.28410372198106426,
+          "log_height_difference": 4.3076653355456074e-14
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.28391004272209946,
+          "log_height_difference": 2.930988785010413e-14
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.421042533896518,
+          "height": 0.08882896196569025,
+          "nfev": 1015,
+          "time": 3.5229439978624515
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.423968186692695,
+          "height": 0.08856945905753828,
+          "nfev": 991,
+          "time": 3.522464659602869
+        },
+        "log_difference": 0.0029256527961769585
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.08882896196551565,
+          "log_height_difference": 1.965538842796377e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0885694590573671,
+          "log_height_difference": 1.9326762412674725e-12
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 3.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -0.28679996879686004,
+          "height": 0.7506618696170777,
+          "nfev": 379,
+          "time": 2.8097997657500224
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -0.28580231434031567,
+          "height": 0.7514111444732118,
+          "nfev": 379,
+          "time": 2.8102536341548356
+        },
+        "log_difference": -0.0009976544565443723
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.7506618696173303,
+          "log_height_difference": 3.364530876126537e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.7514111444734561,
+          "log_height_difference": 3.251288127614771e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -1.25,
+        0.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 30.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.356118737413258,
+          "height": 0.09478740497954338,
+          "nfev": 1039,
+          "time": 4.196601414928152
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.351631330624684,
+          "height": 0.09521371041169563,
+          "nfev": 1039,
+          "time": 4.196246014547343
+        },
+        "log_difference": -0.0044874067885740665
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.09478740497937334,
+          "log_height_difference": 1.794120407794253e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.09521371041152274,
+          "log_height_difference": 1.815880779076906e-12
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 1.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -1.5838562646736076,
+          "height": 0.2051823332482006,
+          "nfev": 523,
+          "time": 1.7599644597046467
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -1.585050926735262,
+          "height": 0.20493735606055957,
+          "nfev": 535,
+          "time": 1.7591462223692513
+        },
+        "log_difference": 0.0011946620616543058
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.205182333248048,
+          "log_height_difference": 7.436273818939299e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.20493735606040817,
+          "log_height_difference": 7.389644451905042e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": 1,
+        "height": 10.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -6.14765414890366,
+          "height": 0.0021384924754735595,
+          "nfev": 2275,
+          "time": 4.783609372150518
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -6.386148548360179,
+          "height": 0.0016847323873411593,
+          "nfev": 2323,
+          "time": 4.783139694472934
+        },
+        "log_difference": 0.23849439945651874
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.002138492475467675,
+          "log_height_difference": 2.751576744230988e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0016847323873350616,
+          "log_height_difference": 3.6193270602780103e-12
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 0.3333333333333333,
+        "forward": {
+          "status": "passed",
+          "log_height": -2.488888517751281,
+          "height": 0.08300217076342975,
+          "nfev": 595,
+          "time": 1.2007242301439516
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -2.483710654421394,
+          "height": 0.08343305923785638,
+          "nfev": 607,
+          "time": 1.2033298632424732
+        },
+        "log_difference": -0.0051778633298873444
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.08300217076339313,
+          "log_height_difference": 4.409805853811122e-13
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.0834330592378138,
+          "log_height_difference": 5.102585021177219e-13
+        }
+      ]
+    },
+    {
+      "parameters": [
+        -0.75,
+        1.5,
+        0.0001,
+        0.0002,
+        -0.0003
+      ],
+      "row": {
+        "side": -1,
+        "height": 3.333333333333333,
+        "forward": {
+          "status": "passed",
+          "log_height": -5.135198128739944,
+          "height": 0.005885885226655368,
+          "nfev": 1855,
+          "time": 3.601301298977829
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -5.057350093771594,
+          "height": 0.006362396949546493,
+          "nfev": 1831,
+          "time": 3.600548569551274
+        },
+        "log_difference": -0.07784803496835035
+      },
+      "checks": [
+        {
+          "sign": 1,
+          "cartesian_height": 0.005885885226644487,
+          "log_height_difference": 1.8482992913959606e-12
+        },
+        {
+          "sign": -1,
+          "cartesian_height": 0.006362396949535703,
+          "log_height_difference": 1.695532603207539e-12
+        }
+      ]
+    }
+  ],
+  "large_controls": [
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+30,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": 1,
+        "height": 1e+60,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 1e+30,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "row": {
+        "side": -1,
+        "height": 1e+60,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -14.454319530273379,
+          "height": 5.279208180643393e-07,
+          "nfev": 5455,
+          "time": 19.974251232877922
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -14.454319530273379,
+          "height": 5.279208180643393e-07,
+          "nfev": 5455,
+          "time": 19.974251232877922
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 1e+30,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": 1,
+        "height": 1e+60,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 10000000000.0,
+        "forward": {
+          "status": "passed",
+          "log_height": -14.454313899582154,
+          "height": 5.27923790631826e-07,
+          "nfev": 5467,
+          "time": 19.974248417840855
+        },
+        "backward": {
+          "status": "passed",
+          "log_height": -14.454313899582154,
+          "height": 5.27923790631826e-07,
+          "nfev": 5467,
+          "time": 19.974248417840855
+        },
+        "log_difference": 0.0
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 1e+30,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    },
+    {
+      "a": -1.25,
+      "b": 0.5,
+      "row": {
+        "side": -1,
+        "height": 1e+60,
+        "forward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        },
+        "backward": {
+          "status": "unresolved",
+          "message": "Required step size is less than spacing between numbers.",
+          "guard": 0
+        }
+      }
+    }
+  ],
+  "counts": {
+    "log_halves": 48
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source": "https://link.springer.com/article/10.1007/s12346-023-00746-7",
+  "title": "Number of Limit Cycles for Planar Systems with Invariant Algebraic Curves",
+  "date_checked": "2026-09-08",
+  "claim": "Quadratic systems with an invariant straight line have at most one limit cycle, which is hyperbolic",
+  "scope_read": "Introduction and relevant reference list; original uniqueness proofs not rederived",
+  "reference": "Coll and Llibre, Limit cycles for a quadratic system with an invariant straight line and some evolution of phase portraits, Colloquia Mathematica Societatis Janos Bolyai53,111\u2013123(1988)",
+  "role": "Imported classical theorem, not a newly proved global quadratic bound"
+}

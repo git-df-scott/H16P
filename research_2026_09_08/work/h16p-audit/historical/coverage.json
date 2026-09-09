@@ -1,0 +1,42 @@
+[
+  {
+    "path": "H16_POST_Q4_FRONTIER_2026_09_04.md",
+    "commit": "de39ea78d56208a2a3267b594ce5c117b6b14c1e",
+    "sha256": "8b9e7c82540a8bba5350ba3032eb7a1f7e667c5bd607dcf0efff987b66ce0438",
+    "bytes": 11907,
+    "status": "read",
+    "read_chars": 11838
+  },
+  {
+    "path": "HISTORICAL_FIVE_CYCLE_CLAIMS.md",
+    "commit": "de39ea78d56208a2a3267b594ce5c117b6b14c1e",
+    "sha256": "8e33454d8f5e5568d08b843c6e770fa7e08f5cb27458a63e242d96d3d4e0ad7a",
+    "bytes": 20151,
+    "status": "read",
+    "read_chars": 20030
+  },
+  {
+    "path": "FIVE_CYCLE_MECHANISMS.md",
+    "commit": "de39ea78d56208a2a3267b594ce5c117b6b14c1e",
+    "sha256": "34cc7f13ae987212389f4ef2d1989529ce136b2775e0ac869fc511707ca7ec78",
+    "bytes": 7149,
+    "status": "read",
+    "read_chars": 7139
+  },
+  {
+    "path": "FOUR_CYCLE_SEED_LEDGER.md",
+    "commit": "de39ea78d56208a2a3267b594ce5c117b6b14c1e",
+    "sha256": "193fb98fc3da93149a196f348edb306296469b0bb3e9712a4ddf47af856b6a8d",
+    "bytes": 15474,
+    "status": "read",
+    "read_chars": 15294
+  },
+  {
+    "path": "ASTRA_FIFTH_STRIKE_HANDOFF.md",
+    "commit": "de39ea78d56208a2a3267b594ce5c117b6b14c1e",
+    "sha256": "a3af298413d50cea49f4860bc1f4cdfeadf2ef8dcf1c6616725654a2ab35c566",
+    "bytes": 10242,
+    "status": "read",
+    "read_chars": 10130
+  }
+]

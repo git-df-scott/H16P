@@ -1,0 +1,599 @@
+{
+  "scope": "NUM equilibrium screen including nearly reversible point; special degenerate elimination cases flagged",
+  "records": [
+    {
+      "r": 0.5,
+      "epsilon": -0.001,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -7.792668978507184e-07,
+          "determinant": 1.0000000000001519,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.7984922161216331,
+            2.3959629878190483
+          ],
+          "trace": 4.989612720927295,
+          "determinant": 5.982521960449462,
+          "discriminant": 0.9661472630416341,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.249999805481402,
+        1.4976361608405995,
+        -0.7490005835290665,
+        -0.49923524418944487
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": -0.01,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -7.683528120475443e-06,
+          "determinant": 1.000000000014759,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.784935397556242,
+            2.3597630985946996
+          ],
+          "trace": 4.896394611334635,
+          "determinant": 5.826063211625417,
+          "discriminant": 0.6704273434051835,
+          "residual": 2.220446049250313e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.249998108742449,
+        1.4761927225149172,
+        -0.7400056711766201,
+        -0.49229267610867716
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": -0.03,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -2.2304243975491487e-05,
+          "determinant": 1.0000000001243698,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.7548665824469747,
+            2.2801253254310248
+          ],
+          "trace": 4.69078448242076,
+          "determinant": 5.483596177600669,
+          "discriminant": 0.06907435011672192,
+          "residual": 7.771561172376096e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.249994686576392,
+        1.4273970842972903,
+        -0.720015918440493,
+        -0.4764607115962468
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": -0.1,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -6.483055142855179e-05,
+          "determinant": 1.0000000010507502,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.6490583054974288,
+            2.008081309383537
+          ],
+          "trace": 3.980301091029303,
+          "determinant": 4.3332920098119025,
+          "discriminant": -1.490371263998549,
+          "residual": 1.1102230246251565e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.249986522423911,
+        1.241706571500088,
+        -0.6500402496304213,
+        -0.41581095770599236
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": -0.2,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -9.569400070766457e-05,
+          "determinant": 1.0000000022893354,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.48597201539617285,
+            1.622150381511277
+          ],
+          "trace": 2.9266500866318714,
+          "determinant": 2.7627838032892864,
+          "discriminant": -2.485854483574805,
+          "residual": 1.1102230246251565e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.249985300612249,
+        0.9134316393875059,
+        -0.5500437033614382,
+        -0.3072643421232039
+      ]
+    },
+    {
+      "r": 0.5,
+      "epsilon": -0.4,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -1.2134905007531579e-15,
+          "determinant": 1.0,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -3.796951665894699e-12,
+            0.9999999999999999
+          ],
+          "trace": 2.212230392652543e-11,
+          "determinant": 0.3499999999999998,
+          "discriminant": -1.3999999999999992,
+          "residual": 1.1102230246251565e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": true,
+      "elimination_coefficients": [
+        -2.25,
+        3.896875255705835e-12,
+        -0.3500000000000001,
+        -1.3289330830631452e-12
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.001,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -8.224090014032313e-07,
+          "determinant": 1.0000000000001692,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.8379426376123513,
+            3.3112374848756057
+          ],
+          "trace": 8.378246772056192,
+          "determinant": 16.864203369754513,
+          "discriminant": 2.7382054944519467,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.999999588970051,
+        2.998623191616733,
+        -2.999001233047521,
+        -0.9995759233513887
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.01,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -8.191464218711802e-06,
+          "determinant": 1.000000000016775,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.8300387114316551,
+            3.2819389824279974
+          ],
+          "trace": 8.288715776104398,
+          "determinant": 16.659698932235365,
+          "discriminant": 2.0640134881004855,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.999995921698292,
+        2.986204076980593,
+        -2.9900122307085306,
+        -0.995748348278825
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.03,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -2.4355209279490445e-05,
+          "determinant": 1.000000000148294,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.8127299532417764,
+            3.217912226123222
+          ],
+          "trace": 8.093103433342616,
+          "determinant": 16.21350711046047,
+          "discriminant": 0.6442947409401683,
+          "residual": 2.6645352591003757e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.9999879787633223,
+        2.9584240383742038,
+        -2.9700360266621413,
+        -0.9871715602125538
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.1,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -7.856356156073431e-05,
+          "determinant": 1.0000000015430583,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.754742713156674,
+            3.004864308720368
+          ],
+          "trace": 7.442526395422531,
+          "determinant": 14.736363194853674,
+          "discriminant": -3.5542536328536016,
+          "residual": 1.2212453270876722e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.999962434566237,
+        2.8591182249571228,
+        -2.90011231264409,
+        -0.9563460738061279
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.2,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -0.00014926601421120947,
+          "determinant": 1.0000000055700857,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.6780442708771224,
+            2.7270820039599855
+          ],
+          "trace": 6.5944247099101085,
+          "determinant": 12.830064074722513,
+          "discriminant": -7.83381904421703,
+          "residual": 1.3322676295501878e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.9999320948342607,
+        2.7110734153245213,
+        -2.800202340017538,
+        -0.9099289772564718
+      ]
+    },
+    {
+      "r": 1.0,
+      "epsilon": -0.4,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -0.00026386625037219956,
+          "determinant": 1.0000000174063495,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.5412738449057537,
+            2.2470452476121974
+          ],
+          "trace": 5.123750571517807,
+          "determinant": 9.601524563491871,
+          "discriminant": -12.153278334838436,
+          "residual": 2.220446049250313e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.9998935657892676,
+        2.3879687819476025,
+        -2.600315062628059,
+        -0.806860422141121
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.001,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -4.2737455947939806e-07,
+          "determinant": 1.0000000000000457,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.6203314225164515,
+            4.050858418137175
+          ],
+          "trace": 15.507217717332619,
+          "determinant": 57.75889719232412,
+          "discriminant": 9.438212563458194,
+          "residual": 7.771561172376096e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.999999572688901,
+        5.998997210906988,
+        -11.999001281909717,
+        -1.9997032386569586
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.01,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -4.267532830474177e-06,
+          "determinant": 1.000000000004553,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.6164872237342056,
+            4.027759595186032
+          ],
+          "trace": 15.401573724366068,
+          "determinant": 57.376828432200234,
+          "discriminant": 7.701159458282348,
+          "residual": 7.549516567451064e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.999995738810486,
+        5.989964820806621,
+        -11.990012781217587,
+        -1.9970293077181174
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.03,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -1.2761076131060329e-05,
+          "determinant": 1.0000000000407112,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.60806589261862,
+            3.9771868136335384
+          ],
+          "trace": 15.17029694805546,
+          "determinant": 56.540585565100805,
+          "discriminant": 3.975567231777603,
+          "residual": 3.6637359812630166e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.9999872959599605,
+        5.969845623955782,
+        -11.970038091111006,
+        -1.9910673081590502
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.1,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -4.204837526461222e-05,
+          "determinant": 1.0000000004420164,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.5798440723653561,
+            3.8080127246626887
+          ],
+          "trace": 14.396845649926341,
+          "determinant": 53.745970304055575,
+          "discriminant": -7.71471654841929,
+          "residual": 2.220446049250313e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.999958583202167,
+        5.898906295125295,
+        -11.900124022762688,
+        -1.9699805088161924
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.2,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -8.267797566048266e-05,
+          "determinant": 1.000000001708912,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.5426021242209103,
+            3.5855779357796473
+          ],
+          "trace": 13.380342881654542,
+          "determinant": 50.07862379644421,
+          "discriminant": -21.280919555133465,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.9999198352623,
+        5.796105512618138,
+        -11.800239616755851,
+        -1.9392455117839513
+      ]
+    },
+    {
+      "r": 2.0,
+      "epsilon": -0.4,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": -0.00015950828653936205,
+          "determinant": 1.0000000063607233,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -0.47721911447747795,
+            3.197819788469812
+          ],
+          "trace": 11.609251602135618,
+          "determinant": 43.70852176385994,
+          "discriminant": -40.059364293751344,
+          "residual": 3.7192471324942744e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -5.999850428647197,
+        5.584981185937858,
+        -11.600445467370436,
+        -1.875485177249632
+      ]
+    }
+  ]
+}

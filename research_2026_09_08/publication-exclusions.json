@@ -1,0 +1,23 @@
+{
+  "downloaded_sources_omitted": [
+    "sources/llibre-schlomiuk-2004-page19.png",
+    "sources/gavrilov-iliev-2009.txt",
+    "sources/zhao-2010.pdf",
+    "sources/li-1986-page1.png",
+    "sources/zegeling-page29.png",
+    "sources/zhao-2010.txt",
+    "sources/gavrilov-iliev-2009.pdf",
+    "sources/llibre-schlomiuk-2004.pdf",
+    "sources/zegeling-2024.pdf",
+    "sources/zegeling-page3.png",
+    "sources/li-1986.txt",
+    "sources/zegeling-2024.txt",
+    "sources/li-1986-landing.html",
+    "sources/li-1986.pdf",
+    "sources/li-1986-download-response"
+  ],
+  "other_exclusions": [
+    "Python virtual environment",
+    "bytecode caches"
+  ]
+}

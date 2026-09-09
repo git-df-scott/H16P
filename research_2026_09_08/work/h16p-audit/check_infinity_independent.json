@@ -1,0 +1,10 @@
+{
+  "status": "exact assertions passed",
+  "scope": "Local coordinate identities, invariant-manifold coefficient, one-way barrier, and unique candidate neutrality root only. No global connection or cycle existence certified.",
+  "neutrality_resultant": "-(c - 1)*(1000*c**3 + 11*c**2 - 634*c - 305)/25",
+  "root_bracket": [
+    "241/250",
+    "39/40"
+  ],
+  "ode_evaluations": 0
+}

@@ -1,0 +1,19 @@
+{
+  "evidence": "Exact coefficient identity and rational root isolation; no higher focus coefficient or generalized Hopf theorem asserted",
+  "angular_average_equals_formula": true,
+  "derivation": "dr/dtheta=r\u00b2 R-r\u00b3 R T+O(r\u2074); integral R=0. Cubic full return coefficient is -integral R*T=2*pi*l1. The iterated quadratic term has zero integral.",
+  "scaled_l1_numerator": "11*k*(3200*k**6 + 645444*k**4 - 1776249*k**2 - 4556250)**3*(21923840*k**10 - 134595036864*k**8 + 910706790672*k**6 - 2126696936292*k**4 + 1114402770819*k**2 - 135591266250)",
+  "scaled_l1_denominator": "1600000000*(4*k**2 + 45)**15",
+  "positive_roots_below_one": [
+    {
+      "left": "328148/779725",
+      "right": "6062721/14405863",
+      "multiplicity": 1
+    },
+    {
+      "left": "1292054/1849663",
+      "right": "1455581/2083763",
+      "multiplicity": 1
+    }
+  ]
+}

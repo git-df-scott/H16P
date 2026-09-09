@@ -1,0 +1,57 @@
+{
+  "access_date_utc": "2026-09-08",
+  "sources": [
+    {
+      "title": "Non-existence of limit cycle around a weak focus of order three for any quadratic system",
+      "authors": [
+        "Chengzhi Li"
+      ],
+      "venue": "Chinese Annals of Mathematics, Series B",
+      "year": 1986,
+      "volume": "7(2)",
+      "pages": "174\u2013190",
+      "url": "https://camath.fudan.edu.cn/cambcn/ch/reader/view_abstract.aspx?file_no=7B205&flag=1",
+      "pdf_url": "https://camath.fudan.edu.cn/cambcn/ch/reader/create_pdf.aspx?file_no=7B205&flag=1",
+      "local_pdf": "li-1986.pdf",
+      "sha256": "cf1710183a612241358464e22aa75b4edcdb297ba1087ead9bcd5d8de955b2ac",
+      "read_scope": "Publisher abstract and original scanned page1 visually inspected. Full17page proof NOT audited. pypdf found no text layer.",
+      "claim": "No limit cycle surrounds an exact third-order weak focus of a real quadratic system."
+    },
+    {
+      "title": "The Geometry of Quadratic Differential Systems with a Weak Focus of Third Order",
+      "authors": [
+        "Jaume Llibre",
+        "Dana Schlomiuk"
+      ],
+      "venue": "Canadian Journal of Mathematics",
+      "year": 2004,
+      "volume": "56(2)",
+      "pages": "310\u2013343",
+      "doi": "10.4153/CJM-2004-015-2",
+      "url": "https://doi.org/10.4153/CJM-2004-015-2",
+      "local_pdf": "llibre-schlomiuk-2004.pdf",
+      "sha256": "b3116b9552b4b18e319500653660e79b3d4ead09001714e6afe66dd600de1c76",
+      "read_scope": "Web-extracted opening/normal-form sections and relevant Section7/9 statements; printed328 visually inspected. Not full34page proof audit.",
+      "claims": [
+        "Section7.1(viii) explicitly applies Li nonexistence theorem.",
+        "Theorem18(a,b) proved; (c,d) explicitly numerical evidence in this paper.",
+        "Corollary3 gives exact three-parameter third-focus normal form with explicit nonzero L3 gate."
+      ]
+    },
+    {
+      "title": "On number of limit cycles for the quadratic systems with a weak focus and a strong focus",
+      "authors": [
+        "Zhang Pingguang",
+        "Zhao Shenqi"
+      ],
+      "venue": "Applied Mathematics-A Journal of Chinese Universities",
+      "year": 2001,
+      "volume": "16",
+      "pages": "127\u2013132",
+      "doi": "10.1007/s11766-001-0018-y",
+      "url": "https://link.springer.com/article/10.1007/s11766-001-0018-y",
+      "read_scope": "Publisher abstract and bibliographic metadata only; full proof subscription-only, not acquired.",
+      "claim": "With weak and strong foci, second-order weak focus case at most (1,1); third-order case at most (0,1)."
+    }
+  ]
+}

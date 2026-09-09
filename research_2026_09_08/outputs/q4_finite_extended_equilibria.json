@@ -1,0 +1,801 @@
+{
+  "scope": "NUM geometry and unresolved-return diagnosis",
+  "records": [
+    {
+      "r": 0.5,
+      "epsilon": 0.7,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0009529128972277154,
+          "determinant": 1.0000002270107475,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -2.375045110057377,
+            7.117458996790214
+          ],
+          "trace": 17.149763388277748,
+          "determinant": 28.45020798077664,
+          "discriminant": 180.3135523508053,
+          "residual": 3.9968028886505635e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.2504132335426403,
+        2.6922487574168974,
+        -1.4487173061204057,
+        -0.866829556183922
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 0.5,
+      "epsilon": 1.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0015302187006048843,
+          "determinant": 1.000000585392318,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -4.14821204779451,
+            12.736278598002007
+          ],
+          "trace": 31.980150474689623,
+          "determinant": 56.85269372613347,
+          "discriminant": 795.319249479257,
+          "residual": 2.7533531010703882e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.2507447769464215,
+        3.0701597602851463,
+        -1.7476512847566426,
+        -0.9726603835248521
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 0.5,
+      "epsilon": 1.5,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.002637991966763039,
+          "determinant": 1.0000017397504042,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -76.10109003702983,
+            244.8497577321364
+          ],
+          "trace": 656.2602818259945,
+          "determinant": 1260.9349568466916,
+          "discriminant": 425633.81767494703,
+          "residual": 2.3376856006507296e-11
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.2514729727978287,
+        3.623022416445082,
+        -2.245222987735412,
+        -1.115418898890708
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 0.5,
+      "epsilon": 2.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0038805190490460474,
+          "determinant": 1.0000037646070226,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            6.051959963293618,
+            -20.468153311869646
+          ],
+          "trace": -58.53482826537178,
+          "determinant": -118.03252294951417,
+          "discriminant": 3898.4562118546237,
+          "residual": 4.085620730620576e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.252387947534553,
+        4.115774228754972,
+        -2.7420199767624056,
+        -1.2287958891050654
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 40
+      },
+      "last_resolved_radius": 10.0
+    },
+    {
+      "r": 0.5,
+      "epsilon": 3.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.006620098934851515,
+          "determinant": 1.0000109564274768,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            2.235119530453207,
+            -8.374152501123945
+          ],
+          "trace": -27.333987413848448,
+          "determinant": -57.65592796924196,
+          "discriminant": 977.7705798173931,
+          "residual": 2.6645352591003757e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.25463057844783,
+        5.001102516767254,
+        -3.7334734943465255,
+        -1.3956353419533534
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 42
+      },
+      "last_resolved_radius": 5.011872336272719
+    },
+    {
+      "r": 0.5,
+      "epsilon": 4.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.00952009397563432,
+          "determinant": 1.0000226580473262,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            1.4764417170267816,
+            -6.1325844176905555
+          ],
+          "trace": -22.908043634193522,
+          "determinant": -48.54447388523034,
+          "discriminant": 718.9563586870356,
+          "residual": 6.661338147750939e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -2.2571893794051503,
+        5.817028223433237,
+        -4.722389975492641,
+        -1.5055988682814432
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 43
+      },
+      "last_resolved_radius": 3.5481338923357533
+    },
+    {
+      "r": 1.0,
+      "epsilon": 0.7,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0007277172587605113,
+          "determinant": 1.0000001323931023,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -1.8604330494105301,
+            7.2621955405128995
+          ],
+          "trace": 20.60133259634987,
+          "determinant": 45.47143209874596,
+          "discriminant": 242.52917635044386,
+          "residual": 1.887379141862766e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.000455157494521,
+        3.848933517515287,
+        -3.698599757394015,
+        -1.2505546513868666
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 1.0,
+      "epsilon": 1.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0011161637477670031,
+          "determinant": 1.000000311455378,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -2.944112596271125,
+            11.565003892537105
+          ],
+          "trace": 34.116611315445915,
+          "determinant": 77.49551422353379,
+          "discriminant": 853.961110755077,
+          "residual": 2.6201263381153694e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.000746475474418,
+        4.163447804673266,
+        -3.997677078158108,
+        -1.3370153268869067
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 1.0,
+      "epsilon": 1.5,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0018431070921777232,
+          "determinant": 1.0000008492609382,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -14.879660417787578,
+            59.49862596965647
+          ],
+          "trace": 186.32957065601335,
+          "determinant": 439.2637937389119,
+          "discriminant": 32961.65372589862,
+          "residual": 1.3073986337985843e-12
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.001348010560512,
+        4.646243885304514,
+        -4.495720360623849,
+        -1.4618372478641832
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 1.0,
+      "epsilon": 2.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0026529331468295413,
+          "determinant": 1.0000017595135704,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            6.311388892669344,
+            -25.833289997748434
+          ],
+          "trace": -85.57207743355097,
+          "determinant": -207.1492538927079,
+          "discriminant": 8151.177451864475,
+          "residual": 5.6754601018838e-13
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.0020811280871587,
+        5.091586743296186,
+        -4.993251458920087,
+        -1.5675996781698447
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 39
+      },
+      "last_resolved_radius": 14.12537544622754
+    },
+    {
+      "r": 1.0,
+      "epsilon": 3.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.004464792604827085,
+          "determinant": 1.000004983593251,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            1.895026507085516,
+            -8.201427805800524
+          ],
+          "trace": -30.260457662999002,
+          "determinant": -75.44452848453957,
+          "discriminant": 1217.4734119123132,
+          "residual": 1.554312234475219e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.0038801759599068,
+        5.909708383731447,
+        -5.98682712322882,
+        -1.7358890813723507
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 42
+      },
+      "last_resolved_radius": 5.011872336272719
+    },
+    {
+      "r": 1.0,
+      "epsilon": 4.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0064620314682907335,
+          "determinant": 1.0000104394626743,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            1.1980504893562511,
+            -5.518817467943567
+          ],
+          "trace": -22.638557193514423,
+          "determinant": -56.84025078151939,
+          "discriminant": 739.8652749301011,
+          "residual": 1.3766765505351941e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.0060201359289827,
+        6.669907465870684,
+        -6.978501621345849,
+        -1.860002228648428
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 43
+      },
+      "last_resolved_radius": 3.5481338923357533
+    },
+    {
+      "r": 1.0,
+      "epsilon": 6.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.01074998346790997,
+          "determinant": 1.00002889053614,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            0.7372714919802742,
+            -3.888487921596417
+          ],
+          "trace": -19.684336992903955,
+          "determinant": -48.05845030021996,
+          "discriminant": 579.706924051087,
+          "residual": 1.1102230246251565e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.0108353628933435,
+        8.11659345849109,
+        -8.956575611005718,
+        -2.0105095769611423
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 44
+      },
+      "last_resolved_radius": 2.5118864315095797
+    },
+    {
+      "r": 1.0,
+      "epsilon": 8.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.015074820198494297,
+          "determinant": 1.0000568125510043,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            0.5562250982519403,
+            -3.392927341007076
+          ],
+          "trace": -21.092818551357304,
+          "determinant": -48.5230394047467,
+          "discriminant": 638.9991520594697,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -3.0155944378308197,
+        9.544937798024948,
+        -10.92856720240352,
+        -2.06140107480251
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 44
+      },
+      "last_resolved_radius": 2.5118864315095797
+    },
+    {
+      "r": 2.0,
+      "epsilon": 0.7,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.00033101985663149875,
+          "determinant": 1.0000000273935363,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -1.0863566115839678,
+            6.887088804249717
+          ],
+          "trace": 28.520796360803487,
+          "determinant": 105.02775725871959,
+          "discriminant": 393.3247960195431,
+          "residual": 1.0436096431476471e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.000362911996298,
+        6.666624318208934,
+        -12.698896818417214,
+        -2.192524680870432
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 2.0,
+      "epsilon": 1.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.000490858977910784,
+          "determinant": 1.000000060235634,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -1.4961984199621456,
+            9.407312807933716
+          ],
+          "trace": 40.13005592747996,
+          "determinant": 147.3117822983007,
+          "discriminant": 1021.1742595494665,
+          "residual": 1.6431300764452317e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.000556417161806,
+        6.933891850781118,
+        -12.998298700351665,
+        -2.2668707356230424
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 2.0,
+      "epsilon": 1.5,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0007787436359764041,
+          "determinant": 1.0000001516104127,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            -3.4422287526268307,
+            21.4389979112611
+          ],
+          "trace": 95.72757267453407,
+          "determinant": 349.9824338397235,
+          "discriminant": 7763.838434799309,
+          "residual": 2.722266856380884e-13
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.000927501222577,
+        7.359703415367113,
+        -13.497135627589813,
+        -2.381655706250696
+      ],
+      "failure_reasons": {},
+      "last_resolved_radius": 10000000.0
+    },
+    {
+      "r": 2.0,
+      "epsilon": 2.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.001091355508585043,
+          "determinant": 1.0000002977642115,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            21.903844880530997,
+            -135.71114859998488
+          ],
+          "trace": -631.9893600454227,
+          "determinant": -2303.193960739287,
+          "discriminant": 408623.3270535801,
+          "residual": 2.7959856652159942e-12
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.001357088893543,
+        7.76491324143641,
+        -13.995765539458041,
+        -2.4864329151375246
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 34
+      },
+      "last_resolved_radius": 79.43282347242814
+    },
+    {
+      "r": 2.0,
+      "epsilon": 3.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0017828672744131975,
+          "determinant": 1.0000007946539295,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            1.5927330813647356,
+            -9.856155848706026
+          ],
+          "trace": -49.555199469939595,
+          "determinant": -179.56503212371285,
+          "discriminant": 3173.977923000353,
+          "residual": 5.3734794391857577e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.002381586783706,
+        8.527109378852845,
+        -14.992406594410845,
+        -2.6707452247778245
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 42
+      },
+      "last_resolved_radius": 5.011872336272719
+    },
+    {
+      "r": 2.0,
+      "epsilon": 4.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.002552460781648634,
+          "determinant": 1.0000016287640106,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            0.8876006450555018,
+            -5.533686644444413
+          ],
+          "trace": -29.84536279241432,
+          "determinant": -107.44311786683805,
+          "discriminant": 1320.5181516781813,
+          "residual": 1.3766765505351941e-14
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.003609580262074,
+        9.241251746348686,
+        -15.988223950076165,
+        -2.827037754314256
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 43
+      },
+      "last_resolved_radius": 3.5481338923357533
+    },
+    {
+      "r": 2.0,
+      "epsilon": 6.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.004288762352765015,
+          "determinant": 1.0000045983706296,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            0.5065510984879463,
+            -3.2582716314500684
+          ],
+          "trace": -20.01202517729729,
+          "determinant": -70.7102340026066,
+          "discriminant": 683.322087707207,
+          "residual": 8.826273045769994e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.006594490425295,
+        10.577380556440104,
+        -17.97737784305752,
+        -3.073097323947753
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 45
+      },
+      "last_resolved_radius": 1.7782794100389228
+    },
+    {
+      "r": 2.0,
+      "epsilon": 8.0,
+      "equilibria": [
+        {
+          "point": [
+            0.0,
+            0.0
+          ],
+          "trace": 0.0062408122428541934,
+          "determinant": 1.0000097369343626,
+          "discriminant": -4.0,
+          "residual": 0.0
+        },
+        {
+          "point": [
+            0.3690064270344171,
+            -2.482877256544687
+          ],
+          "trace": -17.248856469611624,
+          "determinant": -59.29768543030941,
+          "discriminant": 534.7137912305004,
+          "residual": 2.7200464103316335e-15
+        }
+      ],
+      "unhandled_x0_y1_degeneracy": false,
+      "elimination_coefficients": [
+        -6.010145843888473,
+        11.846317106498402,
+        -19.963180733599955,
+        -3.2483294031851155
+      ],
+      "failure_reasons": {
+        "A termination event occurred.": 46
+      },
+      "last_resolved_radius": 1.2589254117941675
+    }
+  ]
+}

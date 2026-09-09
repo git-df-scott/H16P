@@ -1,0 +1,366 @@
+{
+  "scope": "NUM variational flow; conditional leading-log comparison, no rigorous asymptotic remainder or cycle count",
+  "direction": [
+    "20569265961809427/50000000000000000000",
+    "42436759177461253/100000000000000000",
+    "-1",
+    "1029863328970071/10000000000000000"
+  ],
+  "exact_energy_gap_series_in_inverse_radius": "3*sqrt(2)*z**2/8 - sqrt(2)*z**3 + O(z**4)",
+  "boundary_y": "0.15946453014768276435363886000227818652155835880869312528471",
+  "boundary_hy": "7.33663503483710803190579192164023796616559341879665765902283",
+  "splitting_derivative": "-0.00426810399666595512532705537458392786559188242642362525294056",
+  "predicted_log_coefficient": "0.215098073527011059918436778131726515644928123167616119807559",
+  "runs": [
+    {
+      "rtol": 2e-12,
+      "rows": [
+        {
+          "radius": 10,
+          "forward": {
+            "status": "passed",
+            "y": 0.1588963805987901,
+            "event_derivative": -0.03306559450839576,
+            "nfev": 1207
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15889638059878455,
+            "event_derivative": -0.03030083214301082,
+            "nfev": 1231
+          },
+          "derivative": -0.002764762365384938,
+          "scaled_residual": 0.15033416312810172,
+          "base_closure": 5.551115123125783e-15
+        },
+        {
+          "radius": 20,
+          "forward": {
+            "status": "passed",
+            "y": 0.15930527593695842,
+            "event_derivative": -0.034817553611970926,
+            "nfev": 1363
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15930527593696137,
+            "event_derivative": -0.03121321899969531,
+            "nfev": 1375
+          },
+          "derivative": -0.0036043346122756163,
+          "scaled_residual": 0.26550775375613556,
+          "base_closure": -2.942091015256665e-15,
+          "doubling_log_slope": 0.16616036804044002
+        },
+        {
+          "radius": 40,
+          "forward": {
+            "status": "passed",
+            "y": 0.15942218958140555,
+            "event_derivative": -0.03557195271308021,
+            "nfev": 1519
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.1594221895814024,
+            "event_derivative": -0.03155491845664623,
+            "nfev": 1567
+          },
+          "derivative": -0.004017034256433981,
+          "scaled_residual": 0.40171158437115884,
+          "base_closure": 3.164135620181696e-15,
+          "doubling_log_slope": 0.19650059097837447
+        },
+        {
+          "radius": 80,
+          "forward": {
+            "status": "passed",
+            "y": 0.1594536008628877,
+            "event_derivative": -0.035851748490261015,
+            "nfev": 1663
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15945360086288668,
+            "event_derivative": -0.03166925748635269,
+            "nfev": 1723
+          },
+          "derivative": -0.0041824910039083285,
+          "scaled_residual": 0.5479231536488105,
+          "base_closure": 1.0269562977782698e-15,
+          "doubling_log_slope": 0.2109387059174612
+        },
+        {
+          "radius": 160,
+          "forward": {
+            "status": "passed",
+            "y": 0.1594617528569415,
+            "event_derivative": -0.03594572054465817,
+            "nfev": 1807
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.1594617528569473,
+            "event_derivative": -0.03170487346734822,
+            "nfev": 1879
+          },
+          "derivative": -0.004240847077309956,
+          "scaled_residual": 0.6977771355135776,
+          "base_closure": -5.800915303666443e-15,
+          "doubling_log_slope": 0.2161935964937641
+        },
+        {
+          "radius": 320,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946383007538778,
+            "event_derivative": -0.03597529171249288,
+            "nfev": 1927
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946383007539416,
+            "event_derivative": -0.03171547333625685,
+            "nfev": 2047
+          },
+          "derivative": -0.004259818376236027,
+          "scaled_residual": 0.8484475320246432,
+          "base_closure": -6.38378239159465e-15,
+          "doubling_log_slope": 0.21737143385528815
+        },
+        {
+          "radius": 640,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946435440267165,
+            "event_derivative": -0.035984200068944844,
+            "nfev": 2071
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946435440267057,
+            "event_derivative": -0.03171853490718742,
+            "nfev": 2179
+          },
+          "derivative": -0.004265665161757422,
+          "scaled_residual": 0.9989467785352701,
+          "base_closure": 1.0824674490095276e-15,
+          "doubling_log_slope": 0.21712451659840715
+        },
+        {
+          "radius": 1280,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946448612004022,
+            "event_derivative": -0.03598680377371078,
+            "nfev": 2215
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946448612004163,
+            "event_derivative": -0.03171940110460953,
+            "nfev": 2335
+          },
+          "derivative": -0.00426740266910125,
+          "scaled_residual": 1.149055082012751,
+          "base_closure": -1.4155343563970746e-15,
+          "doubling_log_slope": 0.21656050502321714
+        },
+        {
+          "radius": 2560,
+          "forward": {
+            "status": "passed",
+            "y": 0.1594645191293157,
+            "event_derivative": -0.03598754834116695,
+            "nfev": 2359
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946451912931003,
+            "event_derivative": -0.03171964252756067,
+            "nfev": 2479
+          },
+          "derivative": -0.004267905813606282,
+          "scaled_residual": 1.2988124998742023,
+          "base_closure": 5.662137425588298e-15,
+          "doubling_log_slope": 0.21605428408505215
+        }
+      ]
+    },
+    {
+      "rtol": 3e-14,
+      "rows": [
+        {
+          "radius": 10,
+          "forward": {
+            "status": "passed",
+            "y": 0.15889638059879124,
+            "event_derivative": -0.03306559450840051,
+            "nfev": 1867
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15889638059879108,
+            "event_derivative": -0.03030083214301385,
+            "nfev": 1939
+          },
+          "derivative": -0.0027647623653866624,
+          "scaled_residual": 0.15033416312792927,
+          "base_closure": 1.6653345369377348e-16
+        },
+        {
+          "radius": 20,
+          "forward": {
+            "status": "passed",
+            "y": 0.15930527593696373,
+            "event_derivative": -0.03481755361196513,
+            "nfev": 2143
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15930527593696367,
+            "event_derivative": -0.031213218999696233,
+            "nfev": 2215
+          },
+          "derivative": -0.0036043346122688995,
+          "scaled_residual": 0.2655077537588223,
+          "base_closure": 5.551115123125783e-17,
+          "doubling_log_slope": 0.16616036804456494
+        },
+        {
+          "radius": 40,
+          "forward": {
+            "status": "passed",
+            "y": 0.15942218958140708,
+            "event_derivative": -0.035571952713079794,
+            "nfev": 2419
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15942218958140691,
+            "event_derivative": -0.0315549184566489,
+            "nfev": 2491
+          },
+          "derivative": -0.004017034256430893,
+          "scaled_residual": 0.40171158437609933,
+          "base_closure": 1.6653345369377348e-16,
+          "doubling_log_slope": 0.19650059098162595
+        },
+        {
+          "radius": 80,
+          "forward": {
+            "status": "passed",
+            "y": 0.15945360086289195,
+            "event_derivative": -0.03585174849025306,
+            "nfev": 2683
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15945360086289184,
+            "event_derivative": -0.03166925748635556,
+            "nfev": 2767
+          },
+          "derivative": -0.004182491003897504,
+          "scaled_residual": 0.5479231537180884,
+          "base_closure": 1.1102230246251565e-16,
+          "doubling_log_slope": 0.21093870601028047
+        },
+        {
+          "radius": 160,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946175285695083,
+            "event_derivative": -0.035945720544642776,
+            "nfev": 2923
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.1594617528569508,
+            "event_derivative": -0.03170487346734981,
+            "nfev": 3019
+          },
+          "derivative": -0.004240847077292963,
+          "scaled_residual": 0.6977771359486074,
+          "base_closure": 2.7755575615628914e-17,
+          "doubling_log_slope": 0.2161935970214325
+        },
+        {
+          "radius": 320,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946383007539666,
+            "event_derivative": -0.035975291712477195,
+            "nfev": 3127
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946383007539636,
+            "event_derivative": -0.03171547333625755,
+            "nfev": 3271
+          },
+          "derivative": -0.004259818376219644,
+          "scaled_residual": 0.8484475337022346,
+          "base_closure": 3.0531133177191805e-16,
+          "doubling_log_slope": 0.21737143564792563
+        },
+        {
+          "radius": 640,
+          "forward": {
+            "status": "passed",
+            "y": 0.1594643544026727,
+            "event_derivative": -0.03598420006894634,
+            "nfev": 3379
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.1594643544026722,
+            "event_derivative": -0.031718534907187804,
+            "nfev": 3523
+          },
+          "derivative": -0.004265665161758539,
+          "scaled_residual": 0.9989467780776806,
+          "base_closure": 4.996003610813204e-16,
+          "doubling_log_slope": 0.21712451351799222
+        },
+        {
+          "radius": 1280,
+          "forward": {
+            "status": "passed",
+            "y": 0.1594644861200412,
+            "event_derivative": -0.03598680377371239,
+            "nfev": 3607
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946448612004072,
+            "event_derivative": -0.031719401104607844,
+            "nfev": 3751
+          },
+          "derivative": -0.004267402669104546,
+          "scaled_residual": 1.1490550766126262,
+          "base_closure": 4.718447854656915e-16,
+          "doubling_log_slope": 0.21656049789264603
+        },
+        {
+          "radius": 2560,
+          "forward": {
+            "status": "passed",
+            "y": 0.15946451912931592,
+            "event_derivative": -0.03598754834116877,
+            "nfev": 3811
+          },
+          "backward": {
+            "status": "passed",
+            "y": 0.15946451912931578,
+            "event_derivative": -0.03171964252756412,
+            "nfev": 3955
+          },
+          "derivative": -0.004267905813604651,
+          "scaled_residual": 1.298812510560765,
+          "base_closure": 1.3877787807814457e-16,
+          "doubling_log_slope": 0.2160543072932365
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "scope": "EXACT for rational interpretations of frozen decimal table entries ONLY. These numbers are approximations to true integrals; no continuum or rigorous quadrature claim.",
+  "records": [
+    {
+      "modulus": 0.125,
+      "order": 512,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "478010be4a973a6145c245871f12bfef76e3e028b63f53d017f51731e2570d57"
+    },
+    {
+      "modulus": 0.25,
+      "order": 512,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "293741230e4d658c85baae143b22c722f5fa0c35bd50fc1e94a774d25518aa6d"
+    },
+    {
+      "modulus": 0.5,
+      "order": 512,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "3ac2cb6f5221e1ff17d77b3a65551fcfc5defa81f50f17e4a4326e12887f8b44"
+    },
+    {
+      "modulus": 1.0,
+      "order": 512,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "45c5fdbc9916d7df07032d200c3f1464b4a0ddcf223b00af1eed636c538787b1"
+    },
+    {
+      "modulus": 2.0,
+      "order": 2048,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "96bbe1f19d9ecd863f5732951385b490545304c3eee032dc7df50a672e52f602"
+    },
+    {
+      "modulus": 4.0,
+      "order": 2048,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "f495a7378259e45f8ce52999c04280a89f896c516b903991996f9ffe261c38f7"
+    },
+    {
+      "modulus": 8.0,
+      "order": 2048,
+      "minor_count": 1001,
+      "sign_counts": {
+        "-1": 0,
+        "0": 0,
+        "1": 1001
+      },
+      "uniform_nonzero_orientation": true,
+      "table_sha256": "3c6a9260d3f2148fbf58cf8270ece5df217aed7783d2e2f012e654d198c9cfea"
+    }
+  ]
+}

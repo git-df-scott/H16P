@@ -1,0 +1,2177 @@
+{
+  "scope": "NUM same quadratic field on both annuli; no validated roots or exclusion between samples",
+  "parameters": {
+    "a": -1.01,
+    "b": 1.0,
+    "e0": -1e-20,
+    "e1": 0.0025248737468435926,
+    "e2": -0.0050005,
+    "epsilon_minus": 0.01,
+    "epsilon_plus": 1e-06
+  },
+  "records": [
+    {
+      "side": 1,
+      "rows": [
+        {
+          "side": 1,
+          "height": 0.6,
+          "forward": {
+            "status": "passed",
+            "log_height": -0.8752548785541735,
+            "height": 0.4167557840288124,
+            "nfev": 355,
+            "time": 7.919036215218748
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -0.8752408982476837,
+            "height": 0.416761610443132,
+            "nfev": 355,
+            "time": 7.917435068246234
+          },
+          "log_difference": -1.398030648980253e-05
+        },
+        {
+          "side": 1,
+          "height": 2.808764944767676,
+          "forward": {
+            "status": "passed",
+            "log_height": -2.402437997607815,
+            "height": 0.0904970525234929,
+            "nfev": 655,
+            "time": 12.409317454635271
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -2.402363337542442,
+            "height": 0.09050380929157761,
+            "nfev": 667,
+            "time": 12.389689626715912
+          },
+          "log_difference": -7.46600653731555e-05
+        },
+        {
+          "side": 1,
+          "height": 13.14860085825961,
+          "forward": {
+            "status": "passed",
+            "log_height": -3.917497784674851,
+            "height": 0.01989080360090276,
+            "nfev": 1063,
+            "time": 19.637746528817402
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -3.9174534892699073,
+            "height": 0.019891684691616906,
+            "nfev": 1063,
+            "time": 19.607723072468954
+          },
+          "log_difference": -4.4295404943550665e-05
+        },
+        {
+          "side": 1,
+          "height": 61.55221527236963,
+          "forward": {
+            "status": "passed",
+            "log_height": -5.430669261305668,
+            "height": 0.004380163347647808,
+            "nfev": 1291,
+            "time": 27.191614961531545
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -5.430654364616899,
+            "height": 0.004380228598063961,
+            "nfev": 1303,
+            "time": 27.15873157806168
+          },
+          "log_difference": -1.4896688768750721e-05
+        },
+        {
+          "side": 1,
+          "height": 288.1428408830421,
+          "forward": {
+            "status": "passed",
+            "log_height": -6.943680425875739,
+            "height": 0.0009647125025081484,
+            "nfev": 1603,
+            "time": 34.77039450083219
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -6.94367790762643,
+            "height": 0.0009647149318977998,
+            "nfev": 1567,
+            "time": 34.73685574862103
+          },
+          "log_difference": -2.5182493086362e-06
+        },
+        {
+          "side": 1,
+          "height": 1348.8758509300978,
+          "forward": {
+            "status": "passed",
+            "log_height": -8.456683922257806,
+            "height": 0.00021247548897390745,
+            "nfev": 1855,
+            "time": 42.35065843230155
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -8.456685444863028,
+            "height": 0.00021247516545786461,
+            "nfev": 1855,
+            "time": 42.31697772813535
+          },
+          "log_difference": 1.5226052223482611e-06
+        },
+        {
+          "side": 1,
+          "height": 6314.458674893552,
+          "forward": {
+            "status": "passed",
+            "log_height": -9.969688115946512,
+            "height": 4.679715647599514e-05,
+            "nfev": 2179,
+            "time": 49.930973483034734
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -9.969690811837294,
+            "height": 4.679703031614244e-05,
+            "nfev": 2167,
+            "time": 49.89726259954062
+          },
+          "log_difference": 2.6958907817231648e-06
+        },
+        {
+          "side": 1,
+          "height": 29559.716952041952,
+          "forward": {
+            "status": "passed",
+            "log_height": -11.482692695057413,
+            "height": 1.0306944206836694e-05,
+            "nfev": 2467,
+            "time": 57.5112828660988
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -11.482695709994626,
+            "height": 1.0306913132093889e-05,
+            "nfev": 2467,
+            "time": 57.47756560534501
+          },
+          "log_difference": 3.0149372136634156e-06
+        },
+        {
+          "side": 1,
+          "height": 138377.1612535837,
+          "forward": {
+            "status": "passed",
+            "log_height": -12.99569739017992,
+            "height": 2.2700756746420155e-06,
+            "nfev": 2755,
+            "time": 65.0915900798583
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -12.995700488343903,
+            "height": 2.2700686415862164e-06,
+            "nfev": 2755,
+            "time": 65.05787147444087
+          },
+          "log_difference": 3.098163983139557e-06
+        },
+        {
+          "side": 1,
+          "height": 647781.5328092162,
+          "forward": {
+            "status": "passed",
+            "log_height": -14.508702116385079,
+            "height": 4.999778115619117e-07,
+            "nfev": 3055,
+            "time": 72.67189678089079
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -14.508705235647632,
+            "height": 4.99976252002279e-07,
+            "nfev": 3055,
+            "time": 72.63817789224586
+          },
+          "log_difference": 3.119262553141766e-06
+        },
+        {
+          "side": 1,
+          "height": 3032443.4353706636,
+          "forward": {
+            "status": "passed",
+            "log_height": -16.021706850553354,
+            "height": 1.1011871227731506e-07,
+            "nfev": 3355,
+            "time": 80.25220337085021
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -16.021709975053792,
+            "height": 1.1011836821188784e-07,
+            "nfev": 3355,
+            "time": 80.21848442259356
+          },
+          "log_difference": 3.12450043793433e-06
+        },
+        {
+          "side": 1,
+          "height": 14195701.363766635,
+          "forward": {
+            "status": "passed",
+            "log_height": -17.534711586710817,
+            "height": 2.4253337826355494e-08,
+            "nfev": 3655,
+            "time": 87.83250993726485
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -17.53471471249012,
+            "height": 2.425326201589253e-08,
+            "nfev": 3655,
+            "time": 87.79879097646635
+          },
+          "log_difference": 3.125779304724574e-06
+        },
+        {
+          "side": 1,
+          "height": 66453980.59489748,
+          "forward": {
+            "status": "passed",
+            "log_height": -19.04771632335821,
+            "height": 5.341729695765017e-09,
+            "nfev": 3955,
+            "time": 95.41281649872556
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -19.047719449443214,
+            "height": 5.3417129970900145e-09,
+            "nfev": 3931,
+            "time": 95.37909753527772
+          },
+          "log_difference": 3.126085005078494e-06
+        },
+        {
+          "side": 1,
+          "height": 311089351.89203227,
+          "forward": {
+            "status": "passed",
+            "log_height": -20.5607210601319,
+            "height": 1.1765009972362125e-09,
+            "nfev": 4255,
+            "time": 102.9931230591756
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -20.560724186269596,
+            "height": 1.1764973193378453e-09,
+            "nfev": 4243,
+            "time": 102.95940409509022
+          },
+          "log_difference": 3.126137695375064e-06
+        },
+        {
+          "side": 1,
+          "height": 1456294777.1413932,
+          "forward": {
+            "status": "passed",
+            "log_height": -22.07372579697167,
+            "height": 2.5912104790770584e-10,
+            "nfev": 4543,
+            "time": 110.57342961955608
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -22.073728923031272,
+            "height": 2.5912023788113174e-10,
+            "nfev": 4543,
+            "time": 110.53971065497385
+          },
+          "log_difference": 3.1260596031756904e-06
+        },
+        {
+          "side": 1,
+          "height": 6817316198.804998,
+          "forward": {
+            "status": "passed",
+            "log_height": -23.58673053398419,
+            "height": 5.7070684695482166e-11,
+            "nfev": 4831,
+            "time": 118.15373618055686
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -23.586733659619302,
+            "height": 5.707050631362507e-11,
+            "nfev": 4843,
+            "time": 118.1200172142352
+          },
+          "log_difference": 3.1256351107344926e-06
+        },
+        {
+          "side": 1,
+          "height": 31913731261.0005,
+          "forward": {
+            "status": "passed",
+            "log_height": -25.099735271758266,
+            "height": 1.2569658371753821e-11,
+            "nfev": 5131,
+            "time": 125.73404274458731
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -25.099738395447222,
+            "height": 1.2569619108112115e-11,
+            "nfev": 5131,
+            "time": 125.70032377047258
+          },
+          "log_difference": 3.1236889554975278e-06
+        },
+        {
+          "side": 1,
+          "height": 149396949371.0575,
+          "forward": {
+            "status": "passed",
+            "log_height": -26.612740012981593,
+            "height": 2.768432022161094e-12,
+            "nfev": 5431,
+            "time": 133.3143493224112
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -26.612743127832065,
+            "height": 2.7684233989227337e-12,
+            "nfev": 5431,
+            "time": 133.2806303129404
+          },
+          "log_difference": 3.1148504717748438e-06
+        },
+        {
+          "side": 1,
+          "height": 699368190414.4291,
+          "forward": {
+            "status": "passed",
+            "log_height": -28.125744769864227,
+            "height": 6.097393830952053e-13,
+            "nfev": 5731,
+            "time": 140.89465596287147
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -28.12574784458447,
+            "height": 6.09737508320063e-13,
+            "nfev": 5731,
+            "time": 140.86093679287924
+          },
+          "log_difference": 3.0747202437453325e-06
+        },
+        {
+          "side": 1,
+          "height": 3273934761202.755,
+          "forward": {
+            "status": "passed",
+            "log_height": -29.63874959784488,
+            "height": 1.3429337830521492e-13,
+            "nfev": 6043,
+            "time": 148.47496288772382
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -29.638752490360147,
+            "height": 1.3429298986012944e-13,
+            "nfev": 6043,
+            "time": 148.44124298891154
+          },
+          "log_difference": 2.8925152690817413e-06
+        },
+        {
+          "side": 1,
+          "height": 15326188647871.047,
+          "forward": {
+            "status": "passed",
+            "log_height": -31.151754748634644,
+            "height": 2.957772801768213e-14,
+            "nfev": 6355,
+            "time": 156.0552711038109
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -31.151756813876645,
+            "height": 2.9577666932579027e-14,
+            "nfev": 6343,
+            "time": 156.02154789590685
+          },
+          "log_difference": 2.0652420005262684e-06
+        },
+        {
+          "side": 1,
+          "height": 71746102351727.48,
+          "forward": {
+            "status": "passed",
+            "log_height": -32.66476136509809,
+            "height": 6.514399470000251e-15,
+            "nfev": 6655,
+            "time": 163.63558518259526
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -32.66475967422464,
+            "height": 6.514410485034648e-15,
+            "nfev": 6643,
+            "time": 163.60184695022824
+          },
+          "log_difference": -1.6908734465914677e-06
+        },
+        {
+          "side": 1,
+          "height": 335863228682076.4,
+          "forward": {
+            "status": "passed",
+            "log_height": -34.17777463628021,
+            "height": 1.4347659840995188e-15,
+            "nfev": 6943,
+            "time": 171.21592588025328
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -34.1777558913137,
+            "height": 1.4347928789919123e-15,
+            "nfev": 6943,
+            "time": 171.18211943151397
+          },
+          "log_difference": -1.874496651055324e-05
+        },
+        {
+          "side": 1,
+          "height": 1572268104931175.5,
+          "forward": {
+            "status": "passed",
+            "log_height": -35.690818123100435,
+            "height": 3.159909426867348e-16,
+            "nfev": 7231,
+            "time": 178.7963874404647
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -35.690721946529884,
+            "height": 3.1602133507342196e-16,
+            "nfev": 7243,
+            "time": 178.76227126530824
+          },
+          "log_difference": -9.617657055116524e-05
+        },
+        {
+          "side": 1,
+          "height": 7360219228178347.0,
+          "forward": {
+            "status": "passed",
+            "log_height": -37.20399881755825,
+            "height": 6.958387478226351e-17,
+            "nfev": 7591,
+            "time": 186.37739783122493
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -37.20355107410604,
+            "height": 6.961503748250376e-17,
+            "nfev": 7543,
+            "time": 186.3418753885418
+          },
+          "log_difference": -0.0004477434522129897
+        },
+        {
+          "side": 1,
+          "height": 3.445520958985375e+16,
+          "forward": {
+            "status": "passed",
+            "log_height": -38.71780285386032,
+            "height": 1.5313408544030685e-17,
+            "nfev": 7879,
+            "time": 193.96090158936235
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -38.71575887070399,
+            "height": 1.5344740903659762e-17,
+            "nfev": 7831,
+            "time": 193.91899418786494
+          },
+          "log_difference": -0.0020439831563265898
+        },
+        {
+          "side": 1,
+          "height": 1.6129430810100774e+17,
+          "forward": {
+            "status": "passed",
+            "log_height": -40.234444749664995,
+            "height": 3.360490428637342e-18,
+            "nfev": 8167,
+            "time": 201.55575678551142
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -40.22515318462603,
+            "height": 3.391860155258388e-18,
+            "nfev": 8143,
+            "time": 201.4848590564824
+          },
+          "log_difference": -0.009291565038964222
+        },
+        {
+          "side": 1,
+          "height": 7.550629973077759e+17,
+          "forward": {
+            "status": "passed",
+            "log_height": -41.7641319215204,
+            "height": 7.278937074993668e-19,
+            "nfev": 8479,
+            "time": 209.2027930858623
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -41.72192731580693,
+            "height": 7.592716640972644e-19,
+            "nfev": 8419,
+            "time": 209.000243194136
+          },
+          "log_difference": -0.042204605713472176
+        },
+        {
+          "side": 1,
+          "height": 3.534657463215499e+18,
+          "forward": {
+            "status": "passed",
+            "log_height": -43.3565906302022,
+            "height": 1.4807165657972506e-19,
+            "nfev": 8791,
+            "time": 217.10091553351918
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -43.164382389887756,
+            "height": 1.7945142580654355e-19,
+            "nfev": 8767,
+            "time": 216.29835110338882
+          },
+          "log_difference": -0.19220824031444295
+        },
+        {
+          "side": 1,
+          "height": 1.6546703290735151e+19,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.34034770633394,
+            "height": 2.0367474608634933e-20,
+            "nfev": 9163,
+            "time": 226.56423145097543
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -44.407908066463904,
+            "height": 5.1747643061918266e-20,
+            "nfev": 9007,
+            "time": 222.80074142262328
+          },
+          "log_difference": -0.932439639870033
+        },
+        {
+          "side": 1,
+          "height": 7.745966692414836e+19,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.19214052890079,
+            "height": 2.362124275659349e-20,
+            "nfev": 9211,
+            "time": 227.46595888529995
+          }
+        },
+        {
+          "side": 1,
+          "height": 3.626099951498786e+20,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.49629595516562,
+            "height": 1.7426481903528863e-20,
+            "nfev": 9331,
+            "time": 230.21086820328944
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.6974770716656001e+21,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.577824295008526,
+            "height": 1.6062103184228253e-20,
+            "nfev": 9439,
+            "time": 232.06526917558944
+          }
+        },
+        {
+          "side": 1,
+          "height": 7.946356822402073e+21,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.59671018614772,
+            "height": 1.5761602594485103e-20,
+            "nfev": 9547,
+            "time": 233.66910035307623
+          }
+        },
+        {
+          "side": 1,
+          "height": 3.7199080802297175e+22,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.600918118677086,
+            "height": 1.5695418181643568e-20,
+            "nfev": 9643,
+            "time": 235.21421969612334
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.741391235584549e+23,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60184728823259,
+            "height": 1.5680841250177487e-20,
+            "nfev": 9691,
+            "time": 236.7462239872751
+          }
+        },
+        {
+          "side": 1,
+          "height": 8.151931096059216e+23,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.6020520512917,
+            "height": 1.567763072186371e-20,
+            "nfev": 9787,
+            "time": 238.2753306524428
+          }
+        },
+        {
+          "side": 1,
+          "height": 3.816143049128792e+24,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60209715541654,
+            "height": 1.5676923611997394e-20,
+            "nfev": 9835,
+            "time": 239.80379868187143
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.7864414701019557e+25,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210708974715,
+            "height": 1.5676767873028816e-20,
+            "nfev": 9931,
+            "time": 241.3321260321222
+          }
+        },
+        {
+          "side": 1,
+          "height": 8.362823628502709e+25,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210927776884,
+            "height": 1.5676733571958218e-20,
+            "nfev": 9967,
+            "time": 242.8604223971391
+          }
+        },
+        {
+          "side": 1,
+          "height": 3.914867641168854e+26,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.6021097596752,
+            "height": 1.5676726017242396e-20,
+            "nfev": 10075,
+            "time": 244.3887119376939
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.8326571656534063e+27,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210986581367,
+            "height": 1.5676724353338846e-20,
+            "nfev": 10111,
+            "time": 245.91699997517782
+          }
+        },
+        {
+          "side": 1,
+          "height": 8.579172004440923e+27,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210988919041,
+            "height": 1.5676723986868106e-20,
+            "nfev": 10195,
+            "time": 247.44528768161413
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.016146263534331e+28,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.602109894339065,
+            "height": 1.5676723906154037e-20,
+            "nfev": 10267,
+            "time": 248.97357531513813
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.8800684730124777e+29,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.602109895473056,
+            "height": 1.567672388837678e-20,
+            "nfev": 10291,
+            "time": 250.50186293260438
+          }
+        },
+        {
+          "side": 1,
+          "height": 8.801117367933934e+29,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989572278,
+            "height": 1.5676723884461873e-20,
+            "nfev": 10363,
+            "time": 252.03015054653247
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.120044989639781e+30,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.6021098957778,
+            "height": 1.567672388359938e-20,
+            "nfev": 10471,
+            "time": 253.55843815968214
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.9287063229609938e+31,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.6021098957899,
+            "height": 1.5676723883409683e-20,
+            "nfev": 10483,
+            "time": 255.0867257726605
+          }
+        },
+        {
+          "side": 1,
+          "height": 9.028804514474373e+31,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579255,
+            "height": 1.5676723883368134e-20,
+            "nfev": 10555,
+            "time": 256.61501338560055
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.226631602235941e+32,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.602109895793234,
+            "height": 1.5676723883357442e-20,
+            "nfev": 10591,
+            "time": 258.14330099853254
+          }
+        },
+        {
+          "side": 1,
+          "height": 1.978602446467916e+33,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579337,
+            "height": 1.5676723883355327e-20,
+            "nfev": 10651,
+            "time": 259.6715886114629
+          }
+        },
+        {
+          "side": 1,
+          "height": 9.262381985451184e+33,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579336,
+            "height": 1.5676723883355438e-20,
+            "nfev": 10723,
+            "time": 261.19987622439186
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.335975637630466e+34,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579334,
+            "height": 1.5676723883355772e-20,
+            "nfev": 10771,
+            "time": 262.7281638373219
+          }
+        },
+        {
+          "side": 1,
+          "height": 2.0297893953905123e+35,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579332,
+            "height": 1.5676723883356106e-20,
+            "nfev": 10831,
+            "time": 264.2564514502518
+          }
+        },
+        {
+          "side": 1,
+          "height": 9.502002165056702e+35,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579329,
+            "height": 1.567672388335655e-20,
+            "nfev": 10891,
+            "time": 265.7847390631813
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.448148431053024e+36,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579329,
+            "height": 1.567672388335655e-20,
+            "nfev": 10951,
+            "time": 267.3130266761108
+          }
+        },
+        {
+          "side": 1,
+          "height": 2.0823005637108362e+37,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579333,
+            "height": 1.5676723883355883e-20,
+            "nfev": 10999,
+            "time": 268.84131428904067
+          }
+        },
+        {
+          "side": 1,
+          "height": 9.74782137970157e+37,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579347,
+            "height": 1.5676723883353765e-20,
+            "nfev": 11095,
+            "time": 270.36960190196953
+          }
+        },
+        {
+          "side": 1,
+          "height": 4.563223163193755e+38,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.602109895793305,
+            "height": 1.567672388335633e-20,
+            "nfev": 11131,
+            "time": 271.8978895148996
+          }
+        },
+        {
+          "side": 1,
+          "height": 2.1361702093217736e+39,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579337,
+            "height": 1.5676723883355327e-20,
+            "nfev": 11179,
+            "time": 273.4261771278288
+          }
+        },
+        {
+          "side": 1,
+          "height": 1e+40,
+          "forward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.60210989579331,
+            "height": 1.5676723883356217e-20,
+            "nfev": 11251,
+            "time": 274.95446474075857
+          }
+        }
+      ],
+      "brackets": [
+        [
+          288.1428408830421,
+          1348.8758509300978
+        ],
+        [
+          15326188647871.047,
+          71746102351727.48
+        ]
+      ],
+      "unresolved": 31
+    },
+    {
+      "side": -1,
+      "rows": [
+        {
+          "side": -1,
+          "height": 0.6,
+          "forward": {
+            "status": "passed",
+            "log_height": -0.8766860808249523,
+            "height": 0.41615974882955575,
+            "nfev": 355,
+            "time": 7.923795043143158
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -0.8738208944798923,
+            "height": 0.4173538338804744,
+            "nfev": 355,
+            "time": 7.912775383715403
+          },
+          "log_difference": -0.0028651863450599446
+        },
+        {
+          "side": -1,
+          "height": 2.808764944767676,
+          "forward": {
+            "status": "passed",
+            "log_height": -2.413313881278829,
+            "height": 0.0895181499719083,
+            "nfev": 667,
+            "time": 12.458415334121376
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -2.391531441044494,
+            "height": 0.09148946581397427,
+            "nfev": 655,
+            "time": 12.340925627817121
+          },
+          "log_difference": -0.021782440234335176
+        },
+        {
+          "side": -1,
+          "height": 13.14860085825961,
+          "forward": {
+            "status": "passed",
+            "log_height": -3.9319461662650017,
+            "height": 0.01960547987692548,
+            "nfev": 1063,
+            "time": 19.70223691135506
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -3.9030214070038474,
+            "height": 0.020180844693004102,
+            "nfev": 1063,
+            "time": 19.54333559066877
+          },
+          "log_difference": -0.028924759261154342
+        },
+        {
+          "side": -1,
+          "height": 61.55221527236963,
+          "forward": {
+            "status": "passed",
+            "log_height": -5.446033086999239,
+            "height": 0.004313381606610993,
+            "nfev": 1291,
+            "time": 27.25907407638188
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -5.415294515885277,
+            "height": 0.004448027605034539,
+            "nfev": 1291,
+            "time": 27.091295054306432
+          },
+          "log_difference": -0.030738571113961832
+        },
+        {
+          "side": -1,
+          "height": 288.1428408830421,
+          "forward": {
+            "status": "passed",
+            "log_height": -6.959253273033928,
+            "height": 0.0009498055552210408,
+            "nfev": 1567,
+            "time": 34.83842616855843
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -6.928105942173298,
+            "height": 0.0009798550139698632,
+            "nfev": 1579,
+            "time": 34.6688289153489
+          },
+          "log_difference": -0.031147330860630262
+        },
+        {
+          "side": -1,
+          "height": 1348.8758509300978,
+          "forward": {
+            "status": "passed",
+            "log_height": -8.472303185940172,
+            "height": 0.00020918256177997012,
+            "nfev": 1867,
+            "time": 42.41880930727089
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -8.44106637253387,
+            "height": 0.00021581988313238302,
+            "nfev": 1843,
+            "time": 42.24882789352383
+          },
+          "log_difference": -0.031236813406302133
+        },
+        {
+          "side": -1,
+          "height": 6314.458674893552,
+          "forward": {
+            "status": "passed",
+            "log_height": -9.985317622609948,
+            "height": 4.6071426183722136e-05,
+            "nfev": 2179,
+            "time": 49.99915014760817
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -9.954061346512914,
+            "height": 4.753418856738057e-05,
+            "nfev": 2167,
+            "time": 49.82908615964443
+          },
+          "log_difference": -0.031256276097034075
+        },
+        {
+          "side": -1,
+          "height": 29559.716952041952,
+          "forward": {
+            "status": "passed",
+            "log_height": -11.49832445893828,
+            "height": 1.0147081214163664e-05,
+            "nfev": 2467,
+            "time": 57.57946518305794
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -11.46706395503682,
+            "height": 1.0469294115927542e-05,
+            "nfev": 2467,
+            "time": 57.409383336975246
+          },
+          "log_difference": -0.03126050390145885
+        },
+        {
+          "side": -1,
+          "height": 138377.1612535837,
+          "forward": {
+            "status": "passed",
+            "log_height": -13.011329651322272,
+            "height": 2.234865185684546e-06,
+            "nfev": 2755,
+            "time": 65.15977364036092
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -12.980068229127573,
+            "height": 2.3058337595110173e-06,
+            "nfev": 2755,
+            "time": 64.98968792445262
+          },
+          "log_difference": -0.031261422194699406
+        },
+        {
+          "side": -1,
+          "height": 647781.5328092162,
+          "forward": {
+            "status": "passed",
+            "log_height": -14.524334487065326,
+            "height": 4.922227460346214e-07,
+            "nfev": 3055,
+            "time": 72.74008061525508
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -14.493072865383152,
+            "height": 5.078534753197111e-07,
+            "nfev": 3055,
+            "time": 72.56999406015746
+          },
+          "log_difference": -0.031261621682174834
+        },
+        {
+          "side": -1,
+          "height": 3032443.4353706636,
+          "forward": {
+            "status": "passed",
+            "log_height": -16.03733924536207,
+            "height": 1.0841067820544821e-07,
+            "nfev": 3355,
+            "time": 80.32038726554036
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -16.00607758033486,
+            "height": 1.1185330730524091e-07,
+            "nfev": 3355,
+            "time": 80.15030052839604
+          },
+          "log_difference": -0.03126166502720906
+        },
+        {
+          "side": -1,
+          "height": 14195701.363766635,
+          "forward": {
+            "status": "passed",
+            "log_height": -17.550343986833344,
+            "height": 2.387714798106104e-08,
+            "nfev": 3667,
+            "time": 87.90069384524
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -17.51908231238697,
+            "height": 2.4635377622056367e-08,
+            "nfev": 3655,
+            "time": 87.73060706859783
+          },
+          "log_difference": -0.03126167444637318
+        },
+        {
+          "side": -1,
+          "height": 66453980.59489748,
+          "forward": {
+            "status": "passed",
+            "log_height": -19.063348724648232,
+            "height": 5.258874930324048e-09,
+            "nfev": 3943,
+            "time": 95.48100040961364
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -19.03208704815727,
+            "height": 5.425872895010085e-09,
+            "nfev": 3943,
+            "time": 95.31091362441248
+          },
+          "log_difference": -0.03126167649096345
+        },
+        {
+          "side": -1,
+          "height": 311089351.89203227,
+          "forward": {
+            "status": "passed",
+            "log_height": -20.576353461658503,
+            "height": 1.158252467044188e-09,
+            "nfev": 4243,
+            "time": 103.06130697062352
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -20.54509178474334,
+            "height": 1.1950333013134153e-09,
+            "nfev": 4243,
+            "time": 102.89122018364516
+          },
+          "log_difference": -0.03126167691516102
+        },
+        {
+          "side": -1,
+          "height": 1456294777.1413932,
+          "forward": {
+            "status": "passed",
+            "log_height": -22.08935819845864,
+            "height": 2.551018602781613e-10,
+            "nfev": 4543,
+            "time": 110.641613530762
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -22.05809652154234,
+            "height": 2.6320273596112443e-10,
+            "nfev": 4543,
+            "time": 110.47152674376052
+          },
+          "log_difference": -0.03126167691630144
+        },
+        {
+          "side": -1,
+          "height": 6817316198.804998,
+          "forward": {
+            "status": "passed",
+            "log_height": -23.60236293505136,
+            "height": 5.6185469906185787e-11,
+            "nfev": 4843,
+            "time": 118.22192009006407
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -23.571101258542626,
+            "height": 5.796966505229491e-11,
+            "nfev": 4831,
+            "time": 118.05183330468998
+          },
+          "log_difference": -0.031261676508734126
+        },
+        {
+          "side": -1,
+          "height": 31913731261.0005,
+          "forward": {
+            "status": "passed",
+            "log_height": -25.115367670864085,
+            "height": 1.2374692319370157e-11,
+            "nfev": 5131,
+            "time": 125.80222664624542
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -25.08410599629811,
+            "height": 1.2767656276315405e-11,
+            "nfev": 5131,
+            "time": 125.63213986864132
+          },
+          "log_difference": -0.031261674565975284
+        },
+        {
+          "side": -1,
+          "height": 149396949371.0575,
+          "forward": {
+            "status": "passed",
+            "log_height": -26.628372403172076,
+            "height": 2.7254913199348353e-12,
+            "nfev": 5443,
+            "time": 133.38253318840705
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -26.59711073744507,
+            "height": 2.8120405058443183e-12,
+            "nfev": 5431,
+            "time": 133.21244644615848
+          },
+          "log_difference": -0.03126166572700484
+        },
+        {
+          "side": -1,
+          "height": 699368190414.4291,
+          "forward": {
+            "status": "passed",
+            "log_height": -28.141377119573903,
+            "height": 6.002818382456572e-13,
+            "nfev": 5743,
+            "time": 140.96283966694372
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -28.11011549398238,
+            "height": 6.193440294502443e-13,
+            "nfev": 5731,
+            "time": 140.79275308523748
+          },
+          "log_difference": -0.031261625591522346
+        },
+        {
+          "side": -1,
+          "height": 3273934761202.755,
+          "forward": {
+            "status": "passed",
+            "log_height": -29.65438176375752,
+            "height": 1.322104050432961e-13,
+            "nfev": 6043,
+            "time": 148.54314585660768
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -29.623120320395635,
+            "height": 1.3640877477224944e-13,
+            "nfev": 6031,
+            "time": 148.3730600038199
+          },
+          "log_difference": -0.031261443361884744
+        },
+        {
+          "side": -1,
+          "height": 15326188647871.047,
+          "forward": {
+            "status": "passed",
+            "log_height": -31.167386080045436,
+            "height": 2.91189834832932e-14,
+            "nfev": 6343,
+            "time": 156.12345073468884
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -31.13612546406883,
+            "height": 3.0043638182830195e-14,
+            "nfev": 6343,
+            "time": 155.95336819144097
+          },
+          "log_difference": -0.03126061597660623
+        },
+        {
+          "side": -1,
+          "height": 71746102351727.48,
+          "forward": {
+            "status": "passed",
+            "log_height": -32.68038890757306,
+            "height": 6.413386761549102e-15,
+            "nfev": 6643,
+            "time": 163.70374965772865
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -32.64913204822072,
+            "height": 6.617014899251268e-15,
+            "nfev": 6655,
+            "time": 163.5336821409792
+          },
+          "log_difference": -0.03125685935233946
+        },
+        {
+          "side": -1,
+          "height": 335863228682076.4,
+          "forward": {
+            "status": "passed",
+            "log_height": -34.193384975647476,
+            "height": 1.4125427079005985e-15,
+            "nfev": 6943,
+            "time": 171.2840215429557
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -34.162145172695766,
+            "height": 1.4573667657723174e-15,
+            "nfev": 6943,
+            "time": 171.1140222518086
+          },
+          "log_difference": -0.031239802951709805
+        },
+        {
+          "side": -1,
+          "height": 1572268104931175.5,
+          "forward": {
+            "status": "passed",
+            "log_height": -35.70635035431698,
+            "height": 3.111208181621597e-16,
+            "nfev": 7243,
+            "time": 178.8641706705632
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -35.675187993382366,
+            "height": 3.209687224430297e-16,
+            "nfev": 7231,
+            "time": 178.69448114748576
+          },
+          "log_difference": -0.031162360934615663
+        },
+        {
+          "side": -1,
+          "height": 7360219228178347.0,
+          "forward": {
+            "status": "passed",
+            "log_height": -37.219176410795754,
+            "height": 6.853573328824244e-17,
+            "nfev": 7543,
+            "time": 186.44376250940851
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -37.18836566271486,
+            "height": 7.068023774858665e-17,
+            "nfev": 7579,
+            "time": 186.27547943774437
+          },
+          "log_difference": -0.030810748080895678
+        },
+        {
+          "side": -1,
+          "height": 3.445520958985375e+16,
+          "forward": {
+            "status": "passed",
+            "log_height": -38.731370277203816,
+            "height": 1.51070481026895e-17,
+            "nfev": 7843,
+            "time": 194.0208255879714
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -38.70215595059309,
+            "height": 1.55549003386586e-17,
+            "nfev": 7867,
+            "time": 193.8589282021871
+          },
+          "log_difference": -0.029214326610727426
+        },
+        {
+          "side": -1,
+          "height": 1.6129430810100774e+17,
+          "forward": {
+            "status": "passed",
+            "log_height": -40.240701623710464,
+            "height": 3.3395299053524087e-18,
+            "nfev": 8143,
+            "time": 201.58643858692704
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -40.21873514854809,
+            "height": 3.4136992431684393e-18,
+            "nfev": 8167,
+            "time": 201.45353260693673
+          },
+          "log_difference": -0.02196647516237249
+        },
+        {
+          "side": -1,
+          "height": 7.550629973077759e+17,
+          "forward": {
+            "status": "passed",
+            "log_height": -41.73719552523066,
+            "height": 7.477669966510464e-19,
+            "nfev": 8431,
+            "time": 209.10070180593806
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -41.74813185778186,
+            "height": 7.396337232598761e-19,
+            "nfev": 8467,
+            "time": 209.0994070568014
+          },
+          "log_difference": 0.010936332551196415
+        },
+        {
+          "side": -1,
+          "height": 3.534657463215499e+18,
+          "forward": {
+            "status": "passed",
+            "log_height": -43.17848485982863,
+            "height": 1.769384784979053e-19,
+            "nfev": 8767,
+            "time": 216.39414675725905
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -43.33913994778714,
+            "height": 1.5067828561248948e-19,
+            "nfev": 8791,
+            "time": 216.99172702975173
+          },
+          "log_difference": 0.16065508795851002
+        },
+        {
+          "side": -1,
+          "height": 1.6546703290735151e+19,
+          "forward": {
+            "status": "passed",
+            "log_height": -44.41825260262217,
+            "height": 5.121509691752899e-20,
+            "nfev": 9007,
+            "time": 222.88150534136258
+          },
+          "backward": {
+            "status": "passed",
+            "log_height": -45.311551787196784,
+            "height": 2.0962500807660998e-20,
+            "nfev": 9163,
+            "time": 226.40966200031968
+          },
+          "log_difference": 0.8932991845746159
+        },
+        {
+          "side": -1,
+          "height": 7.745966692414836e+19,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.196228605599735,
+            "height": 2.3524874419269128e-20,
+            "nfev": 9199,
+            "time": 227.52169696620282
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 3.626099951498786e+20,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.496313250691074,
+            "height": 1.742618050597397e-20,
+            "nfev": 9331,
+            "time": 230.25032315949787
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.6974770716656001e+21,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.57652661023647,
+            "height": 1.6082960260966124e-20,
+            "nfev": 9439,
+            "time": 232.09946421060818
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 7.946356822402073e+21,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.5950925499922,
+            "height": 1.5787119765896004e-20,
+            "nfev": 9547,
+            "time": 233.70201558256096
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 3.7199080802297175e+22,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.599228381939085,
+            "height": 1.5721961725848667e-20,
+            "nfev": 9643,
+            "time": 235.24684652327787
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.741391235584549e+23,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60014159045924,
+            "height": 1.5707610850115424e-20,
+            "nfev": 9691,
+            "time": 236.77878697028882
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 8.151931096059216e+23,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60034283419094,
+            "height": 1.5704450109942064e-20,
+            "nfev": 9787,
+            "time": 238.30787955814608
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 3.816143049128792e+24,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600387163001734,
+            "height": 1.5703753965774245e-20,
+            "nfev": 9835,
+            "time": 239.83634448631895
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.7864414701019557e+25,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.6003969265623,
+            "height": 1.5703600641969833e-20,
+            "nfev": 9943,
+            "time": 241.36467115348958
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 8.362823628502709e+25,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039907697188,
+            "height": 1.5703566872832793e-20,
+            "nfev": 9967,
+            "time": 242.8929673680583
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 3.914867641168854e+26,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039955059416,
+            "height": 1.570355943527542e-20,
+            "nfev": 10063,
+            "time": 244.42125687547696
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.8326571656534063e+27,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039965490823,
+            "height": 1.5703557797173332e-20,
+            "nfev": 10111,
+            "time": 245.94954490566275
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 8.579172004440923e+27,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039967788309,
+            "height": 1.5703557436386305e-20,
+            "nfev": 10195,
+            "time": 247.47783261049148
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.016146263534331e+28,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399682943234,
+            "height": 1.570355735692404e-20,
+            "nfev": 10279,
+            "time": 249.0061202436618
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.8800684730124777e+29,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968405771,
+            "height": 1.570355733942275e-20,
+            "nfev": 10291,
+            "time": 250.53440786104977
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 8.801117367933934e+29,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968430314,
+            "height": 1.5703557335568648e-20,
+            "nfev": 10363,
+            "time": 252.06269547496078
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.120044989639781e+30,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399684357264,
+            "height": 1.570355733471874e-20,
+            "nfev": 10435,
+            "time": 253.59098308810633
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.9287063229609938e+31,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968436919,
+            "height": 1.5703557334531508e-20,
+            "nfev": 10483,
+            "time": 255.1192707010843
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 9.028804514474373e+31,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399684371865,
+            "height": 1.570355733448944e-20,
+            "nfev": 10555,
+            "time": 256.64755831402385
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.226631602235941e+32,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437235,
+            "height": 1.5703557334481855e-20,
+            "nfev": 10591,
+            "time": 258.1758459269565
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1.978602446467916e+33,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399684372526,
+            "height": 1.5703557334479065e-20,
+            "nfev": 10651,
+            "time": 259.70413353988636
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 9.262381985451184e+33,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399684372555,
+            "height": 1.570355733447862e-20,
+            "nfev": 10735,
+            "time": 261.23242115281573
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.335975637630466e+34,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437255,
+            "height": 1.570355733447873e-20,
+            "nfev": 10771,
+            "time": 262.76070876574573
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 2.0297893953905123e+35,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437253,
+            "height": 1.5703557334478954e-20,
+            "nfev": 10831,
+            "time": 264.28899637867534
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 9.502002165056702e+35,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437258,
+            "height": 1.5703557334478172e-20,
+            "nfev": 10891,
+            "time": 265.8172839916048
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.448148431053024e+36,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437257,
+            "height": 1.5703557334478397e-20,
+            "nfev": 10951,
+            "time": 267.3455716045345
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 2.0823005637108362e+37,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.6003996843725,
+            "height": 1.570355733447951e-20,
+            "nfev": 10999,
+            "time": 268.8738592174641
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 9.74782137970157e+37,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.600399684372604,
+            "height": 1.5703557334477838e-20,
+            "nfev": 11095,
+            "time": 270.40214683039295
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 4.563223163193755e+38,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437249,
+            "height": 1.5703557334479622e-20,
+            "nfev": 11131,
+            "time": 271.93043444332284
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 2.1361702093217736e+39,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.6003996843725,
+            "height": 1.570355733447951e-20,
+            "nfev": 11179,
+            "time": 273.45872205625244
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        },
+        {
+          "side": -1,
+          "height": 1e+40,
+          "forward": {
+            "status": "passed",
+            "log_height": -45.60039968437259,
+            "height": 1.570355733447806e-20,
+            "nfev": 11251,
+            "time": 274.9870096691818
+          },
+          "backward": {
+            "status": "unresolved",
+            "message": "Required step size is less than spacing between numbers.",
+            "guard": 0
+          }
+        }
+      ],
+      "brackets": [
+        [
+          1.6129430810100774e+17,
+          7.550629973077759e+17
+        ]
+      ],
+      "unresolved": 31
+    }
+  ],
+  "counts": {
+    "log_halves": 244
+  }
+}

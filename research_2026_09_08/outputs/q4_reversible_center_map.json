@@ -1,0 +1,33 @@
+{
+  "status": "exact polynomial identities passed",
+  "locus": "tau=0,w=0,u=-r",
+  "condition": "B=-1-3r^2-epsilon != 0 for affine map",
+  "map": {
+    "X": "-B*x/2",
+    "Y": "(1+B*y)/2",
+    "time": "unchanged"
+  },
+  "normal_form": {
+    "a": "-2*(r**2 + 2)/(e + 3*r**2 + 1)",
+    "b": "2/(e + 3*r**2 + 1)"
+  },
+  "equilibria": [
+    {
+      "point": [
+        0,
+        0
+      ],
+      "trace": "0",
+      "determinant": "1"
+    },
+    {
+      "point": [
+        0,
+        1
+      ],
+      "trace": "0",
+      "determinant": "e + 3*r**2"
+    }
+  ],
+  "scope": "Reversibility plus ellipticity gives local centers; two elliptic points require epsilon > -3r^2. No global cycle bound, no general classification of all center loci."
+}

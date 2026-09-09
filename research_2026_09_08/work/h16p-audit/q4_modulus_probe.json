@@ -1,0 +1,330 @@
+{
+  "status": "numerical only",
+  "records": [
+    {
+      "modulus": 0.5,
+      "direction": [
+        0.0003902346653317601,
+        0.7644921861371504,
+        -1.0,
+        0.06871102939509731
+      ],
+      "scaled_singular_values": [
+        1.957257070859628,
+        0.408455481456505,
+        0.04805078811136013
+      ],
+      "matrix": [
+        [
+          0.3303942289530184,
+          -2.957804773060204e-05,
+          -0.00011104223781888246,
+          -0.0031634125514379335
+        ],
+        [
+          0.6579665653760881,
+          -0.0006650072224948486,
+          -0.001221404149413789,
+          -0.014113784862025802
+        ],
+        [
+          0.9821152549623231,
+          -0.0054354157230903245,
+          -0.0063475037451075494,
+          -0.03748199287521064
+        ]
+      ],
+      "matrix_order_change_max": 2.220446049250313e-15,
+      "direction_order_change_max": 3.2862601528904634e-14,
+      "boundary_vector": [
+        1.3015310153510964,
+        -0.054995618489969485,
+        -0.0396614336157875,
+        -0.10197811153649694
+      ],
+      "boundary_order_change_max": 4.440892098500626e-15,
+      "directional_boundary": -0.008881405490820275,
+      "profile": [
+        {
+          "fraction": 0.2,
+          "directional_value": 1.1623056745110015e-05,
+          "energy_residual": 5.551115123125783e-16,
+          "minimum_angular_sample": 0.8042805725570281
+        },
+        {
+          "fraction": 0.3,
+          "directional_value": -1.0927429574670146e-05,
+          "energy_residual": 5.551115123125783e-16,
+          "minimum_angular_sample": 0.7723666896611809
+        },
+        {
+          "fraction": 0.6,
+          "directional_value": 4.323684654173243e-05,
+          "energy_residual": 8.881784197001252e-16,
+          "minimum_angular_sample": 0.7104001456066745
+        },
+        {
+          "fraction": 0.8,
+          "directional_value": -0.00015491507396100598,
+          "energy_residual": 1.1102230246251565e-15,
+          "minimum_angular_sample": 0.6520398395357926
+        }
+      ],
+      "diagnostics": [
+        {
+          "order": 256,
+          "fraction": 0.25,
+          "energy_residual": 5.551115123125783e-16,
+          "minimum_angular_sample": 0.7871681583121172
+        },
+        {
+          "order": 256,
+          "fraction": 0.5,
+          "energy_residual": 6.661338147750939e-16,
+          "minimum_angular_sample": 0.72755631824329
+        },
+        {
+          "order": 256,
+          "fraction": 0.75,
+          "energy_residual": 9.992007221626409e-16,
+          "minimum_angular_sample": 0.6763535484989832
+        },
+        {
+          "order": 512,
+          "fraction": 0.25,
+          "energy_residual": 5.551115123125783e-16,
+          "minimum_angular_sample": 0.7871246151257959
+        },
+        {
+          "order": 512,
+          "fraction": 0.5,
+          "energy_residual": 6.661338147750939e-16,
+          "minimum_angular_sample": 0.7275818068517336
+        },
+        {
+          "order": 512,
+          "fraction": 0.75,
+          "energy_residual": 9.992007221626409e-16,
+          "minimum_angular_sample": 0.6763429194457634
+        }
+      ]
+    },
+    {
+      "modulus": 1.0,
+      "direction": [
+        0.0004113853192366221,
+        0.4243675917744157,
+        -1.0,
+        0.10298633289707211
+      ],
+      "scaled_singular_values": [
+        1.9569375964541926,
+        0.40997208366085275,
+        0.04814700616720302
+      ],
+      "matrix": [
+        [
+          0.9162146885749258,
+          -0.00011278595044050181,
+          -0.00028841261027773513,
+          -0.005995622553811152
+        ],
+        [
+          1.8236188098285475,
+          -0.002630054753261877,
+          -0.003097185510626432,
+          -0.02652085415767542
+        ],
+        [
+          2.7202002122838422,
+          -0.02260220988243894,
+          -0.015806404501528863,
+          -0.07121148361487849
+        ]
+      ],
+      "matrix_order_change_max": 2.220446049250313e-15,
+      "direction_order_change_max": 4.1022740759899534e-14,
+      "boundary_vector": [
+        3.601697319462927,
+        -0.2583403955779968,
+        -0.09976517463192006,
+        -0.22264206495382266
+      ],
+      "boundary_order_change_max": 8.881784197001252e-15,
+      "directional_boundary": -0.03131352131422936,
+      "profile": [
+        {
+          "fraction": 0.2,
+          "directional_value": 3.4614437010753246e-05,
+          "energy_residual": 8.881784197001252e-16,
+          "minimum_angular_sample": 0.799424356041001
+        },
+        {
+          "fraction": 0.3,
+          "directional_value": -3.287388392016937e-05,
+          "energy_residual": 7.771561172376096e-16,
+          "minimum_angular_sample": 0.7659027962328375
+        },
+        {
+          "fraction": 0.6,
+          "directional_value": 0.00013498232124283405,
+          "energy_residual": 1.7763568394002505e-15,
+          "minimum_angular_sample": 0.6995222328697909
+        },
+        {
+          "fraction": 0.8,
+          "directional_value": -0.0005010237213159373,
+          "energy_residual": 3.6637359812630166e-15,
+          "minimum_angular_sample": 0.6173429468766067
+        }
+      ],
+      "diagnostics": [
+        {
+          "order": 256,
+          "fraction": 0.25,
+          "energy_residual": 9.992007221626409e-16,
+          "minimum_angular_sample": 0.7814607839471279
+        },
+        {
+          "order": 256,
+          "fraction": 0.5,
+          "energy_residual": 1.887379141862766e-15,
+          "minimum_angular_sample": 0.718193191492409
+        },
+        {
+          "order": 256,
+          "fraction": 0.75,
+          "energy_residual": 3.3306690738754696e-15,
+          "minimum_angular_sample": 0.6409961866723697
+        },
+        {
+          "order": 512,
+          "fraction": 0.25,
+          "energy_residual": 8.881784197001252e-16,
+          "minimum_angular_sample": 0.7814413517774609
+        },
+        {
+          "order": 512,
+          "fraction": 0.5,
+          "energy_residual": 1.887379141862766e-15,
+          "minimum_angular_sample": 0.7181031884089
+        },
+        {
+          "order": 512,
+          "fraction": 0.75,
+          "energy_residual": 3.219646771412954e-15,
+          "minimum_angular_sample": 0.6409395381743082
+        }
+      ]
+    },
+    {
+      "modulus": 2.0,
+      "direction": [
+        0.00021372169757048057,
+        0.2969409277746906,
+        -1.0,
+        0.11038946921359684
+      ],
+      "scaled_singular_values": [
+        1.9558188341270075,
+        0.41488006082918,
+        0.05145117297445875
+      ],
+      "matrix": [
+        [
+          1.7277883470433175,
+          -9.450869067510863e-05,
+          -0.00023575002080200957,
+          -0.005226516489235006
+        ],
+        [
+          3.4354319857773814,
+          -0.0023711323613691665,
+          -0.0024596546878134077,
+          -0.022554640566506606
+        ],
+        [
+          5.117694746676331,
+          -0.022720202932397873,
+          -0.01222082239654983,
+          -0.05949867060935703
+        ]
+      ],
+      "matrix_order_change_max": 9.769962616701378e-15,
+      "direction_order_change_max": 3.0531133177191805e-14,
+      "boundary_vector": [
+        6.7639037038049405,
+        -0.3499610228542246,
+        -0.0788771224523759,
+        -0.21430801727115123
+      ],
+      "boundary_order_change_max": 2.042810365310288e-14,
+      "directional_boundary": -0.04725238365193753,
+      "profile": [
+        {
+          "fraction": 0.2,
+          "directional_value": 3.514429891444905e-05,
+          "energy_residual": 2.7755575615628914e-15,
+          "minimum_angular_sample": 0.7907009113669257
+        },
+        {
+          "fraction": 0.3,
+          "directional_value": -3.405929845072466e-05,
+          "energy_residual": 3.885780586188048e-15,
+          "minimum_angular_sample": 0.7541068758971475
+        },
+        {
+          "fraction": 0.6,
+          "directional_value": 0.00015125512922768963,
+          "energy_residual": 7.438494264988549e-15,
+          "minimum_angular_sample": 0.6641205079121015
+        },
+        {
+          "fraction": 0.8,
+          "directional_value": -0.0006086761232999907,
+          "energy_residual": 9.2148511043888e-15,
+          "minimum_angular_sample": 0.5821674020243564
+        }
+      ],
+      "diagnostics": [
+        {
+          "order": 256,
+          "fraction": 0.25,
+          "energy_residual": 2.55351295663786e-15,
+          "minimum_angular_sample": 0.7712354131114411
+        },
+        {
+          "order": 256,
+          "fraction": 0.5,
+          "energy_residual": 5.440092820663267e-15,
+          "minimum_angular_sample": 0.7004540609635366
+        },
+        {
+          "order": 256,
+          "fraction": 0.75,
+          "energy_residual": 9.769962616701378e-15,
+          "minimum_angular_sample": 0.6049845093175737
+        },
+        {
+          "order": 512,
+          "fraction": 0.25,
+          "energy_residual": 2.9976021664879227e-15,
+          "minimum_angular_sample": 0.7711883477542346
+        },
+        {
+          "order": 512,
+          "fraction": 0.5,
+          "energy_residual": 6.994405055138486e-15,
+          "minimum_angular_sample": 0.7003957416918188
+        },
+        {
+          "order": 512,
+          "fraction": 0.75,
+          "energy_residual": 8.770761894538737e-15,
+          "minimum_angular_sample": 0.6048685886862881
+        }
+      ]
+    }
+  ],
+  "new_ode_returns": 0
+}
